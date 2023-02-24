@@ -15,7 +15,7 @@ import { AthleticsEvent, DLMeet, Entries, Team } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
-import { Run } from 'tabler-icons-react';
+import { Check, Run } from 'tabler-icons-react';
 
 export default function App() {
   const [entries, setEntries] = useState<Entries | null>(null);
@@ -29,6 +29,8 @@ export default function App() {
     })();
   }, []);
 
+  const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
+
   return (
     <Store.Provider value={{ myTeam, setMyTeam }}>
       <AppShell
@@ -39,12 +41,16 @@ export default function App() {
               <MainLinks
                 links={Object.keys(entries?.[meet] ?? {})
                   .sort((a, b) => Number.parseInt(a) - Number.parseInt(b))
-                  .map((label) => ({
-                    icon: <Run />,
-                    color: 'blue',
-                    onClick: () => setEvt(label as AthleticsEvent),
-                    label,
-                  }))}
+                  .map((label) => {
+                    const linkEvt = label as AthleticsEvent;
+                    const filled = myTeam[meet]?.[linkEvt]?.length === 2;
+                    return {
+                      icon: filled ? <Check /> : <Run />,
+                      color: filled ? 'green' : 'blue',
+                      onClick: () => setEvt(linkEvt),
+                      label,
+                    };
+                  })}
               />
             </Navbar.Section>
             <Navbar.Section>
@@ -69,20 +75,22 @@ export default function App() {
         })}
       >
         <Stack align="center" mt={0}>
-          {myTeam[meet]?.[evt!]?.map(({ id, lastName }, i) => (
-            <>
-              {i === 0 ? 'Primary Pick:' : 'Secondary Pick:'}
-              <Badge
-                key={id}
-                sx={{ paddingLeft: 0 }}
-                size="lg"
-                radius="xl"
-                leftSection={<Avatar src={`img/avatars/${id}_128x128.png`} mr={5} size={24} />}
-              >
-                {lastName}
-              </Badge>
-            </>
-          ))}
+          <Group align="center">
+            {myTeamPicks.map(({ id, lastName }, i) => (
+              <>
+                {i === 0 ? 'Primary Pick:' : 'Secondary Pick:'}
+                <Badge
+                  key={id}
+                  sx={{ paddingLeft: 0 }}
+                  size="lg"
+                  radius="xl"
+                  leftSection={<Avatar src={`img/avatars/${id}_128x128.png`} mr={5} size={24} />}
+                >
+                  {lastName}
+                </Badge>
+              </>
+            ))}
+          </Group>
           Entries Close:{' '}
           {new Date(entries?.[meet]?.[evt!]?.date!).toLocaleTimeString().replace(':00 ', ' ')}
           <SimpleGrid cols={4} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
