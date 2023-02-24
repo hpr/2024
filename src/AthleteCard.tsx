@@ -1,4 +1,7 @@
 import { createStyles, Card, Avatar, Text, Group, Button } from '@mantine/core';
+import { useContext } from 'react';
+import { Store } from './Store';
+import { AthleticsEvent, DLMeet, Entrant } from './types';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -15,10 +18,14 @@ interface AthleteCardProps {
   name: string;
   job: string;
   stats: { label: string; value: string }[];
+  event: AthleticsEvent;
+  meet: DLMeet;
+  entrant: Entrant;
 }
 
-export function AthleteCard({ avatar, name, job, stats }: AthleteCardProps) {
+export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: AthleteCardProps) {
   const { classes, theme } = useStyles();
+  const { myTeam, setMyTeam } = useContext(Store);
 
   const items = stats.map((stat) => (
     <div key={stat.label}>
@@ -30,6 +37,9 @@ export function AthleteCard({ avatar, name, job, stats }: AthleteCardProps) {
       </Text>
     </div>
   ));
+
+  const team = myTeam?.[meet]?.[event] ?? [];
+  const isOnTeam = !!team.find((member) => member.id === entrant.id);
 
   return (
     <Card withBorder p="xl" radius="md" className={classes.card}>
@@ -46,12 +56,29 @@ export function AthleteCard({ avatar, name, job, stats }: AthleteCardProps) {
       </Group>
       <Button
         fullWidth
+        disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= 2}
         radius="md"
         mt="xl"
         size="md"
-        color={theme.colorScheme === 'dark' ? undefined : 'dark'}
+        color={isOnTeam ? 'red' : undefined}
+        onClick={() => {
+          setMyTeam({
+            ...myTeam,
+            [meet]: {
+              ...myTeam[meet],
+              [event]: isOnTeam
+                ? myTeam[meet]![event]?.filter((member) => member.id !== entrant.id)
+                : [...(myTeam[meet]?.[event] ?? []), entrant],
+            },
+          });
+        }}
       >
-        Add to Team
+        {(() => {
+          if (isOnTeam) return 'Remove from Team';
+          if (team.length === 0) return 'Add as Primary';
+          if (team.length === 1) return 'Add as Secondary';
+          return 'Team Full';
+        })()}
       </Button>
     </Card>
   );

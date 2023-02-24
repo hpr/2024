@@ -22,7 +22,8 @@
     "@mantine/core": "5.10.3",
     "@mantine/hooks": "5.10.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.20.0",

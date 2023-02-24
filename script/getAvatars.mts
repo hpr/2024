@@ -5,7 +5,9 @@ const PIXELME_API = 'https://pixel-me-api-gateway-cj34o73d6a-an.a.run.app/api/v1
 const key = 'AIzaSyB1icoMXVbxjiAzwBTI_4FufkzTnX78U0s';
 
 const entries: Entries = JSON.parse(fs.readFileSync('./public/entries.json', 'utf-8'));
-const entrants: Entrant[] = Object.values(entries).flatMap((meet) => Object.values(meet).flat());
+const entrants: Entrant[] = Object.values(entries).flatMap((meet) =>
+  Object.values(meet).flatMap(({ entrants }) => entrants)
+);
 
 let i = 0;
 for (const { id, firstName, lastName } of entrants) {

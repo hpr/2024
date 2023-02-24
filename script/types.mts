@@ -28,6 +28,14 @@ export type Entrant = {
   id: string;
   pb: string | null;
   sb: string | null;
+  nat: string;
 };
 
-export type Entries = { [k in DLMeet]?: { [k in AthleticsEvent]?: Entrant[] } };
+export type Entries = {
+  [k in DLMeet]?: {
+    [k in AthleticsEvent]?: {
+      entrants: Entrant[];
+      date: string;
+    };
+  };
+};

@@ -77,10 +77,22 @@ for (const key in schedules) {
           .match(/\/(\d+)\.html$/)![1]!,
         pb: elem.querySelector('.column.pb')?.textContent || null,
         sb: elem.querySelector('.column.sb')?.textContent || null,
+        nat: elem.querySelector('.column.nat')!.textContent!.trim(),
       };
     });
     console.log(entrants);
-    entries[meet][name as AthleticsEvent] = entrants;
+    const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
+    entries[meet][name as AthleticsEvent] = {
+      date: `${year}-${month}-${day}T${document
+        .querySelector('.time')!
+        .getAttribute('data-starttime')}`,
+      entrants: entrants.sort((a, b) => {
+        if (!a.pb && !b.pb) return 0;
+        if (!a.pb) return 1;
+        if (!b.pb) return -1;
+        return a.pb.localeCompare(b.pb);
+      }),
+    };
   }
 }
 
