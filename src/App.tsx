@@ -13,6 +13,8 @@ import {
   useMantineTheme,
   Burger,
   MediaQuery,
+  Button,
+  CopyButton,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
@@ -53,22 +55,29 @@ export default function App() {
     Object.values(myTeam[meet] ?? {}).flat().length ===
     Object.keys(entries?.[meet] ?? {}).length * 2;
 
+  const picksText = Object.entries(myTeam[meet] ?? {})
+    .map(
+      ([evt, [primary, secondary]]) =>
+        primary &&
+        secondary &&
+        `${evt}: ${primary.firstName} ${primary.lastName} (${secondary.firstName} ${secondary.lastName})`
+    )
+    .join('\n');
+
   return (
     <Store.Provider value={{ myTeam, setMyTeam }}>
       <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Your Picks">
         {arePicksComplete ? (
           <>
-            <Text mb={20}>Copy / paste this block to record your picks:</Text>
-            <Code block>
-              {Object.entries(myTeam[meet] ?? {})
-                .map(
-                  ([evt, [primary, secondary]]) =>
-                    primary &&
-                    secondary &&
-                    `${evt}: ${primary.firstName} ${primary.lastName} (${secondary.firstName} ${secondary.lastName})`
-                )
-                .join('\n')}
-            </Code>
+            <Text mb={15}>Copy / paste this block to record your picks:</Text>
+            <CopyButton value={picksText}>
+              {({ copied, copy }) => (
+                <Button color={copied ? 'teal' : 'blue'} onClick={copy}>
+                  {copied ? 'Copied picks' : 'Copy picks to clipboard'}
+                </Button>
+              )}
+            </CopyButton>
+            <Code mt={20} block>{picksText}</Code>
           </>
         ) : (
           <Text>Please complete your picks before sharing</Text>
