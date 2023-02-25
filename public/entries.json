@@ -12,44 +12,20 @@
           "pb": "7.04"
         },
         {
+          "firstName": "Shericka",
+          "lastName": "Jackson",
+          "nat": "JAM",
+          "id": "14325599",
+          "sb": "7.34",
+          "pb": "7.04"
+        },
+        {
           "firstName": "Daryll",
           "lastName": "Neita",
           "nat": "GBR",
           "id": "14476603",
           "sb": "7.05",
           "pb": "7.05"
-        },
-        {
-          "firstName": "Destiny",
-          "lastName": "Smith-Barnett",
-          "nat": "USA",
-          "id": "14475801",
-          "sb": "7.11",
-          "pb": "7.11"
-        },
-        {
-          "firstName": "Kayla",
-          "lastName": "White",
-          "nat": "USA",
-          "id": "14642681",
-          "sb": "7.13",
-          "pb": "7.10"
-        },
-        {
-          "firstName": "Gina",
-          "lastName": "Luckenkemper",
-          "nat": "GER",
-          "id": "14450088",
-          "sb": "7.16",
-          "pb": "7.11"
-        },
-        {
-          "firstName": "Arialis",
-          "lastName": "Martinez",
-          "nat": "POR",
-          "id": "14465496",
-          "sb": "7.18",
-          "pb": "7.18"
         },
         {
           "firstName": "Asha",
@@ -60,11 +36,67 @@
           "pb": "7.06"
         },
         {
+          "firstName": "Kayla",
+          "lastName": "White",
+          "nat": "USA",
+          "id": "14642681",
+          "sb": "7.13",
+          "pb": "7.10"
+        },
+        {
+          "firstName": "Destiny",
+          "lastName": "Smith-Barnett",
+          "nat": "USA",
+          "id": "14475801",
+          "sb": "7.11",
+          "pb": "7.11"
+        },
+        {
+          "firstName": "Gina",
+          "lastName": "Luckenkemper",
+          "nat": "GER",
+          "id": "14450088",
+          "sb": "7.16",
+          "pb": "7.11"
+        },
+        {
+          "firstName": "Natasha",
+          "lastName": "Morrison",
+          "nat": "JAM",
+          "id": "14285826",
+          "sb": "7.30",
+          "pb": "7.15"
+        },
+        {
+          "firstName": "Anthonique",
+          "lastName": "Strachan",
+          "nat": "BAH",
+          "id": "14368117",
+          "sb": "7.32",
+          "pb": "7.17"
+        },
+        {
+          "firstName": "Arialis",
+          "lastName": "Martinez",
+          "nat": "POR",
+          "id": "14465496",
+          "sb": "7.18",
+          "pb": "7.18"
+        },
+        {
           "firstName": "Olivia",
           "lastName": "Fotopoulou",
           "nat": "CYP",
           "id": "14595920",
           "sb": "7.26",
+          "pb": "7.26"
+        },
+        {
+          "firstName": "Bianca",
+          "lastName": "Williams",
+          "nat": "GBR",
+          "id": "14401125",
+          "sb": "7.31",
           "pb": "7.26"
         },
         {
@@ -76,22 +108,6 @@
           "pb": "7.27"
         },
         {
-          "firstName": "Natasha",
-          "lastName": "Morrison",
-          "nat": "JAM",
-          "id": "14285826",
-          "sb": "7.30",
-          "pb": "7.15"
-        },
-        {
-          "firstName": "Bianca",
-          "lastName": "Williams",
-          "nat": "GBR",
-          "id": "14401125",
-          "sb": "7.31",
-          "pb": "7.26"
-        },
-        {
           "firstName": "Gloria",
           "lastName": "Hooper",
           "nat": "ITA",
@@ -100,20 +116,12 @@
           "pb": "7.29"
         },
         {
-          "firstName": "Anthonique",
-          "lastName": "Strachan",
-          "nat": "BAH",
-          "id": "14368117",
-          "sb": "7.32",
-          "pb": "7.17"
-        },
-        {
-          "firstName": "Shericka",
-          "lastName": "Jackson",
-          "nat": "JAM",
-          "id": "14325599",
-          "sb": "7.34",
-          "pb": "7.04"
+          "firstName": "Diani",
+          "lastName": "Walker",
+          "nat": "GBR",
+          "id": "14403137",
+          "sb": "7.38",
+          "pb": "7.35"
         },
         {
           "firstName": "Cassie-Ann",
@@ -122,14 +130,6 @@
           "id": "14685107",
           "sb": "7.36",
           "pb": "7.36"
-        },
-        {
-          "firstName": "Diani",
-          "lastName": "Walker",
-          "nat": "GBR",
-          "id": "14403137",
-          "sb": "7.38",
-          "pb": "7.35"
         }
       ]
     },
@@ -151,6 +151,14 @@
           "id": "14270067",
           "sb": "1:58.48",
           "pb": "1:58.48"
+        },
+        {
+          "firstName": "Catriona",
+          "lastName": "Bisset",
+          "nat": "AUS",
+          "id": "14463325",
+          "sb": "2:02.03",
+          "pb": "1:59.46"
         },
         {
           "firstName": "Allie",
@@ -177,14 +185,6 @@
           "pb": "2:00.99"
         },
         {
-          "firstName": "Catriona",
-          "lastName": "Bisset",
-          "nat": "AUS",
-          "id": "14463325",
-          "sb": "2:02.03",
-          "pb": "1:59.46"
-        },
-        {
           "firstName": "Ellie",
           "lastName": "Baker",
           "nat": "GBR",
@@ -197,6 +197,22 @@
     "Women's 1000 m": {
       "date": "2023-02-25",
       "entrants": [
+        {
+          "firstName": "Laura",
+          "lastName": "Muir",
+          "nat": "GBR",
+          "id": "14422111",
+          "sb": "",
+          "pb": "2:31.93"
+        },
+        {
+          "firstName": "Kristie",
+          "lastName": "Schoffield",
+          "nat": "USA",
+          "id": "14679586",
+          "sb": "",
+          "pb": "2:48.43"
+        },
         {
           "firstName": "Elena",
           "lastName": "Bello",
@@ -244,28 +260,20 @@
           "id": "14360725",
           "sb": "",
           "pb": ""
-        },
-        {
-          "firstName": "Kristie",
-          "lastName": "Schoffield",
-          "nat": "USA",
-          "id": "14679586",
-          "sb": "",
-          "pb": "2:48.43"
-        },
-        {
-          "firstName": "Laura",
-          "lastName": "Muir",
-          "nat": "GBR",
-          "id": "14422111",
-          "sb": "",
-          "pb": "2:31.93"
         }
       ]
     },
     "Men's 1500 m": {
       "date": "2023-02-25",
       "entrants": [
+        {
+          "firstName": "Josh",
+          "lastName": "Kerr",
+          "nat": "GBR",
+          "id": "14533464",
+          "sb": "",
+          "pb": "3:32.86"
+        },
         {
           "firstName": "Neil",
           "lastName": "Gourley",
@@ -281,6 +289,22 @@
           "id": "14376490",
           "sb": "3:36.55",
           "pb": "3:35.30"
+        },
+        {
+          "firstName": "Piers",
+          "lastName": "Copeland",
+          "nat": "GBR",
+          "id": "14701261",
+          "sb": "3:42.86",
+          "pb": "3:36.12"
+        },
+        {
+          "firstName": "Ossama",
+          "lastName": "Meslek",
+          "nat": "ITA",
+          "id": "14659273",
+          "sb": "3:41.09",
+          "pb": "3:37.29"
         },
         {
           "firstName": "Andrew",
@@ -299,42 +323,26 @@
           "pb": "3:38.14"
         },
         {
-          "firstName": "Ossama",
-          "lastName": "Meslek",
-          "nat": "ITA",
-          "id": "14659273",
-          "sb": "3:41.09",
-          "pb": "3:37.29"
-        },
-        {
-          "firstName": "Piers",
-          "lastName": "Copeland",
-          "nat": "GBR",
-          "id": "14701261",
-          "sb": "3:42.86",
-          "pb": "3:36.12"
-        },
-        {
           "firstName": "Nicholas",
           "lastName": "Griggs",
           "nat": "IRL",
           "id": "14982087",
           "sb": "3:46.17",
           "pb": "3:43.71"
-        },
-        {
-          "firstName": "Josh",
-          "lastName": "Kerr",
-          "nat": "GBR",
-          "id": "14533464",
-          "sb": "",
-          "pb": "3:32.86"
         }
       ]
     },
     "Women's 3000 m": {
       "date": "2023-02-25",
       "entrants": [
+        {
+          "firstName": "Gudaf",
+          "lastName": "Tsegay",
+          "nat": "ETH",
+          "id": "14595214",
+          "sb": "",
+          "pb": "8:22.65"
+        },
         {
           "firstName": "Konstanze",
           "lastName": "Klosterhalfen",
@@ -406,14 +414,6 @@
           "id": "14798246",
           "sb": "",
           "pb": ""
-        },
-        {
-          "firstName": "Gudaf",
-          "lastName": "Tsegay",
-          "nat": "ETH",
-          "id": "14595214",
-          "sb": "",
-          "pb": "8:22.65"
         }
       ]
     },
@@ -437,14 +437,6 @@
           "pb": "6.56"
         },
         {
-          "firstName": "Charles",
-          "lastName": "Dobson",
-          "nat": "GBR",
-          "id": "14762871",
-          "sb": "6.61",
-          "pb": "6.59"
-        },
-        {
           "firstName": "Ojie",
           "lastName": "Edoburun",
           "nat": "GBR",
@@ -453,12 +445,12 @@
           "pb": "6.56"
         },
         {
-          "firstName": "Jona",
-          "lastName": "Efoloko",
+          "firstName": "Charles",
+          "lastName": "Dobson",
           "nat": "GBR",
-          "id": "14595067",
-          "sb": "6.63",
-          "pb": "6.63"
+          "id": "14762871",
+          "sb": "6.61",
+          "pb": "6.59"
         },
         {
           "firstName": "Adam",
@@ -469,12 +461,12 @@
           "pb": "6.59"
         },
         {
-          "firstName": "Richard",
-          "lastName": "Akinyebo",
+          "firstName": "Jona",
+          "lastName": "Efoloko",
           "nat": "GBR",
-          "id": "14848864",
-          "sb": "6.73",
-          "pb": "6.73"
+          "id": "14595067",
+          "sb": "6.63",
+          "pb": "6.63"
         },
         {
           "firstName": "Sam",
@@ -483,6 +475,14 @@
           "id": "14455051",
           "sb": "6.74",
           "pb": "6.66"
+        },
+        {
+          "firstName": "Richard",
+          "lastName": "Akinyebo",
+          "nat": "GBR",
+          "id": "14848864",
+          "sb": "6.73",
+          "pb": "6.73"
         }
       ]
     },
@@ -559,11 +559,27 @@
           "pb": "7.39"
         },
         {
+          "firstName": "Andrew",
+          "lastName": "Pozzi",
+          "nat": "GBR",
+          "id": "14375897",
+          "sb": "7.80",
+          "pb": "7.43"
+        },
+        {
           "firstName": "Roger",
           "lastName": "Iribarne",
           "nat": "CUB",
           "id": "14518167",
           "sb": "7.48",
+          "pb": "7.48"
+        },
+        {
+          "firstName": "Damian",
+          "lastName": "Czykier",
+          "nat": "POL",
+          "id": "14434325",
+          "sb": "7.63",
           "pb": "7.48"
         },
         {
@@ -583,28 +599,12 @@
           "pb": "7.52"
         },
         {
-          "firstName": "Damian",
-          "lastName": "Czykier",
-          "nat": "POL",
-          "id": "14434325",
-          "sb": "7.63",
-          "pb": "7.48"
-        },
-        {
           "firstName": "David",
           "lastName": "King",
           "nat": "GBR",
           "id": "14452959",
           "sb": "7.63",
           "pb": "7.57"
-        },
-        {
-          "firstName": "Andrew",
-          "lastName": "Pozzi",
-          "nat": "GBR",
-          "id": "14375897",
-          "sb": "7.80",
-          "pb": "7.43"
         }
       ]
     }

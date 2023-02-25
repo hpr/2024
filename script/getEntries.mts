@@ -48,6 +48,12 @@ const schedules: { [k in DLMeet]: string } = {
 };
 
 const getDomain = (url: string) => url.match(/(^https?:\/\/.+?)\//)![1]!;
+const entrantSortFunc = (a: Entrant, b: Entrant) => {
+  if (!a.pb && !b.pb) return 0;
+  if (!a.pb) return 1;
+  if (!b.pb) return -1;
+  return a.pb.localeCompare(b.pb);
+};
 const entries: Entries = {};
 
 for (const key in schedules) {
@@ -92,7 +98,8 @@ for (const key in schedules) {
           const birthYear = arr[4];
 
           let id: string;
-          if (cache?.[meet]?.ids[`${firstName} ${lastName}`]) id = cache?.[meet]?.ids[`${firstName} ${lastName}`];
+          if (cache?.[meet]?.ids[`${firstName} ${lastName}`])
+            id = cache?.[meet]?.ids[`${firstName} ${lastName}`];
           else {
             const { data } = await (
               await fetch(
@@ -142,7 +149,7 @@ for (const key in schedules) {
       );
       entries[meet]![evt] = {
         date: '2023-02-25',
-        entrants: athletes,
+        entrants: athletes.sort(entrantSortFunc),
       };
     }
     continue;
@@ -191,12 +198,7 @@ for (const key in schedules) {
       date: `${year}-${month}-${day}T${document
         .querySelector('.time')!
         .getAttribute('data-starttime')}`,
-      entrants: entrants.sort((a, b) => {
-        if (!a.pb && !b.pb) return 0;
-        if (!a.pb) return 1;
-        if (!b.pb) return -1;
-        return a.pb.localeCompare(b.pb);
-      }),
+      entrants: entrants.sort(entrantSortFunc),
     };
   }
 }
