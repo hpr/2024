@@ -44,7 +44,14 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
   return (
     <Card withBorder p="xl" radius="md" className={classes.card}>
       {/* <Card.Section sx={{ backgroundImage: `url(${image})`, height: 140 }} /> */}
-      <Avatar src={avatar} size={80} radius={80} mx="auto" className={classes.avatar} />
+      <Avatar
+        src={avatar}
+        size={80}
+        radius={80}
+        mx="auto"
+        className={classes.avatar}
+        onClick={() => window.open(`https://worldathletics.org/athletes/_/${entrant.id}`, '_blank')}
+      />
       <Text align="center" size="lg" weight={500} mt="sm">
         {name}
       </Text>
