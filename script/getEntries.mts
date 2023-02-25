@@ -71,7 +71,7 @@ for (const key in schedules) {
       const texts = page.Texts.map((t) => t.R[0].T);
       const evt = decodeURIComponent(texts[1]) as AthleticsEvent;
       if (!runningEvents.flat().includes(evt)) continue;
-      // if (evt !== "Men's 1500 m") continue;
+      if (evt === "Men's 60 m") continue; // not world indoor tour
       const athStringArrs = texts
         .slice(43, -11)
         .reduce(

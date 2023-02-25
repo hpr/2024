@@ -77,7 +77,9 @@ export default function App() {
                 </Button>
               )}
             </CopyButton>
-            <Code mt={20} block>{picksText}</Code>
+            <Code mt={20} block>
+              {picksText}
+            </Code>
           </>
         ) : (
           <Text>Please complete your picks before sharing</Text>
@@ -104,14 +106,17 @@ export default function App() {
                     return {
                       icon: filled ? <Check /> : <Run />,
                       color: filled ? 'green' : 'blue',
-                      onClick: () => setEvt(linkEvt),
+                      onClick: () => {
+                        setEvt(linkEvt);
+                        setNavbarOpen(false);
+                      },
                       label,
                     };
                   })}
               />
             </Navbar.Section>
-            <Navbar.Section>
-              <User onClick={() => setModalOpen(true)} />
+            <Navbar.Section onClick={() => setModalOpen(true)}>
+              <User />
             </Navbar.Section>
           </Navbar>
         }
