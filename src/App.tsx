@@ -76,13 +76,14 @@ export default function App() {
       </Modal>
       <AppShell
         padding="md"
+        navbarOffsetBreakpoint="sm"
         navbar={
           <Navbar
             width={{ base: 300 }}
             hiddenBreakpoint="sm"
             hidden={!navbarOpen}
             height="calc(100% - 60px)"
-            p="xs"
+            p="md"
           >
             <Navbar.Section grow mt="xs">
               <MainLinks
@@ -131,7 +132,7 @@ export default function App() {
         })}
       >
         <Stack align="center" mt={0}>
-          <Group align="center">
+          <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
             {myTeamPicks.map(({ id, lastName }, i) => (
               <React.Fragment key={id}>
                 <Text sx={{ fontWeight: 'bold' }}>
@@ -148,8 +149,10 @@ export default function App() {
                 </Badge>
               </React.Fragment>
             ))}
-          </Group>
-          <Text weight={1000} size="xl">{evt}</Text>
+          </SimpleGrid>{' '}
+          <Text weight={1000} size="xl">
+            {evt}
+          </Text>
           {/* Event time:{' '}
           {new Date(entries?.[meet]?.[evt!]?.date!).toLocaleTimeString().replace(':00 ', ' ')} */}
           <SimpleGrid
