@@ -37,7 +37,7 @@ export function User({ onClick = () => {} }: { onClick?: React.MouseEventHandler
               Save Picks
             </Text>
             <Text color="dimmed" size="xs">
-              Save your picks and sign up
+              Export your picks
             </Text>
           </Box>
 

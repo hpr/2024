@@ -24,7 +24,7 @@ import { Check, Run } from 'tabler-icons-react';
 
 export default function App() {
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('doha');
+  const [meet] = useState<DLMeet>('birminghamIndoor');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -34,13 +34,24 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      setEntries(await (await fetch('entries.json')).json());
+      const entries = await (await fetch('entries.json')).json();
+      setEntries(entries);
+      setEvt(Object.keys(entries[meet] ?? [])[0] as AthleticsEvent);
     })();
   }, []);
 
+  useEffect(() => {
+    setMyTeam(JSON.parse(localStorage.getItem('myTeam') ?? '{}'));
+  }, []);
+
+  useEffect(() => {
+    if (Object.keys(myTeam).length) localStorage.setItem('myTeam', JSON.stringify(myTeam));
+  }, [myTeam]);
+
   const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
   const arePicksComplete =
-    Object.values(myTeam[meet] ?? {}).flat().length === Object.keys(entries?.[meet] ?? {}).length * 2;
+    Object.values(myTeam[meet] ?? {}).flat().length ===
+    Object.keys(entries?.[meet] ?? {}).length * 2;
 
   return (
     <Store.Provider value={{ myTeam, setMyTeam }}>
@@ -107,7 +118,7 @@ export default function App() {
                 />
               </MediaQuery>
               <Text size="xl" weight={500}>
-                Fantasy DL
+                Fantasy Indoor Tour
               </Text>
             </Group>
           </Header>
@@ -138,8 +149,9 @@ export default function App() {
               </React.Fragment>
             ))}
           </Group>
-          Entries Close:{' '}
-          {new Date(entries?.[meet]?.[evt!]?.date!).toLocaleTimeString().replace(':00 ', ' ')}
+          <Text weight={1000} size="xl">{evt}</Text>
+          {/* Event time:{' '}
+          {new Date(entries?.[meet]?.[evt!]?.date!).toLocaleTimeString().replace(':00 ', ' ')} */}
           <SimpleGrid
             cols={4}
             breakpoints={[

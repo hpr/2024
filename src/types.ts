@@ -1,4 +1,4 @@
-export type DLMeet = 'doha';
+export type DLMeet = 'doha' | 'birminghamIndoor';
 
 export type AthleticsEvent =
   | '100m Women'

@@ -1,4 +1,4 @@
-export type DLMeet = 'doha';
+export type DLMeet = 'doha' | 'birminghamIndoor';
 
 export type AthleticsEvent =
   | '100m Women'
@@ -20,7 +20,15 @@ export type AthleticsEvent =
   | '3000m SC Women'
   | '3000m SC Men'
   | '5000m Women'
-  | '5000m Men';
+  | '5000m Men'
+  | "Women's 60 m"
+  | "Men's 60 m"
+  | "Men's 60 m Hurdles"
+  | "Men's 400 m"
+  | "Women's 800 m"
+  | "Women's 1000 m"
+  | "Men's 1500 m"
+  | "Women's 3000 m";
 
 export type Entrant = {
   firstName: string;

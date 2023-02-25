@@ -26,6 +26,7 @@
     "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
+    "pdf2json": "^3.0.3",
     "@testing-library/dom": "^8.20.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
