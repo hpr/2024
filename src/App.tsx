@@ -4,12 +4,17 @@ import {
   Badge,
   Group,
   Header,
+  Modal,
   Navbar,
   SimpleGrid,
   Stack,
   Text,
+  Code,
+  useMantineTheme,
+  Burger,
+  MediaQuery,
 } from '@mantine/core';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
 import { AthleticsEvent, DLMeet, Entries, Team } from './types';
 import { Store } from './Store';
@@ -22,6 +27,10 @@ export default function App() {
   const [meet] = useState<DLMeet>('doha');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
+
+  const theme = useMantineTheme();
 
   useEffect(() => {
     (async () => {
@@ -30,13 +39,40 @@ export default function App() {
   }, []);
 
   const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
+  const arePicksComplete =
+    Object.values(myTeam[meet] ?? {}).flat().length === Object.keys(entries?.[meet] ?? {}).length * 2;
 
   return (
     <Store.Provider value={{ myTeam, setMyTeam }}>
+      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Your Picks">
+        {arePicksComplete ? (
+          <>
+            <Text mb={20}>Copy / paste this block to record your picks:</Text>
+            <Code block>
+              {Object.entries(myTeam[meet] ?? {})
+                .map(
+                  ([evt, [primary, secondary]]) =>
+                    primary &&
+                    secondary &&
+                    `${evt}: ${primary.firstName} ${primary.lastName} (${secondary.firstName} ${secondary.lastName})`
+                )
+                .join('\n')}
+            </Code>
+          </>
+        ) : (
+          <Text>Please complete your picks before sharing</Text>
+        )}
+      </Modal>
       <AppShell
         padding="md"
         navbar={
-          <Navbar width={{ base: 300 }} height="calc(100% - 60px)" p="xs">
+          <Navbar
+            width={{ base: 300 }}
+            hiddenBreakpoint="sm"
+            hidden={!navbarOpen}
+            height="calc(100% - 60px)"
+            p="xs"
+          >
             <Navbar.Section grow mt="xs">
               <MainLinks
                 links={Object.keys(entries?.[meet] ?? {})
@@ -54,13 +90,22 @@ export default function App() {
               />
             </Navbar.Section>
             <Navbar.Section>
-              <User />
+              <User onClick={() => setModalOpen(true)} />
             </Navbar.Section>
           </Navbar>
         }
         header={
           <Header height={60} p="xs">
             <Group sx={{ height: '100%' }} px={20} position="apart">
+              <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
+                <Burger
+                  opened={navbarOpen}
+                  onClick={() => setNavbarOpen((o) => !o)}
+                  size="sm"
+                  color={theme.colors.gray[6]}
+                  mr="xl"
+                />
+              </MediaQuery>
               <Text size="xl" weight={500}>
                 Fantasy DL
               </Text>
@@ -77,8 +122,10 @@ export default function App() {
         <Stack align="center" mt={0}>
           <Group align="center">
             {myTeamPicks.map(({ id, lastName }, i) => (
-              <>
-                {i === 0 ? 'Primary Pick:' : 'Secondary Pick:'}
+              <React.Fragment key={id}>
+                <Text sx={{ fontWeight: 'bold' }}>
+                  {i === 0 ? 'Primary Pick:' : 'Secondary Pick:'}
+                </Text>
                 <Badge
                   key={id}
                   sx={{ paddingLeft: 0 }}
@@ -88,12 +135,19 @@ export default function App() {
                 >
                   {lastName}
                 </Badge>
-              </>
+              </React.Fragment>
             ))}
           </Group>
           Entries Close:{' '}
           {new Date(entries?.[meet]?.[evt!]?.date!).toLocaleTimeString().replace(':00 ', ' ')}
-          <SimpleGrid cols={4} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+          <SimpleGrid
+            cols={4}
+            breakpoints={[
+              { maxWidth: 'sm', cols: 1 },
+              { maxWidth: 'md', cols: 2 },
+              { maxWidth: 'lg', cols: 3 },
+            ]}
+          >
             {entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
               const { id, firstName, lastName, pb, sb, nat } = entrant;
               return (
@@ -113,7 +167,7 @@ export default function App() {
               );
             })}
           </SimpleGrid>
-        </Stack>{' '}
+        </Stack>
       </AppShell>
     </Store.Provider>
   );

@@ -1,7 +1,7 @@
 import { ChevronRight, ChevronLeft } from 'tabler-icons-react';
 import { UnstyledButton, Group, Avatar, Text, Box, useMantineTheme } from '@mantine/core';
 
-export function User() {
+export function User({ onClick = () => {} }: { onClick?: React.MouseEventHandler }) {
   const theme = useMantineTheme();
 
   return (
@@ -32,9 +32,9 @@ export function User() {
             src="img/avatars/default_128x128.png"
             radius="xl"
           />
-          <Box sx={{ flex: 1 }}>
+          <Box sx={{ flex: 1 }} onClick={onClick}>
             <Text size="sm" weight={500}>
-              Sign Up
+              Save Picks
             </Text>
             <Text color="dimmed" size="xs">
               Save your picks and sign up
