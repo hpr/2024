@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "getEntries": "node --loader ts-node/esm script/getEntries.mts",
+    "getResults": "node --loader ts-node/esm script/getResults.mts",
     "getAvatars": "node --loader ts-node/esm script/getAvatars.mts",
     "build": "tsc && vite build",
     "preview": "vite preview",

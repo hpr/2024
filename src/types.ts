@@ -31,11 +31,19 @@ export type Entrant = {
   nat: string;
 };
 
+export type ResultEntrant = {
+  mark: string;
+  place: number;
+  notes: string;
+  entrant: Entrant;
+};
+
 export type Entries = {
   [k in DLMeet]?: {
     [k in AthleticsEvent]?: {
       entrants: Entrant[];
       date: string;
+      results?: ResultEntrant[];
     };
   };
 };

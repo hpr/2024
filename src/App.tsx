@@ -14,7 +14,9 @@ import {
   Burger,
   MediaQuery,
   Button,
+  List,
   CopyButton,
+  Accordion,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
@@ -22,7 +24,8 @@ import { AthleticsEvent, DLMeet, Entries, Team } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
-import { Check, Run } from 'tabler-icons-react';
+import { Calculator, Check, Run } from 'tabler-icons-react';
+import { scoring } from './const';
 
 export default function App() {
   const [entries, setEntries] = useState<Entries | null>(null);
@@ -31,6 +34,7 @@ export default function App() {
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
+  const [page, setPage] = useState<'events' | 'scoring'>('events');
 
   const theme = useMantineTheme();
 
@@ -98,21 +102,36 @@ export default function App() {
           >
             <Navbar.Section grow mt="xs">
               <MainLinks
-                links={Object.keys(entries?.[meet] ?? {})
-                  .sort((a, b) => Number.parseInt(a) - Number.parseInt(b))
-                  .map((label) => {
-                    const linkEvt = label as AthleticsEvent;
-                    const filled = myTeam[meet]?.[linkEvt]?.length === 2;
-                    return {
-                      icon: filled ? <Check /> : <Run />,
-                      color: filled ? 'green' : 'blue',
-                      onClick: () => {
-                        setEvt(linkEvt);
-                        setNavbarOpen(false);
-                      },
-                      label,
-                    };
-                  })}
+                links={[
+                  ...(arePicksComplete
+                    ? [
+                        {
+                          icon: <Calculator />,
+                          color: 'black',
+                          label: 'Scoring',
+                          onClick: () => {
+                            setPage('scoring');
+                          },
+                        },
+                      ]
+                    : []),
+                  ...Object.keys(entries?.[meet] ?? {})
+                    .sort((a, b) => Number.parseInt(a) - Number.parseInt(b))
+                    .map((label) => {
+                      const linkEvt = label as AthleticsEvent;
+                      const filled = myTeam[meet]?.[linkEvt]?.length === 2;
+                      return {
+                        icon: filled ? <Check /> : <Run />,
+                        color: filled ? 'green' : 'blue',
+                        onClick: () => {
+                          setEvt(linkEvt);
+                          setPage('events');
+                          setNavbarOpen(false);
+                        },
+                        label,
+                      };
+                    }),
+                ]}
               />
             </Navbar.Section>
             <Navbar.Section onClick={() => setModalOpen(true)}>
@@ -146,56 +165,106 @@ export default function App() {
         })}
       >
         <Stack align="center" mt={0}>
-          <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-            {myTeamPicks.map(({ id, lastName }, i) => (
-              <React.Fragment key={id}>
-                <Text sx={{ fontWeight: 'bold' }}>
-                  {i === 0 ? 'Primary Pick:' : 'Secondary Pick:'}
-                </Text>
-                <Badge
-                  key={id}
-                  sx={{ paddingLeft: 0 }}
-                  size="lg"
-                  radius="xl"
-                  leftSection={<Avatar src={`img/avatars/${id}_128x128.png`} mr={5} size={24} />}
-                >
-                  {lastName}
-                </Badge>
-              </React.Fragment>
-            ))}
-          </SimpleGrid>{' '}
-          <Text weight={1000} size="xl">
-            {evt}
-          </Text>
-          {/* Event time:{' '}
+          {page === 'scoring' ? (
+            <>
+              Scoring:
+              <Accordion variant="contained">
+                {Object.keys(entries?.[meet]!)
+                  .filter((evt) => entries![meet]![evt as AthleticsEvent]!.results)
+                  .map((evt) => {
+                    const picks = myTeam[meet]![evt as AthleticsEvent]!;
+                    const results = entries![meet]![evt as AthleticsEvent]?.results!;
+                    const primaryPlace =
+                      results.findIndex((res) => picks[0].id === res.entrant.id) + 1;
+                    const secondaryPlace =
+                      results.findIndex((res) => picks[1].id === res.entrant.id) + 1;
+
+                    const pickToScore =
+                      primaryPlace <= 3 ? 0 : secondaryPlace < primaryPlace ? 1 : 0;
+                    const score = scoring[(pickToScore === 0 ? primaryPlace : secondaryPlace) - 1];
+                    return (
+                      <Accordion.Item value={evt} key={evt}>
+                        <Accordion.Control>{evt} &mdash; {score} pts</Accordion.Control>
+                        <Accordion.Panel>
+                          <List type="ordered">
+                            {results.map(({ entrant = {}, mark, notes, place }, i) => (
+                              <List.Item
+                                key={entrant.id ?? i}
+                                icon={
+                                  <Avatar
+                                    radius="xl"
+                                    size="sm"
+                                    src={`img/avatars/${entrant.id ?? 'default'}_128x128.png`}
+                                  />
+                                }
+                              >
+                                {place}. {entrant.firstName} {entrant.lastName} &mdash; {mark}
+                                {notes ? ` (${notes})` : ''}
+                              </List.Item>
+                            ))}
+                          </List>
+                        </Accordion.Panel>
+                      </Accordion.Item>
+                    );
+                  })}
+              </Accordion>
+            </>
+          ) : (
+            <>
+              <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+                {myTeamPicks.map(({ id, lastName }, i) => (
+                  <React.Fragment key={id}>
+                    <Text sx={{ fontWeight: 'bold' }}>
+                      {i === 0 ? 'Primary Pick:' : 'Secondary Pick:'}
+                    </Text>
+                    <Badge
+                      key={id}
+                      sx={{ paddingLeft: 0 }}
+                      size="lg"
+                      radius="xl"
+                      leftSection={
+                        <Avatar src={`img/avatars/${id}_128x128.png`} mr={5} size={24} />
+                      }
+                    >
+                      {lastName}
+                    </Badge>
+                  </React.Fragment>
+                ))}
+              </SimpleGrid>{' '}
+              <Text weight={1000} size="xl">
+                {evt}
+              </Text>
+              {/* Event time:{' '}
           {new Date(entries?.[meet]?.[evt!]?.date!).toLocaleTimeString().replace(':00 ', ' ')} */}
-          <SimpleGrid
-            cols={4}
-            breakpoints={[
-              { maxWidth: 'sm', cols: 1 },
-              { maxWidth: 'md', cols: 2 },
-              { maxWidth: 'lg', cols: 3 },
-            ]}
-          >
-            {entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
-              const { id, firstName, lastName, pb, sb, nat } = entrant;
-              return (
-                <AthleteCard
-                  key={id}
-                  avatar={`img/avatars/${id}_128x128.png`}
-                  meet={meet}
-                  event={evt!}
-                  entrant={entrant}
-                  name={`${firstName} ${lastName}`}
-                  job={nat}
-                  stats={[
-                    { label: 'PB', value: pb! },
-                    { label: 'SB', value: sb! },
-                  ].filter((x) => x.value)}
-                />
-              );
-            })}
-          </SimpleGrid>
+              <SimpleGrid
+                cols={4}
+                breakpoints={[
+                  { maxWidth: 'sm', cols: 1 },
+                  { maxWidth: 'md', cols: 2 },
+                  { maxWidth: 'lg', cols: 3 },
+                ]}
+              >
+                {entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
+                  const { id, firstName, lastName, pb, sb, nat } = entrant;
+                  return (
+                    <AthleteCard
+                      key={id}
+                      avatar={`img/avatars/${id}_128x128.png`}
+                      meet={meet}
+                      event={evt!}
+                      entrant={entrant}
+                      name={`${firstName} ${lastName}`}
+                      job={nat}
+                      stats={[
+                        { label: 'PB', value: pb! },
+                        { label: 'SB', value: sb! },
+                      ].filter((x) => x.value)}
+                    />
+                  );
+                })}
+              </SimpleGrid>
+            </>
+          )}
         </Stack>
       </AppShell>
     </Store.Provider>
