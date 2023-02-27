@@ -1,5 +1,7 @@
 export type DLMeet = 'doha' | 'birminghamIndoor';
 
+export type AuthPage = 'register' | 'addPicks';
+
 export type AthleticsEvent =
   | '100m Women'
   | '100m Men'
@@ -51,5 +53,5 @@ export type Entries = {
 export type Team = {
   [k in DLMeet]?: {
     [k in AthleticsEvent]?: Entrant[];
-  }
-}
+  };
+};

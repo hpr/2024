@@ -17,15 +17,19 @@ import {
   List,
   CopyButton,
   Accordion,
+  SegmentedControl,
+  TextInput,
+  PasswordInput,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
-import { AthleticsEvent, DLMeet, Entries, Team } from './types';
+import { AthleticsEvent, AuthPage, DLMeet, Entries, Team } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
 import { Calculator, Check, Run } from 'tabler-icons-react';
-import { scoring } from './const';
+import { scoring, SERVER_URL } from './const';
+import { isEmail, useForm } from '@mantine/form';
 
 export default function App() {
   const [entries, setEntries] = useState<Entries | null>(null);
@@ -35,6 +39,19 @@ export default function App() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
   const [page, setPage] = useState<'events' | 'scoring'>('events');
+  const [authPage, setAuthPage] = useState<AuthPage>('register');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
+  const registerForm = useForm({
+    initialValues: {
+      name: '',
+      email: '',
+      password: '',
+    },
+    validate: {
+      email: isEmail('Invalid email'),
+    },
+  });
 
   const theme = useMantineTheme();
 
@@ -70,10 +87,82 @@ export default function App() {
 
   return (
     <Store.Provider value={{ myTeam, setMyTeam }}>
-      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Your Picks">
+      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Submit Picks">
         {arePicksComplete ? (
-          <>
-            <Text mb={15}>Copy / paste this block to record your picks:</Text>
+          <Stack>
+            <SegmentedControl
+              value={authPage}
+              onChange={(v: AuthPage) => setAuthPage(v)}
+              data={[
+                { label: 'Login & Submit', value: 'addPicks' },
+                { label: 'Register', value: 'register' },
+              ]}
+              mb={10}
+            />
+            <form
+              onChange={() => setIsSuccess(false)}
+              onSubmit={registerForm.onSubmit(async (vals) => {
+                setIsLoading(true);
+                const { status } = await (
+                  await fetch(SERVER_URL, {
+                    method: 'POST',
+                    body: JSON.stringify({
+                      action: authPage,
+                      ...vals,
+                      ...(authPage === 'addPicks' ? { picksJson: myTeam[meet] } : {}),
+                    }),
+                  })
+                ).json();
+                setIsLoading(false);
+                if (status === 'success') setIsSuccess(true);
+                else
+                  registerForm.setErrors({
+                    email: `Error in ${
+                      authPage === 'register' ? 'registration' : 'login'
+                    }, try again?`,
+                  });
+              })}
+            >
+              <TextInput
+                withAsterisk
+                label="Email"
+                placeholder="john@example.com"
+                {...registerForm.getInputProps('email')}
+              />
+              {authPage === 'register' && (
+                <TextInput
+                  withAsterisk
+                  label="Name"
+                  placeholder="John (will be displayed on leaderboards)"
+                  {...registerForm.getInputProps('name')}
+                />
+              )}
+              <PasswordInput
+                withAsterisk
+                label="Password"
+                placeholder="Password"
+                {...registerForm.getInputProps('password')}
+              />
+              <Group position="right" mt="md">
+                <Button
+                  leftIcon={isSuccess ? <Check /> : undefined}
+                  type="submit"
+                  loading={isLoading}
+                >
+                  {authPage === 'register'
+                    ? isSuccess
+                      ? 'Registered'
+                      : 'Register'
+                    : isSuccess
+                    ? 'Submitted Picks!'
+                    : 'Submit Picks'}
+                </Button>
+              </Group>
+            </form>
+
+            <Code mt={20} block>
+              {picksText}
+            </Code>
             <CopyButton value={picksText}>
               {({ copied, copy }) => (
                 <Button color={copied ? 'teal' : 'blue'} onClick={copy}>
@@ -81,10 +170,7 @@ export default function App() {
                 </Button>
               )}
             </CopyButton>
-            <Code mt={20} block>
-              {picksText}
-            </Code>
-          </>
+          </Stack>
         ) : (
           <Text>Please complete your picks before sharing</Text>
         )}
@@ -111,6 +197,7 @@ export default function App() {
                           label: 'Scoring',
                           onClick: () => {
                             setPage('scoring');
+                            setNavbarOpen(false);
                           },
                         },
                       ]
@@ -184,7 +271,9 @@ export default function App() {
                     const score = scoring[(pickToScore === 0 ? primaryPlace : secondaryPlace) - 1];
                     return (
                       <Accordion.Item value={evt} key={evt}>
-                        <Accordion.Control>{evt} &mdash; {score} pts</Accordion.Control>
+                        <Accordion.Control>
+                          {evt} &mdash; {score} pts
+                        </Accordion.Control>
                         <Accordion.Panel>
                           <List type="ordered">
                             {results.map(({ entrant = {}, mark, notes, place }, i) => (
@@ -198,8 +287,15 @@ export default function App() {
                                   />
                                 }
                               >
-                                {place}. {entrant.firstName} {entrant.lastName} &mdash; {mark}
-                                {notes ? ` (${notes})` : ''}
+                                <Text
+                                  sx={{
+                                    fontWeight:
+                                      entrant.id === picks[pickToScore].id ? 'bold' : undefined,
+                                  }}
+                                >
+                                  {place}. {entrant.firstName} {entrant.lastName} &mdash; {mark}
+                                  {notes ? ` (${notes})` : ''}
+                                </Text>
                               </List.Item>
                             ))}
                           </List>
