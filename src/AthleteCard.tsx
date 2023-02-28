@@ -56,7 +56,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
         {name}
       </Text>
       <Text align="center" size="sm" color="dimmed">
-        {job}
+        {entrant.team ? `${entrant.team} (${job})` : job}
       </Text>
       <Group mt="md" position="center" spacing={30}>
         {items}

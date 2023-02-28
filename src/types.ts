@@ -31,6 +31,7 @@ export type Entrant = {
   pb: string | null;
   sb: string | null;
   nat: string;
+  team?: string;
 };
 
 export type ResultEntrant = {
