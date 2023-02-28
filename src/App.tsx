@@ -251,7 +251,7 @@ export default function App() {
                 />
               </MediaQuery>
               <Text size="xl" weight={500}>
-                Fantasy Indoor Tour
+                Fantasy NCAA Indoors
               </Text>
             </Group>
           </Header>
