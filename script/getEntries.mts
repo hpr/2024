@@ -56,11 +56,11 @@ const getWaId = async (
       method: 'POST',
     })
   ).json();
-  const { aaAthleteId, country, givenName, familyName } = data.searchCompetitors.find(
-    (ath: { birthDate: string }) => {
+  const { aaAthleteId, country } = data.searchCompetitors.find(
+    (ath: { birthDate: string, givenName: string, familyName: string }) => {
       if (
-        firstName.toLowerCase() !== givenName.toLowerCase() ||
-        lastName.toLowerCase() !== familyName.toLowerCase()
+        firstName.toLowerCase() !== ath.givenName.toLowerCase() ||
+        lastName.toLowerCase() !== ath.familyName.toLowerCase()
       )
         return false;
       if (!ath.birthDate) return true;

@@ -172,7 +172,19 @@ export default function App() {
             </CopyButton>
           </Stack>
         ) : (
-          <Text>Please complete your picks before sharing</Text>
+          <>
+            <Text mb={20}>
+              Please complete your picks before submission. You still need to select for these
+              events:
+            </Text>
+            <List>
+              {Object.keys(entries?.[meet] ?? {})
+                .filter((evt) => (myTeam[meet]?.[evt as AthleticsEvent]?.length ?? 0) < 2)
+                .map((evt) => (
+                  <List.Item key={evt}>{evt}</List.Item>
+                ))}
+            </List>
+          </>
         )}
       </Modal>
       <AppShell
