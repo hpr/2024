@@ -1,4 +1,4 @@
-export type DLMeet = 'doha' | 'birminghamIndoor';
+export type DLMeet = 'doha' | 'birminghamIndoor' | 'ncaai23';
 
 export type AthleticsEvent =
   | '100m Women'
@@ -28,7 +28,15 @@ export type AthleticsEvent =
   | "Women's 800 m"
   | "Women's 1000 m"
   | "Men's 1500 m"
-  | "Women's 3000 m";
+  | "Women's 3000 m"
+  | "Men's 60 Meters"
+  | "Men's 60 Hurdles"
+  | "Men's 200 Meters"
+  | "Men's 400 Meters"
+  | "Men's 800 Meters"
+  | "Men's Mile"
+  | "Men's 3000 Meters"
+  | "Men's 5000 Meters";
 
 export type Entrant = {
   firstName: string;
@@ -37,6 +45,7 @@ export type Entrant = {
   pb: string | null;
   sb: string | null;
   nat: string;
+  team?: string;
 };
 
 export type ResultEntrant = {
@@ -66,6 +75,6 @@ export type MeetCache = {
         results?: string;
       };
     };
-    ids: { [name: string]: string };
+    ids: { [name: string]: { country: string; id: string } };
   };
 };

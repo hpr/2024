@@ -33,7 +33,7 @@ import { isEmail, useForm } from '@mantine/form';
 
 export default function App() {
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('birminghamIndoor');
+  const [meet] = useState<DLMeet>('ncaai23');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);

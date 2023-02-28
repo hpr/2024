@@ -11,6 +11,8 @@ const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 const schedules: { [k in DLMeet]: string } = {
   doha: 'https://web.archive.org/web/20220512074007/https://doha.diamondleague.com/programme-results-doha/',
   birminghamIndoor: './script/files/EntryList.PDF',
+  ncaai23:
+    'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=16&event_type=&year=&gender=m',
 };
 
 const getDomain = (url: string) => url.match(/(^https?:\/\/.+?)\//)![1]!;
@@ -20,14 +22,118 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   if (!b.pb) return -1;
   return a.pb.localeCompare(b.pb);
 };
+const getWaId = async (
+  firstName: string,
+  lastName: string,
+  {
+    birthYear = '',
+    college = false,
+    indoors,
+    gender,
+  }: { birthYear?: string; college?: boolean; indoors?: boolean; gender?: string }
+) => {
+  const { data } = await (
+    await fetch('https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql', {
+      headers: { 'x-api-key': 'da2-erlx4oraybbjrlxorsdgmemgua' },
+      body: JSON.stringify({
+        operationName: 'SearchCompetitors',
+        variables: {
+          query: `${firstName} ${lastName}`,
+          environment: indoors ? 'indoor' : undefined,
+          gender,
+        },
+        query: `
+        query SearchCompetitors($query: String, $gender: GenderType, $disciplineCode: String, $environment: String, $countryCode: String) {
+          searchCompetitors(query: $query, gender: $gender, disciplineCode: $disciplineCode, environment: $environment, countryCode: $countryCode) {
+            aaAthleteId
+            birthDate
+            country
+            givenName
+            familyName
+          }
+        }`,
+      }),
+      method: 'POST',
+    })
+  ).json();
+  const { aaAthleteId, country, givenName, familyName } = data.searchCompetitors.find(
+    (ath: { birthDate: string }) => {
+      if (
+        firstName.toLowerCase() !== givenName.toLowerCase() ||
+        lastName.toLowerCase() !== familyName.toLowerCase()
+      )
+        return false;
+      if (!ath.birthDate) return true;
+      if (birthYear) return ath.birthDate.slice(-4) === birthYear;
+      if (college) return +ath.birthDate.slice(-4) > 1997;
+    }
+  );
+  return { id: aaAthleteId, country };
+};
+
 const entries: Entries = {};
 
 const getEntries = async () => {
   for (const key in schedules) {
     const meet = key as DLMeet;
-    if (meet !== 'birminghamIndoor') continue;
+    if (meet !== 'ncaai23') continue;
     entries[meet] = {};
-    if (schedules[meet].endsWith('.PDF')) {
+    if (schedules[meet].startsWith('https://www.tfrrs.org')) {
+      cache[meet] ??= { events: {}, ids: {} };
+      cache[meet].schedule ??= await (await fetch(schedules[meet])).text();
+      const { document } = new JSDOM(cache[meet].schedule).window;
+      const eventDivs = document.querySelectorAll('.gender_m');
+      for (const eventDiv of eventDivs) {
+        const evt = `Men's ${eventDiv
+          .querySelector('.custom-table-title > h3')
+          ?.textContent?.trim()}` as AthleticsEvent;
+        if (!runningEvents.flat().includes(evt)) continue;
+        const athletes: Entrant[] = [];
+        for (const row of eventDiv.querySelectorAll('.allRows')) {
+          const [lastName, firstName] = row
+            .querySelector('.tablesaw-priority-1')!
+            .textContent!.trim()
+            .split(', ')
+            .map((name) => name.trim());
+          const fullName = `${firstName} ${lastName}`;
+          const { id, country } = (cache[meet].ids[fullName] ??= await getWaId(
+            firstName,
+            lastName,
+            {
+              college: true,
+              indoors: true,
+              gender: 'male',
+            }
+          ));
+          const sbAnchor = [
+            ...row.querySelectorAll('a[href^="https://www.tfrrs.org/results/"]'),
+          ].find((a) =>
+            a.getAttribute('href')?.match(/^https:\/\/www.tfrrs.org\/results\/\d+\/\d+\/.+?\/.+/)
+          );
+          const sb =
+            sbAnchor?.parentElement?.tagName === 'SPAN'
+              ? sbAnchor.parentElement.getAttribute('title')?.match(/([\d.:]+)/)![1]
+              : sbAnchor?.textContent?.trim();
+          athletes.push({
+            id,
+            team: row.querySelector('a[href^="https://www.tfrrs.org/teams/"]')?.textContent?.trim(),
+            nat: country,
+            pb: '',
+            sb: sb!,
+            firstName,
+            lastName,
+          });
+          console.log(athletes.at(-1));
+        }
+        entries[meet] ??= {};
+        entries[meet]![evt] = {
+          date: '',
+          entrants: athletes.sort(entrantSortFunc),
+        };
+        fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+      }
+      continue;
+    } else if (schedules[meet].endsWith('.PDF')) {
       const pdfParser = new PDFParser();
       const pdfData: Output = await new Promise((res, rej) => {
         pdfParser.loadPDF(schedules[meet]);
@@ -66,34 +172,13 @@ const getEntries = async () => {
 
             let id: string;
             if (cache?.[meet]?.ids[`${firstName} ${lastName}`])
-              id = cache?.[meet]?.ids[`${firstName} ${lastName}`];
+              id = cache?.[meet]?.ids[`${firstName} ${lastName}`].id;
             else {
-              const { data } = await (
-                await fetch(
-                  'https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql',
-                  {
-                    headers: { 'x-api-key': 'da2-erlx4oraybbjrlxorsdgmemgua' },
-                    body: JSON.stringify({
-                      operationName: 'SearchCompetitors',
-                      variables: { query: `${firstName} ${lastName}` },
-                      query: `
-                    query SearchCompetitors($query: String, $gender: GenderType, $disciplineCode: String, $environment: String, $countryCode: String) {
-                      searchCompetitors(query: $query, gender: $gender, disciplineCode: $disciplineCode, environment: $environment, countryCode: $countryCode) {
-                        aaAthleteId
-                        birthDate
-                      }
-                    }`,
-                    }),
-                    method: 'POST',
-                  }
-                )
-              ).json();
-              id = data.searchCompetitors.find(
-                (ath: { birthDate: string }) =>
-                  !ath.birthDate || ath.birthDate.slice(-4) === birthYear
-              ).aaAthleteId;
               cache[meet] ??= { schedule: '', events: {}, ids: {} };
-              cache[meet].ids[`${firstName} ${lastName}`] = id;
+              cache[meet].ids[`${firstName} ${lastName}`] = await getWaId(firstName, lastName, {
+                birthYear,
+              });
+              id = cache[meet].ids[`${firstName} ${lastName}`].id;
               fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
             }
 
@@ -132,13 +217,16 @@ const getEntries = async () => {
         url: elem.querySelector('.links a')!.getAttribute('href')!,
       }))
       .filter(({ name }) => runningEvents.flat().includes(name as AthleticsEvent));
-    for (const { name, url } of events) {
+    for (const { name: origName, url } of events) {
+      const name = origName as AthleticsEvent;
       if (!cache[meet].events[name]?.startlist) {
         cache[meet].events[name] ??= {};
-        cache[meet].events[name].startlist = await (await fetch(getDomain(schedules[meet]) + url)).text();
+        cache[meet].events[name]!.startlist = await (
+          await fetch(getDomain(schedules[meet]) + url)
+        ).text();
         fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
       }
-      const { document } = new JSDOM(cache[meet].events[name].startlist).window;
+      const { document } = new JSDOM(cache[meet].events[name]!.startlist).window;
       console.log(name);
       const entrants: Entrant[] = [...document.querySelectorAll('.tableBody .row')].map((elem) => {
         const [lastName, firstName] = elem
@@ -171,6 +259,7 @@ const getEntries = async () => {
     }
   }
   fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
+  fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 };
 
-// getEntries();
+getEntries();

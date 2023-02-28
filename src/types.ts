@@ -1,4 +1,4 @@
-export type DLMeet = 'doha' | 'birminghamIndoor';
+export type DLMeet = 'doha' | 'birminghamIndoor' | 'ncaai23';
 
 export type AuthPage = 'register' | 'addPicks';
 
