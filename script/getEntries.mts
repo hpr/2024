@@ -8,11 +8,15 @@ import { CACHE_PATH, ENTRIES_PATH, runningEvents } from './const.mjs';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 
-const schedules: { [k in DLMeet]: string } = {
-  doha: 'https://web.archive.org/web/20220512074007/https://doha.diamondleague.com/programme-results-doha/',
-  birminghamIndoor: './script/files/EntryList.PDF',
-  ncaai23:
+const schedules: { [k in DLMeet]: string[] } = {
+  doha: [
+    'https://web.archive.org/web/20220512074007/https://doha.diamondleague.com/programme-results-doha/',
+  ],
+  birminghamIndoor: ['./script/files/EntryList.PDF'],
+  ncaai23: [
     'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=16&event_type=&year=&gender=m',
+    'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=16&event_type=&year=&gender=f',
+  ],
 };
 
 const getDomain = (url: string) => url.match(/(^https?:\/\/.+?)\//)![1]!;
@@ -57,15 +61,29 @@ const getWaId = async (
     })
   ).json();
   const { aaAthleteId, country } = data.searchCompetitors.find(
-    (ath: { birthDate: string, givenName: string, familyName: string }) => {
+    (ath: { birthDate: string; givenName: string; familyName: string }) => {
+      const normalize = (name: string) => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      const aliases: { [k: string]: string[] } = {
+        Izzy: ['Izzy', 'Isabella'],
+        Olemomoi: ['Chebet', 'Olemomoi'],
+        Samantha: ['Samantha', 'Sam'],
+      };
       if (
-        firstName.toLowerCase() !== ath.givenName.toLowerCase() ||
-        lastName.toLowerCase() !== ath.familyName.toLowerCase()
+        ((aliases[firstName] ?? [firstName]) as string[]).every((name) => {
+          return !normalize(ath.givenName).toLowerCase().startsWith(normalize(name).toLowerCase());
+        })
       )
         return false;
+      if (
+        ((aliases[lastName] ?? [lastName]) as string[]).every(
+          (name) => normalize(name).toLowerCase() !== normalize(ath.familyName).toLowerCase()
+        )
+      )
+        return false;
+
       if (!ath.birthDate) return true;
       if (birthYear) return ath.birthDate.slice(-4) === birthYear;
-      if (college) return +ath.birthDate.slice(-4) > 1997;
+      if (college) return +ath.birthDate.slice(-4) >= 1996;
     }
   );
   return { id: aaAthleteId, country };
@@ -78,184 +96,195 @@ const getEntries = async () => {
     const meet = key as DLMeet;
     if (meet !== 'ncaai23') continue;
     entries[meet] = {};
-    if (schedules[meet].startsWith('https://www.tfrrs.org')) {
-      cache[meet] ??= { events: {}, ids: {} };
-      cache[meet].schedule ??= await (await fetch(schedules[meet])).text();
-      const { document } = new JSDOM(cache[meet].schedule).window;
-      const eventDivs = document.querySelectorAll('.gender_m');
-      for (const eventDiv of eventDivs) {
-        const evt = `Men's ${eventDiv
-          .querySelector('.custom-table-title > h3')
-          ?.textContent?.trim()}` as AthleticsEvent;
-        if (!runningEvents.flat().includes(evt)) continue;
-        const athletes: Entrant[] = [];
-        for (const row of eventDiv.querySelectorAll('.allRows')) {
-          const [lastName, firstName] = row
-            .querySelector('.tablesaw-priority-1')!
-            .textContent!.trim()
-            .split(', ')
-            .map((name) => name.trim());
-          const fullName = `${firstName} ${lastName}`;
-          const { id, country } = (cache[meet].ids[fullName] ??= await getWaId(
-            firstName,
-            lastName,
-            {
-              college: true,
-              indoors: true,
-              gender: 'male',
-            }
-          ));
-          const sbAnchor = [
-            ...row.querySelectorAll('a[href^="https://www.tfrrs.org/results/"]'),
-          ].find((a) =>
-            a.getAttribute('href')?.match(/^https:\/\/www.tfrrs.org\/results\/\d+\/\d+\/.+?\/.+/)
-          );
-          const sb =
-            sbAnchor?.parentElement?.tagName === 'SPAN'
-              ? sbAnchor.parentElement.getAttribute('title')?.match(/([\d.:]+)/)![1]
-              : sbAnchor?.textContent?.trim();
-          athletes.push({
-            id,
-            team: row.querySelector('a[href^="https://www.tfrrs.org/teams/"]')?.textContent?.trim(),
-            nat: country,
-            pb: '',
-            sb: sb!,
-            firstName,
-            lastName,
-          });
-          console.log(athletes.at(-1));
-        }
-        entries[meet] ??= {};
-        entries[meet]![evt] = {
-          date: '',
-          entrants: athletes.sort(entrantSortFunc),
-        };
-        fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
-      }
-      continue;
-    } else if (schedules[meet].endsWith('.PDF')) {
-      const pdfParser = new PDFParser();
-      const pdfData: Output = await new Promise((res, rej) => {
-        pdfParser.loadPDF(schedules[meet]);
-        pdfParser.on('pdfParser_dataReady', res);
-        pdfParser.on('pdfParser_dataError', rej);
-      });
-      for (const page of pdfData.Pages) {
-        const texts = page.Texts.map((t) => t.R[0].T);
-        const evt = decodeURIComponent(texts[1]) as AthleticsEvent;
-        if (!runningEvents.flat().includes(evt)) continue;
-        if (evt === "Men's 60 m") continue; // not world indoor tour
-        const athStringArrs = texts
-          .slice(43, -11)
-          .reduce(
-            ({ num, arr, lastNumIdx }, str, i) => {
-              if (+str === num + 1 && i > lastNumIdx + 1) return { num: ++num, arr, lastNumIdx: i };
-              arr[num] ??= [];
-              if (str === 'PAC') delete arr[num]; // pacer
-              else arr[num].push(str);
-              return { num, arr, lastNumIdx };
-            },
-            { num: 0, arr: [] as string[][], lastNumIdx: -Infinity }
-          )
-          .arr.filter((x) => x);
-        // console.log(athStringArrs);
-        const athletes: Entrant[] = await Promise.all(
-          athStringArrs.map(async (arr) => {
-            const nameWords = decodeURIComponent(arr[2]).split(' ');
-            const firstNameStartIdx = nameWords.findIndex((word) => word.toUpperCase() !== word);
-            const lastName = nameWords.slice(0, firstNameStartIdx).join(' ');
-            const firstName = nameWords.slice(firstNameStartIdx).join(' ');
-            let pb = '';
-            let sb = '';
-
-            const birthYear = arr[4];
-
-            let id: string;
-            if (cache?.[meet]?.ids[`${firstName} ${lastName}`])
-              id = cache?.[meet]?.ids[`${firstName} ${lastName}`].id;
-            else {
-              cache[meet] ??= { schedule: '', events: {}, ids: {} };
-              cache[meet].ids[`${firstName} ${lastName}`] = await getWaId(firstName, lastName, {
-                birthYear,
-              });
-              id = cache[meet].ids[`${firstName} ${lastName}`].id;
-              fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
-            }
-
-            if (arr.length === 6) {
-              pb = arr[5];
-            }
-            if (arr.length === 7) {
-              sb = arr[5];
-              pb = arr[6];
-            }
-            return {
+    for (const meetScheduleUrl of schedules[meet]) {
+      if (meetScheduleUrl.startsWith('https://www.tfrrs.org')) {
+        const isMale = meetScheduleUrl.endsWith('m');
+        cache[meet] ??= { events: {}, ids: {}, schedule: {} };
+        cache[meet].schedule[isMale ? 'm' : 'f'] ??= await (await fetch(meetScheduleUrl)).text();
+        const { document } = new JSDOM(cache[meet].schedule[isMale ? 'm' : 'f']).window;
+        const eventDivs = document.querySelectorAll(`.gender_${isMale ? 'm' : 'f'}`);
+        for (const eventDiv of eventDivs) {
+          const evt = `${isMale ? 'Men' : 'Women'}'s ${eventDiv
+            .querySelector('.custom-table-title > h3')
+            ?.textContent?.trim()}` as AthleticsEvent;
+          if (!runningEvents.flat().includes(evt)) continue;
+          const athletes: Entrant[] = [];
+          for (const row of eventDiv.querySelectorAll('.allRows')) {
+            const [lastName, firstName] = row
+              .querySelector('.tablesaw-priority-1')!
+              .textContent!.trim()
+              .split(', ')
+              .map((name) => name.trim());
+            const fullName = `${firstName} ${lastName}`;
+            const { id, country } = (cache[meet].ids[fullName] ??= await getWaId(
               firstName,
-              lastName: nameFixer(lastName),
-              nat: arr[3],
+              lastName,
+              {
+                college: true,
+                indoors: true,
+                gender: isMale ? 'male' : 'female',
+              }
+            ));
+            const sbAnchor = [
+              ...row.querySelectorAll('a[href^="https://www.tfrrs.org/results/"]'),
+            ].find((a) =>
+              a.getAttribute('href')?.match(/^https:\/\/www.tfrrs.org\/results\/\d+\/\d+\/.+?\/.+/)
+            );
+            const sb =
+              sbAnchor?.parentElement?.tagName === 'SPAN'
+                ? sbAnchor.parentElement.getAttribute('title')?.match(/([\d.:]+)/)![1]
+                : sbAnchor?.textContent?.trim();
+            athletes.push({
               id,
-              sb: decodeURIComponent(sb),
-              pb: decodeURIComponent(pb),
-            };
-          })
-        );
-        entries[meet]![evt] = {
-          date: '2023-02-25',
-          entrants: athletes.sort(entrantSortFunc),
-        };
+              team: row
+                .querySelector('a[href^="https://www.tfrrs.org/teams/"]')
+                ?.textContent?.trim(),
+              nat: country,
+              pb: '',
+              sb: sb!,
+              firstName,
+              lastName,
+            });
+            console.log(athletes.at(-1));
+          }
+          entries[meet] ??= {};
+          entries[meet]![evt] = {
+            date: '',
+            entrants: athletes.sort(entrantSortFunc),
+          };
+          fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+        }
+      } else if (meetScheduleUrl.endsWith('.PDF')) {
+        const pdfParser = new PDFParser();
+        const pdfData: Output = await new Promise((res, rej) => {
+          pdfParser.loadPDF(meetScheduleUrl);
+          pdfParser.on('pdfParser_dataReady', res);
+          pdfParser.on('pdfParser_dataError', rej);
+        });
+        for (const page of pdfData.Pages) {
+          const texts = page.Texts.map((t) => t.R[0].T);
+          const evt = decodeURIComponent(texts[1]) as AthleticsEvent;
+          if (!runningEvents.flat().includes(evt)) continue;
+          if (evt === "Men's 60 m") continue; // not world indoor tour
+          const athStringArrs = texts
+            .slice(43, -11)
+            .reduce(
+              ({ num, arr, lastNumIdx }, str, i) => {
+                if (+str === num + 1 && i > lastNumIdx + 1)
+                  return { num: ++num, arr, lastNumIdx: i };
+                arr[num] ??= [];
+                if (str === 'PAC') delete arr[num]; // pacer
+                else arr[num].push(str);
+                return { num, arr, lastNumIdx };
+              },
+              { num: 0, arr: [] as string[][], lastNumIdx: -Infinity }
+            )
+            .arr.filter((x) => x);
+          // console.log(athStringArrs);
+          const athletes: Entrant[] = await Promise.all(
+            athStringArrs.map(async (arr) => {
+              const nameWords = decodeURIComponent(arr[2]).split(' ');
+              const firstNameStartIdx = nameWords.findIndex((word) => word.toUpperCase() !== word);
+              const lastName = nameWords.slice(0, firstNameStartIdx).join(' ');
+              const firstName = nameWords.slice(firstNameStartIdx).join(' ');
+              let pb = '';
+              let sb = '';
+
+              const birthYear = arr[4];
+
+              let id: string;
+              if (cache?.[meet]?.ids[`${firstName} ${lastName}`])
+                id = cache?.[meet]?.ids[`${firstName} ${lastName}`].id;
+              else {
+                cache[meet] ??= { schedule: {}, events: {}, ids: {} };
+                cache[meet].ids[`${firstName} ${lastName}`] = await getWaId(firstName, lastName, {
+                  birthYear,
+                });
+                id = cache[meet].ids[`${firstName} ${lastName}`].id;
+                fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+              }
+
+              if (arr.length === 6) {
+                pb = arr[5];
+              }
+              if (arr.length === 7) {
+                sb = arr[5];
+                pb = arr[6];
+              }
+              return {
+                firstName,
+                lastName: nameFixer(lastName),
+                nat: arr[3],
+                id,
+                sb: decodeURIComponent(sb),
+                pb: decodeURIComponent(pb),
+              };
+            })
+          );
+          entries[meet]![evt] = {
+            date: '2023-02-25',
+            entrants: athletes.sort(entrantSortFunc),
+          };
+        }
+      } else {
+        // diamond league website
+        if (!cache[meet].schedule) {
+          cache[meet].schedule = { combined: await (await fetch(meetScheduleUrl)).text() };
+          fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+        }
+        const { document } = new JSDOM(cache[meet].schedule.combined).window;
+        const events = [...document.querySelectorAll('.competition.DR')]
+          .map((elem) => ({
+            name: elem.querySelector('.name')!.textContent!,
+            url: elem.querySelector('.links a')!.getAttribute('href')!,
+          }))
+          .filter(({ name }) => runningEvents.flat().includes(name as AthleticsEvent));
+        for (const { name: origName, url } of events) {
+          const name = origName as AthleticsEvent;
+          if (!cache[meet].events[name]?.startlist) {
+            cache[meet].events[name] ??= {};
+            cache[meet].events[name]!.startlist = await (
+              await fetch(getDomain(meetScheduleUrl) + url)
+            ).text();
+            fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+          }
+          const { document } = new JSDOM(cache[meet].events[name]!.startlist).window;
+          console.log(name);
+          const entrants: Entrant[] = [...document.querySelectorAll('.tableBody .row')].map(
+            (elem) => {
+              const [lastName, firstName] = elem
+                .querySelector('.column.name')!
+                .textContent!.split(' ')
+                .map((word) => word.trim())
+                .filter((word) => word)
+                .join(' ')
+                .split(', ');
+              return {
+                firstName,
+                lastName: nameFixer(lastName),
+                id: elem
+                  .querySelector('.column.name a')!
+                  .getAttribute('href')!
+                  .match(/\/(\d+)\.html$/)![1]!,
+                pb: elem.querySelector('.column.pb')?.textContent || null,
+                sb: elem.querySelector('.column.sb')?.textContent || null,
+                nat: elem.querySelector('.column.nat')!.textContent!.trim(),
+              };
+            }
+          );
+          console.log(entrants);
+          const [day, month, year] = document
+            .querySelector('.date')!
+            .textContent!.trim()
+            .split('-');
+          entries[meet]![name as AthleticsEvent] = {
+            date: `${year}-${month}-${day}T${document
+              .querySelector('.time')!
+              .getAttribute('data-starttime')}`,
+            entrants: entrants.sort(entrantSortFunc),
+          };
+        }
       }
-      continue;
-    }
-    if (!cache[meet].schedule) {
-      cache[meet].schedule = await (await fetch(schedules[meet])).text();
-      fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
-    }
-    const { document } = new JSDOM(cache[meet].schedule).window;
-    const events = [...document.querySelectorAll('.competition.DR')]
-      .map((elem) => ({
-        name: elem.querySelector('.name')!.textContent!,
-        url: elem.querySelector('.links a')!.getAttribute('href')!,
-      }))
-      .filter(({ name }) => runningEvents.flat().includes(name as AthleticsEvent));
-    for (const { name: origName, url } of events) {
-      const name = origName as AthleticsEvent;
-      if (!cache[meet].events[name]?.startlist) {
-        cache[meet].events[name] ??= {};
-        cache[meet].events[name]!.startlist = await (
-          await fetch(getDomain(schedules[meet]) + url)
-        ).text();
-        fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
-      }
-      const { document } = new JSDOM(cache[meet].events[name]!.startlist).window;
-      console.log(name);
-      const entrants: Entrant[] = [...document.querySelectorAll('.tableBody .row')].map((elem) => {
-        const [lastName, firstName] = elem
-          .querySelector('.column.name')!
-          .textContent!.split(' ')
-          .map((word) => word.trim())
-          .filter((word) => word)
-          .join(' ')
-          .split(', ');
-        return {
-          firstName,
-          lastName: nameFixer(lastName),
-          id: elem
-            .querySelector('.column.name a')!
-            .getAttribute('href')!
-            .match(/\/(\d+)\.html$/)![1]!,
-          pb: elem.querySelector('.column.pb')?.textContent || null,
-          sb: elem.querySelector('.column.sb')?.textContent || null,
-          nat: elem.querySelector('.column.nat')!.textContent!.trim(),
-        };
-      });
-      console.log(entrants);
-      const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
-      entries[meet]![name as AthleticsEvent] = {
-        date: `${year}-${month}-${day}T${document
-          .querySelector('.time')!
-          .getAttribute('data-starttime')}`,
-        entrants: entrants.sort(entrantSortFunc),
-      };
     }
   }
   fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));

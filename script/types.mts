@@ -36,7 +36,15 @@ export type AthleticsEvent =
   | "Men's 800 Meters"
   | "Men's Mile"
   | "Men's 3000 Meters"
-  | "Men's 5000 Meters";
+  | "Men's 5000 Meters"
+  | "Women's 60 Meters"
+  | "Women's 60 Hurdles"
+  | "Women's 200 Meters"
+  | "Women's 400 Meters"
+  | "Women's 800 Meters"
+  | "Women's Mile"
+  | "Women's 3000 Meters"
+  | "Women's 5000 Meters";
 
 export type Entrant = {
   firstName: string;
@@ -67,7 +75,7 @@ export type Entries = {
 
 export type MeetCache = {
   [k in DLMeet]: {
-    schedule?: string;
+    schedule: { m?: string; f?: string; combined?: string };
     resultsSchedule?: string;
     events: {
       [k in AthleticsEvent]?: {

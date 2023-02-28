@@ -1236,6 +1236,1207 @@
           "lastName": "Holmes"
         }
       ]
+    },
+    "Women's 60 Meters": {
+      "date": "",
+      "entrants": [
+        {
+          "id": "14646562",
+          "team": "Texas",
+          "nat": "LCA",
+          "pb": "",
+          "sb": "6.97",
+          "firstName": "Julien",
+          "lastName": "Alfred"
+        },
+        {
+          "id": "14823835",
+          "team": "USC",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.07",
+          "firstName": "Samirah",
+          "lastName": "Moody"
+        },
+        {
+          "id": "14757192",
+          "team": "Tennessee",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.11",
+          "firstName": "Jacious",
+          "lastName": "Sears"
+        },
+        {
+          "id": "14800571",
+          "team": "Texas Tech",
+          "nat": "NGR",
+          "pb": "",
+          "sb": "7.09",
+          "firstName": "Rosemary",
+          "lastName": "Chukwuma"
+        },
+        {
+          "id": "14576789",
+          "team": "Clemson",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "7.09",
+          "firstName": "Kiara",
+          "lastName": "Grant"
+        },
+        {
+          "id": "14761324",
+          "team": "Oregon",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.13",
+          "firstName": "Jadyn",
+          "lastName": "Mays"
+        },
+        {
+          "id": "14773307",
+          "team": "Florida",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.14",
+          "firstName": "Talitha",
+          "lastName": "Diggs"
+        },
+        {
+          "id": "14906985",
+          "team": "Georgia",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.15",
+          "firstName": "Kaila",
+          "lastName": "Jackson"
+        },
+        {
+          "id": "14756075",
+          "team": "LSU",
+          "nat": "NGR",
+          "pb": "",
+          "sb": "7.15",
+          "firstName": "Favour",
+          "lastName": "Ofili"
+        },
+        {
+          "id": "14746897",
+          "team": "Tennessee",
+          "nat": "ANT",
+          "pb": "",
+          "sb": "7.17",
+          "firstName": "Joella",
+          "lastName": "Lloyd"
+        },
+        {
+          "id": "14728747",
+          "team": "Minnesota",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.18",
+          "firstName": "Amira",
+          "lastName": "Young"
+        },
+        {
+          "id": "14761327",
+          "team": "Florida State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.19",
+          "firstName": "Dajaz",
+          "lastName": "Defrand"
+        },
+        {
+          "id": "14839079",
+          "team": "Texas",
+          "nat": "NGR",
+          "pb": "",
+          "sb": "7.17",
+          "firstName": "Ezinne",
+          "lastName": "Abba"
+        },
+        {
+          "id": "14646564",
+          "team": "Minnesota",
+          "nat": "TTO",
+          "pb": "",
+          "sb": "7.19",
+          "firstName": "Akilah",
+          "lastName": "Lewis"
+        },
+        {
+          "id": "14630588",
+          "team": "Texas",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "7.19",
+          "firstName": "Kevona",
+          "lastName": "Davis"
+        },
+        {
+          "id": "14808087",
+          "team": "Georgia",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.20",
+          "firstName": "Autumn",
+          "lastName": "Wilson"
+        },
+        {
+          "id": "14685249",
+          "team": "Arkansas",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "7.20",
+          "firstName": "Ackera",
+          "lastName": "Nugent"
+        }
+      ]
+    },
+    "Women's 200 Meters": {
+      "date": "",
+      "entrants": [
+        {
+          "id": "14646562",
+          "team": "Texas",
+          "nat": "LCA",
+          "pb": "",
+          "sb": "22.26",
+          "firstName": "Julien",
+          "lastName": "Alfred"
+        },
+        {
+          "id": "14756075",
+          "team": "LSU",
+          "nat": "NGR",
+          "pb": "",
+          "sb": "22.36",
+          "firstName": "Favour",
+          "lastName": "Ofili"
+        },
+        {
+          "id": "14745252",
+          "team": "Texas",
+          "nat": "IRL",
+          "pb": "",
+          "sb": "22.52",
+          "firstName": "Rhasidat",
+          "lastName": "Adeleke"
+        },
+        {
+          "id": "14773307",
+          "team": "Florida",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.61",
+          "firstName": "Talitha",
+          "lastName": "Diggs"
+        },
+        {
+          "id": "14723890",
+          "team": "Ole Miss",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.67",
+          "firstName": "McKenzie",
+          "lastName": "Long"
+        },
+        {
+          "id": "14648896",
+          "team": "Texas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.63",
+          "firstName": "Lanae",
+          "lastName": "Thomas"
+        },
+        {
+          "id": "14800571",
+          "team": "Texas Tech",
+          "nat": "NGR",
+          "pb": "",
+          "sb": "22.68",
+          "firstName": "Rosemary",
+          "lastName": "Chukwuma"
+        },
+        {
+          "id": "14630588",
+          "team": "Texas",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "22.73",
+          "firstName": "Kevona",
+          "lastName": "Davis"
+        },
+        {
+          "id": "14716252",
+          "team": "Baylor",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.78",
+          "firstName": "Mariah",
+          "lastName": "Ayers"
+        },
+        {
+          "id": "14708112",
+          "team": "Texas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.81",
+          "firstName": "Kennedy",
+          "lastName": "Simon"
+        },
+        {
+          "id": "14761324",
+          "team": "Oregon",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.86",
+          "firstName": "Jadyn",
+          "lastName": "Mays"
+        },
+        {
+          "id": "14757192",
+          "team": "Tennessee",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.96",
+          "firstName": "Jacious",
+          "lastName": "Sears"
+        },
+        {
+          "id": "14906985",
+          "team": "Georgia",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.97",
+          "firstName": "Kaila",
+          "lastName": "Jackson"
+        },
+        {
+          "id": "14808087",
+          "team": "Georgia",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.97",
+          "firstName": "Autumn",
+          "lastName": "Wilson"
+        },
+        {
+          "id": "14731976",
+          "team": "USC",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.99",
+          "firstName": "Caisja",
+          "lastName": "Chandler"
+        },
+        {
+          "id": "14761327",
+          "team": "Florida State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "22.93",
+          "firstName": "Dajaz",
+          "lastName": "Defrand"
+        }
+      ]
+    },
+    "Women's 400 Meters": {
+      "date": "",
+      "entrants": [
+        {
+          "id": "14773307",
+          "team": "Florida",
+          "nat": "USA",
+          "pb": "",
+          "sb": "50.15",
+          "firstName": "Talitha",
+          "lastName": "Diggs"
+        },
+        {
+          "id": "14745252",
+          "team": "Texas",
+          "nat": "IRL",
+          "pb": "",
+          "sb": "50.33",
+          "firstName": "Rhasidat",
+          "lastName": "Adeleke"
+        },
+        {
+          "id": "14632781",
+          "team": "Arkansas",
+          "nat": "GBR",
+          "pb": "",
+          "sb": "50.68",
+          "firstName": "Amber",
+          "lastName": "Anning"
+        },
+        {
+          "id": "14746488",
+          "team": "Arkansas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "51.02",
+          "firstName": "Rosey",
+          "lastName": "Effiong"
+        },
+        {
+          "id": "14708112",
+          "team": "Texas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "51.01",
+          "firstName": "Kennedy",
+          "lastName": "Simon"
+        },
+        {
+          "id": "14716862",
+          "team": "Arkansas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "51.14",
+          "firstName": "Britton",
+          "lastName": "Wilson"
+        },
+        {
+          "id": "14628313",
+          "team": "Texas A&M",
+          "nat": "USA",
+          "pb": "",
+          "sb": "51.27",
+          "firstName": "Tierra",
+          "lastName": "Robinson-Jones"
+        },
+        {
+          "id": "14807239",
+          "team": "Michigan",
+          "nat": "USA",
+          "pb": "",
+          "sb": "51.39",
+          "firstName": "Ziyah",
+          "lastName": "Holman"
+        },
+        {
+          "id": "14771436",
+          "team": "Michigan",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "51.41",
+          "firstName": "Savannah",
+          "lastName": "Sutherland"
+        },
+        {
+          "id": "14696035",
+          "team": "USC",
+          "nat": "USA",
+          "pb": "",
+          "sb": "51.66",
+          "firstName": "Jan'Taijah",
+          "lastName": "Jones"
+        },
+        {
+          "id": "14638887",
+          "team": "Arkansas",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "51.76",
+          "firstName": "Joanne",
+          "lastName": "Reid"
+        },
+        {
+          "id": "14685519",
+          "team": "Arkansas",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "51.83",
+          "firstName": "Nickisha",
+          "lastName": "Pryce"
+        },
+        {
+          "id": "14898611",
+          "team": "Texas A&M",
+          "nat": "USA",
+          "pb": "",
+          "sb": "51.89",
+          "firstName": "Jermaisha",
+          "lastName": "Arnold"
+        },
+        {
+          "id": "14928278",
+          "team": "USC",
+          "nat": "GBR",
+          "pb": "",
+          "sb": "52.05",
+          "firstName": "Yemi",
+          "lastName": "John"
+        },
+        {
+          "id": "14596391",
+          "team": "Arkansas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "52.06",
+          "firstName": "Paris",
+          "lastName": "Peoples"
+        },
+        {
+          "id": "14850684",
+          "team": "Texas A&M",
+          "nat": "USA",
+          "pb": "",
+          "sb": "52.10",
+          "firstName": "Kennedy",
+          "lastName": "Wade"
+        }
+      ]
+    },
+    "Women's 800 Meters": {
+      "date": "",
+      "entrants": [
+        {
+          "id": "14761309",
+          "team": "Stanford",
+          "nat": "USA",
+          "pb": "",
+          "sb": "1:59.95",
+          "firstName": "Roisin",
+          "lastName": "Willis"
+        },
+        {
+          "id": "14715998",
+          "team": "LSU",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:00.18",
+          "firstName": "Michaela",
+          "lastName": "Rose"
+        },
+        {
+          "id": "14879694",
+          "team": "Stanford",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:00.32",
+          "firstName": "Juliette",
+          "lastName": "Whittaker"
+        },
+        {
+          "id": "14667173",
+          "team": "Florida",
+          "nat": "AUS",
+          "pb": "",
+          "sb": "2:01.23",
+          "firstName": "Imogen",
+          "lastName": "Barrett"
+        },
+        {
+          "id": "14851568",
+          "team": "Kennesaw State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:02.00",
+          "firstName": "Sarah",
+          "lastName": "Hendrick"
+        },
+        {
+          "id": "14716862",
+          "team": "Arkansas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:02.13",
+          "firstName": "Britton",
+          "lastName": "Wilson"
+        },
+        {
+          "id": "14668498",
+          "team": "Washington",
+          "nat": "AUS",
+          "pb": "",
+          "sb": "2:02.15",
+          "firstName": "Carley",
+          "lastName": "Thomas"
+        },
+        {
+          "id": "14704616",
+          "team": "Texas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:02.25",
+          "firstName": "Valery",
+          "lastName": "Tobias"
+        },
+        {
+          "id": "14874957",
+          "team": "UMass Lowell",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:02.35",
+          "firstName": "Isabella",
+          "lastName": "Giesing"
+        },
+        {
+          "id": "14691439",
+          "team": "Houston",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "2:02.59",
+          "firstName": "Kelly-Ann",
+          "lastName": "Beckford"
+        },
+        {
+          "id": "14657958",
+          "team": "BYU",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:02.75",
+          "firstName": "Claire",
+          "lastName": "Seymour"
+        },
+        {
+          "id": "14653693",
+          "team": "Bradley",
+          "nat": "SWE",
+          "pb": "",
+          "sb": "2:02.91",
+          "firstName": "Wilma",
+          "lastName": "Nielsen"
+        },
+        {
+          "id": "14707824",
+          "team": "Michigan",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "2:02.99",
+          "firstName": "Aurora",
+          "lastName": "Rynda"
+        },
+        {
+          "id": "14879625",
+          "team": "Boston College",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:03.00",
+          "firstName": "Katherine",
+          "lastName": "Mitchell"
+        },
+        {
+          "id": "14833947",
+          "team": "Penn",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:04.54",
+          "firstName": "Bronwyn",
+          "lastName": "Patterson"
+        },
+        {
+          "id": "14822777",
+          "team": "Virginia Tech",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:04.55",
+          "firstName": "Lindsey",
+          "lastName": "Butler"
+        }
+      ]
+    },
+    "Women's Mile": {
+      "date": "",
+      "entrants": [
+        {
+          "id": "14679744",
+          "team": "NC State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:24.26",
+          "firstName": "Katelyn",
+          "lastName": "Tuohy"
+        },
+        {
+          "id": "14763372",
+          "team": "Duke",
+          "nat": "NED",
+          "pb": "",
+          "sb": "4:32.54",
+          "firstName": "Amina",
+          "lastName": "Maatoug"
+        },
+        {
+          "id": "14733357",
+          "team": "Harvard",
+          "nat": "NZL",
+          "pb": "",
+          "sb": "4:30.19",
+          "firstName": "Maia",
+          "lastName": "Ramsden"
+        },
+        {
+          "id": "14757397",
+          "team": "Washington",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:37.03",
+          "firstName": "Anna",
+          "lastName": "Gibson"
+        },
+        {
+          "id": "14822777",
+          "team": "Virginia Tech",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:31.41",
+          "firstName": "Lindsey",
+          "lastName": "Butler"
+        },
+        {
+          "id": "15011242",
+          "team": "Rutgers",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:31.51",
+          "firstName": "Alexandra",
+          "lastName": "Carlson"
+        },
+        {
+          "id": "14819070",
+          "team": "West Virginia",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "4:31.57",
+          "firstName": "Ceili",
+          "lastName": "McCabe"
+        },
+        {
+          "id": "14660239",
+          "team": "Arkansas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:31.88",
+          "firstName": "Lauren",
+          "lastName": "Gregory"
+        },
+        {
+          "id": "14704467",
+          "team": "Oregon",
+          "nat": "POL",
+          "pb": "",
+          "sb": "4:32.03",
+          "firstName": "Klaudia",
+          "lastName": "Kazimierska"
+        },
+        {
+          "id": "14763209",
+          "team": "South Carolina",
+          "nat": "TUR",
+          "pb": "",
+          "sb": "4:32.14",
+          "firstName": "Silan",
+          "lastName": "Ayyildiz"
+        },
+        {
+          "id": "14668471",
+          "team": "Oregon",
+          "nat": "AUS",
+          "pb": "",
+          "sb": "4:32.69",
+          "firstName": "Izzy",
+          "lastName": "Thornton-Bott"
+        },
+        {
+          "id": "14927486",
+          "team": "Alabama",
+          "nat": "KEN",
+          "pb": "",
+          "sb": "4:32.84",
+          "firstName": "Flomena",
+          "lastName": "Asekol"
+        },
+        {
+          "id": "14675493",
+          "team": "Oklahoma State",
+          "nat": "LTU",
+          "pb": "",
+          "sb": "4:32.84",
+          "firstName": "Gabija",
+          "lastName": "Galvydyte"
+        },
+        {
+          "id": "14739185",
+          "team": "Portland",
+          "nat": "ITA",
+          "pb": "",
+          "sb": "4:32.91",
+          "firstName": "Laura",
+          "lastName": "Pellicoro"
+        },
+        {
+          "id": "14874875",
+          "team": "Oregon State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:32.95",
+          "firstName": "Kaylee",
+          "lastName": "Mitchell"
+        },
+        {
+          "id": "14761322",
+          "team": "BYU",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:33.14",
+          "firstName": "Riley",
+          "lastName": "Chamberlain"
+        }
+      ]
+    },
+    "Women's 3000 Meters": {
+      "date": "",
+      "entrants": [
+        {
+          "id": "14679744",
+          "team": "NC State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:35.20",
+          "firstName": "Katelyn",
+          "lastName": "Tuohy"
+        },
+        {
+          "id": "15014437",
+          "team": "Alabama",
+          "nat": "KEN",
+          "pb": "",
+          "sb": "8:45.50",
+          "firstName": "Hilda",
+          "lastName": "Olemomoi"
+        },
+        {
+          "id": "14903214",
+          "team": "Florida",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:49.71",
+          "firstName": "Parker",
+          "lastName": "Valby"
+        },
+        {
+          "id": "14819070",
+          "team": "West Virginia",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "8:50.44",
+          "firstName": "Ceili",
+          "lastName": "McCabe"
+        },
+        {
+          "id": "14846039",
+          "team": "Notre Dame",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:50.48",
+          "firstName": "Olivia",
+          "lastName": "Markezich"
+        },
+        {
+          "id": "14782097",
+          "team": "Utah",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "8:53.95",
+          "firstName": "Simone",
+          "lastName": "Plourde"
+        },
+        {
+          "id": "14743326",
+          "team": "NC State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:54.12",
+          "firstName": "Samantha",
+          "lastName": "Bush"
+        },
+        {
+          "id": "14733357",
+          "team": "Harvard",
+          "nat": "NZL",
+          "pb": "",
+          "sb": "8:54.39",
+          "firstName": "Maia",
+          "lastName": "Ramsden"
+        },
+        {
+          "id": "14874368",
+          "team": "Alabama",
+          "nat": "KEN",
+          "pb": "",
+          "sb": "8:54.50",
+          "firstName": "Mercy",
+          "lastName": "Chelangat"
+        },
+        {
+          "id": "14720374",
+          "team": "NC State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:59.25",
+          "firstName": "Kelsey",
+          "lastName": "Chmiel"
+        },
+        {
+          "id": "14874875",
+          "team": "Oregon State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:55.10",
+          "firstName": "Kaylee",
+          "lastName": "Mitchell"
+        },
+        {
+          "id": "14675748",
+          "team": "Alabama",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:55.52",
+          "firstName": "Amaris",
+          "lastName": "Tyynismaa"
+        },
+        {
+          "id": "14763372",
+          "team": "Duke",
+          "nat": "NED",
+          "pb": "",
+          "sb": "8:55.62",
+          "firstName": "Amina",
+          "lastName": "Maatoug"
+        },
+        {
+          "id": "14659768",
+          "team": "Oregon State",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "8:55.71",
+          "firstName": "Grace",
+          "lastName": "Fetherstonhaugh"
+        },
+        {
+          "id": "15011242",
+          "team": "Rutgers",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:56.15",
+          "firstName": "Alexandra",
+          "lastName": "Carlson"
+        },
+        {
+          "id": "14709234",
+          "team": "Oklahoma State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:56.94",
+          "firstName": "Taylor",
+          "lastName": "Roe"
+        }
+      ]
+    },
+    "Women's 5000 Meters": {
+      "date": "",
+      "entrants": [
+        {
+          "id": "14679744",
+          "team": "NC State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:15.92",
+          "firstName": "Katelyn",
+          "lastName": "Tuohy"
+        },
+        {
+          "id": "15014437",
+          "team": "Alabama",
+          "nat": "KEN",
+          "pb": "",
+          "sb": "15:17.97",
+          "firstName": "Hilda",
+          "lastName": "Olemomoi"
+        },
+        {
+          "id": "14874368",
+          "team": "Alabama",
+          "nat": "KEN",
+          "pb": "",
+          "sb": "15:18.12",
+          "firstName": "Mercy",
+          "lastName": "Chelangat"
+        },
+        {
+          "id": "14517234",
+          "team": "New Mexico",
+          "nat": "AUS",
+          "pb": "",
+          "sb": "15:18.54",
+          "firstName": "Amelia",
+          "lastName": "Mazza-Downie"
+        },
+        {
+          "id": "14649688",
+          "team": "Utah",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:20.37",
+          "firstName": "Emily",
+          "lastName": "Venters"
+        },
+        {
+          "id": "14883271",
+          "team": "Oklahoma State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:24.26",
+          "firstName": "Natalie",
+          "lastName": "Cook"
+        },
+        {
+          "id": "14720374",
+          "team": "NC State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:27.83",
+          "firstName": "Kelsey",
+          "lastName": "Chmiel"
+        },
+        {
+          "id": "14801790",
+          "team": "BYU",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:32.82",
+          "firstName": "Aubrey",
+          "lastName": "Frentheway"
+        },
+        {
+          "id": "14800826",
+          "team": "Colorado",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:33.72",
+          "firstName": "Ella",
+          "lastName": "Baran"
+        },
+        {
+          "id": "14839139",
+          "team": "Northern Arizona",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:33.74",
+          "firstName": "Elise",
+          "lastName": "Stearns"
+        },
+        {
+          "id": "14660239",
+          "team": "Arkansas",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:34.61",
+          "firstName": "Lauren",
+          "lastName": "Gregory"
+        },
+        {
+          "id": "14926144",
+          "team": "NC State",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:35.61",
+          "firstName": "Sydney",
+          "lastName": "Seymour"
+        },
+        {
+          "id": "14804935",
+          "team": "New Mexico",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "15:37.47",
+          "firstName": "Gracelyn",
+          "lastName": "Larkin"
+        },
+        {
+          "id": "14613062",
+          "team": "San Francisco",
+          "nat": "AUS",
+          "pb": "",
+          "sb": "15:38.08",
+          "firstName": "Ruby",
+          "lastName": "Smee"
+        },
+        {
+          "id": "14691146",
+          "team": "Tennessee",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "15:38.59",
+          "firstName": "Jasmine",
+          "lastName": "Fehr"
+        },
+        {
+          "id": "14758075",
+          "team": "Stanford",
+          "nat": "POL",
+          "pb": "",
+          "sb": "15:40.41",
+          "firstName": "Zofia",
+          "lastName": "Dudek"
+        }
+      ]
+    },
+    "Women's 60 Hurdles": {
+      "date": "",
+      "entrants": [
+        {
+          "id": "14659011",
+          "team": "Kentucky",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.75",
+          "firstName": "Masai",
+          "lastName": "Russell"
+        },
+        {
+          "id": "14685249",
+          "team": "Arkansas",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "7.81",
+          "firstName": "Ackera",
+          "lastName": "Nugent"
+        },
+        {
+          "id": "14631833",
+          "team": "Texas Tech",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "7.98",
+          "firstName": "Demisha",
+          "lastName": "Roswell"
+        },
+        {
+          "id": "14858877",
+          "team": "Oregon",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8.01",
+          "firstName": "Aaliyah",
+          "lastName": "McCormick"
+        },
+        {
+          "id": "14621562",
+          "team": "Washington St.",
+          "nat": "ECU",
+          "pb": "",
+          "sb": "7.99",
+          "firstName": "Maribel",
+          "lastName": "Caicedo"
+        },
+        {
+          "id": "14773627",
+          "team": "LSU",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8.02",
+          "firstName": "Leah",
+          "lastName": "Phillips"
+        },
+        {
+          "id": "14630926",
+          "team": "Tennessee",
+          "nat": "BAH",
+          "pb": "",
+          "sb": "8.02",
+          "firstName": "Charisma",
+          "lastName": "Taylor"
+        },
+        {
+          "id": "14697257",
+          "team": "Arizona",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8.01",
+          "firstName": "Talie",
+          "lastName": "Bonds"
+        },
+        {
+          "id": "14763345",
+          "team": "UCLA",
+          "nat": "BEL",
+          "pb": "",
+          "sb": "8.05",
+          "firstName": "Yanla",
+          "lastName": "Ndjip-Nyemeck"
+        },
+        {
+          "id": "14808422",
+          "team": "Wisconsin",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8.05",
+          "firstName": "Destiny",
+          "lastName": "Huven"
+        },
+        {
+          "id": "14800089",
+          "team": "Iowa",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8.07",
+          "firstName": "Myreanna",
+          "lastName": "Bebe"
+        },
+        {
+          "id": "14630580",
+          "team": "Miss State",
+          "nat": "JAM",
+          "pb": "",
+          "sb": "8.07",
+          "firstName": "Rosealee",
+          "lastName": "Cooper"
+        },
+        {
+          "id": "14794344",
+          "team": "UCF",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8.08",
+          "firstName": "Rayniah",
+          "lastName": "Jones"
+        },
+        {
+          "id": "14746420",
+          "team": "Coastal Carolina",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8.08",
+          "firstName": "Alexis",
+          "lastName": "Glasco"
+        },
+        {
+          "id": "14776808",
+          "team": "Michigan",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8.09",
+          "firstName": "Aasia",
+          "lastName": "Laurencin"
+        },
+        {
+          "id": "14678204",
+          "team": "Ohio State",
+          "nat": "GBR",
+          "pb": "",
+          "sb": "8.10",
+          "firstName": "Marcia",
+          "lastName": "Sey"
+        }
+      ]
     }
   }
 }
