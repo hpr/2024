@@ -13,15 +13,6 @@
           "lastName": "Jones"
         },
         {
-          "id": "14715873",
-          "team": "Oregon",
-          "nat": "USA",
-          "pb": "",
-          "sb": "6.49",
-          "firstName": "Micah",
-          "lastName": "Williams"
-        },
-        {
           "id": "14849101",
           "team": "Florida State",
           "nat": "CIV",
@@ -155,24 +146,6 @@
           "sb": "6.59",
           "firstName": "Alaba",
           "lastName": "Akintola"
-        },
-        {
-          "id": "14869273",
-          "team": "Albany",
-          "nat": "USA",
-          "pb": "",
-          "sb": "6.59",
-          "firstName": "Travis",
-          "lastName": "Williams"
-        },
-        {
-          "id": "14884267",
-          "team": "Stanford",
-          "nat": "NGR",
-          "pb": "",
-          "sb": "6.59",
-          "firstName": "Udodi",
-          "lastName": "Onwuzurike"
         }
       ]
     },
@@ -297,15 +270,6 @@
           "lastName": "Onwuzurike"
         },
         {
-          "id": "14807407",
-          "team": "Tennessee",
-          "nat": "USA",
-          "pb": "",
-          "sb": "20.59",
-          "firstName": "Emmanuel",
-          "lastName": "Bynum"
-        },
-        {
           "id": "14807262",
           "team": "Mid. Tenn. State",
           "nat": "NGR",
@@ -315,13 +279,22 @@
           "lastName": "Akintola"
         },
         {
-          "id": "14887975",
-          "team": "Clemson",
-          "nat": "BAH",
+          "id": "14774741",
+          "team": "Texas",
+          "nat": "USA",
           "pb": "",
-          "sb": "20.60",
-          "firstName": "Wanya",
-          "lastName": "McCoy"
+          "sb": "20.54",
+          "firstName": "Marcellus",
+          "lastName": "Moore"
+        },
+        {
+          "id": "14675270",
+          "team": "Virginia Tech",
+          "nat": "USA",
+          "pb": "",
+          "sb": "20.62",
+          "firstName": "Cole",
+          "lastName": "Beck"
         }
       ]
     },
@@ -336,15 +309,6 @@
           "sb": "44.75",
           "firstName": "Elija",
           "lastName": "Godwin"
-        },
-        {
-          "id": "14715097",
-          "team": "Florida",
-          "nat": "USA",
-          "pb": "",
-          "sb": "45.05",
-          "firstName": "Jacory",
-          "lastName": "Patterson"
         },
         {
           "id": "14850487",
@@ -577,15 +541,6 @@
           "lastName": "Zahafi"
         },
         {
-          "id": "14907407",
-          "team": "Oregon",
-          "nat": "USA",
-          "pb": "",
-          "sb": "1:46.93",
-          "firstName": "Elliott",
-          "lastName": "Cook"
-        },
-        {
           "id": "14889254",
           "team": "Stanford",
           "nat": "USA",
@@ -613,15 +568,6 @@
           "lastName": "Sharif"
         },
         {
-          "id": "15021942",
-          "team": "Washington",
-          "nat": "USA",
-          "pb": "",
-          "sb": "1:46.99",
-          "firstName": "Nathan",
-          "lastName": "Green"
-        },
-        {
           "id": "14837641",
           "team": "Penn State",
           "nat": "VIN",
@@ -629,6 +575,24 @@
           "sb": "1:47.01",
           "firstName": "Handal",
           "lastName": "Roban"
+        },
+        {
+          "id": "14829982",
+          "team": "New Mexico",
+          "nat": "AUS",
+          "pb": "",
+          "sb": "1:47.21",
+          "firstName": "Ethan",
+          "lastName": "Brouw"
+        },
+        {
+          "id": "14960261",
+          "team": "Georgia",
+          "nat": "USA",
+          "pb": "",
+          "sb": "1:47.28",
+          "firstName": "Will",
+          "lastName": "Sumner"
         }
       ]
     },
@@ -663,15 +627,6 @@
           "lastName": "Fay"
         },
         {
-          "id": "14732318",
-          "team": "Washington",
-          "nat": "CAN",
-          "pb": "",
-          "sb": "3:52.62",
-          "firstName": "Kieran",
-          "lastName": "Lumb"
-        },
-        {
           "id": "15021942",
           "team": "Washington",
           "nat": "USA",
@@ -690,15 +645,6 @@
           "lastName": "Houser"
         },
         {
-          "id": "14800808",
-          "team": "Montana State",
-          "nat": "USA",
-          "pb": "",
-          "sb": "4:01.16",
-          "firstName": "Duncan",
-          "lastName": "Hamilton"
-        },
-        {
           "id": "14929551",
           "team": "Washington",
           "nat": "USA",
@@ -706,15 +652,6 @@
           "sb": "3:53.65",
           "firstName": "Aidan",
           "lastName": "Ryan"
-        },
-        {
-          "id": "14793942",
-          "team": "Oklahoma State",
-          "nat": "MAR",
-          "pb": "",
-          "sb": "3:57.27",
-          "firstName": "Fouad",
-          "lastName": "Messaoudi"
         },
         {
           "id": "14759004",
@@ -744,15 +681,6 @@
           "lastName": "McMahon-Staggs"
         },
         {
-          "id": "14969299",
-          "team": "North Carolina",
-          "nat": "USA",
-          "pb": "",
-          "sb": "3:55.08",
-          "firstName": "Ethan",
-          "lastName": "Strand"
-        },
-        {
           "id": "14899913",
           "team": "Virginia",
           "nat": "USA",
@@ -771,13 +699,49 @@
           "lastName": "Cook"
         },
         {
-          "id": "14884811",
-          "team": "Villanova",
+          "id": "14771292",
+          "team": "Washington",
+          "nat": "CAN",
+          "pb": "",
+          "sb": "3:55.60",
+          "firstName": "Aaron",
+          "lastName": "Ahl"
+        },
+        {
+          "id": "14743176",
+          "team": "Wisconsin",
+          "nat": "AUS",
+          "pb": "",
+          "sb": "3:55.61",
+          "firstName": "Adam",
+          "lastName": "Spencer"
+        },
+        {
+          "id": "14967786",
+          "team": "Colorado",
           "nat": "USA",
           "pb": "",
-          "sb": "3:55.58",
-          "firstName": "Liam",
-          "lastName": "Murphy"
+          "sb": "3:55.99",
+          "firstName": "Isaiah",
+          "lastName": "Givens"
+        },
+        {
+          "id": "14801889",
+          "team": "Michigan",
+          "nat": "USA",
+          "pb": "",
+          "sb": "3:56.08",
+          "firstName": "Nick",
+          "lastName": "Foster"
+        },
+        {
+          "id": "14822927",
+          "team": "Georgetown",
+          "nat": "USA",
+          "pb": "",
+          "sb": "3:56.20",
+          "firstName": "Matthew",
+          "lastName": "Rizzo"
         }
       ]
     },
@@ -979,15 +943,6 @@
           "lastName": "Young"
         },
         {
-          "id": "14781522",
-          "team": "Washington",
-          "nat": "IRL",
-          "pb": "",
-          "sb": "13:16.77",
-          "firstName": "Brian",
-          "lastName": "Fay"
-        },
-        {
           "id": "14703865",
           "team": "BYU",
           "nat": "USA",
@@ -1042,15 +997,6 @@
           "lastName": "Kiprop"
         },
         {
-          "id": "14789430",
-          "team": "Air Force",
-          "nat": "USA",
-          "pb": "",
-          "sb": "13:25.64",
-          "firstName": "Sam",
-          "lastName": "Gilman"
-        },
-        {
           "id": "14825335",
           "team": "Oklahoma State",
           "nat": "USA",
@@ -1076,6 +1022,24 @@
           "sb": "13:26.11",
           "firstName": "Carter",
           "lastName": "Solomon"
+        },
+        {
+          "id": "15013632",
+          "team": "BYU",
+          "nat": "USA",
+          "pb": "",
+          "sb": "13:29.30",
+          "firstName": "Joey",
+          "lastName": "Nokes"
+        },
+        {
+          "id": "14801868",
+          "team": "Stanford",
+          "nat": "USA",
+          "pb": "",
+          "sb": "13:29.31",
+          "firstName": "Devin",
+          "lastName": "Hart"
         }
       ]
     },
@@ -1108,15 +1072,6 @@
           "sb": "7.60",
           "firstName": "Johnny",
           "lastName": "Brackins"
-        },
-        {
-          "id": "14887963",
-          "team": "Texas Tech",
-          "nat": "BAH",
-          "pb": "",
-          "sb": "7.59",
-          "firstName": "Antione",
-          "lastName": "Andrews"
         },
         {
           "id": "14773077",
@@ -1295,15 +1250,6 @@
           "lastName": "Mays"
         },
         {
-          "id": "14773307",
-          "team": "Florida",
-          "nat": "USA",
-          "pb": "",
-          "sb": "7.14",
-          "firstName": "Talitha",
-          "lastName": "Diggs"
-        },
-        {
           "id": "14906985",
           "team": "Georgia",
           "nat": "USA",
@@ -1385,13 +1331,13 @@
           "lastName": "Wilson"
         },
         {
-          "id": "14685249",
-          "team": "Arkansas",
-          "nat": "JAM",
+          "id": "14723890",
+          "team": "Ole Miss",
+          "nat": "USA",
           "pb": "",
-          "sb": "7.20",
-          "firstName": "Ackera",
-          "lastName": "Nugent"
+          "sb": "7.22",
+          "firstName": "McKenzie",
+          "lastName": "Long"
         }
       ]
     },
@@ -1415,24 +1361,6 @@
           "sb": "22.36",
           "firstName": "Favour",
           "lastName": "Ofili"
-        },
-        {
-          "id": "14745252",
-          "team": "Texas",
-          "nat": "IRL",
-          "pb": "",
-          "sb": "22.52",
-          "firstName": "Rhasidat",
-          "lastName": "Adeleke"
-        },
-        {
-          "id": "14773307",
-          "team": "Florida",
-          "nat": "USA",
-          "pb": "",
-          "sb": "22.61",
-          "firstName": "Talitha",
-          "lastName": "Diggs"
         },
         {
           "id": "14723890",
@@ -1478,15 +1406,6 @@
           "sb": "22.78",
           "firstName": "Mariah",
           "lastName": "Ayers"
-        },
-        {
-          "id": "14708112",
-          "team": "Texas",
-          "nat": "USA",
-          "pb": "",
-          "sb": "22.81",
-          "firstName": "Kennedy",
-          "lastName": "Simon"
         },
         {
           "id": "14761324",
@@ -1541,6 +1460,33 @@
           "sb": "22.93",
           "firstName": "Dajaz",
           "lastName": "Defrand"
+        },
+        {
+          "id": "14692188",
+          "team": "Florida",
+          "nat": "USA",
+          "pb": "",
+          "sb": "23.03",
+          "firstName": "Kynnedy",
+          "lastName": "Flannel"
+        },
+        {
+          "id": "14789479",
+          "team": "South Carolina",
+          "nat": "USA",
+          "pb": "",
+          "sb": "23.05",
+          "firstName": "Jayla",
+          "lastName": "Jamison"
+        },
+        {
+          "id": "14839079",
+          "team": "Texas",
+          "nat": "NGR",
+          "pb": "",
+          "sb": "22.99",
+          "firstName": "Ezinne",
+          "lastName": "Abba"
         }
       ]
     },
@@ -1742,15 +1688,6 @@
           "lastName": "Hendrick"
         },
         {
-          "id": "14716862",
-          "team": "Arkansas",
-          "nat": "USA",
-          "pb": "",
-          "sb": "2:02.13",
-          "firstName": "Britton",
-          "lastName": "Wilson"
-        },
-        {
           "id": "14668498",
           "team": "Washington",
           "nat": "AUS",
@@ -1832,28 +1769,28 @@
           "lastName": "Patterson"
         },
         {
-          "id": "14822777",
-          "team": "Virginia Tech",
+          "id": "14800127",
+          "team": "Boise State",
           "nat": "USA",
           "pb": "",
-          "sb": "2:04.55",
-          "firstName": "Lindsey",
-          "lastName": "Butler"
+          "sb": "2:03.83",
+          "firstName": "MaLeigha",
+          "lastName": "Menegatti"
+        },
+        {
+          "id": "14789256",
+          "team": "Washington",
+          "nat": "USA",
+          "pb": "",
+          "sb": "2:03.20",
+          "firstName": "Marlena",
+          "lastName": "Preigh"
         }
       ]
     },
     "Women's Mile": {
       "date": "",
       "entrants": [
-        {
-          "id": "14679744",
-          "team": "NC State",
-          "nat": "USA",
-          "pb": "",
-          "sb": "4:24.26",
-          "firstName": "Katelyn",
-          "lastName": "Tuohy"
-        },
         {
           "id": "14763372",
           "team": "Duke",
@@ -1898,15 +1835,6 @@
           "sb": "4:31.51",
           "firstName": "Alexandra",
           "lastName": "Carlson"
-        },
-        {
-          "id": "14819070",
-          "team": "West Virginia",
-          "nat": "CAN",
-          "pb": "",
-          "sb": "4:31.57",
-          "firstName": "Ceili",
-          "lastName": "McCabe"
         },
         {
           "id": "14660239",
@@ -1954,15 +1882,6 @@
           "lastName": "Asekol"
         },
         {
-          "id": "14675493",
-          "team": "Oklahoma State",
-          "nat": "LTU",
-          "pb": "",
-          "sb": "4:32.84",
-          "firstName": "Gabija",
-          "lastName": "Galvydyte"
-        },
-        {
           "id": "14739185",
           "team": "Portland",
           "nat": "ITA",
@@ -1988,6 +1907,33 @@
           "sb": "4:33.14",
           "firstName": "Riley",
           "lastName": "Chamberlain"
+        },
+        {
+          "id": "14789852",
+          "team": "Northern Arizona",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:43.97",
+          "firstName": "Annika",
+          "lastName": "Reiss"
+        },
+        {
+          "id": "14716832",
+          "team": "Illinois",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:33.77",
+          "firstName": "Olivia",
+          "lastName": "Howell"
+        },
+        {
+          "id": "14848160",
+          "team": "Virginia",
+          "nat": "USA",
+          "pb": "",
+          "sb": "4:33.82",
+          "firstName": "Margot",
+          "lastName": "Appleton"
         }
       ]
     },
@@ -2094,15 +2040,6 @@
           "lastName": "Mitchell"
         },
         {
-          "id": "14675748",
-          "team": "Alabama",
-          "nat": "USA",
-          "pb": "",
-          "sb": "8:55.52",
-          "firstName": "Amaris",
-          "lastName": "Tyynismaa"
-        },
-        {
           "id": "14763372",
           "team": "Duke",
           "nat": "NED",
@@ -2137,6 +2074,15 @@
           "sb": "8:56.94",
           "firstName": "Taylor",
           "lastName": "Roe"
+        },
+        {
+          "id": "14772632",
+          "team": "BYU",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:57.08",
+          "firstName": "Sadie",
+          "lastName": "Sargent"
         }
       ]
     },
@@ -2234,15 +2180,6 @@
           "lastName": "Stearns"
         },
         {
-          "id": "14660239",
-          "team": "Arkansas",
-          "nat": "USA",
-          "pb": "",
-          "sb": "15:34.61",
-          "firstName": "Lauren",
-          "lastName": "Gregory"
-        },
-        {
           "id": "14926144",
           "team": "NC State",
           "nat": "USA",
@@ -2270,15 +2207,6 @@
           "lastName": "Smee"
         },
         {
-          "id": "14691146",
-          "team": "Tennessee",
-          "nat": "CAN",
-          "pb": "",
-          "sb": "15:38.59",
-          "firstName": "Jasmine",
-          "lastName": "Fehr"
-        },
-        {
           "id": "14758075",
           "team": "Stanford",
           "nat": "POL",
@@ -2286,6 +2214,24 @@
           "sb": "15:40.41",
           "firstName": "Zofia",
           "lastName": "Dudek"
+        },
+        {
+          "id": "14601925",
+          "team": "Colorado St.",
+          "nat": "USA",
+          "pb": "",
+          "sb": "16:07.28",
+          "firstName": "Sarah",
+          "lastName": "Carter"
+        },
+        {
+          "id": "14718893",
+          "team": "Syracuse",
+          "nat": "USA",
+          "pb": "",
+          "sb": "15:42.48",
+          "firstName": "Amanda",
+          "lastName": "Vestri"
         }
       ]
     },

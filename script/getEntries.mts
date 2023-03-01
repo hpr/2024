@@ -14,8 +14,8 @@ const schedules: { [k in DLMeet]: string[] } = {
   ],
   birminghamIndoor: ['./script/files/EntryList.PDF'],
   ncaai23: [
-    'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=16&event_type=&year=&gender=m',
-    'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=16&event_type=&year=&gender=f',
+    'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=30&event_type=&year=&gender=m',
+    'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=30&event_type=&year=&gender=f',
   ],
 };
 
@@ -67,17 +67,27 @@ const getWaId = async (
         Izzy: ['Izzy', 'Isabella'],
         Olemomoi: ['Chebet', 'Olemomoi'],
         Samantha: ['Samantha', 'Sam'],
+        Rohatinsky: ['Rohatinksy'],
       };
+
+      // if (
+      //   ((aliases[firstName] ?? [firstName]) as string[]).every((name) => {
+      //     return (
+      //       !normalize(ath.givenName).toLowerCase().startsWith(normalize(name).toLowerCase()) &&
+      //       !normalize(ath.givenName).toLowerCase().endsWith(normalize(name).toLowerCase())
+      //     );
+      //   })
+      // )
+      //   return false;
       if (
-        ((aliases[firstName] ?? [firstName]) as string[]).every((name) => {
-          return !normalize(ath.givenName).toLowerCase().startsWith(normalize(name).toLowerCase());
-        })
-      )
-        return false;
-      if (
-        ((aliases[lastName] ?? [lastName]) as string[]).every(
-          (name) => normalize(name).toLowerCase() !== normalize(ath.familyName).toLowerCase()
-        )
+        [
+          lastName,
+          lastName.split(' ')[0],
+          lastName.split(' ').slice(0, -1).join(' '),
+          lastName.split(' ').at(-1) ?? '',
+          lastName.split('-')[0],
+          ...(aliases[lastName] ?? []),
+        ].every((name) => normalize(name).toLowerCase() !== normalize(ath.familyName).toLowerCase())
       )
         return false;
 
@@ -291,4 +301,48 @@ const getEntries = async () => {
   fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 };
 
-getEntries();
+// getEntries();
+
+const filterEntries = async (meet: DLMeet) => {
+  const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
+  const rtsptSanitize = (s: string) =>
+    s
+      .replace("Men's", 'Men')
+      .replace("Women's", 'Women')
+      .replace('Meters', 'Meter')
+      .replace('60 Hurdles', '60 Meter Hurdles');
+  for (const gender of ['men', 'women']) {
+    const review = await (
+      await fetch(`https://rtspt.com/ncaa/d1indoor23/${gender}_review.htm`)
+    ).text();
+    const evtSections = review.replace(/1 Mile/g, 'Mile').split(
+      new RegExp('(?=' + runningEvents.flat().map(rtsptSanitize).join('|') + ')')
+    );
+    for (const sect of evtSections) {
+      const evt: AthleticsEvent = runningEvents
+        .flat()
+        .sort((a, b) => b.length - a.length)
+        .find((evt) => sect.startsWith(rtsptSanitize(evt)))!;
+      if (!evt) continue;
+      entries[meet]![evt]!.entrants = entries[meet]![evt]!.entrants.filter(
+        ({ firstName, lastName }) => {
+          const isConsidered = sect
+            .split('\n')
+            .find((line) =>
+              line.toLowerCase().includes(`  ${firstName} ${lastName} `.toLowerCase())
+            )
+            ?.trim()
+            .endsWith('A');
+          return isConsidered;
+        }
+      ).slice(0, 16);
+      console.log(
+        evt,
+        entries[meet]![evt]!.entrants.length,
+        entries[meet]![evt]!.entrants.map(({ firstName, lastName }) => `${firstName} ${lastName}`)
+      );
+    }
+  }
+  fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
+};
+// filterEntries('ncaai23');
