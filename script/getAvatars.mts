@@ -44,7 +44,9 @@ for (const { id, firstName, lastName, team } of entrants) {
         if (!url) console.log(results);
         console.log(firstName, lastName, url);
         const { document } = new JSDOM(await (await fetch(url)).text()).window;
-        imgUrl = (document.querySelector('meta[name="og:image"]')?.getAttribute('content') ??
+        const ogImages = document.querySelectorAll('meta[name="og:image"]');
+        if (ogImages.length === 1) imgUrl = ogImages[0].getAttribute('content')!;
+        imgUrl ??= (document.querySelector('.player__hero img')?.getAttribute('src') ??
           document
             .querySelector(`img.block[alt="${firstName} ${lastName}"]`)
             ?.getAttribute('src') ??
@@ -59,6 +61,9 @@ for (const { id, firstName, lastName, team } of entrants) {
           document.querySelector('.c-rosterbio__player__image img')?.getAttribute('src') ??
           document.querySelector('.info-profile-image > img')?.getAttribute('src') ??
           document.querySelector('.photo > img')?.getAttribute('src') ??
+          document.querySelector('.profile__header > img')?.getAttribute('src') ??
+          document.querySelector('.bio-card_info_photo > div')?.getAttribute('data-bg') ??
+          document.querySelector('.player_bio__photo img')?.getAttribute('src') ??
           document.querySelector('img.seminoles-bio-single--photo')?.getAttribute('src'))!;
         if (imgUrl?.startsWith('/')) imgUrl = getDomain(url) + imgUrl;
         avatarCache.urls[id] = imgUrl!;

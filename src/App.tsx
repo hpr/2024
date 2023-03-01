@@ -20,6 +20,7 @@ import {
   SegmentedControl,
   TextInput,
   PasswordInput,
+  ScrollArea,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
@@ -198,41 +199,44 @@ export default function App() {
             height="calc(100% - 60px)"
             p="md"
           >
-            <Navbar.Section grow mt="xs">
-              <MainLinks
-                links={[
-                  ...(arePicksComplete
-                    ? [
-                        {
-                          icon: <Calculator />,
-                          color: 'black',
-                          label: 'Scoring',
+            <ScrollArea type="always" offsetScrollbars scrollbarSize={15}>
+              <Navbar.Section grow mt="xs">
+                <MainLinks
+                  links={[
+                    ...(arePicksComplete
+                      ? [
+                          {
+                            icon: <Calculator />,
+                            color: 'black',
+                            label: 'Scoring',
+                            onClick: () => {
+                              setPage('scoring');
+                              setNavbarOpen(false);
+                            },
+                          },
+                        ]
+                      : []),
+                    ...Object.keys(entries?.[meet] ?? {})
+                      .sort((a, b) => Number.parseInt(a) - Number.parseInt(b))
+                      .map((label) => {
+                        const linkEvt = label as AthleticsEvent;
+                        const filled = myTeam[meet]?.[linkEvt]?.length === 2;
+                        return {
+                          icon: filled ? <Check /> : <Run />,
+                          color: filled ? 'green' : 'blue',
                           onClick: () => {
-                            setPage('scoring');
+                            setEvt(linkEvt);
+                            setPage('events');
                             setNavbarOpen(false);
                           },
-                        },
-                      ]
-                    : []),
-                  ...Object.keys(entries?.[meet] ?? {})
-                    .sort((a, b) => Number.parseInt(a) - Number.parseInt(b))
-                    .map((label) => {
-                      const linkEvt = label as AthleticsEvent;
-                      const filled = myTeam[meet]?.[linkEvt]?.length === 2;
-                      return {
-                        icon: filled ? <Check /> : <Run />,
-                        color: filled ? 'green' : 'blue',
-                        onClick: () => {
-                          setEvt(linkEvt);
-                          setPage('events');
-                          setNavbarOpen(false);
-                        },
-                        label,
-                      };
-                    }),
-                ]}
-              />
-            </Navbar.Section>
+                          label,
+                        };
+                      }),
+                  ]}
+                />
+              </Navbar.Section>
+            </ScrollArea>
+
             <Navbar.Section onClick={() => setModalOpen(true)}>
               <User />
             </Navbar.Section>
