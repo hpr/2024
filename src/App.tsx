@@ -125,7 +125,7 @@ export default function App() {
                     body: JSON.stringify({
                       action: authPage,
                       ...vals,
-                      ...(authPage === 'addPicks' ? { picksJson: myTeam[meet] } : {}),
+                      ...(authPage === 'addPicks' ? { meet, picksJson: myTeam[meet] } : {}),
                     }),
                   })
                 ).json();
