@@ -32,6 +32,17 @@ import { Calculator, Check, Run } from 'tabler-icons-react';
 import { PICKS_PER_EVT, scoring, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 
+const evtSort = (a: string, b: string) => {
+  const DIGITS = '0123456789';
+  const normalize = (s: string) => s.replace('Mile', '1609');
+  const firstNumericWord = (s: string) => s.split(' ').find((w) => DIGITS.includes(w[0]))!;
+  const gender = (s: string) => (s.match(/(Men|Women)/) ?? [])[0];
+  a = normalize(a);
+  b = normalize(b);
+  if (gender(a) !== gender(b)) return a.localeCompare(b);
+  return Number.parseInt(firstNumericWord(a)) - Number.parseInt(firstNumericWord(b));
+};
+
 export default function App() {
   const [entries, setEntries] = useState<Entries | null>(null);
   const [meet] = useState<DLMeet>('ncaai23');
@@ -77,12 +88,13 @@ export default function App() {
     Object.values(myTeam[meet] ?? {}).flat().length ===
     Object.keys(entries?.[meet] ?? {}).length * PICKS_PER_EVT;
 
-  const picksText = Object.entries(myTeam[meet] ?? {})
+  const picksText = Object.keys(myTeam[meet] ?? {})
+    .sort(evtSort)
     .map(
-      ([evt, evtPicks]) =>
-        `${evt}: ${evtPicks
-          .map(({ firstName, lastName }) => `${firstName} ${lastName}`)
-          .join(', ')}`
+      (evt) =>
+        `${evt}: ${myTeam[meet]![evt as AthleticsEvent]!.map(
+          ({ firstName, lastName }) => `${firstName} ${lastName}`
+        ).join(', ')}`
     )
     .join('\n');
 
@@ -180,6 +192,7 @@ export default function App() {
             </Text>
             <List>
               {Object.keys(entries?.[meet] ?? {})
+                .sort(evtSort)
                 .filter(
                   (evt) => (myTeam[meet]?.[evt as AthleticsEvent]?.length ?? 0) < PICKS_PER_EVT
                 )
@@ -219,7 +232,7 @@ export default function App() {
                         ]
                       : []),
                     ...Object.keys(entries?.[meet] ?? {})
-                      .sort((a, b) => Number.parseInt(a) - Number.parseInt(b))
+                      .sort(evtSort)
                       .map((label) => {
                         const linkEvt = label as AthleticsEvent;
                         const filled = myTeam[meet]?.[linkEvt]?.length === PICKS_PER_EVT;
