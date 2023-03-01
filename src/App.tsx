@@ -108,7 +108,7 @@ export default function App() {
           <Stack>
             <SegmentedControl
               value={authPage}
-              onChange={(v: AuthPage) => setAuthPage(v)}
+              onChange={(v: AuthPage) => { setAuthPage(v); setIsSuccess(false); }}
               data={[
                 { label: 'Login & Submit', value: 'addPicks' },
                 { label: 'Register', value: 'register' },
