@@ -21,6 +21,8 @@ import {
   TextInput,
   PasswordInput,
   ScrollArea,
+  Progress,
+  Popover,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
@@ -84,9 +86,10 @@ export default function App() {
   }, [myTeam]);
 
   const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
-  const arePicksComplete =
-    Object.values(myTeam[meet] ?? {}).flat().length ===
-    Object.keys(entries?.[meet] ?? {}).length * PICKS_PER_EVT;
+  const numPicks = Object.values(myTeam[meet] ?? {}).flat().length;
+  const numMaxPicks = Object.keys(entries?.[meet] ?? {}).length * PICKS_PER_EVT;
+  const arePicksComplete = numPicks === numMaxPicks;
+  const percentComplete = Math.round((numPicks / numMaxPicks) * 100);
 
   const picksText = Object.keys(myTeam[meet] ?? {})
     .sort(evtSort)
@@ -208,6 +211,7 @@ export default function App() {
         navbarOffsetBreakpoint="sm"
         navbar={
           <Navbar
+            sx={{ zIndex: 99 }}
             width={{ base: 300 }}
             hiddenBreakpoint="sm"
             hidden={!navbarOpen}
@@ -269,9 +273,38 @@ export default function App() {
                   mr="xl"
                 />
               </MediaQuery>
-              <Text size="xl" weight={500}>
+              <Text size="lg" weight={500}>
                 Fantasy NCAA Indoors
+                <Popover width="100%" position="bottom" withArrow shadow="md">
+                  <Popover.Target>
+                    <Button ml={20}>Rules</Button>
+                  </Popover.Target>
+                  <Popover.Dropdown>
+                    <Text mb={10}>
+                      Select {PICKS_PER_EVT} athletes per event by selecting events on the left
+                      side, and picking athletes in the main view. The first {PICKS_PER_EVT - 1}{' '}
+                      athletes will be your team, and the last athlete will be a "backup" that will
+                      automatically be substituted if any of your team members DNS, DNF, DQ, or
+                      finish last (to account for e.g. a fall).
+                    </Text>
+                    <Text mb={10}>
+                      Your athletes will be scored by place: 10, 8, 6, 5, 4, 3, 2, 1 style. Your Event Captain will score double. Once you have finished your picks, you <b>must</b> submit them by pressing "Save Picks" and then registering an account, then you need to log in and click "Submit Picks".
+                    </Text>
+                    <Text>
+                      Contact: <a href="mailto:habs@sdf.org">habs@sdf.org</a>
+                    </Text>
+                  </Popover.Dropdown>
+                </Popover>
               </Text>
+              <MediaQuery smallerThan="md" styles={{ display: 'none ' }}>
+                <Progress
+                  value={percentComplete}
+                  label={percentComplete >= 10 ? `${percentComplete}% Complete` : ''}
+                  size="xl"
+                  radius="xl"
+                  sx={{ width: '50%' }}
+                />
+              </MediaQuery>
             </Group>
           </Header>
         }
@@ -342,7 +375,7 @@ export default function App() {
                 {myTeamPicks.map(({ id, lastName }, i) => (
                   <React.Fragment key={id}>
                     <Text sx={{ fontWeight: 'bold' }}>
-                      {i === 0 ? 'Primary Pick:' : i === 1 ? 'Secondary Pick:' : 'Backup Pick:'}
+                      {i === 0 ? 'Event Captain:' : i === 1 ? 'Other Pick:' : 'Backup Pick:'}
                     </Text>
                     <Badge
                       key={id}

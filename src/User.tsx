@@ -1,4 +1,4 @@
-import { ChevronRight, ChevronLeft } from 'tabler-icons-react';
+import { ChevronRight, ChevronLeft, DeviceFloppy } from 'tabler-icons-react';
 import { UnstyledButton, Group, Avatar, Text, Box, useMantineTheme } from '@mantine/core';
 
 export function User({ onClick = () => {} }: { onClick?: React.MouseEventHandler }) {
@@ -28,10 +28,9 @@ export function User({ onClick = () => {} }: { onClick?: React.MouseEventHandler
         }}
       >
         <Group>
-          <Avatar
-            src="img/avatars/default_128x128.png"
-            radius="xl"
-          />
+          <Avatar radius="xl">
+            <DeviceFloppy />
+          </Avatar>
           <Box sx={{ flex: 1 }} onClick={onClick}>
             <Text size="sm" weight={500}>
               Save Picks
