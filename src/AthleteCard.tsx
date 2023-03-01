@@ -1,5 +1,6 @@
 import { createStyles, Card, Avatar, Text, Group, Button } from '@mantine/core';
 import { useContext } from 'react';
+import { PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, DLMeet, Entrant } from './types';
 
@@ -63,7 +64,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
       </Group>
       <Button
         fullWidth
-        disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= 2}
+        disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT}
         radius="md"
         mt="xl"
         size="md"
@@ -82,8 +83,8 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
       >
         {(() => {
           if (isOnTeam) return 'Remove from Team';
-          if (team.length === 0) return 'Add as Primary';
-          if (team.length === 1) return 'Add as Secondary';
+          if (team.length < PICKS_PER_EVT - 1) return 'Add to Team';
+          if (team.length < PICKS_PER_EVT) return 'Add as Backup';
           return 'Team Full';
         })()}
       </Button>

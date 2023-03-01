@@ -29,7 +29,7 @@ import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
 import { Calculator, Check, Run } from 'tabler-icons-react';
-import { scoring, SERVER_URL } from './const';
+import { PICKS_PER_EVT, scoring, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 
 export default function App() {
@@ -75,14 +75,14 @@ export default function App() {
   const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
   const arePicksComplete =
     Object.values(myTeam[meet] ?? {}).flat().length ===
-    Object.keys(entries?.[meet] ?? {}).length * 2;
+    Object.keys(entries?.[meet] ?? {}).length * PICKS_PER_EVT;
 
   const picksText = Object.entries(myTeam[meet] ?? {})
     .map(
-      ([evt, [primary, secondary]]) =>
-        primary &&
-        secondary &&
-        `${evt}: ${primary.firstName} ${primary.lastName} (${secondary.firstName} ${secondary.lastName})`
+      ([evt, evtPicks]) =>
+        `${evt}: ${evtPicks
+          .map(({ firstName, lastName }) => `${firstName} ${lastName}`)
+          .join(', ')}`
     )
     .join('\n');
 
@@ -180,7 +180,9 @@ export default function App() {
             </Text>
             <List>
               {Object.keys(entries?.[meet] ?? {})
-                .filter((evt) => (myTeam[meet]?.[evt as AthleticsEvent]?.length ?? 0) < 2)
+                .filter(
+                  (evt) => (myTeam[meet]?.[evt as AthleticsEvent]?.length ?? 0) < PICKS_PER_EVT
+                )
                 .map((evt) => (
                   <List.Item key={evt}>{evt}</List.Item>
                 ))}
@@ -220,7 +222,7 @@ export default function App() {
                       .sort((a, b) => Number.parseInt(a) - Number.parseInt(b))
                       .map((label) => {
                         const linkEvt = label as AthleticsEvent;
-                        const filled = myTeam[meet]?.[linkEvt]?.length === 2;
+                        const filled = myTeam[meet]?.[linkEvt]?.length === PICKS_PER_EVT;
                         return {
                           icon: filled ? <Check /> : <Run />,
                           color: filled ? 'green' : 'blue',
@@ -327,7 +329,7 @@ export default function App() {
                 {myTeamPicks.map(({ id, lastName }, i) => (
                   <React.Fragment key={id}>
                     <Text sx={{ fontWeight: 'bold' }}>
-                      {i === 0 ? 'Primary Pick:' : 'Secondary Pick:'}
+                      {i === 0 ? 'Primary Pick:' : i === 1 ? 'Secondary Pick:' : 'Backup Pick:'}
                     </Text>
                     <Badge
                       key={id}
