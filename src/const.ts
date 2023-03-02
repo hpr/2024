@@ -19,6 +19,7 @@ query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
       }
     }
     resultsByYear {
+      activeYears
       resultsByEvent {
         indoor discipline
         results { date venue place mark wind notLegal }

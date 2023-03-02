@@ -404,7 +404,7 @@ export default function App() {
                       </Avatar.Group>
                     </Tooltip.Group>
                   ) : (
-                    <Text>Select a team captain, secondary pick, and backup pick below</Text>
+                    <Text>Select an event captain, secondary pick, and backup pick below</Text>
                   )}
                   {myTeamPicks.length == PICKS_PER_EVT ? <Check size={30} /> : <Dots size={30} />}
                 </Stack>

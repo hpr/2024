@@ -57,6 +57,15 @@ export type Team = {
   };
 };
 
+export type ResultsByYearResult = {
+  date: string;
+  venue: string;
+  place: string;
+  mark: string;
+  wind: string;
+  notLegal: boolean;
+};
+
 export type Competitor = {
   basicData: {
     firstName: string;
@@ -77,17 +86,11 @@ export type Competitor = {
     }[];
   };
   resultsByYear: {
+    activeYears: string[],
     resultsByEvent: {
       indoor: boolean;
       discipline: string;
-      results: {
-        date: string;
-        venue: string;
-        place: string;
-        mark: string;
-        wind: string;
-        notLegal: boolean;
-      }[];
+      results: ResultsByYearResult[];
     }[];
   };
 };

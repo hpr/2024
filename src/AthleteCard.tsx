@@ -17,7 +17,7 @@ import { useContext, useState } from 'react';
 import { World } from 'tabler-icons-react';
 import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
-import { AthleticsEvent, Competitor, DLMeet, Entrant } from './types';
+import { AthleticsEvent, Competitor, DLMeet, Entrant, ResultsByYearResult } from './types';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -118,29 +118,41 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
                 )}
               </tbody>
             </Table>
-            <Title order={2}>{new Date().getFullYear()} Results</Title>
+            <Title order={2}>{competitor?.resultsByYear?.activeYears[0]} Results</Title>
             <Accordion multiple variant="contained" sx={{ width: '100%' }}>
-              {competitor?.resultsByYear.resultsByEvent.map(({ indoor, discipline, results }) => (
-                <Accordion.Item key={indoor + discipline} value={indoor + discipline}>
-                  <Accordion.Control>{discipline}</Accordion.Control>
-                  <Accordion.Panel>
-                    <List>
-                      {results.map(({ date, venue, place, mark, wind, notLegal }, i) => (
-                        <List.Item key={i}>
-                          {date.split(' ').slice(0, -1).join(' ')}:{' '}
-                          <span style={{ fontWeight: 'bold' }}>
-                            {Number.parseInt(place)
-                              ? `${Number.parseInt(place)}${nth(place)} place, `
-                              : ''}
-                            {mark}
-                          </span>
-                          {notLegal ? '*' : ''} {wind ? `(${wind})` : ''} @ {venue}
-                        </List.Item>
-                      ))}
-                    </List>
-                  </Accordion.Panel>
-                </Accordion.Item>
-              ))}
+              {competitor &&
+                Object.entries(
+                  competitor.resultsByYear.resultsByEvent.reduce(
+                    (acc, { indoor, discipline, results }) => {
+                      acc[discipline] ??= [];
+                      acc[discipline].push(...results);
+                      return acc;
+                    },
+                    {} as { [k: string]: ResultsByYearResult[] }
+                  )
+                ).map(([discipline, results]) => (
+                  <Accordion.Item key={discipline} value={discipline}>
+                    <Accordion.Control>{discipline}</Accordion.Control>
+                    <Accordion.Panel>
+                      <List>
+                        {results
+                          .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+                          .map(({ date, venue, place, mark, wind, notLegal }, i) => (
+                            <List.Item key={i}>
+                              {date.split(' ').slice(0, -1).join(' ')}:{' '}
+                              <span style={{ fontWeight: 'bold' }}>
+                                {Number.parseInt(place)
+                                  ? `${Number.parseInt(place)}${nth(place)} place, `
+                                  : ''}
+                                {mark}
+                              </span>
+                              {notLegal ? '*' : ''} {wind ? `(${wind})` : ''} @ {venue}
+                            </List.Item>
+                          ))}
+                      </List>
+                    </Accordion.Panel>
+                  </Accordion.Item>
+                ))}
             </Accordion>
           </Stack>
         </div>
