@@ -301,15 +301,25 @@ export default function App() {
                       <b>must</b> submit them by pressing "Save Picks" and then registering an
                       account, then you need to log in and click "Submit Picks".
                     </Text>
-                    <Text>
-                      Contact for suggestions, improvements or issues:{' '}
-                      <Button size="xs" leftIcon={<Mail />} onClick={() => window.open('mailto:habs@sdf.org')?.close()}>
+                    <Group align="center">
+                      <Text>Contact for suggestions, improvements or issues:</Text>
+                      <Button
+                        variant="default"
+                        size="xs"
+                        leftIcon={<Mail />}
+                        onClick={() => window.open('mailto:habs@sdf.org')?.close()}
+                      >
                         habs@sdf.org
                       </Button>
-                      <Button size="xs" leftIcon={<BrandGit />} onClick={() => window.open('https://github.com/hpr/fantasy-dl', '_blank')}>
+                      <Button
+                        variant="default"
+                        size="xs"
+                        leftIcon={<BrandGit />}
+                        onClick={() => window.open('https://github.com/hpr/fantasy-dl', '_blank')}
+                      >
                         Source code
                       </Button>
-                    </Text>
+                    </Group>
                   </Popover.Dropdown>
                 </Popover>
               </Text>
