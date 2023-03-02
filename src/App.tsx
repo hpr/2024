@@ -33,7 +33,7 @@ import { AthleticsEvent, AuthPage, DLMeet, Entries, Team } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
-import { Calculator, Check, Dots, Run } from 'tabler-icons-react';
+import { BrandGit, Calculator, Check, Dots, Mail, Run } from 'tabler-icons-react';
 import { PICKS_PER_EVT, scoring, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 
@@ -283,7 +283,9 @@ export default function App() {
                 Fantasy NCAA Indoors
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
-                    <Button size="xs" ml={20}>Rules</Button>
+                    <Button size="xs" ml={20}>
+                      Rules
+                    </Button>
                   </Popover.Target>
                   <Popover.Dropdown>
                     <Text mb={10}>
@@ -300,7 +302,13 @@ export default function App() {
                       account, then you need to log in and click "Submit Picks".
                     </Text>
                     <Text>
-                      Contact: <a href="mailto:habs@sdf.org">habs@sdf.org</a>
+                      Contact for suggestions, improvements or issues:{' '}
+                      <Button size="xs" leftIcon={<Mail />} onClick={() => window.open('mailto:habs@sdf.org')?.close()}>
+                        habs@sdf.org
+                      </Button>
+                      <Button size="xs" leftIcon={<BrandGit />} onClick={() => window.open('https://github.com/hpr/fantasy-dl', '_blank')}>
+                        Source code
+                      </Button>
                     </Text>
                   </Popover.Dropdown>
                 </Popover>
