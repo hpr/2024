@@ -279,11 +279,11 @@ export default function App() {
                   mr="xl"
                 />
               </MediaQuery>
-              <Text size="lg" weight={500}>
+              <Text size="md">
                 Fantasy NCAA Indoors
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
-                    <Button ml={20}>Rules</Button>
+                    <Button size="xs" ml={20}>Rules</Button>
                   </Popover.Target>
                   <Popover.Dropdown>
                     <Text mb={10}>
