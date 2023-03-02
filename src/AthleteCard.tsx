@@ -184,7 +184,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
         }}
       >
         {/* <Card.Section sx={{ backgroundImage: `url(${image})`, height: 140 }} /> */}
-        <Avatar src={avatar} size={80} radius={80} mx="auto" className={classes.avatar} />
+        <Avatar mt={-20} src={avatar} size={128} radius={128} mx="auto" className={classes.avatar} />
         <Text align="center" size="lg" weight={500} mt="sm">
           {name}
         </Text>
