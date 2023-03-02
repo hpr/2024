@@ -204,9 +204,10 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
             }}
           >
             {(() => {
-              if (isOnTeam) return 'Remove from Team';
-              if (team.length < PICKS_PER_EVT - 1) return 'Add to Team';
-              if (team.length < PICKS_PER_EVT) return 'Add as Backup';
+              if (isOnTeam) return 'Remove';
+              if (team.length === 0) return 'Add Captain';
+              if (team.length === 1) return 'Add Secondary';
+              if (team.length < PICKS_PER_EVT) return 'Add Backup';
               return 'Team Full';
             })()}
           </Button>

@@ -23,6 +23,9 @@ import {
   ScrollArea,
   Progress,
   Popover,
+  Title,
+  Tooltip,
+  Paper,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
@@ -30,7 +33,7 @@ import { AthleticsEvent, AuthPage, DLMeet, Entries, Team } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
-import { Calculator, Check, Run } from 'tabler-icons-react';
+import { Calculator, Check, Dots, Run } from 'tabler-icons-react';
 import { PICKS_PER_EVT, scoring, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 
@@ -108,7 +111,10 @@ export default function App() {
           <Stack>
             <SegmentedControl
               value={authPage}
-              onChange={(v: AuthPage) => { setAuthPage(v); setIsSuccess(false); }}
+              onChange={(v: AuthPage) => {
+                setAuthPage(v);
+                setIsSuccess(false);
+              }}
               data={[
                 { label: 'Login & Submit', value: 'addPicks' },
                 { label: 'Register', value: 'register' },
@@ -288,7 +294,10 @@ export default function App() {
                       finish last (to account for e.g. a fall).
                     </Text>
                     <Text mb={10}>
-                      Your athletes will be scored by place: 10, 8, 6, 5, 4, 3, 2, 1 style. Your Event Captain will score double. Once you have finished your picks, you <b>must</b> submit them by pressing "Save Picks" and then registering an account, then you need to log in and click "Submit Picks".
+                      Your athletes will be scored by place: 10, 8, 6, 5, 4, 3, 2, 1 style. Your
+                      Event Captain will score double. Once you have finished your picks, you{' '}
+                      <b>must</b> submit them by pressing "Save Picks" and then registering an
+                      account, then you need to log in and click "Submit Picks".
                     </Text>
                     <Text>
                       Contact: <a href="mailto:habs@sdf.org">habs@sdf.org</a>
@@ -371,29 +380,37 @@ export default function App() {
             </>
           ) : (
             <>
-              <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-                {myTeamPicks.map(({ id, lastName }, i) => (
-                  <React.Fragment key={id}>
-                    <Text sx={{ fontWeight: 'bold' }}>
-                      {i === 0 ? 'Event Captain:' : i === 1 ? 'Other Pick:' : 'Backup Pick:'}
-                    </Text>
-                    <Badge
-                      key={id}
-                      sx={{ paddingLeft: 0 }}
-                      size="lg"
-                      radius="xl"
-                      leftSection={
-                        <Avatar src={`img/avatars/${id}_128x128.png`} mr={5} size={24} />
-                      }
-                    >
-                      {lastName}
-                    </Badge>
-                  </React.Fragment>
-                ))}
-              </SimpleGrid>{' '}
-              <Text weight={1000} size="xl">
-                {evt}
-              </Text>
+              <Paper shadow="xl" radius="xl" p="xl" withBorder>
+                <Stack align="center">
+                  {myTeamPicks.length ? (
+                    <Tooltip.Group openDelay={0} closeDelay={100}>
+                      <Avatar.Group spacing="xs">
+                        {myTeamPicks.map(({ id, lastName }, i) => (
+                          <Tooltip
+                            key={i}
+                            withArrow
+                            label={`${
+                              i === 0 ? 'Event Captain' : i === 1 ? 'Secondary' : 'Backup'
+                            }: ${lastName}`}
+                            events={{ hover: true, focus: true, touch: true }}
+                          >
+                            <Avatar
+                              size={i === 0 ? 'xl' : i === 1 ? 'lg' : 'md'}
+                              src={`img/avatars/${id}_128x128.png`}
+                              radius="xl"
+                            />
+                          </Tooltip>
+                        ))}
+                      </Avatar.Group>
+                    </Tooltip.Group>
+                  ) : (
+                    <Text>Select a team captain, secondary pick, and backup pick below</Text>
+                  )}
+                  {myTeamPicks.length == PICKS_PER_EVT ? <Check size={30} /> : <Dots size={30} />}
+                </Stack>
+              </Paper>
+
+              <Title order={1}>{evt}</Title>
               {/* Event time:{' '}
           {new Date(entries?.[meet]?.[evt!]?.date!).toLocaleTimeString().replace(':00 ', ' ')} */}
               <SimpleGrid
