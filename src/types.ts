@@ -56,3 +56,38 @@ export type Team = {
     [k in AthleticsEvent]?: Entrant[];
   };
 };
+
+export type Competitor = {
+  basicData: {
+    firstName: string;
+    lastName: string;
+    birthDate: string;
+    iaafId: string;
+    aaId: string;
+  };
+  personalBests: {
+    results: {
+      indoor: boolean;
+      discipline: string;
+      mark: string;
+      notLegal: boolean;
+      venue: string;
+      date: string;
+      resultScore: number;
+    }[];
+  };
+  resultsByYear: {
+    resultsByEvent: {
+      indoor: boolean;
+      discipline: string;
+      results: {
+        date: string;
+        venue: string;
+        place: string;
+        mark: string;
+        wind: string;
+        notLegal: boolean;
+      }[];
+    }[];
+  };
+};
