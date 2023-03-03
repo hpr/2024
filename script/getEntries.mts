@@ -1,10 +1,10 @@
 import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import { nameFixer } from 'name-fixer';
-import { AthleticsEvent, DLMeet, Entrant, Entries, MeetCache } from './types.mjs';
+import { AthleticsEvent, DLMeet, Entrant, Entries, MeetCache, WAEventCode } from './types.mjs';
 
 import PDFParser, { Output } from 'pdf2json';
-import { CACHE_PATH, ENTRIES_PATH, runningEvents } from './const.mjs';
+import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents } from './const.mjs';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 
@@ -34,7 +34,14 @@ const getWaId = async (
     college = false,
     indoors,
     gender,
-  }: { birthYear?: string; college?: boolean; indoors?: boolean; gender?: string }
+    disciplineCode,
+  }: {
+    birthYear?: string;
+    college?: boolean;
+    indoors?: boolean;
+    gender?: string;
+    disciplineCode?: WAEventCode;
+  }
 ) => {
   const { data } = await (
     await fetch('https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql', {
@@ -45,6 +52,7 @@ const getWaId = async (
           query: `${firstName} ${lastName}`,
           environment: indoors ? 'indoor' : undefined,
           gender,
+          disciplineCode,
         },
         query: `
         query SearchCompetitors($query: String, $gender: GenderType, $disciplineCode: String, $environment: String, $countryCode: String) {
@@ -60,13 +68,16 @@ const getWaId = async (
       method: 'POST',
     })
   ).json();
+  console.log(firstName, lastName, disciplineCode, data.searchCompetitors);
+
   const { aaAthleteId, country } = data.searchCompetitors.find(
     (ath: { birthDate: string; givenName: string; familyName: string }) => {
       const normalize = (name: string) => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
       const aliases: { [k: string]: string[] } = {
-        Izzy: ['Izzy', 'Isabella'],
-        Olemomoi: ['Chebet', 'Olemomoi'],
-        Samantha: ['Samantha', 'Sam'],
+        Izzy: ['Isabella'],
+        Samantha: ['Sam'],
+
+        Olemomoi: ['Chebet'],
         Rohatinsky: ['Rohatinksy'],
       };
 
@@ -86,6 +97,7 @@ const getWaId = async (
           lastName.split(' ').slice(0, -1).join(' '),
           lastName.split(' ').at(-1) ?? '',
           lastName.split('-')[0],
+          firstName,
           ...(aliases[lastName] ?? []),
         ].every((name) => normalize(name).toLowerCase() !== normalize(ath.familyName).toLowerCase())
       )
@@ -93,7 +105,7 @@ const getWaId = async (
 
       if (!ath.birthDate) return true;
       if (birthYear) return ath.birthDate.slice(-4) === birthYear;
-      if (college) return +ath.birthDate.slice(-4) >= 1996;
+      if (college) return +ath.birthDate.slice(-4) >= 1994;
     }
   );
   return { id: aaAthleteId, country };
@@ -114,9 +126,10 @@ const getEntries = async () => {
         const { document } = new JSDOM(cache[meet].schedule[isMale ? 'm' : 'f']).window;
         const eventDivs = document.querySelectorAll(`.gender_${isMale ? 'm' : 'f'}`);
         for (const eventDiv of eventDivs) {
-          const evt = `${isMale ? 'Men' : 'Women'}'s ${eventDiv
+          const ungenderedEvt = eventDiv
             .querySelector('.custom-table-title > h3')
-            ?.textContent?.trim()}` as AthleticsEvent;
+            ?.textContent?.trim()!;
+          const evt = `${isMale ? 'Men' : 'Women'}'s ${ungenderedEvt}` as AthleticsEvent;
           if (!runningEvents.flat().includes(evt)) continue;
           const athletes: Entrant[] = [];
           for (const row of eventDiv.querySelectorAll('.allRows')) {
@@ -131,6 +144,7 @@ const getEntries = async () => {
               lastName,
               {
                 college: true,
+                disciplineCode: disciplineCodes[ungenderedEvt],
                 indoors: true,
                 gender: isMale ? 'male' : 'female',
               }
@@ -315,9 +329,9 @@ const filterEntries = async (meet: DLMeet) => {
     const review = await (
       await fetch(`https://rtspt.com/ncaa/d1indoor23/${gender}_review.htm`)
     ).text();
-    const evtSections = review.replace(/1 Mile/g, 'Mile').split(
-      new RegExp('(?=' + runningEvents.flat().map(rtsptSanitize).join('|') + ')')
-    );
+    const evtSections = review
+      .replace(/1 Mile/g, 'Mile')
+      .split(new RegExp('(?=' + runningEvents.flat().map(rtsptSanitize).join('|') + ')'));
     for (const sect of evtSections) {
       const evt: AthleticsEvent = runningEvents
         .flat()
