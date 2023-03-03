@@ -169,6 +169,7 @@ for (const { id, firstName, lastName, team } of entrants) {
               if (url.includes('tfrrs.org')) return false;
               if (url.includes('athletic.net')) return false;
               if (url.includes('worldathletics.org')) return false;
+              if (url.endsWith('/roster/')) return false;
               return true;
             })! ?? {};
           if (!url) console.log(results);
