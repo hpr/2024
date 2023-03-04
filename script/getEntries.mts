@@ -340,6 +340,7 @@ const filterEntries = async (meet: DLMeet) => {
       if (!evt) continue;
       entries[meet]![evt]!.entrants = entries[meet]![evt]!.entrants.filter(
         ({ firstName, lastName }) => {
+          if (['Parker Valby'].includes(`${firstName} ${lastName}`)) return false;
           const isConsidered = sect
             .split('\n')
             .find((line) =>
@@ -359,4 +360,4 @@ const filterEntries = async (meet: DLMeet) => {
   }
   fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
 };
-// filterEntries('ncaai23');
+filterEntries('ncaai23');

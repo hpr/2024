@@ -1959,15 +1959,6 @@
           "lastName": "Olemomoi"
         },
         {
-          "id": "14903214",
-          "team": "Florida",
-          "nat": "USA",
-          "pb": "",
-          "sb": "8:49.71",
-          "firstName": "Parker",
-          "lastName": "Valby"
-        },
-        {
           "id": "14819070",
           "team": "West Virginia",
           "nat": "CAN",
@@ -2083,6 +2074,15 @@
           "sb": "8:57.08",
           "firstName": "Sadie",
           "lastName": "Sargent"
+        },
+        {
+          "id": "14741102",
+          "team": "BYU",
+          "nat": "USA",
+          "pb": "",
+          "sb": "8:57.39",
+          "firstName": "Lexy",
+          "lastName": "Halladay-Lowry"
         }
       ]
     },
