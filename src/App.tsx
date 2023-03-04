@@ -424,7 +424,16 @@ export default function App() {
                   ) : (
                     <Text>Select an event captain, secondary pick, and backup pick below</Text>
                   )}
-                  {myTeamPicks.length == PICKS_PER_EVT ? <Check size={30} /> : <Dots size={30} />}
+                  {myTeamPicks.length == PICKS_PER_EVT ? (
+                    <Check size={30} />
+                  ) : (
+                    <>
+                      {myTeamPicks.length
+                        ? `Select ${PICKS_PER_EVT - myTeamPicks.length} more...`
+                        : ''}
+                      <Dots size={30} />
+                    </>
+                  )}
                 </Stack>
               </Paper>
 
@@ -439,7 +448,7 @@ export default function App() {
                   <SimpleGrid
                     cols={8}
                     breakpoints={[
-                      { maxWidth: 'sm', cols: 2},
+                      { maxWidth: 'sm', cols: 2 },
                       { maxWidth: 'md', cols: 3 },
                       { maxWidth: 'lg', cols: 5 },
                       { maxWidth: 'xl', cols: 7 },

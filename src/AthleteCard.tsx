@@ -89,12 +89,13 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
                 leftIcon={
                   isOnTeam ? <Minus /> : team.length < PICKS_PER_EVT ? <Plus /> : <AlertCircle />
                 }
-                disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT}
+                // disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT}
                 radius="xl"
                 size="xl"
                 color={isOnTeam ? 'red' : undefined}
                 onClick={(evt) => {
                   evt.stopPropagation();
+                  if (!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT) return;
                   setMyTeam({
                     ...myTeam,
                     [meet]: {
