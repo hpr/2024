@@ -1,10 +1,11 @@
-import { List } from '@mantine/core';
+import { Avatar, List, Paper } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import { SERVER_URL } from './const';
 import { DLMeet } from './types';
+import Filter from 'badwords-filter';
 
 export const Submissions = ({ meet }: { meet: DLMeet }) => {
-  const [submissions, setSubmissions] = useState<{ id: number, name: string }[]>([]);
+  const [submissions, setSubmissions] = useState<{ id: number; name: string }[]>([]);
   useEffect(() => {
     (async () => {
       setSubmissions(
@@ -20,11 +21,26 @@ export const Submissions = ({ meet }: { meet: DLMeet }) => {
       );
     })();
   }, []);
+  const filter = new Filter();
   return (
-    <List>
-      {submissions.map(({ id, name }) => (
-        <List.Item>{name} (#{id})</List.Item>
-      ))}
-    </List>
+    <Paper withBorder p="xl">
+      <List>
+        {submissions.map(({ id, name }) => (
+          <List.Item
+            icon={
+              <Avatar size="sm" radius="xl">
+                {name
+                  .split(' ')
+                  .slice(0, 2)
+                  .map((w) => w[0].toUpperCase())
+                  .join('')}
+              </Avatar>
+            }
+          >
+            {filter.clean(name)} (#{id})
+          </List.Item>
+        ))}
+      </List>
+    </Paper>
   );
 };
