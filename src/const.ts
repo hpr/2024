@@ -32,3 +32,5 @@ query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
 `;
 
 export const mantineGray = 'rgb(55, 58, 64)';
+
+export const DIVIDER = 'divider' as 'divider';

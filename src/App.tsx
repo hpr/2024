@@ -26,6 +26,7 @@ import {
   Title,
   Tooltip,
   Paper,
+  Divider,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
@@ -33,9 +34,10 @@ import { AthleticsEvent, AuthPage, DLMeet, Entries, Team } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
-import { BrandGit, Calculator, Check, Dots, Mail, Run } from 'tabler-icons-react';
-import { PICKS_PER_EVT, scoring, SERVER_URL } from './const';
+import { BrandGit, Calculator, Check, Dots, Mail, Run, Users } from 'tabler-icons-react';
+import { DIVIDER, PICKS_PER_EVT, scoring, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
+import { Submissions } from './Submissions';
 
 const evtSort = (a: string, b: string) => {
   const DIGITS = '0123456789';
@@ -55,7 +57,7 @@ export default function App() {
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
-  const [page, setPage] = useState<'events' | 'scoring'>('events');
+  const [page, setPage] = useState<'events' | 'scoring' | 'submissions'>('events');
   const [authPage, setAuthPage] = useState<AuthPage>('register');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
@@ -228,17 +230,27 @@ export default function App() {
               <Navbar.Section grow mt="xs">
                 <MainLinks
                   links={[
-                    ...(arePicksComplete && false
+                    ...(true
                       ? [
+                          // {
+                          //   icon: <Calculator />,
+                          //   color: 'black',
+                          //   label: 'Scoring',
+                          //   onClick: () => {
+                          //     setPage('scoring');
+                          //     setNavbarOpen(false);
+                          //   },
+                          // },
                           {
-                            icon: <Calculator />,
+                            icon: <Users />,
                             color: 'black',
-                            label: 'Scoring',
+                            label: 'Submissions',
                             onClick: () => {
-                              setPage('scoring');
+                              setPage('submissions');
                               setNavbarOpen(false);
                             },
                           },
+                          DIVIDER,
                         ]
                       : []),
                     ...Object.keys(entries?.[meet] ?? {})
@@ -343,7 +355,9 @@ export default function App() {
         })}
       >
         <Stack align="center" mt={0}>
-          {page === 'scoring' ? (
+          {page === 'submissions' ? (
+            <Submissions meet={meet} />
+          ) : page === 'scoring' ? (
             <>
               Scoring:
               <Accordion variant="contained">

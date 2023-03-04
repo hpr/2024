@@ -1,6 +1,7 @@
 import React, { MouseEventHandler } from 'react';
 import { GitPullRequest, AlertCircle, Messages, Database } from 'tabler-icons-react';
-import { ThemeIcon, UnstyledButton, Group, Text } from '@mantine/core';
+import { ThemeIcon, UnstyledButton, Group, Text, Divider } from '@mantine/core';
+import { DIVIDER } from './const';
 
 interface MainLinkProps {
   icon: React.ReactNode;
@@ -44,20 +45,23 @@ const data = [
 ];
 
 type MainLinksProps = {
-  links?: {
-    icon: JSX.Element;
-    color: string;
-    label: string;
-    onClick?: MouseEventHandler;
-  }[];
+  links?: (
+    | {
+        icon: JSX.Element;
+        color: string;
+        label: string;
+        onClick?: MouseEventHandler;
+      }
+    | 'divider'
+  )[];
 };
 
 export function MainLinks({ links = data }: MainLinksProps) {
   return (
     <div>
-      {links.map((link) => (
-        <MainLink {...link} key={link.label} />
-      ))}
+      {links.map((link) =>
+        link === DIVIDER ? <Divider my="lg" /> : <MainLink {...link} key={link.label} />
+      )}
     </div>
   );
 }
