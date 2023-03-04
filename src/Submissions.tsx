@@ -1,6 +1,6 @@
-import { Avatar, List, Paper } from '@mantine/core';
+import { Avatar, Badge, List, Paper } from '@mantine/core';
 import { useEffect, useState } from 'react';
-import { SERVER_URL } from './const';
+import { mantineGray, SERVER_URL } from './const';
 import { DLMeet } from './types';
 import Filter from 'badwords-filter';
 
@@ -28,7 +28,7 @@ export const Submissions = ({ meet }: { meet: DLMeet }) => {
         {submissions.map(({ id, name }) => (
           <List.Item
             icon={
-              <Avatar size="sm" radius="xl">
+              <Avatar size="sm" radius="xl" style={{ border: `1px solid ${mantineGray}` }}>
                 {name
                   .split(' ')
                   .slice(0, 2)
@@ -37,7 +37,7 @@ export const Submissions = ({ meet }: { meet: DLMeet }) => {
               </Avatar>
             }
           >
-            {filter.clean(name)} (#{id})
+            {filter.clean(name)} <Badge size="sm">#{id}</Badge>
           </List.Item>
         ))}
       </List>
