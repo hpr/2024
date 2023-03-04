@@ -1,4 +1,4 @@
-import { Avatar, Badge, List, Paper } from '@mantine/core';
+import { Avatar, Badge, List, Loader, Paper } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import { mantineGray, SERVER_URL } from './const';
 import { DLMeet } from './types';
@@ -24,6 +24,7 @@ export const Submissions = ({ meet }: { meet: DLMeet }) => {
   const filter = new Filter();
   return (
     <Paper withBorder p="xl">
+      {!submissions.length && <Loader />}
       <List>
         {submissions.map(({ id, name }) => (
           <List.Item
