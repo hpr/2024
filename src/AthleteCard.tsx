@@ -12,22 +12,21 @@ import {
   Title,
   Table,
   LoadingOverlay,
+  Popover,
 } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 import { useContext, useState } from 'react';
-import { World } from 'tabler-icons-react';
-import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, PICKS_PER_EVT } from './const';
+import { AlertCircle, Minus, Plus, World } from 'tabler-icons-react';
+import {
+  GRAPHQL_API_KEY,
+  GRAPHQL_ENDPOINT,
+  GRAPHQL_QUERY,
+  mantineGray,
+  PICKS_PER_EVT,
+} from './const';
 import { Store } from './Store';
 import { AthleticsEvent, Competitor, DLMeet, Entrant, ResultsByYearResult } from './types';
-
-const useStyles = createStyles((theme) => ({
-  card: {
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-  },
-
-  avatar: {
-    border: `2px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white}`,
-  },
-}));
+import { isTouchDevice } from './util';
 
 interface AthleteCardProps {
   avatar: string;
@@ -45,10 +44,13 @@ function nth(n: string) {
 }
 
 export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: AthleteCardProps) {
-  const { classes } = useStyles();
   const { myTeam, setMyTeam } = useContext(Store);
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const [competitor, setCompetitor] = useState<Competitor | null>(null);
+  const [popOpened, { close: popClose, open: popOpen }] = useDisclosure(false);
+
+  const team = myTeam?.[meet]?.[event] ?? [];
+  const isOnTeam = !!team.find((member) => member.id === entrant.id);
 
   const items = stats.map((stat) => (
     <div key={stat.label}>
@@ -61,27 +63,17 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
     </div>
   ));
 
-  const team = myTeam?.[meet]?.[event] ?? [];
-  const isOnTeam = !!team.find((member) => member.id === entrant.id);
+  const sideButtonMinWidth = isTouchDevice() ? 0 : 300;
 
   return (
     <>
       <Modal
-        size="90%"
+        size={isTouchDevice() ? '98%' : '90%'}
         title={
           <Group sx={{ width: '100%' }} position="apart">
             <Title variant="gradient" gradient={{ from: 'gray', to: 'white' }} order={1}>
               {entrant.firstName} {entrant.lastName.toUpperCase()}
             </Title>
-            <Button
-              variant="subtle"
-              leftIcon={<World />}
-              onClick={() =>
-                window.open(`https://worldathletics.org/athletes/_/${entrant.id}`, '_blank')
-              }
-            >
-              WA
-            </Button>
           </Group>
         }
         opened={showDetails}
@@ -90,7 +82,59 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
         <div style={{ position: 'relative' }}>
           <LoadingOverlay visible={!competitor} overlayBlur={2} />
           <Stack align="center">
-            <Avatar variant="outline" bg="gray" size={128} radius={128} src={avatar} />
+            <Button.Group>
+              <Button
+                sx={{ height: 128, minWidth: sideButtonMinWidth, borderRight: 'none' }}
+                variant="outline"
+                leftIcon={
+                  isOnTeam ? <Minus /> : team.length < PICKS_PER_EVT ? <Plus /> : <AlertCircle />
+                }
+                disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT}
+                radius="xl"
+                size="xl"
+                color={isOnTeam ? 'red' : undefined}
+                onClick={(evt) => {
+                  evt.stopPropagation();
+                  setMyTeam({
+                    ...myTeam,
+                    [meet]: {
+                      ...myTeam[meet],
+                      [event]: isOnTeam
+                        ? myTeam[meet]![event]?.filter((member) => member.id !== entrant.id)
+                        : [...(myTeam[meet]?.[event] ?? []), entrant],
+                    },
+                  });
+                }}
+              >
+                {(() => {
+                  if (isTouchDevice()) return '';
+                  if (isOnTeam) return 'Remove from Team';
+                  if (team.length === 0) return 'Add as Event Captain';
+                  if (team.length === 1) return 'Add as Secondary';
+                  if (team.length < PICKS_PER_EVT) return 'Add as Backup Athlete';
+                  return 'Team Full';
+                })()}
+              </Button>
+              <Button
+                color="green"
+                sx={{ height: 128, borderLeft: 'none', borderRight: 'none' }}
+                variant="outline"
+              >
+                <Avatar variant="outline" bg="gray" size={128} radius={128} src={avatar} />
+              </Button>
+              <Button
+                size="xl"
+                sx={{ height: 128, minWidth: sideButtonMinWidth, borderLeft: 'none' }}
+                variant="outline"
+                radius="xl"
+                leftIcon={<World />}
+                onClick={() =>
+                  window.open(`https://worldathletics.org/athletes/_/${entrant.id}`, '_blank')
+                }
+              >
+                {isTouchDevice() ? '' : 'World Athletics'}
+              </Button>
+            </Button.Group>
             <Title order={2}>Personal Bests</Title>
             <Table
               sx={{ textAlign: 'left' }}
@@ -157,74 +201,49 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
           </Stack>
         </div>
       </Modal>
-      <Card
-        sx={{ cursor: 'pointer' }}
-        withBorder
-        p="xl"
-        radius="md"
-        className={classes.card}
-        onClick={async () => {
-          setShowDetails(true);
-          if (!competitor) {
-            const { competitor: competitorResp } = (
-              await (
-                await fetch(GRAPHQL_ENDPOINT, {
-                  headers: { 'x-api-key': GRAPHQL_API_KEY },
-                  body: JSON.stringify({
-                    operationName: 'GetCompetitorBasicInfo',
-                    query: GRAPHQL_QUERY,
-                    variables: { id: entrant.id },
-                  }),
-                  method: 'POST',
-                })
-              ).json()
-            ).data;
-            setCompetitor(competitorResp);
-          }
-        }}
-      >
-        {/* <Card.Section sx={{ backgroundImage: `url(${image})`, height: 140 }} /> */}
-        <Avatar mt={-20} src={avatar} size={128} radius={128} mx="auto" className={classes.avatar} />
-        <Text align="center" size="lg" weight={500} mt="sm">
-          {name}
-        </Text>
-        <Text align="center" size="sm" color="dimmed">
-          {entrant.team ? `${entrant.team} (${job})` : job}
-        </Text>
-        <Group mt="md" position="center" spacing={30}>
-          {items}
-        </Group>
-        <Group position="center" spacing={10}>
-          <Button
-            fullWidth
-            disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT}
-            radius="md"
-            mt="md"
-            size="md"
-            color={isOnTeam ? 'red' : undefined}
-            onClick={(evt) => {
-              evt.stopPropagation();
-              setMyTeam({
-                ...myTeam,
-                [meet]: {
-                  ...myTeam[meet],
-                  [event]: isOnTeam
-                    ? myTeam[meet]![event]?.filter((member) => member.id !== entrant.id)
-                    : [...(myTeam[meet]?.[event] ?? []), entrant],
-                },
-              });
+      <Popover width={200} position="bottom" withArrow shadow="md" opened={popOpened}>
+        <Popover.Target>
+          <Avatar
+            onMouseEnter={popOpen}
+            onMouseLeave={popClose}
+            onClick={async () => {
+              setShowDetails(true);
+              if (!competitor) {
+                const { competitor: competitorResp } = (
+                  await (
+                    await fetch(GRAPHQL_ENDPOINT, {
+                      headers: { 'x-api-key': GRAPHQL_API_KEY },
+                      body: JSON.stringify({
+                        operationName: 'GetCompetitorBasicInfo',
+                        query: GRAPHQL_QUERY,
+                        variables: { id: entrant.id },
+                      }),
+                      method: 'POST',
+                    })
+                  ).json()
+                ).data;
+                setCompetitor(competitorResp);
+              }
             }}
-          >
-            {(() => {
-              if (isOnTeam) return 'Remove';
-              if (team.length === 0) return 'Add Captain';
-              if (team.length === 1) return 'Add Secondary';
-              if (team.length < PICKS_PER_EVT) return 'Add Backup';
-              return 'Team Full';
-            })()}
-          </Button>
-        </Group>
-      </Card>
+            src={avatar}
+            size={128}
+            radius={128}
+            mx="auto"
+            sx={{ border: `1px solid ${mantineGray}`, cursor: 'pointer' }}
+          />
+        </Popover.Target>
+        <Popover.Dropdown sx={{ display: isTouchDevice() ? 'none' : undefined }}>
+          <Text align="center" size="lg" weight={500} mt="sm">
+            {name}
+          </Text>
+          <Text align="center" size="sm" color="dimmed">
+            {entrant.team ? `${entrant.team} (${job})` : job}
+          </Text>
+          <Group mt="md" position="center" spacing={30}>
+            {items}
+          </Group>
+        </Popover.Dropdown>
+      </Popover>
     </>
   );
 }
