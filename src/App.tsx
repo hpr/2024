@@ -230,7 +230,7 @@ export default function App() {
               <Navbar.Section grow mt="xs">
                 <MainLinks
                   links={[
-                    ...(arePicksComplete
+                    ...(true // arePicksComplete
                       ? [
                           // {
                           //   icon: <Calculator />,
