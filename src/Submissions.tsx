@@ -28,6 +28,7 @@ export const Submissions = ({ meet }: { meet: DLMeet }) => {
       <List>
         {submissions.map(({ id, name }) => (
           <List.Item
+            key={id}
             icon={
               <Avatar size="sm" radius="xl" style={{ border: `1px solid ${mantineGray}` }}>
                 {name
