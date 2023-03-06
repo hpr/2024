@@ -13,6 +13,7 @@ import {
   Table,
   LoadingOverlay,
   Popover,
+  Indicator,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useContext, useState } from 'react';
@@ -64,6 +65,19 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
   ));
 
   const sideButtonMinWidth = isTouchDevice() ? 0 : 300;
+  const addToTeam: React.MouseEventHandler = (evt) => {
+    evt.stopPropagation();
+    if (!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT) return;
+    setMyTeam({
+      ...myTeam,
+      [meet]: {
+        ...myTeam[meet],
+        [event]: isOnTeam
+          ? myTeam[meet]![event]?.filter((member) => member.id !== entrant.id)
+          : [...(myTeam[meet]?.[event] ?? []), entrant],
+      },
+    });
+  };
 
   return (
     <>
@@ -93,19 +107,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
                 radius="xl"
                 size="xl"
                 color={isOnTeam ? 'red' : undefined}
-                onClick={(evt) => {
-                  evt.stopPropagation();
-                  if (!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT) return;
-                  setMyTeam({
-                    ...myTeam,
-                    [meet]: {
-                      ...myTeam[meet],
-                      [event]: isOnTeam
-                        ? myTeam[meet]![event]?.filter((member) => member.id !== entrant.id)
-                        : [...(myTeam[meet]?.[event] ?? []), entrant],
-                    },
-                  });
-                }}
+                onClick={addToTeam}
               >
                 {(() => {
                   if (isTouchDevice()) return '';
@@ -204,34 +206,55 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
       </Modal>
       <Popover width={200} position="bottom" withArrow shadow="md" opened={popOpened}>
         <Popover.Target>
-          <Avatar
-            onMouseEnter={popOpen}
-            onMouseLeave={popClose}
-            onClick={async () => {
-              setShowDetails(true);
-              if (!competitor) {
-                const { competitor: competitorResp } = (
-                  await (
-                    await fetch(GRAPHQL_ENDPOINT, {
-                      headers: { 'x-api-key': GRAPHQL_API_KEY },
-                      body: JSON.stringify({
-                        operationName: 'GetCompetitorBasicInfo',
-                        query: GRAPHQL_QUERY,
-                        variables: { id: entrant.id },
-                      }),
-                      method: 'POST',
-                    })
-                  ).json()
-                ).data;
-                setCompetitor(competitorResp);
-              }
+          <Indicator
+            color={mantineGray}
+            disabled={!isOnTeam && team.length >= PICKS_PER_EVT}
+            size={40}
+            withBorder
+            label={(() => {
+              if (isOnTeam) return <Minus />;
+              if (team.length < PICKS_PER_EVT) return <Plus />;
+            })()}
+            offset={15}
+            onClick={(e) => {
+              if (
+                [e.target, (e.target as HTMLDivElement).parentElement].some((elt) =>
+                  (elt as HTMLDivElement)?.matches('.mantine-Indicator-indicator')
+                )
+              )
+                addToTeam(e);
             }}
-            src={avatar}
-            size={128}
-            radius={128}
-            mx="auto"
-            sx={{ border: `1px solid ${mantineGray}`, cursor: 'pointer' }}
-          />
+            sx={{ cursor: 'pointer' }}
+          >
+            <Avatar
+              onMouseEnter={popOpen}
+              onMouseLeave={popClose}
+              onClick={async () => {
+                setShowDetails(true);
+                if (!competitor) {
+                  const { competitor: competitorResp } = (
+                    await (
+                      await fetch(GRAPHQL_ENDPOINT, {
+                        headers: { 'x-api-key': GRAPHQL_API_KEY },
+                        body: JSON.stringify({
+                          operationName: 'GetCompetitorBasicInfo',
+                          query: GRAPHQL_QUERY,
+                          variables: { id: entrant.id },
+                        }),
+                        method: 'POST',
+                      })
+                    ).json()
+                  ).data;
+                  setCompetitor(competitorResp);
+                }
+              }}
+              src={avatar}
+              size={128}
+              radius={128}
+              mx="auto"
+              sx={{ border: `1px solid ${mantineGray}`, cursor: 'pointer' }}
+            />
+          </Indicator>
         </Popover.Target>
         <Popover.Dropdown sx={{ display: isTouchDevice() ? 'none' : undefined }}>
           <Text align="center" size="lg" weight={500} mt="sm">

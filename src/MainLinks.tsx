@@ -59,8 +59,8 @@ type MainLinksProps = {
 export function MainLinks({ links = data }: MainLinksProps) {
   return (
     <div>
-      {links.map((link) =>
-        link === DIVIDER ? <Divider my="lg" /> : <MainLink {...link} key={link.label} />
+      {links.map((link, i) =>
+        link === DIVIDER ? <Divider key={i} my="lg" /> : <MainLink {...link} key={link.label} />
       )}
     </div>
   );
