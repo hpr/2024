@@ -224,7 +224,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
               )
                 addToTeam(e);
             }}
-            sx={{ cursor: 'pointer' }}
+            sx={{ cursor: 'pointer', zIndex: 1 }}
           >
             <Avatar
               onMouseEnter={popOpen}
