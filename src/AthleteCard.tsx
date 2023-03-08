@@ -37,6 +37,7 @@ interface AthleteCardProps {
   event: AthleticsEvent;
   meet: DLMeet;
   entrant: Entrant;
+  tableView: boolean;
 }
 
 function nth(n: string) {
@@ -44,7 +45,16 @@ function nth(n: string) {
   return ['st', 'nd', 'rd'][((((num + 90) % 100) - 10) % 10) - 1] || 'th';
 }
 
-export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: AthleteCardProps) {
+export function AthleteCard({
+  avatar,
+  name,
+  job,
+  stats,
+  event,
+  meet,
+  entrant,
+  tableView,
+}: AthleteCardProps) {
   const { myTeam, setMyTeam } = useContext(Store);
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const [competitor, setCompetitor] = useState<Competitor | null>(null);
@@ -52,6 +62,26 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
 
   const team = myTeam?.[meet]?.[event] ?? [];
   const isOnTeam = !!team.find((member) => member.id === entrant.id);
+
+  const showAndCacheDetails = async () => {
+    setShowDetails(true);
+    if (!competitor) {
+      const { competitor: competitorResp } = (
+        await (
+          await fetch(GRAPHQL_ENDPOINT, {
+            headers: { 'x-api-key': GRAPHQL_API_KEY },
+            body: JSON.stringify({
+              operationName: 'GetCompetitorBasicInfo',
+              query: GRAPHQL_QUERY,
+              variables: { id: entrant.id },
+            }),
+            method: 'POST',
+          })
+        ).json()
+      ).data;
+      setCompetitor(competitorResp);
+    }
+  };
 
   const items = stats.map((stat) => (
     <div key={stat.label}>
@@ -78,6 +108,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
       },
     });
   };
+  const AddToTeamButtonIcon = isOnTeam ? Minus : team.length < PICKS_PER_EVT ? Plus : AlertCircle;
 
   return (
     <>
@@ -100,9 +131,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
               <Button
                 sx={{ height: 128, minWidth: sideButtonMinWidth, borderRight: 'none' }}
                 variant="outline"
-                leftIcon={
-                  isOnTeam ? <Minus /> : team.length < PICKS_PER_EVT ? <Plus /> : <AlertCircle />
-                }
+                leftIcon={<AddToTeamButtonIcon />}
                 // disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT}
                 radius="xl"
                 size="xl"
@@ -204,70 +233,75 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant }: 
           </Stack>
         </div>
       </Modal>
-      <Popover width={200} position="bottom" withArrow shadow="md" opened={popOpened}>
-        <Popover.Target>
-          <Indicator
-            color={mantineGray}
-            disabled={!isOnTeam && team.length >= PICKS_PER_EVT}
-            size={40}
-            withBorder
-            label={(() => {
-              if (isOnTeam) return <Minus />;
-              if (team.length < PICKS_PER_EVT) return <Plus />;
-            })()}
-            offset={15}
-            onClick={(e) => {
-              if (
-                [e.target, (e.target as HTMLDivElement).parentElement].some((elt) =>
-                  (elt as HTMLDivElement)?.matches('.mantine-Indicator-indicator')
+      {tableView ? (
+        <tr onClick={showAndCacheDetails} style={{ cursor: 'pointer' }}>
+          <td>{name}</td>
+          {/* <td>{entrant.team}</td>
+          <td>{job}</td> */}
+          <td>{entrant.sb}</td>
+          <td>
+            <Button
+              size="xs"
+              compact
+              fullWidth
+              color={isOnTeam ? 'red' : undefined}
+              onClick={addToTeam}
+              disabled={!isOnTeam && team.length >= PICKS_PER_EVT}
+              leftIcon={<AddToTeamButtonIcon size={20} />}
+            >{(() => {
+              if (isOnTeam) return 'Remove';
+              if (team.length === 0) return 'Captain';
+              if (team.length === 1) return 'Second.';
+              if (team.length < PICKS_PER_EVT) return 'Backup';
+              return 'Full';
+            })()}</Button>
+          </td>
+        </tr>
+      ) : (
+        <Popover width={200} position="bottom" withArrow shadow="md" opened={popOpened}>
+          <Popover.Target>
+            <Indicator
+              color={mantineGray}
+              disabled={!isOnTeam && team.length >= PICKS_PER_EVT}
+              size={40}
+              withBorder
+              label={<AddToTeamButtonIcon />}
+              offset={15}
+              onClick={(e) => {
+                if (
+                  [e.target, (e.target as HTMLDivElement).parentElement].some((elt) =>
+                    (elt as HTMLDivElement)?.matches('.mantine-Indicator-indicator')
+                  )
                 )
-              )
-                addToTeam(e);
-            }}
-            sx={{ cursor: 'pointer', zIndex: 1 }}
-          >
-            <Avatar
-              onMouseEnter={popOpen}
-              onMouseLeave={popClose}
-              onClick={async () => {
-                setShowDetails(true);
-                if (!competitor) {
-                  const { competitor: competitorResp } = (
-                    await (
-                      await fetch(GRAPHQL_ENDPOINT, {
-                        headers: { 'x-api-key': GRAPHQL_API_KEY },
-                        body: JSON.stringify({
-                          operationName: 'GetCompetitorBasicInfo',
-                          query: GRAPHQL_QUERY,
-                          variables: { id: entrant.id },
-                        }),
-                        method: 'POST',
-                      })
-                    ).json()
-                  ).data;
-                  setCompetitor(competitorResp);
-                }
+                  addToTeam(e);
               }}
-              src={avatar}
-              size={128}
-              radius={128}
-              mx="auto"
-              sx={{ border: `1px solid ${mantineGray}`, cursor: 'pointer' }}
-            />
-          </Indicator>
-        </Popover.Target>
-        <Popover.Dropdown sx={{ display: isTouchDevice() ? 'none' : undefined }}>
-          <Text align="center" size="lg" weight={500} mt="sm">
-            {name}
-          </Text>
-          <Text align="center" size="sm" color="dimmed">
-            {entrant.team ? `${entrant.team} (${job})` : job}
-          </Text>
-          <Group mt="md" position="center" spacing={30}>
-            {items}
-          </Group>
-        </Popover.Dropdown>
-      </Popover>
+              sx={{ cursor: 'pointer', zIndex: 1 }}
+            >
+              <Avatar
+                onMouseEnter={popOpen}
+                onMouseLeave={popClose}
+                onClick={showAndCacheDetails}
+                src={avatar}
+                size={128}
+                radius={128}
+                mx="auto"
+                sx={{ border: `1px solid ${mantineGray}`, cursor: 'pointer' }}
+              />
+            </Indicator>
+          </Popover.Target>
+          <Popover.Dropdown sx={{ display: isTouchDevice() ? 'none' : undefined }}>
+            <Text align="center" size="lg" weight={500} mt="sm">
+              {name}
+            </Text>
+            <Text align="center" size="sm" color="dimmed">
+              {entrant.team ? `${entrant.team} (${job})` : job}
+            </Text>
+            <Group mt="md" position="center" spacing={30}>
+              {items}
+            </Group>
+          </Popover.Dropdown>
+        </Popover>
+      )}
     </>
   );
 }

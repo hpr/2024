@@ -27,6 +27,10 @@ import {
   Tooltip,
   Paper,
   Divider,
+  Switch,
+  Table,
+  TableProps,
+  SimpleGridProps,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
@@ -61,6 +65,7 @@ export default function App() {
   const [authPage, setAuthPage] = useState<AuthPage>('register');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
+  const [tableView, setTableView] = useState<boolean>(false);
   const registerForm = useForm({
     initialValues: {
       name: '',
@@ -95,6 +100,41 @@ export default function App() {
   const numMaxPicks = Object.keys(entries?.[meet] ?? {}).length * PICKS_PER_EVT;
   const arePicksComplete = numPicks === numMaxPicks;
   const percentComplete = Math.round((numPicks / numMaxPicks) * 100);
+
+  const TableAndTbody = ({ children, ...props }: TableProps) => (
+    <Table {...props}>
+      <thead>
+        <tr>
+          <th>Name</th>
+          {/* <th>Team</th>
+          <th>Nat.</th> */}
+          <th>SB</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>{children}</tbody>
+    </Table>
+  );
+  const GridContainer = tableView ? TableAndTbody : SimpleGrid;
+  const gridContainerProps = tableView
+    ? ({
+        fontSize: 'lg',
+        striped: true,
+        highlightOnHover: true,
+        withBorder: true,
+        withColumnBorders: true,
+      } as TableProps)
+    : ({
+        cols: 8,
+        breakpoints: [
+          { maxWidth: 'sm', cols: 2 },
+          { maxWidth: 'md', cols: 3 },
+          { maxWidth: 'lg', cols: 5 },
+          { maxWidth: 'xl', cols: 7 },
+        ],
+        spacing: 'lg',
+        verticalSpacing: 'xl',
+      } as SimpleGridProps);
 
   const picksText = Object.keys(myTeam[meet] ?? {})
     .sort(evtSort)
@@ -443,7 +483,10 @@ export default function App() {
                     <Text>Select an event captain, secondary pick, and backup pick below</Text>
                   )}
                   {myTeamPicks.length == PICKS_PER_EVT ? (
-                    <Check size={30} />
+                    <>
+                      <Check size={30} />
+                      Event Complete! Now select another event on the left menu
+                    </>
                   ) : (
                     <>
                       {myTeamPicks.length
@@ -460,25 +503,23 @@ export default function App() {
               <Paper withBorder radius="xl" p="lg">
                 <Stack align="center">
                   <Paper withBorder radius="xl" p="lg" py="md" shadow="xl">
-                    <Title order={1}>{evt}</Title>
+                    <Stack align="center">
+                      <Title order={1}>{evt}</Title>
+                      <Switch
+                        checked={tableView}
+                        onChange={(e) => setTableView(e.currentTarget.checked)}
+                        label="Table View?"
+                      />
+                    </Stack>
                   </Paper>
 
-                  <SimpleGrid
-                    cols={8}
-                    breakpoints={[
-                      { maxWidth: 'sm', cols: 2 },
-                      { maxWidth: 'md', cols: 3 },
-                      { maxWidth: 'lg', cols: 5 },
-                      { maxWidth: 'xl', cols: 7 },
-                    ]}
-                    spacing="lg"
-                    verticalSpacing="xl"
-                  >
+                  <GridContainer {...gridContainerProps}>
                     {entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
                       const { id, firstName, lastName, pb, sb, nat } = entrant;
                       return (
                         <AthleteCard
                           key={id}
+                          tableView={tableView}
                           avatar={`img/avatars/${id}_128x128.png`}
                           meet={meet}
                           event={evt!}
@@ -492,7 +533,7 @@ export default function App() {
                         />
                       );
                     })}
-                  </SimpleGrid>
+                  </GridContainer>
                 </Stack>
               </Paper>
             </>
