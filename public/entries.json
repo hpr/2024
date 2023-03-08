@@ -875,15 +875,6 @@
           "lastName": "Sharp"
         },
         {
-          "id": "14844961",
-          "team": "Stanford",
-          "nat": "USA",
-          "pb": "",
-          "sb": "7:44.50",
-          "firstName": "Cole",
-          "lastName": "Sprout"
-        },
-        {
           "id": "14975531",
           "team": "Butler",
           "nat": "USA",
@@ -891,6 +882,15 @@
           "sb": "7:44.69",
           "firstName": "Jesse",
           "lastName": "Hamlin"
+        },
+        {
+          "id": "14884807",
+          "team": "Harvard",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7:44.76",
+          "firstName": "Graham",
+          "lastName": "Blanks"
         }
       ]
     },
@@ -1180,15 +1180,6 @@
           "sb": "7.69",
           "firstName": "Josh",
           "lastName": "Brockman"
-        },
-        {
-          "id": "14842704",
-          "team": "N. Carolina A&T",
-          "nat": "USA",
-          "pb": "",
-          "sb": "7.69",
-          "firstName": "Jason",
-          "lastName": "Holmes"
         }
       ]
     },
@@ -1268,15 +1259,6 @@
           "lastName": "Ofili"
         },
         {
-          "id": "14746897",
-          "team": "Tennessee",
-          "nat": "ANT",
-          "pb": "",
-          "sb": "7.17",
-          "firstName": "Joella",
-          "lastName": "Lloyd"
-        },
-        {
           "id": "14728747",
           "team": "Minnesota",
           "nat": "USA",
@@ -1338,6 +1320,15 @@
           "sb": "7.22",
           "firstName": "McKenzie",
           "lastName": "Long"
+        },
+        {
+          "id": "14789479",
+          "team": "South Carolina",
+          "nat": "USA",
+          "pb": "",
+          "sb": "7.23",
+          "firstName": "Jayla",
+          "lastName": "Jamison"
         }
       ]
     },

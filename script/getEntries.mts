@@ -317,7 +317,7 @@ const getEntries = async () => {
 
 // getEntries();
 
-const filterEntries = async (meet: DLMeet) => {
+const filterEntries = async (meet: DLMeet, isReview: boolean = false) => {
   const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
   const rtsptSanitize = (s: string) =>
     s
@@ -326,38 +326,45 @@ const filterEntries = async (meet: DLMeet) => {
       .replace('Meters', 'Meter')
       .replace('60 Hurdles', '60 Meter Hurdles');
   for (const gender of ['men', 'women']) {
-    const review = await (
-      await fetch(`https://rtspt.com/ncaa/d1indoor23/${gender}_review.htm`)
-    ).text();
-    const evtSections = review
-      .replace(/1 Mile/g, 'Mile')
-      .split(new RegExp('(?=' + runningEvents.flat().map(rtsptSanitize).join('|') + ')'));
-    for (const sect of evtSections) {
-      const evt: AthleticsEvent = runningEvents
-        .flat()
-        .sort((a, b) => b.length - a.length)
-        .find((evt) => sect.startsWith(rtsptSanitize(evt)))!;
-      if (!evt) continue;
-      entries[meet]![evt]!.entrants = entries[meet]![evt]!.entrants.filter(
-        ({ firstName, lastName }) => {
-          if (['Parker Valby'].includes(`${firstName} ${lastName}`)) return false;
-          const isConsidered = sect
-            .split('\n')
-            .find((line) =>
-              line.toLowerCase().includes(`  ${firstName} ${lastName} `.toLowerCase())
-            )
-            ?.trim()
-            .endsWith('A');
-          return isConsidered;
-        }
-      ).slice(0, 16);
-      console.log(
-        evt,
-        entries[meet]![evt]!.entrants.length,
-        entries[meet]![evt]!.entrants.map(({ firstName, lastName }) => `${firstName} ${lastName}`)
-      );
+    for (const day of ['1', '2']) {
+      const review = await (
+        await fetch(
+          `https://rtspt.com/ncaa/d1indoor23/${gender}_${
+            isReview ? 'review' : `start_day${day}`
+          }.htm`
+        )
+      ).text();
+      const evtSections = review
+        .replace(/1 Mile/g, 'Mile')
+        .replace(/.*Heptathlon.*/g, '')
+        .replace(/.*Pentathlon.*/g, '')
+        .split(new RegExp('(?=' + runningEvents.flat().map(rtsptSanitize).join('|') + ')'));
+      for (const sect of evtSections) {
+        const evt: AthleticsEvent = runningEvents
+          .flat()
+          .sort((a, b) => b.length - a.length)
+          .find((evt) => sect.startsWith(rtsptSanitize(evt)))!;
+        if (!evt) continue;
+        entries[meet]![evt]!.entrants = entries[meet]![evt]!.entrants.filter(
+          ({ firstName, lastName }) => {
+            if ([''].includes(`${firstName} ${lastName}`)) return false;
+            const foundLine = sect
+              .split('\n')
+              .find((line) =>
+                line.toLowerCase().includes(` ${firstName} ${lastName} `.toLowerCase())
+              )
+              ?.trim();
+            return isReview ? foundLine?.endsWith('A') : foundLine;
+          }
+        ).slice(0, 16);
+        console.log(
+          evt,
+          entries[meet]![evt]!.entrants.length,
+          entries[meet]![evt]!.entrants.map(({ firstName, lastName }) => `${firstName} ${lastName}`)
+        );
+      }
     }
   }
   fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
 };
-filterEntries('ncaai23');
+filterEntries('ncaai23', false);
