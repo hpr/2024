@@ -161,23 +161,27 @@ export default function App() {
 
   return (
     <Store.Provider value={{ myTeam, setMyTeam }}>
-      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Submit Picks">
+      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register & Submit Picks">
         {arePicksComplete ? (
           <Stack>
             <SegmentedControl
               value={authPage}
               onChange={(v: AuthPage) => {
                 setAuthPage(v);
+                registerForm.setErrors({});
                 setIsSuccess(false);
               }}
               data={[
-                { label: 'Login & Submit', value: 'addPicks' },
+                { label: 'Submit Picks', value: 'addPicks' },
                 { label: 'Register', value: 'register' },
               ]}
               mb={10}
             />
             <form
-              onChange={() => setIsSuccess(false)}
+              onChange={() => {
+                setIsSuccess(false);
+                registerForm.setErrors({});
+              }}
               onSubmit={registerForm.onSubmit(async (vals) => {
                 setIsLoading(true);
                 const { status } = await (
@@ -192,12 +196,14 @@ export default function App() {
                 ).json();
                 setIsLoading(false);
                 if (status === 'success') setIsSuccess(true);
-                else
+                else {
+                  setIsSuccess(false);
                   registerForm.setErrors({
                     email: `Error in ${
                       authPage === 'register' ? 'registration' : 'login'
                     }, try again?`,
                   });
+                }
               })}
             >
               <TextInput
@@ -228,7 +234,7 @@ export default function App() {
                 >
                   {authPage === 'register'
                     ? isSuccess
-                      ? 'Registered'
+                      ? 'Registered! Remember to submit your picks as well!'
                       : 'Register'
                     : isSuccess
                     ? 'Submitted Picks!'
