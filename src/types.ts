@@ -1,3 +1,5 @@
+import { PAGES } from './const';
+
 export type DLMeet = 'doha' | 'birminghamIndoor' | 'ncaai23';
 
 export type AuthPage = 'register' | 'addPicks';
@@ -86,7 +88,7 @@ export type Competitor = {
     }[];
   };
   resultsByYear: {
-    activeYears: string[],
+    activeYears: string[];
     resultsByEvent: {
       indoor: boolean;
       discipline: string;
@@ -94,3 +96,7 @@ export type Competitor = {
     }[];
   };
 };
+
+export type ArrayElement<A> = A extends readonly (infer T)[] ? T : never;
+
+export type Page = ArrayElement<typeof PAGES>;

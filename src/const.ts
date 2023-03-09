@@ -1,5 +1,3 @@
-import { AthleticsEvent } from './types';
-
 export const scoring = [140, 120, 110, 100, 90, 80, 70, 60];
 
 export const SERVER_URL = 'https://habs.sdf.org/fantasy1500-server/server.cgi';
@@ -34,3 +32,5 @@ query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
 export const mantineGray = 'rgb(55, 58, 64)';
 
 export const DIVIDER = 'divider' as 'divider';
+
+export const PAGES = ['events', 'scoring', 'submissions'] as ['events', 'scoring', 'submissions'];

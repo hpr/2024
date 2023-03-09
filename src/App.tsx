@@ -1,7 +1,6 @@
 import {
   AppShell,
   Avatar,
-  Badge,
   Group,
   Header,
   Modal,
@@ -34,14 +33,15 @@ import {
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
-import { AthleticsEvent, AuthPage, DLMeet, Entries, Team } from './types';
+import { AthleticsEvent, AuthPage, DLMeet, Entries, Page, Team } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
 import { BrandGit, Calculator, Check, Dots, Mail, Run, Users } from 'tabler-icons-react';
-import { DIVIDER, PICKS_PER_EVT, scoring, SERVER_URL } from './const';
+import { DIVIDER, PAGES, PICKS_PER_EVT, scoring, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const evtSort = (a: string, b: string) => {
   const DIGITS = '0123456789';
@@ -55,13 +55,16 @@ const evtSort = (a: string, b: string) => {
 };
 
 export default function App() {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
   const [meet] = useState<DLMeet>('ncaai23');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
-  const [page, setPage] = useState<'events' | 'scoring' | 'submissions'>('events');
+  const [page, setPage] = useState<Page>('events');
   const [authPage, setAuthPage] = useState<AuthPage>('register');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
@@ -76,6 +79,14 @@ export default function App() {
       email: isEmail('Invalid email'),
     },
   });
+  if (hash) {
+    if (hash.startsWith('evt/')) {
+      const hashEvt = hash.split('evt/')[1];
+      if (hashEvt !== evt) setEvt(hashEvt as AthleticsEvent);
+    } else if (PAGES.includes(hash as Page) && page !== hash) {
+      setPage(hash as Page);
+    }
+  }
 
   const theme = useMantineTheme();
 
@@ -83,7 +94,9 @@ export default function App() {
     (async () => {
       const entries = await (await fetch('entries.json')).json();
       setEntries(entries);
-      setEvt(Object.keys(entries[meet] ?? [])[0] as AthleticsEvent);
+      const initialEvt = Object.keys(entries[meet] ?? [])[0] as AthleticsEvent;
+      setEvt(initialEvt);
+      if (!hash) navigate(`evt/${initialEvt}`);
     })();
   }, []);
 
@@ -286,6 +299,7 @@ export default function App() {
                             color: 'black',
                             label: 'Submissions',
                             onClick: () => {
+                              navigate('/submissions');
                               setPage('submissions');
                               setNavbarOpen(false);
                             },
@@ -302,6 +316,7 @@ export default function App() {
                           icon: filled ? <Check /> : <Run />,
                           color: filled ? 'green' : 'blue',
                           onClick: () => {
+                            navigate(`evt/${linkEvt}`);
                             setEvt(linkEvt);
                             setPage('events');
                             setNavbarOpen(false);
@@ -358,7 +373,10 @@ export default function App() {
                       "Submit Picks".
                     </Text>
                     <Text mb={10}>
-                      Prizes as follows, courtesy of the inaugural sponsor <span style={{ fontWeight: 'bold' }}>LetsRun.com</span>: First Place: LRC Supporters Club Membership, Second Place: Free T-Shirt, Third Place: Free T-Shirt.
+                      Prizes as follows, courtesy of the inaugural sponsor{' '}
+                      <span style={{ fontWeight: 'bold' }}>LetsRun.com</span>: First Place: LRC
+                      Supporters Club Membership, Second Place: Free T-Shirt, Third Place: Free
+                      T-Shirt.
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
