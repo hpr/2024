@@ -357,6 +357,9 @@ export default function App() {
                       Picks" and then registering an account, then you need to log in and click
                       "Submit Picks".
                     </Text>
+                    <Text mb={10}>
+                      Prizes as follows, courtesy of the inaugural sponsor <span style={{ fontWeight: 'bold' }}>LetsRun.com</span>: First Place: LRC Supporters Club Membership, Second Place: Free T-Shirt, Third Place: Free T-Shirt.
+                    </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
                       <Button
