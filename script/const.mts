@@ -1,5 +1,7 @@
 import { AthleticsEvent, WAEventCode } from './types.mjs';
 
+export const SCORE = [10, 8, 6, 5, 4, 3, 2, 1];
+
 export const runningEvents: (AthleticsEvent | string)[][] = [
   ["Women's 60 m", "Women's 60 Meters", 'Women 60 M'],
   ["Men's 60 m", "Men's 60 Meters", 'Men 60 M'],
@@ -30,8 +32,31 @@ export const runningEvents: (AthleticsEvent | string)[][] = [
   ['5000m Men', "Men's 5000 Meters", 'Men 5000 M'],
 ];
 
+export const distanceEvents: AthleticsEvent[] = [
+  "Men's 800 Meters",
+  "Women's 800 Meters",
+  "Men's Mile",
+  "Women's Mile",
+  "Men's 3000 Meters",
+  "Women's 3000 Meters",
+  "Men's 5000 Meters",
+  "Women's 5000 Meters",
+];
+
+export const sprintEvents: AthleticsEvent[] = [
+  "Men's 60 Meters",
+  "Women's 60 Meters",
+  "Men's 60 Hurdles",
+  "Women's 60 Hurdles",
+  "Men's 200 Meters",
+  "Women's 200 Meters",
+  "Men's 400 Meters",
+  "Women's 400 Meters",
+];
+
 export const CACHE_PATH = './script/cache.json';
 export const ENTRIES_PATH = './public/entries.json';
+export const LB_PATH = './public/leaderboard.json';
 
 export const disciplineCodes: { [k: string]: WAEventCode } = {
   '50 Meters': '50',
@@ -190,3 +215,5 @@ export const disciplineCodes: { [k: string]: WAEventCode } = {
 
 export const getDomain = (url: string) => url.match(/(^https?:\/\/.+?)\//)![1]!;
 export const getDomainAndPath = (url: string) => url.split('/').slice(0, -1).join('/') + '/';
+
+export const backupNotes = ['DNS', 'DQ', 'DNF'];

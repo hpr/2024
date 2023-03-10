@@ -239,3 +239,29 @@ export type MeetCache = {
     ids: { [name: string]: { country: string; id: string } };
   };
 };
+
+export type LBPicks = {
+  [k in AthleticsEvent]?: string[];
+};
+
+export type LBEntry = {
+  userid: number;
+  name: string;
+  picks: LBPicks;
+  score: number;
+  distanceScore: number;
+  sprintScore: number;
+  eventsScored: number;
+};
+
+export type LBType = {
+  [k in DLMeet]?: LBEntry[];
+};
+
+export type Team = {
+  [k in DLMeet]?: {
+    [k in AthleticsEvent]?: Entrant[];
+  };
+};
+
+export type MeetTeam = Exclude<Team[DLMeet], undefined>;

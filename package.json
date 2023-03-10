@@ -9,6 +9,7 @@
     "getResults": "node --loader ts-node/esm script/getResults.mts",
     "getAvatars": "node --loader ts-node/esm script/getAvatars.mts",
     "getStats": "node --loader ts-node/esm script/getStats.mts",
+    "getLeaderboard": "node --loader ts-node/esm script/getLeaderboard.mts",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",

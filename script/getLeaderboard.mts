@@ -1,0 +1,122 @@
+// ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from picks;"' > picks.csv
+// ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from users;"' > users.csv
+
+import {
+  MeetCache,
+  DLMeet,
+  Entries,
+  LBType,
+  Team,
+  AthleticsEvent,
+  ResultEntrant,
+  MeetTeam,
+  LBPicks,
+} from './types.mjs';
+import fs from 'fs';
+import {
+  backupNotes,
+  CACHE_PATH,
+  disciplineCodes,
+  distanceEvents,
+  ENTRIES_PATH,
+  LB_PATH,
+  SCORE,
+  sprintEvents,
+} from './const.mjs';
+import { parse } from 'csv-parse/sync';
+
+const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
+const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
+const leaderboard: LBType = JSON.parse(fs.readFileSync(LB_PATH, 'utf-8'));
+
+const rows: { picksJson: string; userid: number }[] = parse(
+  fs.readFileSync('./picks.csv', 'utf-8'),
+  {
+    columns: true,
+  }
+);
+const users: { id: number; name: string }[] = parse(fs.readFileSync('./users.csv', 'utf-8'), {
+  columns: true,
+});
+
+const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): number => {
+  let score = 0;
+  const backup = team[evt]?.at(-1)!;
+  const backupResult = entries[meet]![evt]!.results!.find(
+    (res) => res.entrant.id === backup.id
+  ) ?? { notes: 'DNS' };
+  let doneBackup = false;
+  if (backupNotes.some((note) => backupResult.notes.includes(note))) doneBackup = true;
+  for (const pick of team[evt]!.slice(0, -1)) {
+    let matchingResult = entries[meet]![evt]!.results!.find((res) => res.entrant.id === pick.id);
+    if (backupNotes.some((note) => matchingResult?.notes.includes(note)) && !doneBackup) {
+      matchingResult = backupResult as ResultEntrant;
+      doneBackup = true;
+    }
+    const isCaptain = pick === team[evt]![0];
+    const pickScore = SCORE[matchingResult!?.place - 1] * (isCaptain ? 2 : 1) || 0;
+    console.log(evt, pick.firstName, pick.lastName, matchingResult?.place, pickScore);
+    score += pickScore;
+  }
+  if (Number.isNaN(score)) process.exit();
+  return score;
+};
+
+const fixIds = (picks: MeetTeam) => {
+  for (const key in picks) {
+    const evt = key as AthleticsEvent;
+    for (const pick of picks[evt]!) {
+      pick.id = (
+        JSON.parse(
+          [...rows]
+            .reverse()
+            .find(({ picksJson }) =>
+              (JSON.parse(picksJson) as MeetTeam)[evt]!.find(
+                (ath) => `${ath.firstName} ${ath.lastName}` === `${pick.firstName} ${pick.lastName}`
+              )
+            )?.picksJson!
+        ) as MeetTeam
+      )[evt]!.find(
+        (ath) => `${ath.firstName} ${ath.lastName}` === `${pick.firstName} ${pick.lastName}`
+      )!.id;
+    }
+  }
+};
+
+for (const meet of ['ncaai23'] as DLMeet[]) {
+  leaderboard[meet] ??= [];
+  for (const { picksJson, userid } of rows) {
+    const picks: MeetTeam = JSON.parse(picksJson);
+    fixIds(picks); // TODO remove in future
+    let distanceScore = 0;
+    let sprintScore = 0;
+    let eventsScored = 0;
+    for (const key in picks) {
+      const evt = key as AthleticsEvent;
+      if (!entries[meet]![evt]!.results) continue;
+      const evtScore = getScore(meet, picks, evt);
+      if (distanceEvents.includes(evt)) distanceScore += evtScore;
+      if (sprintEvents.includes(evt)) sprintScore += evtScore;
+      eventsScored++;
+    }
+    const score = distanceScore + sprintScore;
+    leaderboard[meet].push({
+      userid,
+      name: users.find(({ id }) => id === userid)!.name,
+      picks: Object.keys(picks!).reduce((acc, evt) => {
+        const evtCode = evt[0] + disciplineCodes[evt.split(' ').slice(1).join(' ')];
+        acc[evtCode as AthleticsEvent] = picks![evt as AthleticsEvent]!.map(({ id }) => id);
+        return acc;
+      }, {} as LBPicks),
+      distanceScore,
+      sprintScore,
+      eventsScored,
+      score,
+    });
+    console.log(leaderboard[meet].at(-1));
+  }
+}
+
+fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
+fs.writeFileSync(LB_PATH, JSON.stringify(leaderboard));

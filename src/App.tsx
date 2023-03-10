@@ -365,11 +365,10 @@ export default function App() {
                       Select {PICKS_PER_EVT} athletes per event by selecting events on the left
                       side, and picking athletes in the main view. The first {PICKS_PER_EVT - 1}{' '}
                       athletes will be your team, and the last athlete will be a "backup" that will
-                      automatically be substituted if any of your team members DNS, DNF, DQ, or
-                      finish last in the final (to account for e.g. a fall), only if substituting
-                      the backup would improve your score. Your incomplete picks are saved to your
-                      computer, and once you submit you can always re-submit to update your picks
-                      before the submissions deadline.
+                      automatically be substituted if any of your team members DNS, DNF, or DQ, only
+                      if substituting the backup would improve your score. Your incomplete picks are
+                      saved to your computer, and once you submit you can always re-submit to update
+                      your picks before the submissions deadline.
                     </Text>
                     <Text mb={10}>
                       Your athletes will be scored by place: 10, 8, 6, 5, 4, 3, 2, 1 style. Your

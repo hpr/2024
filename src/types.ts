@@ -100,3 +100,21 @@ export type Competitor = {
 export type ArrayElement<A> = A extends readonly (infer T)[] ? T : never;
 
 export type Page = ArrayElement<typeof PAGES>;
+
+export type LBPicks = {
+  [k in AthleticsEvent]?: string[];
+};
+
+export type LBEntry = {
+  userid: number;
+  name: string;
+  picks: LBPicks;
+  score: number;
+  distanceScore: number;
+  sprintScore: number;
+  eventsScored: number;
+};
+
+export type LBType = {
+  [k in DLMeet]?: LBEntry[];
+};
