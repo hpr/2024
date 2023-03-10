@@ -382,7 +382,7 @@ export default function App() {
                       Prizes as follows, courtesy of the inaugural sponsor{' '}
                       <span style={{ fontWeight: 'bold' }}>LetsRun.com</span>: First Place: LRC
                       Supporters Club Membership, Second Place: Free T-Shirt, Third Place: Free
-                      T-Shirt.
+                      T-Shirt. Submissions Deadline: Friday 3/10 @ 6pm ET.
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
