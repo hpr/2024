@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 script/files
+*.db
+*.csv
