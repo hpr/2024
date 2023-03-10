@@ -3,6 +3,7 @@ import { Entrant, Entries } from './types.mjs';
 import google from 'googlethis';
 import { JSDOM } from 'jsdom';
 import gm from 'gm';
+import { getDomain } from './const.mjs';
 
 //    .-.
 //   (0.0)
@@ -17,7 +18,6 @@ const avatarCache: { urls: { [k: string]: string } } = JSON.parse(
   fs.readFileSync(AVATAR_CACHE, 'utf-8')
 );
 
-const getDomain = (url: string) => url.match(/(^https?:\/\/.+?)\//)![1]!;
 const entries: Entries = JSON.parse(fs.readFileSync('./public/entries.json', 'utf-8'));
 const entrants: Entrant[] = Object.values(entries).flatMap((meet) =>
   Object.values(meet).flatMap(({ entrants }) => entrants)

@@ -2,9 +2,8 @@ import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import { nameFixer } from 'name-fixer';
 import { AthleticsEvent, DLMeet, Entrant, Entries, MeetCache, WAEventCode } from './types.mjs';
-
 import PDFParser, { Output } from 'pdf2json';
-import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents } from './const.mjs';
+import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain } from './const.mjs';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 
@@ -19,7 +18,6 @@ const schedules: { [k in DLMeet]: string[] } = {
   ],
 };
 
-const getDomain = (url: string) => url.match(/(^https?:\/\/.+?)\//)![1]!;
 const entrantSortFunc = (a: Entrant, b: Entrant) => {
   if (!a.pb && !b.pb) return 0;
   if (!a.pb) return 1;

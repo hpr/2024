@@ -1,19 +1,69 @@
-import { AthleticsEvent, MeetCache, DLMeet, Entries } from './types.mjs';
+import { AthleticsEvent, MeetCache, DLMeet, Entries, Entrant, ResultEntrant } from './types.mjs';
 import fs from 'fs';
-import { CACHE_PATH, ENTRIES_PATH, runningEvents } from './const.mjs';
+import { CACHE_PATH, ENTRIES_PATH, getDomainAndPath, runningEvents } from './const.mjs';
+import { JSDOM } from 'jsdom';
 
 const resultsLinks: { [k in DLMeet]: string } = {
   doha: 'https://web.archive.org/web/20220512074007/https://doha.diamondleague.com/programme-results-doha/',
   birminghamIndoor:
     'https://results-json.microplustimingservices.com/export/WAITF2023/ScheduleByDate_1.JSON',
+  ncaai23: 'https://flashresults.ncaa.com/Indoor/2023/index.htm',
 };
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
 
+const findMatchingEvt = (meetEntries: Entries['ncaai23'], evt: AthleticsEvent) => {
+  return Object.keys(meetEntries!).find((entriesEvt) =>
+    runningEvents.find((group) => group.includes(entriesEvt))!.includes(evt)
+  )!;
+};
+
 for (const key in resultsLinks) {
   const meet = key as DLMeet;
-  if (meet !== 'birminghamIndoor') continue;
+  if (meet !== 'ncaai23') continue;
+  cache[meet] ??= { schedule: {}, events: {}, ids: {} };
+  if (resultsLinks[meet].includes('flashresults')) {
+    cache[meet].resultsSchedule ??= await (await fetch(resultsLinks[meet])).text();
+    const { document } = new JSDOM(cache[meet].resultsSchedule).window;
+    const rows = document.querySelectorAll('tbody > tr');
+    const runningFinals: { evt: AthleticsEvent; link: string }[] = [...rows]
+      .filter(
+        (tr) =>
+          runningEvents.flat().includes(tr.querySelector('td.fixed-column')?.textContent!) &&
+          tr.querySelectorAll('td')[4].textContent === 'Final'
+      )
+      .map((tr) => ({
+        evt: findMatchingEvt(
+          entries[meet],
+          tr.querySelector('td.fixed-column')?.textContent! as AthleticsEvent
+        ) as AthleticsEvent,
+        link:
+          getDomainAndPath(resultsLinks[meet]) +
+          [...tr.querySelectorAll('td')]
+            .find((td) => td.textContent?.trim() === 'Start List')! // TODO change to 'Result'
+            .querySelector('a')?.href,
+      }));
+    for (const { evt, link } of runningFinals) {
+      console.log(evt, link);
+      const { document } = new JSDOM(await (await fetch(link)).text()).window;
+      const resultRows = document.querySelectorAll('table.table-striped > tbody > tr');
+      const results: ResultEntrant[] = [...resultRows].map((tr) => ({
+        entrant: entries[meet]![evt]?.entrants.find(
+          (ent: Entrant) =>
+            `${ent.firstName} ${ent.lastName.toUpperCase()}` ===
+            tr.querySelectorAll('td')[3].querySelector('a')!.textContent?.trim()
+        )!,
+        place: +tr.querySelectorAll('td')[1].textContent?.trim()!,
+        mark: tr.querySelectorAll('td')[4].textContent?.trim()!,
+        notes: '',
+      }));
+      if (results.length) entries[meet]![evt]!.results = results;
+      else entries[meet]![evt]!.results = undefined;
+    }
+    continue;
+  }
+
   const meetCode = resultsLinks[meet].match(
     /^https:\/\/results-json\.microplustimingservices\.com\/export\/(.*)\//
   )![1];
