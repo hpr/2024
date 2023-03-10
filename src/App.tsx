@@ -452,6 +452,7 @@ export default function App() {
             <Leaderboard meet={meet} entries={entries!} />
           ) : page === 'scoring' ? (
             <>
+              Will be populated after events finish...
               <Accordion variant="contained">
                 {Object.keys(entries?.[meet] ?? {})
                   .filter((evt) => entries![meet]![evt as AthleticsEvent]!.results)
