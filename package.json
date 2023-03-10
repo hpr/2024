@@ -10,6 +10,7 @@
     "getAvatars": "node --loader ts-node/esm script/getAvatars.mts",
     "getStats": "node --loader ts-node/esm script/getStats.mts",
     "getLeaderboard": "node --loader ts-node/esm script/getLeaderboard.mts",
+    "closeEntries": "node --loader ts-node/esm script/closeEntries.mts",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",

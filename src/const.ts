@@ -33,4 +33,9 @@ export const mantineGray = 'rgb(55, 58, 64)';
 
 export const DIVIDER = 'divider' as 'divider';
 
-export const PAGES = ['events', 'scoring', 'submissions'] as ['events', 'scoring', 'submissions'];
+export const PAGES = ['events', 'scoring', 'submissions', 'leaderboard'] as [
+  'events',
+  'scoring',
+  'submissions',
+  'leaderboard'
+];

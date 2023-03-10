@@ -222,6 +222,7 @@ export type Entries = {
       entrants: Entrant[];
       date: string;
       results?: ResultEntrant[];
+      isClosed?: boolean;
     };
   };
 };
@@ -241,7 +242,7 @@ export type MeetCache = {
 };
 
 export type LBPicks = {
-  [k in AthleticsEvent]?: string[];
+  [k in AthleticsEvent]?: { team: string[]; scorers?: { [id: string]: number } };
 };
 
 export type LBEntry = {

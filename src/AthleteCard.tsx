@@ -38,6 +38,7 @@ interface AthleteCardProps {
   meet: DLMeet;
   entrant: Entrant;
   tableView: boolean;
+  isClosed: boolean;
 }
 
 function nth(n: string) {
@@ -54,6 +55,7 @@ export function AthleteCard({
   meet,
   entrant,
   tableView,
+  isClosed,
 }: AthleteCardProps) {
   const { myTeam, setMyTeam } = useContext(Store);
   const [showDetails, setShowDetails] = useState<boolean>(false);
@@ -97,6 +99,7 @@ export function AthleteCard({
   const sideButtonMinWidth = isTouchDevice() ? 0 : 300;
   const addToTeam: React.MouseEventHandler = (evt) => {
     evt.stopPropagation();
+    if (isClosed) return;
     if (!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT) return;
     setMyTeam({
       ...myTeam,
@@ -132,7 +135,6 @@ export function AthleteCard({
                 sx={{ height: 128, minWidth: sideButtonMinWidth, borderRight: 'none' }}
                 variant="outline"
                 leftIcon={<AddToTeamButtonIcon />}
-                // disabled={!isOnTeam && (myTeam[meet]?.[event]?.length ?? 0) >= PICKS_PER_EVT}
                 radius="xl"
                 size="xl"
                 color={isOnTeam ? 'red' : undefined}
@@ -248,13 +250,15 @@ export function AthleteCard({
               onClick={addToTeam}
               disabled={!isOnTeam && team.length >= PICKS_PER_EVT}
               leftIcon={<AddToTeamButtonIcon size={20} />}
-            >{(() => {
-              if (isOnTeam) return 'Remove';
-              if (team.length === 0) return 'Captain';
-              if (team.length === 1) return 'Second.';
-              if (team.length < PICKS_PER_EVT) return 'Backup';
-              return 'Full';
-            })()}</Button>
+            >
+              {(() => {
+                if (isOnTeam) return 'Remove';
+                if (team.length === 0) return 'Captain';
+                if (team.length === 1) return 'Second.';
+                if (team.length < PICKS_PER_EVT) return 'Backup';
+                return 'Full';
+              })()}
+            </Button>
           </td>
         </tr>
       ) : (

@@ -1,7 +1,13 @@
 import { ChevronRight, ChevronLeft, DeviceFloppy } from 'tabler-icons-react';
 import { UnstyledButton, Group, Avatar, Text, Box, useMantineTheme } from '@mantine/core';
 
-export function User({ onClick = () => {} }: { onClick?: React.MouseEventHandler }) {
+export function User({
+  onClick = () => {},
+  isClosed,
+}: {
+  onClick?: React.MouseEventHandler;
+  isClosed: boolean;
+}) {
   const theme = useMantineTheme();
 
   return (
@@ -33,10 +39,12 @@ export function User({ onClick = () => {} }: { onClick?: React.MouseEventHandler
           </Avatar>
           <Box sx={{ flex: 1 }} onClick={onClick}>
             <Text size="sm" weight={500}>
-              Save Picks
+              {isClosed ? 'Event Closed' : 'Save Picks'}
             </Text>
             <Text color="dimmed" size="xs">
-              Save and submit your picks
+              {isClosed
+                ? 'Picks submission is closed for this event'
+                : 'Save and submit your picks'}
             </Text>
           </Box>
 

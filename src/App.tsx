@@ -25,7 +25,6 @@ import {
   Title,
   Tooltip,
   Paper,
-  Divider,
   Switch,
   Table,
   TableProps,
@@ -37,11 +36,12 @@ import { AthleticsEvent, AuthPage, DLMeet, Entries, Page, Team } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
-import { BrandGit, Calculator, Check, Dots, Mail, Run, Users } from 'tabler-icons-react';
-import { DIVIDER, PAGES, PICKS_PER_EVT, scoring, SERVER_URL } from './const';
+import { BrandGit, Calculator, Check, Dots, Mail, Run, Trophy, Users } from 'tabler-icons-react';
+import { DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { Leaderboard } from './Leaderboard';
 
 const evtSort = (a: string, b: string) => {
   const DIGITS = '0123456789';
@@ -69,6 +69,10 @@ export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const [tableView, setTableView] = useState<boolean>(false);
+  const [teamToScore, setTeamToScore] = useState<{
+    name: string;
+    scorers: { [id: string]: number };
+  }>({ name: '', scorers: {} });
   const registerForm = useForm({
     initialValues: {
       name: '',
@@ -158,6 +162,8 @@ export default function App() {
         ).join(', ')}`
     )
     .join('\n');
+
+  const hasEventClosed = Object.values(entries?.[meet] ?? {}).some(({ isClosed }) => isClosed);
 
   return (
     <Store.Provider value={{ myTeam, setMyTeam }}>
@@ -289,30 +295,41 @@ export default function App() {
               <Navbar.Section grow mt="xs">
                 <MainLinks
                   links={[
-                    ...(true // arePicksComplete
+                    ...(hasEventClosed
                       ? [
-                          // {
-                          //   icon: <Calculator />,
-                          //   color: 'black',
-                          //   label: 'Scoring',
-                          //   onClick: () => {
-                          //     setPage('scoring');
-                          //     setNavbarOpen(false);
-                          //   },
-                          // },
                           {
-                            icon: <Users />,
-                            color: 'black',
-                            label: 'Submissions',
+                            icon: <Trophy />,
+                            color: 'gold',
+                            label: 'Leaderboard',
                             onClick: () => {
-                              navigate('/submissions');
-                              setPage('submissions');
+                              navigate('/leaderboard');
+                              setPage('leaderboard');
                               setNavbarOpen(false);
                             },
                           },
-                          DIVIDER,
+                          {
+                            icon: <Calculator />,
+                            color: 'black',
+                            label: 'Results',
+                            onClick: () => {
+                              navigate('/scoring');
+                              setPage('scoring');
+                              setNavbarOpen(false);
+                            },
+                          },
                         ]
                       : []),
+                    {
+                      icon: <Users />,
+                      color: 'black',
+                      label: 'Submissions',
+                      onClick: () => {
+                        navigate('/submissions');
+                        setPage('submissions');
+                        setNavbarOpen(false);
+                      },
+                    },
+                    DIVIDER,
                     ...Object.keys(entries?.[meet] ?? {})
                       .sort(evtSort)
                       .map((label) => {
@@ -335,8 +352,12 @@ export default function App() {
               </Navbar.Section>
             </ScrollArea>
 
-            <Navbar.Section onClick={() => setModalOpen(true)}>
-              <User />
+            <Navbar.Section
+              onClick={() => {
+                if (!hasEventClosed) setModalOpen(true);
+              }}
+            >
+              <User isClosed={hasEventClosed} />
             </Navbar.Section>
           </Navbar>
         }
@@ -427,28 +448,18 @@ export default function App() {
         <Stack align="center" mt={0}>
           {page === 'submissions' ? (
             <Submissions meet={meet} />
+          ) : page === 'leaderboard' ? (
+            <Leaderboard meet={meet} entries={entries!} />
           ) : page === 'scoring' ? (
             <>
-              Scoring:
               <Accordion variant="contained">
-                {Object.keys(entries?.[meet]!)
+                {Object.keys(entries?.[meet] ?? {})
                   .filter((evt) => entries![meet]![evt as AthleticsEvent]!.results)
                   .map((evt) => {
-                    const picks = myTeam[meet]![evt as AthleticsEvent]!;
                     const results = entries![meet]![evt as AthleticsEvent]?.results!;
-                    const primaryPlace =
-                      results.findIndex((res) => picks[0].id === res.entrant.id) + 1;
-                    const secondaryPlace =
-                      results.findIndex((res) => picks[1].id === res.entrant.id) + 1;
-
-                    const pickToScore =
-                      primaryPlace <= 3 ? 0 : secondaryPlace < primaryPlace ? 1 : 0;
-                    const score = scoring[(pickToScore === 0 ? primaryPlace : secondaryPlace) - 1];
                     return (
                       <Accordion.Item value={evt} key={evt}>
-                        <Accordion.Control>
-                          {evt} &mdash; {score} pts
-                        </Accordion.Control>
+                        <Accordion.Control>{evt}</Accordion.Control>
                         <Accordion.Panel>
                           <List type="ordered">
                             {results.map(({ entrant = {}, mark, notes, place }, i) => (
@@ -464,8 +475,7 @@ export default function App() {
                               >
                                 <Text
                                   sx={{
-                                    fontWeight:
-                                      entrant.id === picks[pickToScore].id ? 'bold' : undefined,
+                                    fontWeight: undefined,
                                   }}
                                 >
                                   {place}. {entrant.firstName} {entrant.lastName} &mdash; {mark}
@@ -484,41 +494,47 @@ export default function App() {
             <>
               <Paper shadow="xl" radius="xl" p="xl" withBorder>
                 <Stack align="center">
-                  {myTeamPicks.length ? (
-                    <Tooltip.Group openDelay={0} closeDelay={100}>
-                      <Avatar.Group spacing="xs">
-                        {myTeamPicks.map(({ id, lastName }, i) => (
-                          <Tooltip
-                            key={i}
-                            withArrow
-                            label={`${
-                              i === 0 ? 'Event Captain' : i === 1 ? 'Secondary' : 'Backup'
-                            }: ${lastName}`}
-                            events={{ hover: true, focus: true, touch: true }}
-                          >
-                            <Avatar
-                              size={i === 0 ? 'xl' : i === 1 ? 'lg' : 'md'}
-                              src={`img/avatars/${id}_128x128.png`}
-                              radius="xl"
-                            />
-                          </Tooltip>
-                        ))}
-                      </Avatar.Group>
-                    </Tooltip.Group>
-                  ) : (
-                    <Text>Select an event captain, secondary pick, and backup pick below</Text>
-                  )}
-                  {myTeamPicks.length == PICKS_PER_EVT ? (
-                    <>
-                      <Check size={30} />
-                      Event Complete! Now select another event on the left menu
-                    </>
+                  {!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed ? (
+                    <Text>Event Closed</Text>
                   ) : (
                     <>
-                      {myTeamPicks.length
-                        ? `Select ${PICKS_PER_EVT - myTeamPicks.length} more...`
-                        : ''}
-                      <Dots size={30} />
+                      {myTeamPicks.length ? (
+                        <Tooltip.Group openDelay={0} closeDelay={100}>
+                          <Avatar.Group spacing="xs">
+                            {myTeamPicks.map(({ id, lastName }, i) => (
+                              <Tooltip
+                                key={i}
+                                withArrow
+                                label={`${
+                                  i === 0 ? 'Event Captain' : i === 1 ? 'Secondary' : 'Backup'
+                                }: ${lastName}`}
+                                events={{ hover: true, focus: true, touch: true }}
+                              >
+                                <Avatar
+                                  size={i === 0 ? 'xl' : i === 1 ? 'lg' : 'md'}
+                                  src={`img/avatars/${id}_128x128.png`}
+                                  radius="xl"
+                                />
+                              </Tooltip>
+                            ))}
+                          </Avatar.Group>
+                        </Tooltip.Group>
+                      ) : (
+                        <Text>Select an event captain, secondary pick, and backup pick below</Text>
+                      )}
+                      {myTeamPicks.length == PICKS_PER_EVT ? (
+                        <>
+                          <Check size={30} />
+                          Event Complete! Now select another event on the left menu
+                        </>
+                      ) : (
+                        <>
+                          {myTeamPicks.length
+                            ? `Select ${PICKS_PER_EVT - myTeamPicks.length} more...`
+                            : ''}
+                          <Dots size={30} />
+                        </>
+                      )}
                     </>
                   )}
                 </Stack>
@@ -544,6 +560,7 @@ export default function App() {
                       const { id, firstName, lastName, pb, sb, nat } = entrant;
                       return (
                         <AthleteCard
+                          isClosed={!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed}
                           key={id}
                           tableView={tableView}
                           avatar={`img/avatars/${id}_128x128.png`}

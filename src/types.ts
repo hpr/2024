@@ -49,6 +49,7 @@ export type Entries = {
       entrants: Entrant[];
       date: string;
       results?: ResultEntrant[];
+      isClosed?: boolean;
     };
   };
 };
@@ -102,7 +103,7 @@ export type ArrayElement<A> = A extends readonly (infer T)[] ? T : never;
 export type Page = ArrayElement<typeof PAGES>;
 
 export type LBPicks = {
-  [k in AthleticsEvent]?: string[];
+  [k in AthleticsEvent]?: { team: string[]; scorers?: { [id: string]: number } };
 };
 
 export type LBEntry = {
@@ -118,3 +119,5 @@ export type LBEntry = {
 export type LBType = {
   [k in DLMeet]?: LBEntry[];
 };
+
+export type MeetTeam = Exclude<Team[DLMeet], undefined>;

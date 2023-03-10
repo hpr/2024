@@ -6,7 +6,6 @@ import {
   DLMeet,
   Entries,
   LBType,
-  Team,
   AthleticsEvent,
   ResultEntrant,
   MeetTeam,
@@ -39,7 +38,11 @@ const users: { id: number; name: string }[] = parse(fs.readFileSync('./users.csv
   columns: true,
 });
 
-const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): number => {
+const getScore = (
+  meet: DLMeet,
+  team: MeetTeam,
+  evt: AthleticsEvent
+): { score: number; scorers: { [id: string]: number } } => {
   let score = 0;
   const backup = team[evt]?.at(-1)!;
   const backupResult = entries[meet]![evt]!.results!.find(
@@ -47,6 +50,7 @@ const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): number => 
   ) ?? { notes: 'DNS' };
   let doneBackup = false;
   if (backupNotes.some((note) => backupResult.notes.includes(note))) doneBackup = true;
+  const scorers: { [id: string]: number } = {};
   for (const pick of team[evt]!.slice(0, -1)) {
     let matchingResult = entries[meet]![evt]!.results!.find((res) => res.entrant.id === pick.id);
     if (backupNotes.some((note) => matchingResult?.notes.includes(note)) && !doneBackup) {
@@ -56,10 +60,11 @@ const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): number => 
     const isCaptain = pick === team[evt]![0];
     const pickScore = SCORE[matchingResult!?.place - 1] * (isCaptain ? 2 : 1) || 0;
     console.log(evt, pick.firstName, pick.lastName, matchingResult?.place, pickScore);
+    scorers[matchingResult?.entrant!.id!] = pickScore;
     score += pickScore;
   }
   if (Number.isNaN(score)) process.exit();
-  return score;
+  return { score, scorers };
 };
 
 const fixIds = (picks: MeetTeam) => {
@@ -83,38 +88,46 @@ const fixIds = (picks: MeetTeam) => {
   }
 };
 
+const evtToGenderedCode = (evt: string): AthleticsEvent =>
+  (evt[0] + disciplineCodes[evt.split(' ').slice(1).join(' ')]) as AthleticsEvent;
+
 for (const meet of ['ncaai23'] as DLMeet[]) {
-  leaderboard[meet] ??= [];
+  leaderboard[meet] = [];
   for (const { picksJson, userid } of rows) {
     const picks: MeetTeam = JSON.parse(picksJson);
     fixIds(picks); // TODO remove in future
+
+    const userPicks = Object.keys(picks!).reduce((acc, evt) => {
+      const evtCode = evtToGenderedCode(evt);
+      acc[evtCode as AthleticsEvent] = { team: picks![evt as AthleticsEvent]!.map(({ id }) => id) };
+      return acc;
+    }, {} as LBPicks);
+
     let distanceScore = 0;
     let sprintScore = 0;
     let eventsScored = 0;
     for (const key in picks) {
       const evt = key as AthleticsEvent;
       if (!entries[meet]![evt]!.results) continue;
-      const evtScore = getScore(meet, picks, evt);
+      const { score: evtScore, scorers } = getScore(meet, picks, evt);
+      userPicks[evtToGenderedCode(evt)]!.scorers = scorers;
       if (distanceEvents.includes(evt)) distanceScore += evtScore;
       if (sprintEvents.includes(evt)) sprintScore += evtScore;
       eventsScored++;
     }
     const score = distanceScore + sprintScore;
-    leaderboard[meet].push({
+    leaderboard[meet]!.push({
       userid,
       name: users.find(({ id }) => id === userid)!.name,
-      picks: Object.keys(picks!).reduce((acc, evt) => {
-        const evtCode = evt[0] + disciplineCodes[evt.split(' ').slice(1).join(' ')];
-        acc[evtCode as AthleticsEvent] = picks![evt as AthleticsEvent]!.map(({ id }) => id);
-        return acc;
-      }, {} as LBPicks),
+      picks: userPicks,
       distanceScore,
       sprintScore,
       eventsScored,
       score,
     });
-    console.log(leaderboard[meet].at(-1));
+    console.log(leaderboard[meet]!.at(-1));
   }
+  leaderboard[meet]?.sort((a, b) => b.score - a.score);
 }
 
 fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
