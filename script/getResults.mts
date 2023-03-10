@@ -41,7 +41,7 @@ for (const key in resultsLinks) {
         link:
           getDomainAndPath(resultsLinks[meet]) +
           [...tr.querySelectorAll('td')]
-            .find((td) => td.textContent?.trim() === 'Start List')! // TODO change to 'Result'
+            .find((td) => td.textContent?.trim() === 'Result')! // TODO change to 'Result'
             .querySelector('a')?.href,
       }));
     for (const { evt, link } of runningFinals) {
@@ -52,11 +52,11 @@ for (const key in resultsLinks) {
         entrant: entries[meet]![evt]?.entrants.find(
           (ent: Entrant) =>
             `${ent.firstName} ${ent.lastName.toUpperCase()}` ===
-            tr.querySelectorAll('td')[3].querySelector('a')!.textContent?.trim()
+            tr.querySelectorAll('td')[2].querySelector('a')!.textContent?.trim()
         )!,
-        place: +tr.querySelectorAll('td')[1].textContent?.trim()!,
-        mark: tr.querySelectorAll('td')[4].textContent?.trim()!,
-        notes: '',
+        place: +tr.querySelectorAll('td')[0].textContent?.trim()!,
+        mark: tr.querySelectorAll('td')[3].textContent?.trim()!.split(' ')[0]!,
+        notes: [...tr.querySelectorAll('td')].at(-1)?.textContent?.trim() ?? '',
       }));
       if (results.length) entries[meet]![evt]!.results = results;
       else entries[meet]![evt]!.results = undefined;
