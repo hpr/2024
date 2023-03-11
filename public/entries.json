@@ -1829,7 +1829,121 @@
           "lastName": "Abba"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14646562",
+            "team": "Texas",
+            "nat": "LCA",
+            "pb": "",
+            "sb": "22.26",
+            "firstName": "Julien",
+            "lastName": "Alfred"
+          },
+          "place": 1,
+          "mark": "22.01",
+          "notes": "PB   CL   FR   WL   MR   CR"
+        },
+        {
+          "entrant": {
+            "id": "14756075",
+            "team": "LSU",
+            "nat": "NGR",
+            "pb": "",
+            "sb": "22.36",
+            "firstName": "Favour",
+            "lastName": "Ofili"
+          },
+          "place": 2,
+          "mark": "22.20",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14808087",
+            "team": "Georgia",
+            "nat": "USA",
+            "pb": "",
+            "sb": "22.97",
+            "firstName": "Autumn",
+            "lastName": "Wilson"
+          },
+          "place": 3,
+          "mark": "22.45",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14723890",
+            "team": "Ole Miss",
+            "nat": "USA",
+            "pb": "",
+            "sb": "22.67",
+            "firstName": "McKenzie",
+            "lastName": "Long"
+          },
+          "place": 4,
+          "mark": "22.54",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14761324",
+            "team": "Oregon",
+            "nat": "USA",
+            "pb": "",
+            "sb": "22.86",
+            "firstName": "Jadyn",
+            "lastName": "Mays"
+          },
+          "place": 5,
+          "mark": "22.63",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14648896",
+            "team": "Texas",
+            "nat": "USA",
+            "pb": "",
+            "sb": "22.63",
+            "firstName": "Lanae",
+            "lastName": "Thomas"
+          },
+          "place": 6,
+          "mark": "22.73",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14731976",
+            "team": "USC",
+            "nat": "USA",
+            "pb": "",
+            "sb": "22.99",
+            "firstName": "Caisja",
+            "lastName": "Chandler"
+          },
+          "place": 7,
+          "mark": "22.74",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14906985",
+            "team": "Georgia",
+            "nat": "USA",
+            "pb": "",
+            "sb": "22.97",
+            "firstName": "Kaila",
+            "lastName": "Jackson"
+          },
+          "place": 8,
+          "mark": "22.84",
+          "notes": ""
+        }
+      ]
     },
     "Women's 400 Meters": {
       "date": "",
