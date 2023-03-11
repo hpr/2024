@@ -2243,7 +2243,121 @@
           "lastName": "Preigh"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14761309",
+            "team": "Stanford",
+            "nat": "USA",
+            "pb": "",
+            "sb": "1:59.95",
+            "firstName": "Roisin",
+            "lastName": "Willis"
+          },
+          "place": 1,
+          "mark": "1:59.93",
+          "notes": "PB   CL   FR   MR"
+        },
+        {
+          "entrant": {
+            "id": "14879694",
+            "team": "Stanford",
+            "nat": "USA",
+            "pb": "",
+            "sb": "2:00.32",
+            "firstName": "Juliette",
+            "lastName": "Whittaker"
+          },
+          "place": 2,
+          "mark": "2:00.05",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14715998",
+            "team": "LSU",
+            "nat": "USA",
+            "pb": "",
+            "sb": "2:00.18",
+            "firstName": "Michaela",
+            "lastName": "Rose"
+          },
+          "place": 3,
+          "mark": "2:00.85",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14657958",
+            "team": "BYU",
+            "nat": "USA",
+            "pb": "",
+            "sb": "2:02.75",
+            "firstName": "Claire",
+            "lastName": "Seymour"
+          },
+          "place": 4,
+          "mark": "2:03.18",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14851568",
+            "team": "Kennesaw State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "2:02.00",
+            "firstName": "Sarah",
+            "lastName": "Hendrick"
+          },
+          "place": 5,
+          "mark": "2:03.21",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14704616",
+            "team": "Texas",
+            "nat": "USA",
+            "pb": "",
+            "sb": "2:02.25",
+            "firstName": "Valery",
+            "lastName": "Tobias"
+          },
+          "place": 6,
+          "mark": "2:03.25",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14653693",
+            "team": "Bradley",
+            "nat": "SWE",
+            "pb": "",
+            "sb": "2:02.91",
+            "firstName": "Wilma",
+            "lastName": "Nielsen"
+          },
+          "place": 7,
+          "mark": "2:03.34",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14707824",
+            "team": "Michigan",
+            "nat": "CAN",
+            "pb": "",
+            "sb": "2:02.99",
+            "firstName": "Aurora",
+            "lastName": "Rynda"
+          },
+          "place": 8,
+          "mark": "2:06.83",
+          "notes": ""
+        }
+      ]
     },
     "Women's Mile": {
       "date": "",
