@@ -2239,7 +2239,233 @@
           "lastName": "Vestri"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14679744",
+            "team": "NC State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:15.92",
+            "firstName": "Katelyn",
+            "lastName": "Tuohy"
+          },
+          "place": 1,
+          "mark": "16:09.65",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "15014437",
+            "team": "Alabama",
+            "nat": "KEN",
+            "pb": "",
+            "sb": "15:17.97",
+            "firstName": "Hilda",
+            "lastName": "Olemomoi"
+          },
+          "place": 2,
+          "mark": "16:11.08",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14874368",
+            "team": "Alabama",
+            "nat": "KEN",
+            "pb": "",
+            "sb": "15:18.12",
+            "firstName": "Mercy",
+            "lastName": "Chelangat"
+          },
+          "place": 3,
+          "mark": "16:11.63",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14720374",
+            "team": "NC State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:27.83",
+            "firstName": "Kelsey",
+            "lastName": "Chmiel"
+          },
+          "place": 4,
+          "mark": "16:18.87",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14649688",
+            "team": "Utah",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:20.37",
+            "firstName": "Emily",
+            "lastName": "Venters"
+          },
+          "place": 5,
+          "mark": "16:25.28",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14718893",
+            "team": "Syracuse",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:42.48",
+            "firstName": "Amanda",
+            "lastName": "Vestri"
+          },
+          "place": 6,
+          "mark": "16:25.30",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14804935",
+            "team": "New Mexico",
+            "nat": "CAN",
+            "pb": "",
+            "sb": "15:37.47",
+            "firstName": "Gracelyn",
+            "lastName": "Larkin"
+          },
+          "place": 7,
+          "mark": "16:27.76",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14926144",
+            "team": "NC State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:35.61",
+            "firstName": "Sydney",
+            "lastName": "Seymour"
+          },
+          "place": 8,
+          "mark": "16:28.15",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14601925",
+            "team": "Colorado St.",
+            "nat": "USA",
+            "pb": "",
+            "sb": "16:07.28",
+            "firstName": "Sarah",
+            "lastName": "Carter"
+          },
+          "place": 9,
+          "mark": "16:31.52",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14517234",
+            "team": "New Mexico",
+            "nat": "AUS",
+            "pb": "",
+            "sb": "15:18.54",
+            "firstName": "Amelia",
+            "lastName": "Mazza-Downie"
+          },
+          "place": 10,
+          "mark": "16:33.71",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14839139",
+            "team": "Northern Arizona",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:33.74",
+            "firstName": "Elise",
+            "lastName": "Stearns"
+          },
+          "place": 11,
+          "mark": "16:34.04",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14801790",
+            "team": "BYU",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:32.82",
+            "firstName": "Aubrey",
+            "lastName": "Frentheway"
+          },
+          "place": 12,
+          "mark": "16:38.77",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14758075",
+            "team": "Stanford",
+            "nat": "POL",
+            "pb": "",
+            "sb": "15:40.41",
+            "firstName": "Zofia",
+            "lastName": "Dudek"
+          },
+          "place": 13,
+          "mark": "16:38.98",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14613062",
+            "team": "San Francisco",
+            "nat": "AUS",
+            "pb": "",
+            "sb": "15:38.08",
+            "firstName": "Ruby",
+            "lastName": "Smee"
+          },
+          "place": 14,
+          "mark": "16:41.56",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14800826",
+            "team": "Colorado",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:33.72",
+            "firstName": "Ella",
+            "lastName": "Baran"
+          },
+          "place": 15,
+          "mark": "16:48.53",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14883271",
+            "team": "Oklahoma State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "15:24.26",
+            "firstName": "Natalie",
+            "lastName": "Cook"
+          },
+          "place": 16,
+          "mark": "17:21.48",
+          "notes": ""
+        }
+      ]
     },
     "Women's 60 Hurdles": {
       "date": "",

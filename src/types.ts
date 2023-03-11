@@ -121,3 +121,8 @@ export type LBType = {
 };
 
 export type MeetTeam = Exclude<Team[DLMeet], undefined>;
+
+export type TeamToScore = {
+  name: string;
+  lbpicks: LBPicks;
+};

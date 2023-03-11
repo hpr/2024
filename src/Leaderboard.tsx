@@ -7,16 +7,21 @@ import {
   SegmentedControl,
   Stack,
   Code,
+  Button,
 } from '@mantine/core';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { DLMeet, Entries, LBEntry, LBType } from './types';
 import Filter from 'badwords-filter';
 import { mantineGray } from './const';
+import { Store } from './Store';
+import { useNavigate } from 'react-router-dom';
 
 const filter = new Filter();
 type SortBy = 'score' | 'sprintScore' | 'distanceScore';
 
 export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries }) => {
+  const navigate = useNavigate();
+  const { teamToScore, setTeamToScore } = useContext(Store);
   const [leaderboard, setLeaderboard] = useState<LBType>({});
   const [sortBy, setSortBy] = useState<SortBy>('score');
 
@@ -69,11 +74,19 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
                     {filter.clean(name)}: {lbentry[sortBy]}pts ({eventsScored} events scored)
                   </Accordion.Control>
                   <Accordion.Panel>
+                    <Button
+                      mb="md"
+                      fullWidth
+                      onClick={() => {
+                        setTeamToScore({ lbpicks: picks, name });
+                        navigate('/scoring');
+                      }}
+                    >
+                      View scoring
+                    </Button>
                     <Code block>
                       {Object.entries(picks)
-                        .map(
-                          ([evt, { team }]) => `${evt}: ${team.map(getName).join(', ')}`
-                        )
+                        .map(([evt, { team }]) => `${evt}: ${team.map(getName).join(', ')}`)
                         .join('\n')}
                     </Code>
                   </Accordion.Panel>

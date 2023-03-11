@@ -32,12 +32,12 @@ import {
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
-import { AthleticsEvent, AuthPage, DLMeet, Entries, Page, Team } from './types';
+import { AthleticsEvent, AuthPage, DLMeet, Entries, Page, Team, TeamToScore } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
 import { BrandGit, Calculator, Check, Dots, Mail, Run, Trophy, Users } from 'tabler-icons-react';
-import { DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
+import { codeToEvt, disciplineCodes, DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -69,10 +69,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const [tableView, setTableView] = useState<boolean>(false);
-  const [teamToScore, setTeamToScore] = useState<{
-    name: string;
-    scorers: { [id: string]: number };
-  }>({ name: '', scorers: {} });
+  const [teamToScore, setTeamToScore] = useState<TeamToScore | null>(null);
   const registerForm = useForm({
     initialValues: {
       name: '',
@@ -166,7 +163,7 @@ export default function App() {
   const hasEventClosed = Object.values(entries?.[meet] ?? {}).some(({ isClosed }) => isClosed);
 
   return (
-    <Store.Provider value={{ myTeam, setMyTeam }}>
+    <Store.Provider value={{ myTeam, setMyTeam, teamToScore, setTeamToScore }}>
       <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register & Submit Picks">
         {arePicksComplete ? (
           <Stack>
@@ -452,7 +449,10 @@ export default function App() {
             <Leaderboard meet={meet} entries={entries!} />
           ) : page === 'scoring' ? (
             <>
-              Will be populated after events finish...
+              {teamToScore && <Title order={2}>Scoring for {teamToScore.name}</Title>}
+              {!Object.keys(entries?.[meet] ?? {}).filter(
+                (evt) => entries![meet]![evt as AthleticsEvent]!.results
+              ).length && 'Will be populated after events finish...'}
               <Accordion variant="contained">
                 {Object.keys(entries?.[meet] ?? {})
                   .filter((evt) => entries![meet]![evt as AthleticsEvent]!.results)
@@ -463,27 +463,46 @@ export default function App() {
                         <Accordion.Control>{evt}</Accordion.Control>
                         <Accordion.Panel>
                           <List type="ordered">
-                            {results.map(({ entrant = {}, mark, notes, place }, i) => (
-                              <List.Item
-                                key={entrant.id ?? i}
-                                icon={
-                                  <Avatar
-                                    radius="xl"
-                                    size="sm"
-                                    src={`img/avatars/${entrant.id ?? 'default'}_128x128.png`}
-                                  />
-                                }
-                              >
-                                <Text
-                                  sx={{
-                                    fontWeight: undefined,
-                                  }}
+                            {results.map(({ entrant = {}, mark, notes, place }, i) => {
+                              const shortCode =
+                                (evt.startsWith("Men's") ? 'M' : 'W') +
+                                disciplineCodes[evt.split(' ').slice(1).join(' ')];
+                              return (
+                                <List.Item
+                                  key={entrant.id ?? i}
+                                  icon={
+                                    <Avatar
+                                      radius="xl"
+                                      size="sm"
+                                      src={`img/avatars/${entrant.id ?? 'default'}_128x128.png`}
+                                    />
+                                  }
                                 >
-                                  {place}. {entrant.firstName} {entrant.lastName} &mdash; {mark}
-                                  {notes ? ` (${notes})` : ''}
-                                </Text>
-                              </List.Item>
-                            ))}
+                                  <Text
+                                    sx={{
+                                      fontWeight: Object.keys(
+                                        teamToScore?.lbpicks?.[shortCode as AthleticsEvent]
+                                          ?.scorers ?? {}
+                                      ).includes(entrant.id!)
+                                        ? 'bold'
+                                        : undefined,
+                                    }}
+                                  >
+                                    {place}. {entrant.firstName} {entrant.lastName} &mdash; {mark}
+                                    {notes ? ` (${notes})` : ''}
+                                    {Object.keys(
+                                      teamToScore?.lbpicks?.[shortCode as AthleticsEvent]
+                                        ?.scorers ?? {}
+                                    ).includes(entrant.id!)
+                                      ? ` (+ ${
+                                          teamToScore?.lbpicks?.[shortCode as AthleticsEvent]
+                                            ?.scorers?.[entrant.id!]
+                                        } pts)`
+                                      : ''}
+                                  </Text>
+                                </List.Item>
+                              );
+                            })}
                           </List>
                         </Accordion.Panel>
                       </Accordion.Item>
