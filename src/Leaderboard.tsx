@@ -66,7 +66,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
               ({ name, userid, eventsScored, picks, ...lbentry }: LBEntry, i) => (
                 <Accordion.Item key={userid} value={userid + ''}>
                   <Accordion.Control
-                    sx={{ width: 300 }}
+                    sx={{ width: "100%" }}
                     icon={
                       <Avatar size="sm" radius="xl" style={{ border: `1px solid ${mantineGray}` }}>
                         {i + 1}
@@ -86,7 +86,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
                       >
                         View scoring
                       </Button>
-                      <ScrollArea w={300}>
+                      <ScrollArea w={300} type="always" scrollbarSize={15} offsetScrollbars> {/* fix for mobile */}
                         <Code block>
                           {Object.entries(picks)
                             .map(([evt, { team }]) => `${evt}: ${team.map(getName).join(', ')}`)
