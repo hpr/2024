@@ -3325,7 +3325,121 @@
           "lastName": "Sey"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14685249",
+            "team": "Arkansas",
+            "nat": "JAM",
+            "pb": "",
+            "sb": "7.81",
+            "firstName": "Ackera",
+            "lastName": "Nugent"
+          },
+          "place": 1,
+          "mark": "7.73",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14659011",
+            "team": "Kentucky",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.75",
+            "firstName": "Masai",
+            "lastName": "Russell"
+          },
+          "place": 2,
+          "mark": "7.75",
+          "notes": "=PB"
+        },
+        {
+          "entrant": {
+            "id": "14630926",
+            "team": "Tennessee",
+            "nat": "BAH",
+            "pb": "",
+            "sb": "8.02",
+            "firstName": "Charisma",
+            "lastName": "Taylor"
+          },
+          "place": 3,
+          "mark": "7.93",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14773627",
+            "team": "LSU",
+            "nat": "USA",
+            "pb": "",
+            "sb": "8.02",
+            "firstName": "Leah",
+            "lastName": "Phillips"
+          },
+          "place": 4,
+          "mark": "7.95",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14631833",
+            "team": "Texas Tech",
+            "nat": "JAM",
+            "pb": "",
+            "sb": "7.98",
+            "firstName": "Demisha",
+            "lastName": "Roswell"
+          },
+          "place": 5,
+          "mark": "8.00",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14858877",
+            "team": "Oregon",
+            "nat": "USA",
+            "pb": "",
+            "sb": "8.01",
+            "firstName": "Aaliyah",
+            "lastName": "McCormick"
+          },
+          "place": 6,
+          "mark": "8.01",
+          "notes": "=PB"
+        },
+        {
+          "entrant": {
+            "id": "14697257",
+            "team": "Arizona",
+            "nat": "USA",
+            "pb": "",
+            "sb": "8.01",
+            "firstName": "Talie",
+            "lastName": "Bonds"
+          },
+          "place": 7,
+          "mark": "8.03",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14763345",
+            "team": "UCLA",
+            "nat": "BEL",
+            "pb": "",
+            "sb": "8.05",
+            "firstName": "Yanla",
+            "lastName": "Ndjip-Nyemeck"
+          },
+          "place": 0,
+          "mark": "DNF",
+          "notes": ""
+        }
+      ]
     }
   }
 }
