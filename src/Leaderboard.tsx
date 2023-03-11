@@ -8,6 +8,7 @@ import {
   Stack,
   Code,
   Button,
+  ScrollArea,
 } from '@mantine/core';
 import { useContext, useEffect, useState } from 'react';
 import { DLMeet, Entries, LBEntry, LBType } from './types';
@@ -65,6 +66,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
               ({ name, userid, eventsScored, picks, ...lbentry }: LBEntry, i) => (
                 <Accordion.Item key={userid} value={userid + ''}>
                   <Accordion.Control
+                    sx={{ width: 300 }}
                     icon={
                       <Avatar size="sm" radius="xl" style={{ border: `1px solid ${mantineGray}` }}>
                         {i + 1}
@@ -74,21 +76,25 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
                     {filter.clean(name)}: {lbentry[sortBy]}pts ({eventsScored} events scored)
                   </Accordion.Control>
                   <Accordion.Panel>
-                    <Button
-                      mb="md"
-                      fullWidth
-                      onClick={() => {
-                        setTeamToScore({ lbpicks: picks, name });
-                        navigate('/scoring');
-                      }}
-                    >
-                      View scoring
-                    </Button>
-                    <Code block>
-                      {Object.entries(picks)
-                        .map(([evt, { team }]) => `${evt}: ${team.map(getName).join(', ')}`)
-                        .join('\n')}
-                    </Code>
+                    <Stack align="center">
+                      <Button
+                        mb="md"
+                        fullWidth
+                        onClick={() => {
+                          setTeamToScore({ lbpicks: picks, name });
+                          navigate('/scoring');
+                        }}
+                      >
+                        View scoring
+                      </Button>
+                      <ScrollArea w={300}>
+                        <Code block>
+                          {Object.entries(picks)
+                            .map(([evt, { team }]) => `${evt}: ${team.map(getName).join(', ')}`)
+                            .join('\n')}
+                        </Code>
+                      </ScrollArea>
+                    </Stack>
                   </Accordion.Panel>
                 </Accordion.Item>
               )

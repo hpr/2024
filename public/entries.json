@@ -2165,7 +2165,149 @@
           "lastName": "Appleton"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14716832",
+            "team": "Illinois",
+            "nat": "USA",
+            "pb": "",
+            "sb": "4:33.77",
+            "firstName": "Olivia",
+            "lastName": "Howell"
+          },
+          "place": 1,
+          "mark": "4:34.00",
+          "notes": "FR"
+        },
+        {
+          "entrant": {
+            "id": "14660239",
+            "team": "Arkansas",
+            "nat": "USA",
+            "pb": "",
+            "sb": "4:31.88",
+            "firstName": "Lauren",
+            "lastName": "Gregory"
+          },
+          "place": 2,
+          "mark": "4:34.24",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14927486",
+            "team": "Alabama",
+            "nat": "KEN",
+            "pb": "",
+            "sb": "4:32.84",
+            "firstName": "Flomena",
+            "lastName": "Asekol"
+          },
+          "place": 3,
+          "mark": "4:35.18",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14848160",
+            "team": "Virginia",
+            "nat": "USA",
+            "pb": "",
+            "sb": "4:33.82",
+            "firstName": "Margot",
+            "lastName": "Appleton"
+          },
+          "place": 4,
+          "mark": "4:35.83",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14733357",
+            "team": "Harvard",
+            "nat": "NZL",
+            "pb": "",
+            "sb": "4:30.19",
+            "firstName": "Maia",
+            "lastName": "Ramsden"
+          },
+          "place": 5,
+          "mark": "4:36.54",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14704467",
+            "team": "Oregon",
+            "nat": "POL",
+            "pb": "",
+            "sb": "4:32.03",
+            "firstName": "Klaudia",
+            "lastName": "Kazimierska"
+          },
+          "place": 6,
+          "mark": "4:37.82",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14763372",
+            "team": "Duke",
+            "nat": "NED",
+            "pb": "",
+            "sb": "4:32.54",
+            "firstName": "Amina",
+            "lastName": "Maatoug"
+          },
+          "place": 7,
+          "mark": "4:38.83",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14789852",
+            "team": "Northern Arizona",
+            "nat": "USA",
+            "pb": "",
+            "sb": "4:43.97",
+            "firstName": "Annika",
+            "lastName": "Reiss"
+          },
+          "place": 8,
+          "mark": "4:40.79",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14668471",
+            "team": "Oregon",
+            "nat": "AUS",
+            "pb": "",
+            "sb": "4:32.69",
+            "firstName": "Izzy",
+            "lastName": "Thornton-Bott"
+          },
+          "place": 9,
+          "mark": "4:44.34",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14822777",
+            "team": "Virginia Tech",
+            "nat": "USA",
+            "pb": "",
+            "sb": "4:31.41",
+            "firstName": "Lindsey",
+            "lastName": "Butler"
+          },
+          "place": 10,
+          "mark": "4:45.65",
+          "notes": ""
+        }
+      ]
     },
     "Women's 3000 Meters": {
       "date": "",
