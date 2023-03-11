@@ -1565,7 +1565,121 @@
           "lastName": "Jamison"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14646562",
+            "team": "Texas",
+            "nat": "LCA",
+            "pb": "",
+            "sb": "6.97",
+            "firstName": "Julien",
+            "lastName": "Alfred"
+          },
+          "place": 1,
+          "mark": "6.94",
+          "notes": "PB   CL   =FR   =WL   MR   CR"
+        },
+        {
+          "entrant": {
+            "id": "14906985",
+            "team": "Georgia",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.15",
+            "firstName": "Kaila",
+            "lastName": "Jackson"
+          },
+          "place": 2,
+          "mark": "7.08",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14757192",
+            "team": "Tennessee",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.11",
+            "firstName": "Jacious",
+            "lastName": "Sears"
+          },
+          "place": 3,
+          "mark": "7.10",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14808087",
+            "team": "Georgia",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.20",
+            "firstName": "Autumn",
+            "lastName": "Wilson"
+          },
+          "place": 4,
+          "mark": "7.12",
+          "notes": "=PB"
+        },
+        {
+          "entrant": {
+            "id": "14761324",
+            "team": "Oregon",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.13",
+            "firstName": "Jadyn",
+            "lastName": "Mays"
+          },
+          "place": 5,
+          "mark": "7.13",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14756075",
+            "team": "LSU",
+            "nat": "NGR",
+            "pb": "",
+            "sb": "7.15",
+            "firstName": "Favour",
+            "lastName": "Ofili"
+          },
+          "place": 6,
+          "mark": "7.17",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14723890",
+            "team": "Ole Miss",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.22",
+            "firstName": "McKenzie",
+            "lastName": "Long"
+          },
+          "place": 7,
+          "mark": "7.19",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14576789",
+            "team": "Clemson",
+            "nat": "JAM",
+            "pb": "",
+            "sb": "7.09",
+            "firstName": "Kiara",
+            "lastName": "Grant"
+          },
+          "place": 8,
+          "mark": "7.21",
+          "notes": ""
+        }
+      ]
     },
     "Women's 200 Meters": {
       "date": "",
