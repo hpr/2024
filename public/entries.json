@@ -1979,7 +1979,121 @@
           "lastName": "Wade"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14716862",
+            "team": "Arkansas",
+            "nat": "USA",
+            "pb": "",
+            "sb": "51.14",
+            "firstName": "Britton",
+            "lastName": "Wilson"
+          },
+          "place": 1,
+          "mark": "49.48",
+          "notes": "PB   CL   FR   MR   CR"
+        },
+        {
+          "entrant": {
+            "id": "14745252",
+            "team": "Texas",
+            "nat": "IRL",
+            "pb": "",
+            "sb": "50.33",
+            "firstName": "Rhasidat",
+            "lastName": "Adeleke"
+          },
+          "place": 2,
+          "mark": "50.45",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14773307",
+            "team": "Florida",
+            "nat": "USA",
+            "pb": "",
+            "sb": "50.15",
+            "firstName": "Talitha",
+            "lastName": "Diggs"
+          },
+          "place": 3,
+          "mark": "50.49",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14746488",
+            "team": "Arkansas",
+            "nat": "USA",
+            "pb": "",
+            "sb": "51.02",
+            "firstName": "Rosey",
+            "lastName": "Effiong"
+          },
+          "place": 4,
+          "mark": "50.54",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14696035",
+            "team": "USC",
+            "nat": "USA",
+            "pb": "",
+            "sb": "51.66",
+            "firstName": "Jan'Taijah",
+            "lastName": "Jones"
+          },
+          "place": 5,
+          "mark": "51.03",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14632781",
+            "team": "Arkansas",
+            "nat": "GBR",
+            "pb": "",
+            "sb": "50.68",
+            "firstName": "Amber",
+            "lastName": "Anning"
+          },
+          "place": 6,
+          "mark": "51.22",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14771436",
+            "team": "Michigan",
+            "nat": "CAN",
+            "pb": "",
+            "sb": "51.41",
+            "firstName": "Savannah",
+            "lastName": "Sutherland"
+          },
+          "place": 7,
+          "mark": "51.60",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14898611",
+            "team": "Texas A&M",
+            "nat": "USA",
+            "pb": "",
+            "sb": "51.89",
+            "firstName": "Jermaisha",
+            "lastName": "Arnold"
+          },
+          "place": 8,
+          "mark": "51.80",
+          "notes": ""
+        }
+      ]
     },
     "Women's 800 Meters": {
       "date": "",

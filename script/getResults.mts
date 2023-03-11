@@ -31,7 +31,7 @@ for (const key in resultsLinks) {
       .filter(
         (tr) =>
           runningEvents.flat().includes(tr.querySelector('td.fixed-column')?.textContent!) &&
-          tr.querySelectorAll('td')[4].textContent === 'Final'
+          tr.querySelectorAll('td')[4].textContent?.startsWith('Final')
       )
       .map((tr) => ({
         evt: findMatchingEvt(
@@ -48,16 +48,18 @@ for (const key in resultsLinks) {
       console.log(evt, link);
       const { document } = new JSDOM(await (await fetch(link)).text()).window;
       const resultRows = document.querySelectorAll('table.table-striped > tbody > tr');
-      const results: ResultEntrant[] = [...resultRows].map((tr) => ({
-        entrant: entries[meet]![evt]?.entrants.find(
-          (ent: Entrant) =>
-            `${ent.firstName} ${ent.lastName.toUpperCase()}` ===
-            tr.querySelectorAll('td')[2].querySelector('a')!.textContent?.trim()
-        )!,
-        place: +tr.querySelectorAll('td')[0].textContent?.trim()!,
-        mark: tr.querySelectorAll('td')[3].textContent?.trim()!.split(' ')[0]!,
-        notes: [...tr.querySelectorAll('td')].at(-1)?.textContent?.trim() ?? '',
-      }));
+      const results: ResultEntrant[] = [...resultRows]
+        .map((tr) => ({
+          entrant: entries[meet]![evt]?.entrants.find(
+            (ent: Entrant) =>
+              `${ent.firstName} ${ent.lastName.toUpperCase()}` ===
+              tr.querySelectorAll('td')[2].querySelector('a')!.textContent?.trim()
+          )!,
+          place: +tr.querySelectorAll('td')[0].textContent?.trim()!,
+          mark: tr.querySelectorAll('td')[3].textContent?.trim()!.split(' ')[0]!,
+          notes: [...tr.querySelectorAll('td')].at(-1)?.textContent?.trim() ?? '',
+        }))
+        .filter((res) => !(!res.mark && !res.notes));
       if (results.length) entries[meet]![evt]!.results = results;
       else entries[meet]![evt]!.results = undefined;
     }
