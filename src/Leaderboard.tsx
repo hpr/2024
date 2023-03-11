@@ -78,7 +78,6 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
                   <Accordion.Panel>
                     <Stack align="center">
                       <Button
-                        mb="md"
                         fullWidth
                         onClick={() => {
                           setTeamToScore({ lbpicks: picks, name });
