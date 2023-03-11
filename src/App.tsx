@@ -37,7 +37,7 @@ import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
 import { BrandGit, Calculator, Check, Dots, Mail, Run, Trophy, Users } from 'tabler-icons-react';
-import { codeToEvt, disciplineCodes, DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
+import { disciplineCodes, DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
 import { useLocation, useNavigate } from 'react-router-dom';
