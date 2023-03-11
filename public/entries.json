@@ -1048,7 +1048,233 @@
           "lastName": "Hart"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14800894",
+            "team": "Tennessee",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:11.01",
+            "firstName": "Dylan",
+            "lastName": "Jacobs"
+          },
+          "place": 1,
+          "mark": "13:37.59",
+          "notes": "FR"
+        },
+        {
+          "entrant": {
+            "id": "14703865",
+            "team": "BYU",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:17.36",
+            "firstName": "Casey",
+            "lastName": "Clinger"
+          },
+          "place": 2,
+          "mark": "13:38.12",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14848082",
+            "team": "Northern Arizona",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:13.26",
+            "firstName": "Drew",
+            "lastName": "Bosley"
+          },
+          "place": 3,
+          "mark": "13:38.62",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14882782",
+            "team": "Northern Arizona",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:15.25",
+            "firstName": "Nico",
+            "lastName": "Young"
+          },
+          "place": 4,
+          "mark": "13:40.55",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14907166",
+            "team": "North Carolina",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:19.73",
+            "firstName": "Parker",
+            "lastName": "Wolfe"
+          },
+          "place": 5,
+          "mark": "13:43.69",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14975463",
+            "team": "Arkansas",
+            "nat": "KEN",
+            "pb": "",
+            "sb": "13:24.32",
+            "firstName": "Patrick",
+            "lastName": "Kiprop"
+          },
+          "place": 6,
+          "mark": "13:45.16",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14460410",
+            "team": "Stanford",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:11.53",
+            "firstName": "Ky",
+            "lastName": "Robinson"
+          },
+          "place": 7,
+          "mark": "13:47.11",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14873842",
+            "team": "Oklahoma State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:11.80",
+            "firstName": "Alex",
+            "lastName": "Maier"
+          },
+          "place": 8,
+          "mark": "13:52.50",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14884801",
+            "team": "Stanford",
+            "nat": "GBR",
+            "pb": "",
+            "sb": "13:22.05",
+            "firstName": "Charles",
+            "lastName": "Hicks"
+          },
+          "place": 9,
+          "mark": "14:01.34",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "15013632",
+            "team": "BYU",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:29.30",
+            "firstName": "Joey",
+            "lastName": "Nokes"
+          },
+          "place": 10,
+          "mark": "14:01.43",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14716656",
+            "team": "Butler",
+            "nat": "IRL",
+            "pb": "",
+            "sb": "13:21.57",
+            "firstName": "Barry",
+            "lastName": "Keane"
+          },
+          "place": 11,
+          "mark": "14:10.13",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14928691",
+            "team": "Harvard",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:26.11",
+            "firstName": "Acer",
+            "lastName": "Iverson"
+          },
+          "place": 12,
+          "mark": "14:18.88",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14884807",
+            "team": "Harvard",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:18.45",
+            "firstName": "Graham",
+            "lastName": "Blanks"
+          },
+          "place": 13,
+          "mark": "14:19.55",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14907170",
+            "team": "Notre Dame",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:26.11",
+            "firstName": "Carter",
+            "lastName": "Solomon"
+          },
+          "place": 14,
+          "mark": "14:37.57",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14801868",
+            "team": "Stanford",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:29.31",
+            "firstName": "Devin",
+            "lastName": "Hart"
+          },
+          "place": 15,
+          "mark": "14:38.37",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14825335",
+            "team": "Oklahoma State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "13:25.84",
+            "firstName": "Isai",
+            "lastName": "Rodriguez"
+          },
+          "place": 16,
+          "mark": "14:56.13",
+          "notes": ""
+        }
+      ]
     },
     "Men's 60 Hurdles": {
       "date": "",
