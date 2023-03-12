@@ -1496,7 +1496,233 @@
           "lastName": "Blanks"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14793942",
+            "team": "Oklahoma State",
+            "nat": "MAR",
+            "pb": "",
+            "sb": "7:41.63",
+            "firstName": "Fouad",
+            "lastName": "Messaoudi"
+          },
+          "place": 1,
+          "mark": "7:48.10",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14848082",
+            "team": "Northern Arizona",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:36.42",
+            "firstName": "Drew",
+            "lastName": "Bosley"
+          },
+          "place": 2,
+          "mark": "7:48.34",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14727734",
+            "team": "Wisconsin",
+            "nat": "AUS",
+            "pb": "",
+            "sb": "7:44.10",
+            "firstName": "Jackson",
+            "lastName": "Sharp"
+          },
+          "place": 3,
+          "mark": "7:48.66",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14703865",
+            "team": "BYU",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:43.96",
+            "firstName": "Casey",
+            "lastName": "Clinger"
+          },
+          "place": 4,
+          "mark": "7:49.37",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14873842",
+            "team": "Oklahoma State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:43.05",
+            "firstName": "Alex",
+            "lastName": "Maier"
+          },
+          "place": 5,
+          "mark": "7:50.74",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14800894",
+            "team": "Tennessee",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:36.89",
+            "firstName": "Dylan",
+            "lastName": "Jacobs"
+          },
+          "place": 6,
+          "mark": "7:52.25",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14975531",
+            "team": "Butler",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:44.69",
+            "firstName": "Jesse",
+            "lastName": "Hamlin"
+          },
+          "place": 7,
+          "mark": "8:01.22",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14732318",
+            "team": "Washington",
+            "nat": "CAN",
+            "pb": "",
+            "sb": "7:43.27",
+            "firstName": "Kieran",
+            "lastName": "Lumb"
+          },
+          "place": 8,
+          "mark": "8:02.63",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14800808",
+            "team": "Montana State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "8:00.38",
+            "firstName": "Duncan",
+            "lastName": "Hamilton"
+          },
+          "place": 9,
+          "mark": "8:02.71",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14460410",
+            "team": "Stanford",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:42.30",
+            "firstName": "Ky",
+            "lastName": "Robinson"
+          },
+          "place": 10,
+          "mark": "8:03.87",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14789430",
+            "team": "Air Force",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:43.70",
+            "firstName": "Sam",
+            "lastName": "Gilman"
+          },
+          "place": 11,
+          "mark": "8:05.67",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14969014",
+            "team": "Tennessee",
+            "nat": "SUD",
+            "pb": "",
+            "sb": "7:42.23",
+            "firstName": "Yaseen",
+            "lastName": "Abdalla"
+          },
+          "place": 12,
+          "mark": "8:06.72",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14884807",
+            "team": "Harvard",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:44.76",
+            "firstName": "Graham",
+            "lastName": "Blanks"
+          },
+          "place": 13,
+          "mark": "8:10.11",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14886992",
+            "team": "Oklahoma State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7:41.99",
+            "firstName": "Ryan",
+            "lastName": "Schoppe"
+          },
+          "place": 14,
+          "mark": "8:12.19",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14781522",
+            "team": "Washington",
+            "nat": "IRL",
+            "pb": "",
+            "sb": "7:43.85",
+            "firstName": "Brian",
+            "lastName": "Fay"
+          },
+          "place": 15,
+          "mark": "8:17.60",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14805620",
+            "team": "South Carolina",
+            "nat": "MAR",
+            "pb": "",
+            "sb": "7:41.93",
+            "firstName": "Anass",
+            "lastName": "Essayi"
+          },
+          "place": 0,
+          "mark": "DNS",
+          "notes": "DNS"
+        }
+      ]
     },
     "Men's 5000 Meters": {
       "date": "",
