@@ -27,7 +27,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
   const [sortBy, setSortBy] = useState<SortBy>('score');
 
   const getName = (athId: string) => {
-    const match = Object.values(entries[meet]!)
+    const match = Object.values(entries?.[meet]! ?? {})
       .flatMap(({ entrants }) => entrants)
       .find(({ id }) => id === athId);
     return `${match?.firstName} ${match?.lastName}`;
@@ -43,7 +43,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
   useEffect(() => {
     setLeaderboard({
       ...leaderboard,
-      [meet]: [...(leaderboard[meet] ?? [])].sort((a, b) => b[sortBy] - a[sortBy]),
+      [meet]: [...(leaderboard?.[meet] ?? [])].sort((a, b) => b[sortBy] - a[sortBy]),
     });
   }, [sortBy]);
 
@@ -61,8 +61,8 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
           mb={10}
         />
         <Accordion variant="contained">
-          {leaderboard[meet]?.length ? (
-            leaderboard[meet]!.map(
+          {leaderboard?.[meet]?.length ? (
+            leaderboard?.[meet]!.map(
               ({ name, userid, eventsScored, picks, ...lbentry }: LBEntry, i) => (
                 <Accordion.Item key={userid} value={userid + ''}>
                   <Accordion.Control
