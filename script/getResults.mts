@@ -1,6 +1,12 @@
 import { AthleticsEvent, MeetCache, DLMeet, Entries, Entrant, ResultEntrant } from './types.mjs';
 import fs from 'fs';
-import { CACHE_PATH, ENTRIES_PATH, getDomainAndPath, runningEvents } from './const.mjs';
+import {
+  backupNotes,
+  CACHE_PATH,
+  ENTRIES_PATH,
+  getDomainAndPath,
+  runningEvents,
+} from './const.mjs';
 import { JSDOM } from 'jsdom';
 
 const resultsLinks: { [k in DLMeet]: string } = {
@@ -48,17 +54,23 @@ for (const key in resultsLinks) {
       console.log(evt, link);
       const { document } = new JSDOM(await (await fetch(link)).text()).window;
       const resultRows = document.querySelectorAll('table.table-striped > tbody > tr');
-      const results: ResultEntrant[] = [...resultRows].map((tr) => ({
-        entrant: entries[meet]![evt]?.entrants.find(
-          (ent: Entrant) =>
-            `${ent.firstName} ${ent.lastName.toUpperCase()}` ===
-            tr.querySelectorAll('td')[2].querySelector('a')!.textContent?.trim()
-        )!,
-        place: +tr.querySelectorAll('td')[0].textContent?.trim()!,
-        mark: tr.querySelectorAll('td')[3].textContent?.trim()!.split(' ')[0]!,
-        notes: [...tr.querySelectorAll('td')].at(-1)?.textContent?.trim() ?? '',
-      }));
-      if (!results.length || results.every(res => !res.mark)) entries[meet]![evt]!.results = undefined;
+      const results: ResultEntrant[] = [...resultRows].map((tr) => {
+        const mark = tr.querySelectorAll('td')[3].textContent?.trim()!.split(' ')[0]!;
+        let notes = [...tr.querySelectorAll('td')].at(-1)?.textContent?.trim() ?? '';
+        if (backupNotes.some((bn) => mark.includes(bn))) notes += mark;
+        return {
+          entrant: entries[meet]![evt]?.entrants.find(
+            (ent: Entrant) =>
+              `${ent.firstName} ${ent.lastName.toUpperCase()}` ===
+              tr.querySelectorAll('td')[2].querySelector('a')!.textContent?.trim()
+          )!,
+          place: +tr.querySelectorAll('td')[0].textContent?.trim()!,
+          mark,
+          notes,
+        };
+      });
+      if (!results.length || results.every((res) => !res.mark))
+        entries[meet]![evt]!.results = undefined;
       else entries[meet]![evt]!.results = results;
     }
     continue;

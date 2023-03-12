@@ -260,7 +260,7 @@
           },
           "place": 0,
           "mark": "DNS",
-          "notes": ""
+          "notes": "DNS"
         }
       ]
     },
@@ -412,7 +412,121 @@
           "lastName": "Beck"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14774788",
+            "team": "Georgia",
+            "nat": "USA",
+            "pb": "",
+            "sb": "20.44",
+            "firstName": "Matthew",
+            "lastName": "Boling"
+          },
+          "place": 1,
+          "mark": "20.12",
+          "notes": "PB   CL   FR   WL"
+        },
+        {
+          "entrant": {
+            "id": "14836521",
+            "team": "Alabama",
+            "nat": "UGA",
+            "pb": "",
+            "sb": "20.20",
+            "firstName": "Tarsis",
+            "lastName": "Orogot"
+          },
+          "place": 2,
+          "mark": "20.20",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14843727",
+            "team": "Florida",
+            "nat": "USA",
+            "pb": "",
+            "sb": "20.52",
+            "firstName": "Robert",
+            "lastName": "Gregory"
+          },
+          "place": 3,
+          "mark": "20.22",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14837623",
+            "team": "Louisville",
+            "nat": "USA",
+            "pb": "",
+            "sb": "20.27",
+            "firstName": "Cameron",
+            "lastName": "Miller"
+          },
+          "place": 4,
+          "mark": "20.29",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14884267",
+            "team": "Stanford",
+            "nat": "NGR",
+            "pb": "",
+            "sb": "20.56",
+            "firstName": "Udodi",
+            "lastName": "Onwuzurike"
+          },
+          "place": 5,
+          "mark": "20.36",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14715097",
+            "team": "Florida",
+            "nat": "USA",
+            "pb": "",
+            "sb": "20.29",
+            "firstName": "Jacory",
+            "lastName": "Patterson"
+          },
+          "place": 6,
+          "mark": "20.36",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14799077",
+            "team": "Florida State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "20.51",
+            "firstName": "Amir",
+            "lastName": "Willis"
+          },
+          "place": 7,
+          "mark": "20.56",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14862984",
+            "team": "Arkansas",
+            "nat": "USA",
+            "pb": "",
+            "sb": "20.50",
+            "firstName": "Lance",
+            "lastName": "Lang"
+          },
+          "place": 8,
+          "mark": "20.75",
+          "notes": ""
+        }
+      ]
     },
     "Men's 400 Meters": {
       "date": "",
@@ -674,7 +788,7 @@
           },
           "place": 0,
           "mark": "DNF",
-          "notes": ""
+          "notes": "DNF"
         }
       ]
     },
@@ -830,20 +944,6 @@
       "results": [
         {
           "entrant": {
-            "id": "14883332",
-            "team": "Miss State",
-            "nat": "JAM",
-            "pb": "",
-            "sb": "1:46.58",
-            "firstName": "Navasky",
-            "lastName": "Anderson"
-          },
-          "place": 1,
-          "mark": "1:45.90",
-          "notes": "PB   CL"
-        },
-        {
-          "entrant": {
             "id": "14769587",
             "team": "Texas",
             "nat": "GBR",
@@ -852,9 +952,9 @@
             "firstName": "Yusuf",
             "lastName": "Bizimana"
           },
-          "place": 2,
+          "place": 1,
           "mark": "1:46.02",
-          "notes": "PB"
+          "notes": "PB   CL"
         },
         {
           "entrant": {
@@ -866,7 +966,7 @@
             "firstName": "Crayton",
             "lastName": "Carrozza"
           },
-          "place": 3,
+          "place": 2,
           "mark": "1:46.78",
           "notes": ""
         },
@@ -880,7 +980,7 @@
             "firstName": "Handal",
             "lastName": "Roban"
           },
-          "place": 4,
+          "place": 3,
           "mark": "1:47.28",
           "notes": ""
         },
@@ -894,7 +994,7 @@
             "firstName": "Tarees",
             "lastName": "Rhoden"
           },
-          "place": 5,
+          "place": 4,
           "mark": "1:47.35",
           "notes": ""
         },
@@ -908,7 +1008,7 @@
             "firstName": "Sam",
             "lastName": "Austin"
           },
-          "place": 6,
+          "place": 5,
           "mark": "1:48.19",
           "notes": ""
         },
@@ -922,7 +1022,7 @@
             "firstName": "Baylor",
             "lastName": "Franklin"
           },
-          "place": 7,
+          "place": 6,
           "mark": "1:48.21",
           "notes": ""
         },
@@ -936,9 +1036,23 @@
             "firstName": "Will",
             "lastName": "Sumner"
           },
-          "place": 8,
+          "place": 7,
           "mark": "1:51.46",
           "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14883332",
+            "team": "Miss State",
+            "nat": "JAM",
+            "pb": "",
+            "sb": "1:46.58",
+            "firstName": "Navasky",
+            "lastName": "Anderson"
+          },
+          "place": 0,
+          "mark": "DQR:",
+          "notes": "DQR:"
         }
       ]
     },
@@ -1230,7 +1344,7 @@
           },
           "place": 0,
           "mark": "DNS",
-          "notes": ""
+          "notes": "DNS"
         }
       ]
     },
@@ -1899,7 +2013,112 @@
           "lastName": "Brockman"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14773899",
+            "team": "Clemson",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.62",
+            "firstName": "Giano",
+            "lastName": "Roberts"
+          },
+          "place": 1,
+          "mark": "7.55",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14865900",
+            "team": "Texas Tech",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.52",
+            "firstName": "Caleb",
+            "lastName": "Dean"
+          },
+          "place": 2,
+          "mark": "7.59",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14807604",
+            "team": "Nebraska",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.63",
+            "firstName": "Darius",
+            "lastName": "Luff"
+          },
+          "place": 3,
+          "mark": "7.60",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14869321",
+            "team": "Syracuse",
+            "nat": "JAM",
+            "pb": "",
+            "sb": "7.68",
+            "firstName": "Jaheem",
+            "lastName": "Hayles"
+          },
+          "place": 4,
+          "mark": "7.61",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14761563",
+            "team": "NC State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "7.69",
+            "firstName": "Josh",
+            "lastName": "Brockman"
+          },
+          "place": 5,
+          "mark": "7.67",
+          "notes": ""
+        },
+        {
+          "place": 6,
+          "mark": "7.73",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14828425",
+            "team": "Northern Colorado",
+            "nat": "JAM",
+            "pb": "",
+            "sb": "7.63",
+            "firstName": "Jerome",
+            "lastName": "Campbell"
+          },
+          "place": 7,
+          "mark": "7.99",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14720966",
+            "team": "USC",
+            "nat": "GBR",
+            "pb": "",
+            "sb": "7.53",
+            "firstName": "Omotade",
+            "lastName": "Ojora"
+          },
+          "place": 0,
+          "mark": "DNF",
+          "notes": "DNF"
+        }
+      ]
     },
     "Women's 60 Meters": {
       "date": "",
@@ -3621,7 +3840,7 @@
           },
           "place": 0,
           "mark": "DNF",
-          "notes": ""
+          "notes": "DNF"
         }
       ]
     },
@@ -4261,7 +4480,7 @@
           },
           "place": 0,
           "mark": "DNF",
-          "notes": ""
+          "notes": "DNF"
         }
       ]
     }

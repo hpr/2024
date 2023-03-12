@@ -45,14 +45,17 @@ const getScore = (
 ): { score: number; scorers: { [id: string]: number } } => {
   let score = 0;
   const backup = team[evt]?.at(-1)!;
-  const backupResult = entries[meet]![evt]!.results!.find(
-    (res) => res.entrant.id === backup.id
+  const backupResult = (entries[meet]![evt]!.results ?? []).find(
+    (res) => res.entrant?.id === backup?.id
   ) ?? { notes: 'DNS' };
   let doneBackup = false;
   if (backupNotes.some((note) => backupResult.notes.includes(note))) doneBackup = true;
   const scorers: { [id: string]: number } = {};
   for (const pick of team[evt]!.slice(0, -1)) {
-    let matchingResult = entries[meet]![evt]!.results!.find((res) => res.entrant.id === pick.id);
+    console.log(entries, meet, evt, Object.keys(entries[meet]![evt]!))
+    let matchingResult = (entries[meet]![evt]!.results! ?? []).find(
+      (res) => res.entrant?.id === pick?.id
+    );
     if (backupNotes.some((note) => matchingResult?.notes.includes(note)) && !doneBackup) {
       matchingResult = backupResult as ResultEntrant;
       doneBackup = true;
