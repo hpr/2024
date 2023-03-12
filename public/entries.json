@@ -562,7 +562,121 @@
           "lastName": "Miller"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14690211",
+            "team": "Georgia",
+            "nat": "USA",
+            "pb": "",
+            "sb": "44.75",
+            "firstName": "Elija",
+            "lastName": "Godwin"
+          },
+          "place": 1,
+          "mark": "44.75",
+          "notes": "=PB   =CL   FR   =WL"
+        },
+        {
+          "entrant": {
+            "id": "14802726",
+            "team": "Florida",
+            "nat": "USA",
+            "pb": "",
+            "sb": "45.15",
+            "firstName": "Ryan",
+            "lastName": "Willie"
+          },
+          "place": 2,
+          "mark": "44.93",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14802244",
+            "team": "Baylor",
+            "nat": "USA",
+            "pb": "",
+            "sb": "45.66",
+            "firstName": "Matthew",
+            "lastName": "Moorer"
+          },
+          "place": 3,
+          "mark": "45.08",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14807407",
+            "team": "Tennessee",
+            "nat": "USA",
+            "pb": "",
+            "sb": "45.67",
+            "firstName": "Emmanuel",
+            "lastName": "Bynum"
+          },
+          "place": 4,
+          "mark": "45.30",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14850487",
+            "team": "Arkansas",
+            "nat": "USA",
+            "pb": "",
+            "sb": "45.09",
+            "firstName": "Christopher",
+            "lastName": "Bailey"
+          },
+          "place": 5,
+          "mark": "45.32",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14960533",
+            "team": "Baylor",
+            "nat": "NGR",
+            "pb": "",
+            "sb": "45.77",
+            "firstName": "Nathaniel",
+            "lastName": "Ezekiel"
+          },
+          "place": 6,
+          "mark": "45.73",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14969138",
+            "team": "Kansas",
+            "nat": "LCA",
+            "pb": "",
+            "sb": "45.79",
+            "firstName": "Michael",
+            "lastName": "Joseph"
+          },
+          "place": 7,
+          "mark": "47.18",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14715995",
+            "team": "Baylor",
+            "nat": "USA",
+            "pb": "",
+            "sb": "45.71",
+            "firstName": "Hasani",
+            "lastName": "Barr"
+          },
+          "place": 0,
+          "mark": "DNF",
+          "notes": ""
+        }
+      ]
     },
     "Men's 800 Meters": {
       "date": "",
