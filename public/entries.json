@@ -148,7 +148,121 @@
           "lastName": "Akintola"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14835094",
+            "team": "Texas Tech",
+            "nat": "BAH",
+            "pb": "",
+            "sb": "6.46",
+            "firstName": "Terrence",
+            "lastName": "Jones"
+          },
+          "place": 1,
+          "mark": "6.46",
+          "notes": "=SB   =CL"
+        },
+        {
+          "entrant": {
+            "id": "14961803",
+            "team": "Kentucky",
+            "nat": "USA",
+            "pb": "",
+            "sb": "6.55",
+            "firstName": "Jordan",
+            "lastName": "Anthony"
+          },
+          "place": 2,
+          "mark": "6.55",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14837008",
+            "team": "Florida",
+            "nat": "USA",
+            "pb": "",
+            "sb": "6.58",
+            "firstName": "PJ",
+            "lastName": "Austin"
+          },
+          "place": 3,
+          "mark": "6.56",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14748228",
+            "team": "Houston",
+            "nat": "RSA",
+            "pb": "",
+            "sb": "6.58",
+            "firstName": "Shaun",
+            "lastName": "Maswanganyi"
+          },
+          "place": 4,
+          "mark": "6.57",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14849101",
+            "team": "Florida State",
+            "nat": "CIV",
+            "pb": "",
+            "sb": "6.51",
+            "firstName": "Ismael",
+            "lastName": "Kone"
+          },
+          "place": 5,
+          "mark": "6.58",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14874221",
+            "team": "NC State",
+            "nat": "USA",
+            "pb": "",
+            "sb": "6.57",
+            "firstName": "Alex",
+            "lastName": "Lang"
+          },
+          "place": 6,
+          "mark": "6.59",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14654124",
+            "team": "Wisconsin",
+            "nat": "USA",
+            "pb": "",
+            "sb": "6.54",
+            "firstName": "Lawrence",
+            "lastName": "Johnson"
+          },
+          "place": 7,
+          "mark": "6.59",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14888403",
+            "team": "Auburn",
+            "nat": "NGR",
+            "pb": "",
+            "sb": "6.52",
+            "firstName": "Favour",
+            "lastName": "Ashe"
+          },
+          "place": 0,
+          "mark": "DNS",
+          "notes": ""
+        }
+      ]
     },
     "Men's 200 Meters": {
       "date": "",
