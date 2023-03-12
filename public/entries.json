@@ -826,7 +826,121 @@
           "lastName": "Sumner"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "entrant": {
+            "id": "14883332",
+            "team": "Miss State",
+            "nat": "JAM",
+            "pb": "",
+            "sb": "1:46.58",
+            "firstName": "Navasky",
+            "lastName": "Anderson"
+          },
+          "place": 1,
+          "mark": "1:45.90",
+          "notes": "PB   CL"
+        },
+        {
+          "entrant": {
+            "id": "14769587",
+            "team": "Texas",
+            "nat": "GBR",
+            "pb": "",
+            "sb": "1:46.62",
+            "firstName": "Yusuf",
+            "lastName": "Bizimana"
+          },
+          "place": 2,
+          "mark": "1:46.02",
+          "notes": "PB"
+        },
+        {
+          "entrant": {
+            "id": "14786751",
+            "team": "Texas",
+            "nat": "USA",
+            "pb": "",
+            "sb": "1:46.28",
+            "firstName": "Crayton",
+            "lastName": "Carrozza"
+          },
+          "place": 3,
+          "mark": "1:46.78",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14837641",
+            "team": "Penn State",
+            "nat": "VIN",
+            "pb": "",
+            "sb": "1:47.01",
+            "firstName": "Handal",
+            "lastName": "Roban"
+          },
+          "place": 4,
+          "mark": "1:47.28",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14741710",
+            "team": "Clemson",
+            "nat": "JAM",
+            "pb": "",
+            "sb": "1:46.61",
+            "firstName": "Tarees",
+            "lastName": "Rhoden"
+          },
+          "place": 5,
+          "mark": "1:47.35",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14897632",
+            "team": "Florida",
+            "nat": "USA",
+            "pb": "",
+            "sb": "1:46.06",
+            "firstName": "Sam",
+            "lastName": "Austin"
+          },
+          "place": 6,
+          "mark": "1:48.19",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14800818",
+            "team": "Ole Miss",
+            "nat": "USA",
+            "pb": "",
+            "sb": "1:46.74",
+            "firstName": "Baylor",
+            "lastName": "Franklin"
+          },
+          "place": 7,
+          "mark": "1:48.21",
+          "notes": ""
+        },
+        {
+          "entrant": {
+            "id": "14960261",
+            "team": "Georgia",
+            "nat": "USA",
+            "pb": "",
+            "sb": "1:47.28",
+            "firstName": "Will",
+            "lastName": "Sumner"
+          },
+          "place": 8,
+          "mark": "1:51.46",
+          "notes": ""
+        }
+      ]
     },
     "Men's Mile": {
       "date": "",
