@@ -13,6 +13,7 @@ import { useContext } from 'react';
 import { disciplineCodes } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, DLMeet, Entries } from './types';
+import { evtSort } from './util';
 
 export const Results = ({ entries, meet }: { entries: Entries | null; meet: DLMeet }) => {
   const { teamToScore, setTeamToScore } = useContext(Store);
@@ -22,7 +23,7 @@ export const Results = ({ entries, meet }: { entries: Entries | null; meet: DLMe
         {teamToScore?.name ? (
           <Group>
             <Title order={2}>Scoring for {teamToScore.name}</Title>
-            <CloseButton variant="filled" onClick={() => setTeamToScore({ name: '', lbpicks: {} })} />
+            <CloseButton variant="subtle" onClick={() => setTeamToScore({ name: '', lbpicks: {} })} />
           </Group>
         ) : (
           <Title order={2}>Results</Title>
@@ -34,6 +35,7 @@ export const Results = ({ entries, meet }: { entries: Entries | null; meet: DLMe
       <Accordion variant="contained">
         {Object.keys(entries?.[meet] ?? {})
           .filter((evt) => entries![meet]![evt as AthleticsEvent]!.results)
+          .sort(evtSort)
           .map((evt) => {
             const results = entries![meet]![evt as AthleticsEvent]?.results!;
             const shortCode = ((evt.startsWith("Men's") ? 'M' : 'W') +

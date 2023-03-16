@@ -53,6 +53,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Leaderboard } from './Leaderboard';
 import { evtSort } from './util';
 import { Results } from './Results';
+import { EventTeamPicker } from './EventTeamPicker';
 
 export default function App() {
   const navigate = useNavigate();
@@ -68,7 +69,6 @@ export default function App() {
   const [authPage, setAuthPage] = useState<AuthPage>('register');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
-  const [tableView, setTableView] = useState<boolean>(false);
   const [teamToScore, setTeamToScore] = useState<TeamToScore | null>(null);
   const [athletesById, setAthletesById] = useState<{ [id: string]: Entrant }>({});
   const registerForm = useForm({
@@ -118,46 +118,10 @@ export default function App() {
     if (Object.keys(myTeam).length) localStorage.setItem('myTeam', JSON.stringify(myTeam));
   }, [myTeam]);
 
-  const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
   const numPicks = Object.values(myTeam[meet] ?? {}).flat().length;
   const numMaxPicks = Object.keys(entries?.[meet] ?? {}).length * PICKS_PER_EVT;
   const arePicksComplete = numPicks === numMaxPicks;
   const percentComplete = Math.round((numPicks / numMaxPicks) * 100);
-
-  const TableAndTbody = ({ children, ...props }: TableProps) => (
-    <Table {...props}>
-      <thead>
-        <tr>
-          <th>Name</th>
-          {/* <th>Team</th>
-          <th>Nat.</th> */}
-          <th>SB</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>{children}</tbody>
-    </Table>
-  );
-  const GridContainer = tableView ? TableAndTbody : SimpleGrid;
-  const gridContainerProps = tableView
-    ? ({
-        fontSize: 'lg',
-        striped: true,
-        highlightOnHover: true,
-        withBorder: true,
-        withColumnBorders: true,
-      } as TableProps)
-    : ({
-        cols: 8,
-        breakpoints: [
-          { maxWidth: 'sm', cols: 2 },
-          { maxWidth: 'md', cols: 3 },
-          { maxWidth: 'lg', cols: 5 },
-          { maxWidth: 'xl', cols: 7 },
-        ],
-        spacing: 'lg',
-        verticalSpacing: 'xl',
-      } as SimpleGridProps);
 
   const picksText = Object.keys(myTeam[meet] ?? {})
     .sort(evtSort)
@@ -461,95 +425,7 @@ export default function App() {
           ) : page === 'scoring' ? (
             <Results entries={entries} meet={meet} />
           ) : (
-            <>
-              <Paper shadow="xl" radius="xl" p="xl" withBorder>
-                <Stack align="center">
-                  {!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed ? (
-                    <Text>Event Closed</Text>
-                  ) : (
-                    <>
-                      {myTeamPicks.length ? (
-                        <Tooltip.Group openDelay={0} closeDelay={100}>
-                          <Avatar.Group spacing="xs">
-                            {myTeamPicks.map(({ id, lastName }, i) => (
-                              <Tooltip
-                                key={i}
-                                withArrow
-                                label={`${
-                                  i === 0 ? 'Event Captain' : i === 1 ? 'Secondary' : 'Backup'
-                                }: ${lastName}`}
-                                events={{ hover: true, focus: true, touch: true }}
-                              >
-                                <Avatar
-                                  size={i === 0 ? 'xl' : i === 1 ? 'lg' : 'md'}
-                                  src={`img/avatars/${id}_128x128.png`}
-                                  radius="xl"
-                                />
-                              </Tooltip>
-                            ))}
-                          </Avatar.Group>
-                        </Tooltip.Group>
-                      ) : (
-                        <Text>Select an event captain, secondary pick, and backup pick below</Text>
-                      )}
-                      {myTeamPicks.length == PICKS_PER_EVT ? (
-                        <>
-                          <Check size={30} />
-                          Event Complete! Now select another event on the left menu
-                        </>
-                      ) : (
-                        <>
-                          {myTeamPicks.length
-                            ? `Select ${PICKS_PER_EVT - myTeamPicks.length} more...`
-                            : ''}
-                          <Dots size={30} />
-                        </>
-                      )}
-                    </>
-                  )}
-                </Stack>
-              </Paper>
-
-              {/* Event time:{' '}
-          {new Date(entries?.[meet]?.[evt!]?.date!).toLocaleTimeString().replace(':00 ', ' ')} */}
-              <Paper withBorder radius="xl" p="lg">
-                <Stack align="center">
-                  <Paper withBorder radius="xl" p="lg" py="md" shadow="xl">
-                    <Stack align="center">
-                      <Title order={1}>{evt}</Title>
-                      <Switch
-                        checked={tableView}
-                        onChange={(e) => setTableView(e.currentTarget.checked)}
-                        label="Table View?"
-                      />
-                    </Stack>
-                  </Paper>
-
-                  <GridContainer {...gridContainerProps}>
-                    {entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
-                      const { id, firstName, lastName, pb, sb, nat } = entrant;
-                      return (
-                        <AthleteCard
-                          isClosed={!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed}
-                          key={id}
-                          tableView={tableView}
-                          avatar={`img/avatars/${id}_128x128.png`}
-                          meet={meet}
-                          event={evt!}
-                          entrant={entrant}
-                          name={`${firstName} ${lastName}`}
-                          job={nat}
-                          stats={[
-                            { label: 'PB', value: pb! },
-                            { label: 'SB', value: sb! },
-                          ].filter((x) => x.value)}
-                        />
-                      );
-                    })}
-                  </GridContainer>
-                </Stack>
-              </Paper>
-            </>
+            <EventTeamPicker entries={entries} meet={meet} evt={evt!} />
           )}
         </Stack>
       </AppShell>
