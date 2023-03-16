@@ -1,6 +1,4 @@
 import {
-  createStyles,
-  Card,
   Avatar,
   Text,
   Group,
@@ -14,8 +12,9 @@ import {
   LoadingOverlay,
   Popover,
   Indicator,
+  useMantineTheme,
 } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { useContext, useState } from 'react';
 import { AlertCircle, Minus, Plus, World } from 'tabler-icons-react';
 import {
@@ -58,9 +57,11 @@ export function AthleteCard({
   isClosed,
 }: AthleteCardProps) {
   const { myTeam, setMyTeam } = useContext(Store);
+  const theme = useMantineTheme();
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const [competitor, setCompetitor] = useState<Competitor | null>(null);
   const [popOpened, { close: popClose, open: popOpen }] = useDisclosure(false);
+  const isSmall = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
 
   const team = myTeam?.[meet]?.[event] ?? [];
   const isOnTeam = !!team.find((member) => member.id === entrant.id);
@@ -96,7 +97,7 @@ export function AthleteCard({
     </div>
   ));
 
-  const sideButtonMinWidth = isTouchDevice() ? 0 : 300;
+  const sideButtonMinWidth = isSmall ? 0 : 300;
   const addToTeam: React.MouseEventHandler = (evt) => {
     evt.stopPropagation();
     if (isClosed) return;
@@ -116,7 +117,7 @@ export function AthleteCard({
   return (
     <>
       <Modal
-        size={isTouchDevice() ? '98%' : '90%'}
+        size={isSmall ? '98%' : '90%'}
         title={
           <Group sx={{ width: '100%' }} position="apart">
             <Title variant="gradient" gradient={{ from: 'gray', to: 'white' }} order={1}>
@@ -141,7 +142,7 @@ export function AthleteCard({
                 onClick={addToTeam}
               >
                 {(() => {
-                  if (isTouchDevice()) return '';
+                  if (isSmall) return '';
                   if (isOnTeam) return 'Remove from Team';
                   if (team.length === 0) return 'Add as Event Captain';
                   if (team.length === 1) return 'Add as Secondary';
@@ -166,7 +167,7 @@ export function AthleteCard({
                   window.open(`https://worldathletics.org/athletes/_/${entrant.id}`, '_blank')
                 }
               >
-                {isTouchDevice() ? '' : 'World Athletics'}
+                {isSmall ? '' : 'World Athletics'}
               </Button>
             </Button.Group>
             <Title order={2}>Personal Bests</Title>

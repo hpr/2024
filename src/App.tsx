@@ -1,11 +1,9 @@
 import {
   AppShell,
-  Avatar,
   Group,
   Header,
   Modal,
   Navbar,
-  SimpleGrid,
   Stack,
   Text,
   Code,
@@ -15,23 +13,14 @@ import {
   Button,
   List,
   CopyButton,
-  Accordion,
   SegmentedControl,
   TextInput,
   PasswordInput,
   ScrollArea,
   Progress,
   Popover,
-  Title,
-  Tooltip,
-  Paper,
-  Switch,
-  Table,
-  TableProps,
-  SimpleGridProps,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
-import { AthleteCard } from './AthleteCard';
 import {
   AthleticsEvent,
   AuthPage,
@@ -46,7 +35,7 @@ import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
 import { BrandGit, Calculator, Check, Dots, Mail, Run, Trophy, Users } from 'tabler-icons-react';
-import { disciplineCodes, DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
+import { DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -187,14 +176,14 @@ export default function App() {
               <TextInput
                 withAsterisk
                 label="Email"
-                placeholder="john@example.com"
+                placeholder="usain@bolt.com"
                 {...registerForm.getInputProps('email')}
               />
               {authPage === 'register' && (
                 <TextInput
                   withAsterisk
                   label="Name"
-                  placeholder="John (will be displayed on leaderboards)"
+                  placeholder="Usain (will be displayed on leaderboards)"
                   {...registerForm.getInputProps('name')}
                 />
               )}
