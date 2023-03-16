@@ -32,7 +32,16 @@ import {
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleteCard } from './AthleteCard';
-import { AthleticsEvent, AuthPage, DLMeet, Entries, Page, Team, TeamToScore } from './types';
+import {
+  AthleticsEvent,
+  AuthPage,
+  DLMeet,
+  Entrant,
+  Entries,
+  Page,
+  Team,
+  TeamToScore,
+} from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
@@ -42,17 +51,8 @@ import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Leaderboard } from './Leaderboard';
-
-const evtSort = (a: string, b: string) => {
-  const DIGITS = '0123456789';
-  const normalize = (s: string) => s.replace('Mile', '1609');
-  const firstNumericWord = (s: string) => s.split(' ').find((w) => DIGITS.includes(w[0]))!;
-  const gender = (s: string) => (s.match(/(Men|Women)/) ?? [])[0];
-  a = normalize(a);
-  b = normalize(b);
-  if (gender(a) !== gender(b)) return a.localeCompare(b);
-  return Number.parseInt(firstNumericWord(a)) - Number.parseInt(firstNumericWord(b));
-};
+import { evtSort } from './util';
+import { Results } from './Results';
 
 export default function App() {
   const navigate = useNavigate();
@@ -70,6 +70,7 @@ export default function App() {
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const [tableView, setTableView] = useState<boolean>(false);
   const [teamToScore, setTeamToScore] = useState<TeamToScore | null>(null);
+  const [athletesById, setAthletesById] = useState<{ [id: string]: Entrant }>({});
   const registerForm = useForm({
     initialValues: {
       name: '',
@@ -93,8 +94,16 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      const entries = await (await fetch('entries.json')).json();
+      const entries: Entries = await (await fetch('entries.json')).json();
       setEntries(entries);
+
+      setAthletesById(
+        Object.fromEntries(
+          Object.values(entries?.[meet] ?? {})
+            .flatMap(({ entrants }) => entrants)
+            .map((entrant) => [entrant.id, entrant])
+        )
+      );
       const initialEvt = Object.keys(entries[meet] ?? [])[0] as AthleticsEvent;
       setEvt(initialEvt);
       if (!hash) navigate(`evt/${initialEvt}`);
@@ -163,7 +172,9 @@ export default function App() {
   const hasEventClosed = Object.values(entries?.[meet] ?? {}).some(({ isClosed }) => isClosed);
 
   return (
-    <Store.Provider value={{ myTeam, setMyTeam, teamToScore, setTeamToScore }}>
+    <Store.Provider
+      value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}
+    >
       <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register & Submit Picks">
         {arePicksComplete ? (
           <Stack>
@@ -448,68 +459,7 @@ export default function App() {
           ) : page === 'leaderboard' ? (
             <Leaderboard meet={meet} entries={entries!} />
           ) : page === 'scoring' ? (
-            <>
-              {teamToScore && <Title order={2}>Scoring for {teamToScore.name}</Title>}
-              {!Object.keys(entries?.[meet] ?? {}).filter(
-                (evt) => entries![meet]![evt as AthleticsEvent]!.results
-              ).length && 'Will be populated after events finish...'}
-              <Accordion variant="contained">
-                {Object.keys(entries?.[meet] ?? {})
-                  .filter((evt) => entries![meet]![evt as AthleticsEvent]!.results)
-                  .map((evt) => {
-                    const results = entries![meet]![evt as AthleticsEvent]?.results!;
-                    return (
-                      <Accordion.Item value={evt} key={evt}>
-                        <Accordion.Control>{evt}</Accordion.Control>
-                        <Accordion.Panel>
-                          <List type="ordered">
-                            {results.map(({ entrant = {}, mark, notes, place }, i) => {
-                              const shortCode =
-                                (evt.startsWith("Men's") ? 'M' : 'W') +
-                                disciplineCodes[evt.split(' ').slice(1).join(' ')];
-                              return (
-                                <List.Item
-                                  key={entrant.id ?? i}
-                                  icon={
-                                    <Avatar
-                                      radius="xl"
-                                      size="sm"
-                                      src={`img/avatars/${entrant.id ?? 'default'}_128x128.png`}
-                                    />
-                                  }
-                                >
-                                  <Text
-                                    sx={{
-                                      fontWeight: Object.keys(
-                                        teamToScore?.lbpicks?.[shortCode as AthleticsEvent]
-                                          ?.scorers ?? {}
-                                      ).includes(entrant.id!)
-                                        ? 'bold'
-                                        : undefined,
-                                    }}
-                                  >
-                                    {place}. {entrant.firstName} {entrant.lastName} &mdash; {mark}
-                                    {notes ? ` (${notes})` : ''}
-                                    {Object.keys(
-                                      teamToScore?.lbpicks?.[shortCode as AthleticsEvent]
-                                        ?.scorers ?? {}
-                                    ).includes(entrant.id!)
-                                      ? ` (+ ${
-                                          teamToScore?.lbpicks?.[shortCode as AthleticsEvent]
-                                            ?.scorers?.[entrant.id!]
-                                        } pts)`
-                                      : ''}
-                                  </Text>
-                                </List.Item>
-                              );
-                            })}
-                          </List>
-                        </Accordion.Panel>
-                      </Accordion.Item>
-                    );
-                  })}
-              </Accordion>
-            </>
+            <Results entries={entries} meet={meet} />
           ) : (
             <>
               <Paper shadow="xl" radius="xl" p="xl" withBorder>
