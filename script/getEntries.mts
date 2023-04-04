@@ -40,7 +40,7 @@ const getWaId = async (
     birthYear?: string;
     college?: boolean;
     indoors?: boolean;
-    gender?: string;
+    gender?: 'male' | 'female';
     disciplineCode?: WAEventCode;
   }
 ) => {
@@ -69,7 +69,7 @@ const getWaId = async (
       method: 'POST',
     })
   ).json();
-  console.log(firstName, lastName, disciplineCode, data.searchCompetitors);
+  console.log(firstName, '|', lastName, disciplineCode, data.searchCompetitors);
 
   const { aaAthleteId, country } = data.searchCompetitors.find(
     (ath: { birthDate: string; givenName: string; familyName: string }) => {
@@ -78,6 +78,9 @@ const getWaId = async (
         Izzy: ['Isabella'],
         Samantha: ['Sam'],
 
+        Beriso: ['Shankule'],
+        Gebremaryam: ['Gebrekidan'],
+        Baysa: ['Bayisa'],
         Olemomoi: ['Chebet'],
         Rohatinsky: ['Rohatinksy'],
       };
@@ -91,24 +94,28 @@ const getWaId = async (
       //   })
       // )
       //   return false;
+      const candidatesToMatchWithFamilyName = [
+        lastName,
+        lastName.split(' ')[0],
+        lastName.split(' ').slice(0, -1).join(' '),
+        lastName.split(' ').at(-1) ?? '',
+        lastName.split('-')[0],
+        firstName,
+        ...(aliases[lastName] ?? []),
+      ];
       if (
-        [
-          lastName,
-          lastName.split(' ')[0],
-          lastName.split(' ').slice(0, -1).join(' '),
-          lastName.split(' ').at(-1) ?? '',
-          lastName.split('-')[0],
-          firstName,
-          ...(aliases[lastName] ?? []),
-        ].every((name) => normalize(name).toLowerCase() !== normalize(ath.familyName).toLowerCase())
+        candidatesToMatchWithFamilyName.every(
+          (name) => normalize(name).toLowerCase() !== normalize(ath.familyName).toLowerCase()
+        )
       )
         return false;
 
       if (!ath.birthDate) return true;
       if (birthYear) return ath.birthDate.slice(-4) === birthYear;
       if (college) return +ath.birthDate.slice(-4) >= 1994;
+      return true;
     }
-  );
+  ) ?? {};
   return { id: aaAthleteId, country };
 };
 
@@ -125,20 +132,46 @@ const getEntries = async () => {
         const { document } = new JSDOM(
           (cache[meet].schedule.combined ??= await (await fetch(meetScheduleUrl)).text())
         ).window;
-        entries[meet] = Object.fromEntries(
+        const meetEntries = Object.fromEntries(
           [...document.querySelectorAll('table:nth-of-type(3n+1)')].map((ele, i) => [
             `${i ? 'Men' : 'Women'}'s Marathon`,
             {
               entrants: [...ele.querySelectorAll('tr')].slice(1).map((tr) => {
-                const [name, nat, pb] = [...tr.querySelectorAll('td')].map((td) => td.textContent?.trim());
+                const [name, nat, pb] = [...tr.querySelectorAll('td')].map((td) =>
+                  td.textContent?.trim()
+                );
                 let [firstName, lastName, ...rest] =
-                  name?.split(' ').map((word) => word.replace('^', '').replace('*', '').trim()) ?? [];
+                  name?.split(' ').map((word) => word.replace('^', '').replace('*', '').trim()) ??
+                  [];
                 if (rest.length) lastName = [lastName, ...rest].join(' ');
-                return { firstName, lastName, nat, pb };
+                return {
+                  firstName,
+                  lastName,
+                  nat,
+                  pb: pb?.toLowerCase() === 'debut' ? '' : pb,
+                  id: '',
+                };
               }),
             },
           ])
         );
+        for (const evt in meetEntries) {
+          for (const ath of meetEntries[evt].entrants) {
+            const { firstName, lastName, pb, nat } = ath;
+            console.log(firstName, lastName);
+            const { id, country } = (cache[meet].ids[`${firstName} ${lastName}`] ??= await getWaId(
+              firstName,
+              lastName,
+              {
+                gender: evt.startsWith('Men') ? 'male' : 'female',
+                disciplineCode: pb ? 'MAR' : undefined,
+              }
+            ));
+            // if (country && country !== nat) console.log('mismatch country');
+            ath.id = id;
+          }
+        }
+        entries[meet] = meetEntries;
       }
       if (meetScheduleUrl.startsWith('https://www.tfrrs.org')) {
         const isMale = meetScheduleUrl.endsWith('m');
