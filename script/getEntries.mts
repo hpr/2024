@@ -71,52 +71,56 @@ const getWaId = async (
   ).json();
   console.log(firstName, '|', lastName, disciplineCode, data.searchCompetitors);
 
-  const { aaAthleteId, country } = data.searchCompetitors.find(
-    (ath: { birthDate: string; givenName: string; familyName: string }) => {
-      const normalize = (name: string) => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      const aliases: { [k: string]: string[] } = {
-        Izzy: ['Isabella'],
-        Samantha: ['Sam'],
+  const { aaAthleteId, country } =
+    data.searchCompetitors.find(
+      (ath: { birthDate: string; givenName: string; familyName: string }) => {
+        const normalize = (name: string) => name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const aliases: { [k: string]: string[] } = {
+          Izzy: ['Isabella'],
+          Samantha: ['Sam'],
 
-        Beriso: ['Shankule'],
-        Gebremaryam: ['Gebrekidan'],
-        Baysa: ['Bayisa'],
-        Olemomoi: ['Chebet'],
-        Rohatinsky: ['Rohatinksy'],
-      };
+          Beriso: ['Shankule'],
+          Gebremaryam: ['Gebrekidan'],
+          Baysa: ['Bayisa'],
+          Olemomoi: ['Chebet'],
+          Rohatinsky: ['Rohatinksy'],
+          Mastandra: ['Mastandrea'],
+          Hussar: ['Douma-Hussar'],
+        };
 
-      // if (
-      //   ((aliases[firstName] ?? [firstName]) as string[]).every((name) => {
-      //     return (
-      //       !normalize(ath.givenName).toLowerCase().startsWith(normalize(name).toLowerCase()) &&
-      //       !normalize(ath.givenName).toLowerCase().endsWith(normalize(name).toLowerCase())
-      //     );
-      //   })
-      // )
-      //   return false;
-      const candidatesToMatchWithFamilyName = [
-        lastName,
-        lastName.split(' ')[0],
-        lastName.split(' ').slice(0, -1).join(' '),
-        lastName.split(' ').at(-1) ?? '',
-        lastName.split('-')[0],
-        firstName,
-        ...(aliases[lastName] ?? []),
-      ];
-      if (
-        candidatesToMatchWithFamilyName.every(
-          (name) => normalize(name).toLowerCase() !== normalize(ath.familyName).toLowerCase()
+        // if (
+        //   ((aliases[firstName] ?? [firstName]) as string[]).every((name) => {
+        //     return (
+        //       !normalize(ath.givenName).toLowerCase().startsWith(normalize(name).toLowerCase()) &&
+        //       !normalize(ath.givenName).toLowerCase().endsWith(normalize(name).toLowerCase())
+        //     );
+        //   })
+        // )
+        //   return false;
+        const candidatesToMatchWithFamilyName = [
+          lastName,
+          lastName.split(' ')[0],
+          lastName.split(' ').slice(0, -1).join(' '),
+          lastName.split(' ').at(-1) ?? '',
+          lastName.split('-')[0],
+          lastName.replace(/’/g, ''),
+          firstName,
+          ...(aliases[lastName] ?? []),
+        ];
+        if (
+          candidatesToMatchWithFamilyName.every(
+            (name) => normalize(name).toLowerCase() !== normalize(ath.familyName).toLowerCase()
+          )
         )
-      )
-        return false;
+          return false;
 
-      if (!ath.birthDate) return true;
-      if (birthYear) return ath.birthDate.slice(-4) === birthYear;
-      if (college) return +ath.birthDate.slice(-4) >= 1994;
-      return true;
-    }
-  ) ?? {};
-  return { id: aaAthleteId, country };
+        if (!ath.birthDate) return true;
+        if (birthYear) return ath.birthDate.slice(-4) === birthYear;
+        if (college) return +ath.birthDate.slice(-4) >= 1994;
+        return true;
+      }
+    ) ?? {};
+  return aaAthleteId ? { id: aaAthleteId, country } : undefined;
 };
 
 const entries: Entries = {};
@@ -158,15 +162,14 @@ const getEntries = async () => {
         for (const evt in meetEntries) {
           for (const ath of meetEntries[evt].entrants) {
             const { firstName, lastName, pb, nat } = ath;
+            const fullName = `${firstName} ${lastName}`;
+            const nonMarathoners = ['Kodi Kleven'];
             console.log(firstName, lastName);
-            const { id, country } = (cache[meet].ids[`${firstName} ${lastName}`] ??= await getWaId(
-              firstName,
-              lastName,
-              {
+            const { id, country } =
+              (cache[meet].ids[`${firstName} ${lastName}`] ??= await getWaId(firstName, lastName, {
                 gender: evt.startsWith('Men') ? 'male' : 'female',
-                disciplineCode: pb ? 'MAR' : undefined,
-              }
-            ));
+                disciplineCode: pb && !nonMarathoners.includes(fullName) ? 'MAR' : undefined,
+              })) ?? {};
             // if (country && country !== nat) console.log('mismatch country');
             ath.id = id;
           }
@@ -193,16 +196,13 @@ const getEntries = async () => {
               .split(', ')
               .map((name) => name.trim());
             const fullName = `${firstName} ${lastName}`;
-            const { id, country } = (cache[meet].ids[fullName] ??= await getWaId(
-              firstName,
-              lastName,
-              {
+            const { id, country } =
+              (cache[meet].ids[fullName] ??= await getWaId(firstName, lastName, {
                 college: true,
                 disciplineCode: disciplineCodes[ungenderedEvt],
                 indoors: true,
                 gender: isMale ? 'male' : 'female',
-              }
-            ));
+              })) ?? {};
             const sbAnchor = [
               ...row.querySelectorAll('a[href^="https://www.tfrrs.org/results/"]'),
             ].find((a) =>
@@ -272,13 +272,13 @@ const getEntries = async () => {
 
               let id: string;
               if (cache?.[meet]?.ids[`${firstName} ${lastName}`])
-                id = cache?.[meet]?.ids[`${firstName} ${lastName}`].id;
+                id = cache?.[meet]?.ids[`${firstName} ${lastName}`]?.id!;
               else {
                 cache[meet] ??= { schedule: {}, events: {}, ids: {} };
                 cache[meet].ids[`${firstName} ${lastName}`] = await getWaId(firstName, lastName, {
                   birthYear,
                 });
-                id = cache[meet].ids[`${firstName} ${lastName}`].id;
+                id = cache[meet].ids[`${firstName} ${lastName}`]?.id!;
                 fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
               }
 

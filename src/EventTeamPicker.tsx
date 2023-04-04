@@ -132,6 +132,7 @@ export const EventTeamPicker = ({
           <GridContainer {...gridContainerProps}>
             {entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
               const { id, firstName, lastName, pb, sb, nat } = entrant;
+              if (!id) console.log(firstName, lastName);
               return (
                 <AthleteCard
                   isClosed={!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed}

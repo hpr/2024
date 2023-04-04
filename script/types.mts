@@ -237,7 +237,7 @@ export type MeetCache = {
         results?: string;
       };
     };
-    ids: { [name: string]: { country: string; id: string } };
+    ids: { [name: string]: { country: string; id: string } | undefined };
   };
 };
 

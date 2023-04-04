@@ -1878,7 +1878,6 @@
         "id": "14385726",
         "country": "USA"
       },
-      "Kodi Kleven": {},
       "Jess Watychowicz": {
         "id": "14458556",
         "country": "USA"
@@ -1951,7 +1950,6 @@
         "id": "14863309",
         "country": "USA"
       },
-      "Carmen Hussar": {},
       "Gina Rouse": {
         "id": "14626911",
         "country": "USA"
@@ -2184,7 +2182,6 @@
         "id": "14459585",
         "country": "USA"
       },
-      "Jack Mastandra": {},
       "Brian Harvey": {
         "id": "14240159",
         "country": "USA"
@@ -2249,7 +2246,6 @@
         "id": "14173943",
         "country": "CAN"
       },
-      "Chip O’Hara": {},
       "Anthony Bruns": {
         "id": "15007584",
         "country": "USA"
@@ -2269,6 +2265,22 @@
       "Zouhair Talbi": {
         "id": "14577963",
         "country": "MAR"
+      },
+      "Kodi Kleven": {
+        "id": "14462647",
+        "country": "USA"
+      },
+      "Jack Mastandra": {
+        "id": "14778142",
+        "country": "USA"
+      },
+      "Chip O’Hara": {
+        "id": "14641427",
+        "country": "USA"
+      },
+      "Carmen Hussar": {
+        "id": "14268089",
+        "country": "CAN"
       }
     },
     "schedule": {
