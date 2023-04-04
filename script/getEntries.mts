@@ -86,6 +86,7 @@ const getWaId = async (
           Rohatinsky: ['Rohatinksy'],
           Mastandra: ['Mastandrea'],
           Hussar: ['Douma-Hussar'],
+          Chepkirui: ['Chepkurui'],
         };
 
         // if (
