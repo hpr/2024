@@ -16,6 +16,9 @@ const schedules: { [k in DLMeet]: string[] } = {
     'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=30&event_type=&year=&gender=m',
     'https://www.tfrrs.org/list_data/3901?other_lists=https%3A%2F%2Ftf.tfrrs.org%2Flists%2F3901%2F2022_2023_NCAA_Division_I_Indoor_Qualifying_List&limit=30&event_type=&year=&gender=f',
   ],
+  boston23: [
+    'https://www.baa.org/races/boston-marathon/pro-athletes/2023-boston-marathon-professional-team',
+  ],
 };
 
 const entrantSortFunc = (a: Entrant, b: Entrant) => {
@@ -114,9 +117,29 @@ const entries: Entries = {};
 const getEntries = async () => {
   for (const key in schedules) {
     const meet = key as DLMeet;
-    if (meet !== 'ncaai23') continue;
+    if (meet !== 'boston23') continue;
     entries[meet] = {};
     for (const meetScheduleUrl of schedules[meet]) {
+      if (meetScheduleUrl.startsWith('https://www.baa.org')) {
+        cache[meet] ??= { events: {}, ids: {}, schedule: {} };
+        const { document } = new JSDOM(
+          (cache[meet].schedule.combined ??= await (await fetch(meetScheduleUrl)).text())
+        ).window;
+        entries[meet] = Object.fromEntries(
+          [...document.querySelectorAll('table:nth-of-type(3n+1)')].map((ele, i) => [
+            `${i ? 'Men' : 'Women'}'s Marathon`,
+            {
+              entrants: [...ele.querySelectorAll('tr')].slice(1).map((tr) => {
+                const [name, nat, pb] = [...tr.querySelectorAll('td')].map((td) => td.textContent?.trim());
+                let [firstName, lastName, ...rest] =
+                  name?.split(' ').map((word) => word.replace('^', '').replace('*', '').trim()) ?? [];
+                if (rest.length) lastName = [lastName, ...rest].join(' ');
+                return { firstName, lastName, nat, pb };
+              }),
+            },
+          ])
+        );
+      }
       if (meetScheduleUrl.startsWith('https://www.tfrrs.org')) {
         const isMale = meetScheduleUrl.endsWith('m');
         cache[meet] ??= { events: {}, ids: {}, schedule: {} };
@@ -313,7 +336,7 @@ const getEntries = async () => {
   fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 };
 
-// getEntries();
+getEntries();
 
 const filterEntries = async (meet: DLMeet, isReview: boolean = false) => {
   const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
@@ -341,7 +364,7 @@ const filterEntries = async (meet: DLMeet, isReview: boolean = false) => {
         const evt: AthleticsEvent = runningEvents
           .flat()
           .sort((a, b) => b.length - a.length)
-          .find((evt) => sect.startsWith(rtsptSanitize(evt)))!;
+          .find((evt) => sect.startsWith(rtsptSanitize(evt)))! as AthleticsEvent;
         if (!evt) continue;
         entries[meet]![evt]!.entrants = entries[meet]![evt]!.entrants.filter(
           ({ firstName, lastName }) => {
@@ -365,4 +388,4 @@ const filterEntries = async (meet: DLMeet, isReview: boolean = false) => {
   }
   fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
 };
-filterEntries('ncaai23', false);
+// filterEntries('ncaai23', false);
