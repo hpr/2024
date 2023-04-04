@@ -379,7 +379,7 @@ export default function App() {
                         variant="default"
                         size="xs"
                         leftIcon={<BrandGit />}
-                        onClick={() => window.open('https://github.com/hpr/fantasy-dl', '_blank')}
+                        onClick={() => window.open('https://github.com/hpr/boston23', '_blank')}
                       >
                         Source code
                       </Button>
