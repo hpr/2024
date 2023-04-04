@@ -139,7 +139,7 @@ export default function App() {
                 setIsSuccess(false);
               }}
               data={[
-                { label: 'Submit Picks', value: 'addPicks' },
+                { label: 'Submit / Update Picks', value: 'addPicks' },
                 { label: 'Register', value: 'register' },
               ]}
               mb={10}
@@ -151,7 +151,7 @@ export default function App() {
               }}
               onSubmit={registerForm.onSubmit(async (vals) => {
                 setIsLoading(true);
-                const { status } = await (
+                let { status } = await (
                   await fetch(SERVER_URL, {
                     method: 'POST',
                     body: JSON.stringify({
@@ -161,6 +161,18 @@ export default function App() {
                     }),
                   })
                 ).json();
+                if (authPage === 'register' && status === 'success') {
+                  ({ status } = await (
+                    await fetch(SERVER_URL, {
+                      method: 'POST',
+                      body: JSON.stringify({
+                        action: authPage,
+                        ...vals,
+                        ...{ meet, picksJson: myTeam[meet] },
+                      }),
+                    })
+                  ).json());
+                }
                 setIsLoading(false);
                 if (status === 'success') setIsSuccess(true);
                 else {
@@ -201,11 +213,11 @@ export default function App() {
                 >
                   {authPage === 'register'
                     ? isSuccess
-                      ? 'Registered! Remember to submit your picks as well!'
+                      ? 'Registered and submitted picks!'
                       : 'Register'
                     : isSuccess
-                    ? 'Submitted Picks!'
-                    : 'Submit Picks'}
+                    ? 'Updated Picks!'
+                    : 'Submit / Update Picks'}
                 </Button>
               </Group>
             </form>
