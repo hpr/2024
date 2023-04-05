@@ -4,6 +4,9 @@ import { nameFixer } from 'name-fixer';
 import { AthleticsEvent, DLMeet, Entrant, Entries, MeetCache, WAEventCode } from './types.mjs';
 import PDFParser, { Output } from 'pdf2json';
 import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain } from './const.mjs';
+import PDFJS from 'pdfjs-dist/legacy/build/pdf.js';
+import { PNG } from 'pngjs';
+import { TextItem } from 'pdfjs-dist/types/src/display/api.js';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 
@@ -125,6 +128,86 @@ const getWaId = async (
 };
 
 const entries: Entries = {};
+
+const getMediaGuidePhotos = async (meet: DLMeet) => {
+  const mediaGuides: {
+    [k in DLMeet]?: {
+      uri: string;
+      evtPages: {
+        [k in AthleticsEvent]?: number[];
+      };
+    };
+  } = {
+    boston23: {
+      uri: 'file:///home/habs/run/boston23/archive/BM23%20Media%20Guide%20Pages_Corrected_040323.pdf',
+      evtPages: {
+        "Men's Marathon": [103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116],
+        "Women's Marathon": [
+          118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133,
+        ],
+      },
+    },
+  };
+  const doc = await PDFJS.getDocument(mediaGuides[meet]?.uri!).promise;
+
+  for (const key in mediaGuides[meet]?.evtPages) {
+    const evt = key as AthleticsEvent;
+    for (const pageNo of mediaGuides[meet]?.evtPages[evt] ?? []) {
+      console.log(pageNo);
+      const page = await doc.getPage(pageNo);
+      const { items } = await page.getTextContent();
+      const nameItems = (items as TextItem[]).filter(
+        ({ str, fontName }) => fontName === 'g_d0_f2' && str?.trim() && !+str
+      );
+      const dirNames = nameItems.reduce((acc, item) => {
+        const dir = item.transform[4] < 400 ? 'L' : 'R';
+        acc[dir] ??= [];
+        acc[dir]!.push(item.str.replace(/ /g, ''));
+        return acc;
+      }, {} as { L: string[]; R: string[] });
+      const { fnArray, argsArray } = await page.getOperatorList();
+
+      const imageArgs = argsArray.flatMap((_, i) => {
+        if (fnArray[i] === PDFJS.OPS.paintImageXObject)
+          return {
+            x: argsArray[i - 2][4],
+            id: argsArray[i][0],
+          };
+        return [];
+      });
+
+      for (const { id, x } of imageArgs) {
+        const isLeft = x === Math.min(...imageArgs.map(({ x }) => x));
+        const { data, width, height } = await new Promise<{
+          data: Uint8ClampedArray;
+          width: number;
+          height: number;
+        }>((res) => page.objs.get(id, res));
+        const png = new PNG({ width, height });
+        const imgData: number[] = [];
+        for (let i = 0, j = 0; i < width * height * 4; ) {
+          imgData[i++] = data[j++];
+          imgData[i++] = data[j++];
+          imgData[i++] = data[j++];
+          imgData[i++] = 255;
+        }
+        png.data = Buffer.from(imgData);
+        const name = dirNames[isLeft ? 'L' : 'R'].join(' ');
+        const matchingEntrants =
+          entries[meet]?.[evt]?.entrants.filter(
+            ({ lastName }) => lastName.toLowerCase() === name.split(' ').at(-1)?.toLowerCase()
+          ) ?? [];
+        if (matchingEntrants.length !== 1) {
+          console.log('ambiguous', name, matchingEntrants);
+        } else {
+          png
+            .pack()
+            .pipe(fs.createWriteStream(`./public/img/avatars/${matchingEntrants[0].id}.png`));
+        }
+      }
+    }
+  }
+};
 
 const getEntries = async () => {
   for (const key in schedules) {
@@ -370,8 +453,6 @@ const getEntries = async () => {
   fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 };
 
-getEntries();
-
 const filterEntries = async (meet: DLMeet, isReview: boolean = false) => {
   const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
   const rtsptSanitize = (s: string) =>
@@ -422,4 +503,7 @@ const filterEntries = async (meet: DLMeet, isReview: boolean = false) => {
   }
   fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
 };
+
+// getEntries();
 // filterEntries('ncaai23', false);
+getMediaGuidePhotos('boston23');

@@ -46,7 +46,9 @@ export type AthleticsEvent =
   | "Women's 800 Meters"
   | "Women's Mile"
   | "Women's 3000 Meters"
-  | "Women's 5000 Meters";
+  | "Women's 5000 Meters"
+  | "Men's Marathon"
+  | "Women's Marathon";
 
 export type WAEventCode =
   | '50'
