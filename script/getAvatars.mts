@@ -146,7 +146,9 @@ for (const { id, firstName, lastName, team, pb } of entrants) {
   let avatarBuffer: ArrayBuffer | undefined;
   let images: PixelMeImage[] = [];
   if (avatarResp.status === 403) {
-    if (team) {
+    if (fs.existsSync(`./public/img/avatars/${id}.png`)) {
+      avatarBuffer = fs.readFileSync(`./public/img/avatars/${id}.png`);
+    } else if (team) {
       let imgUrl: string | undefined;
       if (avatarCache.urls[id]) imgUrl = avatarCache.urls[id];
       else {
@@ -193,9 +195,10 @@ for (const { id, firstName, lastName, team, pb } of entrants) {
       }
     } else {
       const searchQuery = `"${firstName} ${lastName}" ${pb ? 'Marathon ' : ''}runner face`;
-      const images = await google.image(searchQuery, {
-        safe: false,
-      });
+      let images: Awaited<ReturnType<typeof google.image>> = [];
+      try {
+        images = []; // await google.image(searchQuery);
+      } catch {}
       imageUrl = images.find((img) =>
         [firstName.toLowerCase(), lastName.toLowerCase()].some((name) =>
           img.url.toLowerCase().includes(name)

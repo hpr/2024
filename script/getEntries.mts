@@ -130,6 +130,7 @@ const getWaId = async (
 const entries: Entries = {};
 
 const getMediaGuidePhotos = async (meet: DLMeet) => {
+  const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
   const mediaGuides: {
     [k in DLMeet]?: {
       uri: string;
@@ -193,10 +194,15 @@ const getMediaGuidePhotos = async (meet: DLMeet) => {
         }
         png.data = Buffer.from(imgData);
         const name = dirNames[isLeft ? 'L' : 'R'].join(' ');
-        const matchingEntrants =
+        let matchingEntrants =
           entries[meet]?.[evt]?.entrants.filter(
             ({ lastName }) => lastName.toLowerCase() === name.split(' ').at(-1)?.toLowerCase()
           ) ?? [];
+        if (matchingEntrants.length > 1)
+          matchingEntrants = matchingEntrants.filter(
+            ({ firstName }) =>
+              firstName.toLowerCase() === name.split(' ').slice(0, -1).join(' ').toLowerCase()
+          );
         if (matchingEntrants.length !== 1) {
           console.log('ambiguous', name, matchingEntrants);
         } else {
