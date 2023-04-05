@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { Entrant, Entries } from './types.mjs';
-import google from 'googlethis';
+import google, { image, search } from 'googlethis';
 import { JSDOM } from 'jsdom';
 import gm from 'gm';
 import { getDomain } from './const.mjs';
@@ -48,6 +48,10 @@ const getIcons = async (avatarBuffer: ArrayBuffer) => {
       method: 'POST',
     })
   ).json();
+  if (!faceData) {
+    console.log('no faceData');
+    return [];
+  }
   const { images }: { images: PixelMeImage[] } = faceData;
   return images;
 };
@@ -127,7 +131,7 @@ const getProfilePic = async (
 };
 
 let i = 0;
-for (const { id, firstName, lastName, team } of entrants) {
+for (const { id, firstName, lastName, team, pb } of entrants) {
   console.log(id, firstName, lastName, team, i++, entrants.length);
   const file128 = `./public/img/avatars/${id}_128x128.png`;
   if (fs.existsSync(file128)) {
@@ -136,9 +140,9 @@ for (const { id, firstName, lastName, team } of entrants) {
       fs.unlinkSync(file128);
     } else continue;
   }
-  const iaafUrl = `https://media.aws.iaaf.org/athletes/${id}.jpg`;
-  const avatarResp = await fetch(iaafUrl);
-  if (avatarResp.status !== 403) console.log(iaafUrl);
+  let imageUrl = `https://media.aws.iaaf.org/athletes/${id}.jpg`;
+  let avatarResp = await fetch(imageUrl);
+  if (avatarResp.status !== 403) console.log(imageUrl);
   let avatarBuffer: ArrayBuffer | undefined;
   let images: PixelMeImage[] = [];
   if (avatarResp.status === 403) {
@@ -188,12 +192,39 @@ for (const { id, firstName, lastName, team } of entrants) {
         fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
       }
     } else {
-      // fs.symlinkSync('./default_128x128.png', file128);
-      continue;
+      const searchQuery = `"${firstName} ${lastName}" ${pb ? 'Marathon ' : ''}runner face`;
+      const images = await google.image(searchQuery, {
+        safe: false,
+      });
+      imageUrl = images.find((img) =>
+        [firstName.toLowerCase(), lastName.toLowerCase()].some((name) =>
+          img.url.toLowerCase().includes(name)
+        )
+      )?.url!;
+      if (!imageUrl) {
+        console.log(images, 'no image found');
+        continue;
+      }
+      console.log(
+        searchQuery,
+        imageUrl
+        // images.map((img) => img.url)
+      );
+      avatarResp = await fetch(imageUrl);
     }
   }
   avatarBuffer ??= await avatarResp.arrayBuffer();
-  if (!images.length) images = await getIcons(avatarBuffer);
+  const size: gm.Dimensions = await new Promise((res) =>
+    gm(Buffer.from(avatarBuffer!), 'image.jpg').size((_, size) => res(size))
+  );
+  if (size.width > 1024)
+    avatarBuffer = await new Promise((res) =>
+      gm(Buffer.from(avatarBuffer!), 'image.jpg')
+        .resize(512)
+        .toBuffer('PNG', (_, buf) => res(buf))
+    );
+
+  if (!images.length) images = await getIcons(avatarBuffer!);
   if (!images.length) {
     // fs.symlinkSync('./default_128x128.png', file128);
   } else {
@@ -201,4 +232,6 @@ for (const { id, firstName, lastName, team } of entrants) {
       fs.writeFileSync(`./public/img/avatars/${id}_${label}.png`, Buffer.from(image, 'base64'));
     }
   }
+  avatarCache.urls[id] = imageUrl;
+  fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
 }

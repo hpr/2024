@@ -37,7 +37,7 @@ export const EventTeamPicker = ({
           <th>Name</th>
           {/* <th>Team</th>
           <th>Nat.</th> */}
-          <th>SB</th>
+          <th>PB</th>
           <th>Action</th>
         </tr>
       </thead>

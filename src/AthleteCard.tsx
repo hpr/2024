@@ -241,7 +241,7 @@ export function AthleteCard({
           <td>{name}</td>
           {/* <td>{entrant.team}</td>
           <td>{job}</td> */}
-          <td>{entrant.sb}</td>
+          <td>{entrant.pb}</td>
           <td>
             <Button
               size="xs"
