@@ -155,7 +155,15 @@ export function AthleteCard({
                 sx={{ height: 128, borderLeft: 'none', borderRight: 'none' }}
                 variant="outline"
               >
-                <Avatar variant="outline" bg="gray" size={128} radius={128} src={avatar} />
+                <Avatar
+                  variant="outline"
+                  bg="gray"
+                  size={128}
+                  radius={128}
+                  src={entrant.hasAvy ? avatar : undefined}
+                >
+                  {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
+                </Avatar>
               </Button>
               <Button
                 size="xl"
@@ -286,12 +294,14 @@ export function AthleteCard({
                 onMouseEnter={popOpen}
                 onMouseLeave={popClose}
                 onClick={showAndCacheDetails}
-                src={avatar}
+                src={entrant.hasAvy ? avatar : undefined}
                 size={128}
                 radius={128}
                 mx="auto"
                 sx={{ border: `1px solid ${mantineGray}`, cursor: 'pointer' }}
-              />
+              >
+                {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
+              </Avatar>
             </Indicator>
           </Popover.Target>
           <Popover.Dropdown sx={{ display: isTouchDevice() ? 'none' : undefined }}>

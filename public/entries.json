@@ -7,476 +7,544 @@
           "lastName": "Beriso",
           "nat": "Ethiopia",
           "pb": "2:14:58 (NR)",
-          "id": "14664871"
+          "id": "14664871",
+          "hasAvy": true
         },
         {
           "firstName": "Sheila",
           "lastName": "Chepkirui",
           "nat": "Kenya",
           "pb": "2:17:29",
-          "id": "14289156"
+          "id": "14289156",
+          "hasAvy": true
         },
         {
           "firstName": "Joyciline",
           "lastName": "Jepkosgei",
           "nat": "Kenya",
           "pb": "2:17:43",
-          "id": "14704913"
+          "id": "14704913",
+          "hasAvy": true
         },
         {
           "firstName": "Lonah",
           "lastName": "Salpeter",
           "nat": "Israel",
           "pb": "2:17:45",
-          "id": "14523502"
+          "id": "14523502",
+          "hasAvy": true
         },
         {
           "firstName": "Angela",
           "lastName": "Tanui",
           "nat": "Kenya",
           "pb": "2:17:57",
-          "id": "14423894"
+          "id": "14423894",
+          "hasAvy": true
         },
         {
           "firstName": "Fancy",
           "lastName": "Chemutai",
           "nat": "Kenya",
           "pb": "2:18:11",
-          "id": "14787595"
+          "id": "14787595",
+          "hasAvy": false
         },
         {
           "firstName": "Gotytom",
           "lastName": "Gebreslase",
           "nat": "Ethiopia",
           "pb": "2:18:11",
-          "id": "14477379"
+          "id": "14477379",
+          "hasAvy": true
         },
         {
           "firstName": "Hiwot",
           "lastName": "Gebremaryam",
           "nat": "Ethiopia",
           "pb": "2:19:10",
-          "id": "14534424"
+          "id": "14534424",
+          "hasAvy": true
         },
         {
           "firstName": "Edna",
           "lastName": "Kiplagat",
           "nat": "Kenya",
           "pb": "2:19:50",
-          "id": "14289137"
+          "id": "14289137",
+          "hasAvy": true
         },
         {
           "firstName": "Celestine",
           "lastName": "Chepchirchir",
           "nat": "Kenya",
           "pb": "2:20:10",
-          "id": "14426303"
+          "id": "14426303",
+          "hasAvy": true
         },
         {
           "firstName": "Maurine",
           "lastName": "Chepkemoi",
           "nat": "Kenya",
           "pb": "2:20:18",
-          "id": "14480131"
+          "id": "14480131",
+          "hasAvy": true
         },
         {
           "firstName": "Mary",
           "lastName": "Ngugi",
           "nat": "Kenya",
           "pb": "2:20:22",
-          "id": "14289475"
+          "id": "14289475",
+          "hasAvy": true
         },
         {
           "firstName": "Nazret",
           "lastName": "Weldu Gebrehiwet",
           "nat": "Eritrea",
           "pb": "2:20:29 (NR)",
-          "id": "14262207"
+          "id": "14262207",
+          "hasAvy": true
         },
         {
           "firstName": "Sara",
           "lastName": "Hall",
           "nat": "USA",
           "pb": "2:20:32",
-          "id": "14305595"
+          "id": "14305595",
+          "hasAvy": true
         },
         {
           "firstName": "Ababel",
           "lastName": "Yeshaneh",
           "nat": "Ethiopia",
           "pb": "2:20:51",
-          "id": "14465270"
+          "id": "14465270",
+          "hasAvy": true
         },
         {
           "firstName": "Vibian",
           "lastName": "Chepkirui",
           "nat": "Kenya",
           "pb": "2:20:59",
-          "id": "14752836"
+          "id": "14752836",
+          "hasAvy": true
         },
         {
           "firstName": "Atsede",
           "lastName": "Baysa",
           "nat": "Ethiopia",
           "pb": "2:22:03",
-          "id": "14259910"
+          "id": "14259910",
+          "hasAvy": true
         },
         {
           "firstName": "Desiree",
           "lastName": "Linden",
           "nat": "USA",
           "pb": "2:22:38",
-          "id": "14308638"
+          "id": "14308638",
+          "hasAvy": true
         },
         {
           "firstName": "Viola",
           "lastName": "Cheptoo",
           "nat": "Kenya",
           "pb": "2:22:44",
-          "id": "14372181"
+          "id": "14372181",
+          "hasAvy": true
         },
         {
           "firstName": "Nienke",
           "lastName": "Brinkman",
           "nat": "Netherlands",
           "pb": "2:22:51 (NR)",
-          "id": "15007483"
+          "id": "15007483",
+          "hasAvy": true
         },
         {
           "firstName": "Emma",
           "lastName": "Bates",
           "nat": "USA",
           "pb": "2:23:18",
-          "id": "14453636"
+          "id": "14453636",
+          "hasAvy": true
         },
         {
           "firstName": "Dakotah",
           "lastName": "Lindwurm",
           "nat": "USA",
           "pb": "2:25:01",
-          "id": "14644196"
+          "id": "14644196",
+          "hasAvy": true
         },
         {
           "firstName": "Laura",
           "lastName": "Thweatt",
           "nat": "USA",
           "pb": "2:25:38",
-          "id": "14326779"
+          "id": "14326779",
+          "hasAvy": true
         },
         {
           "firstName": "Hellen",
           "lastName": "Obiri",
           "nat": "Kenya",
           "pb": "2:25:49",
-          "id": "14424921"
+          "id": "14424921",
+          "hasAvy": true
         },
         {
           "firstName": "Nell",
           "lastName": "Rojas",
           "nat": "USA",
           "pb": "2:25:57",
-          "id": "14320192"
+          "id": "14320192",
+          "hasAvy": true
         },
         {
           "firstName": "Annie",
           "lastName": "Frisbie",
           "nat": "USA",
           "pb": "2:26:18",
-          "id": "14736859"
+          "id": "14736859",
+          "hasAvy": true
         },
         {
           "firstName": "Sara",
           "lastName": "Vaughn",
           "nat": "USA",
           "pb": "2:26:23",
-          "id": "14325833"
+          "id": "14325833",
+          "hasAvy": true
         },
         {
           "firstName": "Haruka",
           "lastName": "Yamaguchi",
           "nat": "Japan",
           "pb": "2:26:35",
-          "id": "14551026"
+          "id": "14551026",
+          "hasAvy": true
         },
         {
           "firstName": "Aliphine",
           "lastName": "Tuliamuk",
           "nat": "USA",
           "pb": "2:26:50",
-          "id": "14289472"
+          "id": "14289472",
+          "hasAvy": true
         },
         {
           "firstName": "Maggie",
           "lastName": "Montoya",
           "nat": "USA",
           "pb": "2:28:07",
-          "id": "14443792"
+          "id": "14443792",
+          "hasAvy": true
         },
         {
           "firstName": "Hanna",
           "lastName": "Lindholm",
           "nat": "Sweden",
           "pb": "2:28:59",
-          "id": "14488780"
+          "id": "14488780",
+          "hasAvy": true
         },
         {
           "firstName": "Maegan",
           "lastName": "Krifchin",
           "nat": "USA",
           "pb": "2:29:12",
-          "id": "14314769"
+          "id": "14314769",
+          "hasAvy": true
         },
         {
           "firstName": "Militsa",
           "lastName": "Mircheva",
           "nat": "Bulgaria",
           "pb": "2:29:23 (NR)",
-          "id": "14468897"
+          "id": "14468897",
+          "hasAvy": true
         },
         {
           "firstName": "Jane",
           "lastName": "Bareikis",
           "nat": "USA",
           "pb": "2:30:04",
-          "id": "14821717"
+          "id": "14821717",
+          "hasAvy": false
         },
         {
           "firstName": "Sydney",
           "lastName": "Devore",
           "nat": "USA",
           "pb": "2:31:07",
-          "id": "14813925"
+          "id": "14813925",
+          "hasAvy": false
         },
         {
           "firstName": "Annmarie",
           "lastName": "Tuxbury",
           "nat": "USA",
           "pb": "2:31:31",
-          "id": "14411351"
+          "id": "14411351",
+          "hasAvy": false
         },
         {
           "firstName": "Kaitlin",
           "lastName": "Goodman",
           "nat": "USA",
           "pb": "2:32:08",
-          "id": "14385726"
+          "id": "14385726",
+          "hasAvy": true
         },
         {
           "firstName": "Kodi",
           "lastName": "Kleven",
           "nat": "USA",
           "pb": "2:32:45",
-          "id": "14462647"
+          "id": "14462647",
+          "hasAvy": false
         },
         {
           "firstName": "Jess",
           "lastName": "Watychowicz",
           "nat": "USA",
           "pb": "2:33:09",
-          "id": "14458556"
+          "id": "14458556",
+          "hasAvy": false
         },
         {
           "firstName": "Briana",
           "lastName": "Boehmer",
           "nat": "USA",
           "pb": "2:33:20",
-          "id": "14737576"
+          "id": "14737576",
+          "hasAvy": false
         },
         {
           "firstName": "Nina",
           "lastName": "Zarina",
           "nat": "Russia",
           "pb": "2:33:22",
-          "id": "14606026"
+          "id": "14606026",
+          "hasAvy": false
         },
         {
           "firstName": "Jesse",
           "lastName": "Cardin",
           "nat": "USA",
           "pb": "2:33:34",
-          "id": "14649486"
+          "id": "14649486",
+          "hasAvy": false
         },
         {
           "firstName": "Savannah",
           "lastName": "Berry",
           "nat": "USA",
           "pb": "2:33:42",
-          "id": "14678808"
+          "id": "14678808",
+          "hasAvy": false
         },
         {
           "firstName": "Olivia",
           "lastName": "Pratt",
           "nat": "USA",
           "pb": "2:34:22",
-          "id": "14568455"
+          "id": "14568455",
+          "hasAvy": false
         },
         {
           "firstName": "Anne-Marie",
           "lastName": "Blaney",
           "nat": "USA",
           "pb": "2:34:38",
-          "id": "14530957"
+          "id": "14530957",
+          "hasAvy": false
         },
         {
           "firstName": "Mckale",
           "lastName": "Montgomery",
           "nat": "USA",
           "pb": "2:35:01",
-          "id": "14317252"
+          "id": "14317252",
+          "hasAvy": false
         },
         {
           "firstName": "Liza",
           "lastName": "Howard",
           "nat": "Canada",
           "pb": "2:35:29",
-          "id": "14361852"
+          "id": "14361852",
+          "hasAvy": false
         },
         {
           "firstName": "Esther",
           "lastName": "Atkins",
           "nat": "USA",
           "pb": "2:36:32",
-          "id": "14309733"
+          "id": "14309733",
+          "hasAvy": true
         },
         {
           "firstName": "Sylvia",
           "lastName": "Bedford",
           "nat": "USA",
           "pb": "2:36:32",
-          "id": "14368542"
+          "id": "14368542",
+          "hasAvy": false
         },
         {
           "firstName": "English",
           "lastName": "Jackson Tomlinson",
           "nat": "USA",
           "pb": "2:36:51",
-          "id": "14863437"
+          "id": "14863437",
+          "hasAvy": false
         },
         {
           "firstName": "Aisling",
           "lastName": "Cuffe",
           "nat": "USA",
           "pb": "2:37:23",
-          "id": "14362841"
+          "id": "14362841",
+          "hasAvy": false
         },
         {
           "firstName": "Rachel",
           "lastName": "Coogan",
           "nat": "USA",
           "pb": "2:37:40",
-          "id": "14641735"
+          "id": "14641735",
+          "hasAvy": false
         },
         {
           "firstName": "Claire",
           "lastName": "McCarthy",
           "nat": "Ireland",
           "pb": "2:38:26",
-          "id": "14283226"
+          "id": "14283226",
+          "hasAvy": true
         },
         {
           "firstName": "Ann",
           "lastName": "Centner",
           "nat": "USA",
           "pb": "2:38:30",
-          "id": "14508138"
+          "id": "14508138",
+          "hasAvy": false
         },
         {
           "firstName": "Tennille",
           "lastName": "Ellis",
           "nat": "Australia",
           "pb": "2:39:08",
-          "id": "14594480"
+          "id": "14594480",
+          "hasAvy": false
         },
         {
           "firstName": "April",
           "lastName": "Lund",
           "nat": "USA",
           "pb": "2:39:23",
-          "id": "14863309"
+          "id": "14863309",
+          "hasAvy": false
         },
         {
           "firstName": "Carmen",
           "lastName": "Hussar",
           "nat": "Canada",
           "pb": "2:39:51",
-          "id": "14268089"
+          "id": "14268089",
+          "hasAvy": false
         },
         {
           "firstName": "Gina",
           "lastName": "Rouse",
           "nat": "USA",
           "pb": "2:41:19",
-          "id": "14626911"
+          "id": "14626911",
+          "hasAvy": false
         },
         {
           "firstName": "Natasha",
           "lastName": "Bliss",
           "nat": "USA",
           "pb": "2:43:28",
-          "id": "15007706"
+          "id": "15007706",
+          "hasAvy": false
         },
         {
           "firstName": "Julie",
           "lastName": "Lajeunesse",
           "nat": "Canada",
           "pb": "2:44:49",
-          "id": "14554771"
+          "id": "14554771",
+          "hasAvy": false
         },
         {
           "firstName": "Laurie",
           "lastName": "Knowles",
           "nat": "USA",
           "pb": "2:44:53",
-          "id": "14314609"
+          "id": "14314609",
+          "hasAvy": false
         },
         {
           "firstName": "Jennifer",
           "lastName": "Hughes",
           "nat": "USA",
           "pb": "2:45:19",
-          "id": "14488952"
+          "id": "14488952",
+          "hasAvy": false
         },
         {
           "firstName": "Jenny",
           "lastName": "Hitchings",
           "nat": "USA",
           "pb": "2:45:32",
-          "id": "14336590"
+          "id": "14336590",
+          "hasAvy": false
         },
         {
           "firstName": "Hilary",
           "lastName": "Corno",
           "nat": "USA",
           "pb": "2:45:34",
-          "id": "14372869"
+          "id": "14372869",
+          "hasAvy": false
         },
         {
           "firstName": "Rebecca",
           "lastName": "Brown",
           "nat": "Australia",
           "pb": "2:45:43",
-          "id": "14813531"
+          "id": "14813531",
+          "hasAvy": false
         },
         {
           "firstName": "Erika",
           "lastName": "Kemp",
           "nat": "USA",
           "pb": "",
-          "id": "14647694"
+          "id": "14647694",
+          "hasAvy": true
         },
         {
           "firstName": "Danielle",
           "lastName": "Moreno",
           "nat": "USA",
           "pb": "",
-          "id": "14466250"
+          "id": "14466250",
+          "hasAvy": false
         },
         {
           "firstName": "Maria",
           "lastName": "Coffin",
           "nat": "USA",
           "pb": "",
-          "id": "14708146"
+          "id": "14708146",
+          "hasAvy": false
         }
       ]
     },
@@ -487,490 +555,560 @@
           "lastName": "Kipchoge",
           "nat": "Kenya",
           "pb": "2:01:09 WR",
-          "id": "14208194"
+          "id": "14208194",
+          "hasAvy": true
         },
         {
           "firstName": "Evans",
           "lastName": "Chebet",
           "nat": "Kenya",
           "pb": "2:03:00",
-          "id": "14483236"
+          "id": "14483236",
+          "hasAvy": true
         },
         {
           "firstName": "Gabriel",
           "lastName": "Geay",
           "nat": "Tanzania",
           "pb": "2:03:00 NR",
-          "id": "14677692"
+          "id": "14677692",
+          "hasAvy": true
         },
         {
           "firstName": "Herpasa",
           "lastName": "Negasa",
           "nat": "Ethiopia",
           "pb": "2:03:40",
-          "id": "14568259"
+          "id": "14568259",
+          "hasAvy": true
         },
         {
           "firstName": "Benson",
           "lastName": "Kipruto",
           "nat": "Kenya",
           "pb": "2:04:24",
-          "id": "14758213"
+          "id": "14758213",
+          "hasAvy": true
         },
         {
           "firstName": "Lelisa",
           "lastName": "Desisa",
           "nat": "Ethiopia",
           "pb": "2:04:45",
-          "id": "14377814"
+          "id": "14377814",
+          "hasAvy": true
         },
         {
           "firstName": "Shura",
           "lastName": "Kitata",
           "nat": "Ethiopia",
           "pb": "2:04:49",
-          "id": "14730723"
+          "id": "14730723",
+          "hasAvy": true
         },
         {
           "firstName": "John",
           "lastName": "Korir",
           "nat": "Kenya",
           "pb": "2:05:01",
-          "id": "14845463"
+          "id": "14845463",
+          "hasAvy": true
         },
         {
           "firstName": "Nobert",
           "lastName": "Kigen",
           "nat": "Kenya",
           "pb": "2:05:13",
-          "id": "14675185"
+          "id": "14675185",
+          "hasAvy": false
         },
         {
           "firstName": "Ghirmay",
           "lastName": "Ghebreslassie",
           "nat": "Eritrea",
           "pb": "2:05:34",
-          "id": "14526656"
+          "id": "14526656",
+          "hasAvy": true
         },
         {
           "firstName": "Andualem",
           "lastName": "Belay",
           "nat": "Ethiopia",
           "pb": "2:05:45",
-          "id": "14546661"
+          "id": "14546661",
+          "hasAvy": true
         },
         {
           "firstName": "Mark",
           "lastName": "Korir",
           "nat": "Kenya",
           "pb": "2:05:49",
-          "id": "14243283"
+          "id": "14243283",
+          "hasAvy": true
         },
         {
           "firstName": "Filmon",
           "lastName": "Ande",
           "nat": "Eritrea",
           "pb": "2:06:38",
-          "id": "14773933"
+          "id": "14773933",
+          "hasAvy": true
         },
         {
           "firstName": "Andamlak",
           "lastName": "Belihu",
           "nat": "Ethiopia",
           "pb": "2:06:40",
-          "id": "14800831"
+          "id": "14800831",
+          "hasAvy": true
         },
         {
           "firstName": "Isaac",
           "lastName": "Mpofu",
           "nat": "Zimbabwe",
           "pb": "2:06:48 NR",
-          "id": "14654920"
+          "id": "14654920",
+          "hasAvy": true
         },
         {
           "firstName": "Hamza",
           "lastName": "Sahli",
           "nat": "Morocco",
           "pb": "2:07:15",
-          "id": "14212196"
+          "id": "14212196",
+          "hasAvy": true
         },
         {
           "firstName": "Michael",
           "lastName": "Githae",
           "nat": "Kenya",
           "pb": "2:07:28",
-          "id": "14644141"
+          "id": "14644141",
+          "hasAvy": false
         },
         {
           "firstName": "Albert",
           "lastName": "Korir",
           "nat": "Kenya",
           "pb": "2:08:03",
-          "id": "14645745"
+          "id": "14645745",
+          "hasAvy": true
         },
         {
           "firstName": "Conner",
           "lastName": "Mantz",
           "nat": "USA",
           "pb": "2:08:16",
-          "id": "14628442"
+          "id": "14628442",
+          "hasAvy": true
         },
         {
           "firstName": "Scott",
           "lastName": "Fauble",
           "nat": "USA",
           "pb": "2:08:52",
-          "id": "14452474"
+          "id": "14452474",
+          "hasAvy": true
         },
         {
           "firstName": "Melikhaya",
           "lastName": "Frans",
           "nat": "South Africa",
           "pb": "2:09:24",
-          "id": "14385084"
+          "id": "14385084",
+          "hasAvy": true
         },
         {
           "firstName": "Matt",
           "lastName": "McDonald",
           "nat": "USA",
           "pb": "2:09:49",
-          "id": "14470801"
+          "id": "14470801",
+          "hasAvy": true
         },
         {
           "firstName": "Nico",
           "lastName": "Montanez",
           "nat": "USA",
           "pb": "2:09:55",
-          "id": "14571119"
+          "id": "14571119",
+          "hasAvy": true
         },
         {
           "firstName": "Mick",
           "lastName": "Iacofano",
           "nat": "USA",
           "pb": "2:09:55",
-          "id": "14680348"
+          "id": "14680348",
+          "hasAvy": false
         },
         {
           "firstName": "Mustafa",
           "lastName": "Mohamed",
           "nat": "Sweden",
           "pb": "2:10:03 NR",
-          "id": "14227863"
+          "id": "14227863",
+          "hasAvy": true
         },
         {
           "firstName": "Hendrik",
           "lastName": "Pfeiffer",
           "nat": "Germany",
           "pb": "2:10:18",
-          "id": "14429726"
+          "id": "14429726",
+          "hasAvy": true
         },
         {
           "firstName": "CJ",
           "lastName": "Albertson",
           "nat": "USA",
           "pb": "2:10:23",
-          "id": "14631054"
+          "id": "14631054",
+          "hasAvy": true
         },
         {
           "firstName": "Nathan",
           "lastName": "Martin",
           "nat": "USA",
           "pb": "2:11:05",
-          "id": "14402548"
+          "id": "14402548",
+          "hasAvy": false
         },
         {
           "firstName": "Colin",
           "lastName": "Mickow",
           "nat": "USA",
           "pb": "2:11:22",
-          "id": "14361805"
+          "id": "14361805",
+          "hasAvy": true
         },
         {
           "firstName": "Wilkerson",
           "lastName": "Given",
           "nat": "USA",
           "pb": "2:11:44",
-          "id": "14456312"
+          "id": "14456312",
+          "hasAvy": false
         },
         {
           "firstName": "Turner",
           "lastName": "Wiley",
           "nat": "USA",
           "pb": "2:11:59",
-          "id": "14627160"
+          "id": "14627160",
+          "hasAvy": false
         },
         {
           "firstName": "Jonas",
           "lastName": "Hampton",
           "nat": "USA",
           "pb": "2:12:10",
-          "id": "14459984"
+          "id": "14459984",
+          "hasAvy": true
         },
         {
           "firstName": "Ben",
           "lastName": "True",
           "nat": "USA",
           "pb": "2:12:53",
-          "id": "14253490"
+          "id": "14253490",
+          "hasAvy": true
         },
         {
           "firstName": "Mick",
           "lastName": "Clohisey",
           "nat": "Ireland",
           "pb": "2:13:19",
-          "id": "14198792"
+          "id": "14198792",
+          "hasAvy": true
         },
         {
           "firstName": "Brian",
           "lastName": "Shrader",
           "nat": "USA",
           "pb": "2:13:27",
-          "id": "14459356"
+          "id": "14459356",
+          "hasAvy": false
         },
         {
           "firstName": "Paul",
           "lastName": "Hogan",
           "nat": "USA",
           "pb": "2:14:55",
-          "id": "14629439"
+          "id": "14629439",
+          "hasAvy": false
         },
         {
           "firstName": "JP",
           "lastName": "Flavin",
           "nat": "USA",
           "pb": "2:14:55",
-          "id": "14794002"
+          "id": "14794002",
+          "hasAvy": false
         },
         {
           "firstName": "Sam",
           "lastName": "Chelanga",
           "nat": "USA",
           "pb": "2:15:02",
-          "id": "14207498"
+          "id": "14207498",
+          "hasAvy": false
         },
         {
           "firstName": "Pardon",
           "lastName": "Ndhlovu",
           "nat": "USA",
           "pb": "2:15:04",
-          "id": "14413956"
+          "id": "14413956",
+          "hasAvy": true
         },
         {
           "firstName": "Joe",
           "lastName": "Whelan",
           "nat": "USA",
           "pb": "2:15:36",
-          "id": "14815718"
+          "id": "14815718",
+          "hasAvy": false
         },
         {
           "firstName": "Connor",
           "lastName": "Weaver",
           "nat": "USA",
           "pb": "2:15:49",
-          "id": "14820782"
+          "id": "14820782",
+          "hasAvy": false
         },
         {
           "firstName": "Zachary",
           "lastName": "Ornelas",
           "nat": "USA",
           "pb": "2:16:01",
-          "id": "14326657"
+          "id": "14326657",
+          "hasAvy": false
         },
         {
           "firstName": "Fernando",
           "lastName": "Cabada",
           "nat": "USA",
           "pb": "2:16:52",
-          "id": "14234027"
+          "id": "14234027",
+          "hasAvy": false
         },
         {
           "firstName": "Edward",
           "lastName": "Mulder",
           "nat": "USA",
           "pb": "2:16:55",
-          "id": "14510661"
+          "id": "14510661",
+          "hasAvy": false
         },
         {
           "firstName": "Matt",
           "lastName": "Lenehan",
           "nat": "USA",
           "pb": "2:17:02",
-          "id": "14495208"
+          "id": "14495208",
+          "hasAvy": false
         },
         {
           "firstName": "Andrew",
           "lastName": "McCann",
           "nat": "USA",
           "pb": "2:17:07",
-          "id": "14245308"
+          "id": "14245308",
+          "hasAvy": false
         },
         {
           "firstName": "Jon",
           "lastName": "Mott",
           "nat": "USA",
           "pb": "2:17:20",
-          "id": "14459585"
+          "id": "14459585",
+          "hasAvy": false
         },
         {
           "firstName": "Jack",
           "lastName": "Mastandra",
           "nat": "USA",
           "pb": "2:17:28",
-          "id": "14778142"
+          "id": "14778142",
+          "hasAvy": false
         },
         {
           "firstName": "Brian",
           "lastName": "Harvey",
           "nat": "USA",
           "pb": "2:17:40",
-          "id": "14240159"
+          "id": "14240159",
+          "hasAvy": false
         },
         {
           "firstName": "Eduardo",
           "lastName": "Garcia",
           "nat": "USA",
           "pb": "2:17:44",
-          "id": "14673300"
+          "id": "14673300",
+          "hasAvy": true
         },
         {
           "firstName": "Adam",
           "lastName": "Wollant",
           "nat": "USA",
           "pb": "2:17:53",
-          "id": "14632164"
+          "id": "14632164",
+          "hasAvy": false
         },
         {
           "firstName": "Mark",
           "lastName": "Messmer",
           "nat": "USA",
           "pb": "2:17:56",
-          "id": "14602508"
+          "id": "14602508",
+          "hasAvy": false
         },
         {
           "firstName": "Jason",
           "lastName": "Ayr",
           "nat": "USA",
           "pb": "2:18:14",
-          "id": "14546928"
+          "id": "14546928",
+          "hasAvy": false
         },
         {
           "firstName": "Luis",
           "lastName": "Carlos Rivero",
           "nat": "Guatemala",
           "pb": "2:18:30",
-          "id": "14569136"
+          "id": "14569136",
+          "hasAvy": true
         },
         {
           "firstName": "Eric",
           "lastName": "Ashe",
           "nat": "USA",
           "pb": "2:18:42",
-          "id": "14231609"
+          "id": "14231609",
+          "hasAvy": false
         },
         {
           "firstName": "Austin",
           "lastName": "O’Brien",
           "nat": "USA",
           "pb": "2:18:43",
-          "id": "14457201"
+          "id": "14457201",
+          "hasAvy": false
         },
         {
           "firstName": "Gilles",
           "lastName": "Rubio",
           "nat": "France",
           "pb": "2:18:53",
-          "id": "14668038"
+          "id": "14668038",
+          "hasAvy": false
         },
         {
           "firstName": "Sergio",
           "lastName": "Reyes",
           "nat": "USA",
           "pb": "2:19:51",
-          "id": "14249418"
+          "id": "14249418",
+          "hasAvy": false
         },
         {
           "firstName": "Prescott",
           "lastName": "Leach",
           "nat": "USA",
           "pb": "2:19:57",
-          "id": "14243781"
+          "id": "14243781",
+          "hasAvy": false
         },
         {
           "firstName": "Augustine",
           "lastName": "Choge",
           "nat": "Kenya",
           "pb": "2:20:53",
-          "id": "14207679"
+          "id": "14207679",
+          "hasAvy": true
         },
         {
           "firstName": "Markus",
           "lastName": "Ploner",
           "nat": "Italy",
           "pb": "2:22:39",
-          "id": "14201191"
+          "id": "14201191",
+          "hasAvy": false
         },
         {
           "firstName": "Simon",
           "lastName": "Poulin",
           "nat": "Canada",
           "pb": "2:22:55",
-          "id": "14817981"
+          "id": "14817981",
+          "hasAvy": false
         },
         {
           "firstName": "Dave",
           "lastName": "Archer",
           "nat": "Great Britain",
           "pb": "2:25:04",
-          "id": "14405958"
+          "id": "14405958",
+          "hasAvy": false
         },
         {
           "firstName": "Steven",
           "lastName": "Lawrence",
           "nat": "USA",
           "pb": "2:25:22",
-          "id": "14173943"
+          "id": "14173943",
+          "hasAvy": false
         },
         {
           "firstName": "Chip",
           "lastName": "O’Hara",
           "nat": "USA",
           "pb": "2:25:36",
-          "id": "14641427"
+          "id": "14641427",
+          "hasAvy": false
         },
         {
           "firstName": "Anthony",
           "lastName": "Bruns",
           "nat": "USA",
           "pb": "2:25:45",
-          "id": "15007584"
+          "id": "15007584",
+          "hasAvy": false
         },
         {
           "firstName": "Miguel",
           "lastName": "Morone",
           "nat": "Brazil",
           "pb": "2:25:54",
-          "id": "15044911"
+          "id": "15044911",
+          "hasAvy": false
         },
         {
           "firstName": "Iain",
           "lastName": "Hunter",
           "nat": "USA",
           "pb": "2:26:06",
-          "id": "14241398"
+          "id": "14241398",
+          "hasAvy": false
         },
         {
           "firstName": "Dennis",
           "lastName": "Mbelenzi",
           "nat": "Canada",
           "pb": "2:26:07",
-          "id": "15026526"
+          "id": "15026526",
+          "hasAvy": false
         },
         {
           "firstName": "Zouhair",
           "lastName": "Talbi",
           "nat": "Morocco",
           "pb": "",
-          "id": "14577963"
+          "id": "14577963",
+          "hasAvy": true
         }
       ]
     }

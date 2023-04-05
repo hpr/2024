@@ -244,6 +244,7 @@ const getEntries = async () => {
                   nat,
                   pb: pb?.toLowerCase() === 'debut' ? '' : pb,
                   id: '',
+                  hasAvy: false,
                 };
               }),
             },
@@ -262,6 +263,7 @@ const getEntries = async () => {
               })) ?? {};
             // if (country && country !== nat) console.log('mismatch country');
             ath.id = id;
+            ath.hasAvy = fs.existsSync(`./public/img/avatars/${id}_128x128.png`);
           }
         }
         entries[meet] = meetEntries;
@@ -510,6 +512,6 @@ const filterEntries = async (meet: DLMeet, isReview: boolean = false) => {
   fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
 };
 
-// getEntries();
+getEntries();
 // filterEntries('ncaai23', false);
-getMediaGuidePhotos('boston23');
+// getMediaGuidePhotos('boston23');

@@ -34,6 +34,7 @@ export type Entrant = {
   sb: string | null;
   nat: string;
   team?: string;
+  hasAvy?: boolean;
 };
 
 export type ResultEntrant = {
