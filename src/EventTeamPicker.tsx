@@ -131,7 +131,7 @@ export const EventTeamPicker = ({
 
           <GridContainer {...gridContainerProps}>
             {entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
-              const { id, firstName, lastName, pb, sb, nat } = entrant;
+              const { id, firstName, lastName, pb, sb, nat, blurb } = entrant;
               if (!id) console.log(firstName, lastName);
               return (
                 <AthleteCard
@@ -141,7 +141,8 @@ export const EventTeamPicker = ({
                   avatar={`img/avatars/${id}_128x128.png`}
                   meet={meet}
                   event={evt!}
-                  entrant={entrant}
+                  entrant={{ ...entrant, blurb: undefined }}
+                  blurb={blurb}
                   name={`${firstName} ${lastName}`}
                   job={nat}
                   stats={[

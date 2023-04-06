@@ -210,6 +210,7 @@ export type Entrant = {
   nat: string;
   team?: string;
   hasAvy?: boolean;
+  blurb?: string;
 };
 
 export type ResultEntrant = {
