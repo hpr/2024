@@ -347,7 +347,7 @@ export default function App() {
                 />
               </MediaQuery>
               <Text size="md">
-                Fantasy Boston Marathon
+                Fantasy Boston23
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20}>
