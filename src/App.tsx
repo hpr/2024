@@ -35,7 +35,7 @@ import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
 import { BrandGit, Calculator, Check, Dots, Mail, Run, Trophy, Users } from 'tabler-icons-react';
-import { DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
+import { DIVIDER, NUM_BACKUP, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -357,25 +357,27 @@ export default function App() {
                   <Popover.Dropdown>
                     <Text mb={10}>
                       Select {PICKS_PER_EVT} athletes per event by selecting events on the left
-                      side, and picking athletes in the main view. The first {PICKS_PER_EVT - 1}{' '}
-                      athletes will be your team, and the last athlete will be a "backup" that will
+                      side, and picking athletes in the main view. The first{' '}
+                      {PICKS_PER_EVT - NUM_BACKUP} athletes will be your team, and the last{' '}
+                      {NUM_BACKUP} athlete{NUM_BACKUP > 1 ? 's' : ''} will be "backup" that will
                       automatically be substituted if any of your team members DNS, DNF, or DQ, only
                       if substituting the backup would improve your score. Your incomplete picks are
                       saved to your computer, and once you submit you can always re-submit to update
                       your picks before the submissions deadline.
                     </Text>
                     <Text mb={10}>
-                      Your athletes will be scored by place: 10, 8, 6, 5, 4, 3, 2, 1 style. Your
-                      Event Captain will score double. Once you have finished your picks, you{' '}
-                      <span style={{ fontWeight: 'bold' }}>must</span> submit them by pressing "Save
-                      Picks" and then registering an account, then you need to log in and click
-                      "Submit Picks".
+                      Your athletes will be scored by place: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 style,
+                      with zero points awarded outside the top 10. The <strong>catch</strong> is
+                      that the order of your team matters: Your first athlete will receive an x
+                      {PICKS_PER_EVT - NUM_BACKUP} score multiplier, then your #2 athlete will
+                      receive an x{PICKS_PER_EVT - NUM_BACKUP - 1} score multiplier, et cetera until
+                      your last athlete receives only an x1 multiplier. Once you have finished your
+                      picks, you <strong>must</strong> submit them by
+                      pressing "Save Picks" and then registering an account, then you need to log in
+                      and click "Submit Picks".
                     </Text>
                     <Text mb={10}>
-                      Prizes as follows, courtesy of the inaugural sponsor{' '}
-                      <span style={{ fontWeight: 'bold' }}>LetsRun.com</span>: First Place: LRC
-                      Supporters Club Membership, Second Place: Free T-Shirt, Third Place: Free
-                      T-Shirt. Submissions Deadline: Friday 3/10 @ 6pm ET.
+                      <strong>Submissions Deadline:</strong> Monday 4/17 before the first race starts.
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>

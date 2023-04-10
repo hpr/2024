@@ -1,5 +1,7 @@
 import {
   Avatar,
+  Button,
+  Group,
   Paper,
   SimpleGrid,
   SimpleGridProps,
@@ -14,7 +16,7 @@ import {
 import { useContext, useState } from 'react';
 import { Check, Dots } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
-import { PICKS_PER_EVT } from './const';
+import { mantineGray, NUM_BACKUP, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, DLMeet, Entries } from './types';
 
@@ -27,7 +29,7 @@ export const EventTeamPicker = ({
   meet: DLMeet;
   evt: AthleticsEvent;
 }) => {
-  const { myTeam } = useContext(Store);
+  const { myTeam, setMyTeam } = useContext(Store);
   const [tableView, setTableView] = useState<boolean>(false);
 
   const TableAndTbody = ({ children, ...props }: TableProps) => (
@@ -69,7 +71,7 @@ export const EventTeamPicker = ({
   const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
   return (
     <>
-      <Paper shadow="xl" radius="xl" p="xl" withBorder>
+      <Paper shadow="xl" radius="xl" p="xl" withBorder sx={{ minHeight: 193 }}>
         <Stack align="center">
           {!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed ? (
             <Text>Event Closed</Text>
@@ -83,12 +85,16 @@ export const EventTeamPicker = ({
                         key={i}
                         withArrow
                         label={`${
-                          i === 0 ? 'Event Captain' : i === 1 ? 'Secondary' : 'Backup'
+                          i === 0
+                            ? 'Event Captain'
+                            : i < PICKS_PER_EVT - NUM_BACKUP
+                            ? `#${i + 1} Member`
+                            : 'Backup'
                         }: ${lastName}`}
                         events={{ hover: true, focus: true, touch: true }}
                       >
                         <Avatar
-                          size={i === 0 ? 'xl' : i === 1 ? 'lg' : 'md'}
+                          size={i === 0 ? 'lg' : i < PICKS_PER_EVT - NUM_BACKUP ? 'md' : 'sm'}
                           src={`img/avatars/${id}_128x128.png`}
                           radius="xl"
                         />
@@ -97,7 +103,13 @@ export const EventTeamPicker = ({
                   </Avatar.Group>
                 </Tooltip.Group>
               ) : (
-                <Text>Select an event captain, secondary pick, and backup pick below</Text>
+                <Text>
+                  Select{' '}
+                  {PICKS_PER_EVT === 3
+                    ? 'an event captain, secondary pick, and backup pick'
+                    : `your team of ${PICKS_PER_EVT} athletes`}{' '}
+                  below
+                </Text>
               )}
               {myTeamPicks.length == PICKS_PER_EVT ? (
                 <>
@@ -121,11 +133,21 @@ export const EventTeamPicker = ({
           <Paper withBorder radius="xl" p="lg" py="md" shadow="xl">
             <Stack align="center">
               <Title order={1}>{evt}</Title>
-              <Switch
-                checked={tableView}
-                onChange={(e) => setTableView(e.currentTarget.checked)}
-                label="Table View?"
-              />
+              <Group>
+                <Switch
+                  checked={tableView}
+                  onChange={(e) => setTableView(e.currentTarget.checked)}
+                  label="Table View?"
+                />
+                <Button
+                  size="xs"
+                  variant="default"
+                  color={mantineGray}
+                  onClick={() => setMyTeam({ ...myTeam, [meet]: { ...myTeam[meet], [evt]: [] } })}
+                >
+                  Reset Team
+                </Button>
+              </Group>
             </Stack>
           </Paper>
 
