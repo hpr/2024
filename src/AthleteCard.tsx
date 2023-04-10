@@ -152,10 +152,10 @@ export function AthleteCard({
                 {(() => {
                   if (isSmall) return '';
                   if (isOnTeam) return 'Remove from Team';
+                  if (team.length >= PICKS_PER_EVT) return 'Team Full';
                   if (team.length === 0) return 'Add as Event Captain';
-                  if (team.length === 1) return 'Add as Secondary';
-                  if (team.length < PICKS_PER_EVT) return 'Add as Backup Athlete';
-                  return 'Team Full';
+                  if (team.length >= PICKS_PER_EVT - NUM_BACKUP) return 'Add as Backup Athlete';
+                  return 'Add to Team';
                 })()}
               </Button>
               <Button
