@@ -166,7 +166,7 @@ export default function App() {
                     await fetch(SERVER_URL, {
                       method: 'POST',
                       body: JSON.stringify({
-                        action: authPage,
+                        action: 'addPicks',
                         ...vals,
                         ...{ meet, picksJson: myTeam[meet] },
                       }),
