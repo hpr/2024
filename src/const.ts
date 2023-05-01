@@ -2,8 +2,8 @@ export const scoring = [140, 120, 110, 100, 90, 80, 70, 60];
 
 export const SERVER_URL = 'https://habs.sdf.org/fantasy1500-server/server.cgi';
 
-export const PICKS_PER_EVT: number = 12;
-export const NUM_BACKUP: number = 2;
+export const PICKS_PER_EVT: number = 4;
+export const NUM_BACKUP: number = 1;
 
 export const GRAPHQL_ENDPOINT =
   'https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql';

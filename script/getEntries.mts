@@ -22,6 +22,9 @@ const schedules: { [k in DLMeet]: string[] } = {
   boston23: [
     'https://www.baa.org/races/boston-marathon/pro-athletes/2023-boston-marathon-professional-team',
   ],
+  doha23: [
+    'https://doha.diamondleague.com/programme-results-doha/'
+  ]
 };
 
 const entrantSortFunc = (a: Entrant, b: Entrant) => {
@@ -218,7 +221,7 @@ const getMediaGuidePhotos = async (meet: DLMeet) => {
 const getEntries = async () => {
   for (const key in schedules) {
     const meet = key as DLMeet;
-    if (meet !== 'boston23') continue;
+    if (meet !== 'doha23') continue;
     entries[meet] = {};
     for (const meetScheduleUrl of schedules[meet]) {
       if (meetScheduleUrl.startsWith('https://www.baa.org')) {
@@ -411,7 +414,8 @@ const getEntries = async () => {
           .filter(({ name }) => runningEvents.flat().includes(name as AthleticsEvent));
         for (const { name: origName, url } of events) {
           const name = origName as AthleticsEvent;
-          if (!cache[meet].events[name]?.startlist) {
+          if (!cache[meet].events?.[name]?.startlist) {
+            cache[meet].events ??= {};
             cache[meet].events[name] ??= {};
             cache[meet].events[name]!.startlist = await (
               await fetch(getDomain(meetScheduleUrl) + url)

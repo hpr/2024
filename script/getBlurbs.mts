@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import { BardAPI, BardChatResponse } from 'bardapi';
 dotenv.config();
 
-const MEET: DLMeet = 'boston23';
+const MEET: DLMeet = 'doha23';
 const BLURBCACHE_PATH = './script/blurbCache.json';
 
 type BlurbCache = { [k: string]: { prompt: string; response: BardChatResponse } };

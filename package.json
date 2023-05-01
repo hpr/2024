@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "getEntries": "node --loader ts-node/esm script/getEntries.mts",
     "getResults": "node --loader ts-node/esm script/getResults.mts",
-    "getAvatars": "node --loader ts-node/esm script/getAvatars.mts",
+    "getAvatars": "tsc --module nodenext --outDir build script/getAvatars.mts && node build/getAvatars.mjs",
     "getBlurbs": "node --loader ts-node/esm script/getBlurbs.mts",
     "getStats": "node --loader ts-node/esm script/getStats.mts",
     "getLeaderboard": "node --loader ts-node/esm script/getLeaderboard.mts",
@@ -71,6 +71,7 @@
     "prettier": "^2.8.3",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
+    "tsx": "^3.12.7",
     "typescript": "^4.9.5",
     "vite": "^4.1.1"
   }

@@ -130,15 +130,21 @@ const getProfilePic = async (
   };
 };
 
+let changedEntrants = false;
 let i = 0;
-for (const { id, firstName, lastName, team, pb } of entrants) {
+for (const entrant of entrants) {
+  const { id, firstName, lastName, team, pb } = entrant;
   console.log(id, firstName, lastName, team, i++, entrants.length);
   const file128 = `./public/img/avatars/${id}_128x128.png`;
   if (fs.existsSync(file128)) {
     if (fs.lstatSync(file128).isSymbolicLink()) {
       console.log('REMOVING SYMLINK', file128);
       fs.unlinkSync(file128);
-    } else continue;
+    } else {
+      entrant.hasAvy = true;
+      changedEntrants = true;
+      continue;
+    }
   }
   let imageUrl = `https://media.aws.iaaf.org/athletes/${id}.jpg`;
   let avatarResp = await fetch(imageUrl);
@@ -237,4 +243,7 @@ for (const { id, firstName, lastName, team, pb } of entrants) {
   }
   avatarCache.urls[id] = imageUrl;
   fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
+}
+if (changedEntrants) {
+  fs.writeFileSync('./public/entries.json', JSON.stringify(entries));
 }

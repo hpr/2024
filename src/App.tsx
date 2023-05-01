@@ -49,7 +49,7 @@ export default function App() {
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('boston23');
+  const [meet] = useState<DLMeet>('doha23');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -128,7 +128,7 @@ export default function App() {
     <Store.Provider
       value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}
     >
-      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register & Submit Picks">
+      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register / Login & Submit Picks">
         {arePicksComplete ? (
           <Stack>
             <SegmentedControl
@@ -347,7 +347,7 @@ export default function App() {
                 />
               </MediaQuery>
               <Text size="md">
-                Fantasy Boston '23
+                Fantasy Doha '23
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20}>
@@ -377,7 +377,8 @@ export default function App() {
                       and click "Submit Picks".
                     </Text>
                     <Text mb={10}>
-                      <strong>Submissions Deadline:</strong> Monday 4/17 before the first race starts.
+                      <strong>Submissions Deadline:</strong> Friday 4/5 before the DL window starts, by noon ET.<br />
+                      <strong>Prizes:</strong> First place wins $50 via Paypal.
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
@@ -393,7 +394,7 @@ export default function App() {
                         variant="default"
                         size="xs"
                         leftIcon={<BrandGit />}
-                        onClick={() => window.open('https://github.com/hpr/boston23', '_blank')}
+                        onClick={() => window.open('https://github.com/hpr/doha23', '_blank')}
                       >
                         Source code
                       </Button>
