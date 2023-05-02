@@ -65,6 +65,7 @@ export default function App() {
       name: '',
       email: '',
       password: '',
+      tiebreaker: '',
     },
     validate: {
       email: isEmail('Invalid email'),
@@ -128,7 +129,11 @@ export default function App() {
     <Store.Provider
       value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}
     >
-      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register / Login & Submit Picks">
+      <Modal
+        opened={modalOpen}
+        onClose={() => setModalOpen(false)}
+        title="Register / Login & Submit Picks"
+      >
         {arePicksComplete ? (
           <Stack>
             <SegmentedControl
@@ -157,7 +162,13 @@ export default function App() {
                     body: JSON.stringify({
                       action: authPage,
                       ...vals,
-                      ...(authPage === 'addPicks' ? { meet, picksJson: myTeam[meet] } : {}),
+                      ...(authPage === 'addPicks'
+                        ? {
+                            meet,
+                            picksJson: myTeam[meet],
+                            tiebreaker: registerForm.values.tiebreaker,
+                          }
+                        : {}),
                     }),
                   })
                 ).json();
@@ -168,7 +179,13 @@ export default function App() {
                       body: JSON.stringify({
                         action: 'addPicks',
                         ...vals,
-                        ...{ meet, picksJson: myTeam[meet] },
+                        ...{
+                          meet,
+                          picksJson: {
+                            ...myTeam[meet],
+                            tiebreaker: registerForm.values.tiebreaker,
+                          },
+                        },
                       }),
                     })
                   ).json());
@@ -204,6 +221,12 @@ export default function App() {
                 label="Password"
                 placeholder="Password"
                 {...registerForm.getInputProps('password')}
+              />
+              <TextInput
+                withAsterisk
+                label="Tiebreaker: Women's 1500 winning time?"
+                placeholder="e.g. 3:55.55"
+                {...registerForm.getInputProps('tiebreaker')}
               />
               <Group position="right" mt="md">
                 <Button
@@ -372,13 +395,15 @@ export default function App() {
                       {PICKS_PER_EVT - NUM_BACKUP} score multiplier, then your #2 athlete will
                       receive an x{PICKS_PER_EVT - NUM_BACKUP - 1} score multiplier, et cetera until
                       your last athlete receives only an x1 multiplier. Once you have finished your
-                      picks, you <strong>must</strong> submit them by
-                      pressing "Save Picks" and then registering an account, then you need to log in
-                      and click "Submit Picks".
+                      picks, you <strong>must</strong> submit them by pressing "Save Picks" and then
+                      registering an account, then you need to log in and click "Submit Picks".
                     </Text>
                     <Text mb={10}>
-                      <strong>Submissions Deadline:</strong> Friday 4/5 before the DL window starts, by noon ET.<br />
-                      <strong>Prizes:</strong> First place wins $50 via Paypal.
+                      <strong>Submissions Deadline:</strong> Friday 4/5 before the DL window starts,
+                      by noon ET.
+                      <br />
+                      <strong>Prizes:</strong> First place's username will be enshrined on the
+                      website for all future contests.
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
