@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",
-    "getEntries": "node --loader ts-node/esm script/getEntries.mts",
+    "getEntries": "tsc --module nodenext --outDir build script/getEntries.mts && node build/getEntries.mjs",
     "getResults": "node --loader ts-node/esm script/getResults.mts",
     "getAvatars": "tsc --module nodenext --outDir build script/getAvatars.mts && node build/getAvatars.mjs",
     "getBlurbs": "tsc --module nodenext --outDir build script/getBlurbs.mts && node build/getBlurbs.mjs",
