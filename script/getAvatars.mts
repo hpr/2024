@@ -228,7 +228,7 @@ for (const entrant of entrants) {
       fs.writeFileSync(`./public/img/avatars/${id}_${label}.png`, Buffer.from(image, 'base64'));
     }
   }
-  avatarCache.urls[id] = imageUrl;
+  avatarCache.urls[id] ??= imageUrl;
   fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
 }
 if (changedEntrants) {
