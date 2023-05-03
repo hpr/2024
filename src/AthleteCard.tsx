@@ -123,10 +123,10 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
             <Avatar variant="outline" bg="gray" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
               {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
             </Avatar>
-            <Group>
-              <Badge size="xl" rightSection="PB">{entrant.pb}</Badge>
+            <Group align="center" position="center">
+              {entrant.pb && <Badge size="xl" rightSection="PB">{entrant.pb}</Badge>}
               {entrant.sb && <Badge size="xl" rightSection="SB">{entrant.sb}</Badge>}
-              <Badge size="xl" leftSection={<World style={{ marginTop: 8 }} />}>{entrant.nat}</Badge>
+              <Badge size="xl" leftSection={<World style={{ marginTop: 10 }} />}>{entrant.nat}</Badge>
             </Group>
             <Button.Group orientation="vertical">
               <Button variant="outline" leftIcon={<AddToTeamButtonIcon />} radius="xl" size="xl" color={isOnTeam ? 'red' : undefined} onClick={addToTeam}>
