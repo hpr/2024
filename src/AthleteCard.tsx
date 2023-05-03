@@ -17,6 +17,7 @@ import {
   Badge,
   Box,
   Grid,
+  CloseButton,
 } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { useContext, useState } from 'react';
@@ -50,7 +51,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const [competitor, setCompetitor] = useState<Competitor | null>(null);
   const [popOpened, { close: popClose, open: popOpen }] = useDisclosure(false);
-  const isSmall = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
+  const isSmall = useMediaQuery(`(max-width: ${theme.breakpoints.md}px)`);
 
   const team = myTeam?.[meet]?.[event] ?? [];
   const teamPosition = team.findIndex((member) => member.id === entrant.id);
@@ -89,7 +90,6 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
     </div>
   ));
 
-  const sideButtonMinWidth = isSmall ? 0 : 300;
   const addToTeam: React.MouseEventHandler = (evt) => {
     evt.stopPropagation();
     if (isClosed) return;
@@ -107,14 +107,14 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
   return (
     <>
       <Modal
-        size={isSmall ? '98%' : 500}
+        size={500}
         title={
-          <Group sx={{ width: '100%' }} position="apart">
-            <Title variant="gradient" gradient={{ from: 'gray', to: 'white' }} order={1}>
-              {entrant.firstName} {entrant.lastName.toUpperCase()}
-            </Title>
-          </Group>
+          <Title variant="gradient" gradient={{ from: 'gray', to: 'white' }} order={1}>
+            {entrant.firstName} {entrant.lastName.toUpperCase()}
+          </Title>
         }
+        closeButtonProps={{ mr: 10, variant: 'outline' }}
+        withCloseButton={true}
         opened={showDetails}
         onClose={() => setShowDetails(false)}
       >
@@ -124,9 +124,19 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
               {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
             </Avatar>
             <Group align="center" position="center">
-              {entrant.pb && <Badge size="xl" rightSection="PB">{entrant.pb}</Badge>}
-              {entrant.sb && <Badge size="xl" rightSection="SB">{entrant.sb}</Badge>}
-              <Badge size="xl" leftSection={<World style={{ marginTop: 10 }} />}>{entrant.nat}</Badge>
+              {entrant.pb && (
+                <Badge size="xl" rightSection="PB">
+                  {entrant.pb}
+                </Badge>
+              )}
+              {entrant.sb && (
+                <Badge size="xl" rightSection="SB">
+                  {entrant.sb}
+                </Badge>
+              )}
+              <Badge size="xl" leftSection={<World style={{ marginTop: 10 }} />}>
+                {entrant.nat}
+              </Badge>
             </Group>
             <Button.Group orientation="vertical">
               <Button variant="outline" leftIcon={<AddToTeamButtonIcon />} radius="xl" size="xl" color={isOnTeam ? 'red' : undefined} onClick={addToTeam}>
