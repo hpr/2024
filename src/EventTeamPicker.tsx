@@ -1,21 +1,4 @@
-import {
-  Avatar,
-  Button,
-  Code,
-  Grid,
-  GridProps,
-  Group,
-  Paper,
-  SimpleGrid,
-  SimpleGridProps,
-  Stack,
-  Switch,
-  Table,
-  TableProps,
-  Text,
-  Title,
-  Tooltip,
-} from '@mantine/core';
+import { Avatar, Button, Code, Grid, GridProps, Group, Paper, Stack, Switch, Table, TableProps, Text, Title, Tooltip } from '@mantine/core';
 import { useContext, useState } from 'react';
 import { Check, Dots } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
@@ -54,7 +37,7 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
       } as TableProps)
     : ({
         justify: 'center',
-      } as Omit<GridProps, 'children'>);
+      } as GridProps);
 
   const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
   return (
