@@ -1,6 +1,6 @@
 import { Avatar, Button, Code, Grid, GridProps, Group, Paper, Stack, Switch, Table, TableProps, Text, Title, Tooltip } from '@mantine/core';
 import { useContext, useState } from 'react';
-import { Check, Dots } from 'tabler-icons-react';
+import { Check, Dots, HandClick, HandFinger } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
 import { mantineGray, NUM_BACKUP, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
@@ -74,7 +74,14 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
                   </Avatar.Group>
                 </Tooltip.Group>
               ) : (
-                <Text>Select {PICKS_PER_EVT === 3 ? 'an event captain, secondary pick, and backup pick' : `your team of ${PICKS_PER_EVT} athletes`} below</Text>
+                <>
+                  <Text>
+                    Select {PICKS_PER_EVT === 3 ? 'an event captain, secondary pick, and backup pick' : `your team of ${PICKS_PER_EVT} athletes`} below
+                  </Text>
+                  <Text>
+                    (<strong>Hint:</strong> You can click / tap <HandClick /> on the athlete's pictures to see detailed reports of PBs and recent results)
+                  </Text>
+                </>
               )}
               {myTeamPicks.length == PICKS_PER_EVT ? (
                 <>
