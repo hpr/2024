@@ -453,7 +453,7 @@ const filterEntries = async (meet: DLMeet, isReview: boolean = false) => {
       }
     }
   }
-  fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
+  fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries));
 };
 
 getEntries();
