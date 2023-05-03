@@ -107,7 +107,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
   return (
     <>
       <Modal
-        size={isSmall ? '98%' : '90%'}
+        size={isSmall ? '98%' : 500}
         title={
           <Group sx={{ width: '100%' }} position="apart">
             <Title variant="gradient" gradient={{ from: 'gray', to: 'white' }} order={1}>
@@ -120,9 +120,11 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
       >
         <div style={{ position: 'relative' }}>
           <Stack align="center">
-            <Button.Group>
+            <Avatar variant="outline" bg="gray" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
+              {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
+            </Avatar>
+            <Button.Group orientation="vertical">
               <Button
-                sx={{ height: 128, minWidth: sideButtonMinWidth, borderRight: 'none' }}
                 variant="outline"
                 leftIcon={<AddToTeamButtonIcon />}
                 radius="xl"
@@ -139,14 +141,8 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
                   return 'Add to Team';
                 })()}
               </Button>
-              <Button color="green" sx={{ height: 128, borderLeft: 'none', borderRight: 'none' }} variant="outline">
-                <Avatar variant="outline" bg="gray" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
-                  {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
-                </Avatar>
-              </Button>
               <Button
                 size="xl"
-                sx={{ height: 128, minWidth: sideButtonMinWidth, borderLeft: 'none' }}
                 variant="outline"
                 radius="xl"
                 leftIcon={<World />}
@@ -164,7 +160,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
               </Accordion>
             )}
             <Title order={2}>Personal Bests</Title>
-            <Box pos="relative">
+            <Box pos="relative" w="100%">
               <Stack align="center">
                 <LoadingOverlay visible={!competitor} overlayBlur={2} />
                 <Table sx={{ textAlign: 'left' }} fontSize="lg" striped highlightOnHover withBorder withColumnBorders>

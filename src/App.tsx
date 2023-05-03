@@ -19,18 +19,10 @@ import {
   ScrollArea,
   Progress,
   Popover,
+  Box,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
-import {
-  AthleticsEvent,
-  AuthPage,
-  DLMeet,
-  Entrant,
-  Entries,
-  Page,
-  Team,
-  TeamToScore,
-} from './types';
+import { AthleticsEvent, AuthPage, DLMeet, Entrant, Entries, Page, Team, TeamToScore } from './types';
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
@@ -115,25 +107,14 @@ export default function App() {
 
   const picksText = Object.keys(myTeam[meet] ?? {})
     .sort(evtSort)
-    .map(
-      (evt) =>
-        `${evt}: ${myTeam[meet]![evt as AthleticsEvent]!.map(
-          ({ firstName, lastName }) => `${firstName} ${lastName}`
-        ).join(', ')}`
-    )
+    .map((evt) => `${evt}: ${myTeam[meet]![evt as AthleticsEvent]!.map(({ firstName, lastName }) => `${firstName} ${lastName}`).join(', ')}`)
     .join('\n');
 
   const hasEventClosed = Object.values(entries?.[meet] ?? {}).some(({ isClosed }) => isClosed);
 
   return (
-    <Store.Provider
-      value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}
-    >
-      <Modal
-        opened={modalOpen}
-        onClose={() => setModalOpen(false)}
-        title="Register / Login & Submit Picks"
-      >
+    <Store.Provider value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}>
+      <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register / Login & Submit Picks">
         {arePicksComplete ? (
           <Stack>
             <SegmentedControl
@@ -195,45 +176,19 @@ export default function App() {
                 else {
                   setIsSuccess(false);
                   registerForm.setErrors({
-                    email: `Error in ${
-                      authPage === 'register' ? 'registration' : 'login'
-                    }, try again?`,
+                    email: `Error in ${authPage === 'register' ? 'registration' : 'login'}, try again?`,
                   });
                 }
               })}
             >
-              <TextInput
-                withAsterisk
-                label="Email"
-                placeholder="usain@bolt.com"
-                {...registerForm.getInputProps('email')}
-              />
+              <TextInput withAsterisk label="Email" placeholder="usain@bolt.com" {...registerForm.getInputProps('email')} />
               {authPage === 'register' && (
-                <TextInput
-                  withAsterisk
-                  label="Name"
-                  placeholder="Usain (will be displayed on leaderboards)"
-                  {...registerForm.getInputProps('name')}
-                />
+                <TextInput withAsterisk label="Name" placeholder="Usain (will be displayed on leaderboards)" {...registerForm.getInputProps('name')} />
               )}
-              <PasswordInput
-                withAsterisk
-                label="Password"
-                placeholder="Password"
-                {...registerForm.getInputProps('password')}
-              />
-              <TextInput
-                withAsterisk
-                label="Tiebreaker: Women's 100m winning time?"
-                placeholder="e.g. 10.80"
-                {...registerForm.getInputProps('tiebreaker')}
-              />
+              <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
+              <TextInput withAsterisk label="Tiebreaker: Women's 100m winning time?" placeholder="e.g. 10.80" {...registerForm.getInputProps('tiebreaker')} />
               <Group position="right" mt="md">
-                <Button
-                  leftIcon={isSuccess ? <Check /> : undefined}
-                  type="submit"
-                  loading={isLoading}
-                >
+                <Button leftIcon={isSuccess ? <Check /> : undefined} type="submit" loading={isLoading}>
                   {authPage === 'register'
                     ? isSuccess
                       ? 'Registered and submitted picks!'
@@ -258,16 +213,11 @@ export default function App() {
           </Stack>
         ) : (
           <>
-            <Text mb={20}>
-              Please complete your picks before submission. You still need to select for these
-              events:
-            </Text>
+            <Text mb={20}>Please complete your picks before submission. You still need to select for these events:</Text>
             <List>
               {Object.keys(entries?.[meet] ?? {})
                 .sort(evtSort)
-                .filter(
-                  (evt) => (myTeam[meet]?.[evt as AthleticsEvent]?.length ?? 0) < PICKS_PER_EVT
-                )
+                .filter((evt) => (myTeam[meet]?.[evt as AthleticsEvent]?.length ?? 0) < PICKS_PER_EVT)
                 .map((evt) => (
                   <List.Item key={evt}>{evt}</List.Item>
                 ))}
@@ -279,73 +229,68 @@ export default function App() {
         padding="md"
         navbarOffsetBreakpoint="sm"
         navbar={
-          <Navbar
-            sx={{ zIndex: 99 }}
-            width={{ base: 300 }}
-            hiddenBreakpoint="sm"
-            hidden={!navbarOpen}
-            height="calc(100% - 60px)"
-            p="md"
-          >
+          <Navbar sx={{ zIndex: 99 }} width={{ base: 300 }} hiddenBreakpoint="sm" hidden={!navbarOpen} height="calc(100% - 60px)" p="md">
             <ScrollArea type="always" offsetScrollbars scrollbarSize={15}>
-              <Navbar.Section grow mt="xs">
-                <MainLinks
-                  links={[
-                    ...(hasEventClosed
-                      ? [
-                          {
-                            icon: <Trophy />,
-                            color: 'gold',
-                            label: 'Leaderboard',
-                            onClick: () => {
-                              navigate('/leaderboard');
-                              setPage('leaderboard');
-                              setNavbarOpen(false);
+              <Box w={266}>
+                <Navbar.Section grow mt="xs">
+                  <MainLinks
+                    links={[
+                      ...(hasEventClosed
+                        ? [
+                            {
+                              icon: <Trophy />,
+                              color: 'gold',
+                              label: 'Leaderboard',
+                              onClick: () => {
+                                navigate('/leaderboard');
+                                setPage('leaderboard');
+                                setNavbarOpen(false);
+                              },
                             },
-                          },
-                          {
-                            icon: <Calculator />,
-                            color: 'black',
-                            label: 'Results',
-                            onClick: () => {
-                              navigate('/scoring');
-                              setPage('scoring');
-                              setNavbarOpen(false);
+                            {
+                              icon: <Calculator />,
+                              color: 'black',
+                              label: 'Results',
+                              onClick: () => {
+                                navigate('/scoring');
+                                setPage('scoring');
+                                setNavbarOpen(false);
+                              },
                             },
-                          },
-                        ]
-                      : []),
-                    {
-                      icon: <Users />,
-                      color: 'black',
-                      label: 'Submissions',
-                      onClick: () => {
-                        navigate('/submissions');
-                        setPage('submissions');
-                        setNavbarOpen(false);
+                          ]
+                        : []),
+                      {
+                        icon: <Users />,
+                        color: 'black',
+                        label: 'Submissions',
+                        onClick: () => {
+                          navigate('/submissions');
+                          setPage('submissions');
+                          setNavbarOpen(false);
+                        },
                       },
-                    },
-                    DIVIDER,
-                    ...Object.keys(entries?.[meet] ?? {})
-                      .sort(evtSort)
-                      .map((label) => {
-                        const linkEvt = label as AthleticsEvent;
-                        const filled = myTeam[meet]?.[linkEvt]?.length === PICKS_PER_EVT;
-                        return {
-                          icon: filled ? <Check /> : <Run />,
-                          color: filled ? 'green' : 'blue',
-                          onClick: () => {
-                            navigate(`evt/${linkEvt}`);
-                            setEvt(linkEvt);
-                            setPage('events');
-                            setNavbarOpen(false);
-                          },
-                          label,
-                        };
-                      }),
-                  ]}
-                />
-              </Navbar.Section>
+                      DIVIDER,
+                      ...Object.keys(entries?.[meet] ?? {})
+                        .sort(evtSort)
+                        .map((label) => {
+                          const linkEvt = label as AthleticsEvent;
+                          const filled = myTeam[meet]?.[linkEvt]?.length === PICKS_PER_EVT;
+                          return {
+                            icon: filled ? <Check /> : <Run />,
+                            color: filled ? 'green' : 'blue',
+                            onClick: () => {
+                              navigate(`evt/${linkEvt}`);
+                              setEvt(linkEvt);
+                              setPage('events');
+                              setNavbarOpen(false);
+                            },
+                            label,
+                          };
+                        }),
+                    ]}
+                  />
+                </Navbar.Section>
+              </Box>
             </ScrollArea>
 
             <Navbar.Section
@@ -361,13 +306,7 @@ export default function App() {
           <Header height={60} p="xs">
             <Group sx={{ height: '100%' }} px={20} position="apart">
               <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
-                <Burger
-                  opened={navbarOpen}
-                  onClick={() => setNavbarOpen((o) => !o)}
-                  size="sm"
-                  color={theme.colors.gray[6]}
-                  mr="xl"
-                />
+                <Burger opened={navbarOpen} onClick={() => setNavbarOpen((o) => !o)} size="sm" color={theme.colors.gray[6]} mr="xl" />
               </MediaQuery>
               <Text size="md">
                 Fantasy Doha '23
@@ -379,48 +318,30 @@ export default function App() {
                   </Popover.Target>
                   <Popover.Dropdown>
                     <Text mb={10}>
-                      Select {PICKS_PER_EVT} athletes per event by selecting events on the left
-                      side, and picking athletes in the main view. The first{' '}
-                      {PICKS_PER_EVT - NUM_BACKUP} athletes will be your team, and the last{' '}
-                      {NUM_BACKUP} athlete{NUM_BACKUP > 1 ? 's' : ''} will be "backup" that will
-                      automatically be substituted if any of your team members DNS, DNF, or DQ, only
-                      if substituting the backup would improve your score. Your incomplete picks are
-                      saved to your computer, and once you submit you can always re-submit to update
-                      your picks before the submissions deadline.
+                      Select {PICKS_PER_EVT} athletes per event by selecting events on the left side, and picking athletes in the main view. The first{' '}
+                      {PICKS_PER_EVT - NUM_BACKUP} athletes will be your team, and the last {NUM_BACKUP} athlete{NUM_BACKUP > 1 ? 's' : ''} will be "backup"
+                      that will automatically be substituted if any of your team members DNS, DNF, or DQ, only if substituting the backup would improve your
+                      score. Your incomplete picks are saved to your computer, and once you submit you can always re-submit to update your picks before the
+                      submissions deadline.
                     </Text>
                     <Text mb={10}>
-                      Your athletes will be scored by place: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 style,
-                      with zero points awarded outside the top 10. The <strong>catch</strong> is
-                      that the order of your team matters: Your first athlete will receive an x
-                      {PICKS_PER_EVT - NUM_BACKUP} score multiplier, then your #2 athlete will
-                      receive an x{PICKS_PER_EVT - NUM_BACKUP - 1} score multiplier, et cetera until
-                      your last athlete receives only an x1 multiplier. Once you have finished your
-                      picks, you <strong>must</strong> submit them by pressing "Save Picks" and then
+                      Your athletes will be scored by place: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 style, with zero points awarded outside the top 10. The{' '}
+                      <strong>catch</strong> is that the order of your team matters: Your first athlete will receive an x{PICKS_PER_EVT - NUM_BACKUP} score
+                      multiplier, then your #2 athlete will receive an x{PICKS_PER_EVT - NUM_BACKUP - 1} score multiplier, et cetera until your last athlete
+                      receives only an x1 multiplier. Once you have finished your picks, you <strong>must</strong> submit them by pressing "Save Picks" and then
                       registering an account, then you need to log in and click "Submit Picks".
                     </Text>
                     <Text mb={10}>
-                      <strong>Submissions Deadline:</strong> Friday 4/5 before the DL window starts,
-                      by noon ET.
+                      <strong>Submissions Deadline:</strong> Friday 4/5 before the DL window starts, by noon ET.
                       <br />
-                      <strong>Prizes:</strong> First place's username will be enshrined on the
-                      website for all future contests.
+                      <strong>Prizes:</strong> First place's username will be enshrined on the website for all future contests.
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
-                      <Button
-                        variant="default"
-                        size="xs"
-                        leftIcon={<Mail />}
-                        onClick={() => window.open('mailto:habs@sdf.org')?.close()}
-                      >
+                      <Button variant="default" size="xs" leftIcon={<Mail />} onClick={() => window.open('mailto:habs@sdf.org')?.close()}>
                         habs@sdf.org
                       </Button>
-                      <Button
-                        variant="default"
-                        size="xs"
-                        leftIcon={<BrandGit />}
-                        onClick={() => window.open('https://github.com/hpr/doha23', '_blank')}
-                      >
+                      <Button variant="default" size="xs" leftIcon={<BrandGit />} onClick={() => window.open('https://github.com/hpr/doha23', '_blank')}>
                         Source code
                       </Button>
                     </Group>
@@ -441,8 +362,7 @@ export default function App() {
         }
         styles={(theme) => ({
           main: {
-            backgroundColor:
-              theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
+            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
           },
         })}
       >
