@@ -312,3 +312,5 @@ export type Competitor = {
     }[];
   };
 };
+
+export type BlurbCache = { [k in DLMeet]: { blurbs: { [k in AthleticsEvent]?: string }; athletes: { [k: string]: Competitor } } };

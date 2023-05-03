@@ -1,9 +1,9 @@
 import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import { nameFixer } from 'name-fixer';
-import { AthleticsEvent, DLMeet, Entrant, Entries, MeetCache, WAEventCode } from './types.mjs';
+import { AthleticsEvent, BlurbCache, DLMeet, Entrant, Entries, MeetCache, WAEventCode } from './types.mjs';
 import PDFParser, { Output } from 'pdf2json';
-import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain } from './const.mjs';
+import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain, BLURBCACHE_PATH } from './const.mjs';
 import PDFJS from 'pdfjs-dist/legacy/build/pdf.js';
 import { PNG } from 'pngjs';
 import { TextItem } from 'pdfjs-dist/types/src/display/api.js';
@@ -194,6 +194,7 @@ const getMediaGuidePhotos = async (meet: DLMeet) => {
 };
 
 const getEntries = async () => {
+  const blurbCache: BlurbCache = JSON.parse(fs.readFileSync(BLURBCACHE_PATH, 'utf-8'));
   for (const key in schedules) {
     const meet = key as DLMeet;
     if (meet !== 'doha23') continue;
@@ -239,8 +240,7 @@ const getEntries = async () => {
           }
         }
         entries[meet] = meetEntries;
-      }
-      if (meetScheduleUrl.startsWith('https://www.tfrrs.org')) {
+      } else if (meetScheduleUrl.startsWith('https://www.tfrrs.org')) {
         const isMale = meetScheduleUrl.endsWith('m');
         cache[meet] ??= { events: {}, ids: {}, schedule: {} };
         cache[meet].schedule[isMale ? 'm' : 'f'] ??= await (await fetch(meetScheduleUrl)).text();
@@ -409,13 +409,14 @@ const getEntries = async () => {
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
             date: `${year}-${month}-${day}T${document.querySelector('.time')!.getAttribute('data-starttime')}`,
+            blurb: blurbCache[meet]?.blurbs?.[name],
             entrants: entrants.sort(entrantSortFunc),
           };
         }
       }
     }
   }
-  fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
+  fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries));
   fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 };
 

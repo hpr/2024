@@ -57,6 +57,7 @@ export const sprintEvents: AthleticsEvent[] = [
 export const CACHE_PATH = './script/cache.json';
 export const ENTRIES_PATH = './public/entries.json';
 export const LB_PATH = './public/leaderboard.json';
+export const BLURBCACHE_PATH = './script/blurbCache.json';
 
 export const disciplineCodes: { [k: string]: WAEventCode } = {
   '50 Meters': '50',
