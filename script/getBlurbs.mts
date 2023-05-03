@@ -84,13 +84,14 @@ async function getBlurbs() {
     }
     prompt += `Please predict the final places and times of the athletes and explain why you think they will finish in that order. List the athletes in order of finish. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data.`;
 
-    fs.writeFileSync('prompt.txt', prompt);
+    // fs.writeFileSync('prompt.txt', prompt);
     console.log(prompt);
     blurbCache[MEET].blurbs[evt] ??= '';
     if (!blurbCache[MEET].blurbs[evt]) process.exit();
     // blurbCache[MEET].blurbs[evt] = response;
+    entries[MEET][evt]!.blurb = blurbCache[MEET].blurbs[evt];
     fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache, null, 2));
-    // fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
+    fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries));
     // await new Promise((res) => setTimeout(res, 1000));
   }
 }

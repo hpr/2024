@@ -1,4 +1,5 @@
 import { MantineProvider, MantineThemeOverride } from '@mantine/core';
+import { ModalsProvider } from '@mantine/modals';
 
 export const theme: MantineThemeOverride = {
   colorScheme: 'dark',
@@ -11,7 +12,7 @@ interface ThemeProviderProps {
 export function ThemeProvider({ children }: ThemeProviderProps) {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS theme={theme}>
-      {children}
+      <ModalsProvider>{children}</ModalsProvider>
     </MantineProvider>
   );
 }

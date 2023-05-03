@@ -28,9 +28,10 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
-    "@mantine/core": "5.10.3",
+    "@mantine/core": "^6.0.10",
     "@mantine/form": "^5.10.5",
-    "@mantine/hooks": "5.10.3",
+    "@mantine/hooks": "^6.0.10",
+    "@mantine/modals": "^6.0.10",
     "badwords-filter": "^1.3.0",
     "bardapi": "^1.0.4",
     "chatgpt": "^5.2.4",

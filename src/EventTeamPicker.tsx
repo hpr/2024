@@ -1,34 +1,13 @@
-import {
-  Avatar,
-  Button,
-  Group,
-  Paper,
-  SimpleGrid,
-  SimpleGridProps,
-  Stack,
-  Switch,
-  Table,
-  TableProps,
-  Text,
-  Title,
-  Tooltip,
-} from '@mantine/core';
+import { Avatar, Button, Code, Group, Paper, SimpleGrid, SimpleGridProps, Stack, Switch, Table, TableProps, Text, Title, Tooltip } from '@mantine/core';
 import { useContext, useState } from 'react';
 import { Check, Dots } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
 import { mantineGray, NUM_BACKUP, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, DLMeet, Entries } from './types';
+import { modals } from '@mantine/modals';
 
-export const EventTeamPicker = ({
-  entries,
-  meet,
-  evt,
-}: {
-  entries: Entries | null;
-  meet: DLMeet;
-  evt: AthleticsEvent;
-}) => {
+export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | null; meet: DLMeet; evt: AthleticsEvent }) => {
   const { myTeam, setMyTeam } = useContext(Store);
   const [tableView, setTableView] = useState<boolean>(false);
 
@@ -84,32 +63,16 @@ export const EventTeamPicker = ({
                       <Tooltip
                         key={i}
                         withArrow
-                        label={`${
-                          i === 0
-                            ? 'Event Captain'
-                            : i < PICKS_PER_EVT - NUM_BACKUP
-                            ? `#${i + 1} Member`
-                            : 'Backup'
-                        }: ${lastName}`}
+                        label={`${i === 0 ? 'Event Captain' : i < PICKS_PER_EVT - NUM_BACKUP ? `#${i + 1} Member` : 'Backup'}: ${lastName}`}
                         events={{ hover: true, focus: true, touch: true }}
                       >
-                        <Avatar
-                          size={i === 0 ? 'lg' : i < PICKS_PER_EVT - NUM_BACKUP ? 'md' : 'sm'}
-                          src={`img/avatars/${id}_128x128.png`}
-                          radius="xl"
-                        />
+                        <Avatar size={i === 0 ? 'lg' : i < PICKS_PER_EVT - NUM_BACKUP ? 'md' : 'sm'} src={`img/avatars/${id}_128x128.png`} radius="xl" />
                       </Tooltip>
                     ))}
                   </Avatar.Group>
                 </Tooltip.Group>
               ) : (
-                <Text>
-                  Select{' '}
-                  {PICKS_PER_EVT === 3
-                    ? 'an event captain, secondary pick, and backup pick'
-                    : `your team of ${PICKS_PER_EVT} athletes`}{' '}
-                  below
-                </Text>
+                <Text>Select {PICKS_PER_EVT === 3 ? 'an event captain, secondary pick, and backup pick' : `your team of ${PICKS_PER_EVT} athletes`} below</Text>
               )}
               {myTeamPicks.length == PICKS_PER_EVT ? (
                 <>
@@ -134,20 +97,25 @@ export const EventTeamPicker = ({
             <Stack align="center">
               <Title order={1}>{evt}</Title>
               <Group>
-                <Switch
-                  checked={tableView}
-                  onChange={(e) => setTableView(e.currentTarget.checked)}
-                  label="Table View?"
-                />
-                <Button
-                  size="xs"
-                  variant="default"
-                  color={mantineGray}
-                  onClick={() => setMyTeam({ ...myTeam, [meet]: { ...myTeam[meet], [evt]: [] } })}
-                >
+                <Switch checked={tableView} onChange={(e) => setTableView(e.currentTarget.checked)} label="Table View?" />
+                <Button size="xs" variant="default" color={mantineGray} onClick={() => setMyTeam({ ...myTeam, [meet]: { ...myTeam[meet], [evt]: [] } })}>
                   Reset Team
                 </Button>
               </Group>
+              <Button
+                onClick={() =>
+                  modals.open({
+                    title: `${evt} AI Preview`,
+                    children: (
+                      <Code block sx={{ whiteSpace: 'pre-wrap' }}>
+                        {entries?.[meet]?.[evt]?.blurb?.replaceAll('\\n', '\n')}
+                      </Code>
+                    ),
+                  })
+                }
+              >
+                Open Preview
+              </Button>
             </Stack>
           </Paper>
 

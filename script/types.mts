@@ -227,6 +227,7 @@ export type Entries = {
       date: string;
       results?: ResultEntrant[];
       isClosed?: boolean;
+      blurb?: string;
     };
   };
 };
