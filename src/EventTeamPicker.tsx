@@ -26,18 +26,28 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
     </Table>
   );
 
-  const GridContainer = tableView ? TableAndTbody : Grid;
-  const gridContainerProps = tableView
-    ? ({
-        fontSize: 'lg',
-        striped: true,
-        highlightOnHover: true,
-        withBorder: true,
-        withColumnBorders: true,
-      } as TableProps)
-    : ({
-        justify: 'center',
-      } as GridProps);
+  const gridChildren = entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
+    const { id, firstName, lastName, pb, sb, nat, blurb } = entrant;
+    if (!id) console.log(firstName, lastName);
+    return (
+      <AthleteCard
+        isClosed={!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed}
+        key={id}
+        tableView={tableView}
+        avatar={`img/avatars/${id}_128x128.png`}
+        meet={meet}
+        event={evt!}
+        entrant={{ ...entrant, blurb: undefined }}
+        blurb={blurb}
+        name={`${firstName} ${lastName}`}
+        job={nat}
+        stats={[
+          { label: 'PB', value: pb! },
+          { label: 'SB', value: sb! },
+        ].filter((x) => x.value)}
+      />
+    );
+  });
 
   const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
   return (
@@ -111,30 +121,13 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
             </Stack>
           </Paper>
 
-          <GridContainer {...gridContainerProps}>
-            {entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
-              const { id, firstName, lastName, pb, sb, nat, blurb } = entrant;
-              if (!id) console.log(firstName, lastName);
-              return (
-                <AthleteCard
-                  isClosed={!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed}
-                  key={id}
-                  tableView={tableView}
-                  avatar={`img/avatars/${id}_128x128.png`}
-                  meet={meet}
-                  event={evt!}
-                  entrant={{ ...entrant, blurb: undefined }}
-                  blurb={blurb}
-                  name={`${firstName} ${lastName}`}
-                  job={nat}
-                  stats={[
-                    { label: 'PB', value: pb! },
-                    { label: 'SB', value: sb! },
-                  ].filter((x) => x.value)}
-                />
-              );
-            })}
-          </GridContainer>
+          {tableView ? (
+            <TableAndTbody fontSize="lg" striped highlightOnHover withBorder withColumnBorders>
+              {gridChildren}
+            </TableAndTbody>
+          ) : (
+            <Grid justify="center">{gridChildren}</Grid>
+          )}
         </Stack>
       </Paper>
     </>
