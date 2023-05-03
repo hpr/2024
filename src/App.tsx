@@ -224,7 +224,7 @@ export default function App() {
               />
               <TextInput
                 withAsterisk
-                label="Tiebreaker: Women's 3K steeplechase winning time?"
+                label="Tiebreaker: Women's 100m winning time?"
                 placeholder="e.g. 9:01.01"
                 {...registerForm.getInputProps('tiebreaker')}
               />
