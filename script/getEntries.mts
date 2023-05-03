@@ -21,6 +21,11 @@ const schedules: { [k in DLMeet]: string[] } = {
   doha23: ['https://doha.diamondleague.com/programme-results-doha/'],
 };
 
+const idTeams = {
+  14564128: 'LSU',
+  14627624: 'WSU Cougars',
+};
+
 const entrantSortFunc = (a: Entrant, b: Entrant) => {
   if (!a.pb && !b.pb) return 0;
   if (!a.pb) return 1;
@@ -115,10 +120,6 @@ const getWaId = async (
       return true;
     }) ?? {};
   return aaAthleteId ? { id: aaAthleteId, country } : undefined;
-};
-
-const idTeams = {
-  14564128: 'LSU',
 };
 
 const entries: Entries = {};

@@ -16,6 +16,8 @@ const key = 'AIzaSyB1icoMXVbxjiAzwBTI_4FufkzTnX78U0s';
 const AVATAR_CACHE = './script/avatarCache.json';
 const P_WA_ATHLETE_ID = 'P1146';
 const P_USATF_ATHLETE_ID = 'P10634';
+const P_OLYMPEDIA_ID = 'P8286';
+const P_DESCRIBED_AT_URL = 'P973';
 
 const wbk = WBK({
   instance: 'https://www.wikidata.org',
@@ -138,49 +140,49 @@ for (const entrant of entrants) {
   let avatarBuffer: ArrayBuffer | undefined;
   let images: PixelMeImage[] = [];
   if (avatarResp.status === 403) {
+    if (avatarCache.urls[id]) {
+      avatarResp = await fetch(avatarCache.urls[id]);
+    }
     if (fs.existsSync(`./public/img/avatars/${id}.png`)) {
       avatarBuffer = fs.readFileSync(`./public/img/avatars/${id}.png`);
     } else if (team) {
       let imgUrl: string | undefined;
-      if (avatarCache.urls[id]) imgUrl = avatarCache.urls[id];
-      else {
-        const prevDomains: string[] = [];
-        for (const { searchQuery, allowDupes } of [
-          { searchQuery: `${firstName} ${lastName} ${team} track and field roster` },
-          {
-            searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} track and field roster`,
-          },
-          {
-            searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} cross country roster`,
-            allowDupes: true,
-          },
-        ]) {
-          const { results } = await google.search(searchQuery);
-          const { url } =
-            results.find(({ url, is_sponsored }) => {
-              if (is_sponsored) return false;
-              if (!allowDupes && prevDomains.includes(getDomain(url))) return false;
-              if (url.includes('tfrrs.org')) return false;
-              if (url.includes('athletic.net')) return false;
-              if (url.includes('worldathletics.org')) return false;
-              if (url.endsWith('/roster/')) return false;
-              return true;
-            })! ?? {};
-          if (!url) console.log(results);
-          prevDomains.push(getDomain(url));
-          console.log(searchQuery, url);
-          ({ imgUrl, avatarBuffer } = await getProfilePic(url, { firstName, lastName }));
-          if (!avatarBuffer) continue;
-          images = await getIcons(avatarBuffer);
-          if (images.length) break;
-        }
-        if (!images.length) {
-          // fs.symlinkSync('./default_128x128.png', file128);
-          continue;
-        }
-        avatarCache.urls[id] = imgUrl!;
-        fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
+      const prevDomains: string[] = [];
+      for (const { searchQuery, allowDupes } of [
+        { searchQuery: `${firstName} ${lastName} ${team} track and field roster` },
+        {
+          searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} track and field roster`,
+        },
+        {
+          searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} cross country roster`,
+          allowDupes: true,
+        },
+      ]) {
+        const { results } = await google.search(searchQuery);
+        const { url } =
+          results.find(({ url, is_sponsored }) => {
+            if (is_sponsored) return false;
+            if (!allowDupes && prevDomains.includes(getDomain(url))) return false;
+            if (url.includes('tfrrs.org')) return false;
+            if (url.includes('athletic.net')) return false;
+            if (url.includes('worldathletics.org')) return false;
+            if (url.endsWith('/roster/')) return false;
+            return true;
+          })! ?? {};
+        if (!url) console.log(results);
+        prevDomains.push(getDomain(url));
+        console.log(searchQuery, url);
+        ({ imgUrl, avatarBuffer } = await getProfilePic(url, { firstName, lastName }));
+        if (!avatarBuffer) continue;
+        images = await getIcons(avatarBuffer);
+        if (images.length) break;
       }
+      if (!images.length) {
+        // fs.symlinkSync('./default_128x128.png', file128);
+        continue;
+      }
+      avatarCache.urls[id] = imgUrl!;
+      fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
     } else {
       const qid: EntityId = wbk.parse.pagesTitles(
         await (await fetch(wbk.cirrusSearchPages({ haswbstatement: `${P_WA_ATHLETE_ID}=${id}` }))).json()
@@ -188,17 +190,27 @@ for (const entrant of entrants) {
       if (qid) {
         const athObj = wbk.simplify.entity((await (await fetch(wbk.getEntities({ ids: qid }))).json()).entities[qid]) as SimplifiedItem;
         const usatfId = athObj.claims?.[P_USATF_ATHLETE_ID]?.[0];
+        const olympediaId = athObj.claims?.[P_OLYMPEDIA_ID]?.[0];
+        const describedAtUrl = athObj.claims?.[P_DESCRIBED_AT_URL]?.[0];
         if (usatfId) {
           const url = `https://www.usatf.org/athlete-bios/${usatfId}`;
           const { document } = new JSDOM(await (await fetch(url)).text()).window;
           let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
           if (imageUrl?.startsWith('/')) imageUrl = getDomain(url) + imageUrl;
           avatarResp = await fetch(imageUrl!);
+        } else if (olympediaId) {
+          const imageUrl = `https://d2a3o6pzho379u.cloudfront.net/${olympediaId}.jpg`;
+          avatarResp = await fetch(imageUrl);
+        } else if (describedAtUrl) {
+          const { document } = new JSDOM(await (await fetch(describedAtUrl as string)).text()).window;
+          let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
+          if (imageUrl?.startsWith('/')) imageUrl = getDomain(describedAtUrl as string) + imageUrl;
+          avatarResp = await fetch(imageUrl!);
         }
       }
     }
   }
-  if (avatarResp.status === 403) continue;
+  if (avatarResp.status === 403 && !avatarBuffer) continue;
   avatarBuffer ??= await avatarResp.arrayBuffer();
   const size: gm.Dimensions = await new Promise((res) => gm(Buffer.from(avatarBuffer!), 'image.jpg').size((_, size) => res(size)));
   if (size.width > 1024)
