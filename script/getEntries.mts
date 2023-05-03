@@ -117,6 +117,10 @@ const getWaId = async (
   return aaAthleteId ? { id: aaAthleteId, country } : undefined;
 };
 
+const idTeams = {
+  14564128: 'LSU',
+};
+
 const entries: Entries = {};
 
 const getMediaGuidePhotos = async (meet: DLMeet) => {
@@ -403,6 +407,7 @@ const getEntries = async () => {
               sb: elem.querySelector('.column.sb')?.textContent || null,
               nat: elem.querySelector('.column.nat')!.textContent!.trim(),
               hasAvy: fs.existsSync(`./public/img/avatars/${id}_128x128.png`),
+              team: idTeams[id],
             };
           });
           console.log(entrants);
