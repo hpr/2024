@@ -5903,6 +5903,11 @@ wide-align@^1.1.2:
   dependencies:
     string-width "^1.0.2 || 2 || 3 || 4"
 
+wikibase-sdk@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.npmjs.org/wikibase-sdk/-/wikibase-sdk-9.1.0.tgz"
+  integrity sha512-dGIT7lXe+F4I/aPPhjpg3H7C1GY3EotGESGMlR1a5DvMUEnrzMc7UG4W0mVd7hONBLePmkHhDxtHQAh6TRuQ4A==
+
 word-wrap@^1.2.3, word-wrap@~1.2.3:
   version "1.2.3"
   resolved "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz"

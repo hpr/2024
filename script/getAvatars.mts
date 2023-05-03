@@ -4,6 +4,7 @@ import google, { image, search } from 'googlethis';
 import { JSDOM } from 'jsdom';
 import gm from 'gm';
 import { getDomain } from './const.mjs';
+import WBK, { EntityId, SimplifiedItem } from 'wikibase-sdk';
 
 //    .-.
 //   (0.0)
@@ -13,15 +14,18 @@ import { getDomain } from './const.mjs';
 const PIXELME_API = 'https://pixel-me-api-gateway-cj34o73d6a-an.a.run.app/api/v1';
 const key = 'AIzaSyB1icoMXVbxjiAzwBTI_4FufkzTnX78U0s';
 const AVATAR_CACHE = './script/avatarCache.json';
+const P_WA_ATHLETE_ID = 'P1146';
+const P_USATF_ATHLETE_ID = 'P10634';
 
-const avatarCache: { urls: { [k: string]: string } } = JSON.parse(
-  fs.readFileSync(AVATAR_CACHE, 'utf-8')
-);
+const wbk = WBK({
+  instance: 'https://www.wikidata.org',
+  sparqlEndpoint: 'https://query.wikidata.org/sparql',
+});
+
+const avatarCache: { urls: { [k: string]: string } } = JSON.parse(fs.readFileSync(AVATAR_CACHE, 'utf-8'));
 
 const entries: Entries = JSON.parse(fs.readFileSync('./public/entries.json', 'utf-8'));
-const entrants: Entrant[] = Object.values(entries).flatMap((meet) =>
-  Object.values(meet).flatMap(({ entrants }) => entrants)
-);
+const entrants: Entrant[] = Object.values(entries).flatMap((meet) => Object.values(meet).flatMap(({ entrants }) => entrants));
 
 type PixelMeImage = { image: string; label: string };
 
@@ -37,7 +41,7 @@ const getIcons = async (avatarBuffer: ArrayBuffer) => {
     })
   ).json();
   if (Object.keys(rest).length) console.log(rest);
-  if (rest.detail === 'No face detected.') {
+  if (rest.detail === 'No face detected.' || rest.detail === 'Invalid input image.') {
     return [];
   }
   const { image } = detectData;
@@ -63,20 +67,12 @@ const getProfilePic = async (
   let imgUrl: string | undefined;
   const { document, window } = new JSDOM(await (await fetch(url)).text()).window;
   const ogImages = document.querySelectorAll('meta[name="og:image"]');
-  if (
-    ogImages.length === 1 &&
-    !ogImages[0].getAttribute('content')?.includes('/amt-media/') &&
-    !ogImages[0].getAttribute('content')?.endsWith('site.png')
-  )
+  if (ogImages.length === 1 && !ogImages[0].getAttribute('content')?.includes('/amt-media/') && !ogImages[0].getAttribute('content')?.endsWith('site.png'))
     imgUrl = ogImages[0].getAttribute('content')!;
   const nots = `:not([src*=dummy-data])`;
   imgUrl ??= (document.querySelector('.player__hero img' + nots)?.getAttribute('src') ??
-    document
-      .querySelector(`img.block[alt="${firstName} ${lastName}"]` + nots)
-      ?.getAttribute('src') ??
-    document
-      .querySelector(`img.block[alt="${firstName} ${lastName} Headshot"]`)
-      ?.getAttribute('src') ??
+    document.querySelector(`img.block[alt="${firstName} ${lastName}"]` + nots)?.getAttribute('src') ??
+    document.querySelector(`img.block[alt="${firstName} ${lastName} Headshot"]`)?.getAttribute('src') ??
     document.querySelector('.player__photo > img' + nots)?.getAttribute('src') ??
     document.querySelector('.bordeaux_bio__profile_picture > img' + nots)?.getAttribute('src') ??
     document.querySelector('.avatar > img' + nots)?.getAttribute('src') ??
@@ -93,28 +89,18 @@ const getProfilePic = async (
   if (!imgUrl) {
     const matches = [...document.querySelectorAll('script')]
       .at(-1)
-      ?.innerHTML.match(
-        new RegExp(
-          `images\\\\u002F\\d+\\\\u002F\\d+\\\\u002F\\d+\\\\u002F${firstName}_${lastName}.jpg`,
-          'i'
-        )
-      ) ?? [''];
+      ?.innerHTML.match(new RegExp(`images\\\\u002F\\d+\\\\u002F\\d+\\\\u002F\\d+\\\\u002F${firstName}_${lastName}.jpg`, 'i')) ?? [''];
     const relative = decodeURIComponent(JSON.parse('"' + matches[0].replace(/\"/g, '\\"') + '"'));
     if (relative) imgUrl = '/' + relative;
   }
   if (imgUrl?.startsWith('/')) imgUrl = getDomain(url) + imgUrl;
   if ((imgUrl ?? '').toLowerCase().split('/').at(-1)?.includes('logo')) {
-    imgUrl = window
-      .getComputedStyle(document.querySelector('.sidearm-roster-player-image-historical')!, null)
-      .backgroundImage.slice(4, -1)
-      .replace(/"/g, '');
+    imgUrl = window.getComputedStyle(document.querySelector('.sidearm-roster-player-image-historical')!, null).backgroundImage.slice(4, -1).replace(/"/g, '');
   }
   console.log(imgUrl);
   if (!imgUrl) return {};
   const imgArrBuf = await (await fetch(imgUrl!)).arrayBuffer();
-  const size: gm.Dimensions = await new Promise((res) =>
-    gm(Buffer.from(imgArrBuf), 'image.jpg').size((_, size) => res(size))
-  );
+  const size: gm.Dimensions = await new Promise((res) => gm(Buffer.from(imgArrBuf), 'image.jpg').size((_, size) => res(size)));
   if (!size) return {};
   if (size.width > size.height * 1.5) return {};
   return {
@@ -162,14 +148,10 @@ for (const entrant of entrants) {
         for (const { searchQuery, allowDupes } of [
           { searchQuery: `${firstName} ${lastName} ${team} track and field roster` },
           {
-            searchQuery: `${firstName} ${lastName} ${
-              new Date().getFullYear() - 1
-            } track and field roster`,
+            searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} track and field roster`,
           },
           {
-            searchQuery: `${firstName} ${lastName} ${
-              new Date().getFullYear() - 1
-            } cross country roster`,
+            searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} cross country roster`,
             allowDupes: true,
           },
         ]) {
@@ -200,32 +182,24 @@ for (const entrant of entrants) {
         fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
       }
     } else {
-      const searchQuery = `"${firstName} ${lastName}" ${pb ? 'Marathon ' : ''}runner face`;
-      let images: Awaited<ReturnType<typeof google.image>> = [];
-      try {
-        images = []; // await google.image(searchQuery);
-      } catch {}
-      imageUrl = images.find((img) =>
-        [firstName.toLowerCase(), lastName.toLowerCase()].some((name) =>
-          img.url.toLowerCase().includes(name)
-        )
-      )?.url!;
-      if (!imageUrl) {
-        console.log(images, 'no image found');
-        continue;
+      const qid: EntityId = wbk.parse.pagesTitles(
+        await (await fetch(wbk.cirrusSearchPages({ haswbstatement: `${P_WA_ATHLETE_ID}=${id}` }))).json()
+      )[0] as `Q${number}`;
+      if (qid) {
+        const athObj = wbk.simplify.entity((await (await fetch(wbk.getEntities({ ids: qid }))).json()).entities[qid]) as SimplifiedItem;
+        const usatfId = athObj.claims?.[P_USATF_ATHLETE_ID]?.[0];
+        if (usatfId) {
+          const url = `https://www.usatf.org/athlete-bios/${usatfId}`;
+          const { document } = new JSDOM(await (await fetch(url)).text()).window;
+          let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
+          if (imageUrl?.startsWith('/')) imageUrl = getDomain(url) + imageUrl;
+          avatarResp = await fetch(imageUrl!);
+        }
       }
-      console.log(
-        searchQuery,
-        imageUrl
-        // images.map((img) => img.url)
-      );
-      avatarResp = await fetch(imageUrl);
     }
   }
   avatarBuffer ??= await avatarResp.arrayBuffer();
-  const size: gm.Dimensions = await new Promise((res) =>
-    gm(Buffer.from(avatarBuffer!), 'image.jpg').size((_, size) => res(size))
-  );
+  const size: gm.Dimensions = await new Promise((res) => gm(Buffer.from(avatarBuffer!), 'image.jpg').size((_, size) => res(size)));
   if (size.width > 1024)
     avatarBuffer = await new Promise((res) =>
       gm(Buffer.from(avatarBuffer!), 'image.jpg')
