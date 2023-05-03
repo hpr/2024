@@ -20,7 +20,7 @@ import {
 } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { useContext, useState } from 'react';
-import { AlertCircle, Minus, Plus, World } from 'tabler-icons-react';
+import { AlertCircle, Globe, Link, Minus, Plus, World } from 'tabler-icons-react';
 import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, NUM_BACKUP, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, Competitor, DLMeet, Entrant, ResultsByYearResult } from './types';
@@ -123,15 +123,13 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
             <Avatar variant="outline" bg="gray" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
               {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
             </Avatar>
+            <Group>
+              <Badge size="xl" rightSection="PB">{entrant.pb}</Badge>
+              {entrant.sb && <Badge size="xl" rightSection="SB">{entrant.sb}</Badge>}
+              <Badge size="xl" leftSection={<World style={{ marginTop: 8 }} />}>{entrant.nat}</Badge>
+            </Group>
             <Button.Group orientation="vertical">
-              <Button
-                variant="outline"
-                leftIcon={<AddToTeamButtonIcon />}
-                radius="xl"
-                size="xl"
-                color={isOnTeam ? 'red' : undefined}
-                onClick={addToTeam}
-              >
+              <Button variant="outline" leftIcon={<AddToTeamButtonIcon />} radius="xl" size="xl" color={isOnTeam ? 'red' : undefined} onClick={addToTeam}>
                 {(() => {
                   if (isSmall) return '';
                   if (isOnTeam) return 'Remove from Team';
@@ -145,7 +143,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
                 size="xl"
                 variant="outline"
                 radius="xl"
-                leftIcon={<World />}
+                leftIcon={<Link />}
                 onClick={() => window.open(`https://worldathletics.org/athletes/_/${entrant.id}`, '_blank')}
               >
                 {isSmall ? '' : 'World Athletics'}
