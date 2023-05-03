@@ -16,18 +16,12 @@ import {
   Paper,
   Badge,
   Box,
+  Grid,
 } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { useContext, useState } from 'react';
 import { AlertCircle, Minus, Plus, World } from 'tabler-icons-react';
-import {
-  GRAPHQL_API_KEY,
-  GRAPHQL_ENDPOINT,
-  GRAPHQL_QUERY,
-  mantineGray,
-  NUM_BACKUP,
-  PICKS_PER_EVT,
-} from './const';
+import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, NUM_BACKUP, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, Competitor, DLMeet, Entrant, ResultsByYearResult } from './types';
 import { isTouchDevice } from './util';
@@ -50,18 +44,7 @@ function nth(n: string) {
   return ['st', 'nd', 'rd'][((((num + 90) % 100) - 10) % 10) - 1] || 'th';
 }
 
-export function AthleteCard({
-  avatar,
-  name,
-  job,
-  stats,
-  event,
-  meet,
-  entrant,
-  blurb,
-  tableView,
-  isClosed,
-}: AthleteCardProps) {
+export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, blurb, tableView, isClosed }: AthleteCardProps) {
   const { myTeam, setMyTeam } = useContext(Store);
   const theme = useMantineTheme();
   const [showDetails, setShowDetails] = useState<boolean>(false);
@@ -115,9 +98,7 @@ export function AthleteCard({
       ...myTeam,
       [meet]: {
         ...myTeam[meet],
-        [event]: isOnTeam
-          ? myTeam[meet]![event]?.filter((member) => member.id !== entrant.id)
-          : [...(myTeam[meet]?.[event] ?? []), entrant],
+        [event]: isOnTeam ? myTeam[meet]![event]?.filter((member) => member.id !== entrant.id) : [...(myTeam[meet]?.[event] ?? []), entrant],
       },
     });
   };
@@ -158,18 +139,8 @@ export function AthleteCard({
                   return 'Add to Team';
                 })()}
               </Button>
-              <Button
-                color="green"
-                sx={{ height: 128, borderLeft: 'none', borderRight: 'none' }}
-                variant="outline"
-              >
-                <Avatar
-                  variant="outline"
-                  bg="gray"
-                  size={128}
-                  radius={128}
-                  src={entrant.hasAvy ? avatar : undefined}
-                >
+              <Button color="green" sx={{ height: 128, borderLeft: 'none', borderRight: 'none' }} variant="outline">
+                <Avatar variant="outline" bg="gray" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
                   {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
                 </Avatar>
               </Button>
@@ -179,9 +150,7 @@ export function AthleteCard({
                 variant="outline"
                 radius="xl"
                 leftIcon={<World />}
-                onClick={() =>
-                  window.open(`https://worldathletics.org/athletes/_/${entrant.id}`, '_blank')
-                }
+                onClick={() => window.open(`https://worldathletics.org/athletes/_/${entrant.id}`, '_blank')}
               >
                 {isSmall ? '' : 'World Athletics'}
               </Button>
@@ -189,9 +158,7 @@ export function AthleteCard({
             {blurb && (
               <Accordion variant="contained" sx={{ width: '100%' }}>
                 <Accordion.Item value="blurb">
-                  <Accordion.Control>
-                    AI-Generated Bio (may contain incorrect information)
-                  </Accordion.Control>
+                  <Accordion.Control>AI-Generated Bio (may contain incorrect information)</Accordion.Control>
                   <Accordion.Panel>{blurb}</Accordion.Panel>
                 </Accordion.Item>
               </Accordion>
@@ -200,60 +167,44 @@ export function AthleteCard({
             <Box pos="relative">
               <Stack align="center">
                 <LoadingOverlay visible={!competitor} overlayBlur={2} />
-                <Table
-                  sx={{ textAlign: 'left' }}
-                  fontSize="lg"
-                  striped
-                  highlightOnHover
-                  withBorder
-                  withColumnBorders
-                >
+                <Table sx={{ textAlign: 'left' }} fontSize="lg" striped highlightOnHover withBorder withColumnBorders>
                   <tbody>
-                    {competitor?.personalBests.results.map(
-                      ({ indoor, discipline, mark, notLegal, venue, date, resultScore }, i) => {
-                        return (
-                          <tr key={i}>
-                            <td>
-                              {indoor ? 'Indoor' : ''} {discipline}
-                            </td>
-                            <td>
-                              {mark}
-                              {notLegal ? '*' : ''} ({date})
-                            </td>
-                          </tr>
-                        );
-                      }
-                    )}
+                    {competitor?.personalBests.results.map(({ indoor, discipline, mark, notLegal, venue, date, resultScore }, i) => {
+                      return (
+                        <tr key={i}>
+                          <td>
+                            {indoor ? 'Indoor' : ''} {discipline}
+                          </td>
+                          <td>
+                            {mark}
+                            {notLegal ? '*' : ''} ({date})
+                          </td>
+                        </tr>
+                      );
+                    })}
                   </tbody>
                 </Table>
                 <Title order={2}>{competitor?.resultsByYear?.activeYears[0]} Results</Title>
                 <Accordion multiple variant="contained" sx={{ width: '100%' }}>
                   {competitor &&
                     Object.entries(
-                      competitor.resultsByYear.resultsByEvent.reduce(
-                        (acc, { indoor, discipline, results }) => {
-                          acc[discipline] ??= [];
-                          acc[discipline].push(...results);
-                          return acc;
-                        },
-                        {} as { [k: string]: ResultsByYearResult[] }
-                      )
+                      competitor.resultsByYear.resultsByEvent.reduce((acc, { indoor, discipline, results }) => {
+                        acc[discipline] ??= [];
+                        acc[discipline].push(...results);
+                        return acc;
+                      }, {} as { [k: string]: ResultsByYearResult[] })
                     ).map(([discipline, results]) => (
                       <Accordion.Item key={discipline} value={discipline}>
                         <Accordion.Control>{discipline}</Accordion.Control>
                         <Accordion.Panel>
                           <List>
                             {results
-                              .sort(
-                                (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
-                              )
+                              .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
                               .map(({ date, venue, place, mark, wind, notLegal }, i) => (
                                 <List.Item key={i}>
                                   {date.split(' ').slice(0, -1).join(' ')}:{' '}
                                   <span style={{ fontWeight: 'bold' }}>
-                                    {Number.parseInt(place)
-                                      ? `${Number.parseInt(place)}${nth(place)} place, `
-                                      : ''}
+                                    {Number.parseInt(place) ? `${Number.parseInt(place)}${nth(place)} place, ` : ''}
                                     {mark}
                                   </span>
                                   {notLegal ? '*' : ''} {wind ? `(${wind})` : ''} @ {venue}
@@ -299,63 +250,59 @@ export function AthleteCard({
           </td>
         </tr>
       ) : (
-        <Popover width={200} position="bottom" withArrow shadow="md" opened={popOpened}>
-          <Popover.Target>
-            <Indicator
-              className="addToTeamIndicator"
-              color={isOnTeam ? 'red' : mantineGray}
-              disabled={!isOnTeam && team.length >= PICKS_PER_EVT}
-              size={40}
-              withBorder
-              label={<AddToTeamButtonIcon onClick={addToTeam} />}
-              offset={15}
-              sx={{ cursor: 'pointer', zIndex: 1 }}
-            >
+        <Grid.Col span="content">
+          <Popover width={200} position="bottom" withArrow shadow="md" opened={popOpened}>
+            <Popover.Target>
               <Indicator
-                color={'green'}
-                disabled={!isOnTeam}
-                size={30}
+                className="addToTeamIndicator"
+                color={isOnTeam ? 'red' : mantineGray}
+                disabled={!isOnTeam && team.length >= PICKS_PER_EVT}
+                size={40}
                 withBorder
-                label={isBackup ? 'Backup' : `× ${multiplier}`}
+                label={<AddToTeamButtonIcon onClick={addToTeam} />}
                 offset={15}
-                position="top-start"
-                sx={{ zIndex: 1 }}
+                sx={{ cursor: 'pointer', zIndex: 1 }}
               >
                 <Indicator
+                  color={'green'}
+                  disabled={!isOnTeam}
+                  size={30}
                   withBorder
-                  color={mantineGray}
-                  size={20}
-                  label={entrant.lastName.toUpperCase()}
-                  position="bottom-center"
+                  label={isBackup ? 'Backup' : `× ${multiplier}`}
+                  offset={15}
+                  position="top-start"
+                  sx={{ zIndex: 1 }}
                 >
-                  <Avatar
-                    onMouseEnter={popOpen}
-                    onMouseLeave={popClose}
-                    onClick={showAndCacheDetails}
-                    src={entrant.hasAvy ? avatar : undefined}
-                    size={128}
-                    radius={128}
-                    mx="auto"
-                    sx={{ border: `1px solid ${mantineGray}`, cursor: 'pointer' }}
-                  >
-                    {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
-                  </Avatar>
+                  <Indicator withBorder color={mantineGray} size={20} label={entrant.lastName.toUpperCase()} position="bottom-center">
+                    <Avatar
+                      onMouseEnter={popOpen}
+                      onMouseLeave={popClose}
+                      onClick={showAndCacheDetails}
+                      src={entrant.hasAvy ? avatar : undefined}
+                      size={128}
+                      radius={128}
+                      mx="auto"
+                      sx={{ border: `1px solid ${mantineGray}`, cursor: 'pointer' }}
+                    >
+                      {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
+                    </Avatar>
+                  </Indicator>
                 </Indicator>
               </Indicator>
-            </Indicator>
-          </Popover.Target>
-          <Popover.Dropdown sx={{ display: isTouchDevice() ? 'none' : undefined }}>
-            <Text align="center" size="lg" weight={500} mt="sm">
-              {name}
-            </Text>
-            <Text align="center" size="sm" color="dimmed">
-              {entrant.team ? `${entrant.team} (${job})` : job}
-            </Text>
-            <Group mt="md" position="center" spacing={30}>
-              {items}
-            </Group>
-          </Popover.Dropdown>
-        </Popover>
+            </Popover.Target>
+            <Popover.Dropdown sx={{ display: isTouchDevice() ? 'none' : undefined }}>
+              <Text align="center" size="lg" weight={500} mt="sm">
+                {name}
+              </Text>
+              <Text align="center" size="sm" color="dimmed">
+                {entrant.team ? `${entrant.team} (${job})` : job}
+              </Text>
+              <Group mt="md" position="center" spacing={30}>
+                {items}
+              </Group>
+            </Popover.Dropdown>
+          </Popover>
+        </Grid.Col>
       )}
     </>
   );
