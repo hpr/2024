@@ -8,7 +8,7 @@
     "getEntries": "node --loader ts-node/esm script/getEntries.mts",
     "getResults": "node --loader ts-node/esm script/getResults.mts",
     "getAvatars": "tsc --module nodenext --outDir build script/getAvatars.mts && node build/getAvatars.mjs",
-    "getBlurbs": "node --loader ts-node/esm script/getBlurbs.mts",
+    "getBlurbs": "tsc --module nodenext --outDir build script/getBlurbs.mts && node build/getBlurbs.mjs",
     "getStats": "node --loader ts-node/esm script/getStats.mts",
     "getLeaderboard": "node --loader ts-node/esm script/getLeaderboard.mts",
     "closeEntries": "node --loader ts-node/esm script/closeEntries.mts",
@@ -22,6 +22,10 @@
     "jest:watch": "jest --watch",
     "test": "npm run typecheck && npm run prettier && npm run lint && npm run jest && npm run build"
   },
+  "prettier": {
+    "printWidth": 160,
+    "singleQuote": true
+  },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@mantine/core": "5.10.3",
@@ -29,6 +33,7 @@
     "@mantine/hooks": "5.10.3",
     "badwords-filter": "^1.3.0",
     "bardapi": "^1.0.4",
+    "chatgpt": "^5.2.4",
     "dotenv": "^16.0.3",
     "gm": "^1.25.0",
     "googlethis": "^1.7.1",

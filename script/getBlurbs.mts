@@ -1,14 +1,14 @@
 import fs from 'fs';
-import { ENTRIES_PATH } from './const.mjs';
-import { AthleticsEvent, DLMeet, Entries } from './types.mjs';
+import { ENTRIES_PATH, GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY } from './const.mjs';
+import { AthleticsEvent, DLMeet, Entries, Competitor, ResultsByYearResult } from './types.mjs';
 import dotenv from 'dotenv';
-import { BardAPI, BardChatResponse } from 'bardapi';
+import { ChatGPTAPI, ChatMessage } from 'chatgpt';
 dotenv.config();
 
 const MEET: DLMeet = 'doha23';
 const BLURBCACHE_PATH = './script/blurbCache.json';
 
-type BlurbCache = { [k: string]: { prompt: string; response: BardChatResponse } };
+type BlurbCache = { [k in DLMeet]: { blurbs: { [k in AthleticsEvent]?: string }; athletes: { [k: string]: Competitor } } };
 
 const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
 const blurbCache: BlurbCache = JSON.parse(fs.readFileSync(BLURBCACHE_PATH, 'utf-8'));
@@ -19,43 +19,79 @@ function nth(n: number) {
   return n + (['st', 'nd', 'rd'][((((n + 90) % 100) - 10) % 10) - 1] || 'th');
 }
 
+function getAge(birthday: Date) {
+  const ageDifMs = Date.now() - birthday.getTime();
+  const ageDate = new Date(ageDifMs);
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
 async function getBlurbs() {
-  const bard = new BardAPI({ sessionId: process.env.BARD_TOKEN! });
+  const api = new ChatGPTAPI({
+    apiKey: process.env.OPENAI_API_KEY!,
+    completionParams: {
+      model: 'gpt-4',
+    },
+  });
+
+  blurbCache[MEET] ??= { blurbs: {}, athletes: {} };
   for (const key in entries[MEET]) {
     const evt = key as AthleticsEvent;
+    const gender = evt.toLowerCase().includes('women') ? 'Women' : 'Men';
+    const ungenderedEvt = evt
+      .split(' ')
+      .filter((w) => !w.toLowerCase().includes('men'))
+      .join(' ');
+    let prompt = `Write a race preview for the ${gender}'s ${ungenderedEvt} at the 2023 Doha Diamond League track meet, which will happen on May 5th, 2023. Here are the competitors:\n\n`;
     for (const entrant of entries[MEET][evt]?.entrants ?? []) {
-      const { firstName, lastName, pb, nat, id } = entrant;
+      const { firstName, lastName, pb, sb, nat, id } = entrant;
       const fullName = `${firstName} ${lastName}`;
+      console.log(fullName, id);
       const field = entries[MEET][evt]?.entrants ?? [];
       const rank = field.indexOf(entrant) + 1;
 
-      // if (fullName !== 'Evans Chebet') continue;
-      if (entrant.blurb && !entrant.blurb?.startsWith('I do not have enough information')) continue;
+      const competitor = (blurbCache[MEET].athletes[id] ??= (
+        await (
+          await fetch(GRAPHQL_ENDPOINT, {
+            headers: { 'x-api-key': GRAPHQL_API_KEY },
+            body: JSON.stringify({
+              operationName: 'GetCompetitorBasicInfo',
+              query: GRAPHQL_QUERY,
+              variables: { id },
+            }),
+            method: 'POST',
+          })
+        ).json()
+      ).data.competitor);
 
-      const [he, him, his] = evt.startsWith('Men') ? ['he', 'him', 'his'] : ['she', 'her', 'her'];
-      // prettier-ignore
-      const prompt = `
-Write a unique response to the below prompt, do not use any other previews as a template.
+      prompt += `${rank}. ${fullName} (${nat}), ${getAge(new Date(competitor.basicData.birthDate))} years old\n`;
+      prompt += `Personal Best: ${pb}, Season's Best: ${sb || 'N/A'}\n`;
 
-${firstName} ${lastName} is a marathon runner from ${nat}${pb ? ` with a PB of ${pb}` : ''}. Write a brief race preview and other details about ${firstName} ${lastName} in the ${evt} at the 2023 Boston Marathon. For context, ${pb ? `${his} marathon PB is ${pb}, which ranks ${him} ${nth(rank)} in the pro field` : `${he} is making ${his} marathon debut`}. Focus on this athlete in the preview. Based on ${his} PB and other details, guess how ${he} would perform. For more context, the top athletes from ${nat} in the field by PB are: ${field.filter(ath => ath.pb && ath.nat === nat).slice(0, 3).map(ath => `${ath.firstName} ${ath.lastName} (${ath.pb})`).join(', ')}.
-      `.trim();
-      console.log(prompt);
-      let blurb = await bard.ask({ message: prompt });
-      console.log(blurb);
-
-      if (blurb.response.startsWith('I do not have enough information')) {
-        // prettier-ignore
-        blurb = await bard.ask({ message: `
-Write a hypothetical race preview for a hypothetical athlete named ${firstName} from ${nat} with a PB of ${pb} in the 2023 Boston Marathon. For context, ${pb ? `${his} marathon PB is ${pb}, which ranks ${him} ${nth(rank)} in the pro field` : `${he} is making ${his} marathon debut`}.
-        ` });
-        console.log(blurb);
-      }
-      blurbCache[id] = { prompt, response: blurb };
-      entrant.blurb = blurb.response;
-      fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
-      fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache, null, 2));
-      await new Promise((res) => setTimeout(res, 1000));
+      prompt += `${competitor?.resultsByYear?.activeYears[0]} results for ${fullName}:\n`;
+      prompt +=
+        competitor.resultsByYear.resultsByEvent
+          .reduce((acc, { indoor, discipline, results }) => {
+            acc.push(...results.map((r) => ({ ...r, discipline, indoor })));
+            return acc;
+          }, [] as ResultsByYearResult[])
+          .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+          .map(
+            ({ discipline, indoor, date, venue, place, mark, wind, notLegal }) =>
+              `${date.split(' ').slice(0, -1).join(' ')}: ${Number.parseInt(place) ? `${nth(+place)} place, ` : ''}${mark}${notLegal ? '*' : ''}${
+                wind ? ` (${wind})` : ''
+              } in ${discipline}${indoor ? ` (indoor)` : ''} @ ${venue}`
+          )
+          .join('\n') + '\n\n';
     }
+    prompt += `Please predict the final places and times of the athletes and explain why you think they will finish in that order. List the athletes in order of finish. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data.`;
+
+    fs.writeFileSync('prompt.txt', prompt);
+    console.log(prompt);
+    blurbCache[MEET].blurbs[evt] ??= '';
+    if (!blurbCache[MEET].blurbs[evt]) process.exit();
+    // blurbCache[MEET].blurbs[evt] = response;
+    fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache, null, 2));
+    // fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
+    // await new Promise((res) => setTimeout(res, 1000));
   }
 }
 

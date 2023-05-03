@@ -270,3 +270,44 @@ export type Team = {
 };
 
 export type MeetTeam = Exclude<Team[DLMeet], undefined>;
+
+export type ResultsByYearResult = {
+  discipline?: string;
+  indoor?: boolean;
+
+  date: string;
+  venue: string;
+  place: string;
+  mark: string;
+  wind: string;
+  notLegal: boolean;
+};
+
+export type Competitor = {
+  basicData: {
+    firstName: string;
+    lastName: string;
+    birthDate: string;
+    iaafId: string;
+    aaId: string;
+  };
+  personalBests: {
+    results: {
+      indoor: boolean;
+      discipline: string;
+      mark: string;
+      notLegal: boolean;
+      venue: string;
+      date: string;
+      resultScore: number;
+    }[];
+  };
+  resultsByYear: {
+    activeYears: string[];
+    resultsByEvent: {
+      indoor: boolean;
+      discipline: string;
+      results: ResultsByYearResult[];
+    }[];
+  };
+};
