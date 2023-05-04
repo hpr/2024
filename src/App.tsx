@@ -327,14 +327,14 @@ export default function App() {
                     <Text mb={10}>
                       Your athletes will be scored by place: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 style, with zero points awarded outside the top 10. The{' '}
                       <strong>catch</strong> is that the order of your team matters: Your first athlete will receive an x{PICKS_PER_EVT - NUM_BACKUP} score
-                      multiplier, then your #2 athlete will receive an x{PICKS_PER_EVT - NUM_BACKUP - 1} score multiplier, et cetera until your last athlete
-                      receives only an x1 multiplier. Once you have finished your picks, you <strong>must</strong> submit them by pressing "Save Picks" and then
-                      registering an account, then you need to log in and click "Submit Picks".
+                      multiplier, then your #2 athlete will receive an x{PICKS_PER_EVT - NUM_BACKUP - 1} score multiplier
+                      {PICKS_PER_EVT - NUM_BACKUP > 2 ? ', et cetera until your last athlete receives only an x1 multiplier' : ''}. Once you have finished your
+                      picks, you <strong>must</strong> submit them by pressing "Save Picks" and then registering or logging in to an account.
                     </Text>
                     <Text mb={10}>
                       <strong>Submissions Deadline:</strong> Friday 4/5 before the DL window starts, by noon ET.
                       <br />
-                      <strong>Prizes:</strong> First place's username will be enshrined on the website for all future contests.
+                      <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place: Free T-Shirt. Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes!
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
