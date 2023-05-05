@@ -1,61 +1,32 @@
 // ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from picks;"' > picks.csv
 // ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from users;"' > users.csv
 
-import {
-  MeetCache,
-  DLMeet,
-  Entries,
-  LBType,
-  AthleticsEvent,
-  ResultEntrant,
-  MeetTeam,
-  LBPicks,
-} from './types.mjs';
+import { MeetCache, DLMeet, Entries, LBType, AthleticsEvent, ResultEntrant, MeetTeam, LBPicks } from './types.mjs';
 import fs from 'fs';
-import {
-  backupNotes,
-  CACHE_PATH,
-  disciplineCodes,
-  distanceEvents,
-  ENTRIES_PATH,
-  LB_PATH,
-  SCORE,
-  sprintEvents,
-} from './const.mjs';
+import { backupNotes, CACHE_PATH, disciplineCodes, distanceEvents, ENTRIES_PATH, LB_PATH, SCORE, sprintEvents } from './const.mjs';
 import { parse } from 'csv-parse/sync';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
 const leaderboard: LBType = JSON.parse(fs.readFileSync(LB_PATH, 'utf-8'));
 
-const rows: { picksJson: string; userid: number }[] = parse(
-  fs.readFileSync('./picks.csv', 'utf-8'),
-  {
-    columns: true,
-  }
-);
+const rows: { picksJson: string; userid: number }[] = parse(fs.readFileSync('./picks.csv', 'utf-8'), {
+  columns: true,
+});
 const users: { id: number; name: string }[] = parse(fs.readFileSync('./users.csv', 'utf-8'), {
   columns: true,
 });
 
-const getScore = (
-  meet: DLMeet,
-  team: MeetTeam,
-  evt: AthleticsEvent
-): { score: number; scorers: { [id: string]: number } } => {
+const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): { score: number; scorers: { [id: string]: number } } => {
   let score = 0;
   const backup = team[evt]?.at(-1)!;
-  const backupResult = (entries[meet]![evt]!.results ?? []).find(
-    (res) => res.entrant?.id === backup?.id
-  ) ?? { notes: 'DNS' };
+  const backupResult = (entries[meet]![evt]!.results ?? []).find((res) => res.entrant?.id === backup?.id) ?? { notes: 'DNS' };
   let doneBackup = false;
   if (backupNotes.some((note) => backupResult.notes.includes(note))) doneBackup = true;
   const scorers: { [id: string]: number } = {};
   for (const pick of team[evt]!.slice(0, -1)) {
-    console.log(entries, meet, evt, Object.keys(entries[meet]![evt]!))
-    let matchingResult = (entries[meet]![evt]!.results! ?? []).find(
-      (res) => res.entrant?.id === pick?.id
-    );
+    console.log(entries, meet, evt, Object.keys(entries[meet]![evt]!));
+    let matchingResult = (entries[meet]![evt]!.results! ?? []).find((res) => res.entrant?.id === pick?.id);
     if (backupNotes.some((note) => matchingResult?.notes.includes(note)) && !doneBackup) {
       matchingResult = backupResult as ResultEntrant;
       doneBackup = true;
@@ -74,34 +45,33 @@ const fixIds = (picks: MeetTeam) => {
   for (const key in picks) {
     const evt = key as AthleticsEvent;
     for (const pick of picks[evt]!) {
-      pick.id = (
-        JSON.parse(
-          [...rows]
-            .reverse()
-            .find(({ picksJson }) =>
-              (JSON.parse(picksJson) as MeetTeam)[evt]!.find(
-                (ath) => `${ath.firstName} ${ath.lastName}` === `${pick.firstName} ${pick.lastName}`
-              )
-            )?.picksJson!
-        ) as MeetTeam
-      )[evt]!.find(
-        (ath) => `${ath.firstName} ${ath.lastName}` === `${pick.firstName} ${pick.lastName}`
-      )!.id;
+      pick.id = (() => {
+        const pj = JSON.parse(
+          [...rows].reverse().find(({ picksJson }) => {
+            const pj = JSON.parse(picksJson);
+            delete pj.tiebreaker;
+            return (pj as MeetTeam)[evt]?.find((ath) => `${ath.firstName} ${ath.lastName}` === `${pick.firstName} ${pick.lastName}`);
+          })?.picksJson!
+        );
+        delete pj.tiebreaker;
+        return pj as MeetTeam;
+      })()[evt]!.find((ath) => `${ath.firstName} ${ath.lastName}` === `${pick.firstName} ${pick.lastName}`)!.id;
     }
   }
 };
 
-const evtToGenderedCode = (evt: string): AthleticsEvent =>
-  (evt[0] + disciplineCodes[evt.split(' ').slice(1).join(' ')]) as AthleticsEvent;
+const evtToGenderedCode = (evt: string): AthleticsEvent => (evt.split(' ').at(-1)?.[0] + disciplineCodes[evt.split(' ').slice(0, -1).join(' ')]) as AthleticsEvent;
 
 for (const meet of ['doha23'] as DLMeet[]) {
   leaderboard[meet] = [];
   for (const { picksJson, userid } of rows) {
     const picks: MeetTeam = JSON.parse(picksJson);
-    fixIds(picks); // TODO remove in future
+    delete (picks as any).tiebreaker;
+    // fixIds(picks); // TODO remove in future
 
     const userPicks = Object.keys(picks!).reduce((acc, evt) => {
       const evtCode = evtToGenderedCode(evt);
+      console.log(evtCode);
       acc[evtCode as AthleticsEvent] = { team: picks![evt as AthleticsEvent]!.map(({ id }) => id) };
       return acc;
     }, {} as LBPicks);
