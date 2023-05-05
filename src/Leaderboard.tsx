@@ -45,7 +45,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
   useEffect(() => {
     setLeaderboard({
       ...leaderboard,
-      [meet]: [...(leaderboard?.[meet] ?? [])].sort((a, b) => b[sortBy] - a[sortBy]),
+      [meet]: [...(leaderboard?.[meet] ?? [])].sort((a, b) => b[sortBy] === a[sortBy] ? a.name.localeCompare(b.name) : b[sortBy] - a[sortBy]),
     });
   }, [sortBy]);
 
