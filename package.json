@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "getEntries": "tsc --module nodenext --outDir build script/getEntries.mts && node build/getEntries.mjs",
-    "getResults": "node --loader ts-node/esm script/getResults.mts",
+    "getResults": "tsc --module nodenext --outDir build script/getResults.mts && node build/getResults.mjs",
     "getAvatars": "tsc --module nodenext --outDir build script/getAvatars.mts && node build/getAvatars.mjs",
     "getBlurbs": "tsc --module nodenext --outDir build script/getBlurbs.mts && node build/getBlurbs.mjs",
     "getStats": "node --loader ts-node/esm script/getStats.mts",

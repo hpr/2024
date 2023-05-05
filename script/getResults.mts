@@ -3,6 +3,8 @@ import fs from 'fs';
 import { backupNotes, CACHE_PATH, ENTRIES_PATH, getDomainAndPath, runningEvents } from './const.mjs';
 import { JSDOM } from 'jsdom';
 
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+
 const resultsLinks: { [k in DLMeet]: string } = {
   doha: 'https://web.archive.org/web/20201001215002/https://doha.diamondleague.com/programme-results-doha/?tx_diamondrace_diamondleaguestatistics%5BeventId%5D=&tx_diamondrace_diamondleaguestatistics%5Baction%5D=list&tx_diamondrace_diamondleaguestatistics%5Bcontroller%5D=DiamondLeagueStatistics&cHash=ff3931bd5e5bc713438d0056bc3eb290',
   birminghamIndoor: 'https://results-json.microplustimingservices.com/export/WAITF2023/ScheduleByDate_1.JSON',
@@ -20,7 +22,7 @@ const findMatchingEvt = (meetEntries: Entries['ncaai23'], evt: AthleticsEvent) =
 
 for (const key in resultsLinks) {
   const meet = key as DLMeet;
-  // if (meet !== 'ncaai23') continue;
+  if (meet !== 'doha23') continue;
   cache[meet] ??= { schedule: {}, events: {}, ids: {} };
   if (resultsLinks[meet].includes('flashresults')) {
     cache[meet].resultsSchedule ??= await (await fetch(resultsLinks[meet])).text();
@@ -87,9 +89,11 @@ for (const key in resultsLinks) {
     const schedule: SportResultSchedule = await (await fetch(resultsLinks[meet])).json();
     for (const key in entries[meet]) {
       const evt = key as AthleticsEvent;
-      const evtId = Object.values(schedule.content.full.ListEvent).find((listEvent) => listEvent.Name === evt)!.Code;
-      const evtResult: SportResultTiming = await (await fetch(`https://livecache.sportresult.com/node/db/ATH_PROD/${meetId}_TIMING_${evtId}_JSON.json`)).json();
-      entries[meet]![evt]!.results = Object.values(evtResult.content.full.CompetitorDetails)
+      const evtId = Object.values(schedule.content.full.Units).find((unit) => unit.EventName === evt)!.Rsc.ValueUnit;
+      const evtResultResp = await fetch(`https://livecache.sportresult.com/node/db/ATH_PROD/${meetId}_TIMING_${evtId}_JSON.json`);
+      if (evtResultResp.status === 404) continue;
+      const evtResult: SportResultTiming = await evtResultResp.json();
+      const results = Object.values(evtResult.content.full.CompetitorDetails)
         .sort((a, b) => +(a.Rank ?? Infinity) - +(b.Rank ?? Infinity))
         .map((comp) => ({
           mark: comp.Result!,
@@ -97,6 +101,8 @@ for (const key in resultsLinks) {
           notes: comp.IRM?.includes('DNF') ? 'DNF' : comp.IRM?.includes('DNS') ? 'DNS' : '',
           entrant: entries[meet]?.[evt]?.entrants.find((ent) => ent.id === comp.FedCode)!,
         }));
+      if (results.some(res => res.entrant && res.mark && res.place)) entries[meet]![evt]!.results = results;
+      else entries[meet]![evt]!.results = undefined;
     }
   }
 }

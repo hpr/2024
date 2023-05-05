@@ -324,6 +324,14 @@ export type SportResultSchedule = {
           Name: string;
         };
       };
+      Units: {
+        [id: string]: {
+          EventName: string;
+          Rsc: {
+            ValueUnit: string;
+          };
+        };
+      };
     };
   };
 };
