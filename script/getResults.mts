@@ -89,7 +89,9 @@ for (const key in resultsLinks) {
     const schedule: SportResultSchedule = await (await fetch(resultsLinks[meet])).json();
     for (const key in entries[meet]) {
       const evt = key as AthleticsEvent;
-      const evtId = Object.values(schedule.content.full.Units).filter((unit) => unit.EventName === evt).at(-1)!.Rsc.ValueUnit;
+      const evtId = Object.values(schedule.content.full.Units)
+        .filter((unit) => unit.EventName === evt)
+        .at(-1)!.Rsc.ValueUnit;
       const evtResultResp = await fetch(`https://livecache.sportresult.com/node/db/ATH_PROD/${meetId}_TIMING_${evtId}_JSON.json`);
       if (evtResultResp.status === 404) {
         console.log('skipping', evt, evtId);
@@ -101,8 +103,11 @@ for (const key in resultsLinks) {
           mark: comp.Result!,
           place: +comp.Rank!,
           notes: comp.IRM?.includes('DNF') ? 'DNF' : comp.IRM?.includes('DNS') ? 'DNS' : '',
-          entrant: entries[meet]?.[evt]?.entrants.find((ent) => ent.id === comp.FedCode || `${ent.firstName} ${ent.lastName}`.toLowerCase() === `${comp.FirstName} ${comp.Name}`.toLowerCase())!,
+          entrant: entries[meet]?.[evt]?.entrants.find(
+            (ent) => ent.id === comp.FedCode || `${ent.firstName} ${ent.lastName}`.toLowerCase() === `${comp.FirstName} ${comp.Name}`.toLowerCase()
+          )!,
         }));
+      if (evt === '200m Men') console.log(results, evtResult.content.full.CompetitorDetails);
       if (results.some((res) => res.entrant && res.mark && res.place)) entries[meet]![evt]!.results = results;
       else entries[meet]![evt]!.results = undefined;
     }
