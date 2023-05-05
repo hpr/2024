@@ -314,3 +314,34 @@ export type Competitor = {
 };
 
 export type BlurbCache = { [k in DLMeet]: { blurbs: { [k in AthleticsEvent]?: string }; athletes: { [k: string]: Competitor } } };
+
+export type SportResultSchedule = {
+  content: {
+    full: {
+      ListEvent: {
+        [id: string]: {
+          Code: string;
+          Name: string;
+        };
+      };
+    };
+  };
+};
+
+export type SportResultTiming = {
+  content: {
+    full: {
+      CompetitorDetails: {
+        [id: string]: {
+          Result?: string;
+          Rank?: string;
+          IRM?: 'Participant-DNF-ATH' | 'Participant-DNS-ATH';
+          FirstName: string;
+          Name: string; // last name uppercase
+          AthleteId: string; // ?
+          FedCode?: string; // iaaf id
+        };
+      };
+    };
+  };
+};
