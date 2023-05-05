@@ -109,9 +109,9 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
       <Modal
         size={500}
         title={
-          <Title variant="gradient" gradient={{ from: 'gray', to: 'white' }} order={1}>
+          <Text variant="gradient" gradient={{ from: 'gray', to: 'white' }} size={30} sx={{ fontWeight: 'bold' }}>
             {entrant.firstName} {entrant.lastName.toUpperCase()}
-          </Title>
+          </Text>
         }
         closeButtonProps={{ mr: 10, variant: 'outline' }}
         withCloseButton={true}
@@ -167,11 +167,11 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
                 </Accordion.Item>
               </Accordion>
             )}
-            <Title order={2}>Personal Bests</Title>
+            <Title order={3}>Personal Bests</Title>
             <Box pos="relative" w="100%">
               <Stack align="center">
                 <LoadingOverlay visible={!competitor} overlayBlur={2} />
-                <Table sx={{ textAlign: 'left' }} fontSize="lg" striped highlightOnHover withBorder withColumnBorders>
+                <Table sx={{ textAlign: 'left' }} fontSize="md" striped highlightOnHover withBorder withColumnBorders>
                   <tbody>
                     {competitor?.personalBests.results.map(({ indoor, discipline, mark, notLegal, venue, date, resultScore }, i) => {
                       return (
@@ -188,7 +188,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
                     })}
                   </tbody>
                 </Table>
-                <Title order={2}>{competitor?.resultsByYear?.activeYears[0]} Results</Title>
+                <Title order={3}>{competitor?.resultsByYear?.activeYears[0]} Results</Title>
                 <Accordion multiple variant="contained" sx={{ width: '100%' }}>
                   {competitor &&
                     Object.entries(

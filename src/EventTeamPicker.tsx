@@ -6,6 +6,7 @@ import { mantineGray, NUM_BACKUP, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, DLMeet, Entries } from './types';
 import { modals } from '@mantine/modals';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | null; meet: DLMeet; evt: AthleticsEvent }) => {
   const { myTeam, setMyTeam } = useContext(Store);
@@ -104,7 +105,9 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
         <Stack align="center">
           <Paper withBorder radius="xl" p="lg" py="md" shadow="xl">
             <Stack align="center">
-              <Title order={1}>{evt}</Title>
+              <Title order={1} sx={{ textAlign: 'center' }}>
+                {evt}
+              </Title>
               <Group>
                 <Switch checked={tableView} onChange={(e) => setTableView(e.currentTarget.checked)} label="Table View?" />
                 <Button size="xs" variant="default" color={mantineGray} onClick={() => setMyTeam({ ...myTeam, [meet]: { ...myTeam[meet], [evt]: [] } })}>
