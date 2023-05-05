@@ -68,7 +68,107 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "19.92",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Fred",
+            "lastName": "Kerley",
+            "id": "14504382",
+            "pb": "19.76",
+            "sb": "20.32",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.11",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kenneth",
+            "lastName": "Bednarek",
+            "id": "14715244",
+            "pb": "19.68",
+            "sb": "20.37",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.20",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aaron",
+            "lastName": "Brown",
+            "id": "14366482",
+            "pb": "19.95",
+            "sb": "20.00",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joseph",
+            "lastName": "Fahnbulleh",
+            "id": "14803230",
+            "pb": "19.83",
+            "sb": "20.14",
+            "nat": "LBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Ogando",
+            "id": "14912251",
+            "pb": "19.91",
+            "sb": "20.22",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Michael",
+            "lastName": "Norman",
+            "id": "14588244",
+            "pb": "19.70",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andre",
+            "lastName": "de Grasse",
+            "id": "14535607",
+            "pb": "19.62",
+            "sb": "20.41",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Men": {
       "date": "2023-05-05T00:00",
