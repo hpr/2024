@@ -414,7 +414,122 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "47.78",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rai",
+            "lastName": "Benjamin",
+            "id": "14574865",
+            "pb": "46.17",
+            "sb": "47.74",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.93",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "48.17",
+            "sb": "48.71",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "49.12",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilfried",
+            "lastName": "Happio",
+            "id": "14650750",
+            "pb": "47.41",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.25",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Khallifah",
+            "lastName": "Rosser",
+            "id": "14520653",
+            "pb": "47.59",
+            "sb": "50.27",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.52",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Trevor",
+            "lastName": "Bassitt",
+            "id": "14719193",
+            "pb": "47.39",
+            "sb": "48.43",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.74",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sokwakhana",
+            "lastName": "Zazini",
+            "id": "14741332",
+            "pb": "48.58",
+            "sb": "48.58",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.88",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Thomas",
+            "lastName": "Barr",
+            "id": "14440533",
+            "pb": "47.97",
+            "sb": "49.79",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.40",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "İsmail",
+            "lastName": "Nezir",
+            "id": "14928872",
+            "pb": "48.84",
+            "sb": null,
+            "nat": "TUR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Women": {
       "date": "2023-05-05T00:00",
@@ -908,7 +1023,122 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.48",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jasmine",
+            "lastName": "Camacho-Quinn",
+            "id": "14494234",
+            "pb": "12.26",
+            "sb": null,
+            "nat": "PUR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.66",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alaysha",
+            "lastName": "Johnson",
+            "id": "14486620",
+            "pb": "12.35",
+            "sb": "13.68",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.69",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nia",
+            "lastName": "Ali",
+            "id": "14304647",
+            "pb": "12.34",
+            "sb": "12.53",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.76",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Megan",
+            "lastName": "Tapper",
+            "id": "14413569",
+            "pb": "12.51",
+            "sb": "12.99",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.79",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tonea",
+            "lastName": "Marshall",
+            "id": "14564128",
+            "pb": "12.44",
+            "sb": "12.61",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "LSU"
+          }
+        },
+        {
+          "mark": "12.92",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Reetta",
+            "lastName": "Hurske",
+            "id": "14405506",
+            "pb": "12.78",
+            "sb": null,
+            "nat": "FIN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.00",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Michelle",
+            "lastName": "Jenneke",
+            "id": "14365887",
+            "pb": "12.66",
+            "sb": "12.69",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.08",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Lavin",
+            "id": "14373496",
+            "pb": "12.79",
+            "sb": null,
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Women": {
       "date": "2023-05-05T00:00",
