@@ -94,7 +94,7 @@ const fixIds = (picks: MeetTeam) => {
 const evtToGenderedCode = (evt: string): AthleticsEvent =>
   (evt[0] + disciplineCodes[evt.split(' ').slice(1).join(' ')]) as AthleticsEvent;
 
-for (const meet of ['ncaai23'] as DLMeet[]) {
+for (const meet of ['doha23'] as DLMeet[]) {
   leaderboard[meet] = [];
   for (const { picksJson, userid } of rows) {
     const picks: MeetTeam = JSON.parse(picksJson);
