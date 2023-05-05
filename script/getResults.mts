@@ -107,7 +107,6 @@ for (const key in resultsLinks) {
             (ent) => ent.id === comp.FedCode || `${ent.firstName} ${ent.lastName}`.toLowerCase() === `${comp.FirstName} ${comp.Name}`.toLowerCase()
           )!,
         }));
-      if (evt === '200m Men') console.log(results, evtResult.content.full.CompetitorDetails);
       if (results.some((res) => res.entrant && res.mark && res.place)) entries[meet]![evt]!.results = results;
       else entries[meet]![evt]!.results = undefined;
     }
