@@ -101,7 +101,7 @@ for (const key in resultsLinks) {
           mark: comp.Result!,
           place: +comp.Rank!,
           notes: comp.IRM?.includes('DNF') ? 'DNF' : comp.IRM?.includes('DNS') ? 'DNS' : '',
-          entrant: entries[meet]?.[evt]?.entrants.find((ent) => ent.id === comp.FedCode)!,
+          entrant: entries[meet]?.[evt]?.entrants.find((ent) => ent.id === comp.FedCode || `${ent.firstName} ${ent.lastName}`.toLowerCase() === `${comp.FirstName} ${comp.Name}`.toLowerCase())!,
         }));
       if (results.some((res) => res.entrant && res.mark && res.place)) entries[meet]![evt]!.results = results;
       else entries[meet]![evt]!.results = undefined;

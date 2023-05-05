@@ -113,7 +113,13 @@
           }
         },
         {
+          "mark": "20.29",
           "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "20.29",
+          "place": 5,
           "notes": "",
           "entrant": {
             "firstName": "Joseph",
@@ -126,11 +132,22 @@
           }
         },
         {
-          "place": 5,
-          "notes": ""
+          "mark": "20.35",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andre",
+            "lastName": "de Grasse",
+            "id": "14535607",
+            "pb": "19.62",
+            "sb": "20.41",
+            "nat": "CAN",
+            "hasAvy": true
+          }
         },
         {
-          "place": null,
+          "mark": "20.62",
+          "place": 7,
           "notes": "",
           "entrant": {
             "firstName": "Alexander",
@@ -143,7 +160,8 @@
           }
         },
         {
-          "place": null,
+          "mark": "20.65",
+          "place": 8,
           "notes": "",
           "entrant": {
             "firstName": "Michael",
@@ -152,19 +170,6 @@
             "pb": "19.70",
             "sb": null,
             "nat": "USA",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": null,
-          "notes": "",
-          "entrant": {
-            "firstName": "Andre",
-            "lastName": "de Grasse",
-            "id": "14535607",
-            "pb": "19.62",
-            "sb": "20.41",
-            "nat": "CAN",
             "hasAvy": true
           }
         }
