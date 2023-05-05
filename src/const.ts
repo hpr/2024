@@ -41,7 +41,7 @@ export const PAGES = ['events', 'scoring', 'submissions', 'leaderboard'] as [
   'leaderboard'
 ];
 
-export const disciplineCodes: { [k: string]: WAEventCode } = {
+export const disciplineCodes: { [k: string]: string } = {
   '50 Meters': '50',
   '55 Meters': '55',
   '60 Meters': '60',
