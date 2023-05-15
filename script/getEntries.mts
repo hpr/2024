@@ -3,7 +3,7 @@ import fs from 'fs';
 import { nameFixer } from 'name-fixer';
 import { AthleticsEvent, BlurbCache, DLMeet, Entrant, Entries, MeetCache, WAEventCode } from './types.mjs';
 import PDFParser, { Output } from 'pdf2json';
-import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain, BLURBCACHE_PATH, MEET } from './const.mjs';
+import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain, BLURBCACHE_PATH } from './const.mjs';
 import PDFJS from 'pdfjs-dist/legacy/build/pdf.js';
 import { PNG } from 'pngjs';
 import { TextItem } from 'pdfjs-dist/types/src/display/api.js';
@@ -19,7 +19,6 @@ const schedules: { [k in DLMeet]: string[] } = {
   ],
   boston23: ['https://www.baa.org/races/boston-marathon/pro-athletes/2023-boston-marathon-professional-team'],
   doha23: ['https://doha.diamondleague.com/programme-results-doha/'],
-  rabat23: [],
 };
 
 const idTeams = {
@@ -203,7 +202,7 @@ const getEntries = async () => {
   const blurbCache: BlurbCache = JSON.parse(fs.readFileSync(BLURBCACHE_PATH, 'utf-8'));
   for (const key in schedules) {
     const meet = key as DLMeet;
-    if (meet !== MEET) continue;
+    if (meet !== 'doha23') continue;
     entries[meet] = {};
     for (const meetScheduleUrl of schedules[meet]) {
       if (meetScheduleUrl.startsWith('https://www.baa.org')) {

@@ -1,6 +1,6 @@
 import { PAGES } from './const';
 
-export type DLMeet = 'doha' | 'birminghamIndoor' | 'ncaai23' | 'boston23' | 'doha23' | 'rabat23';
+export type DLMeet = 'doha' | 'birminghamIndoor' | 'ncaai23' | 'boston23' | 'doha23';
 
 export type AuthPage = 'register' | 'addPicks';
 
