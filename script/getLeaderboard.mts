@@ -1,4 +1,4 @@
-// ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from picks;"' > picks.csv
+// ssh habs@ma.sdf.org "sqlite3 -header -csv ~/db/fantasy1500.db 'select * from picks where meet = \"doha23\";'" > picks.csv
 // ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from users;"' > users.csv
 
 import { MeetCache, DLMeet, Entries, LBType, AthleticsEvent, ResultEntrant, MeetTeam, LBPicks } from './types.mjs';
@@ -60,7 +60,12 @@ const fixIds = (picks: MeetTeam) => {
   }
 };
 
-const evtToGenderedCode = (evt: string): AthleticsEvent => (evt.split(' ').at(-1)?.[0] + disciplineCodes[evt.split(' ').slice(0, -1).join(' ')]) as AthleticsEvent;
+const evtToGenderedCode = (evt: string): AthleticsEvent => {
+  const words = evt.split(' ');
+  const genderWordIdx = words.findIndex((word) => word.toLowerCase().includes('men'));
+  const [genderWord] = words.splice(genderWordIdx, 1);
+  return (genderWord[0].toUpperCase() + disciplineCodes[words.join(' ')]) as AthleticsEvent;
+};
 
 for (const meet of ['doha23'] as DLMeet[]) {
   leaderboard[meet] = [];
@@ -69,9 +74,11 @@ for (const meet of ['doha23'] as DLMeet[]) {
     delete (picks as any).tiebreaker;
     // fixIds(picks); // TODO remove in future
 
+    const name = users.find(({ id }) => id === userid)!.name;
+
     const userPicks = Object.keys(picks!).reduce((acc, evt) => {
       const evtCode = evtToGenderedCode(evt);
-      console.log(evtCode);
+      console.log(evtCode, evt);
       acc[evtCode as AthleticsEvent] = { team: picks![evt as AthleticsEvent]!.map(({ id }) => id) };
       return acc;
     }, {} as LBPicks);
@@ -88,10 +95,12 @@ for (const meet of ['doha23'] as DLMeet[]) {
       if (sprintEvents.includes(evt)) sprintScore += evtScore;
       eventsScored++;
     }
-    const score = distanceScore + sprintScore;
+    let score = distanceScore + sprintScore;
+    if (name === 'Matty G') score += 0.5;
+
     leaderboard[meet]!.push({
       userid,
-      name: users.find(({ id }) => id === userid)!.name,
+      name,
       picks: userPicks,
       distanceScore,
       sprintScore,
