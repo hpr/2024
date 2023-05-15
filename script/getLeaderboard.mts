@@ -96,7 +96,7 @@ for (const meet of ['doha23'] as DLMeet[]) {
       eventsScored++;
     }
     let score = distanceScore + sprintScore;
-    if (name === 'Matty G') score += 0.5;
+    if (name === 'Matty G' && meet === 'doha23') score += 0.5;
 
     leaderboard[meet]!.push({
       userid,
