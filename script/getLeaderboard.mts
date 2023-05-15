@@ -3,7 +3,7 @@
 
 import { MeetCache, DLMeet, Entries, LBType, AthleticsEvent, ResultEntrant, MeetTeam, LBPicks } from './types.mjs';
 import fs from 'fs';
-import { backupNotes, CACHE_PATH, disciplineCodes, distanceEvents, ENTRIES_PATH, LB_PATH, SCORE, sprintEvents } from './const.mjs';
+import { backupNotes, CACHE_PATH, disciplineCodes, distanceEvents, ENTRIES_PATH, LB_PATH, MEET, SCORE, sprintEvents } from './const.mjs';
 import { parse } from 'csv-parse/sync';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
@@ -67,7 +67,7 @@ const evtToGenderedCode = (evt: string): AthleticsEvent => {
   return (genderWord[0].toUpperCase() + disciplineCodes[words.join(' ')]) as AthleticsEvent;
 };
 
-for (const meet of ['doha23'] as DLMeet[]) {
+for (const meet of [MEET] as DLMeet[]) {
   leaderboard[meet] = [];
   for (const { picksJson, userid } of rows) {
     const picks: MeetTeam = JSON.parse(picksJson);

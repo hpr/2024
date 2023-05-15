@@ -1,11 +1,9 @@
 import fs from 'fs';
-import { BLURBCACHE_PATH, ENTRIES_PATH, GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY } from './const.mjs';
+import { BLURBCACHE_PATH, ENTRIES_PATH, GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, MEET } from './const.mjs';
 import { AthleticsEvent, DLMeet, Entries, Competitor, ResultsByYearResult, BlurbCache } from './types.mjs';
 import dotenv from 'dotenv';
 import { ChatGPTAPI, ChatMessage } from 'chatgpt';
 dotenv.config();
-
-const MEET: DLMeet = 'doha23';
 
 const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
 const blurbCache: BlurbCache = JSON.parse(fs.readFileSync(BLURBCACHE_PATH, 'utf-8'));
