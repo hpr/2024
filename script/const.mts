@@ -32,7 +32,7 @@ export const runningEvents: (AthleticsEvent | string)[][] = [
   ['5000m Men', "Men's 5000 Meters", 'Men 5000 M'],
 ];
 
-export const distanceEvents: string[] = [
+export const distanceEvents: AthleticsEvent[] = [
   "Men's 800 Meters",
   "Women's 800 Meters",
   "Men's Mile",
@@ -46,7 +46,7 @@ export const distanceEvents: string[] = [
   '1500m Women',
 ];
 
-export const sprintEvents: string[] = [
+export const sprintEvents: AthleticsEvent[] = [
   "Men's 60 Meters",
   "Women's 60 Meters",
   "Men's 60 Hurdles",

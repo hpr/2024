@@ -4,13 +4,17 @@ export type AthleticsEvent =
   | '100m Women'
   | '100m Men'
   | '100m H Women'
+  | '100m Hurdles Women'
   | '110m H Men'
+  | '110m Hurdles Men'
   | '200m Women'
   | '200m Men'
   | '400m Women'
   | '400m Men'
   | '400m H Women'
   | '400m H Men'
+  | '400m Hurdles Men'
+  | '400m Hurdles Women'
   | '800m Women'
   | '800m Men'
   | '1500m Women'
@@ -19,6 +23,8 @@ export type AthleticsEvent =
   | '3000m Men'
   | '3000m SC Women'
   | '3000m SC Men'
+  | '3000m Steeplechase Men'
+  | '3000m Steeplechase Women'
   | '5000m Women'
   | '5000m Men'
   | "Women's 60 m"
@@ -329,6 +335,11 @@ export type SportResultSchedule = {
           EventName: string;
           Rsc: {
             ValueUnit: string;
+          };
+          Stats: {
+            DiamondId?: string;
+            DiamondType?: string;
+            CompetitionName?: string; // for non-DL events
           };
         };
       };

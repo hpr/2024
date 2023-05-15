@@ -89,9 +89,7 @@ for (const key in resultsLinks) {
     const schedule: SportResultSchedule = await (await fetch(resultsLinks[meet])).json();
     for (const key in entries[meet]) {
       const evt = key as AthleticsEvent;
-      const evtId = Object.values(schedule.content.full.Units)
-        .filter((unit) => unit.EventName === evt)
-        .at(-1)!.Rsc.ValueUnit;
+      const evtId = Object.values(schedule.content.full.Units).find((unit) => unit.EventName === evt && unit.Stats.DiamondId)?.Rsc.ValueUnit;
       const evtResultResp = await fetch(`https://livecache.sportresult.com/node/db/ATH_PROD/${meetId}_TIMING_${evtId}_JSON.json`);
       if (evtResultResp.status === 404) {
         console.log('skipping', evt, evtId);
