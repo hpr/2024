@@ -1,6 +1,6 @@
 import { AthleticsEvent, MeetCache, DLMeet, Entries, Entrant, ResultEntrant, SportResultSchedule, SportResultTiming } from './types.mjs';
 import fs from 'fs';
-import { backupNotes, CACHE_PATH, ENTRIES_PATH, getDomainAndPath, runningEvents } from './const.mjs';
+import { backupNotes, CACHE_PATH, ENTRIES_PATH, getDomainAndPath, MEET, runningEvents } from './const.mjs';
 import { JSDOM } from 'jsdom';
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
@@ -11,6 +11,7 @@ const resultsLinks: { [k in DLMeet]: string } = {
   ncaai23: 'https://flashresults.ncaa.com/Indoor/2023/index.htm',
   boston23: '',
   doha23: 'https://livecache.sportresult.com/node/db/ATH_PROD/DOHA2023_SCHEDULE_JSON.json',
+  rabat23: '',
 };
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
@@ -22,7 +23,7 @@ const findMatchingEvt = (meetEntries: Entries['ncaai23'], evt: AthleticsEvent) =
 
 for (const key in resultsLinks) {
   const meet = key as DLMeet;
-  if (meet !== 'doha23') continue;
+  if (meet !== MEET) continue;
   cache[meet] ??= { schedule: {}, events: {}, ids: {} };
   if (resultsLinks[meet].includes('flashresults')) {
     cache[meet].resultsSchedule ??= await (await fetch(resultsLinks[meet])).text();
