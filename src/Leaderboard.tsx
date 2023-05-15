@@ -56,9 +56,9 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
           value={sortBy}
           onChange={(v: SortBy) => setSortBy(v)}
           data={[
-            { label: 'Overall', value: 'score' },
-            { label: 'King of the Distance', value: 'distanceScore' },
-            { label: 'King of the Sprints', value: 'sprintScore' },
+            { label: 'Overall Leaderboard', value: 'score' },
+            // { label: 'King of the Distance', value: 'distanceScore' },
+            // { label: 'King of the Sprints', value: 'sprintScore' },
           ]}
           mb={10}
         />
@@ -71,7 +71,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
                     sx={{ width: '100%' }}
                     icon={
                       <Avatar size="sm" radius="xl" style={{ border: `1px solid ${mantineGray}` }}>
-                        {i + 1}
+                        {leaderboard[meet]?.findIndex(entry => entry.score === lbentry.score)! + 1}
                       </Avatar>
                     }
                   >
