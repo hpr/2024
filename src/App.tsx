@@ -26,7 +26,7 @@ import { AthleticsEvent, AuthPage, DLMeet, Entrant, Entries, Page, Team, TeamToS
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
-import { BrandGit, Calculator, Check, Dots, Mail, Run, Trophy, Users } from 'tabler-icons-react';
+import { BrandGit, Calculator, Check, Diamond, Dots, Mail, Run, Trophy, Users } from 'tabler-icons-react';
 import { DIVIDER, NUM_BACKUP, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
@@ -260,6 +260,16 @@ export default function App() {
                           ]
                         : []),
                       {
+                        icon: <Diamond />,
+                        color: 'black',
+                        label: 'League Standings',
+                        onClick: () => {
+                          navigate('/standings');
+                          setPage('standings');
+                          setNavbarOpen(false);
+                        },
+                      },
+                      {
                         icon: <Users />,
                         color: 'black',
                         label: 'Submissions',
@@ -309,7 +319,7 @@ export default function App() {
                 <Burger opened={navbarOpen} onClick={() => setNavbarOpen((o) => !o)} size="sm" color={theme.colors.gray[6]} mr="xl" />
               </MediaQuery>
               <Text size="md">
-                Fantasy Doha '23
+                Fantasy Rabat '23
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20}>
@@ -334,7 +344,8 @@ export default function App() {
                     <Text mb={10}>
                       <strong>Submissions Deadline:</strong> Friday 4/5 before the DL window starts, by noon ET.
                       <br />
-                      <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place: Free T-Shirt. Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes!
+                      <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
+                      Free T-Shirt. Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes!
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
@@ -373,6 +384,8 @@ export default function App() {
             <Leaderboard meet={meet} entries={entries!} />
           ) : page === 'scoring' ? (
             <Results entries={entries} meet={meet} />
+          ) : page === 'standings' ? (
+            <div></div>
           ) : (
             <EventTeamPicker entries={entries} meet={meet} evt={evt!} />
           )}

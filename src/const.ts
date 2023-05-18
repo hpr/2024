@@ -1,12 +1,11 @@
 export const scoring = [140, 120, 110, 100, 90, 80, 70, 60];
 
-export const SERVER_URL = 'https://habs.sdf.org/fantasy1500-server/server.cgi';
+export const SERVER_URL = 'https://habs.sdf.org:8080/fantasy';
 
 export const PICKS_PER_EVT: number = 3;
 export const NUM_BACKUP: number = 1;
 
-export const GRAPHQL_ENDPOINT =
-  'https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql';
+export const GRAPHQL_ENDPOINT = 'https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql';
 export const GRAPHQL_API_KEY = 'da2-erlx4oraybbjrlxorsdgmemgua';
 export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
@@ -34,12 +33,7 @@ export const mantineGray = 'rgb(55, 58, 64)';
 
 export const DIVIDER = 'divider' as 'divider';
 
-export const PAGES = ['events', 'scoring', 'submissions', 'leaderboard'] as [
-  'events',
-  'scoring',
-  'submissions',
-  'leaderboard'
-];
+export const PAGES = ['events', 'scoring', 'submissions', 'leaderboard', 'standings'] as ['events', 'scoring', 'submissions', 'leaderboard', 'standings'];
 
 export const disciplineCodes: { [k: string]: string } = {
   '50 Meters': '50',
