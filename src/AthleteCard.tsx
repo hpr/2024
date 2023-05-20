@@ -22,7 +22,7 @@ import {
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { useContext, useState } from 'react';
 import { AlertCircle, Globe, Link, Minus, Plus, World } from 'tabler-icons-react';
-import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, NUM_BACKUP, PICKS_PER_EVT } from './const';
+import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, Competitor, DLMeet, Entrant, ResultsByYearResult } from './types';
 import { isTouchDevice } from './util';
@@ -56,8 +56,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
   const team = myTeam?.[meet]?.[event] ?? [];
   const teamPosition = team.findIndex((member) => member.id === entrant.id);
   const isOnTeam = teamPosition >= 0;
-  const multiplier = PICKS_PER_EVT - NUM_BACKUP - teamPosition;
-  const isBackup = teamPosition >= PICKS_PER_EVT - NUM_BACKUP;
+  const isBackup = teamPosition >= PICKS_PER_EVT;
 
   const showAndCacheDetails = async () => {
     setShowDetails(true);
@@ -145,7 +144,6 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
                   if (isOnTeam) return 'Remove from Team';
                   if (team.length >= PICKS_PER_EVT) return 'Team Full';
                   if (team.length === 0) return 'Add as Event Captain';
-                  if (team.length >= PICKS_PER_EVT - NUM_BACKUP) return 'Add as Backup Athlete';
                   return 'Add to Team';
                 })()}
               </Button>
@@ -228,7 +226,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
         <tr onClick={showAndCacheDetails} style={{ cursor: 'pointer' }}>
           <td>
             {name}
-            {isOnTeam && <Badge ml={5}>{isBackup ? 'Backup' : `× ${multiplier}`}</Badge>}
+            {isOnTeam && <Badge ml={5}>{isBackup ? 'Backup' : `#${teamPosition + 1}`}</Badge>}
           </td>
           {/* <td>{entrant.team}</td>
           <td>{job}</td> */}
@@ -246,8 +244,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
               {(() => {
                 if (isOnTeam) return 'Remove';
                 if (team.length === 0) return 'Captain';
-                if (team.length < PICKS_PER_EVT - NUM_BACKUP) return 'Add';
-                if (team.length < PICKS_PER_EVT) return 'Backup';
+                if (team.length < PICKS_PER_EVT) return 'Add';
                 return 'Full';
               })()}
             </Button>
@@ -272,7 +269,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
                   disabled={!isOnTeam}
                   size={30}
                   withBorder
-                  label={isBackup ? 'Backup' : `× ${multiplier}`}
+                  label={isBackup ? 'Backup' : `#${teamPosition + 1}`}
                   offset={15}
                   position="top-start"
                   sx={{ zIndex: 1 }}

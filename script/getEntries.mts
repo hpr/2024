@@ -19,7 +19,7 @@ const schedules: { [k in DLMeet]: string[] } = {
   ],
   boston23: ['https://www.baa.org/races/boston-marathon/pro-athletes/2023-boston-marathon-professional-team'],
   doha23: ['https://doha.diamondleague.com/programme-results-doha/'],
-  rabat23: [],
+  rabat23: ['https://rabat.diamondleague.com/en/programme-results-rabat/'],
 };
 
 const idTeams = {
@@ -204,6 +204,7 @@ const getEntries = async () => {
   for (const key in schedules) {
     const meet = key as DLMeet;
     if (meet !== MEET) continue;
+    cache[meet] ??= {} as { schedule: {}, events: {}, ids: {} }; // TODO fix typing
     entries[meet] = {};
     for (const meetScheduleUrl of schedules[meet]) {
       if (meetScheduleUrl.startsWith('https://www.baa.org')) {
@@ -375,10 +376,10 @@ const getEntries = async () => {
         const { document } = new JSDOM(cache[meet].schedule.combined).window;
         const events = [...document.querySelectorAll('.competition.DR')]
           .map((elem) => ({
-            name: elem.querySelector('.name')!.textContent!,
-            url: elem.querySelector('.links a')!.getAttribute('href')!,
+            name: elem.querySelector('.name')?.textContent,
+            url: elem.querySelector('.links a')?.getAttribute('href'),
           }))
-          .filter(({ name }) => runningEvents.flat().includes(name as AthleticsEvent));
+          .filter(({ name, url }) => runningEvents.flat().includes(name as AthleticsEvent) && url);
         for (const { name: origName, url } of events) {
           const name = origName as AthleticsEvent;
           if (!cache[meet].events?.[name]?.startlist) {

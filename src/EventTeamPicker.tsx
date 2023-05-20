@@ -2,11 +2,10 @@ import { Avatar, Button, Code, Grid, GridProps, Group, Paper, Stack, Switch, Tab
 import { useContext, useState } from 'react';
 import { Check, Dots, HandClick, HandFinger } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
-import { mantineGray, NUM_BACKUP, PICKS_PER_EVT } from './const';
+import { mantineGray, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, DLMeet, Entries } from './types';
 import { modals } from '@mantine/modals';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | null; meet: DLMeet; evt: AthleticsEvent }) => {
   const { myTeam, setMyTeam } = useContext(Store);
@@ -66,10 +65,10 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
                       <Tooltip
                         key={i}
                         withArrow
-                        label={`${i === 0 ? 'Event Captain' : i < PICKS_PER_EVT - NUM_BACKUP ? `#${i + 1} Member` : 'Backup'}: ${lastName}`}
+                        label={`${i === 0 ? 'Event Captain' : i < PICKS_PER_EVT ? `#${i + 1} Member` : 'Backup'}: ${lastName}`}
                         events={{ hover: true, focus: true, touch: true }}
                       >
-                        <Avatar size={i === 0 ? 'lg' : i < PICKS_PER_EVT - NUM_BACKUP ? 'md' : 'sm'} src={`img/avatars/${id}_128x128.png`} radius="xl" />
+                        <Avatar size={i === 0 ? 'lg' : i < PICKS_PER_EVT ? 'md' : 'sm'} src={`img/avatars/${id}_128x128.png`} radius="xl" />
                       </Tooltip>
                     ))}
                   </Avatar.Group>
