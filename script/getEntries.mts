@@ -31,6 +31,8 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   if (!a.pb && !b.pb) return 0;
   if (!a.pb) return 1;
   if (!b.pb) return -1;
+  const sigFigDiff = Number.parseInt(a.pb) - Number.parseInt(b.pb);
+  if (sigFigDiff) return sigFigDiff;
   return a.pb.localeCompare(b.pb);
 };
 const getWaId = async (
@@ -204,7 +206,7 @@ const getEntries = async () => {
   for (const key in schedules) {
     const meet = key as DLMeet;
     if (meet !== MEET) continue;
-    cache[meet] ??= {} as { schedule: {}, events: {}, ids: {} }; // TODO fix typing
+    cache[meet] ??= {} as { schedule: {}; events: {}; ids: {} }; // TODO fix typing
     entries[meet] = {};
     for (const meetScheduleUrl of schedules[meet]) {
       if (meetScheduleUrl.startsWith('https://www.baa.org')) {
