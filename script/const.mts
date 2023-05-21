@@ -247,7 +247,8 @@ export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
   competitor: getSingleCompetitor(id: $id, urlSlug: $urlSlug) {
     basicData {
-      firstName lastName birthDate iaafId aaId
+      ${''/* firstName lastName */}
+      givenName familyName birthDate iaafId aaId
     }
     personalBests {
       results {

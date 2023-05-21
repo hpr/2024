@@ -125,7 +125,7 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
                   })
                 }
               >
-                Open ChatGPT Preview
+                Open TrackBot (AI) Preview
               </Button>
             </Stack>
           </Paper>

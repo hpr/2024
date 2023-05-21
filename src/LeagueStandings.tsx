@@ -18,7 +18,7 @@ const LeagueStandings = () => {
       <Paper withBorder p="lg" mb="lg" style={{ textAlign: 'center' }}>
         <Title order={2}>League Standings</Title>
       </Paper>
-      <Timeline active={1} bulletSize={24} lineWidth={2}>
+      <Timeline active={standings.findIndex((standing) => standing.cutoff) + 1} bulletSize={24} lineWidth={2}>
         {standings.map(({ meet, date, url, leaders, cutoff }) => (
           <Timeline.Item
             key={meet}
@@ -45,6 +45,7 @@ const LeagueStandings = () => {
                   <li>
                     <Text
                       underline
+                      sx={{ cursor: 'pointer' }}
                       onClick={() =>
                         modals.open({
                           title: 'Other Participants',

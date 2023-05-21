@@ -36,7 +36,10 @@ for (const meetInfo of meets) {
   if (cutoffEntry)
     meetStanding.cutoff = {
       place: leaderboard[meet]?.findIndex((leader) => leader.score === cutoffEntry.score)! + 1,
-      users: leaderboard[meet]!.filter((leader) => leader.score <= cutoffEntry.score).map(({ userid, name }) => ({ id: userid, name })),
+      users: leaderboard[meet]!.filter((leader) => +leader.userid !== TRACKBOT_USERID && leader.score <= cutoffEntry.score).map(({ userid, name }) => ({
+        id: userid,
+        name,
+      })),
     };
   standings.push(meetStanding);
 }
