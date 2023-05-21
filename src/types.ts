@@ -1,6 +1,24 @@
 import { PAGES } from './const';
 
-export type DLMeet = 'doha' | 'birminghamIndoor' | 'ncaai23' | 'boston23' | 'doha23' | 'rabat23';
+export type DLMeet =
+  | 'doha'
+  | 'birminghamIndoor'
+  | 'ncaai23'
+  | 'boston23'
+  | 'doha23'
+  | 'rabat23'
+  | 'florence23'
+  | 'paris23'
+  | 'oslo23'
+  | 'lausanne23'
+  | 'stockholm23'
+  | 'silesia23'
+  | 'monaco23'
+  | 'london23'
+  | 'zurich23'
+  | 'shenzhen23'
+  | 'brussels23'
+  | 'eugene23';
 
 export type AuthPage = 'register' | 'addPicks';
 
@@ -129,3 +147,21 @@ export type TeamToScore = {
   name: string;
   lbpicks: LBPicks;
 };
+
+export type StandingElement = {
+  meet: DLMeet;
+  url: string;
+  date: string;
+  leaders: {
+    name: string;
+    userid: number;
+    cumPlace: number;
+    place: number;
+    delta: number;
+  }[];
+  cutoff?: {
+    place: number;
+    users: { id: number; name: string }[];
+  };
+};
+export type Standings = StandingElement[];

@@ -1,4 +1,22 @@
-export type DLMeet = 'doha' | 'birminghamIndoor' | 'ncaai23' | 'boston23' | 'doha23' | 'rabat23';
+export type DLMeet =
+  | 'doha'
+  | 'birminghamIndoor'
+  | 'ncaai23'
+  | 'boston23'
+  | 'doha23'
+  | 'rabat23'
+  | 'florence23'
+  | 'paris23'
+  | 'oslo23'
+  | 'lausanne23'
+  | 'stockholm23'
+  | 'silesia23'
+  | 'monaco23'
+  | 'london23'
+  | 'zurich23'
+  | 'shenzhen23'
+  | 'brussels23'
+  | 'eugene23';
 
 export type AthleticsEvent =
   | '100m Women'
@@ -376,7 +394,7 @@ export type StandingElement = {
     place: number;
     delta: number;
   }[];
-  cutoff: {
+  cutoff?: {
     place: number;
     users: { id: number; name: string }[];
   };

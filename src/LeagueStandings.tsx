@@ -1,63 +1,71 @@
 import { Timeline, Text, Paper, Title } from '@mantine/core';
-import { GitBranch, GitPullRequest, GitCommit, MessageDots } from 'tabler-icons-react';
+import { Link, Diamond } from 'tabler-icons-react';
+import { Standings } from './types';
+import { useEffect, useState } from 'react';
+import { modals } from '@mantine/modals';
 
-function LeagueStandings() {
+const LeagueStandings = () => {
+  const [standings, setStandings] = useState<Standings>([]);
+
+  useEffect(() => {
+    (async () => {
+      setStandings(await (await fetch('standings.json')).json());
+    })();
+  }, []);
+
   return (
     <Paper withBorder p="lg">
       <Paper withBorder p="lg" mb="lg" style={{ textAlign: 'center' }}>
         <Title order={2}>League Standings</Title>
       </Paper>
       <Timeline active={1} bulletSize={24} lineWidth={2}>
-        <Timeline.Item bullet={<GitBranch size={12} />} title="Doha">
-          <Text color="dimmed" size="sm">
-            <ol>
-              <li>test</li>
-              <li>2nd</li>
-            </ol>
-          </Text>
-          <Text size="xs" mt={4}>
-            May 5, 2023
-          </Text>
-        </Timeline.Item>
-
-        <Timeline.Item bullet={<GitBranch size={12} />} title="Rabat">
-          <Text color="dimmed" size="sm">
-            <ol>
-              <li>test</li>
-              <li>2nd</li>
-            </ol>
-          </Text>
-          <Text size="xs" mt={4}>
-            May 5, 2023
-          </Text>
-        </Timeline.Item>
-
-        <Timeline.Item title="Pull request" bullet={<GitPullRequest size={12} />} lineVariant="dashed">
-          <Text color="dimmed" size="sm">
-            You&apos;ve submitted a pull request
-            <Text variant="link" component="span" inherit>
-              Fix incorrect notification message (#187)
+        {standings.map(({ meet, date, url, leaders, cutoff }) => (
+          <Timeline.Item
+            key={meet}
+            bullet={<Diamond size={12} />}
+            title={
+              <Text>
+                {meet[0].toUpperCase() + meet.slice(1, -2)}{' '}
+                {url && (
+                  <a href={url}>
+                    <Link size={15} />
+                  </a>
+                )}
+              </Text>
+            }
+          >
+            <Text color="dimmed" size="sm">
+              <ol>
+                {leaders.map((leader) => (
+                  <li key={leader.userid}>
+                    {leader.name}#{leader.userid} &mdash; {leader.cumPlace}
+                  </li>
+                ))}
+                {!!leaders.length && (
+                  <li>
+                    <Text
+                      underline
+                      onClick={() =>
+                        modals.open({
+                          title: 'Other Participants',
+                          children: <Text>{cutoff?.users?.map((user) => `${user.name}#${user.id}`).join(', ')}</Text>,
+                        })
+                      }
+                    >
+                      ...everyone else (tie)
+                    </Text>
+                  </li>
+                )}
+              </ol>
             </Text>
-          </Text>
-          <Text size="xs" mt={4}>
-            34 minutes ago
-          </Text>
-        </Timeline.Item>
-
-        <Timeline.Item title="Code review" bullet={<MessageDots size={12} />}>
-          <Text color="dimmed" size="sm">
-            <Text variant="link" component="span" inherit>
-              Robert Gluesticker
-            </Text>{' '}
-            left a code review on your pull request
-          </Text>
-          <Text size="xs" mt={4}>
-            12 minutes ago
-          </Text>
-        </Timeline.Item>
+            <Text size="xs" mt={4}>
+              {date}
+            </Text>
+          </Timeline.Item>
+        ))}
       </Timeline>
     </Paper>
   );
-}
+};
 
 export default LeagueStandings;

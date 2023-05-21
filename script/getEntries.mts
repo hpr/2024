@@ -10,7 +10,7 @@ import { TextItem } from 'pdfjs-dist/types/src/display/api.js';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 
-const schedules: { [k in DLMeet]: string[] } = {
+const schedules: { [k in DLMeet]?: string[] } = {
   doha: ['https://web.archive.org/web/20220512074007/https://doha.diamondleague.com/programme-results-doha/'],
   birminghamIndoor: ['./script/files/EntryList.PDF'],
   ncaai23: [
@@ -208,7 +208,7 @@ const getEntries = async () => {
     if (meet !== MEET) continue;
     cache[meet] ??= {} as { schedule: {}; events: {}; ids: {} }; // TODO fix typing
     entries[meet] = {};
-    for (const meetScheduleUrl of schedules[meet]) {
+    for (const meetScheduleUrl of schedules[meet] ?? []) {
       if (meetScheduleUrl.startsWith('https://www.baa.org')) {
         cache[meet] ??= { events: {}, ids: {}, schedule: {} };
         const { document } = new JSDOM((cache[meet].schedule.combined ??= await (await fetch(meetScheduleUrl)).text())).window;
