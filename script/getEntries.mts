@@ -23,8 +23,10 @@ const schedules: { [k in DLMeet]?: string[] } = {
 };
 
 const idTeams = {
+  // TODO fetch from wikidata?
   14564128: 'LSU',
   14627624: 'WSU Cougars',
+  14477412: 'Monmouth University Hawks',
 };
 
 const entrantSortFunc = (a: Entrant, b: Entrant) => {

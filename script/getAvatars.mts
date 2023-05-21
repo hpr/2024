@@ -18,6 +18,9 @@ const P_WA_ATHLETE_ID = 'P1146';
 const P_USATF_ATHLETE_ID = 'P10634';
 const P_OLYMPEDIA_ID = 'P8286';
 const P_DESCRIBED_AT_URL = 'P973';
+const P_MOROCCAN_OLYMPIC_ID = 'P11019';
+const P_PZLA_ATHLETE_ID = 'P5075';
+const P_STRAVA_ID = 'P5283';
 
 const wbk = WBK({
   instance: 'https://www.wikidata.org',
@@ -191,12 +194,31 @@ for (const entrant of entrants) {
         const athObj = wbk.simplify.entity((await (await fetch(wbk.getEntities({ ids: qid }))).json()).entities[qid]) as SimplifiedItem;
         const usatfId = athObj.claims?.[P_USATF_ATHLETE_ID]?.[0];
         const olympediaId = athObj.claims?.[P_OLYMPEDIA_ID]?.[0];
+        const moroccanId = athObj.claims?.[P_MOROCCAN_OLYMPIC_ID]?.[0];
+        const pzlaId = athObj.claims?.[P_PZLA_ATHLETE_ID]?.[0];
+        const stravaId = athObj.claims?.[P_STRAVA_ID]?.[0];
         const describedAtUrl = athObj.claims?.[P_DESCRIBED_AT_URL]?.[0];
         if (usatfId) {
           const url = `https://www.usatf.org/athlete-bios/${usatfId}`;
           const { document } = new JSDOM(await (await fetch(url)).text()).window;
           let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
           if (imageUrl?.startsWith('/')) imageUrl = getDomain(url) + imageUrl;
+          avatarResp = await fetch(imageUrl!);
+        } else if (moroccanId) {
+          const url = `https://www.cnom.org.ma/fr/athlete/${moroccanId}`;
+          const { document } = new JSDOM(await (await fetch(url)).text()).window;
+          let imageUrl = document.querySelector('.profile-box img')?.getAttribute('src');
+          if (imageUrl?.startsWith('/')) imageUrl = getDomain(url) + imageUrl;
+          avatarResp = await fetch(imageUrl!);
+        } else if (pzlaId) {
+          const url = `https://statystyka.pzla.pl/personal.php?page=profile&nr_zaw=${pzlaId}`;
+          const { document } = new JSDOM(await (await fetch(url)).text()).window;
+          const imageUrl = document.querySelector('td[align=center] img')?.getAttribute('src');
+          avatarResp = await fetch(imageUrl!);
+        } else if (stravaId) {
+          const url = `https://www.strava.com/pros/${stravaId}`
+          const { document } = new JSDOM(await (await fetch(url)).text()).window;
+          const imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
           avatarResp = await fetch(imageUrl!);
         } else if (olympediaId) {
           const imageUrl = `https://d2a3o6pzho379u.cloudfront.net/${olympediaId}.jpg`;
