@@ -27,7 +27,7 @@ const LeagueStandings = () => {
               <Text>
                 {meet[0].toUpperCase() + meet.slice(1, -2)}{' '}
                 {url && (
-                  <a href={url}>
+                  <a href={url} target="_blank">
                     <Link size={15} />
                   </a>
                 )}
