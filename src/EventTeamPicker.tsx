@@ -1,11 +1,12 @@
 import { Avatar, Button, Code, Grid, GridProps, Group, Paper, Stack, Switch, Table, TableProps, Text, Title, Tooltip } from '@mantine/core';
 import { useContext, useState } from 'react';
-import { Check, Dots, HandClick, HandFinger } from 'tabler-icons-react';
+import { Check, Dots, HandClick, HandFinger, Robot } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
 import { mantineGray, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, DLMeet, Entries } from './types';
 import { modals } from '@mantine/modals';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | null; meet: DLMeet; evt: AthleticsEvent }) => {
   const { myTeam, setMyTeam } = useContext(Store);
@@ -116,12 +117,16 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
               <Button
                 onClick={() =>
                   modals.open({
-                    title: `${evt} AI Preview`,
+                    title: <Text>{evt} AI Preview <Robot /></Text>,
                     children: (
-                      <Code block sx={{ whiteSpace: 'pre-wrap' }}>
-                        {entries?.[meet]?.[evt]?.blurb?.replaceAll('\\n', '\n')}
-                      </Code>
+                      <ReactMarkdown>
+                        {entries?.[meet]?.[evt]?.blurb ?? ''}
+                      </ReactMarkdown>
+                      // <Code block sx={{ whiteSpace: 'pre-wrap' }}>
+                      //   {entries?.[meet]?.[evt]?.blurb}
+                      // </Code>
                     ),
+                    size: 'xl',
                   })
                 }
               >
