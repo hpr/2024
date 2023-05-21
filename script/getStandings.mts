@@ -1,23 +1,8 @@
-import { STANDINGS_PATH, getLbPath } from './const.mjs';
-import { DLMeet, LBEntry, LBType, StandingElement, Standings } from './types.mjs';
+import { STANDINGS_PATH, getLbPath, standingsMeets } from './const.mjs';
+import { LBEntry, LBType, StandingElement, Standings } from './types.mjs';
 import fs from 'fs';
 
-const meets: { meet: DLMeet; date: string }[] = [
-  { meet: 'doha23', date: 'May 5, 2023' },
-  { meet: 'rabat23', date: 'May 28, 2023' },
-  { meet: 'florence23', date: 'June 2, 2023' },
-  { meet: 'paris23', date: 'June 9, 2023' },
-  { meet: 'oslo23', date: 'June 15, 2023' },
-  { meet: 'lausanne23', date: 'June 30, 2023' },
-  { meet: 'stockholm23', date: 'July 2, 2023' },
-  { meet: 'silesia23', date: 'July 16, 2023' },
-  { meet: 'monaco23', date: 'July 21, 2023' },
-  { meet: 'london23', date: 'July 23, 2023' },
-  { meet: 'zurich23', date: 'August 31, 2023' },
-  { meet: 'shenzhen23', date: 'September 2, 2023' },
-  { meet: 'brussels23', date: 'September 8, 2023' },
-  { meet: 'eugene23', date: 'September 16-17, 2023' },
-];
+const meets = standingsMeets;
 const standings: Standings = [];
 const TRACKBOT_USERID = 302;
 

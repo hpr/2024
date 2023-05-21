@@ -1,89 +1,158 @@
-Write a race preview for the Women's 3000m Steeplechase at the 2023 Doha Diamond League track meet, which will happen on May 5th, 2023. Here are the competitors:
+Write a race prediction and preview for the Men's 3000m Steeplechase at the 2023 Rabat Diamond League track meet, which will happen on May 28, 2023. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:
 
-1. Beatrice Chepkoech (KEN), 31 years old
-Personal Best: 8:44.32, Season's Best: N/A
-2023 results for Beatrice Chepkoech:
-24 FEB: 1st place, 4:08.44 in 1500 Metres @ Nyayo National Stadium, Nairobi (KEN)
-08 APR: 1st place, 32:13 in 10 Kilometres @ Port Gentil (GAB)
+1. Soufiane el Bakkali (MAR), 27 years old
+Personal Best: 7:58.15, Season's Best: N/A
+2023 results for Soufiane el Bakkali:
+05 MAY: 4th place, 7:33.87 in 3000 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
 
-2. Mekides Abebe (ETH), 22 years old
-Personal Best: 8:56.08, Season's Best: N/A
-2023 results for Mekides Abebe:
-19 MAR: 2nd place, 14:35 in 5 Kilometres @ Lille (FRA)
-15 APR: 1st place, 15:01 in 5 Kilometres @ Boston, MA (USA)
+2. Conseslus Kipruto (KEN), 28 years old
+Personal Best: 8:00.12, Season's Best: N/A
+2022 results for Conseslus Kipruto:
+28 APR: 5th place, 8:32.24 in 3000 Metres Steeplechase @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
+07 MAY: 5th place, 8:32.76 in 3000 Metres Steeplechase @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
+05 JUN: 4th place, 8:12.47 in 3000 Metres Steeplechase @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+09 JUN: 4th place, 8:08.76 in 3000 Metres Steeplechase @ Stadio Olimpico, Roma (ITA)
+24 JUN: 3rd place, 8:18.21 in 3000 Metres Steeplechase @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
+15 JUL: 2nd place, 8:20.12 in 3000 Metres Steeplechase @ Hayward Field, Eugene, OR (USA)
+18 JUL: 3rd place, 8:27.92 in 3000 Metres Steeplechase @ Hayward Field, Eugene, OR (USA)
+06 AUG: 6th place, 8:34.96 in 3000 Metres Steeplechase @ Alexander Stadium, Birmingham (GBR)
 
-3. Winfred Mutile Yavi (BRN), 23 years old
-Personal Best: 8:56.55, Season's Best: N/A
-2023 results for Winfred Mutile Yavi:
-08 JAN: 3rd place, 25:58 in Cross Country @ Elgoibar (ESP)
-05 FEB: 1st place, 32:24 in Cross Country @ Cairo International Complex, Cairo (EGY)
+3. Benjamin Kigen (KEN), 29 years old
+Personal Best: 8:05.12, Season's Best: 8:30.81
+2023 results for Benjamin Kigen:
+24 FEB: 1st place, 3:49.48 in 1500 Metres @ Nyayo National Stadium, Nairobi (KEN)
+15 APR: 16th place, 13:40 in 5 Kilometres @ Boston, MA (USA)
+27 APR: 2nd place, 3:40.41 in 1500 Metres @ Nyayo National Stadium, Nairobi (KEN)
+13 MAY: 6th place, 8:30.81 in 3000 Metres Steeplechase @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
 
-4. Peruth Chemutai (UGA), 23 years old
-Personal Best: 9:01.45, Season's Best: N/A
-2023 results for Peruth Chemutai:
-19 MAR: 6th place, 15:12 in 5 Kilometres @ Lille (FRA)
+4. Getnet Wale (ETH), 22 years old
+Personal Best: 8:05.21, Season's Best: N/A
+2023 results for Getnet Wale:
+18 FEB: 2nd place, 23:21 in Mixed Relay @ Bathurst (AUS)
+05 MAY: 6th place, 7:36.81 in 3000 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
 
-5. Emma Coburn (USA), 32 years old
-Personal Best: 9:02.35, Season's Best: N/A
-2023 results for Emma Coburn:
-04 FEB: 4:10.39 in 1500 Metres (indoor) @ The Track at New Balance, Boston, MA (USA)
-04 FEB: 7th place, 4:28.84 in One Mile (indoor) @ The Track at New Balance, Boston, MA (USA)
-18 FEB: 5th place, 24:32 in Mixed Relay @ Bathurst (AUS)
-23 FEB: 5th place, 4:10.96 in 1500 Metres @ Lakeside Stadium, Melbourne (AUS)
+5. Djilali Bedrani (FRA), 29 years old
+Personal Best: 8:05.23, Season's Best: N/A
+2023 results for Djilali Bedrani:
+15 JAN: 21st place, 28:19 in 10 Kilometres @ Valencia (ESP)
+22 FEB: 6th place, 8:03.56 in 3000 Metres (indoor) @ Gallur, Madrid (ESP)
+12 MAR: 2nd place, 14:19 in Short Race @ Site de Kerampuilh, Carhaix (FRA)
+19 MAR: 11th place, 13:42 in 5 Kilometres @ Lille (FRA)
 
-6. Jackline Chepkoech (KEN), 19 years old
-Personal Best: 9:02.43, Season's Best: N/A
-2023 results for Jackline Chepkoech:
-04 FEB: 2nd place, 34:57 in Cross Country @ Eldoret (KEN)
+6. Abraham Kibiwot (KEN), 27 years old
+Personal Best: 8:05.72, Season's Best: 8:19.71
+2023 results for Abraham Kibiwot:
+25 FEB: 2nd place, 8:46.99 in 3000 Metres Steeplechase @ Nyayo National Stadium, Nairobi (KEN)
+29 APR: 1st place, 8:21.98 in 3000 Metres Steeplechase @ Nyayo National Stadium, Nairobi (KEN)
+13 MAY: 2nd place, 8:19.71 in 3000 Metres Steeplechase @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
 
-7. Faith Cherotich (KEN), 18 years old
-Personal Best: 9:06.14, Season's Best: N/A
-2023 results for Faith Cherotich:
-18 FEB: 4th place, 21:10 in U20 Race @ Bathurst (AUS)
+7. Hailemariyam Amare (ETH), 26 years old
+Personal Best: 8:06.29, Season's Best: N/A
+2023 results for Hailemariyam Amare:
+18 FEB: 9th place, 30:10 in Senior Race @ Bathurst (AUS)
 
-8. Zerfe Wondemagegn (ETH), 20 years old
-Personal Best: 9:06.37, Season's Best: N/A
-2023 results for Zerfe Wondemagegn:
-27 JAN: 5th place, 8:42.90 in 3000 Metres (indoor) @ Messehalle, Karlsruhe (GER)
-11 FEB: 5th place, 8:49.48 in 3000 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
-15 FEB: 8th place, 8:46.98 in 3000 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+8. Hillary Bor (USA), 33 years old
+Personal Best: 8:08.41, Season's Best: 8:20.67
+2023 results for Hillary Bor:
+21 JAN: 8th place, 28:57 in Cross Country @ Pole Green Park, Richmond, VA (USA)
+04 MAR: 1st place, 43:11 in 15 Kilometres @ Jacksonville, FL (USA)
+02 APR: 2nd place, 46:11 in 10 Miles Road @ Washington Monument Grounds, Washington, DC (USA)
+06 MAY: DNF in 5000 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
+06 MAY: 3rd place, 8:20.67 in 3000 Metres Steeplechase @ Hilmer Lodge Stadium, Walnut, CA (USA)
 
-9. Sembo Almayew (ETH), 18 years old
-Personal Best: 9:09.19, Season's Best: N/A
-2023 results for Sembo Almayew:
-04 FEB: 2nd place, 8:35.04 in 3000 Metres (indoor) @ Stade couvert Jesse Owens, Val-de-Reuil (FRA)
-08 FEB: 3rd place, 4:11.23 in 1500 Metres (indoor) @ Halle Michel d'Ornano, Mondeville (FRA)
-11 FEB: 2nd place, 8:44.05 in 3000 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
-15 FEB: DNF in 3000 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+9. Leonard Kipkemoi Bett (KEN), 22 years old
+Personal Best: 8:08.61, Season's Best: 8:20.02
+2023 results for Leonard Kipkemoi Bett:
+25 FEB: 3rd place, 8:31.55 in 3000 Metres Steeplechase @ Nyayo National Stadium, Nairobi (KEN)
+15 APR: 11th place, 13:30 in 5 Kilometres @ Boston, MA (USA)
+29 APR: 7th place, 13:33 in 5 Kilometres @ Adi-Dassler-Straße 1, Herzogenaurach (GER)
+13 MAY: 3rd place, 8:20.02 in 3000 Metres Steeplechase @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
 
-10. Marwa Bouzayani (TUN), 26 years old
-Personal Best: 9:12.14, Season's Best: N/A
-2023 results for Marwa Bouzayani:
-06 JAN: 6th place, 19:42 in Cross Country @ San Giorgio su Legnano (ITA)
+10. Amos Serem (KEN), 20 years old
+Personal Best: 8:09.93, Season's Best: 8:25.61
+2023 results for Amos Serem:
+04 FEB: 25th place, 31:47 in Cross Country @ Eldoret (KEN)
+25 FEB: 2nd place, 8:29.73 in 3000 Metres Steeplechase @ Nyayo National Stadium, Nairobi (KEN)
+29 APR: 3rd place, 8:25.61 in 3000 Metres Steeplechase @ Nyayo National Stadium, Nairobi (KEN)
+13 MAY: 5th place, 8:29.56 in 3000 Metres Steeplechase @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
 
-11. Maruša Mišmaš Zrimšek (SLO), 28 years old
-Personal Best: 9:14.84, Season's Best: N/A
-2023 results for Maruša Mišmaš Zrimšek:
-04 FEB: 35th place, 38:01 in Cross Country @ Eldoret (KEN)
-12 FEB: 6th place, 4:12.07 in 1500 Metres (indoor) @ Helmut-Körnig-Halle, Dortmund (GER)
-15 FEB: 9th place, 8:47.98 in 3000 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
-18 FEB: 1st place, 2:03.67 in 800 Metres (indoor) @ Velesajam Hall, Zagreb (CRO)
-19 FEB: 1st place, 4:37.37 in 1500 Metres (indoor) @ Velesajam Hall, Zagreb (CRO)
-02 MAR: 5th place, 8:56.71 in 3000 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-03 MAR: 8th place, 8:49.98 in 3000 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+11. Osama Zoghlami (ITA), 28 years old
+Personal Best: 8:11.00, Season's Best: N/A
+2023 results for Osama Zoghlami:
+12 MAR: 3rd place, 31:05 in Cross Country @ Gubbio (ITA)
+05 MAY: 2nd place, 13:23.25 in 5000 Metres @ Stadio Narciso Soldan, Conegliano (ITA)
+14 MAY: 1st place, 5:29.26 in 2000 Metres Steeplechase @ Schönbuchstadion, Pliezhausen (GER)
 
-12. Valerie Constien (USA), 27 years old
-Personal Best: 9:18.34, Season's Best: N/A
-2023 results for Valerie Constien:
-27 JAN: 1st place, 4:37.52 in One Mile @ Colorado-Indoor Practice Facility, Boulder, CO (USA)
-10 FEB: 2nd place, 8:41.77 in 3000 Metres (indoor) @ Boston Univ. Track & Tennis Center, Boston, MA (USA)
-17 FEB: 1st place, 8:48.29 in 3000 Metres (indoor) @ Convention Center, Albuquerque, NM (USA)
+12. Avinash Mukund Sable (IND), 28 years old
+Personal Best: 8:11.20, Season's Best: N/A
+2023 results for Avinash Mukund Sable:
+18 FEB: 35th place, 31:43 in Senior Race @ Bathurst (AUS)
+06 MAY: 12th place, 13:19.30 in 5000 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
+06 MAY: DNF in 10,000 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
 
-13. Doris Lengole Cherop (KEN), 21 years old
-Personal Best: 9:35.85, Season's Best: 9:35.85
-2023 results for Doris Lengole Cherop:
-04 FEB: 54th place, 44:11 in Cross Country @ Eldoret (KEN)
-25 FEB: 1st place, 9:35.85 in 3000 Metres Steeplechase @ Nyayo National Stadium, Nairobi (KEN)
-19 MAR: 3rd place, 14:40 in 5 Kilometres @ Lille (FRA)
+13. Mohamed Tindouft (MAR), 30 years old
+Personal Best: 8:11.65, Season's Best: N/A
+2022 results for Mohamed Tindouft:
+09 FEB: 6th place, 7:53.08 in 3000 Metres (indoor) @ Halle Michel d'Ornano, Mondeville (FRA)
+12 FEB: 6th place, 7:44.63 in 3000 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
+26 MAY: 1st place, 8:20.12 in 3000 Metres Steeplechase @ Stade Sesquieres, Toulouse (FRA)
+05 JUN: 11th place, 8:27.52 in 3000 Metres Steeplechase @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+10 JUN: 4th place, 8:29.91 in 3000 Metres Steeplechase @ Cote d'Or National Sports Complex, St Pierre (MRI)
+30 JUN: 2nd place, 8:23.85 in 3000 Metres Steeplechase @ Stade Complexe Olympique, Oran (ALG)
+15 JUL: DNF in 3000 Metres Steeplechase @ Hayward Field, Eugene, OR (USA)
+10 AUG: DNF in 3000 Metres Steeplechase @ Athletics Stadium, Konya (TUR)
+
+14. Mehdi Belhadj (FRA), 27 years old
+Personal Best: 8:12.43, Season's Best: N/A
+2023 results for Mehdi Belhadj:
+28 JAN: 5th place, 3:42.25 in 1500 Metres (indoor) @ Halle Stéphane Diagana, Lyon (FRA)
+04 FEB: 11th place, 3:43.84 in 1500 Metres (indoor) @ Stade couvert Jesse Owens, Val-de-Reuil (FRA)
+11 FEB: 1st place, 1:50.81 in 800 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
+15 FEB: 1st place, 3:40.86 in 1500 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+19 FEB: 9th place, 3:46.98 in 1500 Metres (indoor) @ Stadium Jean-Pellez, Aubiére (FRA)
+12 MAR: 7th place, 14:43 in Short Race @ Site de Kerampuilh, Carhaix (FRA)
+22 APR: 1st place, 14:07.61 in 5000 Metres @ Stade Marc Nasseau, St-Denis-Réunion (FRA)
+
+15. Mohamed Amin Jhinaoui (TUN), 26 years old
+Personal Best: 8:16.38, Season's Best: N/A
+2023 results for Mohamed Amin Jhinaoui:
+06 JAN: 6th place, 29:12 in Cross Country @ San Giorgio su Legnano (ITA)
+15 JAN: 3rd place, 29:45 in Cross Country @ San Vittore Olona (ITA)
+05 FEB: 5th place, 30:16 in Cross Country @ Cairo International Complex, Cairo (EGY)
+29 APR: 1st place, 3:37.07 in 1500 Metres @ Arena Civica, Milano (ITA)
+05 MAY: 8th place, 7:37.56 in 3000 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
+
+16. Salaheddine ben Yazide (MAR), 20 years old
+Personal Best: 8:19.63, Season's Best: N/A
+2022 results for Salaheddine ben Yazide:
+23 JAN: 1st place, 8:57.65 in 3000 Metres Steeplechase @ Ait Kamra (MAR)
+02 FEB: 1st place, 9:05.83 in 3000 Metres Steeplechase @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+22 MAY: 6th place, 3:42.56 in 1500 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+26 MAY: 1st place, 8:52.41 in 3000 Metres Steeplechase @ Stadion Radés, Radés (TUN)
+29 MAY: 1st place, 8:34.23 in 3000 Metres Steeplechase @ Fes (MAR)
+05 JUN: 10th place, 8:19.63 in 3000 Metres Steeplechase @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+15 JUL: 13th place, 8:38.46 in 3000 Metres Steeplechase @ Hayward Field, Eugene, OR (USA)
+03 AUG: 1st place, 8:50.70 in 3000 Metres Steeplechase @ Pascual Guerrero Stadium, Cali (COL)
+06 AUG: 3rd place, 8:40.62 in 3000 Metres Steeplechase @ Pascual Guerrero Stadium, Cali (COL)
+
+17. Wilberforce Chemiat Kones (KEN), 29 years old
+Personal Best: 8:21.42, Season's Best: N/A
+2023 results for Wilberforce Chemiat Kones:
+13 MAY: DNF in 3000 Metres Steeplechase @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
+
+18. Abderrafia Bouassel (MAR), 22 years old
+Personal Best: 8:27.00, Season's Best: N/A
+2022 results for Abderrafia Bouassel:
+02 FEB: 2nd place, 8:44.22 in 3000 Metres Steeplechase @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+13 MAY: DNF in 3000 Metres Steeplechase @ Suhaim bin Hamad Stadium, Doha (QAT)
+29 MAY: 2nd place, 8:35.40 in 3000 Metres Steeplechase @ Fes (MAR)
+05 JUN: DNF in 3000 Metres Steeplechase @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+15 JUN: 4th place, 8:27.00 in 3000 Metres Steeplechase @ Stade Delort, Marseille (FRA)
+26 JUN: 1st place, 8:29.23 in 3000 Metres Steeplechase @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+30 JUN: 5th place, 8:29.59 in 3000 Metres Steeplechase @ Stade Complexe Olympique, Oran (ALG)
+23 JUL: 1st place, 8:36.56 in 3000 Metres Steeplechase @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+24 JUL: DNF in 5000 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+10 AUG: 1st place, 8:57.92 in 3000 Metres Steeplechase @ Athletics Stadium, Konya (TUR)
+08 SEP: DNF in 3000 Metres Steeplechase @ Letzigrund, Zürich (SUI)
 
 Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data.

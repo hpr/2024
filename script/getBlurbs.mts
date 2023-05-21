@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { BLURBCACHE_PATH, ENTRIES_PATH, GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, MEET } from './const.mjs';
+import { BLURBCACHE_PATH, ENTRIES_PATH, GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, MEET, standingsMeets } from './const.mjs';
 import { AthleticsEvent, DLMeet, Entries, Competitor, ResultsByYearResult, BlurbCache } from './types.mjs';
 import dotenv from 'dotenv';
 import { ChatGPTAPI, ChatMessage } from 'chatgpt';
@@ -21,14 +21,15 @@ function getAge(birthday: Date) {
 }
 
 async function getBlurbs() {
-  const api = new ChatGPTAPI({
-    apiKey: process.env.OPENAI_API_KEY!,
-    completionParams: {
-      model: 'gpt-4',
-    },
-  });
+  // const api = new ChatGPTAPI({
+  //   apiKey: process.env.OPENAI_API_KEY!,
+  //   completionParams: {
+  //     model: 'gpt-4',
+  //   },
+  // });
 
   blurbCache[MEET] ??= { blurbs: {}, athletes: {} };
+  const meetName = MEET[0].toUpperCase() + MEET.slice(1, -2);
   for (const key in entries[MEET]) {
     const evt = key as AthleticsEvent;
     const gender = evt.toLowerCase().includes('women') ? 'Women' : 'Men';
@@ -36,7 +37,9 @@ async function getBlurbs() {
       .split(' ')
       .filter((w) => !w.toLowerCase().includes('men'))
       .join(' ');
-    let prompt = `Write a race preview for the ${gender}'s ${ungenderedEvt} at the 2023 Doha Diamond League track meet, which will happen on May 5th, 2023. Here are the competitors:\n\n`;
+    let prompt = `Write a race prediction and preview for the ${gender}'s ${ungenderedEvt} at the 2023 ${meetName} Diamond League track meet, which will happen on ${
+      standingsMeets.find((sm) => sm.meet === MEET)?.date
+    }. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:\n\n`;
     for (const entrant of entries[MEET][evt]?.entrants ?? []) {
       const { firstName, lastName, pb, sb, nat, id } = entrant;
       const fullName = `${firstName} ${lastName}`;
@@ -84,10 +87,14 @@ async function getBlurbs() {
     blurbCache[MEET].blurbs[evt] ??= '';
     // blurbCache[MEET].blurbs[evt] = response;
     entries[MEET][evt]!.blurb = blurbCache[MEET].blurbs[evt];
-    fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache, null, 2));
+    fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache));
     fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries));
     // await new Promise((res) => setTimeout(res, 1000));
-    if (!blurbCache[MEET].blurbs[evt]) process.exit();
+    if (!blurbCache[MEET].blurbs[evt]) {
+      console.log('Enter response:');
+      blurbCache[MEET].blurbs[evt] = fs.readFileSync(0).toString();
+      fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache));
+    }
   }
 }
 
