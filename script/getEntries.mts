@@ -27,6 +27,7 @@ const idTeams = {
   14564128: 'LSU',
   14627624: 'WSU Cougars',
   14477412: 'Monmouth University Hawks',
+  14642681: 'North Carolina A&T Aggies',
 };
 
 const entrantSortFunc = (a: Entrant, b: Entrant) => {

@@ -47,6 +47,11 @@ async function getBlurbs() {
       const field = entries[MEET][evt]?.entrants ?? [];
       const rank = field.indexOf(entrant) + 1;
 
+      // if (['400m Hurdles Women', '400m Men'].includes(evt)) {
+      //   delete blurbCache[MEET].blurbs[evt];
+      //   delete blurbCache[MEET].athletes[id];
+      // }
+
       const competitor = (blurbCache[MEET].athletes[id] ??= (
         await (
           await fetch(GRAPHQL_ENDPOINT, {
