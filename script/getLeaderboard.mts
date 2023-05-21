@@ -3,12 +3,12 @@
 
 import { MeetCache, DLMeet, Entries, LBType, AthleticsEvent, ResultEntrant, MeetTeam, LBPicks } from './types.mjs';
 import fs from 'fs';
-import { backupNotes, CACHE_PATH, disciplineCodes, distanceEvents, ENTRIES_PATH, LB_PATH, MEET, SCORE, sprintEvents } from './const.mjs';
+import { backupNotes, CACHE_PATH, disciplineCodes, distanceEvents, ENTRIES_PATH, getLbPath, MEET, SCORE, sprintEvents } from './const.mjs';
 import { parse } from 'csv-parse/sync';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
-const leaderboard: LBType = JSON.parse(fs.readFileSync(LB_PATH, 'utf-8'));
+const leaderboard: LBType = {};
 
 const rows: { picksJson: string; userid: number }[] = parse(fs.readFileSync('./picks.csv', 'utf-8'), {
   columns: true,
@@ -99,7 +99,7 @@ for (const meet of [MEET] as DLMeet[]) {
     if (name === 'Matty G' && meet === 'doha23') score += 0.5;
 
     leaderboard[meet]!.push({
-      userid,
+      userid: +userid,
       name,
       picks: userPicks,
       distanceScore,
@@ -114,4 +114,4 @@ for (const meet of [MEET] as DLMeet[]) {
 
 fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries, null, 2));
-fs.writeFileSync(LB_PATH, JSON.stringify(leaderboard));
+fs.writeFileSync(getLbPath(MEET), JSON.stringify(leaderboard));

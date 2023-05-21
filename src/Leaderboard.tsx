@@ -1,18 +1,4 @@
-import {
-  List,
-  Paper,
-  Avatar,
-  Loader,
-  Accordion,
-  SegmentedControl,
-  Stack,
-  Code,
-  Button,
-  ScrollArea,
-  Group,
-  Text,
-  Badge,
-} from '@mantine/core';
+import { List, Paper, Avatar, Loader, Accordion, SegmentedControl, Stack, Code, Button, ScrollArea, Group, Text, Badge } from '@mantine/core';
 import { useContext, useEffect, useState } from 'react';
 import { DLMeet, Entries, LBEntry, LBType } from './types';
 import Filter from 'badwords-filter';
@@ -37,7 +23,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
 
   useEffect(() => {
     (async () => {
-      const lb = await (await fetch('leaderboard.json')).json();
+      const lb = await (await fetch(`leaderboard_${meet}.json`)).json();
       setLeaderboard(lb);
     })();
   }, []);
@@ -45,7 +31,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
   useEffect(() => {
     setLeaderboard({
       ...leaderboard,
-      [meet]: [...(leaderboard?.[meet] ?? [])].sort((a, b) => b[sortBy] === a[sortBy] ? a.name.localeCompare(b.name) : b[sortBy] - a[sortBy]),
+      [meet]: [...(leaderboard?.[meet] ?? [])].sort((a, b) => (b[sortBy] === a[sortBy] ? a.name.localeCompare(b.name) : b[sortBy] - a[sortBy])),
     });
   }, [sortBy]);
 
@@ -64,54 +50,52 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
         />
         <Accordion variant="contained">
           {leaderboard?.[meet]?.length ? (
-            leaderboard?.[meet]!.map(
-              ({ name, userid, eventsScored, picks, ...lbentry }: LBEntry, i) => (
-                <Accordion.Item key={userid} value={userid + ''}>
-                  <Accordion.Control
-                    sx={{ width: '100%' }}
-                    icon={
-                      <Avatar size="sm" radius="xl" style={{ border: `1px solid ${mantineGray}` }}>
-                        {leaderboard[meet]?.findIndex(entry => entry.score === lbentry.score)! + 1}
-                      </Avatar>
-                    }
-                  >
-                    <Group position="apart">
-                      <Text>
-                        {filter.clean(name)}
-                        {/* <Badge size="sm">#{userid}</Badge>*/}
-                      </Text>
-                      <Text>
-                        <Badge size="md" rightSection="pts" color="green">
-                          {lbentry[sortBy]}
-                        </Badge>
-                      </Text>
-                    </Group>
-                  </Accordion.Control>
-                  <Accordion.Panel>
-                    <Stack align="center">
-                      <Text italic>{eventsScored} events scored</Text>
-                      <Button
-                        fullWidth
-                        onClick={() => {
-                          setTeamToScore({ lbpicks: picks, name });
-                          navigate('/scoring');
-                        }}
-                      >
-                        View scoring
-                      </Button>
-                      <ScrollArea w={300} type="always" scrollbarSize={15} offsetScrollbars>
-                        <Code block>
-                          {Object.entries(picks)
-                            .sort(([a], [b]) => evtSort(a, b))
-                            .map(([evt, { team }]) => `${evt}: ${team.map(getName).join(', ')}`)
-                            .join('\n')}
-                        </Code>
-                      </ScrollArea>
-                    </Stack>
-                  </Accordion.Panel>
-                </Accordion.Item>
-              )
-            )
+            leaderboard?.[meet]!.map(({ name, userid, eventsScored, picks, ...lbentry }: LBEntry, i) => (
+              <Accordion.Item key={userid} value={userid + ''}>
+                <Accordion.Control
+                  sx={{ width: '100%' }}
+                  icon={
+                    <Avatar size="sm" radius="xl" style={{ border: `1px solid ${mantineGray}` }}>
+                      {leaderboard[meet]?.findIndex((entry) => entry.score === lbentry.score)! + 1}
+                    </Avatar>
+                  }
+                >
+                  <Group position="apart">
+                    <Text>
+                      {filter.clean(name)}
+                      {/* <Badge size="sm">#{userid}</Badge>*/}
+                    </Text>
+                    <Text>
+                      <Badge size="md" rightSection="pts" color="green">
+                        {lbentry[sortBy]}
+                      </Badge>
+                    </Text>
+                  </Group>
+                </Accordion.Control>
+                <Accordion.Panel>
+                  <Stack align="center">
+                    <Text italic>{eventsScored} events scored</Text>
+                    <Button
+                      fullWidth
+                      onClick={() => {
+                        setTeamToScore({ lbpicks: picks, name });
+                        navigate('/scoring');
+                      }}
+                    >
+                      View scoring
+                    </Button>
+                    <ScrollArea w={300} type="always" scrollbarSize={15} offsetScrollbars>
+                      <Code block>
+                        {Object.entries(picks)
+                          .sort(([a], [b]) => evtSort(a, b))
+                          .map(([evt, { team }]) => `${evt}: ${team.map(getName).join(', ')}`)
+                          .join('\n')}
+                      </Code>
+                    </ScrollArea>
+                  </Stack>
+                </Accordion.Panel>
+              </Accordion.Item>
+            ))
           ) : (
             <Loader />
           )}

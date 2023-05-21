@@ -35,6 +35,7 @@ import { Leaderboard } from './Leaderboard';
 import { evtSort } from './util';
 import { Results } from './Results';
 import { EventTeamPicker } from './EventTeamPicker';
+import LeagueStandings from './LeagueStandings';
 
 export default function App() {
   const navigate = useNavigate();
@@ -383,7 +384,7 @@ export default function App() {
           ) : page === 'scoring' ? (
             <Results entries={entries} meet={meet} />
           ) : page === 'standings' ? (
-            <div></div>
+            <LeagueStandings />
           ) : (
             <EventTeamPicker entries={entries} meet={meet} evt={evt!} />
           )}

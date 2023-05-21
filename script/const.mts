@@ -68,6 +68,8 @@ export const sprintEvents: AthleticsEvent[] = [
 export const CACHE_PATH = './script/cache.json';
 export const ENTRIES_PATH = './public/entries.json';
 export const LB_PATH = './public/leaderboard.json';
+export const getLbPath = (meet: DLMeet) => `./public/leaderboard_${meet}.json`;
+export const STANDINGS_PATH = './public/standings.json';
 export const BLURBCACHE_PATH = './script/blurbCache.json';
 
 export const disciplineCodes: { [k: string]: WAEventCode } = {

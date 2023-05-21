@@ -364,3 +364,21 @@ export type SportResultTiming = {
     };
   };
 };
+
+export type StandingElement = {
+  meet: DLMeet;
+  url: string;
+  date: string;
+  leaders: {
+    name: string;
+    userid: number;
+    cumPlace: number;
+    place: number;
+    delta: number;
+  }[];
+  cutoff: {
+    place: number;
+    users: { id: number; name: string }[];
+  };
+};
+export type Standings = StandingElement[];
