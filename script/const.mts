@@ -71,6 +71,7 @@ export const LB_PATH = './public/leaderboard.json';
 export const getLbPath = (meet: DLMeet) => `./public/leaderboard_${meet}.json`;
 export const STANDINGS_PATH = './public/standings.json';
 export const BLURBCACHE_PATH = './script/blurbCache.json';
+export const MONTAGE_PATH = './public/montage.png';
 
 export const disciplineCodes: { [k: string]: WAEventCode } = {
   '50 Meters': '50',
