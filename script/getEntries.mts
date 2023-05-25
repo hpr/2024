@@ -395,7 +395,7 @@ const getEntries = async () => {
           }
           const { document } = new JSDOM(cache[meet].events[name]!.startlist).window;
           console.log(name);
-          const entrants: Entrant[] = [...document.querySelectorAll('.tableBody .row')].map((elem) => {
+          const entrants: Entrant[] = [...document.querySelectorAll('.tableBody .row')].flatMap((elem) => {
             const [lastName, firstName] = elem
               .querySelector('.column.name')!
               .textContent!.split(' ')
@@ -407,6 +407,7 @@ const getEntries = async () => {
               .querySelector('.column.name a')!
               .getAttribute('href')!
               .match(/\/(\d+)\.html$/)![1]!;
+            if (id === '14453864' && MEET === 'rabat23') return []; // marcel jacobs rabat
             return {
               firstName,
               lastName: nameFixer(lastName),
