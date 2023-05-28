@@ -5,13 +5,13 @@ import { JSDOM } from 'jsdom';
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 
-const resultsLinks: { [k in DLMeet]: string } = {
+const resultsLinks: { [k in DLMeet]?: string } = {
   doha: 'https://web.archive.org/web/20201001215002/https://doha.diamondleague.com/programme-results-doha/?tx_diamondrace_diamondleaguestatistics%5BeventId%5D=&tx_diamondrace_diamondleaguestatistics%5Baction%5D=list&tx_diamondrace_diamondleaguestatistics%5Bcontroller%5D=DiamondLeagueStatistics&cHash=ff3931bd5e5bc713438d0056bc3eb290',
   birminghamIndoor: 'https://results-json.microplustimingservices.com/export/WAITF2023/ScheduleByDate_1.JSON',
   ncaai23: 'https://flashresults.ncaa.com/Indoor/2023/index.htm',
   boston23: '',
   doha23: 'https://livecache.sportresult.com/node/db/ATH_PROD/DOHA2023_SCHEDULE_JSON.json',
-  rabat23: '',
+  rabat23: 'https://livecache.sportresult.com/node/db/ATH_PROD/RABAT2023_SCHEDULE_JSON.json',
 };
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
@@ -25,8 +25,8 @@ for (const key in resultsLinks) {
   const meet = key as DLMeet;
   if (meet !== MEET) continue;
   cache[meet] ??= { schedule: {}, events: {}, ids: {} };
-  if (resultsLinks[meet].includes('flashresults')) {
-    cache[meet].resultsSchedule ??= await (await fetch(resultsLinks[meet])).text();
+  if (resultsLinks[meet]?.includes('flashresults')) {
+    cache[meet].resultsSchedule ??= await (await fetch(resultsLinks[meet]!)).text();
     const { document } = new JSDOM(cache[meet].resultsSchedule).window;
     const rows = document.querySelectorAll('tbody > tr');
     const runningFinals: { evt: AthleticsEvent; link: string }[] = [...rows]
@@ -37,7 +37,7 @@ for (const key in resultsLinks) {
       .map((tr) => ({
         evt: findMatchingEvt(entries[meet], tr.querySelector('td.fixed-column')?.textContent! as AthleticsEvent) as AthleticsEvent,
         link:
-          getDomainAndPath(resultsLinks[meet]) +
+          getDomainAndPath(resultsLinks[meet]!) +
           [...tr.querySelectorAll('td')]
             .find((td) => td.textContent?.trim() === 'Result')! // TODO change to 'Result'
             .querySelector('a')?.href,
@@ -62,9 +62,9 @@ for (const key in resultsLinks) {
       if (!results.length || results.every((res) => !res.mark)) entries[meet]![evt]!.results = undefined;
       else entries[meet]![evt]!.results = results;
     }
-  } else if (resultsLinks[meet].includes('microplustimingservices')) {
-    const meetCode = resultsLinks[meet].match(/^https:\/\/results-json\.microplustimingservices\.com\/export\/(.*)\//)![1];
-    cache[meet].resultsSchedule ??= await (await fetch(resultsLinks[meet])).text();
+  } else if (resultsLinks[meet]?.includes('microplustimingservices')) {
+    const meetCode = resultsLinks[meet]?.match(/^https:\/\/results-json\.microplustimingservices\.com\/export\/(.*)\//)![1];
+    cache[meet].resultsSchedule ??= await (await fetch(resultsLinks[meet]!)).text();
     const resultsSchedule = JSON.parse(cache[meet].resultsSchedule!);
     for (const { c0, c1, c2, c3, tab, d1_en, d3_en, d_en } of resultsSchedule.e) {
       const evt = `${d3_en}'s ${d_en}` as AthleticsEvent;
@@ -85,9 +85,9 @@ for (const key in resultsLinks) {
         };
       });
     }
-  } else if (resultsLinks[meet].includes('livecache.sportresult.com')) {
-    const meetId = resultsLinks[meet].match(/^https:\/\/livecache.sportresult.com\/node\/db\/ATH_PROD\/(.+)_SCHEDULE/)?.[1];
-    const schedule: SportResultSchedule = await (await fetch(resultsLinks[meet])).json();
+  } else if (resultsLinks[meet]?.includes('livecache.sportresult.com')) {
+    const meetId = resultsLinks[meet]?.match(/^https:\/\/livecache.sportresult.com\/node\/db\/ATH_PROD\/(.+)_SCHEDULE/)?.[1];
+    const schedule: SportResultSchedule = await (await fetch(resultsLinks[meet]!)).json();
     for (const key in entries[meet]) {
       const evt = key as AthleticsEvent;
       const evtId = Object.values(schedule.content.full.Units).find((unit) => unit.EventName === evt && unit.Stats.DiamondId)?.Rsc.ValueUnit;

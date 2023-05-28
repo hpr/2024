@@ -19,24 +19,19 @@ const users: { id: number; name: string }[] = parse(fs.readFileSync('./users.csv
 
 const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): { score: number; scorers: { [id: string]: number } } => {
   let score = 0;
-  const backup = team[evt]?.at(-1)!;
-  const backupResult = (entries[meet]![evt]!.results ?? []).find((res) => res.entrant?.id === backup?.id) ?? { notes: 'DNS' };
-  let doneBackup = false;
-  if (backupNotes.some((note) => backupResult.notes.includes(note))) doneBackup = true;
   const scorers: { [id: string]: number } = {};
-  for (const pick of team[evt]!.slice(0, -1)) {
+  for (const pick of team[evt] ?? []) {
     console.log(entries, meet, evt, Object.keys(entries[meet]![evt]!));
     let matchingResult = (entries[meet]![evt]!.results! ?? []).find((res) => res.entrant?.id === pick?.id);
-    if (backupNotes.some((note) => matchingResult?.notes.includes(note)) && !doneBackup) {
-      matchingResult = backupResult as ResultEntrant;
-      doneBackup = true;
-    }
-    const isCaptain = pick === team[evt]![0];
-    const pickScore = SCORE[matchingResult!?.place - 1] * (isCaptain ? 2 : 1) || 0;
+    const pickIdx = (team[evt] ?? []).indexOf(pick);
+    const pickScore = SCORE[pickIdx][matchingResult!?.place - 1] ?? 0;
     console.log(evt, pick.firstName, pick.lastName, matchingResult?.place, pickScore);
     scorers[matchingResult?.entrant!.id!] = pickScore;
     score += pickScore;
   }
+  const lowestScorerId = Object.keys(scorers).sort((a, b) => scorers[a] - scorers[b])[0];
+  score -= scorers[lowestScorerId];
+  delete scorers[lowestScorerId];
   if (Number.isNaN(score)) process.exit();
   return { score, scorers };
 };

@@ -2,7 +2,11 @@ import { AthleticsEvent, DLMeet, WAEventCode } from './types.mjs';
 
 export const MEET: DLMeet = 'rabat23';
 
-export const SCORE = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+export const SCORE = [
+  [20, 12, 8, 6, 5, 4],
+  [10, 8, 6, 4, 3, 2],
+  [6, 5, 4, 3, 2, 1],
+] as const;
 
 export const runningEvents: (AthleticsEvent | string)[][] = [
   ["Women's 60 m", "Women's 60 Meters", 'Women 60 M'],
