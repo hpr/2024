@@ -2030,7 +2030,248 @@
           "hasAvy": false
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "7:56.68",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Soufiane",
+            "lastName": "el Bakkali",
+            "id": "14590424",
+            "pb": "7:58.15",
+            "sb": null,
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:05.15",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Getnet",
+            "lastName": "Wale",
+            "id": "14760253",
+            "pb": "8:05.21",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:05.51",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abraham",
+            "lastName": "Kibiwot",
+            "id": "14657344",
+            "pb": "8:05.72",
+            "sb": "8:19.71",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:11.28",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hillary",
+            "lastName": "Bor",
+            "id": "14232976",
+            "pb": "8:08.41",
+            "sb": "8:20.67",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:14.42",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Leonard Kipkemoi",
+            "lastName": "Bett",
+            "id": "14802643",
+            "pb": "8:08.61",
+            "sb": "8:20.02",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:14.58",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Osama",
+            "lastName": "Zoghlami",
+            "id": "14530462",
+            "pb": "8:11.00",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:15.58",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Benjamin",
+            "lastName": "Kigen",
+            "id": "14590800",
+            "pb": "8:05.12",
+            "sb": "8:30.81",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:16.18",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "8:16.49",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohamed Amin",
+            "lastName": "Jhinaoui",
+            "id": "14735778",
+            "pb": "8:16.38",
+            "sb": null,
+            "nat": "TUN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:17.18",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Avinash Mukund",
+            "lastName": "Sable",
+            "id": "14778911",
+            "pb": "8:11.20",
+            "sb": null,
+            "nat": "IND",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:17.49",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Salaheddine",
+            "lastName": "ben Yazide",
+            "id": "14977838",
+            "pb": "8:19.63",
+            "sb": null,
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:17.79",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Djilali",
+            "lastName": "Bedrani",
+            "id": "14423830",
+            "pb": "8:05.23",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:20.85",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohamed",
+            "lastName": "Tindouft",
+            "id": "14773269",
+            "pb": "8:11.65",
+            "sb": null,
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:25.08",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Amos",
+            "lastName": "Serem",
+            "id": "14808796",
+            "pb": "8:09.93",
+            "sb": "8:25.61",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Conseslus",
+            "lastName": "Kipruto",
+            "id": "14479159",
+            "pb": "8:00.12",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Hailemariyam",
+            "lastName": "Amare",
+            "id": "14657460",
+            "pb": "8:06.29",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Wilberforce Chemiat",
+            "lastName": "Kones",
+            "id": "14755096",
+            "pb": "8:21.42",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": false
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Abderrafia",
+            "lastName": "Bouassel",
+            "id": "14843153",
+            "pb": "8:27.00",
+            "sb": null,
+            "nat": "MAR",
+            "hasAvy": false
+          }
+        }
+      ]
     }
   }
 }
