@@ -536,7 +536,178 @@
           "hasAvy": false
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:54.03",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gudaf",
+            "lastName": "Tsegay",
+            "id": "14595214",
+            "pb": "3:54.01",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:57.65",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Freweyni",
+            "lastName": "Hailu",
+            "id": "14836656",
+            "pb": "3:56.28",
+            "sb": "4:00.29",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:57.66",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Birke",
+            "lastName": "Haylom",
+            "id": "15009582",
+            "pb": "4:01.86",
+            "sb": "4:01.86",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:01.81",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Worknesh",
+            "lastName": "Mesele",
+            "id": "14852703",
+            "pb": null,
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "4:03.09",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cory Ann",
+            "lastName": "McGee",
+            "id": "14316538",
+            "pb": "4:00.34",
+            "sb": "4:06.03",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:03.56",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Linden",
+            "lastName": "Hall",
+            "id": "14272002",
+            "pb": "3:59.01",
+            "sb": "4:05.65",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:03.57",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Healy",
+            "id": "14705242",
+            "pb": "4:02.86",
+            "sb": null,
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:04.82",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ludovica",
+            "lastName": "Cavalli",
+            "id": "14752217",
+            "pb": "4:05.79",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": false
+          }
+        },
+        {
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Adelle",
+            "lastName": "Tracey",
+            "id": "14941414",
+            "pb": "4:02.36",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 10,
+          "notes": ""
+        },
+        {
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Claudia Mihaela",
+            "lastName": "Bobocea",
+            "id": "14377909",
+            "pb": "4:01.10",
+            "sb": null,
+            "nat": "ROU",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Zoya",
+            "lastName": "Naumov",
+            "id": "14477412",
+            "pb": "4:13.66",
+            "sb": "4:13.66",
+            "nat": "ESP",
+            "hasAvy": true,
+            "team": "Monmouth University Hawks"
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Charlotte",
+            "lastName": "Mouchet",
+            "id": "14534796",
+            "pb": "4:09.47",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Men": {
       "date": "2023-05-28T19:52",
