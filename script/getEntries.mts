@@ -384,7 +384,7 @@ const getEntries = async () => {
             name: elem.querySelector('.name')?.textContent,
             url: elem.querySelector('.links a')?.getAttribute('href'),
           }))
-          .filter(({ name, url }) => runningEvents.flat().includes(name as AthleticsEvent) && url);
+          .filter(({ name, url }) => runningEvents.flat().some((evt) => (name ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url);
         for (const { name: origName, url } of events) {
           const name = origName as AthleticsEvent;
           if (!cache[meet].events?.[name]?.startlist) {
