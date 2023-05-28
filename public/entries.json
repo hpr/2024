@@ -1392,6 +1392,7 @@
           }
         },
         {
+          "mark": "3:39.28",
           "place": 13,
           "notes": "",
           "entrant": {
@@ -1405,8 +1406,8 @@
           }
         },
         {
-          "place": 14,
-          "notes": "",
+          "place": null,
+          "notes": "DNF",
           "entrant": {
             "firstName": "Ismael",
             "lastName": "Debjani",
@@ -1513,7 +1514,126 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "9.94",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Fred",
+            "lastName": "Kerley",
+            "id": "14504382",
+            "pb": "9.76",
+            "sb": "9.88",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.99",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Akani",
+            "lastName": "Simbine",
+            "id": "14417763",
+            "pb": "9.84",
+            "sb": "9.92",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.05",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ferdinand",
+            "lastName": "Omanyala",
+            "id": "14747153",
+            "pb": "9.77",
+            "sb": "9.84",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.09",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Letsile",
+            "lastName": "Tebogo",
+            "id": "14883897",
+            "pb": "9.91",
+            "sb": null,
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.10",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Trayvon",
+            "lastName": "Bromell",
+            "id": "14519911",
+            "pb": "9.76",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.18",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yohan",
+            "lastName": "Blake",
+            "id": "14201842",
+            "pb": "9.69",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.20",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "10.25",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mouhamadou",
+            "lastName": "Fall",
+            "id": "14702316",
+            "pb": "10.04",
+            "sb": "10.06",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.63",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Chakir",
+            "lastName": "MacHmour",
+            "id": "14646824",
+            "pb": "10.23",
+            "sb": null,
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Women": {
       "date": "2023-05-28T20:34",
