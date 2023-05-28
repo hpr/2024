@@ -1730,7 +1730,147 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:58.72",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mary",
+            "lastName": "Moraa",
+            "id": "14798209",
+            "pb": "1:56.71",
+            "sb": "1:58.83",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.11",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Catriona",
+            "lastName": "Bisset",
+            "id": "14463325",
+            "pb": "1:58.09",
+            "sb": "1:58.32",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.62",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sage",
+            "lastName": "Hurta-Klecker",
+            "id": "14478094",
+            "pb": "1:57.85",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.91",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natoya",
+            "lastName": "Goule",
+            "id": "14285696",
+            "pb": "1:56.15",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:01.30",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anita",
+            "lastName": "Horvat",
+            "id": "14472475",
+            "pb": "1:58.96",
+            "sb": null,
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:01.37",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lore",
+            "lastName": "Hoffmann",
+            "id": "14457538",
+            "pb": "1:58.50",
+            "sb": "2:03.51",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:01.75",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Assia",
+            "lastName": "Raziki",
+            "id": "14548932",
+            "pb": "2:01.44",
+            "sb": "2:04.52",
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:02.15",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Noélie",
+            "lastName": "Yarigo",
+            "id": "14270067",
+            "pb": "1:59.12",
+            "sb": null,
+            "nat": "BEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Soukaina",
+            "lastName": "Hajji",
+            "id": "14579514",
+            "pb": "2:01.59",
+            "sb": "2:04.05",
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Patrycja",
+            "lastName": "Wyciszkiewicz-Zawadzka",
+            "id": "14389670",
+            "pb": null,
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Men": {
       "date": "2023-05-28T20:46",
