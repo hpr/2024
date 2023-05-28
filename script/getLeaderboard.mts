@@ -1,4 +1,4 @@
-// ssh habs@ma.sdf.org "sqlite3 -header -csv ~/db/fantasy1500.db 'select * from picks where meet = \"doha23\";'" > picks.csv
+// ssh habs@ma.sdf.org "sqlite3 -header -csv ~/db/fantasy1500.db 'select * from picks where meet = \"rabat23\";'" > picks.csv
 // ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from users;"' > users.csv
 
 import { MeetCache, DLMeet, Entries, LBType, AthleticsEvent, ResultEntrant, MeetTeam, LBPicks } from './types.mjs';
@@ -21,7 +21,7 @@ const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): { score: n
   let score = 0;
   const scorers: { [id: string]: number } = {};
   for (const pick of team[evt] ?? []) {
-    console.log(entries, meet, evt, Object.keys(entries[meet]![evt]!));
+    // console.log(entries, meet, evt, Object.keys(entries[meet]![evt]!));
     let matchingResult = (entries[meet]![evt]!.results! ?? []).find((res) => res.entrant?.id === pick?.id);
     const pickIdx = (team[evt] ?? []).indexOf(pick);
     const pickScore = SCORE[pickIdx][matchingResult!?.place - 1] ?? 0;
@@ -86,8 +86,9 @@ for (const meet of [MEET] as DLMeet[]) {
       if (!entries[meet]![evt]!.results) continue;
       const { score: evtScore, scorers } = getScore(meet, picks, evt);
       userPicks[evtToGenderedCode(evt)]!.scorers = scorers;
-      if (distanceEvents.includes(evt)) distanceScore += evtScore;
-      if (sprintEvents.includes(evt)) sprintScore += evtScore;
+      distanceScore += evtScore; // FIXME when we want to have King of the Distance again
+      // if (distanceEvents.includes(evt)) distanceScore += evtScore;
+      // if (sprintEvents.includes(evt)) sprintScore += evtScore;
       eventsScored++;
     }
     let score = distanceScore + sprintScore;

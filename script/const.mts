@@ -49,7 +49,7 @@ export const distanceEvents: AthleticsEvent[] = [
   "Women's 5000 Meters",
   '800m Men',
   '3000m Men',
-  '1500m Women',
+  '1500m Women'
 ];
 
 export const sprintEvents: AthleticsEvent[] = [
@@ -67,6 +67,8 @@ export const sprintEvents: AthleticsEvent[] = [
   '400m Hurdles Men',
   '400m Women',
   '3000m Steeplechase Women',
+  '400m Hurdles Women',
+  '400m Hurdles Men'
 ];
 
 export const CACHE_PATH = './script/cache.json';
