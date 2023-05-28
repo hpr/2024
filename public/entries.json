@@ -288,7 +288,138 @@
           "hasAvy": false
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:44.36",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Wanyonyi",
+            "id": "14974928",
+            "pb": "1:43.32",
+            "sb": "1:43.32",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.73",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wyclife",
+            "lastName": "Kinyamal",
+            "id": "14746603",
+            "pb": "1:43.12",
+            "sb": "1:43.66",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.04",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Benjamin",
+            "lastName": "Robert",
+            "id": "14683828",
+            "pb": "1:43.75",
+            "sb": "1:47.55",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.37",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Eliott",
+            "lastName": "Crestan",
+            "id": "14634371",
+            "pb": "1:44.24",
+            "sb": null,
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:46.34",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marco",
+            "lastName": "Arop",
+            "id": "14755875",
+            "pb": "1:43.26",
+            "sb": null,
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:46.76",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "1:47.10",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abdelati",
+            "lastName": "el Guesse",
+            "id": "14652586",
+            "pb": "1:44.84",
+            "sb": "1:47.00",
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:48.42",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel Kipkurui",
+            "lastName": "Korir",
+            "id": "14755084",
+            "pb": "1:42.05",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Moad",
+            "lastName": "Zahafi",
+            "id": "14707135",
+            "pb": "1:43.69",
+            "sb": "1:48.17",
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Patryk",
+            "lastName": "Sieradzki",
+            "id": "14647295",
+            "pb": "1:45.13",
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": false
+          }
+        }
+      ]
     },
     "1500m Women": {
       "date": "2023-05-28T19:38",
