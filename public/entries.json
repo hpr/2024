@@ -973,7 +973,113 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "21.98",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shericka",
+            "lastName": "Jackson",
+            "id": "14325599",
+            "pb": "21.45",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.15",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anthonique",
+            "lastName": "Strachan",
+            "id": "14368117",
+            "pb": "22.32",
+            "sb": "22.59",
+            "nat": "BAH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.30",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tamari",
+            "lastName": "Davis",
+            "id": "14716794",
+            "pb": "22.31",
+            "sb": "22.31",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.52",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kayla",
+            "lastName": "White",
+            "id": "14642681",
+            "pb": "22.18",
+            "sb": "22.38",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "North Carolina A&T Aggies"
+          }
+        },
+        {
+          "mark": "22.67",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bassant",
+            "lastName": "Hemida",
+            "id": "14755412",
+            "pb": "22.47",
+            "sb": "22.75",
+            "nat": "EGY",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.98",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Kiełbasińska",
+            "id": "14293852",
+            "pb": "22.76",
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.44",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gina",
+            "lastName": "Bass",
+            "id": "14479741",
+            "pb": "22.58",
+            "sb": "22.91",
+            "nat": "GAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.58",
+          "place": 8,
+          "notes": ""
+        }
+      ]
     },
     "1500m Men": {
       "date": "2023-05-28T20:11",
