@@ -187,7 +187,7 @@ export default function App() {
                 <TextInput withAsterisk label="Name" placeholder="Usain (will be displayed on leaderboards)" {...registerForm.getInputProps('name')} />
               )}
               <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
-              <TextInput withAsterisk label="Tiebreaker: Men's 100m winning time?" placeholder="e.g. 9.80" {...registerForm.getInputProps('')} />
+              <TextInput withAsterisk label="Tiebreaker: Men's 100m winning time?" placeholder="e.g. 9.80" {...registerForm.getInputProps('tiebreaker')} />
               <Group position="right" mt="md">
                 <Button leftIcon={isSuccess ? <Check /> : undefined} type="submit" loading={isLoading}>
                   {authPage === 'register'
