@@ -161,6 +161,7 @@ export type StandingElement = {
   }[];
   cutoff?: {
     place: number;
+    cumPlace: number;
     users: { id: number; name: string }[];
   };
 };
