@@ -20,6 +20,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   boston23: ['https://www.baa.org/races/boston-marathon/pro-athletes/2023-boston-marathon-professional-team'],
   doha23: ['https://doha.diamondleague.com/programme-results-doha/'],
   rabat23: ['https://rabat.diamondleague.com/en/programme-results-rabat/'],
+  florence23: ['https://rome.diamondleague.com/en/programme-results/programme-results-rome/'],
 };
 
 const idTeams = {
@@ -384,7 +385,8 @@ const getEntries = async () => {
             name: elem.querySelector('.name')?.textContent,
             url: elem.querySelector('.links a')?.getAttribute('href'),
           }))
-          .filter(({ name, url }) => runningEvents.flat().some((evt) => (name ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url);
+          .filter(({ name, url }) => runningEvents.flat().some((evt) => (name ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url)
+          .map((obj) => ({ ...obj, name: runningEvents.flat().find((evt) => (obj.name ?? '').toLowerCase().startsWith(evt.toLowerCase())) }));
         for (const { name: origName, url } of events) {
           const name = origName as AthleticsEvent;
           if (!cache[meet].events?.[name]?.startlist) {

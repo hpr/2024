@@ -1,6 +1,6 @@
 import { AthleticsEvent, DLMeet, WAEventCode } from './types.mjs';
 
-export const MEET: DLMeet = 'rabat23';
+export const MEET: DLMeet = 'florence23';
 
 export const SCORE = [
   [20, 12, 8, 6, 5, 4],
