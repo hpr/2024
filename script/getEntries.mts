@@ -421,6 +421,18 @@ const getEntries = async () => {
               team: idTeams[id],
             };
           });
+          if (MEET === 'florence23' && name === '5000m Men') {
+            if (!entrants.find((e) => e.lastName === 'Kincaid'))
+              entrants.push({
+                firstName: 'Woody',
+                lastName: 'Kincaid',
+                id: '14493258',
+                pb: '12:58.10',
+                sb: null,
+                nat: 'USA',
+                hasAvy: true,
+              });
+          }
           console.log(entrants);
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
