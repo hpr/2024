@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { Entrant, Entries } from './types.mjs';
-import google, { image, search } from 'googlethis';
+import google from 'googlethis';
 import { JSDOM } from 'jsdom';
 import gm from 'gm';
 import { getDomain } from './const.mjs';
@@ -21,6 +21,10 @@ const P_DESCRIBED_AT_URL = 'P973';
 const P_MOROCCAN_OLYMPIC_ID = 'P11019';
 const P_PZLA_ATHLETE_ID = 'P5075';
 const P_STRAVA_ID = 'P5283';
+const P_EUROPEAN_ATHLETICS_ID = 'P3766';
+const P_MEMBER_OF_SPORTS_TEAM = 'P54';
+const P_INSTANCE_OF = 'P31';
+const Q_UNIVERSITY_SPORTS_CLUB = 'Q2367225';
 
 const wbk = WBK({
   instance: 'https://www.wikidata.org',
@@ -124,7 +128,8 @@ const getProfilePic = async (
 let changedEntrants = false;
 let i = 0;
 for (const entrant of entrants) {
-  const { id, firstName, lastName, team, pb } = entrant;
+  const { id, firstName, lastName, pb } = entrant;
+  let team = entrant.team;
   console.log(id, firstName, lastName, team, i++, entrants.length);
   const file128 = `./public/img/avatars/${id}_128x128.png`;
   if (fs.existsSync(file128)) {
@@ -143,6 +148,18 @@ for (const entrant of entrants) {
   let avatarBuffer: ArrayBuffer | undefined;
   let images: PixelMeImage[] = [];
   if (avatarResp.status === 403) {
+    const qid: EntityId = wbk.parse.pagesTitles(
+      await (await fetch(wbk.cirrusSearchPages({ haswbstatement: `${P_WA_ATHLETE_ID}=${id}` }))).json()
+    )[0] as `Q${number}`;
+    let athObj: SimplifiedItem | undefined = undefined;
+    if (qid) {
+      athObj = wbk.simplify.entity((await (await fetch(wbk.getEntities({ ids: qid }))).json()).entities[qid]) as SimplifiedItem;
+      const qSportsTeam = athObj.claims?.[P_MEMBER_OF_SPORTS_TEAM]?.[0] as `Q${number}`;
+      if (qSportsTeam) {
+        const sportsTeamObj = wbk.simplify.entity((await (await fetch(wbk.getEntities({ ids: qSportsTeam }))).json()).entities[qSportsTeam]) as SimplifiedItem;
+        if (sportsTeamObj.claims?.[P_INSTANCE_OF]?.some((claim) => claim === Q_UNIVERSITY_SPORTS_CLUB)) team = sportsTeamObj.labels?.en;
+      }
+    }
     if (avatarCache.urls[id]) {
       avatarResp = await fetch(avatarCache.urls[id]);
     }
@@ -187,16 +204,13 @@ for (const entrant of entrants) {
       avatarCache.urls[id] = imgUrl!;
       fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
     } else {
-      const qid: EntityId = wbk.parse.pagesTitles(
-        await (await fetch(wbk.cirrusSearchPages({ haswbstatement: `${P_WA_ATHLETE_ID}=${id}` }))).json()
-      )[0] as `Q${number}`;
-      if (qid) {
-        const athObj = wbk.simplify.entity((await (await fetch(wbk.getEntities({ ids: qid }))).json()).entities[qid]) as SimplifiedItem;
+      if (qid && athObj) {
         const usatfId = athObj.claims?.[P_USATF_ATHLETE_ID]?.[0];
         const olympediaId = athObj.claims?.[P_OLYMPEDIA_ID]?.[0];
         const moroccanId = athObj.claims?.[P_MOROCCAN_OLYMPIC_ID]?.[0];
         const pzlaId = athObj.claims?.[P_PZLA_ATHLETE_ID]?.[0];
         const stravaId = athObj.claims?.[P_STRAVA_ID]?.[0];
+        const europeanAthleticsId = athObj.claims?.[P_EUROPEAN_ATHLETICS_ID]?.[0];
         const describedAtUrl = athObj.claims?.[P_DESCRIBED_AT_URL]?.[0];
         if (usatfId) {
           const url = `https://www.usatf.org/athlete-bios/${usatfId}`;
@@ -216,12 +230,15 @@ for (const entrant of entrants) {
           const imageUrl = document.querySelector('td[align=center] img')?.getAttribute('src');
           avatarResp = await fetch(imageUrl!);
         } else if (stravaId) {
-          const url = `https://www.strava.com/pros/${stravaId}`
+          const url = `https://www.strava.com/pros/${stravaId}`;
           const { document } = new JSDOM(await (await fetch(url)).text()).window;
           const imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
           avatarResp = await fetch(imageUrl!);
         } else if (olympediaId) {
           const imageUrl = `https://d2a3o6pzho379u.cloudfront.net/${olympediaId}.jpg`;
+          avatarResp = await fetch(imageUrl);
+        } else if (europeanAthleticsId) {
+          const imageUrl = `https://res.cloudinary.com/european-athletics/d_default.png/athletes-profile-pictures/${europeanAthleticsId}`;
           avatarResp = await fetch(imageUrl);
         } else if (describedAtUrl) {
           const { document } = new JSDOM(await (await fetch(describedAtUrl as string)).text()).window;
