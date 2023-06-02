@@ -68,6 +68,7 @@ export const disciplineCodes: { [k: string]: string } = {
   '3000m': '3000',
   'Two Miles': '2MLS',
   '5000 Meters': '5000',
+  '5000m': '5000',
   '5 Kilometres': '5RR',
   '8 Kilometres': '8RR',
   '5 Miles Road': '5MR',
