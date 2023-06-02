@@ -445,6 +445,18 @@ const getEntries = async () => {
                 hasAvy: true,
               });
           }
+          if (MEET === 'florence23' && name === '1500m Women') {
+            if (!entrants.find((e) => e.lastName === 'Garcia'))
+              entrants.push({
+                firstName: 'Marta',
+                lastName: 'Garcia',
+                id: '14635475',
+                pb: '4:07.23',
+                sb: '4:07.23',
+                nat: 'ESP',
+                hasAvy: true,
+              });
+          }
           console.log(entrants);
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
