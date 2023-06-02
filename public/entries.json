@@ -534,7 +534,209 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "9:00.71",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sembo",
+            "lastName": "Almayew",
+            "id": "14968520",
+            "pb": "9:05.83",
+            "sb": "9:05.83",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:04.61",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zerfe",
+            "lastName": "Wondemagegn",
+            "id": "14894854",
+            "pb": "9:06.37",
+            "sb": "9:13.80",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:10.02",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Beatrice",
+            "lastName": "Chepkoech",
+            "id": "14383286",
+            "pb": "8:44.32",
+            "sb": "9:06.90",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Regan",
+            "lastName": "Yee",
+            "id": "14501254",
+            "pb": "9:27.54",
+            "sb": null,
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nataliya",
+            "lastName": "Strebkova",
+            "id": "14530014",
+            "pb": "9:24.54",
+            "sb": null,
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Maruša",
+            "lastName": "Mišmaš Zrimšek",
+            "id": "14375060",
+            "pb": "9:13.61",
+            "sb": "9:13.61",
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:04.07",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jackline",
+            "lastName": "Chepkoech",
+            "id": "14989892",
+            "pb": "9:02.43",
+            "sb": "9:17.15",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:10.04",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alice",
+            "lastName": "Finot",
+            "id": "14758606",
+            "pb": "9:14.34",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mekides",
+            "lastName": "Abebe",
+            "id": "14804561",
+            "pb": "8:56.08",
+            "sb": "9:18.96",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Courtney",
+            "lastName": "Wayment",
+            "id": "14617090",
+            "pb": "9:09.91",
+            "sb": "9:24.39",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marwa",
+            "lastName": "Bouzayani",
+            "id": "14595096",
+            "pb": "9:12.14",
+            "sb": "9:25.37",
+            "nat": "TUN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Luiza",
+            "lastName": "Gega",
+            "id": "14272917",
+            "pb": "9:10.04",
+            "sb": "9:36.6h",
+            "nat": "ALB",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Winfred Mutile",
+            "lastName": "Yavi",
+            "id": "14695622",
+            "pb": "8:56.55",
+            "sb": "9:04.38",
+            "nat": "BRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emma",
+            "lastName": "Coburn",
+            "id": "14307810",
+            "pb": "9:02.35",
+            "sb": "9:29.41",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Fancy",
+            "lastName": "Cherono",
+            "id": "14798265",
+            "pb": "9:27.30",
+            "sb": "9:55.57",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Women": {
       "date": "2023-06-02T20:44",
