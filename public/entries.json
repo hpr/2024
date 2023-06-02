@@ -1299,7 +1299,264 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12:52.09",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohamed",
+            "lastName": "Katir",
+            "id": "14642046",
+            "pb": "12:50.79",
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:52.12",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yomif",
+            "lastName": "Kejelcha",
+            "id": "14594967",
+            "pb": "12:46.79",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:52.97",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Luis",
+            "lastName": "Grijalva",
+            "id": "14749285",
+            "pb": "13:02.94",
+            "sb": null,
+            "nat": "GUA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:53.81",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joshua",
+            "lastName": "Cheptegei",
+            "id": "14645612",
+            "pb": "12:35.36",
+            "sb": null,
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:54.31",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Telahun Haile",
+            "lastName": "Bekele",
+            "id": "14797485",
+            "pb": "12:52.98",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:54.40",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Woody",
+            "lastName": "Kincaid",
+            "id": "14493258",
+            "pb": "12:58.10",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:55.16",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joe",
+            "lastName": "Klecker",
+            "id": "14576389",
+            "pb": "13:04.42",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:55.57",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jacob",
+            "lastName": "Krop",
+            "id": "14808798",
+            "pb": "12:45.71",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Almgren",
+            "id": "14460738",
+            "pb": "13:01.70",
+            "sb": null,
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Samuel",
+            "lastName": "Tefera",
+            "id": "14797484",
+            "pb": "13:04.35",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Stewart",
+            "lastName": "McSweyn",
+            "id": "14500488",
+            "pb": "12:56.50",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohammed",
+            "lastName": "Ahmed",
+            "id": "14330105",
+            "pb": "12:47.20",
+            "sb": null,
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Thierry",
+            "lastName": "Ndikumwenayo",
+            "id": "14661449",
+            "pb": "12:59.39",
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nicholas",
+            "lastName": "Kipkorir",
+            "id": "14708978",
+            "pb": "12:46.33",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Berihu",
+            "lastName": "Aregawi",
+            "id": "14848753",
+            "pb": "12:50.05",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grant",
+            "lastName": "Fisher",
+            "id": "14591210",
+            "pb": "12:46.96",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Selemon",
+            "lastName": "Barega",
+            "id": "14751317",
+            "pb": "12:43.02",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Jack",
+            "lastName": "Rayner",
+            "id": "14517160",
+            "pb": "13:06.00",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Paul",
+            "lastName": "Robinson",
+            "id": "14373652",
+            "pb": "13:54.34",
+            "sb": null,
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Women": {
       "date": "2023-06-02T21:28",
