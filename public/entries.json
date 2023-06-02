@@ -1414,20 +1414,50 @@
           }
         },
         {
-          "place": null,
+          "mark": "12:56.18",
+          "place": 9,
           "notes": "",
           "entrant": {
-            "firstName": "Andreas",
-            "lastName": "Almgren",
-            "id": "14460738",
-            "pb": "13:01.70",
+            "firstName": "Selemon",
+            "lastName": "Barega",
+            "id": "14751317",
+            "pb": "12:43.02",
             "sb": null,
-            "nat": "SWE",
+            "nat": "ETH",
             "hasAvy": true
           }
         },
         {
-          "place": null,
+          "mark": "12:56.46",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohammed",
+            "lastName": "Ahmed",
+            "id": "14330105",
+            "pb": "12:47.20",
+            "sb": null,
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:56.99",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grant",
+            "lastName": "Fisher",
+            "id": "14591210",
+            "pb": "12:46.96",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:58.44",
+          "place": 12,
           "notes": "",
           "entrant": {
             "firstName": "Samuel",
@@ -1440,7 +1470,50 @@
           }
         },
         {
-          "place": null,
+          "mark": "12:59.03",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Thierry",
+            "lastName": "Ndikumwenayo",
+            "id": "14661449",
+            "pb": "12:59.39",
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:04.52",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Berihu",
+            "lastName": "Aregawi",
+            "id": "14848753",
+            "pb": "12:50.05",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:10.52",
+          "place": 15,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nicholas",
+            "lastName": "Kipkorir",
+            "id": "14708978",
+            "pb": "12:46.33",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:23.81",
+          "place": 16,
           "notes": "",
           "entrant": {
             "firstName": "Stewart",
@@ -1454,79 +1527,14 @@
         },
         {
           "place": null,
-          "notes": "",
+          "notes": "DNF",
           "entrant": {
-            "firstName": "Mohammed",
-            "lastName": "Ahmed",
-            "id": "14330105",
-            "pb": "12:47.20",
+            "firstName": "Andreas",
+            "lastName": "Almgren",
+            "id": "14460738",
+            "pb": "13:01.70",
             "sb": null,
-            "nat": "CAN",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": null,
-          "notes": "",
-          "entrant": {
-            "firstName": "Thierry",
-            "lastName": "Ndikumwenayo",
-            "id": "14661449",
-            "pb": "12:59.39",
-            "sb": null,
-            "nat": "ESP",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": null,
-          "notes": "",
-          "entrant": {
-            "firstName": "Nicholas",
-            "lastName": "Kipkorir",
-            "id": "14708978",
-            "pb": "12:46.33",
-            "sb": null,
-            "nat": "KEN",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": null,
-          "notes": "",
-          "entrant": {
-            "firstName": "Berihu",
-            "lastName": "Aregawi",
-            "id": "14848753",
-            "pb": "12:50.05",
-            "sb": null,
-            "nat": "ETH",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": null,
-          "notes": "",
-          "entrant": {
-            "firstName": "Grant",
-            "lastName": "Fisher",
-            "id": "14591210",
-            "pb": "12:46.96",
-            "sb": null,
-            "nat": "USA",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": null,
-          "notes": "",
-          "entrant": {
-            "firstName": "Selemon",
-            "lastName": "Barega",
-            "id": "14751317",
-            "pb": "12:43.02",
-            "sb": null,
-            "nat": "ETH",
+            "nat": "SWE",
             "hasAvy": true
           }
         },
