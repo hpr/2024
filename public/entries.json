@@ -1643,7 +1643,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "50.41",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natalia",
+            "lastName": "Kaczmarek",
+            "id": "14642563",
+            "pb": "49.86",
+            "sb": "51.64",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.75",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "50.18",
+            "sb": null,
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.84",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lynna",
+            "lastName": "Irby-Jackson",
+            "id": "14486888",
+            "pb": "49.80",
+            "sb": "50.38",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.29",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Roxana",
+            "lastName": "Gómez",
+            "id": "14637147",
+            "pb": "49.71",
+            "sb": "50.60",
+            "nat": "CUB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.31",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aliyah",
+            "lastName": "Abrams",
+            "id": "14447688",
+            "pb": "50.20",
+            "sb": "50.20",
+            "nat": "GUY",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.76",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Kiełbasińska",
+            "id": "14293852",
+            "pb": "50.28",
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "52.09",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Candice",
+            "lastName": "McLeod",
+            "id": "14587165",
+            "pb": "49.51",
+            "sb": "51.17",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "52.61",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alice",
+            "lastName": "Mangione",
+            "id": "14594823",
+            "pb": "51.47",
+            "sb": "52.25",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Men": {
       "date": "2023-06-02T21:39",
