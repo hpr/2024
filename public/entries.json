@@ -551,6 +551,20 @@
           }
         },
         {
+          "mark": "9:04.07",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jackline",
+            "lastName": "Chepkoech",
+            "id": "14989892",
+            "pb": "9:02.43",
+            "sb": "9:17.15",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
           "mark": "9:04.61",
           "place": 3,
           "notes": "",
@@ -579,59 +593,6 @@
           }
         },
         {
-          "place": 13,
-          "notes": "",
-          "entrant": {
-            "firstName": "Regan",
-            "lastName": "Yee",
-            "id": "14501254",
-            "pb": "9:27.54",
-            "sb": null,
-            "nat": "CAN",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": 14,
-          "notes": "",
-          "entrant": {
-            "firstName": "Nataliya",
-            "lastName": "Strebkova",
-            "id": "14530014",
-            "pb": "9:24.54",
-            "sb": null,
-            "nat": "UKR",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": null,
-          "notes": "",
-          "entrant": {
-            "firstName": "Maruša",
-            "lastName": "Mišmaš Zrimšek",
-            "id": "14375060",
-            "pb": "9:13.61",
-            "sb": "9:13.61",
-            "nat": "SLO",
-            "hasAvy": true
-          }
-        },
-        {
-          "mark": "9:04.07",
-          "place": 2,
-          "notes": "",
-          "entrant": {
-            "firstName": "Jackline",
-            "lastName": "Chepkoech",
-            "id": "14989892",
-            "pb": "9:02.43",
-            "sb": "9:17.15",
-            "nat": "KEN",
-            "hasAvy": true
-          }
-        },
-        {
           "mark": "9:10.04",
           "place": 5,
           "notes": "",
@@ -646,6 +607,21 @@
           }
         },
         {
+          "mark": "9:10.07",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Maruša",
+            "lastName": "Mišmaš Zrimšek",
+            "id": "14375060",
+            "pb": "9:13.61",
+            "sb": "9:13.61",
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:11.09",
           "place": 7,
           "notes": "",
           "entrant": {
@@ -659,6 +635,7 @@
           }
         },
         {
+          "mark": "9:11.41",
           "place": 8,
           "notes": "",
           "entrant": {
@@ -672,6 +649,7 @@
           }
         },
         {
+          "mark": "9:11.76",
           "place": 9,
           "notes": "",
           "entrant": {
@@ -685,6 +663,7 @@
           }
         },
         {
+          "mark": "9:11.94",
           "place": 10,
           "notes": "",
           "entrant": {
@@ -698,6 +677,7 @@
           }
         },
         {
+          "mark": "9:18.12",
           "place": 11,
           "notes": "",
           "entrant": {
@@ -711,6 +691,7 @@
           }
         },
         {
+          "mark": "9:18.17",
           "place": 12,
           "notes": "",
           "entrant": {
@@ -720,6 +701,34 @@
             "pb": "9:02.35",
             "sb": "9:29.41",
             "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:40.04",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Regan",
+            "lastName": "Yee",
+            "id": "14501254",
+            "pb": "9:27.54",
+            "sb": null,
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:43.20",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nataliya",
+            "lastName": "Strebkova",
+            "id": "14530014",
+            "pb": "9:24.54",
+            "sb": null,
+            "nat": "UKR",
             "hasAvy": true
           }
         },
