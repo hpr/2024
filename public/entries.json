@@ -270,7 +270,120 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "19.89",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Erriyon",
+            "lastName": "Knighton",
+            "id": "14897541",
+            "pb": "19.49",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.28",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jereem",
+            "lastName": "Richards",
+            "id": "14434521",
+            "pb": "19.80",
+            "sb": "20.08",
+            "nat": "TTO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.31",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aaron",
+            "lastName": "Brown",
+            "id": "14366482",
+            "pb": "19.95",
+            "sb": "20.00",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.41",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Filippo",
+            "lastName": "Tortu",
+            "id": "14629026",
+            "pb": "20.10",
+            "sb": "20.30",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.48",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Reynier",
+            "lastName": "Mena",
+            "id": "14518308",
+            "pb": "19.63",
+            "sb": "19.95",
+            "nat": "CUB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.51",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joseph",
+            "lastName": "Fahnbulleh",
+            "id": "14803230",
+            "pb": "19.83",
+            "sb": "20.14",
+            "nat": "LBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.90",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Eseosa Fostine",
+            "lastName": "Desalu",
+            "id": "14403082",
+            "pb": "20.13",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Ogando",
+            "id": "14912251",
+            "pb": "19.91",
+            "sb": "20.22",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Women": {
       "date": "2023-06-02T20:25",
