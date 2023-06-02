@@ -39,26 +39,26 @@ for (const meetInfo of meets) {
     const place = leaderboard[meet]?.findIndex((leader) => leader.score === cutoffEntry.score)! + 1;
     meetStanding.cutoff = {
       place,
-      cumPlace: (prevCutoff?.place ?? 0) + place,
+      cumPlace: (prevCutoff?.cumPlace ?? 0) + place,
       users: leaderboard[meet]!.filter((leader) => +leader.userid !== TRACKBOT_USERID && leader.score <= cutoffEntry.score).map(({ userid, name }) => ({
         id: userid,
         name,
       })),
     };
     for (const prevCutoffUser of prevCutoff?.users ?? []) {
-      if (!meetStanding.cutoff.users.find(user => +user.id === +prevCutoffUser.id)) meetStanding.cutoff.users.push(prevCutoffUser);
+      if (!meetStanding.cutoff.users.find((user) => +user.id === +prevCutoffUser.id)) meetStanding.cutoff.users.push(prevCutoffUser);
     }
     const prevLeaders = standings[idx - 1]?.leaders ?? [];
     for (const prevLeader of prevLeaders) {
-      const matchingLeader = meetStanding.leaders.find(leader => +leader.userid === +prevLeader.userid);
+      const matchingLeader = meetStanding.leaders.find((leader) => +leader.userid === +prevLeader.userid);
       if (matchingLeader) matchingLeader.cumPlace += prevLeader.cumPlace;
       else {
         const place = meetStanding.cutoff?.place ?? meetStanding.leaders.length;
         meetStanding.leaders.push({
           ...prevLeader,
           place,
-          cumPlace: prevLeader.place + place,
-        })
+          cumPlace: prevLeader.cumPlace + place,
+        });
       }
     }
     for (const leader of meetStanding.leaders) {
