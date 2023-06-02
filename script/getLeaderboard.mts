@@ -20,18 +20,25 @@ const users: { id: number; name: string }[] = parse(fs.readFileSync('./users.csv
 const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): { score: number; scorers: { [id: string]: number } } => {
   let score = 0;
   const scorers: { [id: string]: number } = {};
+  team[evt] = team[evt]?.filter((pick) => {
+    const matchingResult = (entries[meet]![evt]!.results! ?? []).find((res) => res.entrant?.id === pick?.id);
+    return !!matchingResult?.place;
+  });
+
   for (const pick of team[evt] ?? []) {
     // console.log(entries, meet, evt, Object.keys(entries[meet]![evt]!));
     let matchingResult = (entries[meet]![evt]!.results! ?? []).find((res) => res.entrant?.id === pick?.id);
     const pickIdx = (team[evt] ?? []).indexOf(pick);
-    const pickScore = SCORE[pickIdx][matchingResult!?.place - 1] ?? 0;
+    const pickScore = matchingResult!?.place ? SCORE[pickIdx][matchingResult!?.place - 1] ?? 0 : -1;
     console.log(evt, pick.firstName, pick.lastName, matchingResult?.place, pickScore);
     scorers[matchingResult?.entrant!.id!] = pickScore;
     score += pickScore;
   }
   const lowestScorerId = Object.keys(scorers).sort((a, b) => scorers[a] - scorers[b])[0];
-  score -= scorers[lowestScorerId];
-  delete scorers[lowestScorerId];
+  if (Object.keys(scorers).length > 2) { // TODO use NUM_SCORING
+    score -= scorers[lowestScorerId];
+    delete scorers[lowestScorerId];
+  }
   if (Number.isNaN(score)) process.exit();
   return { score, scorers };
 };
@@ -103,7 +110,7 @@ for (const meet of [MEET] as DLMeet[]) {
       eventsScored,
       score,
     });
-    console.log(leaderboard[meet]!.at(-1));
+    // console.log(leaderboard[meet]!.at(-1));
   }
   leaderboard[meet]?.sort((a, b) => b.score - a.score);
 }
