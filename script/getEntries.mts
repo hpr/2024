@@ -433,6 +433,18 @@ const getEntries = async () => {
                 hasAvy: true,
               });
           }
+          if (MEET === 'florence23' && name === '100m Men') {
+            if (!entrants.find((e) => e.lastName === 'Bracy-Williams'))
+              entrants.push({
+                firstName: 'Marvin',
+                lastName: 'Bracy-Williams',
+                id: '14425680',
+                pb: '9.85',
+                sb: '9.93',
+                nat: 'USA',
+                hasAvy: true,
+              });
+          }
           console.log(entrants);
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
