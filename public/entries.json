@@ -1836,7 +1836,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "9.94",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Fred",
+            "lastName": "Kerley",
+            "id": "14504382",
+            "pb": "9.76",
+            "sb": "9.88",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.05",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ferdinand",
+            "lastName": "Omanyala",
+            "id": "14747153",
+            "pb": "9.77",
+            "sb": "9.84",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.09",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Trayvon",
+            "lastName": "Bromell",
+            "id": "14519911",
+            "pb": "9.76",
+            "sb": "10.10",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.09",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Akani",
+            "lastName": "Simbine",
+            "id": "14417763",
+            "pb": "9.84",
+            "sb": "9.92",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.13",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Samuele",
+            "lastName": "Ceccarelli",
+            "id": "14753012",
+            "pb": "10.45",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.15",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rohan",
+            "lastName": "Browning",
+            "id": "14575440",
+            "pb": "10.01",
+            "sb": "10.02",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.15",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yohan",
+            "lastName": "Blake",
+            "id": "14201842",
+            "pb": "9.69",
+            "sb": "10.18",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.23",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marvin",
+            "lastName": "Bracy-Williams",
+            "id": "14425680",
+            "pb": "9.85",
+            "sb": "9.93",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Women": {
       "date": "2023-06-02T21:49",
