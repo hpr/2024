@@ -3,7 +3,7 @@
 
 import { MeetCache, DLMeet, Entries, LBType, AthleticsEvent, ResultEntrant, MeetTeam, LBPicks } from './types.mjs';
 import fs from 'fs';
-import { backupNotes, CACHE_PATH, disciplineCodes, distanceEvents, ENTRIES_PATH, getLbPath, MEET, SCORE, sprintEvents } from './const.mjs';
+import { backupNotes, CACHE_PATH, disciplineCodes, distanceEvents, ENTRIES_PATH, getLbPath, MEET, NUM_SCORING, SCORE, sprintEvents } from './const.mjs';
 import { parse } from 'csv-parse/sync';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
@@ -35,7 +35,7 @@ const getScore = (meet: DLMeet, team: MeetTeam, evt: AthleticsEvent): { score: n
     score += pickScore;
   }
   const lowestScorerId = Object.keys(scorers).sort((a, b) => scorers[a] - scorers[b])[0];
-  if (Object.keys(scorers).length > 2) { // TODO use NUM_SCORING
+  if (Object.keys(scorers).length > NUM_SCORING) {
     score -= scorers[lowestScorerId];
     delete scorers[lowestScorerId];
   }

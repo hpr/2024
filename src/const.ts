@@ -108,6 +108,7 @@ export const disciplineCodes: { [k: string]: string } = {
   '110m Hurdles (99.0cm)': '110HJ',
   '100m Hurdles (76.2cm)': '100HY',
   '110 Metres Hurdles': '110H',
+  '110m Hurdles': '110H',
   '110m Hurdles (91.4cm)': '110HY',
   '200 Metres Hurdles': '200H',
   '300m Hurdles (84.0cm)': '300HY',

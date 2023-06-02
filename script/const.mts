@@ -2,6 +2,8 @@ import { AthleticsEvent, DLMeet, WAEventCode } from './types.mjs';
 
 export const MEET: DLMeet = 'florence23';
 
+export const NUM_SCORING: number = 2;
+
 export const SCORE = [
   [20, 12, 8, 6, 5, 4],
   [10, 8, 6, 4, 3, 2],
@@ -145,6 +147,7 @@ export const disciplineCodes: { [k: string]: WAEventCode } = {
   '100 Metres Hurdles': '100H',
   '100m Hurdles': '100H',
   '110m Hurdles (99.0cm)': '110HJ',
+  '110m Hurdles': '110H',
   '100m Hurdles (76.2cm)': '100HY',
   '110 Metres Hurdles': '110H',
   '110m Hurdles (91.4cm)': '110HY',
