@@ -77,7 +77,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "52.43",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Femke",
+            "lastName": "Bol",
+            "id": "14707010",
+            "pb": "52.03",
+            "sb": "53.12",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.38",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shamier",
+            "lastName": "Little",
+            "id": "14443767",
+            "pb": "52.39",
+            "sb": "53.95",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.42",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Hall",
+            "id": "14713272",
+            "pb": "54.48",
+            "sb": "54.48",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.59",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gianna",
+            "lastName": "Woodruff",
+            "id": "14423522",
+            "pb": "53.69",
+            "sb": "55.74",
+            "nat": "PAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.71",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Viktoriya",
+            "lastName": "Tkachuk",
+            "id": "14426923",
+            "pb": "53.76",
+            "sb": "56.44",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.71",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rushell",
+            "lastName": "Clayton",
+            "id": "14425208",
+            "pb": "53.33",
+            "sb": "54.15",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.34",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ayomide",
+            "lastName": "Folorunso",
+            "id": "14484475",
+            "pb": "54.34",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.99",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Ryzhykova",
+            "id": "14304336",
+            "pb": "52.96",
+            "sb": "56.97",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Men": {
       "date": "2023-06-02T20:15",
