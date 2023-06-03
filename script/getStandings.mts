@@ -30,7 +30,7 @@ for (const meetInfo of meets) {
             name,
             place,
             delta: place - prevPlace,
-            cumPlace: standings[idx - 1]?.leaders?.find((leader) => +leader.userid === +userid)?.cumPlace ?? place,
+            cumPlace: place,
           };
         }) ?? [],
   };
@@ -46,7 +46,11 @@ for (const meetInfo of meets) {
       })),
     };
     for (const prevCutoffUser of prevCutoff?.users ?? []) {
-      if (!meetStanding.cutoff.users.find((user) => +user.id === +prevCutoffUser.id)) meetStanding.cutoff.users.push(prevCutoffUser);
+      if (
+        !meetStanding.cutoff.users.find((user) => +user.id === +prevCutoffUser.id) &&
+        !meetStanding.leaders.find((user) => +user.userid === +prevCutoffUser.id)
+      )
+        meetStanding.cutoff.users.push(prevCutoffUser);
     }
     const prevLeaders = standings[idx - 1]?.leaders ?? [];
     for (const prevLeader of prevLeaders) {
