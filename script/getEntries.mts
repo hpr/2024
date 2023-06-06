@@ -46,6 +46,10 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   if (sigFigDiff) return sigFigDiff;
   return a.pb.localeCompare(b.pb);
 };
+const sanitizeEvtName = (name: string): string => {
+  return name?.replace(' W Women', ' Women').replace(' M Men', ' Men');
+};
+
 const getWaId = async (
   firstName: string,
   lastName: string,
@@ -390,15 +394,10 @@ const getEntries = async () => {
         const { document } = new JSDOM(cache[meet].schedule.combined).window;
         const events = [...document.querySelectorAll('.competition.DR')]
           .map((elem) => ({
-            name: elem.querySelector('.name')?.textContent,
+            name: sanitizeEvtName(elem.querySelector('.name')?.textContent),
             url: elem.querySelector('.links a')?.getAttribute('href'),
           }))
-          .filter(
-            ({ name, url }) =>
-              runningEvents
-                .flat()
-                .some((evt) => (name?.replace(' W Women', ' Women').replace(' M Men', ' Men') ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url
-          )
+          .filter(({ name, url }) => runningEvents.flat().some((evt) => (name ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url)
           .map((obj) => ({ ...obj, name: runningEvents.flat().find((evt) => (obj.name ?? '').toLowerCase().startsWith(evt.toLowerCase())) }));
         for (const { name: origName, url } of events) {
           const name = origName as AthleticsEvent;
