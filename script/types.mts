@@ -248,6 +248,7 @@ export type Entries = {
   [k in DLMeet]?: {
     [k in AthleticsEvent]?: {
       entrants: Entrant[];
+      targetTime?: string;
       date: string;
       results?: ResultEntrant[];
       isClosed?: boolean;

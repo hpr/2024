@@ -10,6 +10,12 @@ import { TextItem } from 'pdfjs-dist/types/src/display/api.js';
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 
+const targetTimes: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
+  paris23: {
+    '3000m Steeplechase Men': '7:53',
+  },
+};
+
 const schedules: { [k in DLMeet]?: string[] } = {
   doha: ['https://web.archive.org/web/20220512074007/https://doha.diamondleague.com/programme-results-doha/'],
   birminghamIndoor: ['./script/files/EntryList.PDF'],
@@ -387,7 +393,12 @@ const getEntries = async () => {
             name: elem.querySelector('.name')?.textContent,
             url: elem.querySelector('.links a')?.getAttribute('href'),
           }))
-          .filter(({ name, url }) => runningEvents.flat().some((evt) => (name ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url)
+          .filter(
+            ({ name, url }) =>
+              runningEvents
+                .flat()
+                .some((evt) => (name?.replace(' W Women', ' Women').replace(' M Men', ' Men') ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url
+          )
           .map((obj) => ({ ...obj, name: runningEvents.flat().find((evt) => (obj.name ?? '').toLowerCase().startsWith(evt.toLowerCase())) }));
         for (const { name: origName, url } of events) {
           const name = origName as AthleticsEvent;
@@ -399,70 +410,39 @@ const getEntries = async () => {
           }
           const { document } = new JSDOM(cache[meet].events[name]!.startlist).window;
           console.log(name);
-          const entrants: Entrant[] = await Promise.all([...document.querySelectorAll('.tableBody .row')].flatMap(async (elem) => {
-            const [lastName, firstName] = elem
-              .querySelector('.column.name')!
-              .textContent!.split(' ')
-              .map((word) => word.trim())
-              .filter((word) => word)
-              .join(' ')
-              .split(', ');
-            const id = elem
-              .querySelector('.column.name a')?.getAttribute('href')
-              ?.match(/\/(\d+)\.html$/)![1]! ?? (await getWaId(firstName, lastName, {})).id;
-            if (id === '14453864' && MEET === 'rabat23') return []; // marcel jacobs rabat
-            return {
-              firstName,
-              lastName: nameFixer(lastName),
-              id,
-              pb: elem.querySelector('.column.pb')?.textContent || null,
-              sb: elem.querySelector('.column.sb')?.textContent || null,
-              nat: elem.querySelector('.column.nat')!.textContent!.trim(),
-              hasAvy: fs.existsSync(`./public/img/avatars/${id}_128x128.png`),
-              team: idTeams[id],
-            };
-          })) as Entrant[];
-          if (MEET === 'florence23' && name === '5000m Men') {
-            if (!entrants.find((e) => e.lastName === 'Kincaid'))
-              entrants.push({
-                firstName: 'Woody',
-                lastName: 'Kincaid',
-                id: '14493258',
-                pb: '12:58.10',
-                sb: null,
-                nat: 'USA',
-                hasAvy: true,
-              });
-          }
-          if (MEET === 'florence23' && name === '100m Men') {
-            if (!entrants.find((e) => e.lastName === 'Bracy-Williams'))
-              entrants.push({
-                firstName: 'Marvin',
-                lastName: 'Bracy-Williams',
-                id: '14425680',
-                pb: '9.85',
-                sb: '9.93',
-                nat: 'USA',
-                hasAvy: true,
-              });
-          }
-          if (MEET === 'florence23' && name === '1500m Women') {
-            if (!entrants.find((e) => e.lastName === 'Garcia'))
-              entrants.push({
-                firstName: 'Marta',
-                lastName: 'Garcia',
-                id: '14635475',
-                pb: '4:07.23',
-                sb: '4:07.23',
-                nat: 'ESP',
-                hasAvy: true,
-              });
-          }
+          const entrants: Entrant[] = (await Promise.all(
+            [...document.querySelectorAll('.tableBody .row')].flatMap(async (elem) => {
+              const [lastName, firstName] = elem
+                .querySelector('.column.name')!
+                .textContent!.split(' ')
+                .map((word) => word.trim())
+                .filter((word) => word)
+                .join(' ')
+                .split(', ');
+              const id =
+                elem
+                  .querySelector('.column.name a')
+                  ?.getAttribute('href')
+                  ?.match(/\/(\d+)\.html$/)![1]! ?? (await getWaId(firstName, lastName, {}))?.id;
+              if (id === '14453864' && MEET === 'rabat23') return []; // marcel jacobs rabat
+              return {
+                firstName,
+                lastName: nameFixer(lastName),
+                id,
+                pb: elem.querySelector('.column.pb')?.textContent || null,
+                sb: elem.querySelector('.column.sb')?.textContent || null,
+                nat: elem.querySelector('.column.nat')!.textContent!.trim(),
+                hasAvy: fs.existsSync(`./public/img/avatars/${id}_128x128.png`),
+                team: idTeams[id],
+              };
+            })
+          )) as Entrant[];
           console.log(entrants);
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
             date: `${year}-${month}-${day}T${document.querySelector('.time')!.getAttribute('data-starttime')}`,
             blurb: blurbCache[meet]?.blurbs?.[name],
+            targetTime: targetTimes[meet]?.[name],
             entrants: entrants.sort(entrantSortFunc),
           };
         }

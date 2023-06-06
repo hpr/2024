@@ -1,172 +1,117 @@
-Write a race prediction and preview for the Women's 1500m at the 2023 Florence Diamond League track meet, which will happen on June 2, 2023. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:
+Write a race prediction and preview for the Men's 800m at the 2023 Paris Diamond League track meet, which will happen on June 9, 2023. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:
 
-1. Faith Kipyegon (KEN), 29 years old
-Personal Best: 3:50.37, Season's Best: 3:58.57
-2023 results for Faith Kipyegon:
-04 FEB: 1st place, 33:55 in Cross Country @ Eldoret (KEN)
-05 MAY: 1st place, 3:58.57 in 1500 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
+1. Emmanuel Kipkurui Korir (KEN), 27 years old
+Personal Best: 1:42.05, Season's Best: 1:48.42
+2023 results for Emmanuel Kipkurui Korir:
+28 MAY: 8th place, 1:48.42 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
 
-2. Laura Muir (GBR), 30 years old
-Personal Best: 3:54.50, Season's Best: N/A
-2023 results for Laura Muir:
-04 FEB: 1st place, 8:40.34 in 3000 Metres (indoor) @ The Track at New Balance, Boston, MA (USA)
-11 FEB: 4:03.07 in 1500 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
-11 FEB: 1st place, 4:20.15 in One Mile (indoor) @ Armory Track&Field Center, New York, NY (USA)
-25 FEB: 1st place, 2:34.53 in 1000 Metres (indoor) @ Utilita Arena Birmingham, Birmingham (GBR)
-03 MAR: 1st place, 4:23.20 in 1500 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-04 MAR: 1st place, 4:03.40 in 1500 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+2. Wyclife Kinyamal (KEN), 25 years old
+Personal Best: 1:43.12, Season's Best: 1:43.66
+2023 results for Wyclife Kinyamal:
+25 FEB: 3rd place, 1:47.60 in 800 Metres @ Nyayo National Stadium, Nairobi (KEN)
+25 FEB: 1st place, 1:46.51 in 800 Metres @ Nyayo National Stadium, Nairobi (KEN)
+05 MAY: 2nd place, 1:46.61 in 800 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
+13 MAY: 2nd place, 1:43.66 in 800 Metres @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
+28 MAY: 2nd place, 1:44.73 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
 
-3. Gabriela Debues-Stafford (CAN), 27 years old
-Personal Best: 3:56.12, Season's Best: 4:06.71
-2023 results for Gabriela Debues-Stafford:
-06 MAY: 2nd place, 4:06.71 in 1500 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
-14 MAY: 1st place, 2:06.50 in 800 Metres @ Centennial Stadium, Victoria (CAN)
+3. Marco Arop (CAN), 24 years old
+Personal Best: 1:43.26, Season's Best: 1:46.34
+2023 results for Marco Arop:
+27 JAN: DNF in One Mile (indoor) @ Clemson Indoor Track & Field Complex, Clemson, SC (USA)
+31 MAR: 1st place, 3:38.36 in 1500 Metres @ Percy Beard Track, Gainesville, FL (USA)
+28 MAY: 5th place, 1:46.34 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
 
-4. Ciara Mageean (IRL), 31 years old
-Personal Best: 3:56.63, Season's Best: N/A
-2023 results for Ciara Mageean:
-04 FEB: DNF in 3000 Metres (indoor) @ The Track at New Balance, Boston, MA (USA)
-13 MAY: 4th place, 2:00.36 in 800 Metres @ Mary Peters Track, Belfast (GBR)
-27 MAY: 2nd place, 1:59.27 in 800 Metres @ Sportcity Regional Arena, Manchester (GBR)
+4. Emmanuel Wanyonyi (KEN), 18 years old
+Personal Best: 1:43.32, Season's Best: 1:43.32
+2023 results for Emmanuel Wanyonyi:
+18 FEB: 1st place, 23:14 in Mixed Relay @ Bathurst (AUS)
+13 MAY: 1st place, 1:43.32 in 800 Metres @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
+28 MAY: 1st place, 1:44.36 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
 
-5. Axumawit Embaye (ETH), 28 years old
-Personal Best: 3:58.80, Season's Best: 4:03.40
-2023 results for Axumawit Embaye:
-15 FEB: 4th place, 4:06.15 in 1500 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
-05 MAY: 8th place, 4:03.40 in 1500 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
+5. Djamel Sedjati (ALG), 24 years old
+Personal Best: 1:43.69, Season's Best: 1:44.27
+2023 results for Djamel Sedjati:
+11 MAR: 1st place, 1:14.36 in 600 Metres @ DP de Villiers Stadium, Sasolburg (RSA)
+05 MAY: 3rd place, 1:46.97 in 800 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
+31 MAY: 1st place, 1:44.27 in 800 Metres @ Stade des Grands Pêchers, Montreuil (FRA)
 
-6. Jessica Hull (AUS), 26 years old
-Personal Best: 3:58.81, Season's Best: 4:00.90
-2023 results for Jessica Hull:
-18 FEB: 3rd place, 23:26 in Mixed Relay @ Bathurst (AUS)
-23 FEB: 1st place, 4:07.11 in 1500 Metres @ Lakeside Stadium, Melbourne (AUS)
-11 MAR: 1st place, 8:31.81 in 3000 Metres @ SOPAC, Sydney (AUS)
-30 MAR: 1st place, 4:11.15 in 1500 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
-01 APR: 1st place, 4:04.19 in 1500 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
-02 APR: 1st place, 15:05.87 in 5000 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
-05 MAY: 4th place, 4:00.90 in 1500 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
+6. Benjamin Robert (FRA), 25 years old
+Personal Best: 1:43.75, Season's Best: 1:45.04
+2023 results for Benjamin Robert:
+11 FEB: 1st place, 1:47.04 in 800 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
+15 FEB: 1st place, 1:46.78 in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+18 FEB: 1st place, 1:48.78 in 800 Metres (indoor) @ Stadium Jean-Pellez, Aubiére (FRA)
+19 FEB: 1st place, 1:47.84 in 800 Metres (indoor) @ Stadium Jean-Pellez, Aubiére (FRA)
+02 MAR: 1st place, 1:47.92 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+04 MAR: 1st place, 1:47.11 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 2nd place, 1:47.34 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+12 MAR: 13th place, 14:59 in Short Race @ Site de Kerampuilh, Carhaix (FRA)
+21 MAY: 1st place, 1:47.55 in 800 Metres @ Stade Henri Lux, St-Etienne (FRA)
+28 MAY: 3rd place, 1:45.04 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
 
-7. Linden Hall (AUS), 31 years old
-Personal Best: 3:59.01, Season's Best: 4:03.56
-2023 results for Linden Hall:
-23 FEB: 4th place, 8:50.89 in 3000 Metres @ Lakeside Stadium, Melbourne (AUS)
-25 MAR: 3rd place, 2:01.48 in 800 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
-30 MAR: 2nd place, 4:11.48 in 1500 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
-01 APR: 3rd place, 4:05.65 in 1500 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
-28 MAY: 6th place, 4:03.56 in 1500 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+7. Slimane Moula (ALG), 24 years old
+Personal Best: 1:44.19, Season's Best: 1:46.06
+2023 results for Slimane Moula:
+07 APR: 1st place, 1:15.21 in 600 Metres @ Complexe Olympique Mohamed Boudiaf, Algiers (ALG)
+05 MAY: 1st place, 1:46.06 in 800 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
 
-8. Josette Andrews (USA), 27 years old
-Personal Best: 3:59.72, Season's Best: 4:00.77
-2023 results for Josette Andrews:
-11 FEB: 4:03.18 in 1500 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
-11 FEB: 2nd place, 4:20.88 in One Mile (indoor) @ Armory Track&Field Center, New York, NY (USA)
-04 MAR: DNF in 10,000 Metres @ JSerra Catholic HS, San Juan Capistrano, CA (USA)
-29 APR: 1st place, 4:04.88 in 1500 Metres @ Franklin Field, Philadelphia, PA (USA)
-06 MAY: 1st place, 14:43.36 in 5000 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
-27 MAY: 3rd place, 4:00.77 in 1500 Metres @ Drake Stadium, Los Angeles, CA (USA)
+8. Andreas Kramer (SWE), 26 years old
+Personal Best: 1:44.47, Season's Best: 1:48.18
+2023 results for Andreas Kramer:
+29 JAN: 1st place, 1:45.90 in 800 Metres (indoor) @ Sätrahallen, Stockholm (SWE)
+02 FEB: 1st place, 1:46.51 in 800 Metres (indoor) @ Friidrottens Hus, Göteborg (SWE)
+08 FEB: 1st place, 1:46.37 in 800 Metres (indoor) @ Arena, Toruń (POL)
+15 FEB: 4th place, 1:47.97 in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+17 FEB: 1st place, 1:53.44 in 800 Metres (indoor) @ Atleticum, Malmö (SWE)
+18 FEB: 1st place, 1:46.75 in 800 Metres (indoor) @ Atleticum, Malmö (SWE)
+22 FEB: 2nd place, 1:46.52 in 800 Metres (indoor) @ Gallur, Madrid (ESP)
+02 MAR: 2nd place, 1:47.86 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+04 MAR: 3rd place, 1:47.11 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 5th place, 1:48.15 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAY: 6th place, 1:48.18 in 800 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
+18 MAY: DNF in 5000 Metres @ Olympiastadion, Stockholm (SWE)
+06 JUN: 6th place, 1:46.38 in 800 Metres @ Zdzislaw Krzyszkowiak Stadium, Bydgoszcz (POL)
 
-9. Cory Ann McGee (USA), 31 years old
-Personal Best: 4:00.34, Season's Best: 4:03.09
-2023 results for Cory Ann McGee:
-28 JAN: DNF in One Mile (indoor) @ Boston Univ. Track & Tennis Center, Boston, MA (USA)
-28 JAN: DNF in 3000 Metres (indoor) @ Boston Univ. Track & Tennis Center, Boston, MA (USA)
-04 FEB: DNF in One Mile (indoor) @ The Track at New Balance, Boston, MA (USA)
-10 FEB: DNF in 1000 Metres (indoor) @ Boston Univ. Track & Tennis Center, Boston, MA (USA)
-10 FEB: DNF in 3000 Metres (indoor) @ Boston Univ. Track & Tennis Center, Boston, MA (USA)
-05 MAY: 10th place, 4:06.03 in 1500 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
-28 MAY: 5th place, 4:03.09 in 1500 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+9. Patryk Sieradzki (POL), 24 years old
+Personal Best: 1:45.13, Season's Best: N/A
+2023 results for Patryk Sieradzki:
+28 JAN: 5th place, 1:48.00 in 800 Metres (indoor) @ Pista Coberta de Catalunya, Sabadell (ESP)
+03 FEB: DNF in 800 Metres (indoor) @ Hartwig-Gauder-Halle, Erfurt (GER)
+08 FEB: 8th place, 1:49.83 in 800 Metres (indoor) @ Arena, Toruń (POL)
+11 FEB: DNF in 800 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
+12 FEB: DNF in 800 Metres (indoor) @ Helmut-Körnig-Halle, Dortmund (GER)
+15 FEB: DNF in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+18 FEB: 1st place, 1:51.59 in 800 Metres (indoor) @ Arena, Toruń (POL)
+19 FEB: 3rd place, 1:49.88 in 800 Metres (indoor) @ Arena, Toruń (POL)
+28 MAY: DNF in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+28 MAY: DNF in 1500 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+31 MAY: DNF in 800 Metres @ Stade des Grands Pêchers, Montreuil (FRA)
+04 JUN: 7th place, 1:46.47 in 800 Metres @ Stadion Śląski, Chorzów (POL)
+06 JUN: 7th place, 1:46.50 in 800 Metres @ Zdzislaw Krzyszkowiak Stadium, Bydgoszcz (POL)
 
-10. Abbey Caldwell (AUS), 21 years old
-Personal Best: 4:01.15, Season's Best: 4:01.15
-2023 results for Abbey Caldwell:
-02 FEB: 1st place, 2:41.01 in 1000 Metres @ Hagenauer Reserve, Box Hill, Melbourne (AUS)
-18 FEB: 3rd place, 23:26 in Mixed Relay @ Bathurst (AUS)
-23 FEB: 2nd place, 4:07.32 in 1500 Metres @ Lakeside Stadium, Melbourne (AUS)
-11 MAR: 1st place, 1:58.62 in 800 Metres @ SOPAC, Sydney (AUS)
-16 MAR: 1st place, 4:05.36 in 1500 Metres @ Tom Kelly Athletics Track, Doncaster, Melbourne (AUS)
-30 MAR: 1st place, 4:19.54 in 1500 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
-01 APR: 2nd place, 4:04.68 in 1500 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
-05 MAY: 5th place, 4:01.15 in 1500 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
-27 MAY: 1st place, 1:58.92 in 800 Metres @ Sportcity Regional Arena, Manchester (GBR)
+10. Azeddine Habz (FRA), 29 years old
+Personal Best: 1:45.15, Season's Best: 1:45.15
+2023 results for Azeddine Habz:
+29 JAN: 1st place, 3:38.93 in 1500 Metres (indoor) @ Sätrahallen, Stockholm (SWE)
+04 FEB: 1st place, 1:46.85 in 800 Metres (indoor) @ Topsporthal Vlaanderen, Gent (BEL)
+08 FEB: 1st place, 3:35.59 in 1500 Metres (indoor) @ Arena, Toruń (POL)
+15 FEB: 2nd place, 3:35.27 in 1500 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+19 FEB: 1st place, 3:40.93 in 1500 Metres (indoor) @ Stadium Jean-Pellez, Aubiére (FRA)
+02 MAR: 1st place, 3:49.88 in 1500 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+03 MAR: 3rd place, 3:35.39 in 1500 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+12 MAR: 1st place, 14:18 in Short Race @ Site de Kerampuilh, Carhaix (FRA)
+21 MAY: 1st place, 1:48.38 in 800 Metres @ Stade C. Fichot, Conflans-ste-Honorine (FRA)
+28 MAY: 4th place, 3:33.90 in 1500 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+31 MAY: 2nd place, 1:45.15 in 800 Metres @ Stade des Grands Pêchers, Montreuil (FRA)
 
-11. Sage Hurta-Klecker (USA), 24 years old
-Personal Best: 4:01.79, Season's Best: 4:06.34
-2023 results for Sage Hurta-Klecker:
-28 JAN: 2nd place, 2:36.37 in 1000 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
-11 FEB: 4:07.12 in 1500 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
-11 FEB: 8th place, 4:26.04 in One Mile (indoor) @ Armory Track&Field Center, New York, NY (USA)
-18 FEB: 2nd place, 4:17.26 in 1500 Metres (indoor) @ Convention Center, Albuquerque, NM (USA)
-29 APR: 3rd place, 1:25.33 in 600 Metres @ Franklin Field, Philadelphia, PA (USA)
-06 MAY: 1st place, 4:06.34 in 1500 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
-28 MAY: 3rd place, 2:00.62 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
-
-12. Federica del Buono (ITA), 28 years old
-Personal Best: 4:03.45, Season's Best: 4:10.70
-2023 results for Federica del Buono:
-06 JAN: 14th place, 20:46 in Cross Country @ San Giorgio su Legnano (ITA)
-11 FEB: 1st place, 4:11.22 in 1500 Metres (indoor) @ Palaindoor, Padova (ITA)
-18 FEB: 3rd place, 4:12.10 in 1500 Metres (indoor) @ Palaindoor Ancona, Ancona (ITA)
-19 FEB: 2nd place, 2:04.77 in 800 Metres (indoor) @ Palaindoor Ancona, Ancona (ITA)
-03 MAR: 5th place, 4:23.59 in 1500 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-30 APR: 1st place, 2:04.29 in 800 Metres @ Campo Communale, Modena (ITA)
-07 MAY: 1st place, 4:10.70 in 1500 Metres @ Centro Gabre Gabric, Brescia (ITA)
-27 MAY: 8th place, 2:02.59 in 800 Metres @ Stadio Zecchini, Grosseto (ITA)
-
-13. Sintayehu Vissa (ITA), 26 years old
-Personal Best: 4:04.64, Season's Best: 4:07.27
-2023 results for Sintayehu Vissa:
-28 JAN: DNF in 1000 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
-28 JAN: 4:10.85 in 1500 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
-28 JAN: 4th place, 4:28.71 in One Mile (indoor) @ Armory Track&Field Center, New York, NY (USA)
-11 FEB: 4:07.14 in 1500 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
-11 FEB: 6th place, 4:24.54 in One Mile (indoor) @ Armory Track&Field Center, New York, NY (USA)
-18 FEB: 2nd place, 4:08.20 in 1500 Metres (indoor) @ Palaindoor Ancona, Ancona (ITA)
-03 MAR: 4th place, 4:08.54 in 1500 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-04 MAR: 9th place, 4:10.05 in 1500 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-29 APR: 2nd place, 4:07.27 in 1500 Metres @ Franklin Field, Philadelphia, PA (USA)
-06 MAY: 4th place, 4:07.77 in 1500 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
-
-14. Ludovica Cavalli (ITA), 22 years old
-Personal Best: 4:04.82, Season's Best: 4:04.82
-2023 results for Ludovica Cavalli:
-06 JAN: 7th place, 20:03 in Cross Country @ San Giorgio su Legnano (ITA)
-29 JAN: 1st place, 4:09.19 in 1500 Metres (indoor) @ Palaindoor, Padova (ITA)
-03 FEB: 1st place, 4:09.80 in 1500 Metres (indoor) @ Stadium Miramas Métropole, Miramas (FRA)
-11 FEB: 4th place, 8:44.40 in 3000 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
-18 FEB: 1st place, 4:08.00 in 1500 Metres (indoor) @ Palaindoor Ancona, Ancona (ITA)
-19 FEB: 1st place, 9:14.25 in 3000 Metres (indoor) @ Palaindoor Ancona, Ancona (ITA)
-02 MAR: 4th place, 8:54.40 in 3000 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-03 MAR: 9th place, 8:53.97 in 3000 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-28 MAY: 8th place, 4:04.82 in 1500 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
-
-15. Marta Garcia (ESP), 25 years old
-Personal Best: 4:07.23, Season's Best: 4:07.23
-2023 results for Marta Garcia:
-27 JAN: 7th place, 8:45.51 in 3000 Metres (indoor) @ Messehalle, Karlsruhe (GER)
-08 FEB: 8th place, 4:15.38 in 1500 Metres (indoor) @ Halle Michel d'Ornano, Mondeville (FRA)
-18 FEB: 1st place, 4:25.37 in 1500 Metres (indoor) @ Gallur, Madrid (ESP)
-18 FEB: 2nd place, 9:07.64 in 3000 Metres (indoor) @ Gallur, Madrid (ESP)
-19 FEB: 3rd place, 4:15.84 in 1500 Metres (indoor) @ Gallur, Madrid (ESP)
-02 MAR: 7th place, 9:06.14 in 3000 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-03 MAR: 10th place, 8:54.92 in 3000 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-28 MAY: 2nd place, 4:07.23 in 1500 Metres @ Bungertstadion, Rehlingen (GER)
-
-16. Brooke Feldmeier (USA), 27 years old
-Personal Best: 4:31.56, Season's Best: N/A
-2022 results for Brooke Feldmeier:
-29 JAN: 1st place, 2:00.92 in 800 Metres (indoor) @ Randal Tyson Indoor Center, Fayetteville, AR (USA)
-26 FEB: 1st place, 2:02.94 in 800 Metres (indoor) @ The Podium, Spokane, WA (USA)
-27 FEB: 3rd place, 2:03.01 in 800 Metres (indoor) @ The Podium, Spokane, WA (USA)
-21 MAY: 5th place, 2:03.77 in 800 Metres @ Alexander Stadium, Birmingham (GBR)
-05 JUN: DNF in 800 Metres @ Vanderbilt Track, Nashville, TN (USA)
-12 JUN: 7th place, 2:03.41 in 800 Metres @ Icahn Stadium, New York, NY (USA)
-23 JUN: 3rd place, 2:01.45 in 800 Metres @ Hayward Field, Eugene, OR (USA)
-24 JUN: 5th place, 1:59.44 in 800 Metres @ Hayward Field, Eugene, OR (USA)
-26 JUN: 6th place, 1:59.08 in 800 Metres @ Hayward Field, Eugene, OR (USA)
-30 JUN: 7th place, 1:59.73 in 800 Metres @ Olympiastadion, Stockholm (SWE)
-06 AUG: DNF in 800 Metres @ Stadion Śląski, Chorzów (POL)
-08 AUG: 3rd place, 2:01.41 in 800 Metres @ Bregyó Athletic Center, Székesfehérvár (HUN)
-04 SEP: 9th place, 2:01.10 in 800 Metres @ Stadio Colbachini, Padova (ITA)
-12 SEP: 4th place, 2:01.63 in 800 Metres @ Stadio Comunale, Bellinzona (SUI)
+11. Yanis Meziane (FRA), 21 years old
+Personal Best: 1:45.39, Season's Best: 1:45.39
+2023 results for Yanis Meziane:
+22 JAN: 1st place, 1:51.91 in 800 Metres (indoor) @ Velódromo Luis Puig, Valencia (ESP)
+07 MAY: 2nd place, 47.54 in 400 Metres @ Stade des Maradas, Cergy-Pontoise (FRA)
+21 MAY: 1st place, 1:47.78 in 800 Metres @ Stade R. Bobin, Bondoufle (FRA)
+21 MAY: 1st place, 3:12.65 in 4x400 Metres Relay @ Stade R. Bobin, Bondoufle (FRA)
+26 MAY: 1st place, 1:45.39 in 800 Metres @ Polideportivo Municipal, Andújar (ESP)
+31 MAY: 3rd place, 1:45.68 in 800 Metres @ Stade des Grands Pêchers, Montreuil (FRA)
 
 Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data.

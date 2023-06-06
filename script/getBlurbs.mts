@@ -33,13 +33,14 @@ async function getBlurbs() {
   for (const key in entries[MEET]) {
     const evt = key as AthleticsEvent;
     const gender = evt.toLowerCase().includes('women') ? 'Women' : 'Men';
+    const targetTime = entries[MEET][evt]?.targetTime;
     const ungenderedEvt = evt
       .split(' ')
       .filter((w) => !w.toLowerCase().includes('men'))
       .join(' ');
     let prompt = `Write a race prediction and preview for the ${gender}'s ${ungenderedEvt} at the 2023 ${meetName} Diamond League track meet, which will happen on ${
       standingsMeets.find((sm) => sm.meet === MEET)?.date
-    }. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:\n\n`;
+    }. ${targetTime ? `Note that this race will be a world record attempt with pacers set to run about half the race at ${targetTime} pace, but only the top athletes will be following the pacers. ` : ''}Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:\n\n`;
     for (const entrant of entries[MEET][evt]?.entrants ?? []) {
       const { firstName, lastName, pb, sb, nat, id } = entrant;
       const fullName = `${firstName} ${lastName}`;
