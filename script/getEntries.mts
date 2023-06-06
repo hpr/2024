@@ -4,7 +4,7 @@ import { nameFixer } from 'name-fixer';
 import { AthleticsEvent, BlurbCache, DLMeet, Entrant, Entries, MeetCache, WAEventCode } from './types.mjs';
 import PDFParser, { Output } from 'pdf2json';
 import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain, BLURBCACHE_PATH, MEET } from './const.mjs';
-import PDFJS from 'pdfjs-dist/legacy/build/pdf.js';
+//import PDFJS from 'pdfjs-dist/legacy/build/pdf.js';
 import { PNG } from 'pngjs';
 import { TextItem } from 'pdfjs-dist/types/src/display/api.js';
 
@@ -150,6 +150,7 @@ const getMediaGuidePhotos = async (meet: DLMeet) => {
       },
     },
   };
+  const PDFJS = await import('pdfjs-dist/legacy/build/pdf.js');
   const doc = await PDFJS.getDocument(mediaGuides[meet]?.uri!).promise;
 
   for (const key in mediaGuides[meet]?.evtPages) {
@@ -398,7 +399,7 @@ const getEntries = async () => {
           }
           const { document } = new JSDOM(cache[meet].events[name]!.startlist).window;
           console.log(name);
-          const entrants: Entrant[] = [...document.querySelectorAll('.tableBody .row')].flatMap((elem) => {
+          const entrants: Entrant[] = await Promise.all([...document.querySelectorAll('.tableBody .row')].flatMap(async (elem) => {
             const [lastName, firstName] = elem
               .querySelector('.column.name')!
               .textContent!.split(' ')
@@ -407,9 +408,8 @@ const getEntries = async () => {
               .join(' ')
               .split(', ');
             const id = elem
-              .querySelector('.column.name a')!
-              .getAttribute('href')!
-              .match(/\/(\d+)\.html$/)![1]!;
+              .querySelector('.column.name a')?.getAttribute('href')
+              ?.match(/\/(\d+)\.html$/)![1]! ?? (await getWaId(firstName, lastName, {})).id;
             if (id === '14453864' && MEET === 'rabat23') return []; // marcel jacobs rabat
             return {
               firstName,
@@ -421,7 +421,7 @@ const getEntries = async () => {
               hasAvy: fs.existsSync(`./public/img/avatars/${id}_128x128.png`),
               team: idTeams[id],
             };
-          });
+          })) as Entrant[];
           if (MEET === 'florence23' && name === '5000m Men') {
             if (!entrants.find((e) => e.lastName === 'Kincaid'))
               entrants.push({
