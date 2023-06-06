@@ -118,6 +118,7 @@ export default function App() {
       <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register / Login & Submit Picks">
         {arePicksComplete ? (
           <Stack>
+            <Text italic>If you want to use an existing account from a previous contest or are updating your picks, click "Submit / Update Picks" -- otherwise, click "Register"</Text>
             <SegmentedControl
               value={authPage}
               onChange={(v: AuthPage) => {
@@ -187,7 +188,12 @@ export default function App() {
                 <TextInput withAsterisk label="Name" placeholder="Usain (will be displayed on leaderboards)" {...registerForm.getInputProps('name')} />
               )}
               <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
-              <TextInput withAsterisk label="Tiebreaker: Men's 3K Steeple winning time?" placeholder="e.g. 7:54.50" {...registerForm.getInputProps('tiebreaker')} />
+              <TextInput
+                withAsterisk
+                label="Tiebreaker: Men's 3K Steeple winning time?"
+                placeholder="e.g. 7:54.50"
+                {...registerForm.getInputProps('tiebreaker')}
+              />
               <Group position="right" mt="md">
                 <Button leftIcon={isSuccess ? <Check /> : undefined} type="submit" loading={isLoading}>
                   {authPage === 'register'
