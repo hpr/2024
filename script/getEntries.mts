@@ -21,7 +21,6 @@ const schedules: { [k in DLMeet]?: string[] } = {
   doha23: ['https://doha.diamondleague.com/programme-results-doha/'],
   rabat23: ['https://rabat.diamondleague.com/en/programme-results-rabat/'],
   florence23: ['https://rome.diamondleague.com/en/programme-results/programme-results-rome/'],
-  paris23: ['https://paris.diamondleague.com/en/programme-results/programme-2020-results/'],
 };
 
 const idTeams = {
