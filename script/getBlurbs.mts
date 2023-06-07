@@ -40,7 +40,7 @@ async function getBlurbs() {
       .join(' ');
     let prompt = `Write a race prediction and preview for the ${gender}'s ${ungenderedEvt} at the 2023 ${meetName} Diamond League track meet, which will happen on ${
       standingsMeets.find((sm) => sm.meet === MEET)?.date
-    }. ${targetTime ? `Note that this race will be a world record attempt with pacers set to run about half the race at ${targetTime} pace, but only the top athletes will be following the pacers. ` : ''}Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:\n\n`;
+    }. ${evt.includes('5000') ? 'Note that in long races like the 5000, athletes are typically spread far apart and most do not run close to their personal bests every time. ' : ''}${targetTime ? `Note that this race will be a world record attempt with pacers set to run about half the race at ${targetTime} pace, but only the top athletes will be following the pacers. ` : ''}Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:\n\n`;
     for (const entrant of entries[MEET][evt]?.entrants ?? []) {
       const { firstName, lastName, pb, sb, nat, id } = entrant;
       const fullName = `${firstName} ${lastName}`;
