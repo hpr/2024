@@ -140,7 +140,121 @@
           "hasAvy": false
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.98",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grant",
+            "lastName": "Holloway",
+            "id": "14516985",
+            "pb": "12.81",
+            "sb": "13.01",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.09",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Just",
+            "lastName": "Kwaou-Mathey",
+            "id": "14734289",
+            "pb": "13.27",
+            "sb": "13.28",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.14",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jamal",
+            "lastName": "Britt",
+            "id": "14769264",
+            "pb": "13.08",
+            "sb": "13.14",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.14",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daniel",
+            "lastName": "Roberts",
+            "id": "14577558",
+            "pb": "13.00",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.20",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilhem",
+            "lastName": "Belocian",
+            "id": "14462837",
+            "pb": "13.15",
+            "sb": "13.23",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.26",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Freddie",
+            "lastName": "Crittenden",
+            "id": "14491556",
+            "pb": "13.00",
+            "sb": "13.19",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.29",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jason",
+            "lastName": "Joseph",
+            "id": "14680682",
+            "pb": "13.12",
+            "sb": "13.20",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.32",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Eric",
+            "lastName": "Edwards",
+            "id": "14716336",
+            "pb": "13.15",
+            "sb": "13.30",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Hurdles Men": {
       "date": "2023-06-09T21:04",
