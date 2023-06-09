@@ -394,7 +394,7 @@ const getEntries = async () => {
         const { document } = new JSDOM(cache[meet].schedule.combined).window;
         const events = [...document.querySelectorAll('.competition.DR')]
           .map((elem) => ({
-            name: sanitizeEvtName(elem.querySelector('.name')?.textContent),
+            name: sanitizeEvtName(elem.querySelector('.name')?.textContent!),
             url: elem.querySelector('.links a')?.getAttribute('href'),
           }))
           .filter(({ name, url }) => runningEvents.flat().some((evt) => (name ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url)
