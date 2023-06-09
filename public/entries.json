@@ -426,7 +426,167 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:55.77",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Keely",
+            "lastName": "Hodgkinson",
+            "id": "14642894",
+            "pb": "1:55.88",
+            "sb": null,
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.16",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ajee",
+            "lastName": "Wilson",
+            "id": "14411176",
+            "pb": "1:55.61",
+            "sb": "1:59.01",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.23",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natoya",
+            "lastName": "Goule",
+            "id": "14285696",
+            "pb": "1:56.15",
+            "sb": "2:00.91",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.55",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Catriona",
+            "lastName": "Bisset",
+            "id": "14463325",
+            "pb": "1:58.09",
+            "sb": "1:58.32",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.65",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Noélie",
+            "lastName": "Yarigo",
+            "id": "14270067",
+            "pb": "1:59.12",
+            "sb": "2:02.15",
+            "nat": "BEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.81",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Halimah",
+            "lastName": "Nakaayi",
+            "id": "14431159",
+            "pb": "1:58.03",
+            "sb": "1:59.35",
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.01",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sage",
+            "lastName": "Hurta-Klecker",
+            "id": "14478094",
+            "pb": "1:57.85",
+            "sb": "2:00.62",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.65",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lena",
+            "lastName": "Kandissounon",
+            "id": "14630038",
+            "pb": null,
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.86",
+          "place": 9,
+          "notes": ""
+        },
+        {
+          "mark": "2:00.00",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Raevyn",
+            "lastName": "Rogers",
+            "id": "14378260",
+            "pb": "1:56.81",
+            "sb": "2:03.53",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.14",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Agnès",
+            "lastName": "Raharolahy",
+            "id": "14376218",
+            "pb": "1:59.59",
+            "sb": "2:03.80",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Patrycja",
+            "lastName": "Wyciszkiewicz-Zawadzka",
+            "id": "14389670",
+            "pb": null,
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "5000m Women": {
       "date": "2023-06-09T21:24",
