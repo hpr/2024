@@ -8,6 +8,25 @@ import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain, BL
 import { PNG } from 'pngjs';
 import { TextItem } from 'pdfjs-dist/types/src/display/api.js';
 
+/*
+[...document.querySelectorAll('tr')].slice(1).map(tr => {
+  const name = tr.querySelector('.name').innerText;
+  const lastName = name.split(' ')[0];
+  let id = '';
+	window.open = (str) => {
+    id = str.match(/^\/athletes\/(\d+)\.html$/)[1];
+    return { focus: () => {} };
+  }
+  tr.querySelector('.athlete-name').click();
+  return {
+		firstName: name.split(' ').slice(1).join(' '),
+    lastName: lastName[0].toUpperCase() + lastName.slice(1).toLowerCase(),
+    nat: tr.querySelector('.nat-code').innerText,
+    id,
+  }
+})
+*/
+
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
 
 const targetTimes: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {

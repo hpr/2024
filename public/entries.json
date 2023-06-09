@@ -220,7 +220,107 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "47.92",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.91",
+            "sb": "47.91",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "48.26",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilfried",
+            "lastName": "Happio",
+            "id": "14650750",
+            "pb": "47.41",
+            "sb": "49.12",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.28",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Trevor",
+            "lastName": "Bassitt",
+            "id": "14719193",
+            "pb": "47.39",
+            "sb": "48.43",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.60",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ludvy",
+            "lastName": "Vaillant",
+            "id": "14480831",
+            "pb": "48.26",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.65",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kyron",
+            "lastName": "McMaster",
+            "id": "14532760",
+            "pb": "47.08",
+            "sb": "48.73",
+            "nat": "IVB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.96",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Khallifah",
+            "lastName": "Rosser",
+            "id": "14520653",
+            "pb": "47.59",
+            "sb": "48.60",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Abderrahman Almoubarrake S",
+            "lastName": "Alsaleck",
+            "id": "14752208",
+            "pb": "46.98",
+            "sb": "48.56",
+            "nat": "QAT",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Women": {
       "date": "2023-06-09T21:15",
