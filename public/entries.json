@@ -175,25 +175,25 @@
           "place": 3,
           "notes": "",
           "entrant": {
-            "firstName": "Jamal",
-            "lastName": "Britt",
-            "id": "14769264",
-            "pb": "13.08",
-            "sb": "13.14",
+            "firstName": "Daniel",
+            "lastName": "Roberts",
+            "id": "14577558",
+            "pb": "13.00",
+            "sb": null,
             "nat": "USA",
             "hasAvy": true
           }
         },
         {
           "mark": "13.14",
-          "place": 4,
+          "place": 3,
           "notes": "",
           "entrant": {
-            "firstName": "Daniel",
-            "lastName": "Roberts",
-            "id": "14577558",
-            "pb": "13.00",
-            "sb": null,
+            "firstName": "Jamal",
+            "lastName": "Britt",
+            "id": "14769264",
+            "pb": "13.08",
+            "sb": "13.14",
             "nat": "USA",
             "hasAvy": true
           }
@@ -1179,7 +1179,103 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "49.12",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marileidy",
+            "lastName": "Paulino",
+            "id": "14749613",
+            "pb": "48.98",
+            "sb": "48.98",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.71",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sydney",
+            "lastName": "McLaughlin-Levrone",
+            "id": "14624749",
+            "pb": "50.07",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.95",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Salwa Eid",
+            "lastName": "Naser",
+            "id": "14643442",
+            "pb": "48.14",
+            "sb": "50.27",
+            "nat": "BRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.10",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natalia",
+            "lastName": "Kaczmarek",
+            "id": "14642563",
+            "pb": "49.86",
+            "sb": "51.64",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.32",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "50.18",
+            "sb": null,
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.80",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Candice",
+            "lastName": "McLeod",
+            "id": "14587165",
+            "pb": "49.51",
+            "sb": "51.17",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.82",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "51.76",
+          "place": 8,
+          "notes": ""
+        }
+      ]
     },
     "100m Men": {
       "date": "2023-06-09T22:12",
