@@ -47,10 +47,11 @@ const schedules: { [k in DLMeet]?: string[] } = {
   rabat23: ['https://rabat.diamondleague.com/en/programme-results-rabat/'],
   florence23: ['https://rome.diamondleague.com/en/programme-results/programme-results-rome/'],
   paris23: ['https://paris.diamondleague.com/en/programme-results/programme-2020-results/'],
+  oslo23: ['https://oslo.diamondleague.com/en/programme-results/programme-2023/'],
 };
 
 const idTeams = {
-  // TODO fetch from wikidata?
+  // TODO fetch from wikidata? <-- done, just need to move these to WD
   14564128: 'LSU',
   14627624: 'WSU Cougars',
   14477412: 'Monmouth University Hawks',
@@ -65,8 +66,8 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   if (sigFigDiff) return sigFigDiff;
   return a.pb.localeCompare(b.pb);
 };
-const sanitizeEvtName = (name: string): string => {
-  return name?.replace(' W Women', ' Women').replace(' M Men', ' Men');
+const sanitizeEvtName = (name: string | undefined): string | undefined => {
+  return name?.replace('Dream ', '').replace(' W Women', ' Women').replace(' M Men', ' Men');
 };
 
 const getWaId = async (

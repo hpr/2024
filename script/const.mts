@@ -1,6 +1,6 @@
 import { AthleticsEvent, DLMeet, WAEventCode } from './types.mjs';
 
-export const MEET: DLMeet = 'paris23';
+export const MEET: DLMeet = 'oslo23';
 
 export const NUM_SCORING: number = 2;
 
@@ -30,8 +30,8 @@ export const runningEvents: (AthleticsEvent | string)[][] = [
   ["Women's 1000 m"],
   ['1500m Women'],
   ['1500m Men', "Men's 1500 m"],
-  ["Men's Mile", "Men's 1 Mile", 'Men 1 Mile'],
-  ["Women's Mile", "Women's 1 Mile", 'Women 1 Mile'],
+  ["Men's Mile", "Men's 1 Mile", 'Men 1 Mile', 'Mile Men'],
+  ["Women's Mile", "Women's 1 Mile", 'Women 1 Mile', 'Mile Women'],
   ['3000m Women', "Women's 3000 m", "Women's 3000 Meters", 'Women 3000 M'],
   ['3000m Men', "Men's 3000 Meters", 'Men 3000 M'],
   ['3000m SC Women', '3000m Steeplechase Women'],
@@ -51,7 +51,7 @@ export const distanceEvents: AthleticsEvent[] = [
   "Women's 5000 Meters",
   '800m Men',
   '3000m Men',
-  '1500m Women'
+  '1500m Women',
 ];
 
 export const sprintEvents: AthleticsEvent[] = [
@@ -70,7 +70,7 @@ export const sprintEvents: AthleticsEvent[] = [
   '400m Women',
   '3000m Steeplechase Women',
   '400m Hurdles Women',
-  '400m Hurdles Men'
+  '400m Hurdles Men',
 ];
 
 export const CACHE_PATH = './script/cache.json';
@@ -258,7 +258,7 @@ export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
   competitor: getSingleCompetitor(id: $id, urlSlug: $urlSlug) {
     basicData {
-      ${''/* firstName lastName */}
+      ${'' /* firstName lastName */}
       givenName familyName birthDate iaafId aaId
     }
     personalBests {
