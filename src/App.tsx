@@ -190,8 +190,8 @@ export default function App() {
               <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
               <TextInput
                 withAsterisk
-                label="Tiebreaker: Men's 3K Steeple winning time?"
-                placeholder="e.g. 7:54.50"
+                label="Tiebreaker: Women's Mile winning time?"
+                placeholder="e.g. 4:17.00"
                 {...registerForm.getInputProps('tiebreaker')}
               />
               <Group position="right" mt="md">
@@ -326,7 +326,7 @@ export default function App() {
                 <Burger opened={navbarOpen} onClick={() => setNavbarOpen((o) => !o)} size="sm" color={theme.colors.gray[6]} mr="xl" />
               </MediaQuery>
               <Text size="md">
-                Fantasy Paris '23
+                Fantasy Oslo '23
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20}>
@@ -347,7 +347,7 @@ export default function App() {
                       pressing "Save Picks" and then registering or logging in to an account.
                     </Text>
                     <Text mb={10}>
-                      <strong>Submissions Deadline:</strong> Friday June 9, one hour before the DL TV window starts, by 1pm ET.
+                      <strong>Submissions Deadline:</strong> Thursday June 15, before the DL TV window starts, by 2pm ET.
                       {/* <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
                       Free T-Shirt. Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes! */}
