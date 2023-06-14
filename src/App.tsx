@@ -248,6 +248,7 @@ export default function App() {
                               icon: <Trophy />,
                               color: 'gold',
                               label: 'Leaderboard',
+                              path: 'leaderboard',
                               onClick: () => {
                                 navigate('/leaderboard');
                                 setPage('leaderboard');
@@ -258,6 +259,7 @@ export default function App() {
                               icon: <Calculator />,
                               color: 'black',
                               label: 'Results',
+                              path: 'scoring',
                               onClick: () => {
                                 navigate('/scoring');
                                 setPage('scoring');
@@ -270,6 +272,7 @@ export default function App() {
                         icon: <Diamond />,
                         color: 'black',
                         label: 'League Standings',
+                        path: 'standings',
                         onClick: () => {
                           navigate('/standings');
                           setPage('standings');
@@ -280,6 +283,7 @@ export default function App() {
                         icon: <Users />,
                         color: 'black',
                         label: 'Submissions',
+                        path: 'submissions',
                         onClick: () => {
                           navigate('/submissions');
                           setPage('submissions');
@@ -295,6 +299,7 @@ export default function App() {
                           return {
                             icon: filled ? <Check /> : <Run />,
                             color: filled ? 'green' : 'blue',
+                            path: `evt/${linkEvt}`,
                             onClick: () => {
                               navigate(`evt/${linkEvt}`);
                               setEvt(linkEvt);

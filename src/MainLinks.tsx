@@ -2,15 +2,19 @@ import React, { MouseEventHandler } from 'react';
 import { GitPullRequest, AlertCircle, Messages, Database } from 'tabler-icons-react';
 import { ThemeIcon, UnstyledButton, Group, Text, Divider } from '@mantine/core';
 import { DIVIDER } from './const';
+import { useLocation } from 'react-router-dom';
 
 interface MainLinkProps {
   icon: React.ReactNode;
+  path: string;
   color: string;
   label: string;
   onClick?: MouseEventHandler;
 }
 
-function MainLink({ icon, color, label, onClick = () => {} }: MainLinkProps) {
+function MainLink({ icon, color, path, label, onClick = () => {} }: MainLinkProps) {
+  const { pathname } = useLocation();
+  const hash = decodeURIComponent(pathname.slice(1));
   return (
     <UnstyledButton
       onClick={onClick}
@@ -20,6 +24,7 @@ function MainLink({ icon, color, label, onClick = () => {} }: MainLinkProps) {
         padding: theme.spacing.xs,
         borderRadius: theme.radius.sm,
         color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
+        backgroundColor: path === hash ? theme.colors.dark[6] : undefined,
         '&:hover': {
           backgroundColor:
             theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
