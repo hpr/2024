@@ -1,5 +1,4 @@
 import React, { MouseEventHandler } from 'react';
-import { GitPullRequest, AlertCircle, Messages, Database } from 'tabler-icons-react';
 import { ThemeIcon, UnstyledButton, Group, Text, Divider } from '@mantine/core';
 import { DIVIDER } from './const';
 import { useLocation } from 'react-router-dom';
@@ -42,18 +41,12 @@ function MainLink({ icon, color, path, label, onClick = () => {} }: MainLinkProp
   );
 }
 
-const data = [
-  { icon: <GitPullRequest size={16} />, color: 'blue', label: 'Pull Requests' },
-  { icon: <AlertCircle size={16} />, color: 'teal', label: 'Open Issues' },
-  { icon: <Messages size={16} />, color: 'violet', label: 'Discussions' },
-  { icon: <Database size={16} />, color: 'grape', label: 'Databases' },
-];
-
 type MainLinksProps = {
   links?: (
     | {
         icon: JSX.Element;
         color: string;
+        path: string;
         label: string;
         onClick?: MouseEventHandler;
       }
@@ -61,7 +54,7 @@ type MainLinksProps = {
   )[];
 };
 
-export function MainLinks({ links = data }: MainLinksProps) {
+export function MainLinks({ links = [] }: MainLinksProps) {
   return (
     <div>
       {links.map((link, i) =>
