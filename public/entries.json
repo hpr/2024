@@ -838,7 +838,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "19.77",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Erriyon",
+            "lastName": "Knighton",
+            "id": "14897541",
+            "pb": "19.49",
+            "sb": "19.89",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.09",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Reynier",
+            "lastName": "Mena",
+            "id": "14518308",
+            "pb": "19.63",
+            "sb": "19.95",
+            "nat": "CUB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.23",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joseph",
+            "lastName": "Fahnbulleh",
+            "id": "14803230",
+            "pb": "19.83",
+            "sb": "20.14",
+            "nat": "LBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.27",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Ogando",
+            "id": "14912251",
+            "pb": "19.91",
+            "sb": "20.18",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.33",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andre",
+            "lastName": "de Grasse",
+            "id": "14535607",
+            "pb": "19.62",
+            "sb": "20.35",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.39",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joshua",
+            "lastName": "Hartmann",
+            "id": "14705838",
+            "pb": "20.33",
+            "sb": "20.51",
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.65",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mouhamadou",
+            "lastName": "Fall",
+            "id": "14702316",
+            "pb": "20.24",
+            "sb": "20.24",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.79",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Luxolo",
+            "lastName": "Adams",
+            "id": "14696930",
+            "pb": "19.82",
+            "sb": "20.91",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "Mile Women": {
       "date": "2023-06-15T20:52",
