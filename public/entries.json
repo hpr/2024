@@ -1532,7 +1532,272 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12:41.73",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yomif",
+            "lastName": "Kejelcha",
+            "id": "14594967",
+            "pb": "12:46.79",
+            "sb": "12:52.12",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:41.73",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jacob",
+            "lastName": "Kiplimo",
+            "id": "14735365",
+            "pb": "12:48.63",
+            "sb": null,
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:46.21",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Telahun Haile",
+            "lastName": "Bekele",
+            "id": "14797485",
+            "pb": "12:52.98",
+            "sb": "12:54.31",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:56.59",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joe",
+            "lastName": "Klecker",
+            "id": "14576389",
+            "pb": "12:55.16",
+            "sb": "12:55.16",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:56.63",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Luis",
+            "lastName": "Grijalva",
+            "id": "14749285",
+            "pb": "12:52.97",
+            "sb": "12:52.97",
+            "nat": "GUA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:58.60",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Thierry",
+            "lastName": "Ndikumwenayo",
+            "id": "14661449",
+            "pb": "12:59.03",
+            "sb": "12:59.03",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:02.09",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Samuel",
+            "lastName": "Tefera",
+            "id": "14797484",
+            "pb": "12:58.44",
+            "sb": "12:58.44",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:05.47",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ishmael Rokitto",
+            "lastName": "Kipkurui",
+            "id": "14935332",
+            "pb": "13:05.67",
+            "sb": "13:05.67",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:06.78",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Paul",
+            "lastName": "Chelimo",
+            "id": "14454958",
+            "pb": "12:57.55",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:09.44",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Magnus Tuv",
+            "lastName": "Myhre",
+            "id": "14910807",
+            "pb": "13:19.09",
+            "sb": "13:19.09",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:18.04",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Henrik",
+            "lastName": "Ingebrigtsen",
+            "id": "14215338",
+            "pb": "13:13.99",
+            "sb": "13:13.99",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:22.31",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Adel",
+            "lastName": "Mechaal",
+            "id": "14376490",
+            "pb": "13:06.02",
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:22.35",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cornelius",
+            "lastName": "Kemboi",
+            "id": "14894347",
+            "pb": "13:03.49",
+            "sb": "13:14.80",
+            "nat": "KEN",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "13:27.31",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zerei Kbrom",
+            "lastName": "Mezngi",
+            "id": "14598298",
+            "pb": "13:37.59",
+            "sb": null,
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:30.96",
+          "place": 15,
+          "notes": "",
+          "entrant": {
+            "firstName": "Awet Nftalem",
+            "lastName": "Kibrab",
+            "id": "14579463",
+            "pb": "13:18.59",
+            "sb": "13:18.59",
+            "nat": "NOR",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "13:38.11",
+          "place": 16,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jack",
+            "lastName": "Rayner",
+            "id": "14517160",
+            "pb": "13:06.00",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Fredrik",
+            "lastName": "Sandvik",
+            "id": "14722342",
+            "pb": "14:38.48",
+            "sb": null,
+            "nat": "NOR",
+            "hasAvy": false
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Žan",
+            "lastName": "Rudolf",
+            "id": "14375002",
+            "pb": null,
+            "sb": null,
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Callum",
+            "lastName": "Davies",
+            "id": "14690926",
+            "pb": "13:48.63",
+            "sb": "13:48.63",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Women": {
       "date": "2023-06-15T21:29",
