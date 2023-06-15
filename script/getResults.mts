@@ -14,6 +14,7 @@ const resultsLinks: { [k in DLMeet]?: string } = {
   rabat23: 'https://livecache.sportresult.com/node/db/ATH_PROD/RABAT2023_SCHEDULE_JSON.json',
   florence23: 'https://livecache.sportresult.com/node/db/ATH_PROD/ROME2023_SCHEDULE_JSON.json',
   paris23: 'https://livecache.sportresult.com/node/db/ATH_PROD/PARIS2023_SCHEDULE_JSON.json',
+  oslo23: 'https://livecache.sportresult.com/node/db/ATH_PROD/OSLO2023_SCHEDULE_JSON.json',
 };
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
@@ -92,7 +93,7 @@ for (const key in resultsLinks) {
     const schedule: SportResultSchedule = await (await fetch(resultsLinks[meet]!)).json();
     for (const key in entries[meet]) {
       const evt = key as AthleticsEvent;
-      const evtId = Object.values(schedule.content.full.Units).find((unit) => unit.EventName === evt && unit.Stats.DiamondId)?.Rsc.ValueUnit;
+      const evtId = Object.values(schedule.content.full.Units).find((unit) => [evt, '1 ' + evt].some(s => unit.EventName === s) && unit.Stats.DiamondId)?.Rsc.ValueUnit;
       const evtResultResp = await fetch(`https://livecache.sportresult.com/node/db/ATH_PROD/${meetId}_TIMING_${evtId}_JSON.json`);
       if (evtResultResp.status === 404) {
         console.log('skipping', evt, evtId);

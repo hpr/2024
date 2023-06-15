@@ -77,7 +77,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "52.30",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Femke",
+            "lastName": "Bol",
+            "id": "14707010",
+            "pb": "52.03",
+            "sb": "52.43",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.84",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rushell",
+            "lastName": "Clayton",
+            "id": "14425208",
+            "pb": "53.33",
+            "sb": "54.15",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.46",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gianna",
+            "lastName": "Woodruff",
+            "id": "14423522",
+            "pb": "53.69",
+            "sb": "54.59",
+            "nat": "PAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.91",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Janieve",
+            "lastName": "Russell",
+            "id": "14334022",
+            "pb": "53.08",
+            "sb": "55.41",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.28",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Hall",
+            "id": "14713272",
+            "pb": "54.42",
+            "sb": "54.42",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.36",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Viktoriya",
+            "lastName": "Tkachuk",
+            "id": "14426923",
+            "pb": "53.76",
+            "sb": "54.71",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.53",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Ryzhykova",
+            "id": "14304336",
+            "pb": "52.96",
+            "sb": "55.99",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "56.44",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Line",
+            "lastName": "Kloster",
+            "id": "14364310",
+            "pb": "53.91",
+            "sb": "55.87",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Men": {
       "date": "2023-06-15T20:15",
