@@ -1876,7 +1876,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.75",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou",
+            "id": "14415994",
+            "pb": "10.72",
+            "sb": "10.78",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.92",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anthonique",
+            "lastName": "Strachan",
+            "id": "14368117",
+            "pb": "10.98",
+            "sb": "10.99",
+            "nat": "BAH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.98",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shericka",
+            "lastName": "Jackson",
+            "id": "14325599",
+            "pb": "10.71",
+            "sb": "10.78",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.98",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dina",
+            "lastName": "Asher-Smith",
+            "id": "14378282",
+            "pb": "10.83",
+            "sb": "10.98",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.98",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "10.90",
+            "sb": "10.97",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.07",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ewa",
+            "lastName": "Swoboda",
+            "id": "14451085",
+            "pb": "11.03",
+            "sb": "11.03",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.10",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Imani",
+            "lastName": "Lansiquot",
+            "id": "14506362",
+            "pb": "11.03",
+            "sb": "11.03",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.22",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gina",
+            "lastName": "Bass",
+            "id": "14479741",
+            "pb": "11.08",
+            "sb": "11.22",
+            "nat": "GAM",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Hurdles Men": {
       "date": "2023-06-15T21:39",
@@ -1956,7 +2070,113 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "46.52",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Karsten",
+            "lastName": "Warholm",
+            "id": "14479487",
+            "pb": "45.94",
+            "sb": null,
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.58",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.91",
+            "sb": "47.91",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "48.13",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilfried",
+            "lastName": "Happio",
+            "id": "14650750",
+            "pb": "47.41",
+            "sb": "48.26",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.59",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ludvy",
+            "lastName": "Vaillant",
+            "id": "14480831",
+            "pb": "48.26",
+            "sb": "48.60",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.63",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Trevor",
+            "lastName": "Bassitt",
+            "id": "14719193",
+            "pb": "47.39",
+            "sb": "48.28",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.87",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Khallifah",
+            "lastName": "Rosser",
+            "id": "14520653",
+            "pb": "47.59",
+            "sb": "48.60",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.27",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "49.45",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Julien",
+            "lastName": "Watrin",
+            "id": "14329160",
+            "pb": "48.66",
+            "sb": "49.79",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Men": {
       "date": "2023-06-15T21:50",
