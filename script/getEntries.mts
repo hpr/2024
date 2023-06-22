@@ -73,8 +73,8 @@ const sanitizeEvtName = (name: string | undefined): string | undefined => {
     ?.replace('Dream ', '')
     .replace(' W Women', ' Women')
     .replace(' M Men', ' Men')
-    .replace(' meters', ' Metres')
-    .replace(' meter', ' Metres')
+    .replace(' meters', 'm')
+    .replace(' meter', 'm')
     .replace('hurdles', 'Hurdles');
 };
 
