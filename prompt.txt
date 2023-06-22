@@ -1,122 +1,144 @@
-Write a race prediction and preview for the Men's 800m at the 2023 Stockholm Diamond League track meet, which will happen on July 2, 2023. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:
+Write a race prediction and preview for the Women's 100m Hurdles at the 2023 Stockholm Diamond League track meet, which will happen on July 2, 2023. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:
 
-1. Emmanuel Kipkurui Korir (KEN), 28 years old
-Personal Best: 1:42.05, Season's Best: 1:47.71
-2023 results for Emmanuel Kipkurui Korir:
-28 MAY: 8th place, 1:48.42 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
-09 JUN: 10th place, 1:47.71 in 800 Metres @ Stade Charléty, Paris (FRA)
+1. Tobi Amusan (NGR), 26 years old
+Personal Best: 12.12, Season's Best: 12.57
+2023 results for Tobi Amusan:
+15 APR: 3rd place, 11.10 (+1.6) in 100 Metres @ Percy Beard Track, Gainesville, FL (USA)
+15 APR: 1st place, 12.74 (+1.1) in 100 Metres Hurdles @ Percy Beard Track, Gainesville, FL (USA)
+15 APR: 2nd place, 12.59 (+1.4) in 100 Metres Hurdles @ Percy Beard Track, Gainesville, FL (USA)
+29 APR: 4th place, 12.69 (+1.1) in 100 Metres Hurdles @ Drake Stadium, Des Moines, IA (USA)
+27 MAY: 8th place, 12.69 (-0.2) in 100 Metres Hurdles @ Drake Stadium, Los Angeles, CA (USA)
+03 JUN: 1st place, 12.57 (-0.4) in 100 Metres Hurdles @ National Stadium, Kingston (JAM)
 
-2. Slimane Moula (ALG), 24 years old
-Personal Best: 1:43.38, Season's Best: 1:43.38
-2023 results for Slimane Moula:
-07 APR: 1st place, 1:15.21 in 600 Metres @ Complexe Olympique Mohamed Boudiaf, Algiers (ALG)
-05 MAY: 1st place, 1:46.06 in 800 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
-09 JUN: 3rd place, 1:43.38 in 800 Metres @ Stade Charléty, Paris (FRA)
+2. Devynne Charlton (BAH), 27 years old
+Personal Best: 12.46, Season's Best: 12.64
+2023 results for Devynne Charlton:
+21 JAN: 1st place, 7.97 in 60 Metres Hurdles (indoor) @ Iowa-Recreation Building, Iowa City, IA (USA)
+21 JAN: 2nd place, 7.89 in 60 Metres Hurdles (indoor) @ Iowa-Recreation Building, Iowa City, IA (USA)
+04 FEB: 1st place, 7.87 in 60 Metres Hurdles (indoor) @ The Track at New Balance, Boston, MA (USA)
+11 FEB: 1st place, 7.91 in 60 Metres Hurdles (indoor) @ Armory Track&Field Center, New York, NY (USA)
+15 APR: 2nd place, 11.66 (+0.3) in 100 Metres @ Percy Beard Track, Gainesville, FL (USA)
+15 APR: 2nd place, 12.87 (+1.1) in 100 Metres Hurdles @ Percy Beard Track, Gainesville, FL (USA)
+15 APR: 3rd place, 12.64 (+1.4) in 100 Metres Hurdles @ Percy Beard Track, Gainesville, FL (USA)
+29 APR: 5th place, 12.71 (+1.1) in 100 Metres Hurdles @ Drake Stadium, Des Moines, IA (USA)
+04 JUN: 6th place, 12.93 (+0.2) in 100 Metres Hurdles @ FBK Stadium, Hengelo (NED)
+06 JUN: 2nd place, 13.02 (-0.4) in 100 Metres Hurdles @ Zdzislaw Krzyszkowiak Stadium, Bydgoszcz (POL)
+06 JUN: 2nd place, 12.64 (+1.9) in 100 Metres Hurdles @ Zdzislaw Krzyszkowiak Stadium, Bydgoszcz (POL)
 
-3. Djamel Sedjati (ALG), 24 years old
-Personal Best: 1:43.40, Season's Best: 1:43.40
-2023 results for Djamel Sedjati:
-11 MAR: 1st place, 1:14.36 in 600 Metres @ DP de Villiers Stadium, Sasolburg (RSA)
-05 MAY: 3rd place, 1:46.97 in 800 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
-31 MAY: 1st place, 1:44.27 in 800 Metres @ Stade des Grands Pêchers, Montreuil (FRA)
-09 JUN: 4th place, 1:43.40 in 800 Metres @ Stade Charléty, Paris (FRA)
+3. Pia Skrzyszowska (POL), 22 years old
+Personal Best: 12.51, Season's Best: 12.84
+2023 results for Pia Skrzyszowska:
+29 JAN: 1st place, 7.86 in 60 Metres Hurdles (indoor) @ ISS Dome, Düsseldorf (GER)
+29 JAN: 1st place, 7.84 in 60 Metres Hurdles (indoor) @ ISS Dome, Düsseldorf (GER)
+04 FEB: 1st place, 7.87 in 60 Metres Hurdles (indoor) @ Atlas Arena, Łódź (POL)
+04 FEB: 1st place, 7.78 in 60 Metres Hurdles (indoor) @ Atlas Arena, Łódź (POL)
+08 FEB: 1st place, 7.91 in 60 Metres Hurdles (indoor) @ Arena, Toruń (POL)
+08 FEB: 1st place, 7.79 in 60 Metres Hurdles (indoor) @ Arena, Toruń (POL)
+13 JUN: 1st place, 12.84 (+1.1) in 100 Metres Hurdles @ Paavo Nurmen Stadion, Turku (FIN)
+13 JUN: DQ (+0.9) in 100 Metres Hurdles @ Paavo Nurmen Stadion, Turku (FIN)
+18 JUN: 1st place, 12.89 (+0.4) in 100 Metres Hurdles @ Golęcin Stadion, Poznan (POL)
+18 JUN: 1st place, 12.87 (-0.1) in 100 Metres Hurdles @ Golęcin Stadion, Poznan (POL)
 
-4. Joseph Deng (AUS), 24 years old
-Personal Best: 1:44.21, Season's Best: 1:44.48
-2023 results for Joseph Deng:
-20 MAY: 5th place, 1:48.17 in 800 Metres @ Carl-Kaufmann-Stadion, Karlsruhe (GER)
-28 MAY: 6th place, 1:46.86 in 800 Metres @ Bungertstadion, Rehlingen (GER)
-03 JUN: 2nd place, 1:46.70 in 800 Metres @ Fana Stadion, Bergen (NOR)
-06 JUN: 11th place, 1:47.65 in 800 Metres @ Zdzislaw Krzyszkowiak Stadium, Bydgoszcz (POL)
-16 JUN: 2nd place, 1:44.48 in 800 Metres @ Stade d'Athlétisme Hautepierre, Strasbourg (FRA)
-18 JUN: DNF in 1000 Metres @ Slottsskogsvallen, Göteborg (SWE)
+4. Nadine Visser (NED), 28 years old
+Personal Best: 12.51, Season's Best: 12.71
+2023 results for Nadine Visser:
+29 JAN: 2nd place, 7.98 in 60 Metres Hurdles (indoor) @ ISS Dome, Düsseldorf (GER)
+29 JAN: 4th place, 7.93 in 60 Metres Hurdles (indoor) @ ISS Dome, Düsseldorf (GER)
+02 FEB: 1st place, 7.86 in 60 Metres Hurdles (indoor) @ Atletická hala, Ostrava (CZE)
+02 FEB: 2nd place, 7.96 in 60 Metres Hurdles (indoor) @ Atletická hala, Ostrava (CZE)
+08 FEB: 2nd place, 8.00 in 60 Metres Hurdles (indoor) @ Arena, Toruń (POL)
+08 FEB: 4th place, 7.85 in 60 Metres Hurdles (indoor) @ Arena, Toruń (POL)
+11 FEB: 1st place, 7.88 in 60 Metres Hurdles (indoor) @ AccorHotels Arena de Bercy, Paris (FRA)
+11 FEB: 1st place, 7.86 in 60 Metres Hurdles (indoor) @ AccorHotels Arena de Bercy, Paris (FRA)
+18 FEB: 1st place, 7.43 in 60 Metres (indoor) @ Omnisport, Apeldoorn (NED)
+18 FEB: 1st place, 7.42 in 60 Metres (indoor) @ Omnisport, Apeldoorn (NED)
+18 FEB: 2nd place, 7.22 in 60 Metres (indoor) @ Omnisport, Apeldoorn (NED)
+22 FEB: 1st place, 7.87 in 60 Metres Hurdles (indoor) @ Gallur, Madrid (ESP)
+22 FEB: 3rd place, 7.86 in 60 Metres Hurdles (indoor) @ Gallur, Madrid (ESP)
+04 MAR: 1st place, 7.88 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 1st place, 7.93 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 2nd place, 7.84 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+27 MAY: 3rd place, 11.38 (+0.7) in 100 Metres @ Putbosstadion, Oordegem (BEL)
+27 MAY: 5th place, 23.55 (+0.2) in 200 Metres @ Putbosstadion, Oordegem (BEL)
+04 JUN: 2nd place, 12.71 (+0.2) in 100 Metres Hurdles @ FBK Stadium, Hengelo (NED)
+04 JUN: 2nd place, 44.17 in 4x100 Metres Relay @ FBK Stadium, Hengelo (NED)
 
-5. Gabriel Tual (FRA), 25 years old
-Personal Best: 1:44.23, Season's Best: N/A
-2022 results for Gabriel Tual:
-14 FEB: 5th place, 2:19.84 in 1000 Metres (indoor) @ Stade couvert Jesse Owens, Val-de-Reuil (FRA)
-17 FEB: 8th place, 1:48.16 in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
-26 FEB: 1st place, 1:49.52 in 800 Metres (indoor) @ Stadium Miramas Métropole, Miramas (FRA)
-27 FEB: 2nd place, 1:47.35 in 800 Metres (indoor) @ Stadium Miramas Métropole, Miramas (FRA)
-08 MAY: 1st place, 47.79 in 400 Metres @ Stade de Stehelin, Bordeaux (FRA)
-15 MAY: 5th place, 1:46.10 in 800 Metres @ Montgeron (FRA)
-22 MAY: 3rd place, 47.82 in 400 Metres @ Stade Bachelard, Grenoble (FRA)
-22 MAY: 2nd place, 3:11.45 in 4x400 Metres Relay @ Stade Bachelard, Grenoble (FRA)
-25 MAY: 1st place, 1:45.12 in 800 Metres @ Estadio Iberoamericano, Huelva (ESP)
-31 MAY: 6th place, 1:45.03 in 800 Metres @ Mestský Stadion, Ostrava (CZE)
-05 JUN: 2nd place, 1:45.71 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
-14 JUN: 3rd place, 1:44.30 in 800 Metres @ Paavo Nurmen Stadion, Turku (FIN)
-18 JUN: 4th place, 1:44.23 in 800 Metres @ Stade Charléty, Paris (FRA)
-24 JUN: 1st place, 1:48.29 in 800 Metres @ Stade Helitas, Caen (FRA)
-25 JUN: 2nd place, 1:48.89 in 800 Metres @ Stade Helitas, Caen (FRA)
-30 JUN: 3rd place, 1:45.29 in 800 Metres @ Olympiastadion, Stockholm (SWE)
-20 JUL: 1st place, 1:46.34 in 800 Metres @ Hayward Field, Eugene, OR (USA)
-21 JUL: 2nd place, 1:45.53 in 800 Metres @ Hayward Field, Eugene, OR (USA)
-23 JUL: 6th place, 1:45.49 in 800 Metres @ Hayward Field, Eugene, OR (USA)
-18 AUG: 3rd place, 1:46.08 in 800 Metres @ Olympiastadion, München (GER)
-19 AUG: 7th place, 1:47.70 in 800 Metres @ Olympiastadion, München (GER)
-02 SEP: 10th place, 1:45.64 in 800 Metres @ Boudewijnstadion, Bruxelles (BEL)
-08 SEP: 7th place, 1:45.25 in 800 Metres @ Letzigrund, Zürich (SUI)
+5. Michelle Jenneke (AUS), 29 years old
+Personal Best: 12.66, Season's Best: 12.69
+2023 results for Michelle Jenneke:
+07 JAN: 1st place, 11.63 (+1.0) in 100 Metres @ QSAC State Athletics Facility, Nathan, Brisbane (AUS)
+14 JAN: 2nd place, 11.85 (-0.8) in 100 Metres @ QSAC State Athletics Facility, Nathan, Brisbane (AUS)
+14 JAN: 1st place, 13.43 (-0.3) in 100 Metres Hurdles @ QSAC State Athletics Facility, Nathan, Brisbane (AUS)
+29 JAN: 3rd place, 8.02 in 60 Metres Hurdles (indoor) @ ISS Dome, Düsseldorf (GER)
+29 JAN: 5th place, 7.99 in 60 Metres Hurdles (indoor) @ ISS Dome, Düsseldorf (GER)
+04 FEB: 1st place, 8.01 in 60 Metres Hurdles (indoor) @ Atlas Arena, Łódź (POL)
+04 FEB: 2nd place, 7.98 in 60 Metres Hurdles (indoor) @ Atlas Arena, Łódź (POL)
+08 FEB: 1st place, 8.08 in 60 Metres Hurdles (indoor) @ Halle Michel d'Ornano, Mondeville (FRA)
+08 FEB: 2nd place, 8.02 in 60 Metres Hurdles (indoor) @ Halle Michel d'Ornano, Mondeville (FRA)
+10 FEB: 1st place, 7.95 in 60 Metres Hurdles (indoor) @ Mercedes-Benz Arena, Berlin (GER)
+10 FEB: 2nd place, 7.89 in 60 Metres Hurdles (indoor) @ Mercedes-Benz Arena, Berlin (GER)
+23 FEB: 1st place, 12.75 (+1.2) in 100 Metres Hurdles @ Lakeside Stadium, Melbourne (AUS)
+05 MAR: 1st place, 12.80* (+2.4) in 100 Metres Hurdles @ SOPAC, Sydney (AUS)
+05 MAR: 1st place, 12.69 (+1.4) in 100 Metres Hurdles @ SOPAC, Sydney (AUS)
+11 MAR: 1st place, 12.70 (+0.6) in 100 Metres Hurdles @ SOPAC, Sydney (AUS)
+18 MAR: 1st place, 11.71 (0.0) in 100 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
+25 MAR: 1st place, 12.80 (-0.3) in 100 Metres Hurdles @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
+02 APR: 1st place, 12.93 (+0.3) in 100 Metres Hurdles @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
+02 APR: 1st place, 12.77 (-0.1) in 100 Metres Hurdles @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
+05 MAY: 7th place, 13.00 (+1.1) in 100 Metres Hurdles @ Suhaim bin Hamad Stadium, Doha (QAT)
 
-6. Andreas Kramer (SWE), 26 years old
-Personal Best: 1:44.47, Season's Best: 1:44.85
-2023 results for Andreas Kramer:
-29 JAN: 1st place, 1:45.90 in 800 Metres (indoor) @ Sätrahallen, Stockholm (SWE)
-02 FEB: 1st place, 1:46.51 in 800 Metres (indoor) @ Friidrottens Hus, Göteborg (SWE)
-08 FEB: 1st place, 1:46.37 in 800 Metres (indoor) @ Arena, Toruń (POL)
-15 FEB: 4th place, 1:47.97 in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
-17 FEB: 1st place, 1:53.44 in 800 Metres (indoor) @ Atleticum, Malmö (SWE)
-18 FEB: 1st place, 1:46.75 in 800 Metres (indoor) @ Atleticum, Malmö (SWE)
-22 FEB: 2nd place, 1:46.52 in 800 Metres (indoor) @ Gallur, Madrid (ESP)
-02 MAR: 2nd place, 1:47.86 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-04 MAR: 3rd place, 1:47.11 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-05 MAR: 5th place, 1:48.15 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
-05 MAY: 6th place, 1:48.18 in 800 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
-18 MAY: DNF in 5000 Metres @ Olympiastadion, Stockholm (SWE)
-06 JUN: 6th place, 1:46.38 in 800 Metres @ Zdzislaw Krzyszkowiak Stadium, Bydgoszcz (POL)
-09 JUN: 9th place, 1:44.85 in 800 Metres @ Stade Charléty, Paris (FRA)
-13 JUN: 3rd place, 1:44.95 in 800 Metres @ Paavo Nurmen Stadion, Turku (FIN)
-18 JUN: 1st place, 2:16.95 in 1000 Metres @ Slottsskogsvallen, Göteborg (SWE)
+6. Reetta Hurske (FIN), 28 years old
+Personal Best: 12.70, Season's Best: 12.70
+2023 results for Reetta Hurske:
+14 JAN: 1st place, 7.50 in 60 Metres (indoor) @ TESC, Tampere (FIN)
+14 JAN: 1st place, 7.51 in 60 Metres (indoor) @ TESC, Tampere (FIN)
+14 JAN: 1st place, 7.90 in 60 Metres Hurdles (indoor) @ TESC, Tampere (FIN)
+14 JAN: 1st place, 7.95 in 60 Metres Hurdles (indoor) @ TESC, Tampere (FIN)
+29 JAN: 1st place, 7.88 in 60 Metres Hurdles (indoor) @ ISS Dome, Düsseldorf (GER)
+29 JAN: 2nd place, 7.86 in 60 Metres Hurdles (indoor) @ ISS Dome, Düsseldorf (GER)
+04 FEB: 1st place, 7.88 in 60 Metres Hurdles (indoor) @ Stade couvert Jesse Owens, Val-de-Reuil (FRA)
+04 FEB: 2nd place, 7.87 in 60 Metres Hurdles (indoor) @ Stade couvert Jesse Owens, Val-de-Reuil (FRA)
+08 FEB: 2nd place, 7.89 in 60 Metres Hurdles (indoor) @ Arena, Toruń (POL)
+08 FEB: 2nd place, 7.81 in 60 Metres Hurdles (indoor) @ Arena, Toruń (POL)
+11 FEB: 3rd place, 8.00 in 60 Metres Hurdles (indoor) @ AccorHotels Arena de Bercy, Paris (FRA)
+11 FEB: 4th place, 7.97 in 60 Metres Hurdles (indoor) @ AccorHotels Arena de Bercy, Paris (FRA)
+19 FEB: 1st place, 7.85 in 60 Metres Hurdles (indoor) @ Liikuntamylly, Helsinki (FIN)
+19 FEB: 1st place, 7.83 in 60 Metres Hurdles (indoor) @ Liikuntamylly, Helsinki (FIN)
+22 FEB: 1st place, 7.82 in 60 Metres Hurdles (indoor) @ Gallur, Madrid (ESP)
+22 FEB: 1st place, 7.79 in 60 Metres Hurdles (indoor) @ Gallur, Madrid (ESP)
+04 MAR: 1st place, 7.93 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 1st place, 7.85 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 1st place, 7.79 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAY: 6th place, 12.92 (+1.1) in 100 Metres Hurdles @ Suhaim bin Hamad Stadium, Doha (QAT)
+24 MAY: 1st place, 12.80 (+2.0) in 100 Metres Hurdles @ Centro Sportivo Fontanassa, Savona (ITA)
+07 JUN: 1st place, 12.70 (+0.9) in 100 Metres Hurdles @ Harjun stadion, Jyväskylä (FIN)
+07 JUN: 1st place, 12.80 (+0.3) in 100 Metres Hurdles @ Harjun stadion, Jyväskylä (FIN)
+13 JUN: 1st place, 12.92 (+0.6) in 100 Metres Hurdles @ Paavo Nurmen Stadion, Turku (FIN)
+13 JUN: 5th place, 12.97 (+0.9) in 100 Metres Hurdles @ Paavo Nurmen Stadion, Turku (FIN)
+17 JUN: 1st place, 12.85* (+2.2) in 100 Metres Hurdles @ Kuortaneen keskusurheilukenttä, Kuortane (FIN)
 
-7. Mariano García (ESP), 25 years old
-Personal Best: 1:44.85, Season's Best: 1:47.58
-2023 results for Mariano García:
-28 JAN: 1st place, 1:47.15 in 800 Metres (indoor) @ Pista Coberta de Catalunya, Sabadell (ESP)
-04 FEB: 1st place, 1:45.26 in 800 Metres (indoor) @ The Track at New Balance, Boston, MA (USA)
-18 FEB: 2nd place, 1:49.05 in 800 Metres (indoor) @ Gallur, Madrid (ESP)
-19 FEB: 2nd place, 1:45.91 in 800 Metres (indoor) @ Gallur, Madrid (ESP)
-22 FEB: 7th place, 1:48.56 in 800 Metres (indoor) @ Gallur, Madrid (ESP)
-22 APR: 1st place, 1:53.59 in 800 Metres @ Pistas Universad de León, León (ESP)
-23 APR: 1st place, 1:49.49 in 800 Metres @ Pistas Universad de León, León (ESP)
-13 MAY: 1st place, 1:47.75 in 800 Metres @ Ibiza (ESP)
-18 MAY: 1st place, 3:38.39 in 1500 Metres @ Estadio Enrique Lopez Cuenca, Nerja (ESP)
-27 MAY: 1st place, 1:47.58 in 800 Metres @ Estadio de la Juventud de Granada, Granada (ESP)
-06 JUN: 16th place, 3:44.30 in 1500 Metres @ Estadio Iberoamericano, Huelva (ESP)
-
-8. Yanis Meziane (FRA), 21 years old
-Personal Best: 1:45.39, Season's Best: 1:45.39
-2023 results for Yanis Meziane:
-22 JAN: 1st place, 1:51.91 in 800 Metres (indoor) @ Velódromo Luis Puig, Valencia (ESP)
-07 MAY: 2nd place, 47.54 in 400 Metres @ Stade des Maradas, Cergy-Pontoise (FRA)
-21 MAY: 1st place, 1:47.78 in 800 Metres @ Stade R. Bobin, Bondoufle (FRA)
-21 MAY: 1st place, 3:12.65 in 4x400 Metres Relay @ Stade R. Bobin, Bondoufle (FRA)
-26 MAY: 1st place, 1:45.39 in 800 Metres @ Polideportivo Municipal, Andújar (ESP)
-31 MAY: 3rd place, 1:45.68 in 800 Metres @ Stade des Grands Pêchers, Montreuil (FRA)
-09 JUN: 8th place, 1:44.78 in 800 Metres @ Stade Charléty, Paris (FRA)
-
-9. Khaled Benmahdi (ALG), 34 years old
-Personal Best: 1:46.06, Season's Best: 1:49.39
-2023 results for Khaled Benmahdi:
-22 JAN: DNF in 800 Metres (indoor) @ Coque Sport Center, Kirchberg, Luxembourg (LUX)
-28 JAN: 5th place, 1:51.39 in 800 Metres (indoor) @ Halle Stéphane Diagana, Lyon (FRA)
-03 FEB: DNF in 800 Metres (indoor) @ Stadium Miramas Métropole, Miramas (FRA)
-15 FEB: DNF in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
-13 MAY: DNF in 800 Metres @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
-18 MAY: DNF in 800 Metres @ Salle couverte Daniel Faucher, Toulouse (FRA)
-21 MAY: 3rd place, 48.72 in 400 Metres @ Stade Roger Serzian, Belfort (FRA)
-28 MAY: DNF in 800 Metres @ Bungertstadion, Rehlingen (GER)
-03 JUN: 5th place, 1:49.39 in 800 Metres @ Stade Municipal, Ambilly (FRA)
-16 JUN: DNF in 800 Metres @ Stade d'Athlétisme Hautepierre, Strasbourg (FRA)
-18 JUN: DNF in 800 Metres @ Stade Raymond Petit, Tomblaine (FRA)
+7. Laeticia Bapté (FRA), 24 years old
+Personal Best: 12.78, Season's Best: 12.78
+2023 results for Laeticia Bapté:
+28 JAN: 1st place, 8.01 in 60 Metres Hurdles (indoor) @ Halle Stéphane Diagana, Lyon (FRA)
+28 JAN: 2nd place, 8.06 in 60 Metres Hurdles (indoor) @ Halle Stéphane Diagana, Lyon (FRA)
+04 FEB: 2nd place, 8.06 in 60 Metres Hurdles (indoor) @ Stade couvert Jesse Owens, Val-de-Reuil (FRA)
+04 FEB: 3rd place, 7.98 in 60 Metres Hurdles (indoor) @ Stade couvert Jesse Owens, Val-de-Reuil (FRA)
+11 FEB: 3rd place, 8.02 in 60 Metres Hurdles (indoor) @ AccorHotels Arena de Bercy, Paris (FRA)
+11 FEB: 6th place, 8.03 in 60 Metres Hurdles (indoor) @ AccorHotels Arena de Bercy, Paris (FRA)
+18 FEB: 1st place, 7.90 in 60 Metres Hurdles (indoor) @ Stadium Jean-Pellez, Aubiére (FRA)
+18 FEB: 1st place, 7.95 in 60 Metres Hurdles (indoor) @ Stadium Jean-Pellez, Aubiére (FRA)
+04 MAR: 2nd place, 7.97 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 2nd place, 7.91 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 5th place, 7.97 in 60 Metres Hurdles (indoor) @ Ataköy Arena, Istanbul (TUR)
+06 MAY: 1st place, 13.02 (+0.3) in 100 Metres Hurdles @ Stade L. Achille, Fort-de-France (FRA)
+27 MAY: 1st place, 13.03 (+1.4) in 100 Metres Hurdles @ Stade L. Achille, Fort-de-France (FRA)
+03 JUN: 1st place, 11.78 (-0.7) in 100 Metres @ Stade L. Achille, Fort-de-France (FRA)
+03 JUN: 1st place, 11.65 (-2.0) in 100 Metres @ Stade L. Achille, Fort-de-France (FRA)
+10 JUN: 1st place, 12.90 (+0.2) in 100 Metres Hurdles @ Centre sportif Bout-du-Monde, Genève (SUI)
+10 JUN: 1st place, 12.78 (+0.5) in 100 Metres Hurdles @ Centre sportif Bout-du-Monde, Genève (SUI)
+13 JUN: 2nd place, 12.95 (+0.6) in 100 Metres Hurdles @ Paavo Nurmen Stadion, Turku (FIN)
+13 JUN: 3rd place, 12.93 (+0.9) in 100 Metres Hurdles @ Paavo Nurmen Stadion, Turku (FIN)
+18 JUN: 1st place, 12.93 (-1.2) in 100 Metres Hurdles @ Stade Raymond Petit, Tomblaine (FRA)
 
 Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data. Make reference to specific result times for the athletes in your reasoning, not just their personal bests and season's bests.
