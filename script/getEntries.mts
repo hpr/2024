@@ -48,6 +48,8 @@ const schedules: { [k in DLMeet]?: string[] } = {
   florence23: ['https://rome.diamondleague.com/en/programme-results/programme-results-rome/'],
   paris23: ['https://paris.diamondleague.com/en/programme-results/programme-2020-results/'],
   oslo23: ['https://oslo.diamondleague.com/en/programme-results/programme-2023/'],
+  lausanne23: ['https://lausanne.diamondleague.com/en/programme-results-lausanne/'],
+  stockholm23: ['https://stockholm.diamondleague.com/en/lists-results-stockholm/'],
 };
 
 const idTeams = {
@@ -67,7 +69,13 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   return a.pb.localeCompare(b.pb);
 };
 const sanitizeEvtName = (name: string | undefined): string | undefined => {
-  return name?.replace('Dream ', '').replace(' W Women', ' Women').replace(' M Men', ' Men');
+  return name
+    ?.replace('Dream ', '')
+    .replace(' W Women', ' Women')
+    .replace(' M Men', ' Men')
+    .replace(' meters', ' Metres')
+    .replace(' meter', ' Metres')
+    .replace('hurdles', 'Hurdles');
 };
 
 const getWaId = async (

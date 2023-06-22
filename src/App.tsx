@@ -42,7 +42,7 @@ export default function App() {
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('oslo23');
+  const [meet] = useState<DLMeet>('lausanne23');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -190,8 +190,8 @@ export default function App() {
               <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
               <TextInput
                 withAsterisk
-                label="Tiebreaker: Women's Mile winning time?"
-                placeholder="e.g. 4:17.00"
+                label="Tiebreaker: Men's 1500m winning time?"
+                placeholder="e.g. 3:30.00"
                 {...registerForm.getInputProps('tiebreaker')}
               />
               <Group position="right" mt="md">

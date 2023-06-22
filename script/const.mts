@@ -1,6 +1,6 @@
 import { AthleticsEvent, DLMeet, WAEventCode } from './types.mjs';
 
-export const MEET: DLMeet = 'oslo23';
+export const MEET: DLMeet = 'lausanne23';
 
 export const NUM_SCORING: number = 2;
 
@@ -34,8 +34,8 @@ export const runningEvents: (AthleticsEvent | string)[][] = [
   ["Women's Mile", "Women's 1 Mile", 'Women 1 Mile', 'Mile Women'],
   ['3000m Women', "Women's 3000 m", "Women's 3000 Meters", 'Women 3000 M'],
   ['3000m Men', "Men's 3000 Meters", 'Men 3000 M'],
-  ['3000m SC Women', '3000m Steeplechase Women'],
-  ['3000m SC Men', '3000m Steeplechase Men'],
+  ['3000m SC Women', '3000m Steeple Women', '3000m Steeplechase Women'],
+  ['3000m SC Men', '3000m Steeple Men', '3000m Steeplechase Men'],
   ['5000m Women', "Women's 5000 Meters", 'Women 5000 M'],
   ['5000m Men', "Men's 5000 Meters", 'Men 5000 M'],
 ];
@@ -52,6 +52,8 @@ export const distanceEvents: AthleticsEvent[] = [
   '800m Men',
   '3000m Men',
   '1500m Women',
+  '3000m Steeplechase Women',
+  '3000m Steeplechase Men',
 ];
 
 export const sprintEvents: AthleticsEvent[] = [
@@ -68,7 +70,6 @@ export const sprintEvents: AthleticsEvent[] = [
   '200m Men',
   '400m Hurdles Men',
   '400m Women',
-  '3000m Steeplechase Women',
   '400m Hurdles Women',
   '400m Hurdles Men',
 ];
