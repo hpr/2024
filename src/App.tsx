@@ -190,8 +190,8 @@ export default function App() {
               <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
               <TextInput
                 withAsterisk
-                label="Tiebreaker: Men's 1500m winning time?"
-                placeholder="e.g. 3:30.00"
+                label="Tiebreaker: Men's 400m Hurdles winning time?"
+                placeholder="e.g. 46.50"
                 {...registerForm.getInputProps('tiebreaker')}
               />
               <Group position="right" mt="md">
