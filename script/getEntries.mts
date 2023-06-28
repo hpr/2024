@@ -69,6 +69,8 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   return a.pb.localeCompare(b.pb);
 };
 const sanitizeEvtName = (name: string | undefined): string | undefined => {
+  if (name?.startsWith('Men ')) name = name.replace('Men ', '') + ' Men';
+  if (name?.startsWith('Women ')) name = name.replace('Women ', '') + ' Women';
   return name
     ?.replace('Dream ', '')
     .replace(' W Women', ' Women')
