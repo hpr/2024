@@ -482,7 +482,7 @@ const getEntries = async () => {
                 lastName: 'Edris',
                 id: '14464221',
                 pb: '12:54.83',
-                sb: '13:27',
+                sb: '13:27.00',
                 nat: 'ETH',
                 hasAvy: true,
               });
