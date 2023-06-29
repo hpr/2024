@@ -464,7 +464,7 @@ const getEntries = async () => {
                 team: idTeams[id],
               };
             })
-          )) as Entrant[];
+          )).filter(e => (e as any)?.length !== 0) as Entrant[];
           if (meet === 'lausanne23' && name === '5000m Men') {
             if (!entrants.find((a) => a.id === '14477352'))
               entrants.push({
