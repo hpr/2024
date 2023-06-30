@@ -1826,7 +1826,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "52.76",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Femke",
+            "lastName": "Bol",
+            "id": "14707010",
+            "pb": "52.03",
+            "sb": "52.30",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.67",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Viivi",
+            "lastName": "Lehikoinen",
+            "id": "14527527",
+            "pb": "54.40",
+            "sb": "54.40",
+            "nat": "FIN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.12",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ayomide",
+            "lastName": "Folorunso",
+            "id": "14484475",
+            "pb": "54.34",
+            "sb": "55.34",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.13",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessie",
+            "lastName": "Knight",
+            "id": "14430428",
+            "pb": "54.09",
+            "sb": "54.32",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.41",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Ryzhykova",
+            "id": "14304336",
+            "pb": "52.96",
+            "sb": "55.53",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.69",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Viktoriya",
+            "lastName": "Tkachuk",
+            "id": "14426923",
+            "pb": "53.76",
+            "sb": "54.71",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "56.62",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lina",
+            "lastName": "Nielsen",
+            "id": "14594317",
+            "pb": "54.73",
+            "sb": "54.96",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "56.68",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gianna",
+            "lastName": "Woodruff",
+            "id": "14423522",
+            "pb": "53.69",
+            "sb": "54.46",
+            "nat": "PAN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Men": {
       "date": "2023-06-30T21:39",
