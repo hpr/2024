@@ -1642,7 +1642,112 @@
           "hasAvy": false
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "20.01",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Letsile",
+            "lastName": "Tebogo",
+            "id": "14883897",
+            "pb": "19.87",
+            "sb": "19.87",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.11",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jereem",
+            "lastName": "Richards",
+            "id": "14434521",
+            "pb": "19.80",
+            "sb": "20.08",
+            "nat": "TTO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.21",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joseph",
+            "lastName": "Fahnbulleh",
+            "id": "14803230",
+            "pb": "19.83",
+            "sb": "20.14",
+            "nat": "LBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.24",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Reynier",
+            "lastName": "Mena",
+            "id": "14518308",
+            "pb": "19.63",
+            "sb": "19.95",
+            "nat": "CUB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.44",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aaron",
+            "lastName": "Brown",
+            "id": "14366482",
+            "pb": "19.95",
+            "sb": "20.00",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.57",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andre",
+            "lastName": "de Grasse",
+            "id": "14535607",
+            "pb": "19.62",
+            "sb": "20.33",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.91",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "21.30",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Taymir",
+            "lastName": "Burnet",
+            "id": "14530331",
+            "pb": "20.34",
+            "sb": "20.36",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Hurdles Women": {
       "date": "2023-06-30T21:28",
