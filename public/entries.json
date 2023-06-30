@@ -2091,7 +2091,184 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:28.72",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jakob",
+            "lastName": "Ingebrigtsen",
+            "id": "14653717",
+            "pb": "3:27.95",
+            "sb": "3:27.95",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:29.51",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lamecha",
+            "lastName": "Girma",
+            "id": "14848765",
+            "pb": "3:33.77",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:29.64",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Josh",
+            "lastName": "Kerr",
+            "id": "14533464",
+            "pb": "3:29.05",
+            "sb": "3:30.07",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:31.56",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elliot",
+            "lastName": "Giles",
+            "id": "14457638",
+            "pb": "3:33.56",
+            "sb": "3:33.57",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:32.27",
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "mark": "3:32.63",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Neil",
+            "lastName": "Gourley",
+            "id": "14513077",
+            "pb": "3:30.88",
+            "sb": "3:30.88",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:32.85",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Stewart",
+            "lastName": "McSweyn",
+            "id": "14500488",
+            "pb": "3:29.51",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:34.21",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Teddese",
+            "lastName": "Lemi",
+            "id": "14760437",
+            "pb": "3:31.90",
+            "sb": "3:32.24",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:36.10",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Pietro",
+            "lastName": "Arese",
+            "id": "14701882",
+            "pb": "3:33.56",
+            "sb": "3:33.56",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:36.54",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tom",
+            "lastName": "Elmer",
+            "id": "14532342",
+            "pb": "3:35.62",
+            "sb": "3:35.62",
+            "nat": "SUI",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "3:38.61",
+          "place": 11,
+          "notes": ""
+        },
+        {
+          "place": null,
+          "notes": "DNS",
+          "entrant": {
+            "firstName": "Luke",
+            "lastName": "McCann",
+            "id": "14794196",
+            "pb": "3:34.76",
+            "sb": "3:34.76",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Erik",
+            "lastName": "Sowinski",
+            "id": "14360557",
+            "pb": "3:44.82",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Mounir",
+            "lastName": "Akbache",
+            "id": "14182819",
+            "pb": "3:39.81",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": false
+          }
+        }
+      ]
     }
   }
 }
