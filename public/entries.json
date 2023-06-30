@@ -324,7 +324,120 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "13.22",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shunsuke",
+            "lastName": "Izumiya",
+            "id": "14815041",
+            "pb": "13.04",
+            "sb": "13.04",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.23",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jason",
+            "lastName": "Joseph",
+            "id": "14680682",
+            "pb": "13.10",
+            "sb": "13.10",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.37",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Just",
+            "lastName": "Kwaou-Mathey",
+            "id": "14734289",
+            "pb": "13.09",
+            "sb": "13.09",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.41",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lorenzo Ndele",
+            "lastName": "Simonelli",
+            "id": "14840516",
+            "pb": "13.40",
+            "sb": "13.40",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.43",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Enrique",
+            "lastName": "Llopis",
+            "id": "14711683",
+            "pb": "13.30",
+            "sb": "13.37",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.56",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rafael",
+            "lastName": "Pereira",
+            "id": "14662635",
+            "pb": "13.17",
+            "sb": "13.34",
+            "nat": "BRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.58",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joshua",
+            "lastName": "Zeller",
+            "id": "14815467",
+            "pb": "13.19",
+            "sb": "13.40",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilhem",
+            "lastName": "Belocian",
+            "id": "14462837",
+            "pb": "13.15",
+            "sb": "13.20",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeple Women": {
       "date": "2023-06-30T20:25",
