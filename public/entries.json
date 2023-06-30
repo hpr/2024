@@ -1449,7 +1449,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.40",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jasmine",
+            "lastName": "Camacho-Quinn",
+            "id": "14494234",
+            "pb": "12.26",
+            "sb": "12.31",
+            "nat": "PUR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.47",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tobi",
+            "lastName": "Amusan",
+            "id": "14579526",
+            "pb": "12.12",
+            "sb": "12.57",
+            "nat": "NGR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.51",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tia",
+            "lastName": "Jones",
+            "id": "14563262",
+            "pb": "12.38",
+            "sb": "12.44",
+            "nat": "USA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "12.81",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Pia",
+            "lastName": "Skrzyszowska",
+            "id": "14736349",
+            "pb": "12.51",
+            "sb": "12.84",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.83",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ditaji",
+            "lastName": "Kambundji",
+            "id": "14739461",
+            "pb": "12.70",
+            "sb": "12.78",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.83",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nia",
+            "lastName": "Ali",
+            "id": "14304647",
+            "pb": "12.34",
+            "sb": "12.53",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.09",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nadine",
+            "lastName": "Visser",
+            "id": "14451249",
+            "pb": "12.51",
+            "sb": "12.71",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14.36",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alaysha",
+            "lastName": "Johnson",
+            "id": "14486620",
+            "pb": "12.35",
+            "sb": "12.41",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Men": {
       "date": "2023-06-30T21:20",
