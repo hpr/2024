@@ -864,7 +864,115 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Murielle",
+            "lastName": "Ahouré-Demps",
+            "id": "14304569",
+            "pb": "10.78",
+            "sb": "11.09",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ewa",
+            "lastName": "Swoboda",
+            "id": "14451085",
+            "pb": "11.03",
+            "sb": "11.03",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.07",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "10.90",
+            "sb": "10.97",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gina",
+            "lastName": "Lückenkemper",
+            "id": "14450088",
+            "pb": "10.95",
+            "sb": "11.00",
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.88",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou",
+            "id": "14415994",
+            "pb": "10.72",
+            "sb": "10.75",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mujinga",
+            "lastName": "Kambundji",
+            "id": "14300897",
+            "pb": "10.89",
+            "sb": null,
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zoe",
+            "lastName": "Hobbs",
+            "id": "14499691",
+            "pb": "10.97",
+            "sb": "10.97",
+            "nat": "NZL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Imani",
+            "lastName": "Lansiquot",
+            "id": "14506362",
+            "pb": "11.03",
+            "sb": "11.03",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "5000m Men": {
       "date": "2023-06-30T20:50",
