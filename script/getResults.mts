@@ -93,9 +93,13 @@ for (const key in resultsLinks) {
   } else if (resultsLinks[meet]?.includes('livecache.sportresult.com')) {
     const meetId = resultsLinks[meet]?.match(/^https:\/\/livecache.sportresult.com\/node\/db\/ATH_PROD\/(.+)_SCHEDULE/)?.[1];
     const schedule: SportResultSchedule = await (await fetch(resultsLinks[meet]!)).json();
+    console.log(resultsLinks[meet]);
     for (const key in entries[meet]) {
       const evt = key as AthleticsEvent;
-      const evtId = Object.values(schedule.content.full.Units).find((unit) => [evt, '1 ' + evt].some(s => unit.EventName === s) && unit.Stats.DiamondId)?.Rsc.ValueUnit;
+      const evtId = Object.values(schedule.content.full.Units).find(
+        (unit) =>
+          [evt, '1 ' + evt].some((s) => unit.EventName.replace('Steeplechase', 'Steeple') === s.replace('Steeplechase', 'Steeple')) && unit.Stats.DiamondId
+      )?.Rsc.ValueUnit;
       const evtResultUrl = `https://livecache.sportresult.com/node/db/ATH_PROD/${meetId}_TIMING_${evtId}_JSON.json`;
       console.log(evt, evtResultUrl);
       const evtResultResp = await fetch(evtResultUrl);

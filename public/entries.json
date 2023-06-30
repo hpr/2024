@@ -104,7 +104,148 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:57.43",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mary",
+            "lastName": "Moraa",
+            "id": "14798209",
+            "pb": "1:56.71",
+            "sb": "1:58.72",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.37",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Keely",
+            "lastName": "Hodgkinson",
+            "id": "14642894",
+            "pb": "1:55.77",
+            "sb": "1:55.77",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.90",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natoya",
+            "lastName": "Goule",
+            "id": "14285696",
+            "pb": "1:56.15",
+            "sb": "1:58.23",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.95",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Catriona",
+            "lastName": "Bisset",
+            "id": "14463325",
+            "pb": "1:58.09",
+            "sb": "1:58.32",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.32",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jemma",
+            "lastName": "Reekie",
+            "id": "14533469",
+            "pb": "1:56.90",
+            "sb": "1:58.94",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.71",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Audrey",
+            "lastName": "Werro",
+            "id": "14856078",
+            "pb": "1:59.53",
+            "sb": "1:59.67",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.49",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lore",
+            "lastName": "Hoffmann",
+            "id": "14457538",
+            "pb": "1:58.50",
+            "sb": "2:01.37",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.76",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elena",
+            "lastName": "Bellò",
+            "id": "14538311",
+            "pb": "1:58.97",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:04.93",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Noélie",
+            "lastName": "Yarigo",
+            "id": "14270067",
+            "pb": "1:58.65",
+            "sb": "1:58.65",
+            "nat": "BEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Patrycja",
+            "lastName": "Wyciszkiewicz-Zawadzka",
+            "id": "14389670",
+            "pb": "2:03.50",
+            "sb": "2:03.50",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "110m Hurdles Men": {
       "date": "2023-06-30T20:16",
