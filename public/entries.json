@@ -1823,7 +1823,121 @@
           "hasAvy": false
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "22.50",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "22.23",
+            "sb": "22.23",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.58",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dina",
+            "lastName": "Asher-Smith",
+            "id": "14378282",
+            "pb": "21.88",
+            "sb": "22.57",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.59",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jaël",
+            "lastName": "Bestué",
+            "id": "14648428",
+            "pb": "22.54",
+            "sb": "22.54",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.70",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou",
+            "id": "14415994",
+            "pb": "22.08",
+            "sb": "22.31",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.99",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Maboundou",
+            "lastName": "Koné",
+            "id": "14636900",
+            "pb": "22.57",
+            "sb": "22.57",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.15",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tasa",
+            "lastName": "Jiya",
+            "id": "14560472",
+            "pb": "22.84",
+            "sb": "22.84",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.37",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Julia",
+            "lastName": "Henriksson",
+            "id": "14654845",
+            "pb": "23.15",
+            "sb": "23.22",
+            "nat": "SWE",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "23.62",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Boglárka",
+            "lastName": "Takács",
+            "id": "14706915",
+            "pb": "22.77",
+            "sb": "22.77",
+            "nat": "HUN",
+            "hasAvy": false
+          }
+        }
+      ]
     },
     "800m Men": {
       "date": "2023-07-02T19:52",
