@@ -837,7 +837,217 @@
           "hasAvy": false
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "14:36.52",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Beatrice",
+            "lastName": "Chebet",
+            "id": "14749924",
+            "pb": "14:34.55",
+            "sb": "15:15.82",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:38.06",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lemlem",
+            "lastName": "Hailu",
+            "id": "14806061",
+            "pb": "14:34.53",
+            "sb": "14:34.53",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:40.02",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Medina",
+            "lastName": "Eisa",
+            "id": "14985841",
+            "pb": "14:46.60",
+            "sb": "14:46.60",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:40.88",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Chelangat",
+            "id": "14786748",
+            "pb": "14:50.93",
+            "sb": "14:50.93",
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:44.24",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessica",
+            "lastName": "Hull",
+            "id": "14464506",
+            "pb": "14:43.80",
+            "sb": "15:05.87",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:44.94",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tsigie",
+            "lastName": "Gebreselama",
+            "id": "14848732",
+            "pb": "14:43.90",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:47.48",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "15:04.41",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Axumawit",
+            "lastName": "Embaye",
+            "id": "14534819",
+            "pb": null,
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "15:06.59",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessica",
+            "lastName": "Warner-Judd",
+            "id": "14336301",
+            "pb": "14:57.19",
+            "sb": "15:13.95",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "15:06.80",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Lahti",
+            "id": "14403185",
+            "pb": "15:04.87",
+            "sb": null,
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "15:07.11",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Maureen",
+            "lastName": "Koster",
+            "id": "14372338",
+            "pb": "15:00.64",
+            "sb": null,
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "15:07.45",
+          "place": 12,
+          "notes": ""
+        },
+        {
+          "mark": "15:10.13",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abersh",
+            "lastName": "Minsewo",
+            "id": "14805770",
+            "pb": "14:47.98",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "15:13.06",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Konstanze",
+            "lastName": "Klosterhalfen",
+            "id": "14496249",
+            "pb": "14:26.76",
+            "sb": null,
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Karoline Bjerkeli",
+            "lastName": "Grøvdal",
+            "id": "14292573",
+            "pb": "14:31.07",
+            "sb": null,
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Aleksandra",
+            "lastName": "Płocińska",
+            "id": "14757652",
+            "pb": null,
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": false
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        }
+      ]
     },
     "100m Hurdles Women": {
       "date": "2023-07-02T19:02",
