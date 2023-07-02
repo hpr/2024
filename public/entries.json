@@ -261,7 +261,112 @@
           "hasAvy": false
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.03",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Akani",
+            "lastName": "Simbine",
+            "id": "14417763",
+            "pb": "9.84",
+            "sb": "9.92",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.14",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Reece",
+            "lastName": "Prescod",
+            "id": "14522622",
+            "pb": "9.93",
+            "sb": "9.99",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.23",
+          "place": 3,
+          "notes": ""
+        },
+        {
+          "mark": "10.24",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Raphael",
+            "lastName": "Bouju",
+            "id": "14762868",
+            "pb": "10.02",
+            "sb": "10.02",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.27",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aaron",
+            "lastName": "Brown",
+            "id": "14366482",
+            "pb": "9.96",
+            "sb": "10.15",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.33",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abdul Hakim",
+            "lastName": "Sani Brown",
+            "id": "14671546",
+            "pb": "9.97",
+            "sb": "10.13",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.46",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Henrik",
+            "lastName": "Larsson",
+            "id": "14678946",
+            "pb": "10.17",
+            "sb": "10.17",
+            "nat": "SWE",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "13.34",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jimmy",
+            "lastName": "Vicaut",
+            "id": "14334964",
+            "pb": "9.86",
+            "sb": "10.06",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Women": {
       "date": "2023-07-02T18:21",
