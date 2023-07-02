@@ -77,7 +77,112 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "45.30",
+          "place": 1,
+          "notes": ""
+        },
+        {
+          "mark": "45.48",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Bamidele",
+            "id": "14694441",
+            "pb": "44.24",
+            "sb": "44.24",
+            "nat": "NGR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.57",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Matthew",
+            "lastName": "Hudson-Smith",
+            "id": "14407278",
+            "pb": "44.35",
+            "sb": "44.92",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.66",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "João",
+            "lastName": "Coelho",
+            "id": "14822316",
+            "pb": "45.05",
+            "sb": "45.05",
+            "nat": "POR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.77",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Attila",
+            "lastName": "Molnár",
+            "id": "14712930",
+            "pb": "44.98",
+            "sb": "44.98",
+            "nat": "HUN",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "45.89",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Leungo",
+            "lastName": "Scotch",
+            "id": "14643510",
+            "pb": "44.82",
+            "sb": "44.82",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "46.13",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bayapo",
+            "lastName": "Ndori",
+            "id": "14847443",
+            "pb": "44.61",
+            "sb": "44.61",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "46.21",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yuki Joseph",
+            "lastName": "Nakajima",
+            "id": "14915400",
+            "pb": "45.15",
+            "sb": "45.15",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Men": {
       "date": "2023-07-02T18:14",
