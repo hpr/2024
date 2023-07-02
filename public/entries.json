@@ -1117,7 +1117,112 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.52",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tobi",
+            "lastName": "Amusan",
+            "id": "14579526",
+            "pb": "12.12",
+            "sb": "12.47",
+            "nat": "NGR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.73",
+          "place": 2,
+          "notes": ""
+        },
+        {
+          "mark": "12.78",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Pia",
+            "lastName": "Skrzyszowska",
+            "id": "14736349",
+            "pb": "12.51",
+            "sb": "12.77",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.85",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Devynne",
+            "lastName": "Charlton",
+            "id": "14414505",
+            "pb": "12.46",
+            "sb": "12.64",
+            "nat": "BAH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.97",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nadine",
+            "lastName": "Visser",
+            "id": "14451249",
+            "pb": "12.51",
+            "sb": "12.71",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.98",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Reetta",
+            "lastName": "Hurske",
+            "id": "14405506",
+            "pb": "12.70",
+            "sb": "12.70",
+            "nat": "FIN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.01",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Michelle",
+            "lastName": "Jenneke",
+            "id": "14365887",
+            "pb": "12.66",
+            "sb": "12.69",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.09",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laeticia",
+            "lastName": "Bapté",
+            "id": "14639107",
+            "pb": "12.78",
+            "sb": "12.78",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Men": {
       "date": "2023-07-02T19:12",
