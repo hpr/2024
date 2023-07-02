@@ -454,6 +454,7 @@ const getEntries = async () => {
                   ?.getAttribute('href')
                   ?.match(/\/(\d+)\.html$/)![1]! ?? (await getWaId(firstName, lastName, {}))?.id;
               if (id === '14453864' && MEET === 'rabat23') return []; // marcel jacobs rabat
+              if (id === '14735365' && MEET === 'lausanne23') return []; // kiplimo lausanne
               return {
                 firstName,
                 lastName: nameFixer(lastName),
@@ -465,7 +466,29 @@ const getEntries = async () => {
                 team: idTeams[id],
               };
             })
-          )) as Entrant[];
+          )).filter(e => (e as any)?.length !== 0) as Entrant[];
+          if (meet === 'lausanne23' && name === '5000m Men') {
+            if (!entrants.find((a) => a.id === '14477352'))
+              entrants.push({
+                firstName: 'Hagos',
+                lastName: 'Gebrhiwet',
+                id: '14477352',
+                pb: '12:45.82',
+                sb: '13:15.85',
+                nat: 'ETH',
+                hasAvy: true,
+              });
+            if (!entrants.find((a) => a.id === '14464221'))
+              entrants.push({
+                firstName: 'Muktar',
+                lastName: 'Edris',
+                id: '14464221',
+                pb: '12:54.83',
+                sb: '13:27.00',
+                nat: 'ETH',
+                hasAvy: true,
+              });
+          }
           console.log(entrants);
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
