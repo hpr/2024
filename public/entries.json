@@ -1630,7 +1630,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "47.57",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Karsten",
+            "lastName": "Warholm",
+            "id": "14479487",
+            "pb": "45.94",
+            "sb": "46.52",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.94",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kyron",
+            "lastName": "McMaster",
+            "id": "14532760",
+            "pb": "47.08",
+            "sb": "48.57",
+            "nat": "IVB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.04",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rasmus",
+            "lastName": "Mägi",
+            "id": "14373195",
+            "pb": "47.82",
+            "sb": "48.63",
+            "nat": "EST",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.11",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alessandro",
+            "lastName": "Sibilio",
+            "id": "14699358",
+            "pb": "47.93",
+            "sb": "48.14",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.67",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilfried",
+            "lastName": "Happio",
+            "id": "14650750",
+            "pb": "47.41",
+            "sb": "48.13",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.91",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ludvy",
+            "lastName": "Vaillant",
+            "id": "14480831",
+            "pb": "48.26",
+            "sb": "48.50",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.35",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Oskar",
+            "lastName": "Edlund",
+            "id": "14882511",
+            "pb": "49.94",
+            "sb": "49.94",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.59",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yasmani",
+            "lastName": "Copello",
+            "id": "14169627",
+            "pb": "47.81",
+            "sb": "49.25",
+            "nat": "TUR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Women": {
       "date": "2023-07-02T19:42",
