@@ -2025,7 +2025,134 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:44.59",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Djamel",
+            "lastName": "Sedjati",
+            "id": "14976579",
+            "pb": "1:43.40",
+            "sb": "1:43.40",
+            "nat": "ALG",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.67",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Saúl",
+            "lastName": "Ordóñez",
+            "id": "14517077",
+            "pb": "1:43.65",
+            "sb": "1:44.85",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.85",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gabriel",
+            "lastName": "Tual",
+            "id": "14646018",
+            "pb": "1:44.23",
+            "sb": "1:45.78",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.01",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Kramer",
+            "id": "14538207",
+            "pb": "1:44.47",
+            "sb": "1:44.85",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.43",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yanis",
+            "lastName": "Meziane",
+            "id": "14893694",
+            "pb": "1:45.39",
+            "sb": "1:45.39",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:47.01",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tom",
+            "lastName": "Dradiga",
+            "id": "14832653",
+            "pb": "1:44.80",
+            "sb": "1:44.80",
+            "nat": "UGA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "1:47.54",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joseph",
+            "lastName": "Deng",
+            "id": "14622158",
+            "pb": "1:44.21",
+            "sb": "1:44.48",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:48.96",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel Kipkurui",
+            "lastName": "Korir",
+            "id": "14755084",
+            "pb": "1:42.05",
+            "sb": "1:47.71",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Khaled",
+            "lastName": "Benmahdi",
+            "id": "14428436",
+            "pb": "1:46.06",
+            "sb": "1:48.77",
+            "nat": "ALG",
+            "hasAvy": true
+          }
+        }
+      ]
     }
   }
 }
