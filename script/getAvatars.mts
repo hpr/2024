@@ -227,7 +227,8 @@ for (const entrant of entrants) {
         } else if (pzlaId) {
           const url = `https://statystyka.pzla.pl/personal.php?page=profile&nr_zaw=${pzlaId}`;
           const { document } = new JSDOM(await (await fetch(url)).text()).window;
-          const imageUrl = document.querySelector('td[align=center] img')?.getAttribute('src');
+          let imageUrl = document.querySelector('td[align=center] img')?.getAttribute('src');
+          if (!imageUrl?.startsWith('/')) imageUrl = 'https://statystyka.pzla.pl/' + imageUrl;
           avatarResp = await fetch(imageUrl!);
         } else if (stravaId) {
           const url = `https://www.strava.com/pros/${stravaId}`;

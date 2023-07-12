@@ -42,7 +42,7 @@ export default function App() {
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('stockholm23');
+  const [meet] = useState<DLMeet>('silesia23');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);

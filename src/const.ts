@@ -95,6 +95,7 @@ export const disciplineCodes: { [k: string]: string } = {
   '2000 Metres Steeplechase (84)': '2KSC84',
   '3000 Metres Steeplechase': '3KSC',
   '3000m Steeplechase': '3KSC',
+  '3000m SC': '3KSC',
   '50 Metres Hurdles': '50H',
   '55 Metres Hurdles': '55H',
   '60 Metres Hurdles': '60H',

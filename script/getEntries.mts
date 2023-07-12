@@ -50,6 +50,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   oslo23: ['https://oslo.diamondleague.com/en/programme-results/programme-2023/'],
   lausanne23: ['https://lausanne.diamondleague.com/en/programme-results-lausanne/'],
   stockholm23: ['https://stockholm.diamondleague.com/en/lists-results-stockholm/'],
+  silesia23: ['https://silesia.diamondleague.com/en/programme-results/translate-to-english-programme-results/'],
 };
 
 const idTeams = {
@@ -77,6 +78,7 @@ const sanitizeEvtName = (name: string | undefined): string | undefined => {
     .replace(' M Men', ' Men')
     .replace(' meters', 'm')
     .replace(' meter', 'm')
+    .replace(' SC', ' Steeplechase')
     .replace('hurdles', 'Hurdles');
 };
 
