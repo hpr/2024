@@ -261,7 +261,99 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "9.97",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Akani",
+            "lastName": "Simbine",
+            "id": "14417763",
+            "pb": "9.84",
+            "sb": "9.92",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.98",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Fred",
+            "lastName": "Kerley",
+            "id": "14504382",
+            "pb": "9.76",
+            "sb": "9.88",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.98",
+          "place": 3,
+          "notes": ""
+        },
+        {
+          "mark": "9.99",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "10.01",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yohan",
+            "lastName": "Blake",
+            "id": "14201842",
+            "pb": "9.69",
+            "sb": "10.05",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.10",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marvin",
+            "lastName": "Bracy-Williams",
+            "id": "14425680",
+            "pb": "9.85",
+            "sb": "9.93",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.15",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ackeem",
+            "lastName": "Blake",
+            "id": "14638971",
+            "pb": "9.89",
+            "sb": "9.89",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.23",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "10.31",
+          "place": 9,
+          "notes": ""
+        }
+      ]
     },
     "3000m Women": {
       "date": "2023-07-16T16:26",
