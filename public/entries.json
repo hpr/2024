@@ -768,7 +768,126 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.34",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tobi",
+            "lastName": "Amusan",
+            "id": "14579526",
+            "pb": "12.12",
+            "sb": "12.47",
+            "nat": "NGR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.35",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kendra",
+            "lastName": "Harrison",
+            "id": "14425415",
+            "pb": "12.20",
+            "sb": "12.35",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.38",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nia",
+            "lastName": "Ali",
+            "id": "14304647",
+            "pb": "12.34",
+            "sb": "12.37",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.49",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "12.55",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Danielle",
+            "lastName": "Williams",
+            "id": "14450995",
+            "pb": "12.32",
+            "sb": "12.59",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.57",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tia",
+            "lastName": "Jones",
+            "id": "14563262",
+            "pb": "12.38",
+            "sb": "12.44",
+            "nat": "USA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "12.58",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alaysha",
+            "lastName": "Johnson",
+            "id": "14486620",
+            "pb": "12.35",
+            "sb": "12.37",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.67",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Pia",
+            "lastName": "Skrzyszowska",
+            "id": "14736349",
+            "pb": "12.51",
+            "sb": "12.77",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.73",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marione",
+            "lastName": "Fourie",
+            "id": "14838617",
+            "pb": "12.55",
+            "sb": "12.55",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Men": {
       "date": "2023-07-16T16:57",
