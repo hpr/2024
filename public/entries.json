@@ -495,7 +495,192 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "8:26.61",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Freweyni",
+            "lastName": "Hailu",
+            "id": "14836656",
+            "pb": null,
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:27.80",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lilian Kasait",
+            "lastName": "Rengeruk",
+            "id": "14590678",
+            "pb": "8:25.90",
+            "sb": "8:25.90",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:29.43",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lemlem",
+            "lastName": "Hailu",
+            "id": "14806061",
+            "pb": "8:34.03",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:29.48",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Teresiah Muthoni",
+            "lastName": "Gateri",
+            "id": "14798246",
+            "pb": "8:43.77",
+            "sb": "8:43.81",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:31.45",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Margaret",
+            "lastName": "Akidor",
+            "id": "14798242",
+            "pb": "8:32.53",
+            "sb": "8:46.77",
+            "nat": "KEN",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "8:35.82",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Chelangat",
+            "id": "14786748",
+            "pb": "8:32.53",
+            "sb": "8:32.53",
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:39.78",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Agate",
+            "lastName": "Caune",
+            "id": "14852324",
+            "pb": "9:03.99",
+            "sb": "9:03.99",
+            "nat": "LAT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:41.57",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "8:42.81",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elly",
+            "lastName": "Henes",
+            "id": "14666149",
+            "pb": "8:36.86",
+            "sb": "8:36.86",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:43.26",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joselyn Daniely",
+            "lastName": "Brea",
+            "id": "14748599",
+            "pb": "9:23.72",
+            "sb": null,
+            "nat": "VEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:44.15",
+          "place": 11,
+          "notes": ""
+        },
+        {
+          "mark": "8:50.40",
+          "place": 12,
+          "notes": ""
+        },
+        {
+          "mark": "8:50.95",
+          "place": 13,
+          "notes": ""
+        },
+        {
+          "mark": "8:51.45",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Klara",
+            "lastName": "Lukan",
+            "id": "14605811",
+            "pb": "8:47.17",
+            "sb": "8:47.17",
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:06.70",
+          "place": 15,
+          "notes": ""
+        },
+        {
+          "mark": "9:06.89",
+          "place": 16,
+          "notes": ""
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Kinga",
+            "lastName": "Królik",
+            "id": "14701702",
+            "pb": "9:18.53",
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Hurdles Women": {
       "date": "2023-07-16T16:47",
