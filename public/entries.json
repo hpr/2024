@@ -1609,7 +1609,180 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:56.85",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mary",
+            "lastName": "Moraa",
+            "id": "14798209",
+            "pb": "1:56.71",
+            "sb": "1:57.43",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:57.78",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Halimah",
+            "lastName": "Nakaayi",
+            "id": "14431159",
+            "pb": "1:58.03",
+            "sb": "1:58.81",
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:57.90",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natoya",
+            "lastName": "Goule-Toppin",
+            "id": "14285696",
+            "pb": "1:56.15",
+            "sb": "1:58.23",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.09",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sage",
+            "lastName": "Hurta-Klecker",
+            "id": "14478094",
+            "pb": "1:57.85",
+            "sb": "1:59.01",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.48",
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "mark": "1:58.94",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anita",
+            "lastName": "Horvat",
+            "id": "14472475",
+            "pb": "1:58.73",
+            "sb": "1:58.73",
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.30",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rénelle",
+            "lastName": "Lamote",
+            "id": "14424718",
+            "pb": "1:57.84",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.82",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sofia",
+            "lastName": "Ennaoui",
+            "id": "14436869",
+            "pb": "1:58.98",
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.61",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elena",
+            "lastName": "Bellò",
+            "id": "14538311",
+            "pb": "1:58.97",
+            "sb": "2:00.76",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:01.35",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Camille",
+            "lastName": "Laus",
+            "id": "14363849",
+            "pb": "2:01.99",
+            "sb": "2:01.99",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:02.09",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Margarita",
+            "lastName": "Koczanowa",
+            "id": "14703758",
+            "pb": "2:01.38",
+            "sb": "2:01.98",
+            "nat": "POL",
+            "hasAvy": false
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Catriona",
+            "lastName": "Bisset",
+            "id": "14463325",
+            "pb": "1:58.09",
+            "sb": "1:58.32",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Aneta",
+            "lastName": "Lemiesz",
+            "id": "14294016",
+            "pb": "1:59.93",
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": false
+          }
+        }
+      ]
     },
     "1500m Men": {
       "date": "2023-07-16T17:38",
