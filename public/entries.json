@@ -77,7 +77,103 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "49.48",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natalia",
+            "lastName": "Kaczmarek",
+            "id": "14642563",
+            "pb": "49.86",
+            "sb": "50.02",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.81",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "50.18",
+            "sb": "50.32",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.00",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marileidy",
+            "lastName": "Paulino",
+            "id": "14749613",
+            "pb": "48.98",
+            "sb": "48.98",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.19",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Candice",
+            "lastName": "McLeod",
+            "id": "14587165",
+            "pb": "49.51",
+            "sb": "50.80",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.34",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sada",
+            "lastName": "Williams",
+            "id": "14592846",
+            "pb": "49.75",
+            "sb": "51.00",
+            "nat": "BAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.48",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "50.92",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lynna",
+            "lastName": "Irby-Jackson",
+            "id": "14486888",
+            "pb": "49.80",
+            "sb": "50.11",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.07",
+          "place": 8,
+          "notes": ""
+        }
+      ]
     },
     "100m Men": {
       "date": "2023-07-16T16:16",
