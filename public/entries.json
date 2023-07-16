@@ -1358,7 +1358,134 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "44.08",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wayde",
+            "lastName": "van Niekerk",
+            "id": "14417677",
+            "pb": "43.03",
+            "sb": "44.17",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.61",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bayapo",
+            "lastName": "Ndori",
+            "id": "14847443",
+            "pb": "44.61",
+            "sb": "44.61",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.73",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alison",
+            "lastName": "dos Santos",
+            "id": "14755064",
+            "pb": "44.54",
+            "sb": null,
+            "nat": "BRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.74",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zakithi",
+            "lastName": "Nene",
+            "id": "14696997",
+            "pb": "44.74",
+            "sb": "45.17",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.77",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ryan",
+            "lastName": "Willie",
+            "id": "14802726",
+            "pb": "44.25",
+            "sb": "44.25",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.81",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bryce",
+            "lastName": "Deadmon",
+            "id": "14596460",
+            "pb": "44.22",
+            "sb": "44.22",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.88",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Vernon",
+            "lastName": "Norwood",
+            "id": "14490237",
+            "pb": "44.35",
+            "sb": "44.39",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.87",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Karol",
+            "lastName": "Zalewski",
+            "id": "14403529",
+            "pb": "45.11",
+            "sb": "45.81",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Muzala",
+            "lastName": "Samukonga",
+            "id": "14930603",
+            "pb": "43.91",
+            "sb": "43.91",
+            "nat": "ZAM",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Women": {
       "date": "2023-07-16T17:27",
