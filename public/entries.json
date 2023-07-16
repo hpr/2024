@@ -2231,7 +2231,117 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.76",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sha'Carri",
+            "lastName": "Richardson",
+            "id": "14717691",
+            "pb": "10.71",
+            "sb": "10.71",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.78",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shericka",
+            "lastName": "Jackson",
+            "id": "14325599",
+            "pb": "10.65",
+            "sb": "10.65",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.94",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ewa",
+            "lastName": "Swoboda",
+            "id": "14451085",
+            "pb": "11.03",
+            "sb": "11.03",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.99",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Twanisha",
+            "lastName": "Terry",
+            "id": "14553598",
+            "pb": "10.82",
+            "sb": "11.05",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.01",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "10.90",
+            "sb": "10.97",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.05",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anthonique",
+            "lastName": "Strachan",
+            "id": "14368117",
+            "pb": "10.92",
+            "sb": "10.92",
+            "nat": "BAH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.09",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gina",
+            "lastName": "Lückenkemper",
+            "id": "14450088",
+            "pb": "10.95",
+            "sb": "11.00",
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.15",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "11.18",
+          "place": 9,
+          "notes": ""
+        }
+      ]
     }
   }
 }
