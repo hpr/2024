@@ -70,7 +70,7 @@ async function getBlurbs() {
       prompt += `${rank}. ${fullName} (${nat}), ${getAge(new Date(competitor.basicData.birthDate))} years old\n`;
       prompt += `Personal Best: ${pb}, Season's Best: ${sb || 'N/A'}\n`;
 
-      prompt += `${competitor?.resultsByYear?.activeYears[0]} results for ${fullName}:\n`;
+      prompt += `Here's all of the ${competitor?.resultsByYear?.activeYears[0]} performances by ${fullName}:\n`;
       prompt +=
         competitor.resultsByYear.resultsByEvent
           .reduce((acc, { indoor, discipline, results }) => {
@@ -80,13 +80,13 @@ async function getBlurbs() {
           .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
           .map(
             ({ discipline, indoor, date, venue, place, mark, wind, notLegal }) =>
-              `${date.split(' ').slice(0, -1).join(' ')}: ${Number.parseInt(place) ? `${nth(+place)} place, ` : ''}${mark}${notLegal ? '*' : ''}${
+              `${date.split(' ').slice(0, -1).join(' ')}: ${Number.parseInt(place) ? `${nth(+place)} place, ` : ''}time of ${mark}${notLegal ? '*' : ''}${
                 wind ? ` (${wind})` : ''
               } in ${discipline}${indoor ? ` (indoor)` : ''} @ ${venue}`
           )
           .join('\n') + '\n\n';
     }
-    prompt += `Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data. Make reference to specific result performances for the athletes in your reasoning.`;
+    prompt += `Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data. Make reference to specific standout performances for the athletes in your reasoning, whether good or bad.`;
 
     fs.writeFileSync('prompt.txt', prompt);
     console.log(prompt);
