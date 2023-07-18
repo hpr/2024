@@ -1,132 +1,177 @@
-Write a race prediction and preview for the Men's 100m at the 2023 Monaco Diamond League track meet, which will happen on July 21, 2023. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:
+Write a race prediction and preview for the Women's 800m at the 2023 London Diamond League track meet, which will happen on July 23, 2023. Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:
 
-1. Ferdinand Omanyala (KEN), 27 years old
-Personal Best: 9.77, Season's Best: 9.84
-2023 results for Ferdinand Omanyala:
-03 FEB: 1st place, 6.66 in 60 Metres (indoor) @ Stadium Miramas Métropole, Miramas (FRA)
-03 FEB: 2nd place, 6.60 in 60 Metres (indoor) @ Stadium Miramas Métropole, Miramas (FRA)
-08 FEB: 2nd place, 6.63 in 60 Metres (indoor) @ Halle Michel d'Ornano, Mondeville (FRA)
-08 FEB: 1st place, 6.55 in 60 Metres (indoor) @ Halle Michel d'Ornano, Mondeville (FRA)
-11 FEB: 1st place, 6.61 in 60 Metres (indoor) @ AccorHotels Arena de Bercy, Paris (FRA)
-11 FEB: 1st place, 6.56 in 60 Metres (indoor) @ AccorHotels Arena de Bercy, Paris (FRA)
-15 FEB: 1st place, 6.58 in 60 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
-15 FEB: 1st place, 6.54 in 60 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
-24 FEB: 1st place, 9.86 (NWI) in 100 Metres @ Nyayo National Stadium, Nairobi (KEN)
-25 FEB: 1st place, 9.95 (NWI) in 100 Metres @ Nyayo National Stadium, Nairobi (KEN)
-25 FEB: 1st place, 9.81 (NWI) in 100 Metres @ Nyayo National Stadium, Nairobi (KEN)
-25 FEB: 1st place, 21.00 (NWI) in 200 Metres @ Nyayo National Stadium, Nairobi (KEN)
-12 APR: 1st place, 10.12 (-1.4) in 100 Metres @ Bestmed Tuks Stadium, Pretoria (RSA)
-19 APR: 1st place, 10.05 (+0.1) in 100 Metres @ Germiston Stadium, Johannesburg (RSA)
-29 APR: 1st place, 9.78* (+2.3) in 100 Metres @ National Stadium, Gaborone (BOT)
-29 APR: 1st place, 38.26 in 4x100 Metres Relay @ National Stadium, Gaborone (BOT)
-13 MAY: 1st place, 9.84 (-0.5) in 100 Metres @ Moi International Sports Centre, Kasarani, Nairobi (KEN)
-28 MAY: 3rd place, 10.05 (+0.1) in 100 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
-02 JUN: 2nd place, 10.05 (0.0) in 100 Metres @ Stadio Luigi Ridolfi, Firenze (ITA)
-04 JUN: 1st place, 10.13 (+1.5) in 100 Metres @ Campo Scuola Moreno Martini, Lucca (ITA)
-09 JUN: 2nd place, 9.98 (-0.9) in 100 Metres @ Stade Charléty, Paris (FRA)
-22 JUN: 1st place, 10.08 (+0.2) in 100 Metres @ Nyayo National Stadium, Nairobi (KEN)
-23 JUN: 1st place, 10.06 (-0.9) in 100 Metres @ Nyayo National Stadium, Nairobi (KEN)
-24 JUN: 1st place, 9.96 (-2.4) in 100 Metres @ Nyayo National Stadium, Nairobi (KEN)
-24 JUN: 1st place, 38.82 in 4x100 Metres Relay @ Nyayo National Stadium, Nairobi (KEN)
-07 JUL: 1st place, 10.08 (-1.4) in 100 Metres @ Nyayo National Stadium, Nairobi (KEN)
-08 JUL: 1st place, 9.85 (+0.8) in 100 Metres @ Nyayo National Stadium, Nairobi (KEN)
-12 JUL: 2nd place, 39.30 in 4x100 Metres Relay @ Stade Naimette-Xhovémont, Liège (BEL)
+1. Keely Hodgkinson (GBR), 21 years old
+Personal Best: 1:55.77, Season's Best: 1:55.77
+Here's all of the 2023 performances by Keely Hodgkinson:
+28 JAN: 1st place, time of 1:23.41 in 600 Metres (indoor) @ Sportcity Indoor Track, Manchester (GBR)
+08 FEB: 1st place, time of 1:57.87 in 800 Metres (indoor) @ Arena, Toruń (POL)
+15 FEB: 1st place, time of 1:57.71 in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+25 FEB: 1st place, time of 1:57.18 in 800 Metres (indoor) @ Utilita Arena Birmingham, Birmingham (GBR)
+02 MAR: 1st place, time of 2:01.67 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+04 MAR: 1st place, time of 2:00.05 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 1st place, time of 1:58.66 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+09 JUN: 1st place, time of 1:55.77 in 800 Metres @ Stade Charléty, Paris (FRA)
+17 JUN: 1st place, time of 52.24 in 400 Metres @ Chelmsford Sport And Athletics Centre Melbourne Park, Chelmsford (GBR)
+30 JUN: 2nd place, time of 1:58.37 in 800 Metres @ Stade Olympique de la Pontaise, Lausanne (SUI)
+08 JUL: 1st place, time of 2:01.16 in 800 Metres @ Manchester Regional Arena, Manchester (GBR)
+09 JUL: 1st place, time of 1:58.26 in 800 Metres @ Manchester Regional Arena, Manchester (GBR)
+13 JUL: 1st place, time of 53.08 in 400 Metres @ Leppävaaran Stadion, Espoo (FIN)
+13 JUL: 2nd place, time of 52.44 in 400 Metres @ Leppävaaran Stadion, Espoo (FIN)
+14 JUL: 3rd place, time of 51.76 in 400 Metres @ Leppävaaran Stadion, Espoo (FIN)
 
-2. Akani Simbine (RSA), 29 years old
-Personal Best: 9.84, Season's Best: 9.92
-2023 results for Akani Simbine:
-18 FEB: 1st place, 6.54 (0.0) in 60 Metres @ Pilditch Stadium, Pretoria (RSA)
-18 FEB: 1st place, 6.53 (0.0) in 60 Metres @ Pilditch Stadium, Pretoria (RSA)
-25 FEB: 1st place, 10.18 (-3.0) in 100 Metres @ Germiston Stadium, Johannesburg (RSA)
-30 MAR: 1st place, 9.98 (+1.0) in 100 Metres @ McArthur Stadium, Potchefstroom (RSA)
-30 MAR: 1st place, 9.92 (+0.6) in 100 Metres @ McArthur Stadium, Potchefstroom (RSA)
-30 MAR: 1st place, 10.14 (-0.2) in 100 Metres @ McArthur Stadium, Potchefstroom (RSA)
-06 MAY: 2nd place, 10.09 (-0.7) in 100 Metres @ Centennial Olympic Park, Atlanta, GA (USA)
-06 MAY: 2nd place, 10.01 (-0.2) in 100 Metres @ Centennial Olympic Park, Atlanta, GA (USA)
-28 MAY: 2nd place, 9.99 (+0.1) in 100 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
-02 JUN: 4th place, 10.09 (0.0) in 100 Metres @ Stadio Luigi Ridolfi, Firenze (ITA)
-13 JUN: 1st place, 10.07 (+0.3) in 100 Metres @ Mestský Stadion Sletište, Kladno (CZE)
-27 JUN: 1st place, 9.98 (+0.6) in 100 Metres @ Mestský Stadion, Ostrava (CZE)
-02 JUL: 1st place, 10.03 (+1.0) in 100 Metres @ Olympiastadion, Stockholm (SWE)
-16 JUL: 1st place, 9.97 (0.0) in 100 Metres @ Stadion Śląski, Chorzów (POL)
+2. Natoya Goule-Toppin (JAM), 32 years old
+Personal Best: 1:56.15, Season's Best: 1:57.90
+Here's all of the 2023 performances by Natoya Goule-Toppin:
+15 APR: 2nd place, time of 52.82 in 400 Metres @ Percy Beard Track, Gainesville, FL (USA)
+29 APR: 2nd place, time of 1:24.96 in 600 Metres @ Franklin Field, Philadelphia, PA (USA)
+28 MAY: 4th place, time of 2:00.91 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+09 JUN: 3rd place, time of 1:58.23 in 800 Metres @ Stade Charléty, Paris (FRA)
+17 JUN: 1st place, time of 51.76 in 400 Metres @ Marietta HS, Marietta, GA (USA)
+30 JUN: 3rd place, time of 1:58.90 in 800 Metres @ Stade Olympique de la Pontaise, Lausanne (SUI)
+08 JUL: 3rd place, time of 52.25 in 400 Metres @ National Stadium, Kingston (JAM)
+09 JUL: 1st place, time of 1:58.89 in 800 Metres @ National Stadium, Kingston (JAM)
+16 JUL: 3rd place, time of 1:57.90 in 800 Metres @ Stadion Śląski, Chorzów (POL)
 
-3. Ackeem Blake (JAM), 21 years old
-Personal Best: 9.89, Season's Best: 9.89
-2023 results for Ackeem Blake:
-11 FEB: 1st place, 6.63 (-0.4) in 60 Metres @ National Stadium, Kingston (JAM)
-25 FEB: 1st place, 6.56 (+0.4) in 60 Metres @ National Stadium, Kingston (JAM)
-25 FEB: 1st place, 6.42 (+0.9) in 60 Metres @ National Stadium, Kingston (JAM)
-18 MAR: 2nd place, 20.84 (-1.4) in 200 Metres @ National Stadium, Kingston (JAM)
-08 APR: 1st place, 10.05* (+2.8) in 100 Metres @ Ansin Sports Complex, Miramar, FL (USA)
-08 APR: 2nd place, 9.93* (+2.2) in 100 Metres @ Ansin Sports Complex, Miramar, FL (USA)
-22 APR: 1st place, 9.99 (+1.2) in 100 Metres @ National Stadium, Kingston (JAM)
-22 APR: DQ (NWI) in 100 Metres @ National Stadium, Kingston (JAM)
-21 MAY: 3rd place, 9.87* (+4.4) in 100 Metres @ National Sports Centre, Devonshire (BER)
-27 MAY: 1st place, 9.89 (+1.0) in 100 Metres @ Drake Stadium, Los Angeles, CA (USA)
-17 JUN: 2nd place, 10.07 (-0.9) in 100 Metres @ National Stadium, Kingston (JAM)
-24 JUN: 2nd place, 9.93 (+1.3) in 100 Metres @ Icahn Stadium, New York, NY (USA)
-06 JUL: 2nd place, 10.00 (+0.6) in 100 Metres @ National Stadium, Kingston (JAM)
-07 JUL: 1st place, 10.21 (-2.2) in 100 Metres @ National Stadium, Kingston (JAM)
-07 JUL: 4th place, 10.01 (+1.1) in 100 Metres @ National Stadium, Kingston (JAM)
-16 JUL: 7th place, 10.15 (0.0) in 100 Metres @ Stadion Śląski, Chorzów (POL)
+3. Raevyn Rogers (USA), 26 years old
+Personal Best: 1:56.81, Season's Best: 1:59.83
+Here's all of the 2023 performances by Raevyn Rogers:
+01 APR: 2nd place, time of 3:25.65 in 4x400 Metres Relay @ Mike A. Myers Stadium, Austin, TX (USA)
+15 APR: 7th place, time of 52.59 in 400 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
+06 MAY: 1st place, time of 2:03.53 in 800 Metres @ Griswold Stadium, Portland, OR (USA)
+04 JUN: 2nd place, time of 2:00.20 in 800 Metres @ Mt. Hood Community College, Gresham, OR (USA)
+09 JUN: 10th place, time of 2:00.00 in 800 Metres @ Stade Charléty, Paris (FRA)
+06 JUL: 1st place, time of 2:00.08 in 800 Metres @ Hayward Field, Eugene, OR (USA)
+07 JUL: 2nd place, time of 2:00.44 in 800 Metres @ Hayward Field, Eugene, OR (USA)
+09 JUL: 2nd place, time of 1:59.83 in 800 Metres @ Hayward Field, Eugene, OR (USA)
 
-4. Courtney Lindsey (USA), 24 years old
-Personal Best: 9.89, Season's Best: 9.89
-2023 results for Courtney Lindsey:
-03 FEB: 2nd place, 20.58 in 200 Metres (indoor) @ Convention Center, Albuquerque, NM (USA)
-04 FEB: 3rd place, 6.71 in 60 Metres (indoor) @ Convention Center, Albuquerque, NM (USA)
-10 FEB: 1st place, 6.63 in 60 Metres (indoor) @ Sports Performance Center, Lubbock, TX (USA)
-10 FEB: 2nd place, 6.61 in 60 Metres (indoor) @ Sports Performance Center, Lubbock, TX (USA)
-11 FEB: 3rd place, 3:06.72 in 4x400 Metres Relay (indoor) @ Sports Performance Center, Lubbock, TX (USA)
-24 FEB: 1st place, 6.58 in 60 Metres (indoor) @ Sports Performance Center, Lubbock, TX (USA)
-24 FEB: 1st place, 20.32 in 200 Metres (indoor) @ Sports Performance Center, Lubbock, TX (USA)
-25 FEB: 4th place, 6.59 in 60 Metres (indoor) @ Sports Performance Center, Lubbock, TX (USA)
-25 FEB: 1st place, 20.13 in 200 Metres (indoor) @ Sports Performance Center, Lubbock, TX (USA)
-10 MAR: 4th place, 20.60 in 200 Metres (indoor) @ Convention Center, Albuquerque, NM (USA)
-31 MAR: 2nd place, 39.61 in 4x100 Metres Relay @ Mike A. Myers Stadium, Austin, TX (USA)
-01 APR: 1st place, 20.11 (+0.6) in 200 Metres @ Mike A. Myers Stadium, Austin, TX (USA)
-01 APR: 7th place, 39.34 in 4x100 Metres Relay @ Mike A. Myers Stadium, Austin, TX (USA)
-15 APR: 2nd place, 10.04 (+1.0) in 100 Metres @ Percy Beard Track, Gainesville, FL (USA)
-15 APR: 1st place, 38.60 in 4x100 Metres Relay @ Percy Beard Track, Gainesville, FL (USA)
-15 APR: 3rd place, 3:04.10 in 4x400 Metres Relay @ Percy Beard Track, Gainesville, FL (USA)
-29 APR: 2nd place, 19.94 (+1.3) in 200 Metres @ Terry & Linda Fuller T&F Complex, Lubbock, TX (USA)
-13 MAY: 1st place, 10.17 (+0.6) in 100 Metres @ John Jacobs Track Complex, Norman, OK (USA)
-13 MAY: 1st place, 20.33 (+0.8) in 200 Metres @ John Jacobs Track Complex, Norman, OK (USA)
-14 MAY: 1st place, 10.08* (+2.1) in 100 Metres @ John Jacobs Track Complex, Norman, OK (USA)
-14 MAY: 1st place, 20.12 (+1.1) in 200 Metres @ John Jacobs Track Complex, Norman, OK (USA)
-14 MAY: 1st place, 38.24 in 4x100 Metres Relay @ John Jacobs Track Complex, Norman, OK (USA)
-24 MAY: 1st place, 10.31 (-0.8) in 100 Metres @ Hornet Stadium - Sac St., Sacramento, CA (USA)
-24 MAY: 1st place, 20.42 (+1.3) in 200 Metres @ Hornet Stadium - Sac St., Sacramento, CA (USA)
-26 MAY: 1st place, 10.02 (+1.8) in 100 Metres @ Hornet Stadium - Sac St., Sacramento, CA (USA)
-26 MAY: 1st place, 19.92* (+2.3) in 200 Metres @ Hornet Stadium - Sac St., Sacramento, CA (USA)
-26 MAY: 2nd place, 39.16 in 4x100 Metres Relay @ Hornet Stadium - Sac St., Sacramento, CA (USA)
-07 JUN: 2nd place, 10.03 (+1.3) in 100 Metres @ Mike A. Myers Stadium, Austin, TX (USA)
-07 JUN: 1st place, 19.88 (+0.6) in 200 Metres @ Mike A. Myers Stadium, Austin, TX (USA)
-07 JUN: 1st place, 38.20 in 4x100 Metres Relay @ Mike A. Myers Stadium, Austin, TX (USA)
-09 JUN: 1st place, 9.89 (+1.8) in 100 Metres @ Mike A. Myers Stadium, Austin, TX (USA)
-09 JUN: 2nd place, 19.86 (+0.9) in 200 Metres @ Mike A. Myers Stadium, Austin, TX (USA)
-06 JUL: 5th place, 10.17 (+0.2) in 100 Metres @ Hayward Field, Eugene, OR (USA)
-07 JUL: 6th place, 10.14 (+1.2) in 100 Metres @ Hayward Field, Eugene, OR (USA)
-08 JUL: 2nd place, 20.18 (+0.8) in 200 Metres @ Hayward Field, Eugene, OR (USA)
-09 JUL: 2nd place, 19.94 (-0.1) in 200 Metres @ Hayward Field, Eugene, OR (USA)
-09 JUL: 3rd place, 19.85 (-0.1) in 200 Metres @ Hayward Field, Eugene, OR (USA)
+4. Jemma Reekie (GBR), 25 years old
+Personal Best: 1:56.90, Season's Best: 1:58.93
+Here's all of the 2023 performances by Jemma Reekie:
+27 JAN: 5th place, time of 2:02.10 in 800 Metres (indoor) @ Messehalle, Karlsruhe (GER)
+04 FEB: time of 4:08.79 in 1500 Metres (indoor) @ The Track at New Balance, Boston, MA (USA)
+04 FEB: 6th place, time of 4:28.49 in One Mile (indoor) @ The Track at New Balance, Boston, MA (USA)
+11 FEB: time of 4:08.03 in 1500 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
+11 FEB: 9th place, time of 4:28.91 in One Mile (indoor) @ Armory Track&Field Center, New York, NY (USA)
+31 MAY: 2nd place, time of 2:00.90 in 800 Metres @ Stade des Grands Pêchers, Montreuil (FRA)
+04 JUN: 1st place, time of 1:58.94 in 800 Metres @ Stadion Śląski, Chorzów (POL)
+13 JUN: 3rd place, time of 1:59.41 in 800 Metres @ Paavo Nurmen Stadion, Turku (FIN)
+18 JUN: 3rd place, time of 4:01.40 in 1500 Metres @ Stade Raymond Petit, Tomblaine (FRA)
+30 JUN: 5th place, time of 1:59.32 in 800 Metres @ Stade Olympique de la Pontaise, Lausanne (SUI)
+08 JUL: 1st place, time of 2:02.71 in 800 Metres @ Manchester Regional Arena, Manchester (GBR)
+09 JUL: 2nd place, time of 1:58.93 in 800 Metres @ Manchester Regional Arena, Manchester (GBR)
+16 JUL: 7th place, time of 3:58.65 in 1500 Metres @ Stadion Śląski, Chorzów (POL)
 
-5. Letsile Tebogo (BOT), 20 years old
-Personal Best: 9.91, Season's Best: 10.05
-2023 results for Letsile Tebogo:
-04 FEB: 1st place, 46.21 in 400 Metres @ Francistown Stadion, Francistown (BOT)
-18 FEB: 1st place, 31.52 in 300 Metres @ Pilditch Stadium, Pretoria (RSA)
-08 APR: 2nd place, 20.00 (+1.9) in 200 Metres @ Ansin Sports Complex, Miramar, FL (USA)
-29 APR: 2nd place, 9.91* (+2.3) in 100 Metres @ National Stadium, Gaborone (BOT)
-29 APR: 1st place, 19.87 (-0.3) in 200 Metres @ National Stadium, Gaborone (BOT)
-28 MAY: 4th place, 10.09 (+0.1) in 100 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
-09 JUN: 3rd place, 10.05 (-0.9) in 100 Metres @ Stade Charléty, Paris (FRA)
-30 JUN: 1st place, 20.01 (-1.4) in 200 Metres @ Stade Olympique de la Pontaise, Lausanne (SUI)
-14 JUL: 1st place, 44.75 in 400 Metres @ Stadio G. Teghil, Lignano Sabbiadoro (ITA)
+5. Diribe Welteji (ETH), 21 years old
+Personal Best: 1:57.02, Season's Best: N/A
+Here's all of the 2023 performances by Diribe Welteji:
+04 FEB: 1st place, time of 8:33.44 in 3000 Metres (indoor) @ Stade couvert Jesse Owens, Val-de-Reuil (FRA)
+15 FEB: 1st place, time of 8:34.84 in 3000 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+05 MAY: 2nd place, time of 3:59.34 in 1500 Metres @ Suhaim bin Hamad Stadium, Doha (QAT)
+27 MAY: 1st place, time of 3:57.84 in 1500 Metres @ Drake Stadium, Los Angeles, CA (USA)
+09 JUN: time of DNF in 5000 Metres @ Stade Charléty, Paris (FRA)
+27 JUN: 1st place, time of 3:57.38 in 1500 Metres @ Mestský Stadion, Ostrava (CZE)
+02 JUL: 2nd place, time of 4:02.79 in 1500 Metres @ Olympiastadion, Stockholm (SWE)
+16 JUL: 3rd place, time of 3:55.08 in 1500 Metres @ Stadion Śląski, Chorzów (POL)
 
-6. Kishane Thompson (JAM), 22 years old
-Personal Best: 9.91, Season's Best: 9.91
-2023 results for Kishane Thompson:
-06 JUL: 1st place, 9.91 (+0.6) in 100 Metres @ National Stadium, Kingston (JAM)
+6. Halimah Nakaayi (UGA), 28 years old
+Personal Best: 1:57.78, Season's Best: 1:57.78
+Here's all of the 2023 performances by Halimah Nakaayi:
+08 FEB: 5th place, time of 2:01.64 in 800 Metres (indoor) @ Arena, Toruń (POL)
+11 FEB: 1st place, time of 1:59.18 in 800 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
+15 FEB: 4th place, time of 2:01.85 in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+06 MAY: 1st place, time of 2:00.21 in 800 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
+27 MAY: 2nd place, time of 1:59.35 in 800 Metres @ Drake Stadium, Los Angeles, CA (USA)
+04 JUN: 3rd place, time of 1:59.40 in 800 Metres @ Stadion Śląski, Chorzów (POL)
+09 JUN: 6th place, time of 1:58.81 in 800 Metres @ Stade Charléty, Paris (FRA)
+13 JUN: 4th place, time of 1:59.51 in 800 Metres @ Paavo Nurmen Stadion, Turku (FIN)
+01 JUL: 1st place, time of 4:08.42 in 1500 Metres @ Stade d'Athletisme Pierre Voillequin, Troyes (FRA)
+08 JUL: 5th place, time of 54.04 in 400 Metres @ Sportcentrum Wembley, Kortrijk (BEL)
+16 JUL: 2nd place, time of 1:57.78 in 800 Metres @ Stadion Śląski, Chorzów (POL)
 
-Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data. Make reference to specific result performances for the athletes in your reasoning.
+7. Rénelle Lamote (FRA), 29 years old
+Personal Best: 1:57.84, Season's Best: 1:59.30
+Here's all of the 2023 performances by Rénelle Lamote:
+16 JUL: 7th place, time of 1:59.30 in 800 Metres @ Stadion Śląski, Chorzów (POL)
+
+8. Sage Hurta-Klecker (USA), 25 years old
+Personal Best: 1:57.85, Season's Best: 1:58.09
+Here's all of the 2023 performances by Sage Hurta-Klecker:
+28 JAN: 2nd place, time of 2:36.37 in 1000 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
+11 FEB: time of 4:07.12 in 1500 Metres (indoor) @ Armory Track&Field Center, New York, NY (USA)
+11 FEB: 8th place, time of 4:26.04 in One Mile (indoor) @ Armory Track&Field Center, New York, NY (USA)
+18 FEB: 2nd place, time of 4:17.26 in 1500 Metres (indoor) @ Convention Center, Albuquerque, NM (USA)
+29 APR: 3rd place, time of 1:25.33 in 600 Metres @ Franklin Field, Philadelphia, PA (USA)
+06 MAY: 1st place, time of 4:06.34 in 1500 Metres @ Hilmer Lodge Stadium, Walnut, CA (USA)
+28 MAY: 3rd place, time of 2:00.62 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+02 JUN: time of DNF in 1500 Metres @ Stadio Luigi Ridolfi, Firenze (ITA)
+09 JUN: 7th place, time of 1:59.01 in 800 Metres @ Stade Charléty, Paris (FRA)
+24 JUN: 2nd place, time of 2:00.77 in 800 Metres @ Icahn Stadium, New York, NY (USA)
+06 JUL: 1st place, time of 2:01.48 in 800 Metres @ Hayward Field, Eugene, OR (USA)
+07 JUL: 4th place, time of 2:00.65 in 800 Metres @ Hayward Field, Eugene, OR (USA)
+09 JUL: 4th place, time of 2:01.19 in 800 Metres @ Hayward Field, Eugene, OR (USA)
+16 JUL: 4th place, time of 1:58.09 in 800 Metres @ Stadion Śląski, Chorzów (POL)
+
+9. Catriona Bisset (AUS), 29 years old
+Personal Best: 1:58.09, Season's Best: 1:58.32
+Here's all of the 2023 performances by Catriona Bisset:
+15 FEB: 6th place, time of 2:02.03 in 800 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+22 FEB: 2nd place, time of 2:01.74 in 800 Metres (indoor) @ Gallur, Madrid (ESP)
+25 FEB: 2nd place, time of 1:59.83 in 800 Metres (indoor) @ Utilita Arena Birmingham, Birmingham (GBR)
+09 MAR: 1st place, time of 1:59.90 in 800 Metres @ Hagenauer Reserve, Box Hill, Melbourne (AUS)
+25 MAR: 1st place, time of 1:59.74 in 800 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
+31 MAR: 1st place, time of 2:04.60 in 800 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
+02 APR: 1st place, time of 1:58.32 in 800 Metres @ Queensland Sport and Athletics Centre, Nathan, Brisbane (AUS)
+28 MAY: 2nd place, time of 2:00.11 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+04 JUN: 2nd place, time of 1:59.22 in 800 Metres @ Stadion Śląski, Chorzów (POL)
+09 JUN: 4th place, time of 1:58.55 in 800 Metres @ Stade Charléty, Paris (FRA)
+13 JUN: 6th place, time of 2:00.07 in 800 Metres @ Paavo Nurmen Stadion, Turku (FIN)
+30 JUN: 4th place, time of 1:58.95 in 800 Metres @ Stade Olympique de la Pontaise, Lausanne (SUI)
+16 JUL: time of DNF in 800 Metres @ Stadion Śląski, Chorzów (POL)
+
+10. Anita Horvat (SLO), 26 years old
+Personal Best: 1:58.73, Season's Best: 1:58.73
+Here's all of the 2023 performances by Anita Horvat:
+27 JAN: 1st place, time of 2:00.44 in 800 Metres (indoor) @ Messehalle, Karlsruhe (GER)
+08 FEB: 3rd place, time of 2:01.42 in 800 Metres (indoor) @ Arena, Toruń (POL)
+22 FEB: 5th place, time of 2:02.21 in 800 Metres (indoor) @ Gallur, Madrid (ESP)
+25 FEB: 4th place, time of 2:00.62 in 800 Metres (indoor) @ Utilita Arena Birmingham, Birmingham (GBR)
+02 MAR: 1st place, time of 2:03.06 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+04 MAR: 1st place, time of 2:03.11 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+05 MAR: 2nd place, time of 2:00.54 in 800 Metres (indoor) @ Ataköy Arena, Istanbul (TUR)
+29 APR: 1st place, time of 1:26.26 in 600 Metres @ Arena Civica, Milano (ITA)
+28 MAY: 5th place, time of 2:01.30 in 800 Metres @ Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)
+02 JUN: 1st place, time of 52.68 in 400 Metres @ Športni center Vinko Cajnko, Slovenj Gradec (SLO)
+02 JUN: 1st place, time of 47.70 in 4x100 Metres Relay @ Športni center Vinko Cajnko, Slovenj Gradec (SLO)
+03 JUN: 2nd place, time of 24.59 (-1.1) in 200 Metres @ Športni center Vinko Cajnko, Slovenj Gradec (SLO)
+03 JUN: 1st place, time of 3:44.14 in 4x400 Metres Relay @ Športni center Vinko Cajnko, Slovenj Gradec (SLO)
+10 JUN: 1st place, time of 2:00.70 in 800 Metres @ Centre sportif Bout-du-Monde, Genève (SUI)
+13 JUN: 1st place, time of 1:58.73 in 800 Metres @ Paavo Nurmen Stadion, Turku (FIN)
+18 JUN: 1st place, time of 2:00.63 in 800 Metres @ Golęcin Stadion, Poznan (POL)
+20 JUN: 4th place, time of 51.80 in 400 Metres @ Stadion Śląski, Chorzów (POL)
+22 JUN: 1st place, time of 3:14.72 in 4x400 Metres Relay Mixed @ Stadion Śląski, Chorzów (POL)
+16 JUL: 6th place, time of 1:58.94 in 800 Metres @ Stadion Śląski, Chorzów (POL)
+
+11. Aneta Lemiesz (POL), 42 years old
+Personal Best: 1:59.93, Season's Best: N/A
+Here's all of the 2023 performances by Aneta Lemiesz:
+14 JAN: 1st place, time of 1:30.48 in 600 Metres (indoor) @ Hala COS OPO, Spala (POL)
+22 JAN: time of DNF in 800 Metres (indoor) @ Coque Sport Center, Kirchberg, Luxembourg (LUX)
+27 JAN: time of DNF in 800 Metres (indoor) @ Messehalle, Karlsruhe (GER)
+29 JAN: time of DNF in 800 Metres (indoor) @ Sätrahallen, Stockholm (SWE)
+08 FEB: time of DNF in 800 Metres (indoor) @ Arena, Toruń (POL)
+11 FEB: time of DNF in 800 Metres (indoor) @ L'Anneau-Halle d'athlétisme de Metz, Metz (FRA)
+15 FEB: time of DNF in 1500 Metres (indoor) @ Arena Stade Couvert, Liévin (FRA)
+18 FEB: 3rd place, time of 54.83 in 400 Metres (indoor) @ Arena, Toruń (POL)
+25 FEB: time of DNF in 800 Metres (indoor) @ Utilita Arena Birmingham, Birmingham (GBR)
+10 JUN: 5th place, time of 56.99 in 400 Metres @ Stadion GOS, Gdansk (POL)
+13 JUN: time of DNF in 800 Metres @ Paavo Nurmen Stadion, Turku (FIN)
+18 JUN: time of DNF in 800 Metres @ Golęcin Stadion, Poznan (POL)
+25 JUN: 1st place, time of 1:32.38 in 600 Metres @ Stadion Zygmunta Szelesta, Warszawa (POL)
+27 JUN: time of DNF in 1500 Metres @ Mestský Stadion, Ostrava (CZE)
+02 JUL: time of DNF in 1500 Metres @ Olympiastadion, Stockholm (SWE)
+05 JUL: time of DNF in 800 Metres @ Tingvalla IP, Karlstad (SWE)
+05 JUL: time of DNF in 1500 Metres @ Tingvalla IP, Karlstad (SWE)
+07 JUL: time of DNF in 800 Metres @ Stade Sottevillais 76, Sotteville-lès-Rouen (FRA)
+16 JUL: time of DNF in 800 Metres @ Stadion Śląski, Chorzów (POL)
+
+Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data. Make reference to specific standout performances for the athletes in your reasoning, whether good or bad.

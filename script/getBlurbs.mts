@@ -2,8 +2,14 @@ import fs from 'fs';
 import { BLURBCACHE_PATH, ENTRIES_PATH, GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, MEET, standingsMeets } from './const.mjs';
 import { AthleticsEvent, DLMeet, Entries, Competitor, ResultsByYearResult, BlurbCache } from './types.mjs';
 import dotenv from 'dotenv';
-import { ChatGPTAPI, ChatMessage } from 'chatgpt';
+import { Configuration, OpenAIApi } from 'openai';
 dotenv.config();
+
+const openai = new OpenAIApi(
+  new Configuration({
+    apiKey: process.env.OPENAI_API_KEY,
+  })
+);
 
 const entries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
 const blurbCache: BlurbCache = JSON.parse(fs.readFileSync(BLURBCACHE_PATH, 'utf-8'));
@@ -40,7 +46,15 @@ async function getBlurbs() {
       .join(' ');
     let prompt = `Write a race prediction and preview for the ${gender}'s ${ungenderedEvt} at the 2023 ${meetName} Diamond League track meet, which will happen on ${
       standingsMeets.find((sm) => sm.meet === MEET)?.date
-    }. ${evt.includes('5000') ? 'Note that in long races like the 5000, athletes are typically spread far apart and most do not run close to their personal bests every time. ' : ''}${targetTime ? `Note that this race will be a World Record attempt with pacers, the goal time is ${targetTime}, but only the top athletes will be following the pacers. Only one or two athletes will be close to the target, the rest will be very far behind. ` : ''}Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:\n\n`;
+    }. ${
+      evt.includes('5000')
+        ? 'Note that in long races like the 5000, athletes are typically spread far apart and most do not run close to their personal bests every time. '
+        : ''
+    }${
+      targetTime
+        ? `Note that this race will be a World Record attempt with pacers, the goal time is ${targetTime}, but only the top athletes will be following the pacers. Only one or two athletes will be close to the target, the rest will be very far behind. `
+        : ''
+    }Start your response with a listing of the predicted finish and times of the athletes. Here are the competitors:\n\n`;
     for (const entrant of entries[MEET][evt]?.entrants ?? []) {
       const { firstName, lastName, pb, sb, nat, id } = entrant;
       const fullName = `${firstName} ${lastName}`;
@@ -90,15 +104,21 @@ async function getBlurbs() {
 
     fs.writeFileSync('prompt.txt', prompt);
     console.log(prompt);
-    blurbCache[MEET].blurbs[evt] ??= '';
+    // blurbCache[MEET].blurbs[evt] ??= '';
     // blurbCache[MEET].blurbs[evt] = response;
-    entries[MEET][evt]!.blurb = blurbCache[MEET].blurbs[evt];
+    // entries[MEET][evt]!.blurb = blurbCache[MEET].blurbs[evt];
     fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache));
     fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries));
     // await new Promise((res) => setTimeout(res, 1000));
     if (!blurbCache[MEET].blurbs[evt]) {
-      console.log('Enter response:');
-      blurbCache[MEET].blurbs[evt] = fs.readFileSync(0).toString();
+      const completion = await openai.createChatCompletion({
+        model: 'gpt-3.5-turbo-16k',
+        messages: [{ role: 'user', content: prompt }],
+        temperature: 0.6,
+      });
+      blurbCache[MEET].blurbs[evt] = completion.data;
+      // console.log('Enter response:');
+      // blurbCache[MEET].blurbs[evt] = fs.readFileSync(0).toString();
       fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache));
     }
   }
