@@ -86,7 +86,7 @@ async function getBlurbs() {
           )
           .join('\n') + '\n\n';
     }
-    prompt += `Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data. Make reference to specific result times for the athletes in your reasoning, not just their personal bests and season's bests.`;
+    prompt += `Please predict the final places and times of the athletes. List the athletes in order of finish with their times. Then, explain why you think they will finish in that order. In your reasoning, compare athletes with each other and don't be afraid to make harsh judgements based on the data. Make reference to specific result performances for the athletes in your reasoning.`;
 
     fs.writeFileSync('prompt.txt', prompt);
     console.log(prompt);
