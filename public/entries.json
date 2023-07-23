@@ -1340,7 +1340,181 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "8:57.35",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jackline",
+            "lastName": "Chepkoech",
+            "id": "14989892",
+            "pb": "9:02.43",
+            "sb": "9:04.07",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:04.34",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Beatrice",
+            "lastName": "Chepkoech",
+            "id": "14383286",
+            "pb": "8:44.32",
+            "sb": "9:05.98",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:16.10",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aimee",
+            "lastName": "Pratt",
+            "id": "14527315",
+            "pb": "9:15.64",
+            "sb": "9:28.00",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:17.21",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Courtney",
+            "lastName": "Wayment",
+            "id": "14617090",
+            "pb": "9:09.91",
+            "sb": "9:11.41",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:19.07",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Flavie",
+            "lastName": "Renouard",
+            "id": "14753918",
+            "pb": "9:29.10",
+            "sb": "9:29.10",
+            "nat": "FRA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "9:25.49",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kristlin",
+            "lastName": "Gear",
+            "id": "14694660",
+            "pb": "9:12.81",
+            "sb": "9:12.81",
+            "nat": "USA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "9:30.19",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alicja",
+            "lastName": "Konieczek",
+            "id": "14424786",
+            "pb": "9:25.15",
+            "sb": "9:25.51",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:33.40",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "9:33.64",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Irene",
+            "lastName": "Sánchez-Escribano",
+            "id": "14438470",
+            "pb": "9:20.04",
+            "sb": "9:20.04",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:34.76",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Michelle",
+            "lastName": "Finn",
+            "id": "14414945",
+            "pb": "9:29.25",
+            "sb": "9:41.16",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9:59.12",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elizabeth",
+            "lastName": "Bird",
+            "id": "14422252",
+            "pb": "9:07.87",
+            "sb": null,
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10:05.59",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Poppy",
+            "lastName": "Tank",
+            "id": "14473353",
+            "pb": "10:02.77",
+            "sb": "10:02.77",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Fancy",
+            "lastName": "Cherono",
+            "id": "14798265",
+            "pb": "9:27.30",
+            "sb": "9:32.93",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Men": {
       "date": "2023-07-23T15:19",
