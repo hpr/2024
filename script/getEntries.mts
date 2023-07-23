@@ -22,6 +22,9 @@ import { TextItem } from 'pdfjs-dist/types/src/display/api.js';
 		firstName: name.split(' ').slice(1).join(' '),
     lastName: lastName[0].toUpperCase() + lastName.slice(1).toLowerCase(),
     nat: tr.querySelector('.nat-code').innerText,
+    pb: tr.querySelector('.pb').innerText,
+    sb: tr.querySelector('.sb').innerText,
+    hasAvy: true,
     id,
   }
 })
