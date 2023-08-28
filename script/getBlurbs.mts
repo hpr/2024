@@ -37,7 +37,7 @@ async function getBlurbs() {
     const targetTime = entries[MEET][evt]?.targetTime;
     const ungenderedEvt = evt
       .split(' ') .filter((w) => 
-      !w.toLowerCase().includes('men')).join(' ').replace('m', ' Metres');
+      !w.toLowerCase().includes('men')).join(' ').replace('m', ' Metres').replace(/Steeple$/, 'Steeplechase');
     fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache));
     fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries));
     if (!blurbCache[MEET].blurbs[evt]) {
