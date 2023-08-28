@@ -42,7 +42,7 @@ export default function App() {
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('london23');
+  const [meet] = useState<DLMeet>('zurich23');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -331,7 +331,7 @@ export default function App() {
                 <Burger opened={navbarOpen} onClick={() => setNavbarOpen((o) => !o)} size="sm" color={theme.colors.gray[6]} mr="xl" />
               </MediaQuery>
               <Text size="md">
-                Fantasy London '23
+                Fantasy Zurich '23
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20}>
