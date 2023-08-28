@@ -291,7 +291,7 @@ export const standingsMeets: { meet: DLMeet; date: string }[] = [
   { meet: 'monaco23', date: 'July 21, 2023' },
   { meet: 'london23', date: 'July 23, 2023' },
   { meet: 'zurich23', date: 'August 31, 2023' },
-  { meet: 'shenzhen23', date: 'September 2, 2023' },
+  { meet: 'xiamen23', date: 'September 2, 2023' },
   { meet: 'brussels23', date: 'September 8, 2023' },
   { meet: 'eugene23', date: 'September 16-17, 2023' },
 ];

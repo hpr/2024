@@ -15,7 +15,7 @@ export type DLMeet =
   | 'monaco23'
   | 'london23'
   | 'zurich23'
-  | 'shenzhen23'
+  | 'xiamen23'
   | 'brussels23'
   | 'eugene23';
 
