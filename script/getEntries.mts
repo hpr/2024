@@ -57,6 +57,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   monaco23: ['https://monaco.diamondleague.com/en/programme-resultats-monaco-en/'],
   london23: ['https://london.diamondleague.com/lists-results-london/'],
   zurich23: ['https://zurich.diamondleague.com/en/programme-results-zurich/'],
+  xiamen23: ['https://xiamen.diamondleague.com/program-results/program-2023/'],
 };
 
 const idTeams = {

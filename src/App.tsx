@@ -42,7 +42,7 @@ export default function App() {
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('zurich23');
+  const [meet] = useState<DLMeet>('xiamen23');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -190,7 +190,7 @@ export default function App() {
               <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
               <TextInput
                 withAsterisk
-                label="Tiebreaker: Men's 200m winning time?"
+                label="Tiebreaker: Women's 3000m winning time?"
                 placeholder="e.g. 19.60"
                 {...registerForm.getInputProps('tiebreaker')}
               />
@@ -352,7 +352,7 @@ export default function App() {
                       pressing "Save Picks" and then registering or logging in to an account.
                     </Text>
                     <Text mb={10}>
-                      <strong>Submissions Deadline:</strong> Thursday August 31st, before the DL TV window starts, by 2pm ET.
+                      <strong>Submissions Deadline:</strong> Sunday September 2nd, before the DL TV window starts, by 7am ET.
                       {/* <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
                       Free T-Shirt. Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes! */}
