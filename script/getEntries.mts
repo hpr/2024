@@ -501,7 +501,7 @@ const getEntries = async () => {
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
             date: `${year}-${month}-${day}T${document.querySelector('.time')!.getAttribute('data-starttime')}`,
-            blurb: blurbCache[meet]?.blurbs?.[name]?.choices[0].message?.content,
+            blurb: blurbCache[meet]?.blurbs?.[name],
             targetTime: targetTimes[meet]?.[name],
             entrants: entrants.sort(entrantSortFunc),
           };
