@@ -86,7 +86,135 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "44.38",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kirani",
+            "lastName": "James",
+            "id": "14195659",
+            "pb": "43.74",
+            "sb": "44.50",
+            "nat": "GRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.38",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Quincy",
+            "lastName": "Hall",
+            "id": "14597236",
+            "pb": "44.37",
+            "sb": "44.37",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.82",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rusheen",
+            "lastName": "McDonald",
+            "id": "14468667",
+            "pb": "43.93",
+            "sb": "44.03",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.99",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Vernon",
+            "lastName": "Norwood",
+            "id": "14490237",
+            "pb": "44.26",
+            "sb": "44.26",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.10",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gilles",
+            "lastName": "Biron",
+            "id": "14630769",
+            "pb": "45.05",
+            "sb": "45.05",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.19",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Attila",
+            "lastName": "Molnár",
+            "id": "14712930",
+            "pb": "44.84",
+            "sb": "44.84",
+            "nat": "HUN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.19",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yuki Joseph",
+            "lastName": "Nakajima",
+            "id": "14915400",
+            "pb": "45.04",
+            "sb": "45.04",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.29",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zandrion",
+            "lastName": "Barnes",
+            "id": "14875542",
+            "pb": "44.90",
+            "sb": "44.90",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.34",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alex",
+            "lastName": "Haydock-Wilson",
+            "id": "14735578",
+            "pb": "45.08",
+            "sb": "45.25",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Women": {
       "date": "2023-09-02T19:16",
