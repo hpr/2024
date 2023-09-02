@@ -2006,7 +2006,250 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:56.56",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Freweyni",
+            "lastName": "Hailu",
+            "id": "14836656",
+            "pb": "3:56.28",
+            "sb": "3:57.65",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:56.72",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nelly",
+            "lastName": "Chepchirchir",
+            "id": "14892139",
+            "pb": "3:57.90",
+            "sb": "3:57.90",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:57.92",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Linden",
+            "lastName": "Hall",
+            "id": "14272002",
+            "pb": "3:57.27",
+            "sb": "3:57.27",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:58.22",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Melissa",
+            "lastName": "Courtney-Bryant",
+            "id": "14274781",
+            "pb": "3:58.01",
+            "sb": "3:58.01",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:00.84",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Worknesh",
+            "lastName": "Mesele",
+            "id": "14852703",
+            "pb": "3:57.00",
+            "sb": "3:57.00",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:00.86",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Saron",
+            "lastName": "Berhe",
+            "id": "15009577",
+            "pb": "4:02.30",
+            "sb": "4:02.30",
+            "nat": "ETH",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "4:01.48",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Healy",
+            "id": "14705242",
+            "pb": "3:59.68",
+            "sb": "3:59.68",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:01.66",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Danielle",
+            "lastName": "Jones",
+            "id": "14479600",
+            "pb": "4:02.83",
+            "sb": "4:02.83",
+            "nat": "USA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "4:03.27",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tigist",
+            "lastName": "Girma",
+            "id": "14894776",
+            "pb": "3:59.33",
+            "sb": "3:59.33",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:03.69",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Helen",
+            "lastName": "Schlachtenhaufen",
+            "id": "14625724",
+            "pb": "4:01.09",
+            "sb": "4:01.55",
+            "nat": "USA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "4:05.15",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Purity",
+            "lastName": "Chepkirui",
+            "id": "14989663",
+            "pb": "4:04.51",
+            "sb": "4:04.51",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:05.52",
+          "place": 12,
+          "notes": ""
+        },
+        {
+          "mark": "4:06.07",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Claudia Mihaela",
+            "lastName": "Bobocea",
+            "id": "14377909",
+            "pb": "4:01.10",
+            "sb": "4:03.80",
+            "nat": "ROU",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:06.45",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emily",
+            "lastName": "MacKay",
+            "id": "14667572",
+            "pb": "3:59.99",
+            "sb": "3:59.99",
+            "nat": "USA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "4:07.94",
+          "place": 15,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gaia",
+            "lastName": "Sabbatini",
+            "id": "14682711",
+            "pb": "4:01.24",
+            "sb": "4:01.24",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:12.86",
+          "place": 16,
+          "notes": "",
+          "entrant": {
+            "firstName": "Chunyu",
+            "lastName": "Wang",
+            "id": "14462001",
+            "pb": "4:11.42",
+            "sb": "4:16.65",
+            "nat": "CHN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Charlotte",
+            "lastName": "Mouchet",
+            "id": "14534796",
+            "pb": "4:07.47",
+            "sb": "4:07.47",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Kristie",
+            "lastName": "Schoffield",
+            "id": "14679586",
+            "pb": "4:10.12",
+            "sb": "4:10.12",
+            "nat": "USA",
+            "hasAvy": false
+          }
+        }
+      ]
     }
   }
 }
