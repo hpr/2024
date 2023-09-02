@@ -1,1 +1,935 @@
-{"xiamen23":{"400m Men":{"date":"2023-09-02T19:04","blurb":"Predicted Finish:\n\n1. Rusheen McDonald (JAM) - 44.00\n2. Vernon Norwood (USA) - 44.25\n3. Kirani James (GRN) - 44.40\n4. Quincy Hall (USA) - 44.50\n5. Zandrion Barnes (JAM) - 44.60\n6. Yuki Joseph Nakajima (JPN) - 45.10\n7. Attila Molnár (HUN) - 45.20\n8. Gilles Biron (FRA) - 45.30\n9. Alex Haydock-Wilson (GBR) - 45.45\n\nRusheen McDonald has the best record amongst the competitors, with a standout performance in July 2023, where he achieved a time of 44.03, the fastest time amongst all competitors. His consistent performance throughout the year also indicates that he's in top form.\n\nVernon Norwood is a strong contender for the second spot. Despite his inconsistent performance, his speed and endurance are evident in his stellar performance at Hayward Field, Eugene, OR (USA), where he achieved a time of 44.43. \n\nKirani James, despite his age, is a force to be reckoned with. His consistent performance throughout the year, with times consistently below 45.00, suggests that he could take the third spot.\n\nQuincy Hall, the youngest amongst the top contenders, has shown promising performance, particularly in the USA, where he clocked 44.86 in July 2023. His youth and recent performance suggest a high potential for improvement.\n\nZandrion Barnes ranks fifth based on his performance at Nemzeti Atlétikai Központ, Budapest (HUN) where he clocked 45.05. However, he lacks the consistency of the top four and his age might be a factor in his performance.\n\nYuki Joseph Nakajima, Attila Molnár, Gilles Biron, and Alex Haydock-Wilson, despite their commendable performances, have not demonstrated the consistent sub-45 second times needed to compete with the top five. However, they are all strong competitors and could potentially surprise in a championship setting.","entrants":[{"firstName":"Kirani","lastName":"James","id":"14195659","pb":"43.74","sb":"44.50","nat":"GRN","hasAvy":true},{"firstName":"Rusheen","lastName":"McDonald","id":"14468667","pb":"43.93","sb":"44.03","nat":"JAM","hasAvy":true},{"firstName":"Vernon","lastName":"Norwood","id":"14490237","pb":"44.26","sb":"44.26","nat":"USA","hasAvy":true},{"firstName":"Quincy","lastName":"Hall","id":"14597236","pb":"44.37","sb":"44.37","nat":"USA","hasAvy":true},{"firstName":"Attila","lastName":"Molnár","id":"14712930","pb":"44.84","sb":"44.84","nat":"HUN","hasAvy":true},{"firstName":"Zandrion","lastName":"Barnes","id":"14875542","pb":"44.90","sb":"44.90","nat":"JAM","hasAvy":true},{"firstName":"Yuki Joseph","lastName":"Nakajima","id":"14915400","pb":"45.04","sb":"45.04","nat":"JPN","hasAvy":true},{"firstName":"Gilles","lastName":"Biron","id":"14630769","pb":"45.05","sb":"45.05","nat":"FRA","hasAvy":true},{"firstName":"Alex","lastName":"Haydock-Wilson","id":"14735578","pb":"45.08","sb":"45.25","nat":"GBR","hasAvy":true}]},"3000m Women":{"date":"2023-09-02T19:16","blurb":"Predicted Finish and Marks:\n\n1. Beatrice Chebet (KEN) - 8:22.00\n2. Eloise Walker (GBR) - 8:24.00\n3. Laura Galván (MEX) - 8:26.00\n4. Caroline Nyaga (KEN) - 8:29.00\n5. Margaret Akidor (KEN) - 8:31.00\n6. Francine Niyomukunzi (BDI) - 8:34.00\n7. Selah Busienei (KEN) - 8:37.00\n8. Josette Andrews (USA) - 8:40.00\n9. Lemlem Nibret (ETH) - 8:43.00\n10. Melknat Wudu (ETH) - 8:46.00\n11. Tsiyon Abebe (ETH) - 8:49.00\n12. Yenawa Kefale (ETH) - 8:52.00\n\nReasoning:\n\nBeatrice Chebet has consistently finished on top in her recent races and has a strong personal best, therefore she's predicted to finish first. While Eloise Walker and Laura Galván have slower personal bests than some others, their recent performances suggest they're in top form. Walker especially has shown improvement, and Galván has demonstrated strong endurance in longer races. \n\nCaroline Nyaga and Margaret Akidor are both competitive, but Nyaga has the edge with a stronger recent performance. Francine Niyomukunzi and Selah Busienei are also expected to place in the middle of the pack due to their consistent performance. \n\nJosette Andrews, despite her excellent performance in the 1500 Metres, may struggle to keep up in the longer 3000 Metres race. Nevertheless, her performance should still be solid. \n\nThe last three places are predicted to go to the young Ethiopian athletes. Lemlem Nibret, Melknat Wudu, and Tsiyon Abebe have all shown promise, but they lack the experience and consistency of the older athletes. Lastly, Yenawa Kefale, despite her impressive time in Ndola, is the youngest and least experienced competitor, making her the underdog of this race.","entrants":[{"firstName":"Beatrice","lastName":"Chebet","id":"14749924","pb":"8:25.01","sb":"8:25.01","nat":"KEN","hasAvy":true},{"firstName":"Margaret","lastName":"Akidor","id":"14798242","pb":"8:31.45","sb":"8:31.45","nat":"KEN","hasAvy":false},{"firstName":"Caroline","lastName":"Nyaga","id":"14814043","pb":"8:34.85","sb":"8:34.85","nat":"KEN","hasAvy":false},{"firstName":"Laura","lastName":"Galván","id":"14329560","pb":"8:40.81","sb":null,"nat":"MEX","hasAvy":true},{"firstName":"Selah","lastName":"Busienei","id":"14479236","pb":"8:42.01","sb":null,"nat":"KEN","hasAvy":false},{"firstName":"Tsiyon","lastName":"Abebe","id":"15036005","pb":"8:44.82","sb":null,"nat":"ETH","hasAvy":true},{"firstName":"Melknat","lastName":"Wudu","id":"14923882","pb":"8:45.76","sb":null,"nat":"ETH","hasAvy":true},{"firstName":"Francine","lastName":"Niyomukunzi","id":"14786755","pb":"8:48.21","sb":"8:48.21","nat":"BDI","hasAvy":true},{"firstName":"Eloise","lastName":"Walker","id":"14655138","pb":"8:49.56","sb":"8:49.56","nat":"GBR","hasAvy":false},{"firstName":"Josette","lastName":"Andrews","id":"14574966","pb":"8:50.49","sb":null,"nat":"USA","hasAvy":true},{"firstName":"Lemlem","lastName":"Nibret","id":"15024105","pb":"8:50.95","sb":"8:50.95","nat":"ETH","hasAvy":true},{"firstName":"Yenawa","lastName":"Kefale","id":"15090391","pb":"8:57.8h","sb":"8:57.8h","nat":"ETH","hasAvy":false},{"firstName":"Aynadis","lastName":"Mebratu","id":"14923883","pb":"8:58.4h","sb":"8:58.4h","nat":"ETH","hasAvy":false},{"firstName":"Grace Loibach","lastName":"Nawowuna","id":"14989694","pb":"9:19.56","sb":null,"nat":"KEN","hasAvy":true},{"firstName":"Merkedes","lastName":"Alemeshete","id":"15094415","pb":null,"sb":null,"nat":"ETH","hasAvy":false},{"firstName":"Asayech","lastName":"Ayichew","id":"15041291","pb":null,"sb":null,"nat":"ETH","hasAvy":false},{"firstName":"Tegab","lastName":"Berhe","id":"15090804","pb":null,"sb":null,"nat":"ETH","hasAvy":false},{"firstName":"Frehiwot","lastName":"Gesese","id":"15009736","pb":null,"sb":null,"nat":"ETH","hasAvy":false},{"firstName":"Abby","lastName":"Nichols","id":"14649782","pb":null,"sb":null,"nat":"USA","hasAvy":false}]},"100m Men":{"date":"2023-09-02T19:35","blurb":"**Race Prediction:**\n\n1. Fred Kerley (USA), 9.85\n2. Christian Coleman (USA), 9.88\n3. Ackeem Blake (JAM), 9.90\n4. Yohan Blake (JAM), 9.93\n5. Brandon Carnes (USA), 9.95\n6. Rohan Watson (JAM), 10.00\n7. Marvin Bracy-Williams (USA), 10.02\n8. Lamont Marcell Jacobs (ITA), 10.04\n9. Kishane Thompson (JAM), 10.06\n10. Zhenye Xie (CHN), 10.10\n\n**Race Preview:**\n\nFred Kerley, the 27-year-old American athlete, is predicted to take the top spot in the Men's 100 Metres. He has consistently maintained his performance under the 10-second mark with a standout result of 9.88 in Yokohama. His recent performances suggest a strong form going into the competition.\n\nChristian Coleman, at the age of 26, can't be overlooked. He has been consistently performing under 10 seconds as well. However, his performances haven't been as consistently high as Kerley’s, hence the 2nd place prediction.\n\nAckeem Blake, the 20-year-old Jamaican, is a rising star. His recent performance in Budapest with a time of 9.89 shows his potential. However, his lack of experience compared to Kerley and Coleman might affect his overall performance.\n\nYohan Blake, despite his age of 33, has shown that he can still compete with the best. His recent 1st place finishes in Székesfehérvár and Leverkusen show that he still has the speed.\n\nBrandon Carnes, another American, has shown potential in his recent performances, notably his 4th place finish in Eugene. He is expected to step up his game in the competition.\n\nRohan Watson, Kishane Thompson, and Marvin Bracy-Williams, all from Jamaica, come next in the prediction. Watson has shown potential recently in Budapest, Thompson has been consistent in Kingston, while Bracy-Williams has shown his speed in Memphis.\n\nLamont Marcell Jacobs and Zhenye Xie, from Italy and China respectively, are predicted to finish in the last spots. Jacobs has shown less competitive times recently compared to the others, while Xie's times have been inconsistent recently, which could affect his form in the competition.","entrants":[{"firstName":"Yohan","lastName":"Blake","id":"14201842","pb":"9.69","sb":"10.01","nat":"JAM","hasAvy":true},{"firstName":"Christian","lastName":"Coleman","id":"14541956","pb":"9.76","sb":"9.88","nat":"USA","hasAvy":true},{"firstName":"Fred","lastName":"Kerley","id":"14504382","pb":"9.76","sb":"9.88","nat":"USA","hasAvy":true},{"firstName":"Lamont Marcell","lastName":"Jacobs","id":"14453864","pb":"9.80","sb":"10.05","nat":"ITA","hasAvy":true},{"firstName":"Marvin","lastName":"Bracy-Williams","id":"14425680","pb":"9.85","sb":"9.93","nat":"USA","hasAvy":true},{"firstName":"Ackeem","lastName":"Blake","id":"14638971","pb":"9.89","sb":"9.89","nat":"JAM","hasAvy":true},{"firstName":"Kishane","lastName":"Thompson","id":"14738009","pb":"9.91","sb":"9.91","nat":"JAM","hasAvy":false},{"firstName":"Rohan","lastName":"Watson","id":"14779154","pb":"9.91","sb":"9.91","nat":"JAM","hasAvy":true},{"firstName":"Zhenye","lastName":"Xie","id":"14376449","pb":"9.97","sb":"10.05","nat":"CHN","hasAvy":true},{"firstName":"Brandon","lastName":"Carnes","id":"14466007","pb":"10.02","sb":"10.02","nat":"USA","hasAvy":true}]},"800m Men":{"date":"2023-09-02T19:44","blurb":"Predicted Finish and Times:\n\n1. Emmanuel Wanyonyi (KEN): 1:42.94\n2. Marco Arop (CAN): 1:43.15\n3. Benjamin Robert (FRA): 1:43.27\n4. Saúl Ordóñez (ESP): 1:43.57\n5. Wyclife Kinyamal (KEN): 1:43.65\n6. Daniel Rowden (GBR): 1:43.95\n7. Ben Pattison (GBR): 1:44.02\n8. Gabriel Tual (FRA): 1:44.25\n9. Yanis Meziane (FRA): 1:44.39\n10. Simone Barontini (ITA): 1:44.55\n11. Isaiah Harris (USA): 1:44.85\n12. Andreas Kramer (SWE): 1:45.15\n\nReasoning:\n\nEmmanuel Wanyonyi takes the top spot in my predictions due to his consistently strong performance throughout the season, finishing first in multiple 800m races with impressive times. His youth and improving performance curve makes him a strong contender for the top spot.\n\nMarco Arop is close behind, with his best time of the season (1:43.30) outpacing most of the field. His performances in major meets suggest he's a big-stage performer and could pull out a top finish.\n\nBenjamin Robert has shown a strong indoor season and has consistently finished in the top 3 in most of his outdoor races. His experience and performance curve place him in third.\n\nSaúl Ordóñez, despite his age, has been consistently performing well this season, securing a number of first-place finishes and consistently placing in the top three. His experience could be a major factor in his success.\n\nWyclife Kinyamal, despite a strong start to the season, has been inconsistent in his performance. However, his strong performances in Nairobi and Monaco can't be overlooked, placing him in fifth.\n\nDaniel Rowden and Ben Pattison, both from GBR, have shown promise this season but have been inconsistent. They do have the potential to surprise, but based on their performance curve, they are predicted to finish in the middle of the pack.\n\nGabriel Tual, Yanis Meziane, and Simone Barontini have all had a good season but haven't consistently broken into the top three. Their performances suggest they could be in the mix, but may struggle to break into the podium positions.\n\nIsaiah Harris and Andreas Kramer, despite some promising times, have shown some inconsistency and haven't consistently broken into the top three in major races. This places them towards the end of the pack in these predictions.","entrants":[{"firstName":"Wyclife","lastName":"Kinyamal","id":"14746603","pb":"1:43.12","sb":"1:43.22","nat":"KEN","hasAvy":true},{"firstName":"Marco","lastName":"Arop","id":"14755875","pb":"1:43.26","sb":"1:43.30","nat":"CAN","hasAvy":true},{"firstName":"Emmanuel","lastName":"Wanyonyi","id":"14974928","pb":"1:43.27","sb":"1:43.27","nat":"KEN","hasAvy":true},{"firstName":"Benjamin","lastName":"Robert","id":"14683828","pb":"1:43.48","sb":"1:43.48","nat":"FRA","hasAvy":true},{"firstName":"Saúl","lastName":"Ordóñez","id":"14517077","pb":"1:43.65","sb":"1:44.67","nat":"ESP","hasAvy":true},{"firstName":"Daniel","lastName":"Rowden","id":"14585368","pb":"1:43.95","sb":"1:43.95","nat":"GBR","hasAvy":true},{"firstName":"Ben","lastName":"Pattison","id":"14706169","pb":"1:44.02","sb":"1:44.02","nat":"GBR","hasAvy":true},{"firstName":"Gabriel","lastName":"Tual","id":"14646018","pb":"1:44.23","sb":"1:44.46","nat":"FRA","hasAvy":true},{"firstName":"Yanis","lastName":"Meziane","id":"14893694","pb":"1:44.30","sb":"1:44.30","nat":"FRA","hasAvy":true},{"firstName":"Simone","lastName":"Barontini","id":"14676436","pb":"1:44.34","sb":"1:44.34","nat":"ITA","hasAvy":true},{"firstName":"Isaiah","lastName":"Harris","id":"14589537","pb":"1:44.42","sb":"1:44.85","nat":"USA","hasAvy":true},{"firstName":"Andreas","lastName":"Kramer","id":"14538207","pb":"1:44.47","sb":"1:44.57","nat":"SWE","hasAvy":true},{"firstName":"Erik","lastName":"Sowinski","id":"14360557","pb":"1:44.58","sb":"1:46.98","nat":"USA","hasAvy":true}]},"400m Women":{"date":"2023-09-02T19:57","blurb":"Predicted Finish and Marks:\n\n1. Marileidy Paulino (DOM) - 48.70\n2. Sada Williams (BAR) - 49.55\n3. Talitha Diggs (USA) - 49.89\n4. Lynna Irby-Jackson (USA) - 50.10\n5. Cynthia Bolingo (BEL) - 50.30\n6. Victoria Ohuruogu (GBR) - 50.55\n7. Candice McLeod (JAM) - 50.70\n8. Makenzie Dunmore (USA) - 51.10\n9. Martina Weil (CHI) - 51.30\n\nReasoning:\n\nMarileidy Paulino has been dominant throughout the season, consistently finishing in 1st place and achieving impressive times, including a standout 48.76 in Budapest. It's clear she's in peak form, and her consistent performance makes her the favourite to win.\n\nSada Williams is also a strong contender for the top spot. She has been consistently placing in the top three and her times have been improving, with a notable 49.58 in Budapest. However, Paulino's performances have been slightly more impressive, which is why Williams is predicted to finish second.\n\nTalitha Diggs, despite her young age, has shown incredible potential. She has consistently finished in the top three and even managed a time of 49.93 in Oregon. However, she has also shown some inconsistency and her times have varied more than Paulino's and Williams', which is why she is predicted to finish third.\n\nLynna Irby-Jackson, Cynthia Bolingo, Victoria Ohuruogu, Candice McLeod, and Makenzie Dunmore have all shown potential but have also been less consistent and have generally slower times than the top three. Of the bunch, Irby-Jackson and Bolingo have been the most consistent, which is why they are predicted to finish in the fourth and fifth positions respectively.\n\nCandice McLeod, despite having some strong performances, has shown inconsistency, particularly in her performance in Doha where she placed 5th with a time of 52.43. This inconsistency puts her in the seventh spot.\n\nMakenzie Dunmore, despite some strong performances, has also shown inconsistency, particularly with her 51.20 finish in Hungary. This is why she is predicted to finish eighth.\n\nFinally, Martina Weil, despite her strong performances in Brazil, has not been as consistent or as fast as the other competitors, and is therefore predicted to finish ninth.","entrants":[{"firstName":"Marileidy","lastName":"Paulino","id":"14749613","pb":"48.76","sb":"48.76","nat":"DOM","hasAvy":true},{"firstName":"Candice","lastName":"McLeod","id":"14587165","pb":"49.51","sb":"50.19","nat":"JAM","hasAvy":true},{"firstName":"Sada","lastName":"Williams","id":"14592846","pb":"49.58","sb":"49.58","nat":"BAR","hasAvy":true},{"firstName":"Lynna","lastName":"Irby-Jackson","id":"14486888","pb":"49.80","sb":"50.11","nat":"USA","hasAvy":true},{"firstName":"Talitha","lastName":"Diggs","id":"14773307","pb":"49.93","sb":"49.93","nat":"USA","hasAvy":true},{"firstName":"Cynthia","lastName":"Bolingo","id":"14360768","pb":"49.96","sb":"49.96","nat":"BEL","hasAvy":true},{"firstName":"Makenzie","lastName":"Dunmore","id":"14536492","pb":"50.35","sb":"50.35","nat":"USA","hasAvy":true},{"firstName":"Victoria","lastName":"Ohuruogu","id":"14359991","pb":"50.48","sb":"50.48","nat":"GBR","hasAvy":true},{"firstName":"Martina","lastName":"Weil","id":"14748703","pb":"51.07","sb":"51.07","nat":"CHI","hasAvy":true}]},"3000m Steeple Men":{"date":"2023-09-02T20:07","blurb":"Predicted Finish and Time:\n\n1. Soufiane el Bakkali (MAR): 8:02.15\n2. Ryuji Miura (JPN): 8:03.90\n3. Abraham Kibiwot (KEN): 8:04.83\n4. Benjamin Kigen (KEN): 8:06.47\n5. Daniel Arce (ESP): 8:09.32\n6. Mohamed Tindouft (MAR): 8:13.10\n7. Avinash Mukund Sable (IND): 8:15.75\n8. Samuel Firewu (ETH): 8:16.22\n9. Djilali Bedrani (FRA): 8:18.01\n10. Amos Serem (KEN): 8:20.05\n11. Hailemariyam Amare (ETH): 8:23.50\n12. Andrew Bayer (USA): 8:25.12\n\nRace Preview:\nThe Men's 3000 Metres Steeplechase is set to be a thrilling event at the upcoming athletics championship. \n\nSoufiane el Bakkali from Morocco is predicted to clinch the gold, considering his impressive performance throughout the season. He consistently finished in the first place in most of his races, boasting a remarkable time of 8:03.16 in Poland.\n\nRyuji Miura from Japan is also expected to be a strong contender. Despite being the youngest participant, his performances have been noteworthy, especially his 2nd place finish with a time of 8:09.91 in Paris.\n\nKenyan athletes, Abraham Kibiwot and Benjamin Kigen are also in the mix. Kibiwot's performance in Monaco, where he finished second, is particularly impressive. However, Kigen's inconsistent performance throughout the season might act as a disadvantage.\n\nDaniel Arce from Spain is another athlete to watch out for. Despite his age, his performance in the races has been consistent, with his 3rd place finish in Paris standing out.\n\nMohamed Tindouft from Morocco and Avinash Mukund Sable from India are also expected to put up a strong fight. However, their inconsistent performances throughout the season might affect their final standings.\n\nThe rest of the pack including Samuel Firewu from Ethiopia, Djilali Bedrani from France, Amos Serem from Kenya, Hailemariyam Amare from Ethiopia, and Andrew Bayer from USA are also expected to put up a valiant effort. However, considering their inconsistent performance throughout the season and their relatively slower times, they are not expected to pose a major threat to the top contenders. \n\nOverall, this race promises to be a thrilling event, showcasing a mix of experienced and young athletes. Their past performances, current form, and competitive spirit will all play a crucial role in determining the final result.","entrants":[{"firstName":"Soufiane","lastName":"el Bakkali","id":"14590424","pb":"7:56.68","sb":"7:56.68","nat":"MAR","hasAvy":true},{"firstName":"Benjamin","lastName":"Kigen","id":"14590800","pb":"8:05.12","sb":"8:11.12","nat":"KEN","hasAvy":true},{"firstName":"Djilali","lastName":"Bedrani","id":"14423830","pb":"8:05.23","sb":"8:16.81","nat":"FRA","hasAvy":true},{"firstName":"Abraham","lastName":"Kibiwot","id":"14657344","pb":"8:05.51","sb":"8:05.51","nat":"KEN","hasAvy":true},{"firstName":"Hailemariyam","lastName":"Amare","id":"14657460","pb":"8:06.29","sb":"8:25.10","nat":"ETH","hasAvy":true},{"firstName":"Ryuji","lastName":"Miura","id":"14860379","pb":"8:09.91","sb":"8:09.91","nat":"JPN","hasAvy":true},{"firstName":"Amos","lastName":"Serem","id":"14808796","pb":"8:09.93","sb":"8:14.53","nat":"KEN","hasAvy":true},{"firstName":"Samuel","lastName":"Firewu","id":"14975231","pb":"8:10.57","sb":"8:10.57","nat":"ETH","hasAvy":true},{"firstName":"Daniel","lastName":"Arce","id":"14420300","pb":"8:10.63","sb":"8:10.63","nat":"ESP","hasAvy":true},{"firstName":"Avinash Mukund","lastName":"Sable","id":"14778911","pb":"8:11.20","sb":"8:11.63","nat":"IND","hasAvy":true},{"firstName":"Mohamed","lastName":"Tindouft","id":"14773269","pb":"8:11.65","sb":"8:15.02","nat":"MAR","hasAvy":true},{"firstName":"Andrew","lastName":"Bayer","id":"14360463","pb":"8:12.47","sb":"8:25.18","nat":"USA","hasAvy":true},{"firstName":"Mohammed","lastName":"Msaad","id":"15038645","pb":"8:16.18","sb":"8:16.18","nat":"MAR","hasAvy":true},{"firstName":"Isaac","lastName":"Updike","id":"14470536","pb":"8:17.47","sb":"8:17.47","nat":"USA","hasAvy":true},{"firstName":"Vidar","lastName":"Johansson","id":"14535353","pb":"8:18.31","sb":"8:23.01","nat":"SWE","hasAvy":true},{"firstName":"Karl","lastName":"Bebendorf","id":"14597064","pb":"8:19.59","sb":"8:19.59","nat":"GER","hasAvy":true},{"firstName":"Zak","lastName":"Seddon","id":"14386241","pb":"8:21.28","sb":"8:21.71","nat":"GBR","hasAvy":true},{"firstName":"El Mehdi","lastName":"Aboujanah","id":"14683852","pb":"8:21.93","sb":"8:21.93","nat":"ESP","hasAvy":false},{"firstName":"William","lastName":"Battershill","id":"14643877","pb":"8:22.64","sb":"8:22.64","nat":"GBR","hasAvy":false},{"firstName":"Abderrafia","lastName":"Bouassel","id":"14843153","pb":"8:27.00","sb":"8:31.22","nat":"MAR","hasAvy":false}]},"1500m Women":{"date":"2023-09-02T20:37","blurb":"Predicted Finish and Marks:\n\n1. Nelly Chepchirchir (KEN) - 3:57.90\n2. Freweyni Hailu (ETH) - 3:58.20\n3. Worknesh Mesele (ETH) - 3:58.45\n4. Emily MacKay (USA) - 3:59.50\n5. Sarah Healy (IRL) - 4:00.00\n6. Linden Hall (AUS) - 4:01.00\n7. Tigist Girma (ETH) - 4:01.50\n8. Melissa Courtney-Bryant (GBR) - 4:02.00\n9. Helen Schlachtenhaufen (USA) - 4:02.50\n10. Claudia Mihaela Bobocea (ROU) - 4:03.00\n11. Gaia Sabbatini (ITA) - 4:03.50\n12. Saron Berhe (ETH) - 4:04.00\n\nPreview:\n\nNelly Chepchirchir (KEN) is the clear favorite, with consistent sub-4 minute finishes and several first-place finishes over the season. Her youth may also play a factor, as she could have a slight edge in terms of energy and recovery.\n\nFreweyni Hailu (ETH) is a strong contender for the second spot. Her impressive performances in various competitions suggest she is in good form and possesses the stamina required for a 1500m race.\n\nWorknesh Mesele (ETH) has shown impressive versatility, with strong performances in both the 800m and 1500m. Her good form and impressive timing in previous races make her a contender for the third spot.\n\nEmily MacKay (USA) has shown impressive improvements over the season and her recent sub-4 minute finish indicates she could be a dark horse in this competition.\n\nSarah Healy (IRL) has consistently finished around the 4:00 mark, making her a strong contender for a top-five finish.\n\nLinden Hall (AUS), despite her age, has shown that she can still compete at a high level. Her consistent performances make her a likely contender for a top-six finish.\n\nFor the remaining athletes, their inconsistent performances and lack of standout results make it difficult to place them higher in the ranking. However, in athletics, surprises are always possible and any of these athletes could potentially outperform expectations.","entrants":[{"firstName":"Freweyni","lastName":"Hailu","id":"14836656","pb":"3:56.28","sb":"3:57.65","nat":"ETH","hasAvy":true},{"firstName":"Worknesh","lastName":"Mesele","id":"14852703","pb":"3:57.00","sb":"3:57.00","nat":"ETH","hasAvy":true},{"firstName":"Linden","lastName":"Hall","id":"14272002","pb":"3:57.27","sb":"3:57.27","nat":"AUS","hasAvy":true},{"firstName":"Nelly","lastName":"Chepchirchir","id":"14892139","pb":"3:57.90","sb":"3:57.90","nat":"KEN","hasAvy":true},{"firstName":"Melissa","lastName":"Courtney-Bryant","id":"14274781","pb":"3:58.01","sb":"3:58.01","nat":"GBR","hasAvy":true},{"firstName":"Tigist","lastName":"Girma","id":"14894776","pb":"3:59.33","sb":"3:59.33","nat":"ETH","hasAvy":true},{"firstName":"Sarah","lastName":"Healy","id":"14705242","pb":"3:59.68","sb":"3:59.68","nat":"IRL","hasAvy":true},{"firstName":"Emily","lastName":"MacKay","id":"14667572","pb":"3:59.99","sb":"3:59.99","nat":"USA","hasAvy":false},{"firstName":"Helen","lastName":"Schlachtenhaufen","id":"14625724","pb":"4:01.09","sb":"4:01.55","nat":"USA","hasAvy":false},{"firstName":"Claudia Mihaela","lastName":"Bobocea","id":"14377909","pb":"4:01.10","sb":"4:03.80","nat":"ROU","hasAvy":true},{"firstName":"Gaia","lastName":"Sabbatini","id":"14682711","pb":"4:01.24","sb":"4:01.24","nat":"ITA","hasAvy":true},{"firstName":"Saron","lastName":"Berhe","id":"15009577","pb":"4:02.30","sb":"4:02.30","nat":"ETH","hasAvy":false},{"firstName":"Danielle","lastName":"Jones","id":"14479600","pb":"4:02.83","sb":"4:02.83","nat":"USA","hasAvy":false},{"firstName":"Agathe","lastName":"Guillemot","id":"14685757","pb":"4:03.26","sb":"4:03.26","nat":"FRA","hasAvy":true},{"firstName":"Purity","lastName":"Chepkirui","id":"14989663","pb":"4:04.51","sb":"4:04.51","nat":"KEN","hasAvy":true},{"firstName":"Charlotte","lastName":"Mouchet","id":"14534796","pb":"4:07.47","sb":"4:07.47","nat":"FRA","hasAvy":true},{"firstName":"Kristie","lastName":"Schoffield","id":"14679586","pb":"4:10.12","sb":"4:10.12","nat":"USA","hasAvy":false},{"firstName":"Chunyu","lastName":"Wang","id":"14462001","pb":"4:11.42","sb":"4:16.65","nat":"CHN","hasAvy":true}]}}}
+{
+  "xiamen23": {
+    "400m Men": {
+      "date": "2023-09-02T19:04",
+      "blurb": "Predicted Finish:\n\n1. Rusheen McDonald (JAM) - 44.00\n2. Vernon Norwood (USA) - 44.25\n3. Kirani James (GRN) - 44.40\n4. Quincy Hall (USA) - 44.50\n5. Zandrion Barnes (JAM) - 44.60\n6. Yuki Joseph Nakajima (JPN) - 45.10\n7. Attila Molnár (HUN) - 45.20\n8. Gilles Biron (FRA) - 45.30\n9. Alex Haydock-Wilson (GBR) - 45.45\n\nRusheen McDonald has the best record amongst the competitors, with a standout performance in July 2023, where he achieved a time of 44.03, the fastest time amongst all competitors. His consistent performance throughout the year also indicates that he's in top form.\n\nVernon Norwood is a strong contender for the second spot. Despite his inconsistent performance, his speed and endurance are evident in his stellar performance at Hayward Field, Eugene, OR (USA), where he achieved a time of 44.43. \n\nKirani James, despite his age, is a force to be reckoned with. His consistent performance throughout the year, with times consistently below 45.00, suggests that he could take the third spot.\n\nQuincy Hall, the youngest amongst the top contenders, has shown promising performance, particularly in the USA, where he clocked 44.86 in July 2023. His youth and recent performance suggest a high potential for improvement.\n\nZandrion Barnes ranks fifth based on his performance at Nemzeti Atlétikai Központ, Budapest (HUN) where he clocked 45.05. However, he lacks the consistency of the top four and his age might be a factor in his performance.\n\nYuki Joseph Nakajima, Attila Molnár, Gilles Biron, and Alex Haydock-Wilson, despite their commendable performances, have not demonstrated the consistent sub-45 second times needed to compete with the top five. However, they are all strong competitors and could potentially surprise in a championship setting.",
+      "entrants": [
+        {
+          "firstName": "Kirani",
+          "lastName": "James",
+          "id": "14195659",
+          "pb": "43.74",
+          "sb": "44.50",
+          "nat": "GRN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Rusheen",
+          "lastName": "McDonald",
+          "id": "14468667",
+          "pb": "43.93",
+          "sb": "44.03",
+          "nat": "JAM",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Vernon",
+          "lastName": "Norwood",
+          "id": "14490237",
+          "pb": "44.26",
+          "sb": "44.26",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Quincy",
+          "lastName": "Hall",
+          "id": "14597236",
+          "pb": "44.37",
+          "sb": "44.37",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Attila",
+          "lastName": "Molnár",
+          "id": "14712930",
+          "pb": "44.84",
+          "sb": "44.84",
+          "nat": "HUN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Zandrion",
+          "lastName": "Barnes",
+          "id": "14875542",
+          "pb": "44.90",
+          "sb": "44.90",
+          "nat": "JAM",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Yuki Joseph",
+          "lastName": "Nakajima",
+          "id": "14915400",
+          "pb": "45.04",
+          "sb": "45.04",
+          "nat": "JPN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Gilles",
+          "lastName": "Biron",
+          "id": "14630769",
+          "pb": "45.05",
+          "sb": "45.05",
+          "nat": "FRA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Alex",
+          "lastName": "Haydock-Wilson",
+          "id": "14735578",
+          "pb": "45.08",
+          "sb": "45.25",
+          "nat": "GBR",
+          "hasAvy": true
+        }
+      ],
+      "isClosed": true
+    },
+    "3000m Women": {
+      "date": "2023-09-02T19:16",
+      "blurb": "Predicted Finish and Marks:\n\n1. Beatrice Chebet (KEN) - 8:22.00\n2. Eloise Walker (GBR) - 8:24.00\n3. Laura Galván (MEX) - 8:26.00\n4. Caroline Nyaga (KEN) - 8:29.00\n5. Margaret Akidor (KEN) - 8:31.00\n6. Francine Niyomukunzi (BDI) - 8:34.00\n7. Selah Busienei (KEN) - 8:37.00\n8. Josette Andrews (USA) - 8:40.00\n9. Lemlem Nibret (ETH) - 8:43.00\n10. Melknat Wudu (ETH) - 8:46.00\n11. Tsiyon Abebe (ETH) - 8:49.00\n12. Yenawa Kefale (ETH) - 8:52.00\n\nReasoning:\n\nBeatrice Chebet has consistently finished on top in her recent races and has a strong personal best, therefore she's predicted to finish first. While Eloise Walker and Laura Galván have slower personal bests than some others, their recent performances suggest they're in top form. Walker especially has shown improvement, and Galván has demonstrated strong endurance in longer races. \n\nCaroline Nyaga and Margaret Akidor are both competitive, but Nyaga has the edge with a stronger recent performance. Francine Niyomukunzi and Selah Busienei are also expected to place in the middle of the pack due to their consistent performance. \n\nJosette Andrews, despite her excellent performance in the 1500 Metres, may struggle to keep up in the longer 3000 Metres race. Nevertheless, her performance should still be solid. \n\nThe last three places are predicted to go to the young Ethiopian athletes. Lemlem Nibret, Melknat Wudu, and Tsiyon Abebe have all shown promise, but they lack the experience and consistency of the older athletes. Lastly, Yenawa Kefale, despite her impressive time in Ndola, is the youngest and least experienced competitor, making her the underdog of this race.",
+      "entrants": [
+        {
+          "firstName": "Beatrice",
+          "lastName": "Chebet",
+          "id": "14749924",
+          "pb": "8:25.01",
+          "sb": "8:25.01",
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Margaret",
+          "lastName": "Akidor",
+          "id": "14798242",
+          "pb": "8:31.45",
+          "sb": "8:31.45",
+          "nat": "KEN",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Caroline",
+          "lastName": "Nyaga",
+          "id": "14814043",
+          "pb": "8:34.85",
+          "sb": "8:34.85",
+          "nat": "KEN",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Laura",
+          "lastName": "Galván",
+          "id": "14329560",
+          "pb": "8:40.81",
+          "sb": null,
+          "nat": "MEX",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Selah",
+          "lastName": "Busienei",
+          "id": "14479236",
+          "pb": "8:42.01",
+          "sb": null,
+          "nat": "KEN",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Tsiyon",
+          "lastName": "Abebe",
+          "id": "15036005",
+          "pb": "8:44.82",
+          "sb": null,
+          "nat": "ETH",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Melknat",
+          "lastName": "Wudu",
+          "id": "14923882",
+          "pb": "8:45.76",
+          "sb": null,
+          "nat": "ETH",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Francine",
+          "lastName": "Niyomukunzi",
+          "id": "14786755",
+          "pb": "8:48.21",
+          "sb": "8:48.21",
+          "nat": "BDI",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Eloise",
+          "lastName": "Walker",
+          "id": "14655138",
+          "pb": "8:49.56",
+          "sb": "8:49.56",
+          "nat": "GBR",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Josette",
+          "lastName": "Andrews",
+          "id": "14574966",
+          "pb": "8:50.49",
+          "sb": null,
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Lemlem",
+          "lastName": "Nibret",
+          "id": "15024105",
+          "pb": "8:50.95",
+          "sb": "8:50.95",
+          "nat": "ETH",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Yenawa",
+          "lastName": "Kefale",
+          "id": "15090391",
+          "pb": "8:57.8h",
+          "sb": "8:57.8h",
+          "nat": "ETH",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Aynadis",
+          "lastName": "Mebratu",
+          "id": "14923883",
+          "pb": "8:58.4h",
+          "sb": "8:58.4h",
+          "nat": "ETH",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Grace Loibach",
+          "lastName": "Nawowuna",
+          "id": "14989694",
+          "pb": "9:19.56",
+          "sb": null,
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Merkedes",
+          "lastName": "Alemeshete",
+          "id": "15094415",
+          "pb": null,
+          "sb": null,
+          "nat": "ETH",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Asayech",
+          "lastName": "Ayichew",
+          "id": "15041291",
+          "pb": null,
+          "sb": null,
+          "nat": "ETH",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Tegab",
+          "lastName": "Berhe",
+          "id": "15090804",
+          "pb": null,
+          "sb": null,
+          "nat": "ETH",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Frehiwot",
+          "lastName": "Gesese",
+          "id": "15009736",
+          "pb": null,
+          "sb": null,
+          "nat": "ETH",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Abby",
+          "lastName": "Nichols",
+          "id": "14649782",
+          "pb": null,
+          "sb": null,
+          "nat": "USA",
+          "hasAvy": false
+        }
+      ],
+      "isClosed": true
+    },
+    "100m Men": {
+      "date": "2023-09-02T19:35",
+      "blurb": "**Race Prediction:**\n\n1. Fred Kerley (USA), 9.85\n2. Christian Coleman (USA), 9.88\n3. Ackeem Blake (JAM), 9.90\n4. Yohan Blake (JAM), 9.93\n5. Brandon Carnes (USA), 9.95\n6. Rohan Watson (JAM), 10.00\n7. Marvin Bracy-Williams (USA), 10.02\n8. Lamont Marcell Jacobs (ITA), 10.04\n9. Kishane Thompson (JAM), 10.06\n10. Zhenye Xie (CHN), 10.10\n\n**Race Preview:**\n\nFred Kerley, the 27-year-old American athlete, is predicted to take the top spot in the Men's 100 Metres. He has consistently maintained his performance under the 10-second mark with a standout result of 9.88 in Yokohama. His recent performances suggest a strong form going into the competition.\n\nChristian Coleman, at the age of 26, can't be overlooked. He has been consistently performing under 10 seconds as well. However, his performances haven't been as consistently high as Kerley’s, hence the 2nd place prediction.\n\nAckeem Blake, the 20-year-old Jamaican, is a rising star. His recent performance in Budapest with a time of 9.89 shows his potential. However, his lack of experience compared to Kerley and Coleman might affect his overall performance.\n\nYohan Blake, despite his age of 33, has shown that he can still compete with the best. His recent 1st place finishes in Székesfehérvár and Leverkusen show that he still has the speed.\n\nBrandon Carnes, another American, has shown potential in his recent performances, notably his 4th place finish in Eugene. He is expected to step up his game in the competition.\n\nRohan Watson, Kishane Thompson, and Marvin Bracy-Williams, all from Jamaica, come next in the prediction. Watson has shown potential recently in Budapest, Thompson has been consistent in Kingston, while Bracy-Williams has shown his speed in Memphis.\n\nLamont Marcell Jacobs and Zhenye Xie, from Italy and China respectively, are predicted to finish in the last spots. Jacobs has shown less competitive times recently compared to the others, while Xie's times have been inconsistent recently, which could affect his form in the competition.",
+      "entrants": [
+        {
+          "firstName": "Yohan",
+          "lastName": "Blake",
+          "id": "14201842",
+          "pb": "9.69",
+          "sb": "10.01",
+          "nat": "JAM",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Christian",
+          "lastName": "Coleman",
+          "id": "14541956",
+          "pb": "9.76",
+          "sb": "9.88",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Fred",
+          "lastName": "Kerley",
+          "id": "14504382",
+          "pb": "9.76",
+          "sb": "9.88",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Lamont Marcell",
+          "lastName": "Jacobs",
+          "id": "14453864",
+          "pb": "9.80",
+          "sb": "10.05",
+          "nat": "ITA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Marvin",
+          "lastName": "Bracy-Williams",
+          "id": "14425680",
+          "pb": "9.85",
+          "sb": "9.93",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Ackeem",
+          "lastName": "Blake",
+          "id": "14638971",
+          "pb": "9.89",
+          "sb": "9.89",
+          "nat": "JAM",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Kishane",
+          "lastName": "Thompson",
+          "id": "14738009",
+          "pb": "9.91",
+          "sb": "9.91",
+          "nat": "JAM",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Rohan",
+          "lastName": "Watson",
+          "id": "14779154",
+          "pb": "9.91",
+          "sb": "9.91",
+          "nat": "JAM",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Zhenye",
+          "lastName": "Xie",
+          "id": "14376449",
+          "pb": "9.97",
+          "sb": "10.05",
+          "nat": "CHN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Brandon",
+          "lastName": "Carnes",
+          "id": "14466007",
+          "pb": "10.02",
+          "sb": "10.02",
+          "nat": "USA",
+          "hasAvy": true
+        }
+      ],
+      "isClosed": true
+    },
+    "800m Men": {
+      "date": "2023-09-02T19:44",
+      "blurb": "Predicted Finish and Times:\n\n1. Emmanuel Wanyonyi (KEN): 1:42.94\n2. Marco Arop (CAN): 1:43.15\n3. Benjamin Robert (FRA): 1:43.27\n4. Saúl Ordóñez (ESP): 1:43.57\n5. Wyclife Kinyamal (KEN): 1:43.65\n6. Daniel Rowden (GBR): 1:43.95\n7. Ben Pattison (GBR): 1:44.02\n8. Gabriel Tual (FRA): 1:44.25\n9. Yanis Meziane (FRA): 1:44.39\n10. Simone Barontini (ITA): 1:44.55\n11. Isaiah Harris (USA): 1:44.85\n12. Andreas Kramer (SWE): 1:45.15\n\nReasoning:\n\nEmmanuel Wanyonyi takes the top spot in my predictions due to his consistently strong performance throughout the season, finishing first in multiple 800m races with impressive times. His youth and improving performance curve makes him a strong contender for the top spot.\n\nMarco Arop is close behind, with his best time of the season (1:43.30) outpacing most of the field. His performances in major meets suggest he's a big-stage performer and could pull out a top finish.\n\nBenjamin Robert has shown a strong indoor season and has consistently finished in the top 3 in most of his outdoor races. His experience and performance curve place him in third.\n\nSaúl Ordóñez, despite his age, has been consistently performing well this season, securing a number of first-place finishes and consistently placing in the top three. His experience could be a major factor in his success.\n\nWyclife Kinyamal, despite a strong start to the season, has been inconsistent in his performance. However, his strong performances in Nairobi and Monaco can't be overlooked, placing him in fifth.\n\nDaniel Rowden and Ben Pattison, both from GBR, have shown promise this season but have been inconsistent. They do have the potential to surprise, but based on their performance curve, they are predicted to finish in the middle of the pack.\n\nGabriel Tual, Yanis Meziane, and Simone Barontini have all had a good season but haven't consistently broken into the top three. Their performances suggest they could be in the mix, but may struggle to break into the podium positions.\n\nIsaiah Harris and Andreas Kramer, despite some promising times, have shown some inconsistency and haven't consistently broken into the top three in major races. This places them towards the end of the pack in these predictions.",
+      "entrants": [
+        {
+          "firstName": "Wyclife",
+          "lastName": "Kinyamal",
+          "id": "14746603",
+          "pb": "1:43.12",
+          "sb": "1:43.22",
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Marco",
+          "lastName": "Arop",
+          "id": "14755875",
+          "pb": "1:43.26",
+          "sb": "1:43.30",
+          "nat": "CAN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Emmanuel",
+          "lastName": "Wanyonyi",
+          "id": "14974928",
+          "pb": "1:43.27",
+          "sb": "1:43.27",
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Benjamin",
+          "lastName": "Robert",
+          "id": "14683828",
+          "pb": "1:43.48",
+          "sb": "1:43.48",
+          "nat": "FRA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Saúl",
+          "lastName": "Ordóñez",
+          "id": "14517077",
+          "pb": "1:43.65",
+          "sb": "1:44.67",
+          "nat": "ESP",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Daniel",
+          "lastName": "Rowden",
+          "id": "14585368",
+          "pb": "1:43.95",
+          "sb": "1:43.95",
+          "nat": "GBR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Ben",
+          "lastName": "Pattison",
+          "id": "14706169",
+          "pb": "1:44.02",
+          "sb": "1:44.02",
+          "nat": "GBR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Gabriel",
+          "lastName": "Tual",
+          "id": "14646018",
+          "pb": "1:44.23",
+          "sb": "1:44.46",
+          "nat": "FRA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Yanis",
+          "lastName": "Meziane",
+          "id": "14893694",
+          "pb": "1:44.30",
+          "sb": "1:44.30",
+          "nat": "FRA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Simone",
+          "lastName": "Barontini",
+          "id": "14676436",
+          "pb": "1:44.34",
+          "sb": "1:44.34",
+          "nat": "ITA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Isaiah",
+          "lastName": "Harris",
+          "id": "14589537",
+          "pb": "1:44.42",
+          "sb": "1:44.85",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Andreas",
+          "lastName": "Kramer",
+          "id": "14538207",
+          "pb": "1:44.47",
+          "sb": "1:44.57",
+          "nat": "SWE",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Erik",
+          "lastName": "Sowinski",
+          "id": "14360557",
+          "pb": "1:44.58",
+          "sb": "1:46.98",
+          "nat": "USA",
+          "hasAvy": true
+        }
+      ],
+      "isClosed": true
+    },
+    "400m Women": {
+      "date": "2023-09-02T19:57",
+      "blurb": "Predicted Finish and Marks:\n\n1. Marileidy Paulino (DOM) - 48.70\n2. Sada Williams (BAR) - 49.55\n3. Talitha Diggs (USA) - 49.89\n4. Lynna Irby-Jackson (USA) - 50.10\n5. Cynthia Bolingo (BEL) - 50.30\n6. Victoria Ohuruogu (GBR) - 50.55\n7. Candice McLeod (JAM) - 50.70\n8. Makenzie Dunmore (USA) - 51.10\n9. Martina Weil (CHI) - 51.30\n\nReasoning:\n\nMarileidy Paulino has been dominant throughout the season, consistently finishing in 1st place and achieving impressive times, including a standout 48.76 in Budapest. It's clear she's in peak form, and her consistent performance makes her the favourite to win.\n\nSada Williams is also a strong contender for the top spot. She has been consistently placing in the top three and her times have been improving, with a notable 49.58 in Budapest. However, Paulino's performances have been slightly more impressive, which is why Williams is predicted to finish second.\n\nTalitha Diggs, despite her young age, has shown incredible potential. She has consistently finished in the top three and even managed a time of 49.93 in Oregon. However, she has also shown some inconsistency and her times have varied more than Paulino's and Williams', which is why she is predicted to finish third.\n\nLynna Irby-Jackson, Cynthia Bolingo, Victoria Ohuruogu, Candice McLeod, and Makenzie Dunmore have all shown potential but have also been less consistent and have generally slower times than the top three. Of the bunch, Irby-Jackson and Bolingo have been the most consistent, which is why they are predicted to finish in the fourth and fifth positions respectively.\n\nCandice McLeod, despite having some strong performances, has shown inconsistency, particularly in her performance in Doha where she placed 5th with a time of 52.43. This inconsistency puts her in the seventh spot.\n\nMakenzie Dunmore, despite some strong performances, has also shown inconsistency, particularly with her 51.20 finish in Hungary. This is why she is predicted to finish eighth.\n\nFinally, Martina Weil, despite her strong performances in Brazil, has not been as consistent or as fast as the other competitors, and is therefore predicted to finish ninth.",
+      "entrants": [
+        {
+          "firstName": "Marileidy",
+          "lastName": "Paulino",
+          "id": "14749613",
+          "pb": "48.76",
+          "sb": "48.76",
+          "nat": "DOM",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Candice",
+          "lastName": "McLeod",
+          "id": "14587165",
+          "pb": "49.51",
+          "sb": "50.19",
+          "nat": "JAM",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Sada",
+          "lastName": "Williams",
+          "id": "14592846",
+          "pb": "49.58",
+          "sb": "49.58",
+          "nat": "BAR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Lynna",
+          "lastName": "Irby-Jackson",
+          "id": "14486888",
+          "pb": "49.80",
+          "sb": "50.11",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Talitha",
+          "lastName": "Diggs",
+          "id": "14773307",
+          "pb": "49.93",
+          "sb": "49.93",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Cynthia",
+          "lastName": "Bolingo",
+          "id": "14360768",
+          "pb": "49.96",
+          "sb": "49.96",
+          "nat": "BEL",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Makenzie",
+          "lastName": "Dunmore",
+          "id": "14536492",
+          "pb": "50.35",
+          "sb": "50.35",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Victoria",
+          "lastName": "Ohuruogu",
+          "id": "14359991",
+          "pb": "50.48",
+          "sb": "50.48",
+          "nat": "GBR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Martina",
+          "lastName": "Weil",
+          "id": "14748703",
+          "pb": "51.07",
+          "sb": "51.07",
+          "nat": "CHI",
+          "hasAvy": true
+        }
+      ],
+      "isClosed": true
+    },
+    "3000m Steeple Men": {
+      "date": "2023-09-02T20:07",
+      "blurb": "Predicted Finish and Time:\n\n1. Soufiane el Bakkali (MAR): 8:02.15\n2. Ryuji Miura (JPN): 8:03.90\n3. Abraham Kibiwot (KEN): 8:04.83\n4. Benjamin Kigen (KEN): 8:06.47\n5. Daniel Arce (ESP): 8:09.32\n6. Mohamed Tindouft (MAR): 8:13.10\n7. Avinash Mukund Sable (IND): 8:15.75\n8. Samuel Firewu (ETH): 8:16.22\n9. Djilali Bedrani (FRA): 8:18.01\n10. Amos Serem (KEN): 8:20.05\n11. Hailemariyam Amare (ETH): 8:23.50\n12. Andrew Bayer (USA): 8:25.12\n\nRace Preview:\nThe Men's 3000 Metres Steeplechase is set to be a thrilling event at the upcoming athletics championship. \n\nSoufiane el Bakkali from Morocco is predicted to clinch the gold, considering his impressive performance throughout the season. He consistently finished in the first place in most of his races, boasting a remarkable time of 8:03.16 in Poland.\n\nRyuji Miura from Japan is also expected to be a strong contender. Despite being the youngest participant, his performances have been noteworthy, especially his 2nd place finish with a time of 8:09.91 in Paris.\n\nKenyan athletes, Abraham Kibiwot and Benjamin Kigen are also in the mix. Kibiwot's performance in Monaco, where he finished second, is particularly impressive. However, Kigen's inconsistent performance throughout the season might act as a disadvantage.\n\nDaniel Arce from Spain is another athlete to watch out for. Despite his age, his performance in the races has been consistent, with his 3rd place finish in Paris standing out.\n\nMohamed Tindouft from Morocco and Avinash Mukund Sable from India are also expected to put up a strong fight. However, their inconsistent performances throughout the season might affect their final standings.\n\nThe rest of the pack including Samuel Firewu from Ethiopia, Djilali Bedrani from France, Amos Serem from Kenya, Hailemariyam Amare from Ethiopia, and Andrew Bayer from USA are also expected to put up a valiant effort. However, considering their inconsistent performance throughout the season and their relatively slower times, they are not expected to pose a major threat to the top contenders. \n\nOverall, this race promises to be a thrilling event, showcasing a mix of experienced and young athletes. Their past performances, current form, and competitive spirit will all play a crucial role in determining the final result.",
+      "entrants": [
+        {
+          "firstName": "Soufiane",
+          "lastName": "el Bakkali",
+          "id": "14590424",
+          "pb": "7:56.68",
+          "sb": "7:56.68",
+          "nat": "MAR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Benjamin",
+          "lastName": "Kigen",
+          "id": "14590800",
+          "pb": "8:05.12",
+          "sb": "8:11.12",
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Djilali",
+          "lastName": "Bedrani",
+          "id": "14423830",
+          "pb": "8:05.23",
+          "sb": "8:16.81",
+          "nat": "FRA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Abraham",
+          "lastName": "Kibiwot",
+          "id": "14657344",
+          "pb": "8:05.51",
+          "sb": "8:05.51",
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Hailemariyam",
+          "lastName": "Amare",
+          "id": "14657460",
+          "pb": "8:06.29",
+          "sb": "8:25.10",
+          "nat": "ETH",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Ryuji",
+          "lastName": "Miura",
+          "id": "14860379",
+          "pb": "8:09.91",
+          "sb": "8:09.91",
+          "nat": "JPN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Amos",
+          "lastName": "Serem",
+          "id": "14808796",
+          "pb": "8:09.93",
+          "sb": "8:14.53",
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Samuel",
+          "lastName": "Firewu",
+          "id": "14975231",
+          "pb": "8:10.57",
+          "sb": "8:10.57",
+          "nat": "ETH",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Daniel",
+          "lastName": "Arce",
+          "id": "14420300",
+          "pb": "8:10.63",
+          "sb": "8:10.63",
+          "nat": "ESP",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Avinash Mukund",
+          "lastName": "Sable",
+          "id": "14778911",
+          "pb": "8:11.20",
+          "sb": "8:11.63",
+          "nat": "IND",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Mohamed",
+          "lastName": "Tindouft",
+          "id": "14773269",
+          "pb": "8:11.65",
+          "sb": "8:15.02",
+          "nat": "MAR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Andrew",
+          "lastName": "Bayer",
+          "id": "14360463",
+          "pb": "8:12.47",
+          "sb": "8:25.18",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Mohammed",
+          "lastName": "Msaad",
+          "id": "15038645",
+          "pb": "8:16.18",
+          "sb": "8:16.18",
+          "nat": "MAR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Isaac",
+          "lastName": "Updike",
+          "id": "14470536",
+          "pb": "8:17.47",
+          "sb": "8:17.47",
+          "nat": "USA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Vidar",
+          "lastName": "Johansson",
+          "id": "14535353",
+          "pb": "8:18.31",
+          "sb": "8:23.01",
+          "nat": "SWE",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Karl",
+          "lastName": "Bebendorf",
+          "id": "14597064",
+          "pb": "8:19.59",
+          "sb": "8:19.59",
+          "nat": "GER",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Zak",
+          "lastName": "Seddon",
+          "id": "14386241",
+          "pb": "8:21.28",
+          "sb": "8:21.71",
+          "nat": "GBR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "El Mehdi",
+          "lastName": "Aboujanah",
+          "id": "14683852",
+          "pb": "8:21.93",
+          "sb": "8:21.93",
+          "nat": "ESP",
+          "hasAvy": false
+        },
+        {
+          "firstName": "William",
+          "lastName": "Battershill",
+          "id": "14643877",
+          "pb": "8:22.64",
+          "sb": "8:22.64",
+          "nat": "GBR",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Abderrafia",
+          "lastName": "Bouassel",
+          "id": "14843153",
+          "pb": "8:27.00",
+          "sb": "8:31.22",
+          "nat": "MAR",
+          "hasAvy": false
+        }
+      ],
+      "isClosed": true
+    },
+    "1500m Women": {
+      "date": "2023-09-02T20:37",
+      "blurb": "Predicted Finish and Marks:\n\n1. Nelly Chepchirchir (KEN) - 3:57.90\n2. Freweyni Hailu (ETH) - 3:58.20\n3. Worknesh Mesele (ETH) - 3:58.45\n4. Emily MacKay (USA) - 3:59.50\n5. Sarah Healy (IRL) - 4:00.00\n6. Linden Hall (AUS) - 4:01.00\n7. Tigist Girma (ETH) - 4:01.50\n8. Melissa Courtney-Bryant (GBR) - 4:02.00\n9. Helen Schlachtenhaufen (USA) - 4:02.50\n10. Claudia Mihaela Bobocea (ROU) - 4:03.00\n11. Gaia Sabbatini (ITA) - 4:03.50\n12. Saron Berhe (ETH) - 4:04.00\n\nPreview:\n\nNelly Chepchirchir (KEN) is the clear favorite, with consistent sub-4 minute finishes and several first-place finishes over the season. Her youth may also play a factor, as she could have a slight edge in terms of energy and recovery.\n\nFreweyni Hailu (ETH) is a strong contender for the second spot. Her impressive performances in various competitions suggest she is in good form and possesses the stamina required for a 1500m race.\n\nWorknesh Mesele (ETH) has shown impressive versatility, with strong performances in both the 800m and 1500m. Her good form and impressive timing in previous races make her a contender for the third spot.\n\nEmily MacKay (USA) has shown impressive improvements over the season and her recent sub-4 minute finish indicates she could be a dark horse in this competition.\n\nSarah Healy (IRL) has consistently finished around the 4:00 mark, making her a strong contender for a top-five finish.\n\nLinden Hall (AUS), despite her age, has shown that she can still compete at a high level. Her consistent performances make her a likely contender for a top-six finish.\n\nFor the remaining athletes, their inconsistent performances and lack of standout results make it difficult to place them higher in the ranking. However, in athletics, surprises are always possible and any of these athletes could potentially outperform expectations.",
+      "entrants": [
+        {
+          "firstName": "Freweyni",
+          "lastName": "Hailu",
+          "id": "14836656",
+          "pb": "3:56.28",
+          "sb": "3:57.65",
+          "nat": "ETH",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Worknesh",
+          "lastName": "Mesele",
+          "id": "14852703",
+          "pb": "3:57.00",
+          "sb": "3:57.00",
+          "nat": "ETH",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Linden",
+          "lastName": "Hall",
+          "id": "14272002",
+          "pb": "3:57.27",
+          "sb": "3:57.27",
+          "nat": "AUS",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Nelly",
+          "lastName": "Chepchirchir",
+          "id": "14892139",
+          "pb": "3:57.90",
+          "sb": "3:57.90",
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Melissa",
+          "lastName": "Courtney-Bryant",
+          "id": "14274781",
+          "pb": "3:58.01",
+          "sb": "3:58.01",
+          "nat": "GBR",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Tigist",
+          "lastName": "Girma",
+          "id": "14894776",
+          "pb": "3:59.33",
+          "sb": "3:59.33",
+          "nat": "ETH",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Sarah",
+          "lastName": "Healy",
+          "id": "14705242",
+          "pb": "3:59.68",
+          "sb": "3:59.68",
+          "nat": "IRL",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Emily",
+          "lastName": "MacKay",
+          "id": "14667572",
+          "pb": "3:59.99",
+          "sb": "3:59.99",
+          "nat": "USA",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Helen",
+          "lastName": "Schlachtenhaufen",
+          "id": "14625724",
+          "pb": "4:01.09",
+          "sb": "4:01.55",
+          "nat": "USA",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Claudia Mihaela",
+          "lastName": "Bobocea",
+          "id": "14377909",
+          "pb": "4:01.10",
+          "sb": "4:03.80",
+          "nat": "ROU",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Gaia",
+          "lastName": "Sabbatini",
+          "id": "14682711",
+          "pb": "4:01.24",
+          "sb": "4:01.24",
+          "nat": "ITA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Saron",
+          "lastName": "Berhe",
+          "id": "15009577",
+          "pb": "4:02.30",
+          "sb": "4:02.30",
+          "nat": "ETH",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Danielle",
+          "lastName": "Jones",
+          "id": "14479600",
+          "pb": "4:02.83",
+          "sb": "4:02.83",
+          "nat": "USA",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Agathe",
+          "lastName": "Guillemot",
+          "id": "14685757",
+          "pb": "4:03.26",
+          "sb": "4:03.26",
+          "nat": "FRA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Purity",
+          "lastName": "Chepkirui",
+          "id": "14989663",
+          "pb": "4:04.51",
+          "sb": "4:04.51",
+          "nat": "KEN",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Charlotte",
+          "lastName": "Mouchet",
+          "id": "14534796",
+          "pb": "4:07.47",
+          "sb": "4:07.47",
+          "nat": "FRA",
+          "hasAvy": true
+        },
+        {
+          "firstName": "Kristie",
+          "lastName": "Schoffield",
+          "id": "14679586",
+          "pb": "4:10.12",
+          "sb": "4:10.12",
+          "nat": "USA",
+          "hasAvy": false
+        },
+        {
+          "firstName": "Chunyu",
+          "lastName": "Wang",
+          "id": "14462001",
+          "pb": "4:11.42",
+          "sb": "4:16.65",
+          "nat": "CHN",
+          "hasAvy": true
+        }
+      ],
+      "isClosed": true
+    }
+  }
+}
