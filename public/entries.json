@@ -980,7 +980,190 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:43.20",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Wanyonyi",
+            "id": "14974928",
+            "pb": "1:43.27",
+            "sb": "1:43.27",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.24",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marco",
+            "lastName": "Arop",
+            "id": "14755875",
+            "pb": "1:43.26",
+            "sb": "1:43.30",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.88",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Benjamin",
+            "lastName": "Robert",
+            "id": "14683828",
+            "pb": "1:43.48",
+            "sb": "1:43.48",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.04",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wyclife",
+            "lastName": "Kinyamal",
+            "id": "14746603",
+            "pb": "1:43.12",
+            "sb": "1:43.22",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.27",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daniel",
+            "lastName": "Rowden",
+            "id": "14585368",
+            "pb": "1:43.95",
+            "sb": "1:43.95",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.28",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yanis",
+            "lastName": "Meziane",
+            "id": "14893694",
+            "pb": "1:44.30",
+            "sb": "1:44.30",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.54",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Saúl",
+            "lastName": "Ordóñez",
+            "id": "14517077",
+            "pb": "1:43.65",
+            "sb": "1:44.67",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.65",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gabriel",
+            "lastName": "Tual",
+            "id": "14646018",
+            "pb": "1:44.23",
+            "sb": "1:44.46",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.87",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ben",
+            "lastName": "Pattison",
+            "id": "14706169",
+            "pb": "1:44.02",
+            "sb": "1:44.02",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.97",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Kramer",
+            "id": "14538207",
+            "pb": "1:44.47",
+            "sb": "1:44.57",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.10",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Isaiah",
+            "lastName": "Harris",
+            "id": "14589537",
+            "pb": "1:44.42",
+            "sb": "1:44.85",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.42",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Simone",
+            "lastName": "Barontini",
+            "id": "14676436",
+            "pb": "1:44.34",
+            "sb": "1:44.34",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Erik",
+            "lastName": "Sowinski",
+            "id": "14360557",
+            "pb": "1:44.58",
+            "sb": "1:46.98",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Women": {
       "date": "2023-09-02T19:57",
