@@ -53,6 +53,7 @@ async function getBlurbs() {
       console.log(resp);
       blurbCache[MEET].blurbs[evt] = resp.response;
       fs.writeFileSync(BLURBCACHE_PATH, JSON.stringify(blurbCache));
+      await new Promise(res => setTimeout(res, 1000));
     }
   }
 }
