@@ -1,6 +1,6 @@
 import { AthleticsEvent, DLMeet, WAEventCode } from './types.mjs';
 
-export const MEET: DLMeet = 'xiamen23';
+export const MEET: DLMeet = 'brussels23';
 
 export const NUM_SCORING: number = 2;
 
@@ -32,6 +32,8 @@ export const runningEvents: (AthleticsEvent | string)[][] = [
   ['1500m Men', "Men's 1500 m"],
   ["Men's Mile", "Men's 1 Mile", 'Men 1 Mile', 'Mile Men'],
   ["Women's Mile", "Women's 1 Mile", 'Women 1 Mile', 'Mile Women'],
+  ['2000m Men'],
+  ['2000m Women'],
   ['3000m Women', "Women's 3000 m", "Women's 3000 Meters", 'Women 3000 M'],
   ['3000m Men', "Men's 3000 Meters", 'Men 3000 M'],
   ['3000m SC Women', '3000m Steeple Women', '3000m Steeplechase Women'],
