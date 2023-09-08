@@ -2361,7 +2361,105 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "44.84",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rusheen",
+            "lastName": "McDonald",
+            "id": "14468667",
+            "pb": "43.93",
+            "sb": "44.03",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.93",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Ogando",
+            "id": "14912251",
+            "pb": "44.68",
+            "sb": "45.27",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.07",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Håvard Bentdal",
+            "lastName": "Ingvaldsen",
+            "id": "14908015",
+            "pb": "44.39",
+            "sb": "44.39",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.14",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Leungo",
+            "lastName": "Scotch",
+            "id": "14643510",
+            "pb": "44.82",
+            "sb": "44.82",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.26",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gilles",
+            "lastName": "Biron",
+            "id": "14630769",
+            "pb": "45.05",
+            "sb": "45.05",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dylan",
+            "lastName": "Borlée",
+            "id": "14419938",
+            "pb": "45.09",
+            "sb": "45.09",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Doom",
+            "id": "14548983",
+            "pb": "44.92",
+            "sb": "44.92",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        }
+      ]
     }
   }
 }
