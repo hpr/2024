@@ -77,7 +77,111 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "50.09",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cynthia",
+            "lastName": "Bolingo",
+            "id": "14360768",
+            "pb": "49.96",
+            "sb": "49.96",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.16",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "49.81",
+            "sb": "49.81",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.58",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shamier",
+            "lastName": "Little",
+            "id": "14443767",
+            "pb": "49.68",
+            "sb": "49.68",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.81",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "50.82",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Candice",
+            "lastName": "McLeod",
+            "id": "14587165",
+            "pb": "49.51",
+            "sb": "50.19",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.84",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laviai",
+            "lastName": "Nielsen",
+            "id": "14599229",
+            "pb": "50.83",
+            "sb": "50.83",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.87",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Helena",
+            "lastName": "Ponette",
+            "id": "14659039",
+            "pb": "51.52",
+            "sb": "51.52",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNS",
+          "entrant": {
+            "firstName": "Mary",
+            "lastName": "Moraa",
+            "id": "14798209",
+            "pb": "50.38",
+            "sb": "50.38",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Women": {
       "date": "2023-09-08T20:13",
