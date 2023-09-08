@@ -1545,7 +1545,102 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "21.48",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shericka",
+            "lastName": "Jackson",
+            "id": "14325599",
+            "pb": "21.41",
+            "sb": "21.41",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.31",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anthonique",
+            "lastName": "Strachan",
+            "id": "14368117",
+            "pb": "22.15",
+            "sb": "22.15",
+            "nat": "BAH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.47",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jenna",
+            "lastName": "Prandini",
+            "id": "14329068",
+            "pb": "21.89",
+            "sb": "22.34",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.59",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "22.16",
+            "sb": "22.16",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.79",
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "mark": "22.96",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tasa",
+            "lastName": "Jiya",
+            "id": "14560472",
+            "pb": "22.67",
+            "sb": "22.67",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.43",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Delphine",
+            "lastName": "Nkansa",
+            "id": "14779993",
+            "pb": "23.03",
+            "sb": "23.14",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNS"
+        }
+      ]
     },
     "800m Men": {
       "date": "2023-09-08T21:17",
