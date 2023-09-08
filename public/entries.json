@@ -828,7 +828,120 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.84",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elaine",
+            "lastName": "Thompson-Herah",
+            "id": "14285956",
+            "pb": "10.54",
+            "sb": "10.92",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.95",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natasha",
+            "lastName": "Morrison",
+            "id": "14285826",
+            "pb": "10.87",
+            "sb": "10.98",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.97",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dina",
+            "lastName": "Asher-Smith",
+            "id": "14378282",
+            "pb": "10.83",
+            "sb": "10.85",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.14",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zoe",
+            "lastName": "Hobbs",
+            "id": "14499691",
+            "pb": "10.96",
+            "sb": "10.96",
+            "nat": "NZL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.17",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shashalee",
+            "lastName": "Forbes",
+            "id": "14574709",
+            "pb": "10.96",
+            "sb": "10.96",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.18",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gina",
+            "lastName": "Bass",
+            "id": "14479741",
+            "pb": "11.05",
+            "sb": "11.05",
+            "nat": "GAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.31",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rani",
+            "lastName": "Rosius",
+            "id": "14738788",
+            "pb": "11.18",
+            "sb": "11.18",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNS",
+          "entrant": {
+            "firstName": "Tamara",
+            "lastName": "Clark",
+            "id": "14596381",
+            "pb": "10.88",
+            "sb": "10.98",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Hurdles Women": {
       "date": "2023-09-08T20:46",
