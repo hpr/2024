@@ -635,7 +635,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "19.79",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kenneth",
+            "lastName": "Bednarek",
+            "id": "14715244",
+            "pb": "19.68",
+            "sb": "19.82",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "19.82",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zharnel",
+            "lastName": "Hughes",
+            "id": "14414524",
+            "pb": "19.73",
+            "sb": "19.73",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "19.89",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andre",
+            "lastName": "de Grasse",
+            "id": "14535607",
+            "pb": "19.62",
+            "sb": "20.01",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "19.98",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aaron",
+            "lastName": "Brown",
+            "id": "14366482",
+            "pb": "19.95",
+            "sb": "20.00",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.24",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joseph",
+            "lastName": "Fahnbulleh",
+            "id": "14803230",
+            "pb": "19.83",
+            "sb": "20.14",
+            "nat": "LBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.30",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Filippo",
+            "lastName": "Tortu",
+            "id": "14629026",
+            "pb": "20.10",
+            "sb": "20.14",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.52",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kyree",
+            "lastName": "King",
+            "id": "14476000",
+            "pb": "20.00",
+            "sb": "20.01",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.93",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Reynier",
+            "lastName": "Mena",
+            "id": "14518308",
+            "pb": "19.63",
+            "sb": "19.95",
+            "nat": "CUB",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Women": {
       "date": "2023-09-08T20:36",
