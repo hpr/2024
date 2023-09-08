@@ -332,7 +332,231 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:55.34",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laura",
+            "lastName": "Muir",
+            "id": "14422111",
+            "pb": "3:54.50",
+            "sb": "3:56.36",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:55.87",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ciara",
+            "lastName": "Mageean",
+            "id": "14275665",
+            "pb": "3:56.61",
+            "sb": "3:56.61",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:56.93",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nelly",
+            "lastName": "Chepchirchir",
+            "id": "14892139",
+            "pb": "3:56.72",
+            "sb": "3:56.72",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:57.75",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessica",
+            "lastName": "Hull",
+            "id": "14464506",
+            "pb": "3:57.29",
+            "sb": "3:57.29",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:58.03",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Katie",
+            "lastName": "Snowden",
+            "id": "14360725",
+            "pb": "3:56.72",
+            "sb": "3:56.72",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:58.06",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hirut",
+            "lastName": "Meshesha",
+            "id": "14805826",
+            "pb": "3:54.87",
+            "sb": "3:54.87",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:58.09",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Melissa",
+            "lastName": "Courtney-Bryant",
+            "id": "14274781",
+            "pb": "3:58.01",
+            "sb": "3:58.01",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.17",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Addison",
+            "lastName": "Wiley",
+            "id": "14907337",
+            "pb": "4:03.22",
+            "sb": "4:03.22",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.19",
+          "place": 9,
+          "notes": ""
+        },
+        {
+          "mark": "4:00.41",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Linden",
+            "lastName": "Hall",
+            "id": "14272002",
+            "pb": "3:57.27",
+            "sb": "3:57.27",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:00.46",
+          "place": 11,
+          "notes": ""
+        },
+        {
+          "mark": "4:00.53",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marta",
+            "lastName": "Pérez",
+            "id": "14452646",
+            "pb": "4:00.12",
+            "sb": "4:01.41",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:02.27",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Esther",
+            "lastName": "Guerrero",
+            "id": "14261358",
+            "pb": "4:00.13",
+            "sb": "4:00.13",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:02.32",
+          "place": 14,
+          "notes": ""
+        },
+        {
+          "mark": "4:10.65",
+          "place": 15,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elise",
+            "lastName": "Vanderelst",
+            "id": "14526691",
+            "pb": "4:02.63",
+            "sb": "4:05.26",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Claudia Mihaela",
+            "lastName": "Bobocea",
+            "id": "14377909",
+            "pb": "4:01.10",
+            "sb": "4:03.80",
+            "nat": "ROU",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Noélie",
+            "lastName": "Yarigo",
+            "id": "14270067",
+            "pb": "4:20.09",
+            "sb": null,
+            "nat": "BEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Purity",
+            "lastName": "Chepkirui",
+            "id": "14989663",
+            "pb": "4:04.51",
+            "sb": "4:04.51",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Men": {
       "date": "2023-09-08T20:28",
