@@ -353,7 +353,14 @@ export default function App() {
                       <strong>Submissions Deadline:</strong> Friday September 8th, before the DL TV window starts, by 2pm ET.
                       <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
-                      Free T-Shirt. Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes!
+                      Free T-Shirt.
+                      <br />
+                      <strong>
+                        <a href="#/standings">Overall League Champion</a> Prize
+                      </strong>
+                      : Free Supporters Club Membership + T-Shirt.
+                      <br />
+                      Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes!
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
