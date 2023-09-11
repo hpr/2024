@@ -42,7 +42,7 @@ export default function App() {
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('brussels23');
+  const [meet] = useState<DLMeet>('eugene23');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -118,7 +118,10 @@ export default function App() {
       <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register / Login & Submit Picks">
         {arePicksComplete ? (
           <Stack>
-            <Text italic>If you want to use an existing account from a previous contest or are updating your picks, click "Submit / Update Picks" -- otherwise, click "Register"</Text>
+            <Text italic>
+              If you want to use an existing account from a previous contest or are updating your picks, click "Submit / Update Picks" -- otherwise, click
+              "Register"
+            </Text>
             <SegmentedControl
               value={authPage}
               onChange={(v: AuthPage) => {
@@ -188,12 +191,7 @@ export default function App() {
                 <TextInput withAsterisk label="Name" placeholder="Usain (will be displayed on leaderboards)" {...registerForm.getInputProps('name')} />
               )}
               <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
-              <TextInput
-                withAsterisk
-                label="Tiebreaker: Men's 2000m winning time?"
-                placeholder="e.g. 4:50.00"
-                {...registerForm.getInputProps('tiebreaker')}
-              />
+              <TextInput withAsterisk label="Tiebreaker: Men's 2000m winning time?" placeholder="e.g. 4:50.00" {...registerForm.getInputProps('tiebreaker')} />
               <Group position="right" mt="md">
                 <Button leftIcon={isSuccess ? <Check /> : undefined} type="submit" loading={isLoading}>
                   {authPage === 'register'
@@ -331,7 +329,7 @@ export default function App() {
                 <Burger opened={navbarOpen} onClick={() => setNavbarOpen((o) => !o)} size="sm" color={theme.colors.gray[6]} mr="xl" />
               </MediaQuery>
               <Text size="md">
-                Fantasy Brussels '23
+                Fantasy DL Final '23
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20}>
@@ -353,9 +351,9 @@ export default function App() {
                     </Text>
                     <Text mb={10}>
                       <strong>Submissions Deadline:</strong> Friday September 8th, before the DL TV window starts, by 2pm ET.
-                      {/* <br />
+                      <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
-                      Free T-Shirt. Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes! */}
+                      Free T-Shirt. Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes!
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>

@@ -23,6 +23,7 @@ const resultsLinks: { [k in DLMeet]?: string } = {
   zurich23: 'https://livecache.sportresult.com/node/db/ATH_PROD/ZURICH2023_SCHEDULE_JSON.json',
   xiamen23: 'https://livecache.sportresult.com/node/db/ATH_PROD/XIAMEN2023_SCHEDULE_JSON.json',
   brussels23: 'https://livecache.sportresult.com/node/db/ATH_PROD/BRUSSELS2023_SCHEDULE_JSON.json',
+  eugene23: 'https://livecache.sportresult.com/node/db/ATH_PROD/EUGENE2023_SCHEDULE_JSON.json',
 };
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
