@@ -17,6 +17,7 @@ const LeagueStandings = () => {
     <Paper withBorder p="lg">
       <Paper withBorder p="lg" mb="lg" style={{ textAlign: 'center' }}>
         <Title order={2}>League Standings</Title>
+        <Title order={6}><a target="_blank" href="https://trackbot.beehiiv.com/p/rabat">(scoring details)</a></Title>
       </Paper>
       <Timeline active={standings.findLastIndex((standing) => standing.cutoff)} bulletSize={24} lineWidth={2}>
         {standings.map(({ meet, date, url, leaders, cutoff }) => (

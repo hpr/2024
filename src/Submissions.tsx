@@ -1,4 +1,4 @@
-import { Avatar, Badge, Button, List, Loader, Paper, Stack } from '@mantine/core';
+import { Avatar, Badge, Button, List, Loader, Paper, Stack, Text, Title } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import { mantineGray, SERVER_URL } from './const';
 import { DLMeet } from './types';
@@ -7,7 +7,9 @@ import { Refresh } from 'tabler-icons-react';
 
 export const Submissions = ({ meet }: { meet: DLMeet }) => {
   const [submissions, setSubmissions] = useState<{ id: number; name: string }[]>([]);
+  const [submissionsLoaded, setSubmissionsLoaded] = useState<boolean>(false);
   const refreshSubmissions = async () => {
+    setSubmissionsLoaded(false);
     setSubmissions([]);
     setSubmissions(
       await (
@@ -20,6 +22,7 @@ export const Submissions = ({ meet }: { meet: DLMeet }) => {
         })
       ).json()
     );
+    setSubmissionsLoaded(true);
   };
   useEffect(() => {
     refreshSubmissions();
@@ -31,7 +34,14 @@ export const Submissions = ({ meet }: { meet: DLMeet }) => {
         <Button color={mantineGray} variant="outline" onClick={refreshSubmissions}>
           <Refresh />
         </Button>
-        {!submissions.length && <Loader />}
+        {!submissionsLoaded ? (
+          <Loader />
+        ) : submissions.length === 0 ? (
+          <>
+            <Title order={2}>Contest not started</Title>
+            <Text>When the contest starts, verify your submission was received here...</Text>
+          </>
+        ) : null}
         <List>
           {submissions.map(({ id, name }) => (
             <List.Item
