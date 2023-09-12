@@ -7,7 +7,7 @@ interface MainLinkProps {
   icon: React.ReactNode;
   path: string;
   color: string;
-  label: string;
+  label: string | JSX.Element;
   onClick?: MouseEventHandler;
 }
 
@@ -58,7 +58,7 @@ export function MainLinks({ links = [] }: MainLinksProps) {
   return (
     <div>
       {links.map((link, i) =>
-        link === DIVIDER ? <Divider key={i} my="lg" /> : <MainLink {...link} key={link.label} />
+        link === DIVIDER ? <Divider key={i} my="lg" /> : <MainLink {...link} key={link.path} />
       )}
     </div>
   );
