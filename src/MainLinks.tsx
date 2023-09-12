@@ -47,7 +47,7 @@ type MainLinksProps = {
         icon: JSX.Element;
         color: string;
         path: string;
-        label: string;
+        label: string | JSX.Element;
         onClick?: MouseEventHandler;
       }
     | 'divider'

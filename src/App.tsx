@@ -20,6 +20,7 @@ import {
   Progress,
   Popover,
   Box,
+  Badge,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleticsEvent, AuthPage, DLMeet, Entrant, Entries, Page, Team, TeamToScore } from './types';
@@ -290,10 +291,11 @@ export default function App() {
                       },
                       DIVIDER,
                       ...Object.keys(entries?.[meet] ?? {})
-                        .sort(evtSort)
+                        // .sort(evtSort)
                         .map((label) => {
                           const linkEvt = label as AthleticsEvent;
                           const filled = myTeam[meet]?.[linkEvt]?.length === PICKS_PER_EVT;
+                          const date = entries?.[meet]?.[label as AthleticsEvent]?.date;
                           return {
                             icon: filled ? <Check /> : <Run />,
                             color: filled ? 'green' : 'blue',
@@ -304,7 +306,11 @@ export default function App() {
                               setPage('events');
                               setNavbarOpen(false);
                             },
-                            label,
+                            label: (
+                              <>
+                                {label.replace('Steeplechase', 'SC')} <Badge color={date === 'Sat' ? 'green' : 'yellow'}>{date}</Badge>
+                              </>
+                            ),
                           };
                         }),
                     ]}
