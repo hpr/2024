@@ -1,1 +1,23 @@
-{ "eugene23": {} }
+{
+  "eugene23": {
+    "400m Hurdles Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "400m Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "3000m Steeplechase Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "1500m Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "100m Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "3000m Steeplechase Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "100m Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "Mile Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+
+    "800m Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "5000m Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "400m Hurdles Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "3000m Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "400m Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "110m Hurdles Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "100m Hurdles Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "800m Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "200m Men": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] },
+    "200m Women": { "url": "https://eugene.diamondleague.com/program-results-eugene/", "entrants": [] }
+  }
+}

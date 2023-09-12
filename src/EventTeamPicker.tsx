@@ -1,6 +1,6 @@
 import { Avatar, Button, Code, Grid, GridProps, Group, Paper, Stack, Switch, Table, TableProps, Text, Title, Tooltip } from '@mantine/core';
 import { useContext, useState } from 'react';
-import { Check, Dots, HandClick, HandFinger, Robot } from 'tabler-icons-react';
+import { Check, Clock, ClockPause, Dots, HandClick, HandFinger, Robot, Tex } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
 import { mantineGray, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
@@ -51,12 +51,24 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
   });
 
   const myTeamPicks = myTeam[meet]?.[evt!] ?? [];
+  const entriesEvt = entries?.[meet]?.[evt as AthleticsEvent];
   return (
     <>
       <Paper shadow="xl" radius="xl" p="xl" withBorder sx={{ minHeight: 193 }}>
         <Stack align="center">
           {!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed ? (
             <Text>Event Closed</Text>
+          ) : entriesEvt?.entrants?.length === 0 ? (
+            <>
+              <Title order={1}>Awaiting Startlist</Title>
+              <Text style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+                <ClockPause size={30} /> ... Looks like the startlists aren't available yet.
+              </Text>
+              <Text>
+                Check <a target="_blank" href={entriesEvt.url}>the official meet website</a> for details -- when entries are available there, this site will soon be updated so
+                you can make picks!
+              </Text>
+            </>
           ) : (
             <>
               {myTeamPicks.length ? (
@@ -117,11 +129,13 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
               <Button
                 onClick={() =>
                   modals.open({
-                    title: <Text>{evt} AI Preview <Robot /></Text>,
+                    title: (
+                      <Text>
+                        {evt} AI Preview <Robot />
+                      </Text>
+                    ),
                     children: (
-                      <ReactMarkdown>
-                        {entries?.[meet]?.[evt]?.blurb ?? ''}
-                      </ReactMarkdown>
+                      <ReactMarkdown>{entries?.[meet]?.[evt]?.blurb ?? ''}</ReactMarkdown>
                       // <Code block sx={{ whiteSpace: 'pre-wrap' }}>
                       //   {entries?.[meet]?.[evt]?.blurb}
                       // </Code>
