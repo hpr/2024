@@ -343,19 +343,19 @@ export default function App() {
                     </Button>
                   </Popover.Target>
                   <Popover.Dropdown>
-                    <Text mb={10}>
+                    <Text mb={10} size="sm">
                       Select {PICKS_PER_EVT} athletes per event by selecting events on the left side menu (on mobile tap the three lines to bring it up), and
                       picking athletes in the main view. Your incomplete picks are saved to your device, and once you submit you can always re-submit to update
                       your picks before the submissions deadline.
                     </Text>
-                    <Text mb={10}>
+                    <Text mb={10} size="sm">
                       Your athletes will be scored by place, with zero points awarded outside the top six. The <strong>catch</strong> is that the order of your
                       team matters: Your first athlete will be scored 20-12-8-6-5-4 style, then your #2 athlete will be scored 10-8-6-4-3-2 style, and your
                       final athlete will be scored 6-5-4-3-2-1. Once all {PICKS_PER_EVT} athletes are scored, we remove the lowest-scoring athlete so that only
                       your top {PICKS_PER_EVT - 1} scorers per event will count. Once you have finished your picks, you <strong>must</strong> submit them by
                       pressing "Save Picks" and then registering or logging in to an account.
                     </Text>
-                    <Text mb={10}>
+                    <Text mb={10} size="sm">
                       <strong>Submissions Deadline:</strong> Saturday September 16th, before the DL TV window starts, by 3pm ET.
                       <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
