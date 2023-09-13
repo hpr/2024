@@ -1,4 +1,3 @@
-
 export type DLMeet =
   | 'doha'
   | 'birminghamIndoor'
@@ -406,3 +405,40 @@ export type StandingElement = {
   };
 };
 export type Standings = StandingElement[];
+
+export type EventCircuitStandings = {
+  data: {
+    getEventCircuitStandings: {
+      seasons: string[];
+      circuitName: string;
+      parameters: {
+        gender: string;
+        season: string;
+        __typename: string;
+      };
+      standings: {
+        disciplines: string;
+        entries: {
+          athlete: string;
+          country: string;
+          athleteId: number;
+          __typename: string;
+          rank: number;
+          points: string;
+          results: {
+            date: string;
+            place: number;
+            discipline: string;
+            details: null;
+            points: string;
+            result: string;
+            venue: string;
+            __typename: string;
+          }[];
+        }[];
+        __typename: string;
+      }[];
+      __typename: string;
+    };
+  };
+};

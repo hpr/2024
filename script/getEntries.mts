@@ -1,7 +1,7 @@
 import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import { nameFixer } from 'name-fixer';
-import { AthleticsEvent, BlurbCache, DLMeet, Entrant, Entries, MeetCache, WAEventCode } from './types.mjs';
+import { AthleticsEvent, BlurbCache, DLMeet, Entrant, Entries, EventCircuitStandings, MeetCache, WAEventCode } from './types.mjs';
 import PDFParser, { Output } from 'pdf2json';
 import { CACHE_PATH, disciplineCodes, ENTRIES_PATH, runningEvents, getDomain, BLURBCACHE_PATH, MEET, GRAPHQL_ENDPOINT, GRAPHQL_API_KEY } from './const.mjs';
 //import PDFJS from 'pdfjs-dist/legacy/build/pdf.js';
@@ -259,6 +259,7 @@ const getMediaGuidePhotos = async (meet: DLMeet) => {
 };
 
 const getEntries = async () => {
+  const oldEntries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));
   const blurbCache: BlurbCache = JSON.parse(fs.readFileSync(BLURBCACHE_PATH, 'utf-8'));
   for (const key in schedules) {
     const meet = key as DLMeet;
@@ -427,12 +428,13 @@ const getEntries = async () => {
           };
         }
       } else if (meetScheduleUrl === 'getEventCircuitStandings') {
-        const leaders = await (
-          await fetch(GRAPHQL_ENDPOINT, {
-            headers: { 'x-api-key': GRAPHQL_API_KEY },
-            body: JSON.stringify({
-              operationName: 'getEventCircuitStandings',
-              query: `
+        for (const sexCode of ['men', 'women']) {
+          const { data }: EventCircuitStandings = await (
+            await fetch(GRAPHQL_ENDPOINT, {
+              headers: { 'x-api-key': GRAPHQL_API_KEY },
+              body: JSON.stringify({
+                operationName: 'getEventCircuitStandings',
+                query: `
 query getEventCircuitStandings($eventCircuitTypeCode: String, $season: Int, $sexCode: String) {
   getEventCircuitStandings(eventCircuitTypeCode: $eventCircuitTypeCode, season: $season, sexCode: $sexCode) {
     seasons
@@ -467,15 +469,16 @@ query getEventCircuitStandings($eventCircuitTypeCode: String, $season: Int, $sex
     __typename
   }
 }`,
-              variables: {
-                eventCircuitTypeCode: 'DL',
-                season: 2023,
-                sexCode: 'women',
-              },
-            }),
-            method: 'POST',
-          })
-        ).json();
+                variables: {
+                  eventCircuitTypeCode: 'DL',
+                  season: 2023,
+                  sexCode,
+                },
+              }),
+              method: 'POST',
+            })
+          ).json();
+        }
       } else {
         // diamond league website
         if (!cache[meet].schedule) {
@@ -555,7 +558,8 @@ query getEventCircuitStandings($eventCircuitTypeCode: String, $season: Int, $sex
           console.log(entrants);
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
-            date: `${year}-${month}-${day}T${document.querySelector('.time')!.getAttribute('data-starttime')}`,
+            date:
+              oldEntries[meet]?.[name as AthleticsEvent]?.date ?? `${year}-${month}-${day}T${document.querySelector('.time')!.getAttribute('data-starttime')}`,
             url: meetScheduleUrl,
             blurb: blurbCache[meet]?.blurbs?.[name],
             targetTime: targetTimes[meet]?.[name],
