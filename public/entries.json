@@ -88,7 +88,136 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "46.39",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rai",
+            "lastName": "Benjamin",
+            "id": "14574865",
+            "pb": "46.17",
+            "sb": "46.62",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "46.53",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Karsten",
+            "lastName": "Warholm",
+            "id": "14479487",
+            "pb": "45.94",
+            "sb": "46.51",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.31",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kyron",
+            "lastName": "McMaster",
+            "id": "14532760",
+            "pb": "47.08",
+            "sb": "47.26",
+            "nat": "IVB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.44",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alison",
+            "lastName": "dos Santos",
+            "id": "14755064",
+            "pb": "46.29",
+            "sb": "47.38",
+            "nat": "BRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.83",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilfried",
+            "lastName": "Happio",
+            "id": "14650750",
+            "pb": "47.41",
+            "sb": "47.58",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.93",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ludvy",
+            "lastName": "Vaillant",
+            "id": "14480831",
+            "pb": "47.85",
+            "sb": "47.85",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.99",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rasmus",
+            "lastName": "Mägi",
+            "id": "14373195",
+            "pb": "47.82",
+            "sb": "48.04",
+            "nat": "EST",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.42",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Trevor",
+            "lastName": "Bassitt",
+            "id": "14719193",
+            "pb": "47.38",
+            "sb": "47.38",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.62",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.58",
+            "sb": "47.58",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        }
+      ]
     },
     "400m Men": {
       "date": "Sat",
