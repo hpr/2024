@@ -306,7 +306,133 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "44.30",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kirani",
+            "lastName": "James",
+            "id": "14195659",
+            "pb": "43.74",
+            "sb": "44.38",
+            "nat": "GRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.44",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Quincy",
+            "lastName": "Hall",
+            "id": "14597236",
+            "pb": "44.37",
+            "sb": "44.37",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.61",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Vernon",
+            "lastName": "Norwood",
+            "id": "14490237",
+            "pb": "44.26",
+            "sb": "44.26",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.90",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bryce",
+            "lastName": "Deadmon",
+            "id": "14596460",
+            "pb": "44.22",
+            "sb": "44.22",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.10",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rusheen",
+            "lastName": "McDonald",
+            "id": "14468667",
+            "pb": "43.93",
+            "sb": "44.03",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.18",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Leungo",
+            "lastName": "Scotch",
+            "id": "14643510",
+            "pb": "44.82",
+            "sb": "44.82",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.51",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gilles",
+            "lastName": "Biron",
+            "id": "14630769",
+            "pb": "45.05",
+            "sb": "45.05",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Ogando",
+            "id": "14912251",
+            "pb": "44.68",
+            "sb": "44.93",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Matthew",
+            "lastName": "Hudson-Smith",
+            "id": "14407278",
+            "pb": "44.26",
+            "sb": "44.26",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Women": {
       "date": "Sat",
