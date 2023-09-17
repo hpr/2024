@@ -2338,7 +2338,155 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "14:00.21",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gudaf",
+            "lastName": "Tsegay",
+            "id": "14595214",
+            "pb": "14:12.29",
+            "sb": "14:12.29",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:05.92",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Beatrice",
+            "lastName": "Chebet",
+            "id": "14749924",
+            "pb": "14:12.92",
+            "sb": "14:12.92",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:21.52",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ejgayehu",
+            "lastName": "Taye",
+            "id": "14848746",
+            "pb": "14:12.98",
+            "sb": "14:13.31",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:40.81",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lilian Kasait",
+            "lastName": "Rengeruk",
+            "id": "14590678",
+            "pb": "14:23.05",
+            "sb": "14:23.05",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:42.29",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lemlem",
+            "lastName": "Hailu",
+            "id": "14806061",
+            "pb": "14:34.53",
+            "sb": "14:34.53",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:42.38",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nozomi",
+            "lastName": "Tanaka",
+            "id": "14632538",
+            "pb": "14:29.18",
+            "sb": "14:29.18",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:45.98",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alicia",
+            "lastName": "Monson",
+            "id": "14708276",
+            "pb": "14:19.45",
+            "sb": "14:19.45",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "15:25.62",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Weini",
+            "lastName": "Kelati Frezghi",
+            "id": "14877184",
+            "pb": "14:53.41",
+            "sb": "14:53.41",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Birke",
+            "lastName": "Haylom",
+            "id": "15009582",
+            "pb": "14:37.94",
+            "sb": "14:37.94",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNS",
+          "entrant": {
+            "firstName": "Freweyni",
+            "lastName": "Hailu",
+            "id": "14836656",
+            "pb": "14:23.45",
+            "sb": "14:23.45",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        }
+      ]
     },
     "400m Hurdles Women": {
       "date": "Sun",
