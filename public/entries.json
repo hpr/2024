@@ -2099,7 +2099,139 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:42.80",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Wanyonyi",
+            "id": "14974928",
+            "pb": "1:43.20",
+            "sb": "1:43.20",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:42.85",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marco",
+            "lastName": "Arop",
+            "id": "14755875",
+            "pb": "1:43.24",
+            "sb": "1:43.24",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.06",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Djamel",
+            "lastName": "Sedjati",
+            "id": "14976579",
+            "pb": "1:43.40",
+            "sb": "1:43.40",
+            "nat": "ALG",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.94",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yanis",
+            "lastName": "Meziane",
+            "id": "14893694",
+            "pb": "1:43.94",
+            "sb": "1:43.94",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.21",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daniel",
+            "lastName": "Rowden",
+            "id": "14585368",
+            "pb": "1:43.95",
+            "sb": "1:43.95",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.63",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bryce",
+            "lastName": "Hoppel",
+            "id": "14656699",
+            "pb": "1:43.23",
+            "sb": "1:43.95",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.43",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Benjamin",
+            "lastName": "Robert",
+            "id": "14683828",
+            "pb": "1:43.48",
+            "sb": "1:43.48",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.90",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Saúl",
+            "lastName": "Ordóñez",
+            "id": "14517077",
+            "pb": "1:43.65",
+            "sb": "1:44.54",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:46.33",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wyclife",
+            "lastName": "Kinyamal",
+            "id": "14746603",
+            "pb": "1:43.12",
+            "sb": "1:43.22",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        }
+      ]
     },
     "5000m Women": {
       "date": "Sun",
