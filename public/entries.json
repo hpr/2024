@@ -4100,7 +4100,136 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "21.57",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shericka",
+            "lastName": "Jackson",
+            "id": "14325599",
+            "pb": "21.41",
+            "sb": "21.41",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.10",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou",
+            "id": "14415994",
+            "pb": "22.08",
+            "sb": "22.26",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.16",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anthonique",
+            "lastName": "Strachan",
+            "id": "14368117",
+            "pb": "22.15",
+            "sb": "22.15",
+            "nat": "BAH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.21",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Twanisha",
+            "lastName": "Terry",
+            "id": "14553598",
+            "pb": "22.17",
+            "sb": "22.17",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.35",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "22.16",
+            "sb": "22.16",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.49",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kayla",
+            "lastName": "White",
+            "id": "14642681",
+            "pb": "22.01",
+            "sb": "22.01",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "North Carolina A&T Aggies"
+          }
+        },
+        {
+          "mark": "22.68",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jenna",
+            "lastName": "Prandini",
+            "id": "14329068",
+            "pb": "21.89",
+            "sb": "22.34",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.92",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tasa",
+            "lastName": "Jiya",
+            "id": "14560472",
+            "pb": "22.67",
+            "sb": "22.67",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.62",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gémima",
+            "lastName": "Joseph",
+            "id": "14738969",
+            "pb": "22.77",
+            "sb": "23.01",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     }
   }
 }
