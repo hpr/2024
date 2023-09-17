@@ -2575,7 +2575,135 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "51.98",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Femke",
+            "lastName": "Bol",
+            "id": "14707010",
+            "pb": "51.45",
+            "sb": "51.45",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.45",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shamier",
+            "lastName": "Little",
+            "id": "14443767",
+            "pb": "52.39",
+            "sb": "52.80",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.56",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rushell",
+            "lastName": "Clayton",
+            "id": "14425208",
+            "pb": "52.81",
+            "sb": "52.81",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.60",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Janieve",
+            "lastName": "Russell",
+            "id": "14334022",
+            "pb": "53.08",
+            "sb": "53.65",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.48",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Cockrell",
+            "id": "14486939",
+            "pb": "53.34",
+            "sb": "53.34",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.68",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ayomide",
+            "lastName": "Folorunso",
+            "id": "14484475",
+            "pb": "53.89",
+            "sb": "53.89",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.95",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gianna",
+            "lastName": "Woodruff",
+            "id": "14423522",
+            "pb": "53.69",
+            "sb": "54.46",
+            "nat": "PAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.98",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Ryzhykova",
+            "id": "14304336",
+            "pb": "52.96",
+            "sb": "54.35",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.48",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Viktoriya",
+            "lastName": "Tkachuk",
+            "id": "14426923",
+            "pb": "53.76",
+            "sb": "54.25",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Men": {
       "date": "Sun",
