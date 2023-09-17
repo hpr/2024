@@ -3264,7 +3264,135 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.93",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hansle",
+            "lastName": "Parchment",
+            "id": "14325570",
+            "pb": "12.94",
+            "sb": "12.96",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.06",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grant",
+            "lastName": "Holloway",
+            "id": "14516985",
+            "pb": "12.81",
+            "sb": "12.96",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.07",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daniel",
+            "lastName": "Roberts",
+            "id": "14577558",
+            "pb": "13.00",
+            "sb": "13.01",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.10",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shunsuke",
+            "lastName": "Izumiya",
+            "id": "14815041",
+            "pb": "13.04",
+            "sb": "13.04",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.12",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jason",
+            "lastName": "Joseph",
+            "id": "14680682",
+            "pb": "13.08",
+            "sb": "13.08",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.15",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Freddie",
+            "lastName": "Crittenden",
+            "id": "14491556",
+            "pb": "13.00",
+            "sb": "13.16",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.21",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cordell",
+            "lastName": "Tinch",
+            "id": "14719972",
+            "pb": "12.96",
+            "sb": "12.96",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.36",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jamal",
+            "lastName": "Britt",
+            "id": "14769264",
+            "pb": "13.08",
+            "sb": "13.14",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.46",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Just",
+            "lastName": "Kwaou-Mathey",
+            "id": "14734289",
+            "pb": "13.09",
+            "sb": "13.09",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Hurdles Women": {
       "date": "Sun",
