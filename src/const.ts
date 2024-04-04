@@ -10,8 +10,8 @@ export const scoreTable = [
   [6, 5, 4, 3, 2, 1],
 ];
 
-export const GRAPHQL_ENDPOINT = 'https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql';
-export const GRAPHQL_API_KEY = 'da2-erlx4oraybbjrlxorsdgmemgua';
+export const GRAPHQL_ENDPOINT = 'https://tppcjbjqljd4tj7my77t466hn4.appsync-api.eu-west-1.amazonaws.com/graphql';
+export const GRAPHQL_API_KEY = 'da2-fulcgci74bbslidixnmkcr6sxu';
 export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
   competitor: getSingleCompetitor(id: $id, urlSlug: $urlSlug) {
