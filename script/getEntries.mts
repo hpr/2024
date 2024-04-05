@@ -60,6 +60,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   xiamen23: ['https://xiamen.diamondleague.com/program-results/program-2023/'],
   brussels23: ['https://brussels.diamondleague.com/en/programme-results-brussels/'],
   eugene23: ['https://eugene.diamondleague.com/program-results-eugene/'],
+  xiamen24: ['https://xiamen.diamondleague.com/program-results/program-2024/'],
 };
 
 const idTeams = {
@@ -78,9 +79,10 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   if (sigFigDiff) return sigFigDiff;
   return a.pb.localeCompare(b.pb);
 };
-const sanitizeEvtName = (name: string | undefined): string | undefined => {
+const sanitizeEvtName = (name?: string, sex?: 'men' | 'women'): string | undefined => {
   if (name?.startsWith('Men ')) name = name.replace('Men ', '') + ' Men';
   if (name?.startsWith('Women ')) name = name.replace('Women ', '') + ' Women';
+  if (!name?.toLowerCase().includes('men')) name += ` ${sex![0].toUpperCase() + sex?.slice(1)}`
   return name
     ?.replace('Dream ', '')
     .replace(' W Women', ' Women')
@@ -488,7 +490,7 @@ query getEventCircuitStandings($eventCircuitTypeCode: String, $season: Int, $sex
         const { document } = new JSDOM(cache[meet].schedule.combined).window;
         const events = [...document.querySelectorAll('.competition.DR')]
           .map((elem) => ({
-            name: sanitizeEvtName(elem.querySelector('.name')?.textContent!),
+            name: sanitizeEvtName(elem.querySelector('.name')?.textContent!, elem.parentElement?.className as 'men' | 'women'),
             url: elem.querySelector('.links a')?.getAttribute('href'),
           }))
           .filter(({ name, url }) => runningEvents.flat().some((evt) => (name ?? '').toLowerCase().startsWith(evt.toLowerCase())) && url)

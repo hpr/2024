@@ -1,6 +1,6 @@
 import { AthleticsEvent, DLMeet, WAEventCode } from './types.mjs';
 
-export const MEET: DLMeet = 'eugene23';
+export const MEET: DLMeet = 'xiamen24';
 
 export const NUM_SCORING: number = 2;
 
@@ -257,7 +257,7 @@ export const getDomainAndPath = (url: string) => url.split('/').slice(0, -1).joi
 export const backupNotes = ['DNS', 'DQ', 'DNF'];
 
 export const GRAPHQL_ENDPOINT = 'https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql';
-export const GRAPHQL_API_KEY = 'da2-erlx4oraybbjrlxorsdgmemgua';
+export const GRAPHQL_API_KEY = 'da2-erlx4oraybbjrlxorsdgmemgua'; // intentionally public
 export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
   competitor: getSingleCompetitor(id: $id, urlSlug: $urlSlug) {
@@ -282,18 +282,19 @@ query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
 `;
 
 export const standingsMeets: { meet: DLMeet; date: string }[] = [
-  { meet: 'doha23', date: 'May 5, 2023' },
-  { meet: 'rabat23', date: 'May 28, 2023' },
-  { meet: 'florence23', date: 'June 2, 2023' },
-  { meet: 'paris23', date: 'June 9, 2023' },
-  { meet: 'oslo23', date: 'June 15, 2023' },
-  { meet: 'lausanne23', date: 'June 30, 2023' },
-  { meet: 'stockholm23', date: 'July 2, 2023' },
-  { meet: 'silesia23', date: 'July 16, 2023' },
-  { meet: 'monaco23', date: 'July 21, 2023' },
-  { meet: 'london23', date: 'July 23, 2023' },
-  { meet: 'zurich23', date: 'August 31, 2023' },
-  { meet: 'xiamen23', date: 'September 2, 2023' },
-  { meet: 'brussels23', date: 'September 8, 2023' },
-  { meet: 'eugene23', date: 'September 16-17, 2023' },
+  { meet: 'xiamen24', date: '20 April 2024' },
+  { meet: 'shanghai24', date: '27 April 2024' },
+  { meet: 'doha24', date: '10 May 2024' },
+  { meet: 'rabat24', date: '19 May 2024' },
+  { meet: 'eugene24', date: '25 May 2024' },
+  { meet: 'oslo24', date: '30 May 2024' },
+  { meet: 'stockholm24', date: '2 June 2024' },
+  { meet: 'paris24', date: '7 July 2024' },
+  { meet: 'monaco24', date: '12 July 2024' },
+  { meet: 'london24', date: '20 July 2024' },
+  { meet: 'lausanne24', date: '22 August 2024' },
+  { meet: 'silesia24', date: '25 August 2024' },
+  { meet: 'rome24', date: '30 August 2024' },
+  { meet: 'zurich24', date: '5 September 2024' },
+  { meet: 'brussels24', date: '13-14 September 2024' },
 ];

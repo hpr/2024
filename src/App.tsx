@@ -27,7 +27,7 @@ import { AthleticsEvent, AuthPage, DLMeet, Entrant, Entries, Page, Team, TeamToS
 import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
-import { BrandGit, Calculator, Check, Diamond, Dots, Mail, Run, Trophy, Users } from 'tabler-icons-react';
+import { BrandGit, Calculator, Check, Diamond, Dots, Mail, Run, Trophy, Users, Switch2 } from 'tabler-icons-react';
 import { DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
@@ -43,7 +43,7 @@ export default function App() {
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('eugene23');
+  const [meet] = useState<DLMeet>('xiamen24');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -241,6 +241,15 @@ export default function App() {
                 <Navbar.Section grow mt="xs">
                   <MainLinks
                     links={[
+                      {
+                        icon: <Switch2 />,
+                        color: 'black',
+                        label: 'Switch Meet',
+                        path: 'switch',
+                        onClick: () => {
+                          // TODO switch meet modal
+                        },
+                      },
                       ...(hasEventClosed
                         ? [
                             {
@@ -308,7 +317,8 @@ export default function App() {
                             },
                             label: (
                               <>
-                                {label.replace('Steeplechase', 'SC')} <Badge color={date === 'Sat' ? 'green' : 'yellow'}>{date}</Badge>
+                                {label.replace('Steeplechase', 'SC')}
+                                {/* <Badge color={date === 'Sat' ? 'green' : 'yellow'}>{date}</Badge> */}
                               </>
                             ),
                           };
@@ -335,7 +345,7 @@ export default function App() {
                 <Burger opened={navbarOpen} onClick={() => setNavbarOpen((o) => !o)} size="sm" color={theme.colors.gray[6]} mr="xl" />
               </MediaQuery>
               <Text size="md">
-                Fantasy DL Final '23
+                Fantasy DL '24
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20}>

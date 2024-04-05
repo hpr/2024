@@ -11,7 +11,7 @@ export const scoreTable = [
 ];
 
 export const GRAPHQL_ENDPOINT = 'https://tppcjbjqljd4tj7my77t466hn4.appsync-api.eu-west-1.amazonaws.com/graphql';
-export const GRAPHQL_API_KEY = 'da2-fulcgci74bbslidixnmkcr6sxu';
+export const GRAPHQL_API_KEY = 'da2-fulcgci74bbslidixnmkcr6sxu'; // intentionally public
 export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
   competitor: getSingleCompetitor(id: $id, urlSlug: $urlSlug) {

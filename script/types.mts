@@ -16,7 +16,22 @@ export type DLMeet =
   | 'zurich23'
   | 'xiamen23'
   | 'brussels23'
-  | 'eugene23';
+  | 'eugene23'
+  | 'xiamen24'
+  | 'shanghai24'
+  | 'doha24'
+  | 'rabat24'
+  | 'eugene24'
+  | 'oslo24'
+  | 'stockholm24'
+  | 'paris24'
+  | 'monaco24'
+  | 'london24'
+  | 'lausanne24'
+  | 'silesia24'
+  | 'rome24'
+  | 'zurich24'
+  | 'brussels24';
 
 export type AthleticsEvent =
   | '100m Women'
