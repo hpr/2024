@@ -121,6 +121,8 @@ export default function App() {
   const tiebreakerEvt = Object.keys(entries?.[meet] ?? {}).find((key) => entries?.[meet]?.[key as AthleticsEvent]?.tiebreaker);
   const tiebreakerMark = entries?.[meet]?.[tiebreakerEvt as AthleticsEvent]?.tiebreaker;
 
+  const earliestDate: Date = [...Object.values(entries?.[meet] ?? {}).map(v => new Date(v.date))].sort((a, b) => +a - +b)[0];
+
   return (
     <Store.Provider value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}>
       <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register / Login & Submit Picks">
@@ -403,16 +405,16 @@ export default function App() {
                       pressing "Save Picks" and then registering or logging in to an account.
                     </Text>
                     <Text mb={10} size="sm">
-                      <strong>Submissions Deadline:</strong> Saturday September 16th, before the DL TV window starts, by 3pm ET.
+                      <strong>Submissions Deadline:</strong> {earliestDate?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}, before the DL TV window starts.
                       <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
                       Free T-Shirt.
                       <br />
-                      <strong>
+                      {/* <strong>
                         <a href="#/standings">Overall League Champion</a> Prize
                       </strong>
                       : Free Supporters Club Membership + T-Shirt.
-                      <br />
+                      <br /> */}
                       Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes!
                     </Text>
                     <Group align="center">
