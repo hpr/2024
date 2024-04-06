@@ -118,6 +118,9 @@ export default function App() {
 
   const hasEventClosed = Object.values(entries?.[meet] ?? {}).some(({ isClosed }) => isClosed);
 
+  const tiebreakerEvt = Object.keys(entries?.[meet] ?? {}).find((key) => entries?.[meet]?.[key as AthleticsEvent]?.tiebreaker);
+  const tiebreakerMark = entries?.[meet]?.[tiebreakerEvt as AthleticsEvent]?.tiebreaker;
+
   return (
     <Store.Provider value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}>
       <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register / Login & Submit Picks">
@@ -196,7 +199,12 @@ export default function App() {
                 <TextInput withAsterisk label="Name" placeholder="Usain (will be displayed on leaderboards)" {...registerForm.getInputProps('name')} />
               )}
               <PasswordInput withAsterisk label="Password" placeholder="Password" {...registerForm.getInputProps('password')} />
-              <TextInput withAsterisk label="Tiebreaker: Men's Mile winning time?" placeholder="e.g. 3:46.00" {...registerForm.getInputProps('tiebreaker')} />
+              <TextInput
+                withAsterisk
+                label={`Tiebreaker: ${tiebreakerEvt} winning time?`}
+                placeholder={`e.g. ${tiebreakerMark}`}
+                {...registerForm.getInputProps('tiebreaker')}
+              />
               <Group position="right" mt="md">
                 <Button leftIcon={isSuccess ? <Check /> : undefined} type="submit" loading={isLoading}>
                   {authPage === 'register'

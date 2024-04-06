@@ -64,6 +64,7 @@ export type AthleticsEvent =
   | '5000m Men'
   | "Women's 60 m"
   | "Men's 60 m"
+  | "Men's 100 m"
   | "Men's 60 m Hurdles"
   | "Men's 400 m"
   | "Women's 800 m"
@@ -264,6 +265,7 @@ export type ResultEntrant = {
 export type Entries = {
   [k in DLMeet]?: {
     [k in AthleticsEvent]?: {
+      tiebreaker?: string;
       entrants: Entrant[];
       url?: string;
       targetTime?: string;

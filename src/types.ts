@@ -82,6 +82,7 @@ export type ResultEntrant = {
 export type Entries = {
   [k in DLMeet]?: {
     [k in AthleticsEvent]?: {
+      tiebreaker?: string;
       entrants: Entrant[];
       url?: string;
       targetTime?: string;

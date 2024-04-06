@@ -38,6 +38,12 @@ const targetTimes: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   },
 };
 
+const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
+  xiamen24: {
+    "100m Men": '9.85',
+  },
+};
+
 const schedules: { [k in DLMeet]?: string[] } = {
   doha: ['https://web.archive.org/web/20220512074007/https://doha.diamondleague.com/programme-results-doha/'],
   birminghamIndoor: ['./script/files/EntryList.PDF'],
@@ -60,6 +66,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   xiamen23: ['https://xiamen.diamondleague.com/program-results/program-2023/'],
   brussels23: ['https://brussels.diamondleague.com/en/programme-results-brussels/'],
   eugene23: ['https://eugene.diamondleague.com/program-results-eugene/'],
+
   xiamen24: ['https://xiamen.diamondleague.com/program-results/program-2024/'],
 };
 
@@ -82,7 +89,7 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
 const sanitizeEvtName = (name?: string, sex?: 'men' | 'women'): string | undefined => {
   if (name?.startsWith('Men ')) name = name.replace('Men ', '') + ' Men';
   if (name?.startsWith('Women ')) name = name.replace('Women ', '') + ' Women';
-  if (!name?.toLowerCase().includes('men')) name += ` ${sex![0].toUpperCase() + sex?.slice(1)}`
+  if (!name?.toLowerCase().includes('men')) name += ` ${sex![0].toUpperCase() + sex?.slice(1)}`;
   return name
     ?.replace('Dream ', '')
     .replace(' W Women', ' Women')
@@ -91,6 +98,12 @@ const sanitizeEvtName = (name?: string, sex?: 'men' | 'women'): string | undefin
     .replace(' meter', 'm')
     .replace(' SC', ' Steeplechase')
     .replace('hurdles', 'Hurdles');
+};
+const sanitizeTime = (time?: string | null) => {
+  if ((time?.split(':')[0].length ?? 0) >= 2 && (time?.split('.').at(-1)?.length ?? 0) >= 2) {
+    return time?.slice(0, -1);
+  }
+  return time;
 };
 
 const getWaId = async (
@@ -526,8 +539,8 @@ query getEventCircuitStandings($eventCircuitTypeCode: String, $season: Int, $sex
                   firstName,
                   lastName: nameFixer(lastName),
                   id,
-                  pb: elem.querySelector('.column.pb')?.textContent || null,
-                  sb: elem.querySelector('.column.sb')?.textContent || null,
+                  pb: sanitizeTime(elem.querySelector('.column.pb')?.textContent || null),
+                  sb: sanitizeTime(elem.querySelector('.column.sb')?.textContent || null),
                   nat: elem.querySelector('.column.nat')!.textContent!.trim(),
                   hasAvy: fs.existsSync(`./public/img/avatars/${id}_128x128.png`),
                   team: idTeams[id],
@@ -560,6 +573,7 @@ query getEventCircuitStandings($eventCircuitTypeCode: String, $season: Int, $sex
           console.log(entrants);
           const [day, month, year] = document.querySelector('.date')!.textContent!.trim().split('-');
           entries[meet]![name as AthleticsEvent] = {
+            tiebreaker: tieBreakers[meet]?.[name],
             date:
               oldEntries[meet]?.[name as AthleticsEvent]?.date ?? `${year}-${month}-${day}T${document.querySelector('.time')!.getAttribute('data-starttime')}`,
             url: meetScheduleUrl,
