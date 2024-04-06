@@ -1,3 +1,5 @@
+import { DLMeet } from "./types";
+
 export const scoring = [140, 120, 110, 100, 90, 80, 70, 60];
 
 export const SERVER_URL = 'https://habs.sdf.org:8080/fantasy';
@@ -211,3 +213,21 @@ export const codeToDiscipline = Object.entries(disciplineCodes).reduce((acc, [ke
   acc[val] = key;
   return acc;
 }, {} as { [k: string]: string });
+
+export const standingsMeets: { meet: DLMeet; date: string, color: string }[] = [
+  { meet: 'xiamen24', date: '20 April 2024', color: '#512a8a' },
+  { meet: 'shanghai24', date: '27 April 2024', color: '#3a9b20' },
+  { meet: 'doha24', date: '10 May 2024', color: '#6c193f' },
+  { meet: 'rabat24', date: '19 May 2024', color: '#add8e6' },
+  { meet: 'eugene24', date: '25 May 2024', color: '#000000' },
+  { meet: 'oslo24', date: '30 May 2024', color: '#3f48cc' },
+  { meet: 'stockholm24', date: '2 June 2024', color: '#009fe3' },
+  { meet: 'paris24', date: '7 July 2024', color: '#d0ab4c' },
+  { meet: 'monaco24', date: '12 July 2024', color: '#dd291e' },
+  { meet: 'london24', date: '20 July 2024', color: '#c6362d' },
+  { meet: 'lausanne24', date: '22 August 2024', color: '#dc0b28' },
+  { meet: 'silesia24', date: '25 August 2024', color: '#09234e' },
+  { meet: 'rome24', date: '30 August 2024', color: '#e5b122' },
+  { meet: 'zurich24', date: '5 September 2024', color: '#009fe3' },
+  { meet: 'brussels24', date: '13-14 September 2024', color: '#003781' },
+];

@@ -21,6 +21,9 @@ import {
   Popover,
   Box,
   Badge,
+  Grid,
+  Title,
+  Paper,
 } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
 import { AthleticsEvent, AuthPage, DLMeet, Entrant, Entries, Page, Team, TeamToScore } from './types';
@@ -28,7 +31,7 @@ import { Store } from './Store';
 import { MainLinks } from './MainLinks';
 import { User } from './User';
 import { BrandGit, Calculator, Check, Diamond, Dots, Mail, Run, Trophy, Users, Switch2 } from 'tabler-icons-react';
-import { DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL } from './const';
+import { DIVIDER, PAGES, PICKS_PER_EVT, SERVER_URL, standingsMeets } from './const';
 import { isEmail, useForm } from '@mantine/form';
 import { Submissions } from './Submissions';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -37,13 +40,14 @@ import { evtSort } from './util';
 import { Results } from './Results';
 import { EventTeamPicker } from './EventTeamPicker';
 import LeagueStandings from './LeagueStandings';
+import { modals } from '@mantine/modals';
 
 export default function App() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet] = useState<DLMeet>('xiamen24');
+  const [meet, setMeet] = useState<DLMeet>('xiamen24');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -248,6 +252,31 @@ export default function App() {
                         path: 'switch',
                         onClick: () => {
                           // TODO switch meet modal
+                          const now = new Date();
+                          const cutoff = standingsMeets.findIndex((m) => now < new Date(m.date)) + 1;
+                          const meetButtons = standingsMeets.map(({ meet, color }) => (
+                            <Button style={{ backgroundColor: color, width: 140 }} m="sm" key={meet} onClick={() => setMeet(meet)}>
+                              {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}
+                            </Button>
+                          ));
+                          modals.open({
+                            title: 'Switch Meet',
+                            size: 'xl',
+                            children: (
+                              <div style={{ textAlign: 'center' }}>
+                                <Title order={2} p="sm">
+                                  Current
+                                </Title>
+                                <Grid justify="center">{meetButtons.slice(0, cutoff)}</Grid>
+                                <Title order={2} p="sm">
+                                  Coming Soon
+                                </Title>
+                                <Grid justify="center">
+                                  {meetButtons.slice(cutoff).map((b) => React.cloneElement(b, { disabled: true, style: { ...b.props.style, color: 'white' } }))}
+                                </Grid>
+                              </div>
+                            ),
+                          });
                         },
                       },
                       ...(hasEventClosed
