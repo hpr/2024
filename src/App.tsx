@@ -412,7 +412,7 @@ export default function App() {
                       <Button variant="default" size="xs" leftIcon={<Mail />} onClick={() => window.open('mailto:habs@sdf.org')?.close()}>
                         habs@sdf.org
                       </Button>
-                      <Button variant="default" size="xs" leftIcon={<BrandGit />} onClick={() => window.open(`https://github.com/hpr/${meet}`, '_blank')}>
+                      <Button variant="default" size="xs" leftIcon={<BrandGit />} onClick={() => window.open(`https://github.com/hpr/2024`, '_blank')}>
                         Source code
                       </Button>
                     </Group>

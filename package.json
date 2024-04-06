@@ -38,7 +38,7 @@
     "chatgpt": "^5.2.4",
     "dotenv": "^16.0.3",
     "gm": "^1.25.0",
-    "googlethis": "^1.7.1",
+    "googlethis": "github:CROSP/google-this",
     "openai": "^3.3.0",
     "pdfjs-dist": "^3.5.141",
     "pngjs": "^7.0.0",

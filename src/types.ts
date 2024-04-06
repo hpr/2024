@@ -184,3 +184,18 @@ export type StandingElement = {
   };
 };
 export type Standings = StandingElement[];
+
+export type SparqlResponse = {
+  results: {
+    bindings: {
+      item: {
+        type: 'uri';
+        value: string;
+      };
+      enWikiSiteLink?: {
+        type: 'uri';
+        value: string;
+      }
+    }[];
+  };
+};

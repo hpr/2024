@@ -12,7 +12,7 @@ import WBK, { EntityId, SimplifiedItem } from 'wikibase-sdk';
 // .='`"``=.
 
 const PIXELME_API = 'https://pixel-me-api-gateway-cj34o73d6a-an.a.run.app/api/v1';
-const key = 'AIzaSyB1icoMXVbxjiAzwBTI_4FufkzTnX78U0s';
+const key = 'AIzaSyB1icoMXVbxjiAzwBTI_4FufkzTnX78U0s'; // intentionally public
 const AVATAR_CACHE = './script/avatarCache.json';
 const P_WA_ATHLETE_ID = 'P1146';
 const P_USATF_ATHLETE_ID = 'P10634';
@@ -212,6 +212,7 @@ for (const entrant of entrants) {
         const stravaId = athObj.claims?.[P_STRAVA_ID]?.[0];
         const europeanAthleticsId = athObj.claims?.[P_EUROPEAN_ATHLETICS_ID]?.[0];
         const describedAtUrl = athObj.claims?.[P_DESCRIBED_AT_URL]?.[0];
+        console.log(describedAtUrl)
         if (usatfId) {
           const url = `https://www.usatf.org/athlete-bios/${usatfId}`;
           const { document } = new JSDOM(await (await fetch(url)).text()).window;

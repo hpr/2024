@@ -1,11 +1,8 @@
 import { codeToDiscipline } from './const';
+import { SparqlResponse } from './types';
 
 export function isTouchDevice() {
-  return (
-    'ontouchstart' in window ||
-    navigator.maxTouchPoints > 0 ||
-    (navigator as any).msMaxTouchPoints > 0
-  );
+  return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || (navigator as any).msMaxTouchPoints > 0;
 }
 
 export const codeToEvt = (evt: string) => {
@@ -21,4 +18,14 @@ export const evtSort = (a: string, b: string) => {
   b = normalize(b);
   if (gender(a) !== gender(b)) return a.localeCompare(b);
   return Number.parseInt(firstNumericWord(a)) - Number.parseInt(firstNumericWord(b));
+};
+
+export const getSitelink = async (id: string): Promise<SparqlResponse> => {
+  const query = `SELECT ?item ?itemLabel ?enWikiSiteLink WHERE {
+    ?item wdt:P1146 "${id}".
+    OPTIONAL { ?enWikiSiteLink schema:about ?item;
+               schema:isPartOf <https://en.wikipedia.org/>. }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  }`;
+  return await (await fetch('https://query.wikidata.org/sparql?' + new URLSearchParams({ query }), { headers: { accept: 'application/sparql-results+json' } })).json();
 };

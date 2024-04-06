@@ -21,11 +21,11 @@ import {
 } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { useContext, useState } from 'react';
-import { AlertCircle, Globe, Link, Minus, Plus, World } from 'tabler-icons-react';
+import { AlertCircle, Book, Globe, Link, Minus, Plus, World } from 'tabler-icons-react';
 import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, Competitor, DLMeet, Entrant, ResultsByYearResult } from './types';
-import { isTouchDevice } from './util';
+import { getSitelink, isTouchDevice } from './util';
 
 interface AthleteCardProps {
   avatar: string;
@@ -50,6 +50,7 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
   const theme = useMantineTheme();
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const [competitor, setCompetitor] = useState<Competitor | null>(null);
+  const [wiki, setWiki] = useState<string>('');
   const [popOpened, { close: popClose, open: popOpen }] = useDisclosure(false);
   const isSmall = useMediaQuery(`(max-width: ${theme.breakpoints.md}px)`);
 
@@ -61,6 +62,11 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
   const showAndCacheDetails = async () => {
     setShowDetails(true);
     if (!competitor) {
+      getSitelink(entrant.id).then(sparqlResp => {
+        if (sparqlResp.results.bindings[0].enWikiSiteLink?.value) {
+          setWiki(sparqlResp.results.bindings[0].enWikiSiteLink.value);
+        }
+      })
       const { competitor: competitorResp } = (
         await (
           await fetch(GRAPHQL_ENDPOINT, {
@@ -156,6 +162,15 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
               >
                 {isSmall ? '' : 'World Athletics'}
               </Button>
+              {wiki && <Button
+                size="xl"
+                variant="outline"
+                radius="xl"
+                leftIcon={<Book />}
+                onClick={() => window.open(wiki, '_blank')}
+              >
+                {isSmall ? '' : <>Wiki <Badge ml="md" color="red">New!</Badge></>}
+              </Button>}
             </Button.Group>
             {blurb && (
               <Accordion variant="contained" sx={{ width: '100%' }}>
