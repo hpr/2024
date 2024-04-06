@@ -21,7 +21,7 @@ import {
 } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { useContext, useState } from 'react';
-import { AlertCircle, Book, Globe, Link, Minus, Plus, World } from 'tabler-icons-react';
+import { AlertCircle, ArrowLeft, ArrowRight, Book, Globe, Link, Minus, Plus, World } from 'tabler-icons-react';
 import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, Competitor, DLMeet, Entrant, ResultsByYearResult } from './types';
@@ -38,6 +38,16 @@ interface AthleteCardProps {
   tableView: boolean;
   isClosed: boolean;
   blurb?: string;
+  idx: number;
+  numEntrants: number;
+  showDetails: boolean;
+  setShowDetails: (sd: boolean) => void;
+  showPrev: () => void;
+  showNext: () => void;
+
+  cacheDetails: () => void;
+  competitor: Competitor | null;
+  wiki: string | null;
 }
 
 function nth(n: string) {
@@ -45,12 +55,29 @@ function nth(n: string) {
   return ['st', 'nd', 'rd'][((((num + 90) % 100) - 10) % 10) - 1] || 'th';
 }
 
-export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, blurb, tableView, isClosed }: AthleteCardProps) {
+export function AthleteCard({
+  avatar,
+  name,
+  job,
+  stats,
+  event,
+  meet,
+  entrant,
+  blurb,
+  tableView,
+  isClosed,
+  showDetails,
+  setShowDetails,
+  showNext,
+  showPrev,
+  idx,
+  numEntrants,
+  cacheDetails,
+  competitor,
+  wiki,
+}: AthleteCardProps) {
   const { myTeam, setMyTeam } = useContext(Store);
   const theme = useMantineTheme();
-  const [showDetails, setShowDetails] = useState<boolean>(false);
-  const [competitor, setCompetitor] = useState<Competitor | null>(null);
-  const [wiki, setWiki] = useState<string>('');
   const [popOpened, { close: popClose, open: popOpen }] = useDisclosure(false);
   const isSmall = useMediaQuery(`(max-width: ${theme.breakpoints.md}px)`);
 
@@ -58,31 +85,6 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
   const teamPosition = team.findIndex((member) => member.id === entrant.id);
   const isOnTeam = teamPosition >= 0;
   const isBackup = teamPosition >= PICKS_PER_EVT;
-
-  const showAndCacheDetails = async () => {
-    setShowDetails(true);
-    if (!competitor) {
-      getSitelink(entrant.id).then(sparqlResp => {
-        if (sparqlResp.results.bindings[0].enWikiSiteLink?.value) {
-          setWiki(sparqlResp.results.bindings[0].enWikiSiteLink.value);
-        }
-      })
-      const { competitor: competitorResp } = (
-        await (
-          await fetch(GRAPHQL_ENDPOINT, {
-            headers: { 'x-api-key': GRAPHQL_API_KEY },
-            body: JSON.stringify({
-              operationName: 'GetCompetitorBasicInfo',
-              query: GRAPHQL_QUERY,
-              variables: { id: entrant.id },
-            }),
-            method: 'POST',
-          })
-        ).json()
-      ).data;
-      setCompetitor(competitorResp);
-    }
-  };
 
   const items = stats.map((stat) => (
     <div key={stat.label}>
@@ -125,9 +127,17 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
       >
         <div style={{ position: 'relative' }}>
           <Stack align="center">
-            <Avatar variant="outline" bg="gray" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
-              {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
-            </Avatar>
+            <Group align="center" position="center">
+              <Button disabled={idx === 0} variant="outline" onClick={() => showPrev()}>
+                <ArrowLeft />
+              </Button>
+              <Avatar variant="outline" bg="gray" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
+                {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
+              </Avatar>
+              <Button disabled={idx === numEntrants - 1} variant="outline" onClick={() => showNext()}>
+                <ArrowRight />
+              </Button>
+            </Group>
             <Group align="center" position="center">
               {entrant.pb && (
                 <Badge size="xl" rightSection="PB">
@@ -162,15 +172,20 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
               >
                 {isSmall ? '' : 'World Athletics'}
               </Button>
-              {wiki && <Button
-                size="xl"
-                variant="outline"
-                radius="xl"
-                leftIcon={<Book />}
-                onClick={() => window.open(wiki, '_blank')}
-              >
-                {isSmall ? '' : <>Wiki <Badge ml="md" color="red">New!</Badge></>}
-              </Button>}
+              {wiki && (
+                <Button size="xl" variant="outline" radius="xl" leftIcon={<Book />} onClick={() => window.open(wiki, '_blank')}>
+                  {isSmall ? (
+                    ''
+                  ) : (
+                    <>
+                      Wiki{' '}
+                      <Badge ml="md" color="red">
+                        New!
+                      </Badge>
+                    </>
+                  )}
+                </Button>
+              )}
             </Button.Group>
             {blurb && (
               <Accordion variant="contained" sx={{ width: '100%' }}>
@@ -238,7 +253,13 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
         </div>
       </Modal>
       {tableView ? (
-        <tr onClick={showAndCacheDetails} style={{ cursor: 'pointer' }}>
+        <tr
+          onClick={() => {
+            setShowDetails(true);
+            cacheDetails();
+          }}
+          style={{ cursor: 'pointer' }}
+        >
           <td>
             {name}
             {isOnTeam && <Badge ml={5}>{isBackup ? 'Backup' : `#${teamPosition + 1}`}</Badge>}
@@ -293,7 +314,10 @@ export function AthleteCard({ avatar, name, job, stats, event, meet, entrant, bl
                     <Avatar
                       onMouseEnter={popOpen}
                       onMouseLeave={popClose}
-                      onClick={showAndCacheDetails}
+                      onClick={() => {
+                        setShowDetails(true);
+                        cacheDetails();
+                      }}
                       src={entrant.hasAvy ? avatar : undefined}
                       size={128}
                       radius={128}

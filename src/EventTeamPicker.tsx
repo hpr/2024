@@ -2,11 +2,12 @@ import { Avatar, Button, Code, Grid, GridProps, Group, Paper, Stack, Switch, Tab
 import { useContext, useState } from 'react';
 import { Check, Clock, ClockPause, Dots, HandClick, HandFinger, Robot, Tex } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
-import { mantineGray, PICKS_PER_EVT } from './const';
+import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
-import { AthleticsEvent, DLMeet, Entries } from './types';
+import { AthleticsEvent, Competitor, DLMeet, Entries } from './types';
 import { modals } from '@mantine/modals';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import { getSitelink } from './util';
 
 export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | null; meet: DLMeet; evt: AthleticsEvent }) => {
   const { myTeam, setMyTeam } = useContext(Store);
@@ -27,14 +28,59 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
     </Table>
   );
 
-  const gridChildren = entries?.[meet]?.[evt!]?.entrants.map((entrant) => {
+  const [showDetails, setShowDetails] = useState<{ [i: number]: boolean }>({});
+  const numEntrants = entries?.[meet]?.[evt!]?.entrants.length!;
+  const [competitors, setCompetitors] = useState<{ [i: number]: Competitor | null }>({});
+  const [wikis, setWikis] = useState<{ [i: number]: string | null }>({});
+
+  const cacheDetails = async (i: number) => {
+    const entrant = entries?.[meet]?.[evt!]?.entrants[i]!;
+    if (!competitors[i]) {
+      getSitelink(entrant.id).then((sparqlResp) => {
+        if (sparqlResp.results.bindings[0].enWikiSiteLink?.value) {
+          setWikis({ ...wikis, [i]: sparqlResp.results.bindings[0].enWikiSiteLink.value });
+        }
+      });
+      const { competitor: competitorResp } = (
+        await (
+          await fetch(GRAPHQL_ENDPOINT, {
+            headers: { 'x-api-key': GRAPHQL_API_KEY },
+            body: JSON.stringify({
+              operationName: 'GetCompetitorBasicInfo',
+              query: GRAPHQL_QUERY,
+              variables: { id: entrant.id },
+            }),
+            method: 'POST',
+          })
+        ).json()
+      ).data;
+      setCompetitors({ ...competitors, [i]: competitorResp });
+    }
+  };
+
+  const gridChildren = entries?.[meet]?.[evt!]?.entrants.map((entrant, i) => {
     const { id, firstName, lastName, pb, sb, nat, blurb } = entrant;
     if (!id) console.log(firstName, lastName);
     return (
       <AthleteCard
+        idx={i}
+        numEntrants={numEntrants}
         isClosed={!!entries?.[meet]?.[evt as AthleticsEvent]?.isClosed}
         key={id}
         tableView={tableView}
+        showPrev={() => {
+          setShowDetails({ ...showDetails, [i]: false, [i - 1]: true });
+          cacheDetails(i - 1);
+        }}
+        showNext={() => {
+          setShowDetails({ ...showDetails, [i]: false, [i + 1]: true });
+          cacheDetails(i + 1);
+        }}
+        cacheDetails={() => cacheDetails(i)}
+        competitor={competitors[i]}
+        wiki={wikis[i]}
+        showDetails={!!showDetails[i]}
+        setShowDetails={(sd: boolean) => setShowDetails({ ...showDetails, [i]: sd })}
         avatar={`img/avatars/${id}_128x128.png`}
         meet={meet}
         event={evt!}
@@ -65,8 +111,11 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
                 <ClockPause size={30} /> ... Looks like the startlists aren't available yet.
               </Text>
               <Text>
-                Check <a target="_blank" href={entriesEvt.url}>the official meet website</a> for details -- when entries are available there, this site will soon be updated so
-                you can make picks!
+                Check{' '}
+                <a target="_blank" href={entriesEvt.url}>
+                  the official meet website
+                </a>{' '}
+                for details -- when entries are available there, this site will soon be updated so you can make picks!
               </Text>
             </>
           ) : (
