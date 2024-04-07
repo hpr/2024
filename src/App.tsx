@@ -70,8 +70,11 @@ export default function App() {
     },
   });
   if (hash) {
-    if (hash.startsWith('evt/')) {
-      const hashEvt = hash.split('evt/')[1];
+    const hashParts = hash.split('/');
+    const possibleMeet = hashParts[1];
+    if (standingsMeets.some(sm => sm.meet === possibleMeet)) setMeet(possibleMeet as DLMeet);
+    if (hashParts[2] === 'evt') {
+      const hashEvt = hashParts[3];
       if (hashEvt !== evt) setEvt(hashEvt as AthleticsEvent);
     } else if (PAGES.includes(hash as Page) && page !== hash) {
       setPage(hash as Page);
@@ -94,7 +97,7 @@ export default function App() {
       );
       const initialEvt = Object.keys(entries[meet] ?? [])[0] as AthleticsEvent;
       setEvt(initialEvt);
-      if (!hash) navigate(`evt/${initialEvt}`);
+      if (!hash) navigate(`${meet}/evt/${initialEvt}`);
     })();
   }, []);
 
@@ -295,9 +298,9 @@ export default function App() {
                               icon: <Trophy />,
                               color: 'gold',
                               label: 'Leaderboard',
-                              path: 'leaderboard',
+                              path: `${meet}/leaderboard`,
                               onClick: () => {
-                                navigate('/leaderboard');
+                                navigate(`/${meet}/leaderboard`);
                                 setPage('leaderboard');
                                 setNavbarOpen(false);
                               },
@@ -306,9 +309,9 @@ export default function App() {
                               icon: <Calculator />,
                               color: 'black',
                               label: 'Results',
-                              path: 'scoring',
+                              path: `${meet}/scoring`,
                               onClick: () => {
-                                navigate('/scoring');
+                                navigate(`/${meet}/scoring`);
                                 setPage('scoring');
                                 setNavbarOpen(false);
                               },
@@ -330,9 +333,9 @@ export default function App() {
                         icon: <Users />,
                         color: 'black',
                         label: 'Submissions',
-                        path: 'submissions',
+                        path: `${meet}/submissions`,
                         onClick: () => {
-                          navigate('/submissions');
+                          navigate(`/${meet}/submissions`);
                           setPage('submissions');
                           setNavbarOpen(false);
                         },
@@ -347,9 +350,9 @@ export default function App() {
                           return {
                             icon: filled ? <Check /> : <Run />,
                             color: filled ? 'green' : 'blue',
-                            path: `evt/${linkEvt}`,
+                            path: `${meet}/evt/${linkEvt}`,
                             onClick: () => {
-                              navigate(`evt/${linkEvt}`);
+                              navigate(`${meet}/evt/${linkEvt}`);
                               setEvt(linkEvt);
                               setPage('events');
                               setNavbarOpen(false);

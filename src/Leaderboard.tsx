@@ -79,7 +79,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
                       fullWidth
                       onClick={() => {
                         setTeamToScore({ lbpicks: picks, name });
-                        navigate('/scoring');
+                        navigate(`/${meet}/scoring`);
                       }}
                     >
                       View scoring
