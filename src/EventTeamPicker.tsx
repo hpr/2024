@@ -1,5 +1,5 @@
 import { Avatar, Button, Code, Grid, GridProps, Group, Paper, Stack, Switch, Table, TableProps, Text, Title, Tooltip } from '@mantine/core';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Check, Clock, ClockPause, Dots, HandClick, HandFinger, Robot, Tex } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
 import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, PICKS_PER_EVT } from './const';
@@ -28,17 +28,17 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
     </Table>
   );
 
-  const [showDetails, setShowDetails] = useState<{ [i: number]: boolean }>({});
+  const [showDetails, setShowDetails] = useState<{ [key: string]: boolean }>({});
   const numEntrants = entries?.[meet]?.[evt!]?.entrants.length!;
-  const [competitors, setCompetitors] = useState<{ [i: number]: Competitor | null }>({});
-  const [wikis, setWikis] = useState<{ [i: number]: string | null }>({});
+  const [competitors, setCompetitors] = useState<{ [key: string]: Competitor | null }>({});
+  const [wikis, setWikis] = useState<{ [key: string]: string | null }>({});
 
-  const cacheDetails = async (i: number) => {
+  const cacheDetails = async (i: number, evt: AthleticsEvent) => {
     const entrant = entries?.[meet]?.[evt!]?.entrants[i]!;
-    if (!competitors[i]) {
+    if (!competitors[evt + i]) {
       getSitelink(entrant.id).then((sparqlResp) => {
-        if (sparqlResp.results.bindings[0].enWikiSiteLink?.value) {
-          setWikis({ ...wikis, [i]: sparqlResp.results.bindings[0].enWikiSiteLink.value });
+        if (sparqlResp.results.bindings[0]?.enWikiSiteLink?.value) {
+          setWikis({ ...wikis, [evt + i]: sparqlResp.results.bindings[0].enWikiSiteLink.value });
         }
       });
       const { competitor: competitorResp } = (
@@ -54,7 +54,7 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
           })
         ).json()
       ).data;
-      setCompetitors({ ...competitors, [i]: competitorResp });
+      setCompetitors({ ...competitors, [evt + i]: competitorResp });
     }
   };
 
@@ -69,18 +69,18 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
         key={id}
         tableView={tableView}
         showPrev={() => {
-          setShowDetails({ ...showDetails, [i]: false, [i - 1]: true });
-          cacheDetails(i - 1);
+          setShowDetails({ ...showDetails, [evt + i]: false, [evt + (i - 1)]: true });
+          cacheDetails(i - 1, evt);
         }}
         showNext={() => {
-          setShowDetails({ ...showDetails, [i]: false, [i + 1]: true });
-          cacheDetails(i + 1);
+          setShowDetails({ ...showDetails, [evt + i]: false, [evt + (i + 1)]: true });
+          cacheDetails(i + 1, evt);
         }}
-        cacheDetails={() => cacheDetails(i)}
-        competitor={competitors[i]}
-        wiki={wikis[i]}
-        showDetails={!!showDetails[i]}
-        setShowDetails={(sd: boolean) => setShowDetails({ ...showDetails, [i]: sd })}
+        cacheDetails={() => cacheDetails(i, evt)}
+        competitor={competitors[evt + i]}
+        wiki={wikis[evt + i]}
+        showDetails={!!showDetails[evt + i]}
+        setShowDetails={(sd: boolean) => setShowDetails({ ...showDetails, [evt + i]: sd })}
         avatar={`img/avatars/${id}_128x128.png`}
         meet={meet}
         event={evt!}
