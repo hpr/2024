@@ -409,16 +409,16 @@ export default function App() {
                     </Text>
                     <Text mb={10} size="sm">
                       <strong>Submissions Deadline:</strong> {earliestDate?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}, before the DL TV window starts.
-                      <br />
+                      {/* <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
                       Free T-Shirt.
-                      <br />
+                      <br /> */}
                       {/* <strong>
                         <a href="#/standings">Overall League Champion</a> Prize
                       </strong>
                       : Free Supporters Club Membership + T-Shirt.
                       <br /> */}
-                      Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes!
+                      {/* Thanks to sponsor <strong>LetsRun.com</strong> for providing the prizes! */}
                     </Text>
                     <Group align="center">
                       <Text>Contact for suggestions, improvements or issues:</Text>
