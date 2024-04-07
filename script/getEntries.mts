@@ -100,7 +100,7 @@ const sanitizeEvtName = (name?: string, sex?: 'men' | 'women'): string | undefin
     .replace('hurdles', 'Hurdles');
 };
 const sanitizeTime = (time?: string | null) => {
-  if ((time?.split(':')[0].length ?? 0) >= 2 && (time?.split('.').at(-1)?.length ?? 0) >= 2) {
+  if (time?.includes(':') && (time?.split(':')[0].length ?? 0) >= 2 && (time?.split('.').at(-1)?.length ?? 0) >= 2) {
     return time?.slice(0, -1);
   }
   return time;
