@@ -27,5 +27,13 @@ export const getSitelink = async (id: string): Promise<SparqlResponse> => {
                schema:isPartOf <https://en.wikipedia.org/>. }
     SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
   }`;
-  return await (await fetch('https://query.wikidata.org/sparql?' + new URLSearchParams({ query }), { headers: { accept: 'application/sparql-results+json' } })).json();
+  return await (
+    await fetch('https://query.wikidata.org/sparql?' + new URLSearchParams({ query }), { headers: { accept: 'application/sparql-results+json' } })
+  ).json();
 };
+
+export const normalize = (str: string) =>
+  str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^\x00-\x7F]/g, '');

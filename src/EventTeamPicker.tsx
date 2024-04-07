@@ -1,13 +1,13 @@
 import { Avatar, Button, Code, Grid, GridProps, Group, Paper, Stack, Switch, Table, TableProps, Text, Title, Tooltip } from '@mantine/core';
 import { useContext, useEffect, useState } from 'react';
-import { Check, Clock, ClockPause, Dots, HandClick, HandFinger, Robot, Tex } from 'tabler-icons-react';
+import { Check, Clock, ClockPause, Dots, ExternalLink, HandClick, HandFinger, Robot, Tex } from 'tabler-icons-react';
 import { AthleteCard } from './AthleteCard';
 import { GRAPHQL_API_KEY, GRAPHQL_ENDPOINT, GRAPHQL_QUERY, mantineGray, PICKS_PER_EVT } from './const';
 import { Store } from './Store';
 import { AthleticsEvent, Competitor, DLMeet, Entries } from './types';
 import { modals } from '@mantine/modals';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import { getSitelink } from './util';
+import { getSitelink, normalize } from './util';
 
 export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | null; meet: DLMeet; evt: AthleticsEvent }) => {
   const { myTeam, setMyTeam } = useContext(Store);
@@ -179,9 +179,67 @@ export const EventTeamPicker = ({ entries, meet, evt }: { entries: Entries | nul
                 onClick={() =>
                   modals.open({
                     title: (
-                      <Text>
-                        {evt} AI Preview <Robot />
-                      </Text>
+                      <>
+                        <Text>
+                          {evt} AI Preview <Robot />
+                        </Text>
+                        <Button
+                          mt="sm"
+                          fullWidth
+                          onClick={() => {
+                            const ungenderedEvt = evt
+                              .split(' ')
+                              .filter((w) => !w.toLowerCase().includes('men'))
+                              .join(' ')
+                              .replace('m', ' Metres')
+                              .replace(/Steeple$/, 'Steeplechase');
+                            const gender = evt.toLowerCase().includes('Women') ? 'Women' : 'Men';
+                            const entrants = entries?.[meet]?.[evt]?.entrants ?? [];
+                            const athleteIds = entrants.map((e) => e.id);
+                            const currentYear = String(new Date().getFullYear());
+                            window.open(
+                              normalize(
+                                `https://hpr.github.io/match/#/` +
+                                  new URLSearchParams({
+                                    athleteIds: JSON.stringify(athleteIds),
+                                    athleteYears: JSON.stringify(Object.fromEntries(athleteIds.map((id) => [id, currentYear]))),
+                                    athleteInfo: JSON.stringify(
+                                      Object.fromEntries(
+                                        entrants.map((ent) => [
+                                          ent.id,
+                                          {
+                                            gender,
+                                            givenName: ent.firstName,
+                                            familyName: ent.lastName,
+                                            aaAthleteId: ent.id,
+                                            disciplines: ungenderedEvt,
+                                          },
+                                        ])
+                                      )
+                                    ),
+                                    athleteBasicInfo: JSON.stringify(
+                                      Object.fromEntries(
+                                        entrants.map((ent) => [
+                                          ent.id,
+                                          {
+                                            resultsByYear: {
+                                              activeYears: [currentYear],
+                                            },
+                                          },
+                                        ])
+                                      )
+                                    ),
+                                    discipline: ungenderedEvt,
+                                    response: window.btoa(entries?.[meet]?.[evt]?.blurb ?? ''),
+                                  })
+                              ),
+                              '_blank'
+                            );
+                          }}
+                        >
+                          Open in TrackBot Match <ExternalLink />
+                        </Button>
+                      </>
                     ),
                     children: (
                       <ReactMarkdown>{entries?.[meet]?.[evt]?.blurb ?? ''}</ReactMarkdown>
