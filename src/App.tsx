@@ -408,7 +408,7 @@ export default function App() {
                       pressing "Save Picks" and then registering or logging in to an account.
                     </Text>
                     <Text mb={10} size="sm">
-                      <strong>Submissions Deadline:</strong> {earliestDate?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}, before the DL TV window starts.
+                      <strong>Submissions Deadline:</strong> {earliestDate?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}, before the DL TV window starts, by 6 a.m. ET.
                       {/* <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
                       Free T-Shirt.
