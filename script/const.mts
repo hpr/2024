@@ -256,8 +256,8 @@ export const getDomainAndPath = (url: string) => url.split('/').slice(0, -1).joi
 
 export const backupNotes = ['DNS', 'DQ', 'DNF'];
 
-export const GRAPHQL_ENDPOINT = 'https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql';
-export const GRAPHQL_API_KEY = 'da2-erlx4oraybbjrlxorsdgmemgua'; // intentionally public
+export const GRAPHQL_ENDPOINT = 'https://jsyr3xmt7nchpjukzohfslxfre.appsync-api.eu-west-1.amazonaws.com/graphql';
+export const GRAPHQL_API_KEY = 'da2-o5lb23etxbe3viqhbquknwoazq'; // intentionally public
 export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
   competitor: getSingleCompetitor(id: $id, urlSlug: $urlSlug) {
