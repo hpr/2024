@@ -69,17 +69,6 @@ export default function App() {
       email: isEmail('Invalid email'),
     },
   });
-  if (hash) {
-    const hashParts = hash.split('/');
-    const possibleMeet = hashParts[1];
-    if (standingsMeets.some(sm => sm.meet === possibleMeet)) setMeet(possibleMeet as DLMeet);
-    if (hashParts[2] === 'evt') {
-      const hashEvt = hashParts[3];
-      if (hashEvt !== evt) setEvt(hashEvt as AthleticsEvent);
-    } else if (PAGES.includes(hash as Page) && page !== hash) {
-      setPage(hash as Page);
-    }
-  }
 
   const theme = useMantineTheme();
 
@@ -98,6 +87,20 @@ export default function App() {
       const initialEvt = Object.keys(entries[meet] ?? [])[0] as AthleticsEvent;
       setEvt(initialEvt);
       if (!hash) navigate(`${meet}/evt/${initialEvt}`);
+
+      if (hash) {
+        const hashParts = hash.split('/');
+        const possibleMeet = hashParts[0];
+        if (standingsMeets.some(sm => sm.meet === possibleMeet)) setMeet(possibleMeet as DLMeet);
+        if (hashParts[1] === 'evt') {
+          const hashEvt = hashParts[2];
+          if (hashEvt !== evt) {
+            setEvt(hashEvt as AthleticsEvent);
+          }
+        } else if (PAGES.includes(hashParts[1] as Page) && page !== hashParts[1]) {
+          setPage(hashParts[1] as Page);
+        }
+      }
     })();
   }, []);
 
