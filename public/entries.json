@@ -711,7 +711,99 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "50.08",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marileidy",
+            "lastName": "Paulino",
+            "id": "14749613",
+            "pb": "48.76",
+            "sb": null,
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.29",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natalia",
+            "lastName": "Kaczmarek",
+            "id": "14642563",
+            "pb": "49.48",
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.26",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Britton",
+            "lastName": "Wilson",
+            "id": "14716862",
+            "pb": "49.13",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.97",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sada",
+            "lastName": "Williams",
+            "id": "14592846",
+            "pb": "49.58",
+            "sb": "51.93",
+            "nat": "BAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "52.36",
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "mark": "52.47",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "52.69",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aliyah",
+            "lastName": "Abrams",
+            "id": "14447688",
+            "pb": "50.20",
+            "sb": null,
+            "nat": "GUY",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "52.97",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "53.65",
+          "place": 9,
+          "notes": ""
+        }
+      ]
     },
     "1500m Women": {
       "date": "2024-04-20T00:00",
@@ -972,7 +1064,149 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.45",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jasmine",
+            "lastName": "Camacho-Quinn",
+            "id": "14494234",
+            "pb": "12.26",
+            "sb": null,
+            "nat": "PUR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.49",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Devynne",
+            "lastName": "Charlton",
+            "id": "14414505",
+            "pb": "12.44",
+            "sb": null,
+            "nat": "BAH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.55",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cyréna",
+            "lastName": "Samba-Mayela",
+            "id": "14735030",
+            "pb": "12.68",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.56",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Danielle",
+            "lastName": "Williams",
+            "id": "14450995",
+            "pb": "12.32",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.58",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tobi",
+            "lastName": "Amusan",
+            "id": "14579526",
+            "pb": "12.12",
+            "sb": "12.89",
+            "nat": "NGR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.67",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Masai",
+            "lastName": "Russell",
+            "id": "14659011",
+            "pb": "12.36",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.70",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ditaji",
+            "lastName": "Kambundji",
+            "id": "14739461",
+            "pb": "12.47",
+            "sb": null,
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.88",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Megan",
+            "lastName": "Tapper",
+            "id": "14413569",
+            "pb": "12.44",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.01",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alaysha",
+            "lastName": "Johnson",
+            "id": "14486620",
+            "pb": "12.35",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.04",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yanni",
+            "lastName": "Wu",
+            "id": "14585472",
+            "pb": "12.76",
+            "sb": null,
+            "nat": "CHN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Women": {
       "date": "2024-04-20T00:00",

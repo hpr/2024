@@ -99,8 +99,10 @@ for (const key in resultsLinks) {
         };
       });
     }
-  } else if (resultsLinks[meet]?.includes('livecache.sportresult.com')) {
-    const meetId = resultsLinks[meet]?.match(/^https:\/\/livecache.sportresult.com\/node\/db\/ATH_PROD\/(.+)_SCHEDULE/)?.[1];
+  } else if (resultsLinks[meet]?.includes('livecache.sportresult.com') || resultsLinks[meet]?.includes('web.swisstiming.com')) {
+    const domain = resultsLinks[meet]?.includes('livecache.sportresult.com') ? 'livecache.sportresult.com' : 'ps-cache.web.swisstiming.com';
+    const meetId = resultsLinks[meet]?.match(/^https:\/\/(livecache.sportresult.com|ps-cache.web.swisstiming.com)\/node\/db\/ATH_PROD\/(.+)_SCHEDULE/)?.[2];
+    console.log('fetching', resultsLinks[meet]);
     const schedule: SportResultSchedule = await (await fetch(resultsLinks[meet]!)).json();
     console.log(resultsLinks[meet]);
     for (const key in entries[meet]) {
@@ -109,7 +111,7 @@ for (const key in resultsLinks) {
         (unit) =>
           [evt, '1 ' + evt].some((s) => unit.EventName.replace('Steeplechase', 'Steeple') === s.replace('Steeplechase', 'Steeple')) && unit.Stats.DiamondId
       )?.Rsc.ValueUnit;
-      const evtResultUrl = `https://livecache.sportresult.com/node/db/ATH_PROD/${meetId}_TIMING_${evtId}_JSON.json`;
+      const evtResultUrl = `https://${domain}/node/db/ATH_PROD/${meetId}_TIMING_${evtId}_JSON.json`;
       console.log(evt, evtResultUrl);
       const evtResultResp = await fetch(evtResultUrl);
       if (evtResultResp.status === 404) {
