@@ -1639,7 +1639,204 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:50.30",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gudaf",
+            "lastName": "Tsegay",
+            "id": "14595214",
+            "pb": "3:54.01",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:53.22",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Birke",
+            "lastName": "Haylom",
+            "id": "15009582",
+            "pb": "3:54.93",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:57.61",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Worknesh",
+            "lastName": "Mesele",
+            "id": "14852703",
+            "pb": "3:57.00",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:57.62",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Diribe",
+            "lastName": "Welteji",
+            "id": "14848719",
+            "pb": "3:53.93",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:58.18",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Freweyni",
+            "lastName": "Hailu",
+            "id": "14836656",
+            "pb": "3:55.68",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.04",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Georgia",
+            "lastName": "Griffith",
+            "id": "14549778",
+            "pb": "4:00.16",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.06",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Habitam",
+            "lastName": "Alemu",
+            "id": "14730994",
+            "pb": "4:01.41",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.21",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Saron",
+            "lastName": "Berhe",
+            "id": "15009577",
+            "pb": "4:00.46",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.59",
+          "place": 9,
+          "notes": ""
+        },
+        {
+          "mark": "4:00.71",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Linden",
+            "lastName": "Hall",
+            "id": "14272002",
+            "pb": "3:56.92",
+            "sb": "4:05.41",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:03.45",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Addison",
+            "lastName": "Wiley",
+            "id": "14907337",
+            "pb": "3:59.17",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:04.94",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Axumawit",
+            "lastName": "Embaye",
+            "id": "14534819",
+            "pb": "3:58.80",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:06.09",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Winnie",
+            "lastName": "Nanyondo",
+            "id": "14534257",
+            "pb": "3:59.56",
+            "sb": null,
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:08.90",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gaia",
+            "lastName": "Sabbatini",
+            "id": "14682711",
+            "pb": "4:01.24",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        }
+      ]
     },
     "100m Hurdles Women": {
       "date": "2024-04-20T00:00",
