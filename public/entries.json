@@ -98,7 +98,131 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.13",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Christian",
+            "lastName": "Coleman",
+            "id": "14541956",
+            "pb": "9.76",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.17",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Fred",
+            "lastName": "Kerley",
+            "id": "14504382",
+            "pb": "9.76",
+            "sb": "10.03",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.20",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ackeem",
+            "lastName": "Blake",
+            "id": "14638971",
+            "pb": "9.89",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.27",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rohan",
+            "lastName": "Watson",
+            "id": "14779154",
+            "pb": "9.91",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.31",
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "mark": "10.33",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "10.38",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yoshihide",
+            "lastName": "Kiryu",
+            "id": "14547456",
+            "pb": "9.98",
+            "sb": null,
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.40",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brandon",
+            "lastName": "Carnes",
+            "id": "14466007",
+            "pb": "10.01",
+            "sb": "10.27",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.43",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yohan",
+            "lastName": "Blake",
+            "id": "14201842",
+            "pb": "9.69",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.55",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Xinrui",
+            "lastName": "Deng",
+            "id": "15074892",
+            "pb": "10.21",
+            "sb": null,
+            "nat": "CHN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Men": {
       "date": "2024-04-20T00:00",
