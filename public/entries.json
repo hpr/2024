@@ -476,10 +476,12 @@
           }
         },
         {
+          "mark": "13:00.69",
           "place": 4,
           "notes": ""
         },
         {
+          "mark": "13:01.44",
           "place": 5,
           "notes": "",
           "entrant": {
@@ -493,6 +495,7 @@
           }
         },
         {
+          "mark": "13:02.49",
           "place": 6,
           "notes": "",
           "entrant": {
@@ -506,6 +509,7 @@
           }
         },
         {
+          "mark": "13:02.56",
           "place": 7,
           "notes": "",
           "entrant": {
@@ -519,6 +523,7 @@
           }
         },
         {
+          "mark": "13:04.45",
           "place": 8,
           "notes": "",
           "entrant": {
@@ -532,6 +537,7 @@
           }
         },
         {
+          "mark": "13:04.66",
           "place": 9,
           "notes": "",
           "entrant": {
@@ -545,6 +551,7 @@
           }
         },
         {
+          "mark": "13:05.18",
           "place": 10,
           "notes": "",
           "entrant": {
@@ -558,10 +565,12 @@
           }
         },
         {
+          "mark": "13:10.40",
           "place": 11,
           "notes": ""
         },
         {
+          "mark": "13:14.97",
           "place": 12,
           "notes": "",
           "entrant": {
@@ -575,6 +584,7 @@
           }
         },
         {
+          "mark": "13:18.45",
           "place": 13,
           "notes": "",
           "entrant": {
@@ -588,6 +598,7 @@
           }
         },
         {
+          "mark": "13:18.74",
           "place": 14,
           "notes": "",
           "entrant": {
@@ -601,6 +612,7 @@
           }
         },
         {
+          "mark": "13:20.32",
           "place": 15,
           "notes": "",
           "entrant": {
@@ -614,6 +626,7 @@
           }
         },
         {
+          "mark": "13:23.06",
           "place": 16,
           "notes": "",
           "entrant": {
@@ -627,6 +640,7 @@
           }
         },
         {
+          "mark": "13:24.64",
           "place": 17,
           "notes": "",
           "entrant": {
@@ -640,6 +654,7 @@
           }
         },
         {
+          "mark": "13:26.60",
           "place": 18,
           "notes": "",
           "entrant": {
@@ -868,7 +883,117 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "22.96",
+          "place": 1,
+          "notes": ""
+        },
+        {
+          "mark": "22.99",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sha'Carri",
+            "lastName": "Richardson",
+            "id": "14717691",
+            "pb": "21.92",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.01",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tamara",
+            "lastName": "Clark",
+            "id": "14596381",
+            "pb": "21.92",
+            "sb": "22.21",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.02",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anavia",
+            "lastName": "Battle",
+            "id": "14715397",
+            "pb": "21.95",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.25",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Twanisha",
+            "lastName": "Terry",
+            "id": "14553598",
+            "pb": "22.17",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.39",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mujinga",
+            "lastName": "Kambundji",
+            "id": "14300897",
+            "pb": "22.05",
+            "sb": null,
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.65",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "23.72",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Caisja",
+            "lastName": "Chandler",
+            "id": "14731976",
+            "pb": "22.37",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "24.21",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anthonique",
+            "lastName": "Strachan",
+            "id": "14368117",
+            "pb": "22.15",
+            "sb": null,
+            "nat": "BAH",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Women": {
       "date": "2024-04-20T00:00",
