@@ -269,7 +269,7 @@ export default function App() {
                           const currentMeets = standingsMeets.filter(({ meet }) => entries?.[meet]).map(({ meet, color }) => (
                             <Button style={{ backgroundColor: color, width: 140 }} m="sm" key={meet} onClick={() => {
                               setMeet(meet);
-                              setEvt(Object.keys(entries?.[meet] ?? {})[0] as AthleticsEvent);
+                              navigate(`/standings`);
                               setPage('standings');
                             }}>
                               {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}

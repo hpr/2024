@@ -48,7 +48,7 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
-  xiamen24: '6am ET',
+  xiamen24: '7am ET',
   shanghai24: '7am ET',
 };
 
