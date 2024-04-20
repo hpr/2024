@@ -431,7 +431,254 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12:58.96",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lamecha",
+            "lastName": "Girma",
+            "id": "14848765",
+            "pb": null,
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:59.78",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nicholas",
+            "lastName": "Kipkorir",
+            "id": "14708978",
+            "pb": "12:46.3",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:00.47",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Birhanu",
+            "lastName": "Balew",
+            "id": "14695983",
+            "pb": "12:56.2",
+            "sb": null,
+            "nat": "BRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Addisu",
+            "lastName": "Yihune",
+            "id": "14977660",
+            "pb": "12:58.9",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cornelius",
+            "lastName": "Kemboi",
+            "id": "14894347",
+            "pb": "13:00.6",
+            "sb": "13:40.6",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ronald",
+            "lastName": "Kwemoi",
+            "id": "14577960",
+            "pb": "13:14.4",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kuma",
+            "lastName": "Girma",
+            "id": "14975226",
+            "pb": "13:03.3",
+            "sb": "13:43.5",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Benson",
+            "lastName": "Kiplangat",
+            "id": "14989931",
+            "pb": "13:02.7",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Stewart",
+            "lastName": "McSweyn",
+            "id": "14500488",
+            "pb": "12:56.5",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 11,
+          "notes": ""
+        },
+        {
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brian",
+            "lastName": "Fay",
+            "id": "14781522",
+            "pb": "13:01.4",
+            "sb": null,
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohamed",
+            "lastName": "Abdilaahi",
+            "id": "14753471",
+            "pb": "13:03.1",
+            "sb": null,
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jack",
+            "lastName": "Rayner",
+            "id": "14517160",
+            "pb": "13:06.0",
+            "sb": "13:16.3",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 15,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sam",
+            "lastName": "Parsons",
+            "id": "14628221",
+            "pb": "13:21.1",
+            "sb": null,
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 16,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nibret",
+            "lastName": "Melak",
+            "id": "14840778",
+            "pb": "12:54.2",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 17,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dan",
+            "lastName": "Kibet",
+            "id": "14913746",
+            "pb": "13:16.3",
+            "sb": null,
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 18,
+          "notes": "",
+          "entrant": {
+            "firstName": "Matthew",
+            "lastName": "Ramsden",
+            "id": "14576384",
+            "pb": "13:16.6",
+            "sb": "13:17.2",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Mounir",
+            "lastName": "Akbache",
+            "id": "14182819",
+            "pb": null,
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Callum",
+            "lastName": "Davies",
+            "id": "14690926",
+            "pb": "13:48.6",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "110m Hurdles Men": {
       "date": "2024-04-20T00:00",
