@@ -215,7 +215,181 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:43.61",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marco",
+            "lastName": "Arop",
+            "id": "14755875",
+            "pb": "1:42.85",
+            "sb": null,
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.66",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wyclife",
+            "lastName": "Kinyamal",
+            "id": "14746603",
+            "pb": "1:43.12",
+            "sb": "1:44.52",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.88",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tshepiso",
+            "lastName": "Masalela",
+            "id": "14754326",
+            "pb": "1:44.03",
+            "sb": null,
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.76",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alex Ngeno",
+            "lastName": "Kipngetich",
+            "id": "14798146",
+            "pb": "1:44.07",
+            "sb": "1:44.07",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.81",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Kramer",
+            "id": "14538207",
+            "pb": "1:44.47",
+            "sb": null,
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.37",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elias",
+            "lastName": "Ngeny",
+            "id": "14849580",
+            "pb": "1:43.84",
+            "sb": "1:44.79",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.38",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Clayton",
+            "lastName": "Murphy",
+            "id": "14536714",
+            "pb": "1:42.93",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.65",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abdelati",
+            "lastName": "el Guesse",
+            "id": "14652586",
+            "pb": "1:44.52",
+            "sb": null,
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.66",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dezhu",
+            "lastName": "Liu",
+            "id": "14811434",
+            "pb": "1:46.77",
+            "sb": null,
+            "nat": "CHN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:46.20",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ethan",
+            "lastName": "Hussey",
+            "id": "14815377",
+            "pb": "1:44.96",
+            "sb": null,
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:47.02",
+          "place": 11,
+          "notes": ""
+        },
+        {
+          "mark": "1:47.14",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mark",
+            "lastName": "English",
+            "id": "14377494",
+            "pb": "1:44.71",
+            "sb": null,
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Patryk",
+            "lastName": "Sieradzki",
+            "id": "14647295",
+            "pb": "1:45.13",
+            "sb": "1:48.90",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "5000m Men": {
       "date": "2024-04-20T00:00",
