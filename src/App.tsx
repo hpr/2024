@@ -125,6 +125,7 @@ export default function App() {
   const tiebreakerMark = entries?.[meet]?.[tiebreakerEvt as AthleticsEvent]?.tiebreaker;
 
   const earliestDate: Date = [...Object.values(entries?.[meet] ?? {}).map(v => new Date(v.date))].sort((a, b) => +a - +b)[0];
+  const deadline = Object.values(entries?.[meet] ?? {}).find((evt) => evt.deadline)?.deadline;
 
   return (
     <Store.Provider value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}>
@@ -265,10 +266,17 @@ export default function App() {
                         path: 'switch',
                         onClick: () => {
                           // TODO switch meet modal
-                          const now = new Date();
-                          const cutoff = standingsMeets.findIndex((m) => now < new Date(m.date)) + 1;
-                          const meetButtons = standingsMeets.map(({ meet, color }) => (
-                            <Button style={{ backgroundColor: color, width: 140 }} m="sm" key={meet} onClick={() => setMeet(meet)}>
+                          const currentMeets = standingsMeets.filter(({ meet }) => entries?.[meet]).map(({ meet, color }) => (
+                            <Button style={{ backgroundColor: color, width: 140 }} m="sm" key={meet} onClick={() => {
+                              setMeet(meet);
+                              setEvt(Object.keys(entries?.[meet] ?? {})[0] as AthleticsEvent);
+                              setPage('standings');
+                            }}>
+                              {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}
+                            </Button>
+                          ));
+                          const futureMeets = standingsMeets.filter(({ meet }) => !entries?.[meet]).map(({ meet, color }) => (
+                            <Button disabled style={{ backgroundColor: color, width: 140, color: 'white' }} m="sm" key={meet}>
                               {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}
                             </Button>
                           ));
@@ -280,12 +288,12 @@ export default function App() {
                                 <Title order={2} p="sm">
                                   Current
                                 </Title>
-                                <Grid justify="center">{meetButtons.slice(0, cutoff)}</Grid>
+                                <Grid justify="center">{currentMeets}</Grid>
                                 <Title order={2} p="sm">
                                   Coming Soon
                                 </Title>
                                 <Grid justify="center">
-                                  {meetButtons.slice(cutoff).map((b) => React.cloneElement(b, { disabled: true, style: { ...b.props.style, color: 'white' } }))}
+                                  {futureMeets}
                                 </Grid>
                               </div>
                             ),
@@ -387,7 +395,7 @@ export default function App() {
                 <Burger opened={navbarOpen} onClick={() => setNavbarOpen((o) => !o)} size="sm" color={theme.colors.gray[6]} mr="xl" />
               </MediaQuery>
               <Text size="md">
-                Fantasy DL '24
+                Fantasy {meet[0].toUpperCase()}{meet.slice(1, -2)} '{meet.slice(-2)}
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20}>
@@ -408,7 +416,7 @@ export default function App() {
                       pressing "Save Picks" and then registering or logging in to an account.
                     </Text>
                     <Text mb={10} size="sm">
-                      <strong>Submissions Deadline:</strong> {earliestDate?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}, before the DL TV window starts, by 6 a.m. ET.
+                      <strong>Submissions Deadline:</strong> {earliestDate?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}, before the DL TV window starts, by {deadline} (for {meet}).
                       {/* <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
                       Free T-Shirt.

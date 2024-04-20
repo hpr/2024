@@ -42,6 +42,14 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   xiamen24: {
     "100m Men": '9.85',
   },
+  shanghai24: {
+    "200m Women": '21.90',
+  },
+};
+
+const deadlines: { [k in DLMeet]?: string } = {
+  xiamen24: '6am ET',
+  shanghai24: '7am ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -68,6 +76,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   eugene23: ['https://eugene.diamondleague.com/program-results-eugene/'],
 
   xiamen24: ['https://xiamen.diamondleague.com/program-results/program-2024/'],
+  shanghai24: ['https://shanghai.diamondleague.com/programme-results/programme-results-shanghai/'],
 };
 
 const idTeams = {
@@ -577,6 +586,7 @@ query getEventCircuitStandings($eventCircuitTypeCode: String, $season: Int, $sex
             date:
               oldEntries[meet]?.[name as AthleticsEvent]?.date ?? `${year}-${month}-${day}T${document.querySelector('.time')!.getAttribute('data-starttime')}`,
             url: meetScheduleUrl,
+            deadline: deadlines[meet],
             blurb: blurbCache[meet]?.blurbs?.[name],
             targetTime: targetTimes[meet]?.[name],
             entrants: entrants.sort(entrantSortFunc),
@@ -585,7 +595,7 @@ query getEventCircuitStandings($eventCircuitTypeCode: String, $season: Int, $sex
       }
     }
   }
-  fs.writeFileSync(ENTRIES_PATH, JSON.stringify(entries));
+  fs.writeFileSync(ENTRIES_PATH, JSON.stringify({ ...oldEntries, ...entries }));
   fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 };
 

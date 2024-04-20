@@ -47,7 +47,7 @@ async function getBlurbs() {
         body: JSON.stringify({
           discipline: ungenderedEvt,
           gender,
-          athletes: entries[MEET][evt].entrants.map(e => ({ id: e.id, year: '2023' })),
+          athletes: entries[MEET][evt]?.entrants.map(e => ({ id: e.id, year: String(new Date().getFullYear()) })),
         }),
       })).json());
       console.log(resp);
