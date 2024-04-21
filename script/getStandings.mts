@@ -18,7 +18,7 @@ for (const meetInfo of meets) {
   const meetStanding: StandingElement = {
     meet,
     date,
-    url: cutoffEntry ? `https://hpr.github.io/${meet}/#/leaderboard` : '',
+    url: cutoffEntry ? `/#/${meet}/leaderboard` : '',
     leaders:
       leaderboard[meet]
         ?.filter((leader) => leader.score > (cutoffEntry?.score ?? 0))

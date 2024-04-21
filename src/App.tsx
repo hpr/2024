@@ -47,7 +47,7 @@ export default function App() {
   const { pathname } = useLocation();
   const hash = decodeURIComponent(pathname.slice(1));
   const [entries, setEntries] = useState<Entries | null>(null);
-  const [meet, setMeet] = useState<DLMeet>('xiamen24');
+  const [meet, setMeet] = useState<DLMeet>('shanghai24');
   const [evt, setEvt] = useState<AthleticsEvent | null>(null);
   const [myTeam, setMyTeam] = useState<Team>({});
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -99,6 +99,8 @@ export default function App() {
           }
         } else if (PAGES.includes(hashParts[1] as Page) && page !== hashParts[1]) {
           setPage(hashParts[1] as Page);
+        } else if (PAGES.includes(hashParts[0] as Page) && page !== hashParts[0]) {
+          setPage(hashParts[0] as Page);
         }
       }
     })();
@@ -197,8 +199,11 @@ export default function App() {
                 if (status === 'success') setIsSuccess(true);
                 else {
                   setIsSuccess(false);
+                  let msg = `Error in ${authPage === 'register' ? 'registration' : 'login'}, try again?`;
+                  if (authPage === 'register') msg += ' If you already have an account, click "Submit / Update Picks" to log in';
                   registerForm.setErrors({
-                    email: `Error in ${authPage === 'register' ? 'registration' : 'login'}, try again?`,
+                    email: msg,
+                    password: msg,
                   });
                 }
               })}
@@ -274,6 +279,7 @@ export default function App() {
                               setMeet(meet);
                               navigate(`/standings`);
                               setPage('standings');
+                              modals.closeAll();
                             }}>
                               {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}
                             </Button>
@@ -465,7 +471,7 @@ export default function App() {
           {page === 'submissions' ? (
             <Submissions meet={meet} />
           ) : page === 'leaderboard' ? (
-            <Leaderboard meet={meet} entries={entries!} />
+            <Leaderboard meet={meet} entries={entries!} setPage={setPage} />
           ) : page === 'scoring' ? (
             <Results entries={entries} meet={meet} />
           ) : page === 'standings' ? (

@@ -26,7 +26,7 @@ export const Results = ({ entries, meet }: { entries: Entries | null; meet: DLMe
             <CloseButton variant="subtle" onClick={() => setTeamToScore({ name: '', lbpicks: {} })} />
           </Group>
         ) : (
-          <Title order={2}>Results</Title>
+          <Title order={2}>{meet[0].toUpperCase()}{meet.slice(1, -2)} Results</Title>
         )}
       </Paper>
       {!Object.keys(entries?.[meet] ?? {}).filter(

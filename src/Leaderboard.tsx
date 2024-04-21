@@ -1,5 +1,5 @@
 import { List, Paper, Avatar, Loader, Accordion, SegmentedControl, Stack, Code, Button, ScrollArea, Group, Text, Badge } from '@mantine/core';
-import { useContext, useEffect, useState } from 'react';
+import { Dispatch, SetStateAction, useContext, useEffect, useState } from 'react';
 import { DLMeet, Entries, LBEntry, LBType } from './types';
 import Filter from 'badwords-filter';
 import { mantineGray } from './const';
@@ -10,7 +10,7 @@ import { evtSort } from './util';
 const filter = new Filter();
 type SortBy = 'score' | 'sprintScore' | 'distanceScore';
 
-export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries }) => {
+export const Leaderboard = ({ meet, entries, setPage }: { meet: DLMeet; entries: Entries, setPage: Dispatch<SetStateAction<string>> }) => {
   const navigate = useNavigate();
   const { teamToScore, setTeamToScore, athletesById } = useContext(Store);
   const [leaderboard, setLeaderboard] = useState<LBType>({});
@@ -42,7 +42,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
           value={sortBy}
           onChange={(v: SortBy) => setSortBy(v)}
           data={[
-            { label: 'Overall Leaderboard', value: 'score' },
+            { label: `${meet[0].toUpperCase()}${meet.slice(1, -2)} Leaderboard`, value: 'score' },
             // { label: 'King of the Distance', value: 'distanceScore' },
             // { label: 'King of the Sprints', value: 'sprintScore' },
           ]}
@@ -80,6 +80,7 @@ export const Leaderboard = ({ meet, entries }: { meet: DLMeet; entries: Entries 
                       onClick={() => {
                         setTeamToScore({ lbpicks: picks, name });
                         navigate(`/${meet}/scoring`);
+                        setPage('scoring');
                       }}
                     >
                       View scoring
