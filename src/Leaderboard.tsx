@@ -1,6 +1,6 @@
 import { List, Paper, Avatar, Loader, Accordion, SegmentedControl, Stack, Code, Button, ScrollArea, Group, Text, Badge } from '@mantine/core';
 import { Dispatch, SetStateAction, useContext, useEffect, useState } from 'react';
-import { DLMeet, Entries, LBEntry, LBType } from './types';
+import { DLMeet, Entries, LBEntry, LBType, Page } from './types';
 import Filter from 'badwords-filter';
 import { mantineGray } from './const';
 import { Store } from './Store';
@@ -10,7 +10,7 @@ import { evtSort } from './util';
 const filter = new Filter();
 type SortBy = 'score' | 'sprintScore' | 'distanceScore';
 
-export const Leaderboard = ({ meet, entries, setPage }: { meet: DLMeet; entries: Entries, setPage: Dispatch<SetStateAction<string>> }) => {
+export const Leaderboard = ({ meet, entries, setPage }: { meet: DLMeet; entries: Entries, setPage: Dispatch<SetStateAction<Page>> }) => {
   const navigate = useNavigate();
   const { teamToScore, setTeamToScore, athletesById } = useContext(Store);
   const [leaderboard, setLeaderboard] = useState<LBType>({});
