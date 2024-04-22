@@ -132,6 +132,8 @@ export default function App() {
   const earliestDate: Date = [...Object.values(entries?.[meet] ?? {}).map(v => new Date(v.date))].sort((a, b) => +a - +b)[0];
   const deadline = Object.values(entries?.[meet] ?? {}).find((evt) => evt.deadline)?.deadline;
 
+  const color = standingsMeets.find(m => m.meet === meet)?.color;
+
   return (
     <Store.Provider value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}>
       <Modal opened={modalOpen} onClose={() => setModalOpen(false)} title="Register / Login & Submit Picks">
@@ -407,7 +409,7 @@ export default function App() {
                 Fantasy {meet[0].toUpperCase()}{meet.slice(1, -2)} '{meet.slice(-2)}
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
-                    <Button size="xs" ml={20}>
+                    <Button size="xs" ml={20} bg={color}>
                       Rules
                     </Button>
                   </Popover.Target>
