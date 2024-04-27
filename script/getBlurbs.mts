@@ -56,6 +56,12 @@ async function getBlurbs() {
       await new Promise(res => setTimeout(res, 1000));
     }
   }
+
+  const oldEntries: Entries = JSON.parse(fs.readFileSync(ENTRIES_PATH, 'utf-8'));  
+  for (const evt in oldEntries[MEET]) {
+    oldEntries[MEET][evt].blurb = blurbCache[MEET]?.blurbs?.[evt];
+  }
+  fs.writeFileSync(ENTRIES_PATH, JSON.stringify(oldEntries));
 }
 
 await getBlurbs();
