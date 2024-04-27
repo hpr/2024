@@ -133,8 +133,8 @@ const getWaId = async (
   }
 ) => {
   const { data } = await (
-    await fetch('https://4usfq7rw2jf3bbrvf5jolayrxq.appsync-api.eu-west-1.amazonaws.com/graphql', {
-      headers: { 'x-api-key': 'da2-erlx4oraybbjrlxorsdgmemgua' },
+    await fetch(GRAPHQL_ENDPOINT, {
+      headers: { 'x-api-key': GRAPHQL_API_KEY },
       body: JSON.stringify({
         operationName: 'SearchCompetitors',
         variables: {
