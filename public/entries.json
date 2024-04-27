@@ -4490,7 +4490,7 @@
         },
         {
           "mark": "13:25.37",
-          "place": 12,
+          "place": 13,
           "notes": "",
           "entrant": {
             "firstName": "Brian",
@@ -4504,7 +4504,7 @@
         },
         {
           "mark": "13:31.64",
-          "place": 13,
+          "place": 14,
           "notes": "",
           "entrant": {
             "firstName": "Dan",
@@ -4684,7 +4684,121 @@
           "id": "14805837"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "13.12",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daniel",
+            "lastName": "Roberts",
+            "nat": "USA",
+            "pb": "13.00",
+            "sb": "13.11",
+            "hasAvy": true,
+            "id": "14577558"
+          }
+        },
+        {
+          "mark": "13.23",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shunsuke",
+            "lastName": "Izumiya",
+            "nat": "JPN",
+            "pb": "13.04",
+            "sb": "13.17",
+            "hasAvy": true,
+            "id": "14815041"
+          }
+        },
+        {
+          "mark": "13.26",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hansle",
+            "lastName": "Parchment",
+            "nat": "JAM",
+            "pb": "12.93",
+            "sb": "13.33",
+            "hasAvy": true,
+            "id": "14325570"
+          }
+        },
+        {
+          "mark": "13.26",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cordell",
+            "lastName": "Tinch",
+            "nat": "USA",
+            "pb": "12.96",
+            "sb": "13.16",
+            "hasAvy": true,
+            "id": "14719972"
+          }
+        },
+        {
+          "mark": "13.37",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Eric",
+            "lastName": "Edwards",
+            "nat": "USA",
+            "pb": "13.15",
+            "sb": "13.31",
+            "hasAvy": true,
+            "id": "14716336"
+          }
+        },
+        {
+          "mark": "13.43",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "XU",
+            "lastName": "Zhuoyi",
+            "nat": "CHN",
+            "pb": "13.39",
+            "sb": "13.72",
+            "hasAvy": true,
+            "id": "14885102"
+          }
+        },
+        {
+          "mark": "13.45",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "ZHU",
+            "lastName": "Shenglong",
+            "nat": "CHN",
+            "pb": "13.25",
+            "sb": "13.54",
+            "hasAvy": true,
+            "id": "14805837"
+          }
+        },
+        {
+          "mark": "13.58",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jamal",
+            "lastName": "Britt",
+            "nat": "USA",
+            "pb": "13.08",
+            "sb": "13.48",
+            "hasAvy": true,
+            "id": "14769264"
+          }
+        }
+      ]
     }
   }
 }
