@@ -2870,7 +2870,135 @@
           "id": "14839760"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.01",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Akani",
+            "lastName": "Simbine",
+            "nat": "RSA",
+            "pb": "9.84",
+            "sb": "10.01",
+            "hasAvy": true,
+            "id": "14417763"
+          }
+        },
+        {
+          "mark": "10.04",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Christian",
+            "lastName": "Coleman",
+            "nat": "USA",
+            "pb": "9.76",
+            "sb": "10.13",
+            "hasAvy": true,
+            "id": "14541956"
+          }
+        },
+        {
+          "mark": "10.11",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Fred",
+            "lastName": "Kerley",
+            "nat": "USA",
+            "pb": "9.76",
+            "sb": "10.03",
+            "hasAvy": true,
+            "id": "14504382"
+          }
+        },
+        {
+          "mark": "10.17",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Eseme",
+            "nat": "CMR",
+            "pb": "9.96",
+            "sb": "10.14",
+            "hasAvy": true,
+            "id": "14852717"
+          }
+        },
+        {
+          "mark": "10.23",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ackeem",
+            "lastName": "Blake",
+            "nat": "JAM",
+            "pb": "9.89",
+            "sb": "10.20",
+            "hasAvy": true,
+            "id": "14638971"
+          }
+        },
+        {
+          "mark": "10.29",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rohan",
+            "lastName": "Watson",
+            "nat": "JAM",
+            "pb": "9.91",
+            "sb": "10.27",
+            "hasAvy": true,
+            "id": "14779154"
+          }
+        },
+        {
+          "mark": "10.35",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brandon",
+            "lastName": "Carnes",
+            "nat": "USA",
+            "pb": "10.01",
+            "sb": "10.27",
+            "hasAvy": true,
+            "id": "14466007"
+          }
+        },
+        {
+          "mark": "10.37",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yoshihide",
+            "lastName": "Kiryu",
+            "nat": "JPN",
+            "pb": "9.98",
+            "sb": "10.38",
+            "hasAvy": true,
+            "id": "14547456"
+          }
+        },
+        {
+          "mark": "10.47",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Chen",
+            "lastName": "Guanfeng",
+            "nat": "CHN",
+            "pb": "10.06",
+            "sb": "",
+            "hasAvy": true,
+            "id": "14839760"
+          }
+        }
+      ]
     },
     "3000m Steeplechase Women": {
       "date": "2024-04-27T19:28",
