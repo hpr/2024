@@ -2666,7 +2666,121 @@
           "id": "14447688"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "50.89",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marileidy",
+            "lastName": "Paulino",
+            "nat": "DOM",
+            "pb": "48.76",
+            "sb": "50.08",
+            "hasAvy": true,
+            "id": "14749613"
+          }
+        },
+        {
+          "mark": "51.77",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Talitha",
+            "lastName": "Diggs",
+            "nat": "USA",
+            "pb": "49.93",
+            "sb": "51.23",
+            "hasAvy": true,
+            "id": "14773307"
+          }
+        },
+        {
+          "mark": "52.00",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sada",
+            "lastName": "Williams",
+            "nat": "BAR",
+            "pb": "49.58",
+            "sb": "51.93",
+            "hasAvy": true,
+            "id": "14592846"
+          }
+        },
+        {
+          "mark": "52.55",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kaylin",
+            "lastName": "Whitney",
+            "nat": "USA",
+            "pb": "50.29",
+            "sb": "52.36",
+            "hasAvy": true,
+            "id": "14524719"
+          }
+        },
+        {
+          "mark": "53.04",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aliyah",
+            "lastName": "Abrams",
+            "nat": "GUY",
+            "pb": "50.20",
+            "sb": "51.93",
+            "hasAvy": true,
+            "id": "14447688"
+          }
+        },
+        {
+          "mark": "53.75",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Stephenie Ann",
+            "lastName": "Mcpherson",
+            "nat": "JAM",
+            "pb": "49.34",
+            "sb": "54.02",
+            "hasAvy": true,
+            "id": "14285809"
+          }
+        },
+        {
+          "mark": "53.81",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Evelis",
+            "lastName": "Aguilar",
+            "nat": "COL",
+            "pb": "51.07",
+            "sb": "52.97",
+            "hasAvy": true,
+            "id": "14369345"
+          }
+        },
+        {
+          "mark": "54.47",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Haruna",
+            "lastName": "Kuboyama",
+            "nat": "JPN",
+            "pb": "53.07",
+            "sb": "53.90",
+            "hasAvy": true,
+            "id": "14809386"
+          }
+        }
+      ]
     },
     "100m Men": {
       "date": "2024-04-27T19:18",
