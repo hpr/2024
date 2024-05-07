@@ -45,11 +45,15 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   shanghai24: {
     "200m Women": '21.90',
   },
+  doha24: {
+    "3000m Steeplechase Men": '8:00.00',
+  }
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
   xiamen24: '7am ET',
   shanghai24: '7am ET',
+  doha24: '12pm noon ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -77,6 +81,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
 
   xiamen24: ['https://xiamen.diamondleague.com/program-results/program-2024/'],
   shanghai24: ['https://shanghai.diamondleague.com/programme-results/programme-results-shanghai/'],
+  doha24: ['https://doha.diamondleague.com/programme-results-doha/'],
 };
 
 const idTeams = {
