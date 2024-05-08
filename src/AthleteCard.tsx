@@ -18,6 +18,7 @@ import {
   Box,
   Grid,
   CloseButton,
+  BackgroundImage,
 } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { useContext, useState } from 'react';
@@ -311,6 +312,13 @@ export function AthleteCard({
                   sx={{ zIndex: 1 }}
                 >
                   <Indicator withBorder color={mantineGray} size={20} label={entrant.lastName.toUpperCase()} position="bottom-center">
+                    <Avatar
+                      src={`https://files.opentrack.run/live/countryflags/ioc/${entrant.nat}.svg`}
+                      radius={128}
+                      size={128}
+                      pos="absolute"
+                      sx={{ filter: 'brightness(20%)' }}
+                    />
                     <Avatar
                       onMouseEnter={popOpen}
                       onMouseLeave={popClose}
