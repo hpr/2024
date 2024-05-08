@@ -112,6 +112,16 @@ export function AthleteCard({
   };
   const AddToTeamButtonIcon = isOnTeam ? Minus : team.length < PICKS_PER_EVT ? Plus : AlertCircle;
 
+  const avatarOverlay = (
+    <Avatar
+      src={`https://files.opentrack.run/live/countryflags/ioc/${entrant.nat}.svg`}
+      radius={128}
+      size={128}
+      pos="absolute"
+      sx={{ filter: 'brightness(20%)' }}
+    />
+  );
+
   return (
     <>
       <Modal
@@ -132,7 +142,8 @@ export function AthleteCard({
               <Button disabled={idx === 0} variant="outline" onClick={() => showPrev()}>
                 <ArrowLeft />
               </Button>
-              <Avatar variant="outline" bg="gray" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
+              {avatarOverlay}
+              <Avatar variant="outline" size={128} radius={128} src={entrant.hasAvy ? avatar : undefined}>
                 {!entrant.hasAvy && entrant.firstName[0] + entrant.lastName[0]}
               </Avatar>
               <Button disabled={idx === numEntrants - 1} variant="outline" onClick={() => showNext()}>
@@ -312,13 +323,7 @@ export function AthleteCard({
                   sx={{ zIndex: 1 }}
                 >
                   <Indicator withBorder color={mantineGray} size={20} label={entrant.lastName.toUpperCase()} position="bottom-center">
-                    <Avatar
-                      src={`https://files.opentrack.run/live/countryflags/ioc/${entrant.nat}.svg`}
-                      radius={128}
-                      size={128}
-                      pos="absolute"
-                      sx={{ filter: 'brightness(20%)' }}
-                    />
+                    {avatarOverlay}
                     <Avatar
                       onMouseEnter={popOpen}
                       onMouseLeave={popClose}
