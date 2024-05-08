@@ -1,6 +1,6 @@
 // ssh habs@ma.sdf.org "sqlite3 -header -csv ~/db/fantasy1500.db 'select * from picks where meet = \"shanghai24\";'" > picks.csv && ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from users;"' > users.csv
 
-// ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select id,name,email from users where id > 352;"' > emails.csv
+// ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select id,name,email from users where id > 598;"' > emails.csv
 
 import { MeetCache, DLMeet, Entries, LBType, AthleticsEvent, ResultEntrant, MeetTeam, LBPicks } from './types.mjs';
 import fs from 'fs';

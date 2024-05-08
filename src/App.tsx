@@ -79,7 +79,8 @@ export default function App() {
 
       setAthletesById(
         Object.fromEntries(
-          Object.values(entries?.[meet] ?? {})
+          Object.values(entries ?? {})
+            .flatMap((val) => Object.values(val))
             .flatMap(({ entrants }) => entrants)
             .map((entrant) => [entrant.id, entrant])
         )
@@ -91,7 +92,7 @@ export default function App() {
       if (hash) {
         const hashParts = hash.split('/');
         const possibleMeet = hashParts[0];
-        if (standingsMeets.some(sm => sm.meet === possibleMeet)) setMeet(possibleMeet as DLMeet);
+        if (standingsMeets.some((sm) => sm.meet === possibleMeet)) setMeet(possibleMeet as DLMeet);
         if (hashParts[1] === 'evt') {
           const hashEvt = hashParts[2];
           if (hashEvt !== evt) {
@@ -129,10 +130,10 @@ export default function App() {
   const tiebreakerEvt = Object.keys(entries?.[meet] ?? {}).find((key) => entries?.[meet]?.[key as AthleticsEvent]?.tiebreaker);
   const tiebreakerMark = entries?.[meet]?.[tiebreakerEvt as AthleticsEvent]?.tiebreaker;
 
-  const earliestDate: Date = [...Object.values(entries?.[meet] ?? {}).map(v => new Date(v.date))].sort((a, b) => +a - +b)[0];
+  const earliestDate: Date = [...Object.values(entries?.[meet] ?? {}).map((v) => new Date(v.date))].sort((a, b) => +a - +b)[0];
   const deadline = Object.values(entries?.[meet] ?? {}).find((evt) => evt.deadline)?.deadline;
 
-  const color = standingsMeets.find(m => m.meet === meet)?.color;
+  const color = standingsMeets.find((m) => m.meet === meet)?.color;
 
   return (
     <Store.Provider value={{ myTeam, setMyTeam, teamToScore, setTeamToScore, athletesById, setAthletesById }}>
@@ -276,21 +277,30 @@ export default function App() {
                         path: 'switch',
                         onClick: () => {
                           // TODO switch meet modal
-                          const currentMeets = standingsMeets.filter(({ meet }) => entries?.[meet]).map(({ meet, color }) => (
-                            <Button style={{ backgroundColor: color, width: 140 }} m="sm" key={meet} onClick={() => {
-                              setMeet(meet);
-                              navigate(`/standings`);
-                              setPage('standings');
-                              modals.closeAll();
-                            }}>
-                              {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}
-                            </Button>
-                          ));
-                          const futureMeets = standingsMeets.filter(({ meet }) => !entries?.[meet]).map(({ meet, color }) => (
-                            <Button disabled style={{ backgroundColor: color, width: 140, color: 'white' }} m="sm" key={meet}>
-                              {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}
-                            </Button>
-                          ));
+                          const currentMeets = standingsMeets
+                            .filter(({ meet }) => entries?.[meet])
+                            .map(({ meet, color }) => (
+                              <Button
+                                style={{ backgroundColor: color, width: 140 }}
+                                m="sm"
+                                key={meet}
+                                onClick={() => {
+                                  setMeet(meet);
+                                  navigate(`/standings`);
+                                  setPage('standings');
+                                  modals.closeAll();
+                                }}
+                              >
+                                {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}
+                              </Button>
+                            ));
+                          const futureMeets = standingsMeets
+                            .filter(({ meet }) => !entries?.[meet])
+                            .map(({ meet, color }) => (
+                              <Button disabled style={{ backgroundColor: color, width: 140, color: 'white' }} m="sm" key={meet}>
+                                {meet[0].toUpperCase() + meet.slice(1, -2) + " '" + meet.slice(-2)}
+                              </Button>
+                            ));
                           modals.open({
                             title: 'Switch Meet',
                             size: 'xl',
@@ -303,9 +313,7 @@ export default function App() {
                                 <Title order={2} p="sm">
                                   Coming Soon
                                 </Title>
-                                <Grid justify="center">
-                                  {futureMeets}
-                                </Grid>
+                                <Grid justify="center">{futureMeets}</Grid>
                               </div>
                             ),
                           });
@@ -406,7 +414,8 @@ export default function App() {
                 <Burger opened={navbarOpen} onClick={() => setNavbarOpen((o) => !o)} size="sm" color={theme.colors.gray[6]} mr="xl" />
               </MediaQuery>
               <Text size="md">
-                Fantasy {meet[0].toUpperCase()}{meet.slice(1, -2)} '{meet.slice(-2)}
+                Fantasy {meet[0].toUpperCase()}
+                {meet.slice(1, -2)} '{meet.slice(-2)}
                 <Popover width="100%" position="bottom" withArrow shadow="md">
                   <Popover.Target>
                     <Button size="xs" ml={20} bg={color}>
@@ -427,7 +436,8 @@ export default function App() {
                       pressing "Save Picks" and then registering or logging in to an account.
                     </Text>
                     <Text mb={10} size="sm">
-                      <strong>Submissions Deadline:</strong> {earliestDate?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}, before the DL TV window starts, by {deadline} (for {meet}).
+                      <strong>Submissions Deadline:</strong> {earliestDate?.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })},
+                      before the DL TV window starts, by {deadline} (for {meet}).
                       {/* <br />
                       <strong>Prizes:</strong> First Place: Free Supporters Club Membership ($100 value!) + T-Shirt. Second Place: Free T-Shirt. Third Place:
                       Free T-Shirt.
