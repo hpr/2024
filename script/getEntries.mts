@@ -47,6 +47,9 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   },
   doha24: {
     "3000m Steeplechase Men": '8:00.00',
+  },
+  rabat24: {
+    "100m Men": "9.95",
   }
 };
 
@@ -54,6 +57,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   xiamen24: '7am ET',
   shanghai24: '7am ET',
   doha24: '12pm noon ET',
+  rabat24: '2pm ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -82,6 +86,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   xiamen24: ['https://xiamen.diamondleague.com/program-results/program-2024/'],
   shanghai24: ['https://shanghai.diamondleague.com/programme-results/programme-results-shanghai/'],
   doha24: ['https://doha.diamondleague.com/programme-results-doha/'],
+  rabat24: ['https://rabat.diamondleague.com/en/programme-results-rabat/'],
 };
 
 const idTeams = {
