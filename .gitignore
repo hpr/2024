@@ -1,6 +1,6 @@
 .env
 build
-script/blurbCache.json
+#script/blurbCache.json
 
 # Logs
 logs
