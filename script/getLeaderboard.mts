@@ -1,6 +1,6 @@
 // ssh habs@ma.sdf.org "sqlite3 -header -csv ~/db/fantasy1500.db 'select * from picks where meet = \"shanghai24\";'" > picks.csv && ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select * from users;"' > users.csv
 
-// ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select id,name,email from users where id > 598;"' > emails.csv
+// ssh habs@ma.sdf.org 'sqlite3 -header -csv ~/db/fantasy1500.db "select id,name,email from users where id > 611;"' > emails.csv
 
 import { MeetCache, DLMeet, Entries, LBType, AthleticsEvent, ResultEntrant, MeetTeam, LBPicks } from './types.mjs';
 import fs from 'fs';
@@ -74,6 +74,7 @@ for (const meet of [MEET] as DLMeet[]) {
   leaderboard[meet] = [];
   for (const { picksJson, userid } of rows) {
     const picks: MeetTeam = JSON.parse(picksJson);
+    const tb = (picks as any).tiebreaker;
     delete (picks as any).tiebreaker;
     // fixIds(picks); // TODO remove in future
 
@@ -106,6 +107,7 @@ for (const meet of [MEET] as DLMeet[]) {
       userid: +userid,
       name,
       picks: userPicks,
+      tb: tb?.slice(0, 8) ?? '',
       distanceScore,
       sprintScore,
       eventsScored,

@@ -50,7 +50,7 @@ export const Leaderboard = ({ meet, entries, setPage }: { meet: DLMeet; entries:
         />
         <Accordion variant="contained">
           {leaderboard?.[meet]?.length ? (
-            leaderboard?.[meet]!.map(({ name, userid, eventsScored, picks, ...lbentry }: LBEntry, i) => (
+            leaderboard?.[meet]!.map(({ name, userid, eventsScored, picks, tb, ...lbentry }: LBEntry, i) => (
               <Accordion.Item key={userid} value={userid + ''}>
                 <Accordion.Control
                   sx={{ width: '100%' }}
@@ -91,6 +91,7 @@ export const Leaderboard = ({ meet, entries, setPage }: { meet: DLMeet; entries:
                           .sort(([a], [b]) => evtSort(a, b))
                           .map(([evt, { team }]) => `${evt}: ${team.map(getName).join(', ')}`)
                           .join('\n')}
+                        {tb && `\nTiebreaker: ${tb}`}
                       </Code>
                     </ScrollArea>
                   </Stack>

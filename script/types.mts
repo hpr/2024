@@ -298,6 +298,7 @@ export type LBPicks = {
 
 export type LBEntry = {
   userid: number;
+  tb?: string; // tiebreaker
   name: string;
   picks: LBPicks;
   score: number;
