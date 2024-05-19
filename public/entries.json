@@ -7702,7 +7702,8 @@
           "nat": "FIN",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "800m Men": {
       "date": "2024-05-19T19:14",
@@ -7809,7 +7810,8 @@
           "nat": "FRA",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "5000m Women": {
       "date": "2024-05-19T19:24",
@@ -7943,7 +7945,8 @@
           "nat": "ETH",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "400m Men": {
       "date": "2024-05-19T19:48",
@@ -8023,7 +8026,8 @@
           "nat": "MAR",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "1500m Men": {
       "date": "2024-05-19T19:57",
@@ -8184,7 +8188,8 @@
           "nat": "FRA",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "200m Women": {
       "date": "2024-05-19T20:10",
@@ -8255,7 +8260,8 @@
           "nat": "MAR",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "100m Men": {
       "tiebreaker": "9.95",
@@ -8345,7 +8351,8 @@
           "nat": "MAR",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "800m Women": {
       "date": "2024-05-19T20:33",
@@ -8434,7 +8441,8 @@
           "nat": "MAR",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "3000m Steeple Men": {
       "date": "2024-05-19T20:46",
@@ -8622,7 +8630,8 @@
           "nat": "MAR",
           "hasAvy": false
         }
-      ]
+      ],
+      "isClosed": true
     }
   }
 }
