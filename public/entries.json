@@ -8481,7 +8481,112 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "44.51",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Doom",
+            "id": "14548983",
+            "pb": "44.92",
+            "sb": null,
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.54",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Muzala",
+            "lastName": "Samukonga",
+            "id": "14930603",
+            "pb": "43.91",
+            "sb": "45.07",
+            "nat": "ZAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.59",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bayapo",
+            "lastName": "Ndori",
+            "id": "14847443",
+            "pb": "44.10",
+            "sb": "44.10",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.78",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lythe",
+            "lastName": "Pillay",
+            "id": "14789653",
+            "pb": "44.31",
+            "sb": "44.31",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.88",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Bamidele",
+            "id": "14694441",
+            "pb": "44.24",
+            "sb": "45.12",
+            "nat": "NGR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.52",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Quincy",
+            "lastName": "Hall",
+            "id": "14597236",
+            "pb": "44.37",
+            "sb": "45.98",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.71",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "46.48",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hamza",
+            "lastName": "Dair",
+            "id": "14843148",
+            "pb": "45.43",
+            "sb": "46.11",
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Men": {
       "date": "2024-05-19T19:57",
