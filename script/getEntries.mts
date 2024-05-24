@@ -50,6 +50,9 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   },
   rabat24: {
     "100m Men": "9.95",
+  },
+  eugene24: {
+    "100m Women": "10.90",
   }
 };
 
@@ -58,6 +61,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   shanghai24: '7am ET',
   doha24: '12pm noon ET',
   rabat24: '2pm ET',
+  eugene24: '10am ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -87,6 +91,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   shanghai24: ['https://shanghai.diamondleague.com/programme-results/programme-results-shanghai/'],
   doha24: ['https://doha.diamondleague.com/programme-results-doha/'],
   rabat24: ['https://rabat.diamondleague.com/en/programme-results-rabat/'],
+  eugene24: ['https://eugene.diamondleague.com/program-results-eugene/'],
 };
 
 const idTeams = {
