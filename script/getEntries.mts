@@ -52,7 +52,7 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
     "100m Men": "9.95",
   },
   eugene24: {
-    "100m Women": "10.90",
+    "Mile Men": "3:45.00",
   }
 };
 
@@ -111,6 +111,7 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   return a.pb.localeCompare(b.pb);
 };
 const sanitizeEvtName = (name?: string, sex?: 'men' | 'women'): string | undefined => {
+  name = name?.replace('Bowerman ', '');
   if (name?.startsWith('Men ')) name = name.replace('Men ', '') + ' Men';
   if (name?.startsWith('Women ')) name = name.replace('Women ', '') + ' Women';
   if (!name?.toLowerCase().includes('men')) name += ` ${sex![0].toUpperCase() + sex?.slice(1)}`;

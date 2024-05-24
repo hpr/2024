@@ -62,6 +62,7 @@ export type AthleticsEvent =
   | '3000m Steeple Men'
   | '5000m Women'
   | '5000m Men'
+  | 'Mile Men'
   | "Women's 60 m"
   | "Men's 60 m"
   | "Men's 100 m"
