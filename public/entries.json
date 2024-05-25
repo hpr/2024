@@ -12413,7 +12413,135 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.83",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sha'Carri",
+            "lastName": "Richardson",
+            "id": "14717691",
+            "pb": "10.65",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.93",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Julien",
+            "lastName": "Alfred",
+            "id": "14646562",
+            "pb": "10.81",
+            "sb": null,
+            "nat": "LCA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.98",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dina",
+            "lastName": "Asher-Smith",
+            "id": "14378282",
+            "pb": "10.83",
+            "sb": null,
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.00",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "10.90",
+            "sb": "10.98",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.02",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Melissa",
+            "lastName": "Jefferson",
+            "id": "14756997",
+            "pb": "10.82",
+            "sb": "10.94",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.05",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou-Smith",
+            "id": "14415994",
+            "pb": "10.72",
+            "sb": "10.91",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.19",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Twanisha",
+            "lastName": "Terry",
+            "id": "14553598",
+            "pb": "10.82",
+            "sb": "11.37",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.21",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brittany",
+            "lastName": "Brown",
+            "id": "14437218",
+            "pb": "10.90",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.30",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elaine",
+            "lastName": "Thompson-Herah",
+            "id": "14285956",
+            "pb": "10.54",
+            "sb": null,
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "Mile Men": {
       "tiebreaker": "3:45.00",
