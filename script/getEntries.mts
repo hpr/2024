@@ -61,7 +61,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   shanghai24: '7am ET',
   doha24: '12pm noon ET',
   rabat24: '2pm ET',
-  eugene24: '10am ET',
+  eugene24: '4pm ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
