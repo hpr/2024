@@ -10998,7 +10998,135 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "13.03",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grant",
+            "lastName": "Holloway",
+            "id": "14516985",
+            "pb": "12.81",
+            "sb": "13.21",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.13",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daniel",
+            "lastName": "Roberts",
+            "id": "14577558",
+            "pb": "13.00",
+            "sb": "13.11",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.16",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Freddie",
+            "lastName": "Crittenden",
+            "id": "14491556",
+            "pb": "13.00",
+            "sb": "13.30",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.28",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hansle",
+            "lastName": "Parchment",
+            "id": "14325570",
+            "pb": "12.93",
+            "sb": "13.26",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.29",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Trey",
+            "lastName": "Cunningham",
+            "id": "14675757",
+            "pb": "13.00",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.31",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Asier",
+            "lastName": "Martínez",
+            "id": "14734118",
+            "pb": "13.14",
+            "sb": "13.29",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.33",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shunsuke",
+            "lastName": "Izumiya",
+            "id": "14815041",
+            "pb": "13.04",
+            "sb": "13.17",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.36",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jamal",
+            "lastName": "Britt",
+            "id": "14769264",
+            "pb": "13.08",
+            "sb": "13.38",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.38",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cordell",
+            "lastName": "Tinch",
+            "id": "14719972",
+            "pb": "12.96",
+            "sb": "13.16",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Women": {
       "date": "2024-05-25T13:57",
