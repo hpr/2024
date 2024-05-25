@@ -10134,7 +10134,108 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "48.56",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gerald",
+            "lastName": "Drummond",
+            "id": "14414628",
+            "pb": "48.11",
+            "sb": "48.97",
+            "nat": "CRC",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.85",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rasmus",
+            "lastName": "Mägi",
+            "id": "14373195",
+            "pb": "47.82",
+            "sb": null,
+            "nat": "EST",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.99",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.58",
+            "sb": "48.39",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "49.07",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Roshawn",
+            "lastName": "Clarke",
+            "id": "14931525",
+            "pb": "47.34",
+            "sb": "48.11",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.51",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Malik",
+            "lastName": "James-King",
+            "id": "14744387",
+            "pb": "48.39",
+            "sb": "48.39",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.62",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Trevor",
+            "lastName": "Bassitt",
+            "id": "14719193",
+            "pb": "47.38",
+            "sb": "48.93",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.83",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jaheel",
+            "lastName": "Hyde",
+            "id": "14520436",
+            "pb": "48.03",
+            "sb": "49.48",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Men": {
       "date": "2024-05-25T13:12",
