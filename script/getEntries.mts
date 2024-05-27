@@ -53,6 +53,9 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   },
   eugene24: {
     "Mile Men": "3:45.00",
+  },
+  oslo24: {
+    "5000m Men": "12:40.00",
   }
 };
 
@@ -62,6 +65,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   doha24: '12pm noon ET',
   rabat24: '2pm ET',
   eugene24: '4pm ET',
+  oslo24: '2pm ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -92,6 +96,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   doha24: ['https://doha.diamondleague.com/programme-results-doha/'],
   rabat24: ['https://rabat.diamondleague.com/en/programme-results-rabat/'],
   eugene24: ['https://eugene.diamondleague.com/program-results-eugene/'],
+  oslo24: ['https://oslo.diamondleague.com/en/programme-results/programme-2023/'],
 };
 
 const idTeams = {
