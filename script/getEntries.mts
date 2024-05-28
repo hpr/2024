@@ -56,7 +56,10 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   },
   oslo24: {
     "5000m Men": "12:40.00",
-  }
+  },
+  stockholm24: {
+    "400m Hurdles Men": "46.50",
+  },
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
@@ -66,6 +69,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   rabat24: '2pm ET',
   eugene24: '4pm ET',
   oslo24: '2pm ET',
+  stockholm24: '12pm noon ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -97,6 +101,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   rabat24: ['https://rabat.diamondleague.com/en/programme-results-rabat/'],
   eugene24: ['https://eugene.diamondleague.com/program-results-eugene/'],
   oslo24: ['https://oslo.diamondleague.com/en/programme-results/programme-2023/'],
+  stockholm24: ['https://stockholm.diamondleague.com/en/lists-results-stockholm/'],
 };
 
 const idTeams = {
