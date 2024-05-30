@@ -13179,7 +13179,121 @@
         }
       ],
       "blurb": "### Predicted Finish and Times:\n1. **Matthew Hudson-Smith (GBR) - 44.25**\n2. **Kirani James (GRN) - 44.35**\n3. **Quincy Hall (USA) - 44.40**\n4. **Rusheen McDonald (JAM) - 44.55**\n5. **Vernon Norwood (USA) - 44.60**\n6. **Lythe Pillay (RSA) - 44.75**\n7. **Håvard Bentdal Ingvaldsen (NOR) - 44.85**\n8. **Leungo Scotch (BOT) - 45.05**\n\n### Race Preview and Prediction Reasoning:\n\n1. **Matthew Hudson-Smith**:\n   - **Reasoning**: Hudson-Smith has shown remarkable consistency and peak performance recently, including setting a British and European record of 44.26 seconds in 2023. His recent times, such as 44.69 and 44.26 in Budapest, indicate he is in top form. Given his strong finish in crucial races and his ability to perform well in competitive fields, Hudson-Smith is predicted to take the win with a slight improvement, clocking 44.25.\n\n2. **Kirani James**:\n   - **Reasoning**: Kirani James has a distinguished career and has also shown consistency, with recent times of 44.30 and 44.85. His experience, particularly in major championships, gives him an edge. Despite being slightly off his peak, his recent form suggests he can push Hudson-Smith close, finishing at 44.35.\n\n3. **Quincy Hall**:\n   - **Reasoning**: Hall's recent performances, such as 44.43 in Budapest and 44.38 in Xiamen, show he is competitive and consistent. Although not as experienced as James and Hudson-Smith, his ability to deliver strong finishes places him in the top three with a predicted time of 44.40.\n\n4. **Rusheen McDonald**:\n   - **Reasoning**: McDonald has had a mixed season but showed potential with a 44.03 in Székesfehérvár. His inconsistency in times, ranging from 44.03 to 45.10, places him slightly behind the top three. However, his peak performance capability predicts a strong finish at 44.55.\n\n5. **Vernon Norwood**:\n   - **Reasoning**: Norwood has had a solid season with multiple sub-45 performances, including 44.26 in Budapest. His consistency places him in the mix, but he lacks the peak performance of the top four, predicting a finish of 44.60.\n\n6. **Lythe Pillay**:\n   - **Reasoning**: The young South African has shown great promise with a recent 44.31. Despite his youth, his performances suggest he can compete with the best. However, his relative inexperience at the highest level places him just outside the top five, finishing at 44.75.\n\n7. **Håvard Bentdal Ingvaldsen**:\n   - **Reasoning**: Ingvaldsen has had a breakout season with a 44.39 in Budapest. While he has shown he can compete, his inconsistency, such as a 45.08 in Budapest, suggests he will finish slightly behind the more experienced runners, predicting a time of 44.85.\n\n8. **Leungo Scotch**:\n   - **Reasoning**: Scotch has had a steady season but has not broken the 44.90 barrier recently. His best performances, such as 44.54 in Nairobi, suggest he is competitive but not at the same level as the top seven. Predicting a finish time of 45.05.\n\n### Summary:\nMatthew Hudson-Smith's recent form and record-breaking capabilities make him the favorite for this race. Kirani James and Quincy Hall, with their consistent top-tier performances, are expected to follow closely. Rusheen McDonald and Vernon Norwood, despite their potential, will likely finish just outside the top three due to slight inconsistencies. Lythe Pillay and Håvard Bentdal Ingvaldsen, though promising, lack the experience to break into the top five, while Leungo Scotch, despite his solid performances, rounds out the field due to his inability to consistently break 45 seconds.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "44.07",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Matthew",
+            "lastName": "Hudson-Smith",
+            "id": "14407278",
+            "pb": "44.26",
+            "sb": "44.69",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.58",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kirani",
+            "lastName": "James",
+            "id": "14195659",
+            "pb": "43.74",
+            "sb": "44.85",
+            "nat": "GRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.68",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Vernon",
+            "lastName": "Norwood",
+            "id": "14490237",
+            "pb": "44.26",
+            "sb": "44.74",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.02",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Leungo",
+            "lastName": "Scotch",
+            "id": "14643510",
+            "pb": "44.54",
+            "sb": "44.54",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.02",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Quincy",
+            "lastName": "Hall",
+            "id": "14597236",
+            "pb": "44.37",
+            "sb": "45.52",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.34",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lythe",
+            "lastName": "Pillay",
+            "id": "14789653",
+            "pb": "44.31",
+            "sb": "44.31",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.41",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Håvard Bentdal",
+            "lastName": "Ingvaldsen",
+            "id": "14908015",
+            "pb": "44.39",
+            "sb": "45.45",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.60",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rusheen",
+            "lastName": "McDonald",
+            "id": "14468667",
+            "pb": "43.93",
+            "sb": "47.25",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Women": {
       "date": "2024-05-30T20:22",
