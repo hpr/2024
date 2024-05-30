@@ -12984,7 +12984,121 @@
         }
       ],
       "blurb": "**Predicted Finish and Marks:**\n\n1. **Marileidy Paulino (DOM) - 48.80**\n2. **Natalia Kaczmarek (POL) - 49.50**\n3. **Sada Williams (BAR) - 49.70**\n4. **Lieke Klaver (NED) - 49.90**\n5. **Alexis Holmes (USA) - 50.20**\n6. **Victoria Ohuruogu (GBR) - 50.60**\n7. **Laviai Nielsen (GBR) - 50.80**\n8. **Henriette Jæger (NOR) - 51.00**\n\n**Race Prediction and Preview:**\n\nThe Women's 400 Metres race promises to be a thrilling event, featuring a lineup of elite sprinters with impressive credentials. Here's why I believe they will finish in the predicted order:\n\n1. **Marileidy Paulino (DOM) - 48.80**\n   - **Reasoning:** Paulino has been in sensational form, consistently clocking sub-50 times, including a blistering 48.76 in Budapest in August 2023. Her dominance in the 400 metres over the past year, coupled with her status as the world No. 1, makes her the favorite. Her ability to peak at major events and her history of fast finishes suggest she could go even faster in this hypothetical race.\n\n2. **Natalia Kaczmarek (POL) - 49.50**\n   - **Reasoning:** Kaczmarek has shown remarkable consistency, with multiple sub-50 times, including a 49.48 in Chorzów in July 2023. Her recent performances indicate she is in peak condition, and she has a proven ability to handle high-pressure situations, as seen in her silver medal at the European Championships. Kaczmarek's strong finish and tactical race management will secure her second place.\n\n3. **Sada Williams (BAR) - 49.70**\n   - **Reasoning:** Williams has had a solid season, highlighted by a 49.58 in Budapest and consistent performances around the 50-second mark. Her bronze medal at the 2022 World Championships and gold at the Commonwealth Games demonstrate her ability to perform on the big stage. Williams' strong middle phase of the race will keep her in contention for a podium finish.\n\n4. **Lieke Klaver (NED) - 49.90**\n   - **Reasoning:** Klaver has been impressive, with several sub-50 performances, including a 49.87 in Budapest. Her versatility in both the 200 and 400 metres, along with her strong relay performances, showcase her speed and endurance. However, her occasional inconsistencies in major finals may slightly hinder her from breaking into the top three.\n\n5. **Alexis Holmes (USA) - 50.20**\n   - **Reasoning:** Holmes has shown promise with a 50.31 in Kingston and strong indoor performances. Her youth and recent improvements suggest she is on an upward trajectory. However, she lacks the same level of experience and consistency as the top four, which might affect her final push in a high-pressure race.\n\n6. **Victoria Ohuruogu (GBR) - 50.60**\n   - **Reasoning:** Ohuruogu has had a steady season, consistently running in the low 50s, with a best of 50.50 in Memphis. While she has valuable experience and a strong racing pedigree, her performances have been slightly below the top contenders. Her tactical acumen will help her secure a respectable finish.\n\n7. **Laviai Nielsen (GBR) - 50.80**\n   - **Reasoning:** Nielsen has shown resilience and strength, especially given her diagnosis of multiple sclerosis. Her recent performances, such as 50.83 in Bern, indicate she is capable of competing at a high level. However, her times have been slightly off the pace compared to the top competitors, placing her in seventh.\n\n8. **Henriette Jæger (NOR) - 51.00**\n   - **Reasoning:** Jæger is a rising star with a national record of 51.03 in Berlin. Her youth and potential are evident, but she is yet to regularly compete at the same level as the more experienced athletes. This race will be an excellent opportunity for her to gain experience and continue her development.\n\nIn summary, Marileidy Paulino's dominance and consistency make her the clear favorite, while Natalia Kaczmarek and Sada Williams are expected to vie for the remaining podium spots. The depth of talent and competitive spirit among the athletes guarantee an exciting and closely-fought race.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "49.30",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marileidy",
+            "lastName": "Paulino",
+            "id": "14749613",
+            "pb": "48.76",
+            "sb": "50.08",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.80",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natalia",
+            "lastName": "Kaczmarek",
+            "id": "14642563",
+            "pb": "49.48",
+            "sb": "50.29",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.40",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexis",
+            "lastName": "Holmes",
+            "id": "14761424",
+            "pb": "50.31",
+            "sb": "50.31",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.62",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "49.81",
+            "sb": null,
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.71",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sada",
+            "lastName": "Williams",
+            "id": "14592846",
+            "pb": "49.58",
+            "sb": "51.48",
+            "nat": "BAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.81",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Henriette",
+            "lastName": "Jæger",
+            "id": "14780807",
+            "pb": "51.03",
+            "sb": null,
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.04",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laviai",
+            "lastName": "Nielsen",
+            "id": "14599229",
+            "pb": "50.83",
+            "sb": "51.47",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.61",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Victoria",
+            "lastName": "Ohuruogu",
+            "id": "14359991",
+            "pb": "50.48",
+            "sb": "51.36",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Men": {
       "date": "2024-05-30T20:16",
