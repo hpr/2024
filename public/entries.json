@@ -14074,7 +14074,296 @@
         }
       ],
       "blurb": "### Predicted Finish and Times for Men's 5000 Metres\n\n1. **Jacob Kiplimo (UGA)** - 12:44.50\n2. **Yomif Kejelcha (ETH)** - 12:45.20\n3. **Joshua Cheptegei (UGA)** - 12:48.00\n4. **Hagos Gebrhiwet (ETH)** - 12:49.10\n5. **Telahun Haile Bekele (ETH)** - 12:49.50\n6. **Luis Grijalva (GUA)** - 12:54.00\n7. **Dominic Lokinyomo Lobalu (SUI)** - 12:55.30\n8. **Adriaan Wildschutt (RSA)** - 12:57.00\n9. **Jimmy Gressier (FRA)** - 12:58.30\n10. **Biniam Mehary (ETH)** - 12:59.00\n11. **Thierry Ndikumwenayo (ESP)** - 13:01.50\n12. **Addisu Yihune (ETH)** - 13:05.50\n13. **Mike Foppen (NED)** - 13:08.00\n14. **Oscar Chelimo (UGA)** - 13:12.00\n15. **Andreas Almgren (SWE)** - 13:15.00\n16. **Samuel Tefera (ETH)** - 13:17.00\n17. **Brian Fay (IRL)** - 13:19.00\n18. **Awet Nftalem Kibrab (NOR)** - 13:21.00\n19. **Magnus Tuv Myhre (NOR)** - 13:23.00\n20. **Per Svela (NOR)** - 13:27.00\n21. **Callum Davies (AUS)** - 13:35.00\n22. **Jude Thomas (AUS)** - 13:40.00\n\n### Reasoning\n\n1. **Jacob Kiplimo (UGA)**: Kiplimo's recent performances, including a 12:41.73 in Oslo and consistent gold medals in various events, showcase his elite form and ability to perform well under pressure. His recent 28:09 in Beograd cross country further cements his current top form.\n\n2. **Yomif Kejelcha (ETH)**: Kejelcha has been in exceptional form, with a 12:41.73 in Oslo and a 12:46.91 in Zurich. His consistency and recent performances suggest he will closely challenge Kiplimo.\n\n3. **Joshua Cheptegei (UGA)**: Despite a few recent setbacks (DNS in Budapest and a 6th place in Beograd), Cheptegei remains a formidable competitor with his 12:52.38 in Los Angeles and his world record pedigree.\n\n4. **Hagos Gebrhiwet (ETH)**: Gebrhiwet has shown strong form with a 12:42.18 in Monaco and consistent podium finishes. His experience and recent results make him a strong contender for a top finish.\n\n5. **Telahun Haile Bekele (ETH)**: Bekele's 12:46.21 in Oslo and consistent top-five finishes show he has the capability to hang with the best, although he may lack the final kick compared to the top four.\n\n6. **Luis Grijalva (GUA)**: Grijalva's 12:52.97 in Firenze and his recent 13:16.53 win in Los Angeles indicate he is peaking at the right time, but he may still be a slight step behind the top five.\n\n7. **Dominic Lokinyomo Lobalu (SUI)**: Lobalu’s versatility across distances and his 7:33.95 in 3000m show his potential, but his 13:07.02 in Zurich suggests he might not yet be at the very top tier.\n\n8. **Adriaan Wildschutt (RSA)**: Wildschutt's recent 12:56.76 in Boston shows he is breaking through to the next level and he should be competitive, though his lack of experience at this level may limit his top finish.\n\n9. **Jimmy Gressier (FRA)**: Gressier has solid credentials with a 27:07 in Lille and consistent performances, but his 12:56.09 in Monaco suggests he might struggle to break into the very top echelon.\n\n10. **Biniam Mehary (ETH)**: Mehary's recent performances, including a 12:54.10 in Los Angeles, show promise but his age and relative inexperience might hold him back slightly in such a high-pressure race.\n\n11. **Thierry Ndikumwenayo (ESP)**: Ndikumwenayo has shown flashes of brilliance, including a 12:55.47 in Monaco, but his inconsistency in other races makes him a bit of a wildcard.\n\n12. **Addisu Yihune (ETH)**: Yihune's performances, including a 13:01.44 in Xiamen, show he is a strong competitor, though possibly not yet ready to challenge the very top.\n\n13. **Mike Foppen (NED)**: Foppen has good strength and recent form, including a 13:05.66, but his performances suggest he might lack the speed to contest the very top finishes.\n\n14. **Oscar Chelimo (UGA)**: Chelimo has shown good form in cross country but his recent 13:33.40 in Budapest and other DNFs suggest he might struggle over the 5000m distance at this level.\n\n15. **Andreas Almgren (SWE)**: Almgren's recent 12:59.82 in Stockholm shows he is competitive, but DNFs in other races suggest he might not have the consistency needed for a higher finish.\n\n16. **Samuel Tefera (ETH)**: Tefera has the speed, as shown in his 1500m performances, but his 5000m results like a 12:58.44 in Firenze suggest he might not have the endurance for a top finish.\n\n17. **Brian Fay (IRL)**: Fay has shown solid performances, including a 13:01.40 in Heusden-Zolder, but lacks the consistent top-level results to challenge the very best.\n\n18. **Awet Nftalem Kibrab (NOR)**: Kibrab’s recent performances, including a 13:30.38 in Pietermaritzburg, show he is solid but lacks the top-end speed and consistency to challenge the leaders.\n\n19. **Magnus Tuv Myhre (NOR)**: Myhre has shown promise with a 13:09.44 in Oslo, but his overall form and recent performances suggest he might struggle to keep up with the top pack.\n\n20. **Per Svela (NOR)**: Svela has solid performances but lacks the standout results needed to break into the top tiers, as shown by his 13:19.87 in Huelva.\n\n21. **Callum Davies (AUS)**: Davies has strong middle-distance credentials but his lack of recent top 5000m performances suggests he might struggle at this distance.\n\n22. **Jude Thomas (AUS)**: Thomas has shown promise with his 13:33.60 in Melbourne, but his recent results suggest he might not yet be ready to compete at the very top level in a field this deep.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12:36.73",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hagos",
+            "lastName": "Gebrhiwet",
+            "id": "14477352",
+            "pb": "12:42.1",
+            "sb": "13:38.1",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:38.95",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yomif",
+            "lastName": "Kejelcha",
+            "id": "14594967",
+            "pb": "12:41.7",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:40.96",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jacob",
+            "lastName": "Kiplimo",
+            "id": "14735365",
+            "pb": "12:41.7",
+            "sb": "12:52.9",
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:48.10",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Thierry",
+            "lastName": "Ndikumwenayo",
+            "id": "14661449",
+            "pb": "12:55.4",
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:49.65",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Addisu",
+            "lastName": "Yihune",
+            "id": "14977660",
+            "pb": "12:58.9",
+            "sb": "13:01.4",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:50.58",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Luis",
+            "lastName": "Grijalva",
+            "id": "14749285",
+            "pb": "12:52.9",
+            "sb": "13:16.5",
+            "nat": "GUA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:50.90",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dominic Lokinyomo",
+            "lastName": "Lobalu",
+            "id": "14792211",
+            "pb": "12:52.1",
+            "sb": null,
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:50.94",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Almgren",
+            "id": "14460738",
+            "pb": "12:59.8",
+            "sb": "12:59.8",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:51.94",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joshua",
+            "lastName": "Cheptegei",
+            "id": "14645612",
+            "pb": "12:35.3",
+            "sb": "12:52.3",
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:54.59",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Oscar",
+            "lastName": "Chelimo",
+            "id": "14805793",
+            "pb": "13:00.4",
+            "sb": null,
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:54.97",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jimmy",
+            "lastName": "Gressier",
+            "id": "14694062",
+            "pb": "12:56.0",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:55.78",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Samuel",
+            "lastName": "Tefera",
+            "id": "14797484",
+            "pb": "12:58.4",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12:56.67",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Adriaan",
+            "lastName": "Wildschutt",
+            "id": "14741268",
+            "pb": "13:02.4",
+            "sb": "13:30.3",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:08.80",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Telahun Haile",
+            "lastName": "Bekele",
+            "id": "14797485",
+            "pb": "12:42.7",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:18.67",
+          "place": 15,
+          "notes": ""
+        },
+        {
+          "mark": "13:23.66",
+          "place": 16,
+          "notes": ""
+        },
+        {
+          "mark": "13:25.70",
+          "place": 17,
+          "notes": "",
+          "entrant": {
+            "firstName": "Per",
+            "lastName": "Svela",
+            "id": "14704734",
+            "pb": "13:19.8",
+            "sb": "13:19.8",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:30.45",
+          "place": 18,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brian",
+            "lastName": "Fay",
+            "id": "14781522",
+            "pb": "13:01.4",
+            "sb": "13:14.9",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13:44.52",
+          "place": 19,
+          "notes": "",
+          "entrant": {
+            "firstName": "Awet Nftalem",
+            "lastName": "Kibrab",
+            "id": "14579463",
+            "pb": "13:15.4",
+            "sb": "13:25.4",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Mike",
+            "lastName": "Foppen",
+            "id": "14631296",
+            "pb": "13:05.6",
+            "sb": "13:16.5",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Jude",
+            "lastName": "Thomas",
+            "id": "14861525",
+            "pb": "13:33.6",
+            "sb": "13:33.6",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Callum",
+            "lastName": "Davies",
+            "id": "14690926",
+            "pb": "13:47.2",
+            "sb": "13:47.2",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Men": {
       "date": "2024-05-30T21:04",
