@@ -15076,7 +15076,121 @@
         }
       ],
       "blurb": "### Predicted Final Places and Times for the Women's 400 Metres Hurdles\n\n1. **Rushell Clayton (JAM)** - 52.75\n2. **Janieve Russell (JAM)** - 53.50\n3. **Andrenette Knight (JAM)** - 53.70\n4. **Ayomide Folorunso (ITA)** - 54.00\n5. **Anna Ryzhykova (UKR)** - 54.30\n6. **Viivi Lehikoinen (FIN)** - 54.50\n7. **Jessie Knight (GBR)** - 54.80\n8. **Amalie Iuel (NOR)** - 55.40\n\n### Explanation for the Predicted Order\n\n1. **Rushell Clayton (JAM)**\n   - **Reasoning:** Clayton has had a standout season with consistent performances, including a personal best of 52.81 seconds achieved in 2023. Her recent results show she is in peak form, with multiple first-place finishes and times consistently under 54 seconds. Notably, her recent 51.81 in the 400 metres flat indicates exceptional speed and endurance, making her the clear favorite.\n\n2. **Janieve Russell (JAM)**\n   - **Reasoning:** Russell has a strong history of top finishes and a personal best of 53.08 seconds. Her recent performances in the 400 metres hurdles have been very competitive, with multiple times in the 53-second range. While she has had a few off races, her consistent sub-54 performances and experience make her a strong contender for second place.\n\n3. **Andrenette Knight (JAM)**\n   - **Reasoning:** Knight has shown significant improvement and consistency, with a best of 53.26 seconds in recent races. Her performance in Budapest, where she clocked 53.72 seconds, demonstrates her capability to compete at a high level. Given her current form, she is likely to challenge for a podium finish.\n\n4. **Ayomide Folorunso (ITA)**\n   - **Reasoning:** Folorunso has been performing consistently in the mid-54-second range. Her season best of 54.19 seconds and multiple sub-55 finishes show she is capable of running a strong race. However, she has not broken into the 53-second territory, which places her slightly behind the top three.\n\n5. **Anna Ryzhykova (UKR)**\n   - **Reasoning:** Ryzhykova has a personal best of 52.96 seconds but has struggled to consistently hit those times this season. While she has shown flashes of her best form, her recent results suggest she might not be at her peak. However, her experience and past performances keep her in the top half of the field.\n\n6. **Viivi Lehikoinen (FIN)**\n   - **Reasoning:** Lehikoinen has had a mix of results, with some strong performances in the mid-54-second range. Her best of 54.40 seconds this season indicates potential, but inconsistency in her performances suggests she might not be ready to challenge for the top spots just yet.\n\n7. **Jessie Knight (GBR)**\n   - **Reasoning:** Knight has shown good form in the 400 metres flat but has struggled in the hurdles, with recent times around 55 seconds. Her best of 54.27 seconds in Budapest shows potential, but a few sub-par performances indicate that she might not be in peak form for this race.\n\n8. **Amalie Iuel (NOR)**\n   - **Reasoning:** Iuel has had a solid season with a best of 54.89 seconds. However, her performances have generally been slower compared to the rest of the field, with many of her times in the mid-to-high 55-second range. This places her at the back of this highly competitive lineup.\n\n### Conclusion\nThe predicted order reflects current form, recent performances, and historical consistency. Rushell Clayton is the clear favorite due to her exceptional recent results and personal best. Janieve Russell and Andrenette Knight follow closely, showing strong performances and consistency. The rest of the field, while talented, has shown more variability in their results, placing them behind the top three.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "54.02",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rushell",
+            "lastName": "Clayton",
+            "id": "14425208",
+            "pb": "52.81",
+            "sb": "53.72",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.63",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andrenette",
+            "lastName": "Knight",
+            "id": "14512625",
+            "pb": "53.26",
+            "sb": "54.69",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.07",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Janieve",
+            "lastName": "Russell",
+            "id": "14334022",
+            "pb": "53.08",
+            "sb": "55.74",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.50",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Amalie",
+            "lastName": "Iuel",
+            "id": "14481392",
+            "pb": "54.68",
+            "sb": "54.89",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.52",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessie",
+            "lastName": "Knight",
+            "id": "14430428",
+            "pb": "54.09",
+            "sb": "56.44",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.58",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Ryzhykova",
+            "id": "14304336",
+            "pb": "52.96",
+            "sb": "55.09",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "56.06",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ayomide",
+            "lastName": "Folorunso",
+            "id": "14484475",
+            "pb": "53.89",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "56.23",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Viivi",
+            "lastName": "Lehikoinen",
+            "id": "14527527",
+            "pb": "54.40",
+            "sb": "55.81",
+            "nat": "FIN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Men": {
       "date": "2024-05-30T21:50",
@@ -15238,7 +15352,224 @@
         }
       ],
       "blurb": "### Predicted Finish and Marks\n\n1. **Jakob Ingebrigtsen (NOR)** - 3:27.90\n2. **Timothy Cheruiyot (KEN)** - 3:29.50\n3. **Narve Gilje Nordås (NOR)** - 3:30.20\n4. **Neil Gourley (GBR)** - 3:30.80\n5. **George Mills (GBR)** - 3:31.00\n6. **Oliver Hoare (AUS)** - 3:31.40\n7. **Azzedine Habz (FRA)** - 3:31.80\n8. **Isaac Nader (POR)** - 3:32.00\n9. **Andrew Coscoran (IRL)** - 3:32.40\n10. **Elliot Giles (GBR)** - 3:33.00\n11. **Adel Mechaal (ESP)** - 3:33.30\n12. **Robert Farken (GER)** - 3:33.50\n13. **Stewart McSweyn (AUS)** - 3:34.00\n14. **Ryan Mphahlele (RSA)** - 3:34.50\n15. **Pietro Arese (ITA)** - 3:34.80\n16. **Žan Rudolf (SLO)** - 3:35.00\n17. **Boaz Kiprugut (KEN)** - 3:36.00\n\n### Reasoning\n\n1. **Jakob Ingebrigtsen (NOR)**: Jakob has had a stellar year with multiple sub-3:30 performances. His consistency, particularly his ability to produce times in the 3:27-3:28 range, makes him the favorite. His performances in Oslo (3:27.95), Lausanne (3:28.72), and Chorzów (3:27.14) are standout results that indicate he’s in exceptional form.\n\n2. **Timothy Cheruiyot (KEN)**: Despite some inconsistencies, Cheruiyot has the pedigree of a world champion and Olympic silver medalist. His best time this year of 3:29.08 in Oslo shows that he can compete with the best when in form. His experience in championship racing gives him a slight edge over others for the second spot.\n\n3. **Narve Gilje Nordås (NOR)**: Nordås has shown significant improvement, with a personal best of 3:29.47 in Oslo. His recent results, including a 3:30.58 in London and a 3:29.68 in Budapest, suggest he’s peaking at the right time.\n\n4. **Neil Gourley (GBR)**: Gourley has been consistently strong, with a personal best of 3:30.60 in London. His indoor records and performances at major events indicate he’s capable of breaking into the top 5.\n\n5. **George Mills (GBR)**: Mills has been on an upward trajectory, as evidenced by his 3:30.95 in Zürich and a strong 3:32.86 in Eugene. His recent performances suggest he’s ready to compete at the top level.\n\n6. **Oliver Hoare (AUS)**: Hoare has shown flashes of brilliance, notably winning the Commonwealth Games in 2022. His times this year, including 3:29.41 in Oslo, make him a strong contender for a top 10 finish.\n\n7. **Azzedine Habz (FRA)**: Habz has had a mixed year but his 3:29.26 in Oslo and consistency in the 3:31-3:32 range make him a solid pick for a top 10 finish.\n\n8. **Isaac Nader (POR)**: Nader’s strong performance in Tomblaine (3:31.67) and his recent form indicate he’s capable of a sub-3:32 performance.\n\n9. **Andrew Coscoran (IRL)**: Coscoran has been consistent, with a personal best of 3:30.42 in Chorzów. His performances in the 3:32-3:33 range suggest he’s a solid bet for a top 10 finish.\n\n10. **Elliot Giles (GBR)**: Giles has shown good form in both the 800m and 1500m, with a best of 3:31.56 in Lausanne. His versatility and recent times make him a strong contender for a top 10 finish.\n\n11. **Adel Mechaal (ESP)**: Mechaal has had a solid year with several sub-3:34 performances. His experience and consistency make him a reliable pick for the 11th spot.\n\n12. **Robert Farken (GER)**: Farken’s best time of 3:32.10 in Rehlingen and his strong performances in indoor meets make him a strong contender for a mid-pack finish.\n\n13. **Stewart McSweyn (AUS)**: McSweyn has had a tough year with several DNFs, but his 3:31.42 in London shows he still has the potential to compete at a high level.\n\n14. **Ryan Mphahlele (RSA)**: Mphahlele’s best time this year of 3:32.90 in Cape Town and his recent performances in the 3:34-3:35 range make him a strong contender for the 14th spot.\n\n15. **Pietro Arese (ITA)**: Arese has had a consistent year, with a best time of 3:33.56 in Bydgoszcz. His performances suggest he’s capable of a sub-3:35 finish.\n\n16. **Žan Rudolf (SLO)**: Rudolf has had a challenging year with several DNFs, but his best time of 3:35.01 in Cape Town suggests he’s capable of a solid performance.\n\n17. **Boaz Kiprugut (KEN)**: Kiprugut has struggled with consistency and several DNFs this year. His best time of 3:39.96 in Nairobi indicates he may not be at his best for this race.\n\nIn summary, the predictions are based on a combination of recent form, standout performances, and consistency throughout the season. The stronger, more consistent performers like Ingebrigtsen and Cheruiyot are expected to dominate, while others with fluctuating form need to prove their mettle on race day.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:29.74",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jakob",
+            "lastName": "Ingebrigtsen",
+            "id": "14653717",
+            "pb": "3:27.14",
+            "sb": null,
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:29.77",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Timothy",
+            "lastName": "Cheruiyot",
+            "id": "14643526",
+            "pb": "3:28.28",
+            "sb": "3:32.67",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:30.80",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Azeddine",
+            "lastName": "Habz",
+            "id": "14640588",
+            "pb": "3:29.26",
+            "sb": "3:32.86",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:30.84",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Isaac",
+            "lastName": "Nader",
+            "id": "14756630",
+            "pb": "3:31.49",
+            "sb": "3:33.50",
+            "nat": "POR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:31.06",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elliot",
+            "lastName": "Giles",
+            "id": "14457638",
+            "pb": "3:30.92",
+            "sb": "3:33.50",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:31.08",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Oliver",
+            "lastName": "Hoare",
+            "id": "14667553",
+            "pb": "3:29.41",
+            "sb": "3:34.73",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:31.57",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "George",
+            "lastName": "Mills",
+            "id": "14646350",
+            "pb": "3:30.95",
+            "sb": "3:33.47",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Pietro",
+            "lastName": "Arese",
+            "id": "14701882",
+            "pb": "3:33.11",
+            "sb": "3:34.65",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Robert",
+            "lastName": "Farken",
+            "id": "14597052",
+            "pb": "3:32.10",
+            "sb": "3:34.04",
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andrew",
+            "lastName": "Coscoran",
+            "id": "14595170",
+            "pb": "3:30.42",
+            "sb": "3:34.25",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Adel",
+            "lastName": "Mechaal",
+            "id": "14376490",
+            "pb": "3:30.77",
+            "sb": "3:34.22",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ryan",
+            "lastName": "Mphahlele",
+            "id": "14748308",
+            "pb": "3:32.90",
+            "sb": "3:33.52",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Narve Gilje",
+            "lastName": "Nordås",
+            "id": "14705412",
+            "pb": "3:29.47",
+            "sb": "3:33.87",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Stewart",
+            "lastName": "McSweyn",
+            "id": "14500488",
+            "pb": "3:29.51",
+            "sb": "3:36.37",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Boaz",
+            "lastName": "Kiprugut",
+            "id": "14695615",
+            "pb": "3:35.26",
+            "sb": "3:42.01",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Žan",
+            "lastName": "Rudolf",
+            "id": "14375002",
+            "pb": "3:41.75",
+            "sb": "3:43.23",
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        }
+      ]
     }
   },
   "stockholm24": {
