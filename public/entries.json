@@ -14444,7 +14444,121 @@
         }
       ],
       "blurb": "### Predicted Finish and Times\n\n1. **Akani Simbine (RSA)** - 9.96 seconds\n2. **Lamont Marcell Jacobs (ITA)** - 10.00 seconds\n3. **Jeremiah Azu (GBR)** - 10.02 seconds\n4. **Yohan Blake (JAM)** - 10.05 seconds\n5. **Abdul Hakim Sani Brown (JPN)** - 10.07 seconds\n6. **Rohan Watson (JAM)** - 10.15 seconds\n7. **Emmanuel Eseme (CMR)** - 10.17 seconds\n8. **Brandon Hicklin (USA)** - 10.20 seconds\n\n### Reasoning\n\n#### 1. Akani Simbine (RSA) - **9.96 seconds**\nSimbine has consistently shown the ability to perform well under various conditions. His recent sub-10 second performances, including a 9.97 at the Stadion Śląski and consistent high placements in major events, highlight his current form and reliability. His experience and recent race results make him the favorite in this hypothetical race.\n\n#### 2. Lamont Marcell Jacobs (ITA) - **10.00 seconds**\nJacobs has a strong pedigree, being the 2020 Olympic champion and the 2022 European champion. His recent performances, such as a 10.07 in Rome and a 9.97 in Budapest, indicate that he is still in excellent form. However, his slightly inconsistent results (like a 10.21 in Paris) place him just behind Simbine.\n\n#### 3. Jeremiah Azu (GBR) - **10.02 seconds**\nAzu has shown impressive form recently, including a 9.97 in Leverkusen and consistent sub-10.10 times. At 22, he is also on an upward trajectory. His results suggest he can challenge the top sprinters, but his relative inexperience might prevent him from topping Simbine and Jacobs.\n\n#### 4. Yohan Blake (JAM) - **10.05 seconds**\nBlake, despite his age, remains a formidable competitor. His recent 10.01 and 10.04 times indicate he can still run competitively. However, his consistency has been an issue, with some slower times and DQ’s. His vast experience and peak form in 2012 are his advantages, but recent form places him slightly behind the top three.\n\n#### 5. Abdul Hakim Sani Brown (JPN) - **10.07 seconds**\nSani Brown has shown flashes of brilliance, including a 10.07 in Tokyo and a 9.97 in Budapest. However, his inconsistency, as seen in his slower times in Zagreb and Tokyo (10.29 and 10.97), suggests he might not be able to consistently challenge the current top-tier sprinters.\n\n#### 6. Rohan Watson (JAM) - **10.15 seconds**\nWatson has shown potential, with a personal best of 9.91, but his recent performances have been mixed. His 10.07 in Budapest and other sub-10.10 times are promising, but his inconsistency (e.g., 10.45 in Rovereto) places him lower in this competitive field.\n\n#### 7. Emmanuel Eseme (CMR) - **10.17 seconds**\nEseme has had strong showings, particularly in African and European meets. His best time of 9.96 is competitive, but his more recent times, such as 10.41 in Budapest, indicate a slight decline in form, positioning him behind the younger and more consistent sprinters.\n\n#### 8. Brandon Hicklin (USA) - **10.20 seconds**\nHicklin, while showing promise with a 9.94 in Baton Rouge, has been less consistent compared to the others. His recent performances, including a 10.23 in Memphis and a 10.26 in Marrakech, show he remains competitive but not at the very top level.\n\n### Summary\nThe prediction is based on recent performances and consistency. Akani Simbine's consistent high placements and sub-10 second times give him the edge. Jacobs' pedigree and form place him second, while Azu's recent improvements and impressive times position him third. Blake's experience and occasional flashes of his former brilliance keep him in the top half, while Sani Brown's inconsistency relegates him to fifth. Watson, Eseme, and Hicklin, though competitive, lack the consistency and recent performances to challenge the top spots.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "9.94",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Akani",
+            "lastName": "Simbine",
+            "id": "14417763",
+            "pb": "9.84",
+            "sb": "10.01",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.99",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abdul Hakim",
+            "lastName": "Sani Brown",
+            "id": "14671546",
+            "pb": "9.97",
+            "sb": "10.02",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.01",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Eseme",
+            "id": "14852717",
+            "pb": "9.96",
+            "sb": "10.10",
+            "nat": "CMR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.03",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lamont Marcell",
+            "lastName": "Jacobs",
+            "id": "14453864",
+            "pb": "9.80",
+            "sb": "10.07",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.05",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brandon",
+            "lastName": "Hicklin",
+            "id": "14802271",
+            "pb": "9.94",
+            "sb": "9.94",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.23",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rohan",
+            "lastName": "Watson",
+            "id": "14779154",
+            "pb": "9.91",
+            "sb": "10.25",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.29",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yohan",
+            "lastName": "Blake",
+            "id": "14201842",
+            "pb": "9.69",
+            "sb": "10.16",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.11",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jeremiah",
+            "lastName": "Azu",
+            "id": "14771648",
+            "pb": "9.97",
+            "sb": "9.97",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Women": {
       "date": "2024-05-30T21:11",
@@ -14552,7 +14666,148 @@
         }
       ],
       "blurb": "### Predicted Finish and Marks\n1. **Prudence Sekgodiso (RSA)** - 1:57.20\n2. **Natoya Goule-Toppin (JAM)** - 1:57.50\n3. **Tsige Duguma (ETH)** - 1:57.80\n4. **Halimah Nakaayi (UGA)** - 1:58.10\n5. **Catriona Bisset (AUS)** - 1:58.40\n6. **Noélie Yarigo (BEN)** - 1:58.70\n7. **Eveliina Määttänen (FIN)** - 1:59.20\n8. **Gabriela Gajanová (SVK)** - 1:59.50\n9. **Anita Horvat (SLO)** - 1:59.80\n10. **Elena Bellò (ITA)** - 2:00.00\n11. **Agata Kołakowska (POL)** - 2:02.50\n\n### Race Prediction and Preview\n\n**1. Prudence Sekgodiso (RSA):**\nPrudence Sekgodiso is in red-hot form, having clocked a season-best of 1:57.26 in Marrakech in May 2024. Her recent string of victories and consistent sub-2:00 performances make her the favorite. At just 21, her rapid improvement and dominance in recent races suggest she will be hard to beat.\n\n**2. Natoya Goule-Toppin (JAM):**\nNatoya Goule-Toppin has a wealth of experience and has shown remarkable consistency with multiple sub-1:58 times. Her recent performance of 1:55.96 in Eugene, coupled with her strong finishes in other major meets, positions her as a strong contender. However, her slightly inconsistent form in 2024 might see her narrowly miss out on the top spot.\n\n**3. Tsige Duguma (ETH):**\nTsige Duguma has had a phenomenal indoor season, winning gold at the World Athletics Indoor Championships. Her outdoor season has also been solid, with a recent 1:57.56 in Los Angeles. She is a rising talent but might lack the final burst compared to Sekgodiso and Goule-Toppin.\n\n**4. Halimah Nakaayi (UGA):**\nHalimah Nakaayi, the 2019 World Champion, has been consistently strong, with a season-best of 1:57.56 in Los Angeles. Her experience and competitive edge will keep her in the mix, but slightly slower times in recent races may see her finish just outside the top three.\n\n**5. Catriona Bisset (AUS):**\nCatriona Bisset has shown flashes of brilliance with several sub-1:59 performances. However, her inconsistency, including a couple of DNFs, suggests she might not have the stamina to challenge for the top spots consistently.\n\n**6. Noélie Yarigo (BEN):**\nAt 38, Noélie Yarigo remains highly competitive, with a season-best of 1:58.70 in Doha. Her experience and tactical acumen will serve her well, but she may lack the finishing speed of the younger athletes.\n\n**7. Eveliina Määttänen (FIN):**\nEveliina Määttänen has been solid with several sub-2:00 performances, including a 1:59.74 in Chorzów. Her recent form suggests she will be competitive, but she might not have the edge to break into the top six.\n\n**8. Gabriela Gajanová (SVK):**\nGabriela Gajanová has shown potential with a season-best of 1:58.78 in Bellinzona. However, her form has been slightly erratic, with several finishes just over 2:00. Her ability to maintain pace in a high-stakes race could see her finish in the middle of the pack.\n\n**9. Anita Horvat (SLO):**\nAnita Horvat has had a mix of strong and weak performances, with a season-best of 1:58.73 in Turku. However, her recent races have seen her struggle to break 2:00 consistently, which could see her finishing towards the back of the pack.\n\n**10. Elena Bellò (ITA):**\nElena Bellò has been consistent but has not broken 2:00 frequently enough this season. Her recent performances suggest she will be competitive but not enough to challenge the top athletes.\n\n**11. Agata Kołakowska (POL):**\nAgata Kołakowska has struggled to finish races this season, with multiple DNFs. Despite her potential, her inconsistent form and lack of recent competitive finishes suggest she will finish last in this high-caliber field.\n\nThis race promises to be a thrilling contest between seasoned veterans and rising stars, with Prudence Sekgodiso and Natoya Goule-Toppin likely to set the pace and battle for victory. The field is stacked with talent, ensuring a competitive and exciting race.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:58.66",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Prudence",
+            "lastName": "Sekgodiso",
+            "id": "14745817",
+            "pb": "1:57.26",
+            "sb": "1:57.26",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.10",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natoya",
+            "lastName": "Goule-Toppin",
+            "id": "14285696",
+            "pb": "1:55.96",
+            "sb": "1:59.74",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.29",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Catriona",
+            "lastName": "Bisset",
+            "id": "14463325",
+            "pb": "1:57.78",
+            "sb": "1:58.44",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.05",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elena",
+            "lastName": "Bellò",
+            "id": "14538311",
+            "pb": "1:58.97",
+            "sb": "1:59.83",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.32",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anita",
+            "lastName": "Horvat",
+            "id": "14472475",
+            "pb": "1:58.73",
+            "sb": "2:01.38",
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:00.89",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Eveliina",
+            "lastName": "Määttänen",
+            "id": "14461739",
+            "pb": "1:59.74",
+            "sb": "1:59.74",
+            "nat": "FIN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:01.31",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tsige",
+            "lastName": "Duguma",
+            "id": "14774192",
+            "pb": "1:57.56",
+            "sb": "1:57.56",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:02.00",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gabriela",
+            "lastName": "Gajanová",
+            "id": "14593394",
+            "pb": "1:58.78",
+            "sb": "1:59.57",
+            "nat": "SVK",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:02.30",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Noélie",
+            "lastName": "Yarigo",
+            "id": "14270067",
+            "pb": "1:58.65",
+            "sb": "1:58.70",
+            "nat": "BEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Agata",
+            "lastName": "Kołakowska",
+            "id": "14651531",
+            "pb": "2:08.97",
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Hurdles Men": {
       "date": "2024-05-30T21:28",
@@ -14634,7 +14889,113 @@
         }
       ],
       "blurb": "### Predicted Finish and Times for Men's 400 Metres Hurdles\n\n1. **Karsten Warholm (NOR)** - 46.75\n2. **Alison dos Santos (BRA)** - 47.10\n3. **Kyron McMaster (IVB)** - 47.30\n4. **CJ Allen (USA)** - 47.50\n5. **Wilfried Happio (FRA)** - 47.85\n6. **Rasmus Mägi (EST)** - 48.20\n7. **Joshua Abuaku (GER)** - 48.50\n8. **Bassem Hemeida (QAT)** - 49.00\n\n### Analysis and Reasoning\n\n#### 1. Karsten Warholm (NOR) - 46.75\nWarholm is a dominant force in the 400 metres hurdles, consistently running sub-47 times. His recent performance record, including a 46.53 at Hayward Field and a 46.89 in Budapest, showcases his ability to consistently perform at a world-class level. Despite a few second-place finishes, Warholm's experience and world record holder status give him the edge in this race.\n\n#### 2. Alison dos Santos (BRA) - 47.10\nDos Santos has shown remarkable improvement and consistency, with a first-place time of 46.86 in Doha and a series of sub-48 performances. His 47.50 in Bellinzona and a strong 45.25 in the 400 metres in Gainesville demonstrate his form and versatility. While he may not yet have the edge over Warholm, he is a solid contender for the second spot.\n\n#### 3. Kyron McMaster (IVB) - 47.30\nMcMaster has demonstrated strong form with times such as 47.27 in Zürich and consistent sub-48 finishes. His experience and recent performances, including a 47.31 at Hayward Field, make him a strong candidate for a podium finish. While he may not have the absolute top-end speed of Warholm or dos Santos, his consistency places him third.\n\n#### 4. CJ Allen (USA) - 47.50\nAllen has shown potential with several sub-48 performances, including a 47.58 in Oslo and a 47.92 in Paris. His versatility across different track conditions and consistent finishes make him a strong fourth-place contender. However, his occasional dips below his best times suggest that he might not yet break into the top three.\n\n#### 5. Wilfried Happio (FRA) - 47.85\nHappio has had a mix of results, with standout performances such as his 47.58 in Bellinzona. While he has shown flashes of brilliance, his inconsistency, such as a 49.40 in Hengelo, suggests that he may not challenge the top four but remains a strong fifth-place contender.\n\n#### 6. Rasmus Mägi (EST) - 48.20\nMägi has shown solid form, with a 48.04 in Tallinn and consistent sub-49 performances. However, his recent results, including a 48.85 in Eugene, indicate that while he is competitive, he is likely to finish outside the top five but still in a respectable position.\n\n#### 7. Joshua Abuaku (GER) - 48.50\nAbuaku has been consistent with performances around the 48-second mark, like his 48.32 in Budapest. However, his occasional struggles, such as his 49.26 in Savona, suggest that he may not be able to compete with the top six but will still post a solid time.\n\n#### 8. Bassem Hemeida (QAT) - 49.00\nHemeida has shown potential with a 48.52 in Hangzhou, but his inconsistencies, including times like 49.50 in Budapest, indicate that he is likely to finish last in this strong field. His relative youth and experience compared to others also play a factor here.\n\n### Conclusion\nWarholm's dominance and consistency make him the favorite, followed closely by the ever-improving dos Santos and the reliable McMaster. Allen and Happio are strong but not quite at the podium level, while Mägi, Abuaku, and Hemeida round out the field based on recent performances and consistency.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "46.63",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alison",
+            "lastName": "dos Santos",
+            "id": "14755064",
+            "pb": "46.29",
+            "sb": "46.86",
+            "nat": "BRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "46.70",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Karsten",
+            "lastName": "Warholm",
+            "id": "14479487",
+            "pb": "45.94",
+            "sb": null,
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.49",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kyron",
+            "lastName": "McMaster",
+            "id": "14532760",
+            "pb": "47.08",
+            "sb": "48.51",
+            "nat": "IVB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.56",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rasmus",
+            "lastName": "Mägi",
+            "id": "14373195",
+            "pb": "47.82",
+            "sb": "48.85",
+            "nat": "EST",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.37",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joshua",
+            "lastName": "Abuaku",
+            "id": "14536209",
+            "pb": "48.12",
+            "sb": "48.90",
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.42",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.58",
+            "sb": "48.39",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "51.32",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "51.41",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bassem",
+            "lastName": "Hemeida",
+            "id": "14827001",
+            "pb": "48.52",
+            "sb": null,
+            "nat": "QAT",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Hurdles Women": {
       "date": "2024-05-30T21:35",
