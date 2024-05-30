@@ -13446,7 +13446,232 @@
         }
       ],
       "blurb": "### Predicted Finish and Marks for Women's 3000 Metres:\n\n1. **Jessica Hull (AUS)** - 8:24.00\n2. **Caroline Nyaga (KEN)** - 8:30.50\n3. **Laura Galván (MEX)** - 8:33.00\n4. **Rose Davies (AUS)** - 8:36.50\n5. **Wubrist Aschal (ETH)** - 8:38.00\n6. **Georgia Griffith (AUS)** - 8:40.50\n7. **Jessica Warner-Judd (GBR)** - 8:42.00\n8. **Karoline Bjerkeli Grøvdal (NOR)** - 8:43.00\n9. **Maureen Koster (NED)** - 8:44.00\n10. **Edinah Jebitok (KEN)** - 8:45.00\n11. **Nathalie Blomqvist (FIN)** - 8:46.50\n12. **Sarah Billings (AUS)** - 8:48.00\n13. **Lauren Ryan (AUS)** - 8:49.00\n14. **Marta García (ESP)** - 8:52.00\n15. **Likina Amebaw (ETH)** - 9:00.00\n16. **Nozomi Tanaka (JPN)** - 9:10.00\n\n### Race Preview and Explanation:\n\n1. **Jessica Hull (AUS)**: Hull's recent form is outstanding, with multiple wins and podium finishes in 3000m and 1500m events. Her versatility and consistent sub-8:30 performances, including her 8:24.93 win in Boston and 8:24.39 in Glasgow, make her the favorite. Her Oceanian records and competitive results in global meets also add to her edge.\n\n2. **Caroline Nyaga (KEN)**: Nyaga has shown strong performances in road races and track events. Her 8:31.98 in Xiamen and other sub-8:35 performances indicate she can hold a strong pace. Her recent results, including wins and podiums in various distances, suggest she can challenge for the top spots.\n\n3. **Laura Galván (MEX)**: Galván has had a solid record in long-distance events and recently clocked 8:28.05 in Xiamen. While she has had a few lower finishes in major competitions, her experience and recent form in 5000m and 10,000m races show she can maintain a high pace.\n\n4. **Rose Davies (AUS)**: Davies has been improving steadily, with multiple sub-8:50 performances and recent wins in 5000m events. Her 8:39.81 in Sydney and consistent sub-15:00 in 5000m races suggest she can compete well in this field.\n\n5. **Wubrist Aschal (ETH)**: Aschal's youth and recent 8:40.97 in Liévin, along with strong performances in road races, indicate she is on an upward trajectory. Her ability to compete against top fields in Europe will serve her well here.\n\n6. **Georgia Griffith (AUS)**: Griffith has shown strong performances in both the 1500m and 3000m, with an 8:37.85 in Sydney. While she tends to excel more in middle distances, her endurance and recent times make her a strong contender.\n\n7. **Jessica Warner-Judd (GBR)**: Warner-Judd has a mixed bag of results but has clocked some competitive times in the 5000m and 3000m. Her 8:51.53 in Brussels and strong cross-country performances suggest she can maintain a solid pace over 3000m.\n\n8. **Karoline Bjerkeli Grøvdal (NOR)**: Grøvdal has a wealth of experience and has been competitive in various distances. While her recent track performances have been slightly off her best, her consistency and experience will likely see her finish in the top half.\n\n9. **Maureen Koster (NED)**: Koster has shown flashes of brilliance with her 8:35.93 in Oslo and other strong indoor performances. However, her inconsistency in major outdoor events may limit her to a mid-pack finish here.\n\n10. **Edinah Jebitok (KEN)**: Jebitok has had some strong performances in the 1500m and 5000m, including a 14:52.28 in Brussels. While she excels in cross-country, her track times suggest she will be competitive but not among the very top finishers.\n\n11. **Nathalie Blomqvist (FIN)**: Blomqvist has been improving steadily, with a recent win in the 5000m and a solid 8:49.25 indoor time in Tampere. Her times suggest she can compete well but may lack the finishing speed to challenge the top runners here.\n\n12. **Sarah Billings (AUS)**: Billings has shown promise with her 8:47.11 in Sydney and strong middle-distance performances. However, her inconsistency in longer events may limit her to a lower finish in this competitive field.\n\n13. **Lauren Ryan (AUS)**: Ryan has had strong performances in the 10,000m and 5000m but has been inconsistent in the 3000m. Her recent 8:42.31 indoor time in Boston suggests potential, but she may struggle to keep up with the top competitors.\n\n14. **Marta García (ESP)**: García has strong indoor performances and a 15:02.11 in Berlin over 5000m. However, her outdoor track performances have been less consistent, which may see her finish lower in this competitive race.\n\n15. **Likina Amebaw (ETH)**: Amebaw has shown strong performances in cross-country and road races but has been less competitive on the track. Her recent 9:10.05 indoor time suggests she may struggle to keep up with the top runners in this race.\n\n16. **Nozomi Tanaka (JPN)**: Tanaka's recent performances have been underwhelming, with times far off the pace of the top competitors. Her 16:47.96 in Yokohama and 34:59.23 in Tokyo suggest she will likely finish at the back of the pack in this field.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "8:24.20",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Georgia",
+            "lastName": "Griffith",
+            "id": "14549778",
+            "pb": "8:37.85",
+            "sb": "8:37.85",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:24.29",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Likina",
+            "lastName": "Amebaw",
+            "id": "14877871",
+            "pb": "9:51.28",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:25.82",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessica",
+            "lastName": "Hull",
+            "id": "14464506",
+            "pb": "8:31.81",
+            "sb": "8:37.18",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:26.30",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Maureen",
+            "lastName": "Koster",
+            "id": "14372338",
+            "pb": "8:35.93",
+            "sb": null,
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:27.02",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Karoline Bjerkeli",
+            "lastName": "Grøvdal",
+            "id": "14292573",
+            "pb": "8:33.47",
+            "sb": null,
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:29.32",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marta",
+            "lastName": "García",
+            "id": "14635475",
+            "pb": "8:51.04",
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:30.99",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Caroline",
+            "lastName": "Nyaga",
+            "id": "14814043",
+            "pb": "8:31.98",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:32.23",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nathalie",
+            "lastName": "Blomqvist",
+            "id": "14719529",
+            "pb": "8:49.25",
+            "sb": "8:49.25",
+            "nat": "FIN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:33.65",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wubrist",
+            "lastName": "Aschal",
+            "id": "14997188",
+            "pb": "8:44.13",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:34.09",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nozomi",
+            "lastName": "Tanaka",
+            "id": "14966136",
+            "pb": "9:31.65",
+            "sb": null,
+            "nat": "JPN",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "8:35.32",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Edinah",
+            "lastName": "Jebitok",
+            "id": "14798230",
+            "pb": "8:42.34",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:35.57",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rose",
+            "lastName": "Davies",
+            "id": "14517594",
+            "pb": "8:39.81",
+            "sb": "8:39.81",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:36.13",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laura",
+            "lastName": "Galván",
+            "id": "14329560",
+            "pb": "8:28.05",
+            "sb": null,
+            "nat": "MEX",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:42.63",
+          "place": 14,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lauren",
+            "lastName": "Ryan",
+            "id": "14667446",
+            "pb": "8:53.75",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:59.98",
+          "place": 15,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessica",
+            "lastName": "Warner-Judd",
+            "id": "14336301",
+            "pb": "8:52.73",
+            "sb": null,
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Billings",
+            "id": "14464575",
+            "pb": "8:47.11",
+            "sb": "8:47.11",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Women": {
       "date": "2024-05-30T20:38",
@@ -13527,7 +13752,121 @@
         }
       ],
       "blurb": "### Predicted Finish and Times:\n1. **Shericka Jackson (JAM)** - 21.45\n2. **Marie-Josée Ta Lou (CIV)** - 21.90\n3. **Brittany Brown (USA)** - 22.15\n4. **Daryll Neita (GBR)** - 22.25\n5. **Jenna Prandini (USA)** - 22.50\n6. **Anavia Battle (USA)** - 22.70\n7. **Maboundou Koné (CIV)** - 22.80\n8. **Tasa Jiya (NED)** - 22.95\n\n### Race Prediction and Preview:\n\n#### 1. Shericka Jackson (JAM) - 21.45\nShericka Jackson is the clear favorite for this race given her recent outstanding performances. She has shown consistent dominance in the 200 meters, highlighted by her 21.57 win at Hayward Field, Eugene in September 2023, and her 21.41 victory at the Nemzeti Atlétikai Központ, Budapest in August 2023. Her ability to consistently run sub-22 seconds in various conditions and her current form, as evidenced by her 22.00 win in Budapest in August 2023, make her the athlete to beat. Her versatility across 100m, 200m, and 400m also shows her strength and endurance, making her the top contender for this race.\n\n#### 2. Marie-Josée Ta Lou (CIV) - 21.90\nMarie-Josée Ta Lou has had a stellar career and remains one of the top sprinters in the world. Her performances in the 100 meters have been exceptional, with a 10.75 win in London in July 2023. Although her 200 meters results have been slightly less dominant compared to her 100m, her 22.10 at Hayward Field, Eugene in September 2023, and 22.26 in Budapest in August 2023 indicate she is still in top form. Ta Lou's experience and competitive edge will likely secure her a podium finish behind Jackson.\n\n#### 3. Brittany Brown (USA) - 22.15\nBrittany Brown's notable 22.05 win in Luzern in July 2023 and her consistent sub-22.50 times demonstrate her competitive edge in the 200 meters. Her versatility in the 100 meters, with a personal best of 10.90, also showcases her sprinting ability. Brown’s experience and recent performances make her a strong candidate for the third spot on the podium.\n\n#### 4. Daryll Neita (GBR) - 22.25\nDaryll Neita has shown impressive form, particularly with her 22.21 in Budapest in August 2023 and her 22.23 in Bydgoszcz in June 2023. While she has not consistently broken the 22-second barrier, her times are competitive and suggest she will be in contention for a top-four finish. Neita's ability to perform well in both 100m and 200m races makes her a strong competitor.\n\n#### 5. Jenna Prandini (USA) - 22.50\nJenna Prandini, despite some inconsistent performances, has shown the capability to run competitive times in the 200 meters. Her 22.34 win in Los Angeles in May 2023 and her multiple sub-22.50 finishes indicate she has the potential to place well. However, her recent results, such as a 22.61 in Los Angeles in May 2024, suggest she may not be in peak form compared to the top contenders.\n\n#### 6. Anavia Battle (USA) - 22.70\nAnavia Battle has demonstrated potential with several sub-23 second runs, including a 22.47 in Bydgoszcz in June 2023. Her recent 22.56 in Gainesville in April 2024 shows she is maintaining good form. However, her performances have been somewhat inconsistent, placing her behind the top five athletes in this race.\n\n#### 7. Maboundou Koné (CIV) - 22.80\nMaboundou Koné has shown promise with a 22.53 in Kinshasa in August 2023 and a 22.55 in Budapest in August 2023. However, her performances have been variable, and she has not consistently run sub-22.60 times. Her recent form, including a 22.88 in Savona in May 2024, places her in the seventh spot.\n\n#### 8. Tasa Jiya (NED) - 22.95\nTasa Jiya, while a strong competitor, has not shown the same level of consistency and peak performance as the other athletes. Her best recent performance of 22.67 in Budapest in August 2023 and subsequent slower times, such as 22.96 in Bruxelles in September 2023, suggest she will likely finish in eighth place.\n\n### Conclusion:\nShericka Jackson's dominance in the 200 meters and her consistent sub-22-second performances make her the clear favorite. Marie-Josée Ta Lou's experience and competitive edge will secure her second place, while Brittany Brown's recent strong performances earn her the third spot. The rest of the field, while competitive, will likely follow in the order predicted based on their recent form and historical data.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "22.32",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brittany",
+            "lastName": "Brown",
+            "id": "14437218",
+            "pb": "21.99",
+            "sb": "22.35",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.36",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou-Smith",
+            "id": "14415994",
+            "pb": "22.08",
+            "sb": null,
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.50",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "22.16",
+            "sb": "22.62",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.84",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anavia",
+            "lastName": "Battle",
+            "id": "14715397",
+            "pb": "21.95",
+            "sb": "22.56",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.97",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shericka",
+            "lastName": "Jackson",
+            "id": "14325599",
+            "pb": "21.41",
+            "sb": "22.82",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.10",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jenna",
+            "lastName": "Prandini",
+            "id": "14329068",
+            "pb": "21.89",
+            "sb": "22.61",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.13",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Maboundou",
+            "lastName": "Koné",
+            "id": "14636900",
+            "pb": "22.53",
+            "sb": "22.88",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.13",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tasa",
+            "lastName": "Jiya",
+            "id": "14560472",
+            "pb": "22.67",
+            "sb": null,
+            "nat": "NED",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "5000m Men": {
       "tiebreaker": "12:40.00",
