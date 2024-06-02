@@ -16401,7 +16401,221 @@
         }
       ],
       "blurb": "### Predicted Finish and Times\n\n1. **Telahun Haile Bekele (ETH)** - 7:24.50\n2. **Luis Grijalva (GUA)** - 7:27.80\n3. **Dominic Lokinyomo Lobalu (SUI)** - 7:28.50\n4. **Stewart McSweyn (AUS)** - 7:30.90\n5. **Birhanu Balew (BRN)** - 7:31.50\n6. **Adel Mechaal (ESP)** - 7:33.00\n7. **Mezgebu Sime (ETH)** - 7:35.20\n8. **Andreas Almgren (SWE)** - 7:36.90\n9. **Adriaan Wildschutt (RSA)** - 7:38.30\n10. **Sam Parsons (GER)** - 7:40.00\n11. **Jack Rowe (GBR)** - 7:41.50\n12. **Emil Danielsson (SWE)** - 7:43.00\n13. **Mohamed Ismail (DJI)** - 7:44.50\n14. **Jude Thomas (AUS)** - 7:46.00\n15. **Adam Czerwiński (POL)** - 7:51.00\n\n### Race Preview and Predictions\n\n#### **1. Telahun Haile Bekele (ETH)** - 7:24.50\nBekele's recent form is impressive, highlighted by his 7:25.48 finish in Eugene, OR. His consistent top-four finishes in highly competitive 5000m races (including a 12:42.70 in Monaco) indicate he's in peak condition. His specialty in the 5000m translates well to the 3000m, making him the favorite.\n\n#### **2. Luis Grijalva (GUA)** - 7:27.80\nGrijalva has shown strong performances in the 3000m and 5000m, with a 7:29.43 in Eugene and a 12:52.97 in Florence. His ability to perform in top-tier competitions, coupled with a recent 13:16.53 win in Los Angeles, makes him a solid second-place contender.\n\n#### **3. Dominic Lokinyomo Lobalu (SUI)** - 7:28.50\nLobalu's 7:33.95 in Zagreb and consistent sub-7:40 finishes show he's a formidable opponent. His versatility across distances and a recent 27:36.29 in the 10,000m demonstrate his strong endurance, ensuring a podium finish.\n\n#### **4. Stewart McSweyn (AUS)** - 7:30.90\nDespite recent inconsistencies, McSweyn's best of 7:31.14 in Eugene last year and multiple sub-3:32 1500m races suggest he's capable of a top finish if he can recapture his form. His recent 3:52.00 mile win indicates a return to form.\n\n#### **5. Birhanu Balew (BRN)** - 7:31.50\nBalew's strong 7:33.42 in Liévin and 13:00.47 in Xiamen highlight his capability in the 3000m. His recent string of first-place finishes in road races shows he's in good shape, positioning him well for a top-five finish.\n\n#### **6. Adel Mechaal (ESP)** - 7:33.00\nMechaal's 7:41.75 in Istanbul and consistent podium finishes in shorter indoor races, including a 7:43.60 in Valencia, indicate he's still competitive at 33. His extensive experience and recent wins in shorter distances will help him secure a respectable position.\n\n#### **7. Mezgebu Sime (ETH)** - 7:35.20\nSime's youth and recent 7:39.81 in Bergen show promise. His 13:03.19 in Carquefou marks him as a rising star. While less experienced than others, his trajectory suggests a strong showing.\n\n#### **8. Andreas Almgren (SWE)** - 7:36.90\nAlmgren's 7:37.05 in Doha and sub-13-minute 5000m in Stockholm reflect his capability. However, recent DNFs raise concerns about his consistency. If he avoids tactical errors, he can still place well.\n\n#### **9. Adriaan Wildschutt (RSA)** - 7:38.30\nWildschutt's 12:56.76 indoor 5000m and 27:23.10 10,000m show his endurance. His ability to break 13 minutes in the 5000m indicates he has the speed for a strong 3000m finish.\n\n#### **10. Sam Parsons (GER)** - 7:40.00\nParsons' recent 7:39.94 in New York and consistent 5000m performances suggest he can be competitive. While not traditionally a top finisher, his recent form indicates a solid middle-pack finish.\n\n#### **11. Jack Rowe (GBR)** - 7:41.50\nRowe's 7:38.35 indoor performance in Boston and recent 13:04.75 indoor 5000m suggest he has the speed. Inconsistent outdoor performances, however, limit his ceiling.\n\n#### **12. Emil Danielsson (SWE)** - 7:43.00\nDanielsson has shown promise with a 7:39.70 in Stockholm but has struggled with consistency. If he can channel his best performances, he can finish mid-pack.\n\n#### **13. Mohamed Ismail (DJI)** - 7:44.50\nIsmail's versatility and recent 12:56.43 in Stockholm show potential. However, his inconsistent results and recent form suggest a lower finish.\n\n#### **14. Jude Thomas (AUS)** - 7:46.00\nThomas has shown flashes of potential with a 7:48.25 in Sydney but has struggled with consistency. His recent performances suggest he will be towards the back of the pack.\n\n#### **15. Adam Czerwiński (POL)** - 7:51.00\nAt 35, Czerwiński has shifted focus to shorter distances, with numerous DNFs in recent longer races. His lack of recent competitive 3000m performances places him at the back.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "7:33.49",
+          "place": 1,
+          "notes": ""
+        },
+        {
+          "mark": "7:33.68",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dominic Lokinyomo",
+            "lastName": "Lobalu",
+            "id": "14792211",
+            "pb": "7:29.48",
+            "sb": null,
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:33.96",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Luis",
+            "lastName": "Grijalva",
+            "id": "14749285",
+            "pb": "7:29.43",
+            "sb": null,
+            "nat": "GUA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:34.28",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Almgren",
+            "id": "14460738",
+            "pb": "7:37.05",
+            "sb": null,
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:36.29",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohamed",
+            "lastName": "Ismail",
+            "id": "14661612",
+            "pb": "7:46.69",
+            "sb": null,
+            "nat": "DJI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:36.77",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Adriaan",
+            "lastName": "Wildschutt",
+            "id": "14741268",
+            "pb": "7:39.25",
+            "sb": null,
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:36.78",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Stewart",
+            "lastName": "McSweyn",
+            "id": "14500488",
+            "pb": "7:28.02",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:37.28",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Adel",
+            "lastName": "Mechaal",
+            "id": "14376490",
+            "pb": "7:35.28",
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:39.40",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mezgebu",
+            "lastName": "Sime",
+            "id": "15024068",
+            "pb": "7:39.81",
+            "sb": "7:39.81",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:40.01",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sam",
+            "lastName": "Parsons",
+            "id": "14628221",
+            "pb": "7:41.45",
+            "sb": null,
+            "nat": "GER",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:46.10",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Birhanu",
+            "lastName": "Balew",
+            "id": "14695983",
+            "pb": "7:33.05",
+            "sb": null,
+            "nat": "BRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:49.03",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emil",
+            "lastName": "Danielsson",
+            "id": "14593994",
+            "pb": "7:39.70",
+            "sb": null,
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "7:50.13",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Telahun Haile",
+            "lastName": "Bekele",
+            "id": "14797485",
+            "pb": "7:25.48",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Jack",
+            "lastName": "Rowe",
+            "id": "14524902",
+            "pb": "7:42.15",
+            "sb": null,
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Adam",
+            "lastName": "Czerwiński",
+            "id": "14216519",
+            "pb": null,
+            "sb": null,
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Jude",
+            "lastName": "Thomas",
+            "id": "14861525",
+            "pb": "7:47.26",
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Men": {
       "date": "2024-06-02T19:00",
