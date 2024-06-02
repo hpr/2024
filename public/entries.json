@@ -15660,7 +15660,123 @@
           "hasAvy": true
         }
       ],
-      "blurb": "### Predicted Finish and Marks for Men's 400 Metres Hurdles:\n\n1. Alison dos Santos (BRA) - 47.30\n2. Kyron McMaster (IVB) - 47.35\n3. CJ Allen (USA) - 47.50\n4. Abderrahman Alsaleck (QAT) - 47.80\n5. Rasmus Mägi (EST) - 48.20\n6. Carl Bengtström (SWE) - 48.60\n7. Matic Ian Guček (SLO) - 48.80\n8. Bassem Hemeida (QAT) - 49.00\n\n### Reasoning:\n\n1. **Alison dos Santos (BRA)**  \n   Alison dos Santos has shown a consistent ability to compete at the highest level. His recent performances include a 46.86 in Doha and multiple sub-48 times throughout the 2023 season. His ability to recover quickly and maintain high performance levels, coupled with his status as a 2022 World Champion, makes him a strong favorite. His latest 46.86 in May 2024 indicates he is peaking at the right time.\n\n2. **Kyron McMaster (IVB)**  \n   McMaster has a series of strong performances, including a 47.26 in Banská Bystrica and a 47.27 in Zürich. His consistency and ability to perform under pressure, as evidenced by his multiple wins and a second-place finish at the World Championships in 2023, position him as a close competitor to dos Santos. However, dos Santos' slight edge in recent form gives him the top spot.\n\n3. **CJ Allen (USA)**  \n   Allen has a remarkable history of consistent performances, with multiple sub-48 second finishes throughout the 2023 season. His recent 48.39 in Doha and 48.99 in Eugene show that he is in good form. Despite a few hiccups in finishing positions, his overall consistency places him in the top three.\n\n4. **Abderrahman Alsaleck (QAT)**  \n   Alsaleck's performances have been somewhat inconsistent with a mixture of DNFs and wins. However, his 48.04 in Hangzhou and 45.55 in Johannesburg indicate that he has the capability to perform well. His inconsistency places him just outside the top three, but he remains a strong competitor.\n\n5. **Rasmus Mägi (EST)**  \n   Mägi has been consistent, with solid performances such as a 48.04 in Tallinn and a 48.30 in Budapest. His experience and ability to deliver consistent results make him a strong mid-field finisher. However, his slightly slower times compared to the top four place him fifth.\n\n6. **Carl Bengtström (SWE)**  \n   Bengtström has shown potential with multiple sub-49 performances in 2024, including a 48.49 in Marseille. However, his relatively fewer high-stakes performances compared to competitors like dos Santos and McMaster place him slightly lower but still respectable.\n\n7. **Matic Ian Guček (SLO)**  \n   Guček has shown promise with recent wins and sub-49 times, including a 48.83 in Banská Bystrica. His youth and improving trajectory suggest he will be a strong contender in the future, but for now, he sits seventh in this highly competitive field.\n\n8. **Bassem Hemeida (QAT)**  \n   Hemeida has had a mixed season with performances ranging from 48.52 to 50.51. His inconsistency and slightly slower recent times place him at the bottom of this elite field. Nonetheless, he remains a talented hurdler with potential to improve."
+      "blurb": "### Predicted Finish and Marks for Men's 400 Metres Hurdles:\n\n1. Alison dos Santos (BRA) - 47.30\n2. Kyron McMaster (IVB) - 47.35\n3. CJ Allen (USA) - 47.50\n4. Abderrahman Alsaleck (QAT) - 47.80\n5. Rasmus Mägi (EST) - 48.20\n6. Carl Bengtström (SWE) - 48.60\n7. Matic Ian Guček (SLO) - 48.80\n8. Bassem Hemeida (QAT) - 49.00\n\n### Reasoning:\n\n1. **Alison dos Santos (BRA)**  \n   Alison dos Santos has shown a consistent ability to compete at the highest level. His recent performances include a 46.86 in Doha and multiple sub-48 times throughout the 2023 season. His ability to recover quickly and maintain high performance levels, coupled with his status as a 2022 World Champion, makes him a strong favorite. His latest 46.86 in May 2024 indicates he is peaking at the right time.\n\n2. **Kyron McMaster (IVB)**  \n   McMaster has a series of strong performances, including a 47.26 in Banská Bystrica and a 47.27 in Zürich. His consistency and ability to perform under pressure, as evidenced by his multiple wins and a second-place finish at the World Championships in 2023, position him as a close competitor to dos Santos. However, dos Santos' slight edge in recent form gives him the top spot.\n\n3. **CJ Allen (USA)**  \n   Allen has a remarkable history of consistent performances, with multiple sub-48 second finishes throughout the 2023 season. His recent 48.39 in Doha and 48.99 in Eugene show that he is in good form. Despite a few hiccups in finishing positions, his overall consistency places him in the top three.\n\n4. **Abderrahman Alsaleck (QAT)**  \n   Alsaleck's performances have been somewhat inconsistent with a mixture of DNFs and wins. However, his 48.04 in Hangzhou and 45.55 in Johannesburg indicate that he has the capability to perform well. His inconsistency places him just outside the top three, but he remains a strong competitor.\n\n5. **Rasmus Mägi (EST)**  \n   Mägi has been consistent, with solid performances such as a 48.04 in Tallinn and a 48.30 in Budapest. His experience and ability to deliver consistent results make him a strong mid-field finisher. However, his slightly slower times compared to the top four place him fifth.\n\n6. **Carl Bengtström (SWE)**  \n   Bengtström has shown potential with multiple sub-49 performances in 2024, including a 48.49 in Marseille. However, his relatively fewer high-stakes performances compared to competitors like dos Santos and McMaster place him slightly lower but still respectable.\n\n7. **Matic Ian Guček (SLO)**  \n   Guček has shown promise with recent wins and sub-49 times, including a 48.83 in Banská Bystrica. His youth and improving trajectory suggest he will be a strong contender in the future, but for now, he sits seventh in this highly competitive field.\n\n8. **Bassem Hemeida (QAT)**  \n   Hemeida has had a mixed season with performances ranging from 48.52 to 50.51. His inconsistency and slightly slower recent times place him at the bottom of this elite field. Nonetheless, he remains a talented hurdler with potential to improve.",
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "47.01",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alison",
+            "lastName": "dos Santos",
+            "id": "14755064",
+            "pb": "46.29",
+            "sb": "46.86",
+            "nat": "BRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.05",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kyron",
+            "lastName": "McMaster",
+            "id": "14532760",
+            "pb": "47.08",
+            "sb": "48.51",
+            "nat": "IVB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.12",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.58",
+            "sb": "48.39",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "48.72",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Carl",
+            "lastName": "Bengtström",
+            "id": "14713427",
+            "pb": "48.49",
+            "sb": "48.49",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.72",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rasmus",
+            "lastName": "Mägi",
+            "id": "14373195",
+            "pb": "47.82",
+            "sb": "48.85",
+            "nat": "EST",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.13",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Matic Ian",
+            "lastName": "Guček",
+            "id": "14874438",
+            "pb": "48.66",
+            "sb": "48.66",
+            "nat": "SLO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.69",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abderrahman",
+            "lastName": "Alsaleck",
+            "id": "14752208",
+            "pb": "46.98",
+            "sb": null,
+            "nat": "QAT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.38",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bassem",
+            "lastName": "Hemeida",
+            "id": "14827001",
+            "pb": "48.52",
+            "sb": null,
+            "nat": "QAT",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Women": {
       "date": "2024-06-02T18:15",
@@ -15731,7 +15847,104 @@
           "hasAvy": true
         }
       ],
-      "blurb": "### Predicted Finish and Times for the Women's 100 Metres\n\n1. **Marie-Josée Ta Lou (CIV)** - **10.79**\n2. **Daryll Neita (GBR)** - **10.85**\n3. **Brittany Brown (USA)** - **10.88**\n4. **Natasha Morrison (JAM)** - **10.95**\n5. **Gina Bass (GAM)** - **11.05**\n6. **Zaynab Dosso (ITA)** - **11.10**\n7. **Julia Henriksson (SWE)** - **11.18**\n\n### Race Preview and Predictions\n\n#### 1. **Marie-Josée Ta Lou (CIV)** - **10.79**\nMarie-Josée Ta Lou has an enviable track record and is the African record holder with a personal best of 10.72 seconds. Despite being 35 years old, she has demonstrated remarkable consistency and speed throughout the past year. Key standout performances include her 10.75 seconds at Bislett Stadion in Oslo and her 10.79 seconds at the Nemzeti Atlétikai Központ in Budapest. Her recent form indicates she can still perform at the highest level, making her the favorite to win this race.\n\n#### 2. **Daryll Neita (GBR)** - **10.85**\nDaryll Neita has been in excellent form recently, clocking several sub-11 second times. Notably, she ran 10.97 seconds in Savona and 10.96 seconds in London. Her ability to perform consistently around the 11-second mark, combined with her strong finish, makes her a solid contender for second place. Neita's performances in the 2023 season, including multiple victories and podium finishes in both 100m and 200m events, solidify her as a top-tier sprinter.\n\n#### 3. **Brittany Brown (USA)** - **10.88**\nBrittany Brown has shown impressive versatility and speed, including a 10.90 seconds at Hayward Field. Her consistent top finishes in various events, such as her 10.97 seconds in Budapest, indicate she's in excellent form. Brown's ability to perform in both 100m and 200m events, as evidenced by her silver medal at the 2019 World Championships in the 200m, indicates her strong sprinting capabilities.\n\n#### 4. **Natasha Morrison (JAM)** - **10.95**\nNatasha Morrison has had a mixed season with peaks and troughs, but her best performances include running 10.95 seconds in Bruxelles. Although she has had some less impressive outings, her ability to dip below 11 seconds consistently makes her a strong contender for a top-four finish. Her experience and competitive edge will likely see her finish ahead of the chasing pack.\n\n#### 5. **Gina Bass (GAM)** - **11.05**\nGina Bass has been consistently strong, with several sub-11.10 seconds performances. Her best recent time of 10.93 seconds in Fort-de-France shows she has the speed to compete with the best. However, her inconsistency in major races and slightly slower times compared to the top four suggests she will likely finish just outside the podium places.\n\n#### 6. **Zaynab Dosso (ITA)** - **11.10**\nZaynab Dosso has improved significantly over the past year, with a personal best of 11.02 seconds in Savona. However, her performances have been less consistent compared to others in this field. Dosso's recent results show promise, but she may lack the edge needed to break into the top five in this highly competitive race.\n\n#### 7. **Julia Henriksson (SWE)** - **11.18**\nJulia Henriksson has shown strong performances at the national level, but her times have generally been slower than the other competitors in this field. Despite running 10.95 seconds with a significant tailwind and consistently winning national titles, her international performances indicate she may struggle to keep pace with the faster sprinters here. Her predicted time reflects her current form and recent performances.\n\n### Conclusion\nMarie-Josée Ta Lou’s extensive experience and consistent top performances make her the favorite to win this race. Daryll Neita and Brittany Brown are close contenders but are predicted to finish behind Ta Lou based on their recent form and competitive results. Natasha Morrison and Gina Bass are likely to follow, with Zaynab Dosso and Julia Henriksson rounding out the field. The predictions take into account each athlete’s recent performances, consistency, and their ability to perform under pressure."
+      "blurb": "### Predicted Finish and Times for the Women's 100 Metres\n\n1. **Marie-Josée Ta Lou (CIV)** - **10.79**\n2. **Daryll Neita (GBR)** - **10.85**\n3. **Brittany Brown (USA)** - **10.88**\n4. **Natasha Morrison (JAM)** - **10.95**\n5. **Gina Bass (GAM)** - **11.05**\n6. **Zaynab Dosso (ITA)** - **11.10**\n7. **Julia Henriksson (SWE)** - **11.18**\n\n### Race Preview and Predictions\n\n#### 1. **Marie-Josée Ta Lou (CIV)** - **10.79**\nMarie-Josée Ta Lou has an enviable track record and is the African record holder with a personal best of 10.72 seconds. Despite being 35 years old, she has demonstrated remarkable consistency and speed throughout the past year. Key standout performances include her 10.75 seconds at Bislett Stadion in Oslo and her 10.79 seconds at the Nemzeti Atlétikai Központ in Budapest. Her recent form indicates she can still perform at the highest level, making her the favorite to win this race.\n\n#### 2. **Daryll Neita (GBR)** - **10.85**\nDaryll Neita has been in excellent form recently, clocking several sub-11 second times. Notably, she ran 10.97 seconds in Savona and 10.96 seconds in London. Her ability to perform consistently around the 11-second mark, combined with her strong finish, makes her a solid contender for second place. Neita's performances in the 2023 season, including multiple victories and podium finishes in both 100m and 200m events, solidify her as a top-tier sprinter.\n\n#### 3. **Brittany Brown (USA)** - **10.88**\nBrittany Brown has shown impressive versatility and speed, including a 10.90 seconds at Hayward Field. Her consistent top finishes in various events, such as her 10.97 seconds in Budapest, indicate she's in excellent form. Brown's ability to perform in both 100m and 200m events, as evidenced by her silver medal at the 2019 World Championships in the 200m, indicates her strong sprinting capabilities.\n\n#### 4. **Natasha Morrison (JAM)** - **10.95**\nNatasha Morrison has had a mixed season with peaks and troughs, but her best performances include running 10.95 seconds in Bruxelles. Although she has had some less impressive outings, her ability to dip below 11 seconds consistently makes her a strong contender for a top-four finish. Her experience and competitive edge will likely see her finish ahead of the chasing pack.\n\n#### 5. **Gina Bass (GAM)** - **11.05**\nGina Bass has been consistently strong, with several sub-11.10 seconds performances. Her best recent time of 10.93 seconds in Fort-de-France shows she has the speed to compete with the best. However, her inconsistency in major races and slightly slower times compared to the top four suggests she will likely finish just outside the podium places.\n\n#### 6. **Zaynab Dosso (ITA)** - **11.10**\nZaynab Dosso has improved significantly over the past year, with a personal best of 11.02 seconds in Savona. However, her performances have been less consistent compared to others in this field. Dosso's recent results show promise, but she may lack the edge needed to break into the top five in this highly competitive race.\n\n#### 7. **Julia Henriksson (SWE)** - **11.18**\nJulia Henriksson has shown strong performances at the national level, but her times have generally been slower than the other competitors in this field. Despite running 10.95 seconds with a significant tailwind and consistently winning national titles, her international performances indicate she may struggle to keep pace with the faster sprinters here. Her predicted time reflects her current form and recent performances.\n\n### Conclusion\nMarie-Josée Ta Lou’s extensive experience and consistent top performances make her the favorite to win this race. Daryll Neita and Brittany Brown are close contenders but are predicted to finish behind Ta Lou based on their recent form and competitive results. Natasha Morrison and Gina Bass are likely to follow, with Zaynab Dosso and Julia Henriksson rounding out the field. The predictions take into account each athlete’s recent performances, consistency, and their ability to perform under pressure.",
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "11.15",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gina Mariam",
+            "lastName": "Bass Bittaye",
+            "id": "14479741",
+            "pb": "10.93",
+            "sb": "10.93",
+            "nat": "GAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.16",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou-Smith",
+            "id": "14415994",
+            "pb": "10.72",
+            "sb": "10.91",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.18",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brittany",
+            "lastName": "Brown",
+            "id": "14437218",
+            "pb": "10.90",
+            "sb": "11.21",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.23",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zaynab",
+            "lastName": "Dosso",
+            "id": "14622202",
+            "pb": "11.02",
+            "sb": "11.02",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.37",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Julia",
+            "lastName": "Henriksson",
+            "id": "14654845",
+            "pb": "11.19",
+            "sb": "11.19",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.40",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "11.41",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natasha",
+            "lastName": "Morrison",
+            "id": "14285826",
+            "pb": "10.85",
+            "sb": "11.32",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.65",
+          "place": 8,
+          "notes": ""
+        }
+      ]
     },
     "1500m Women": {
       "date": "2024-06-02T18:23",
@@ -15865,7 +16078,186 @@
           "hasAvy": false
         }
       ],
-      "blurb": "### Predicted Finish and Times\n1. Birke Haylom (ETH) - 3:53.89\n2. Laura Muir (GBR) - 3:54.45\n3. Worknesh Mesele (ETH) - 3:56.12\n4. Nozomi Tanaka (JPN) - 3:57.38\n5. Linden Hall (AUS) - 3:58.10\n6. Georgia Griffith (AUS) - 3:59.20\n7. Danielle Jones (USA) - 4:00.99\n8. Sarah McDonald (GBR) - 4:02.10\n9. Axumawit Embaye (ETH) - 4:02.91\n10. Cory Ann McGee (USA) - 4:04.05\n11. Edinah Jebitok (KEN) - 4:05.22\n12. Sarah Billings (AUS) - 4:06.30\n13. Hanna Hermansson (SWE) - 4:08.44\n14. Julia Jaguścik (POL) - 4:13.50\n\n### Reasoning\n\n1. **Birke Haylom (ETH)** - 3:53.89\n   - Haylom has been consistently performing well in the 1500 metres with several sub-4 minute times, including a recent 3:53.22. Her ability to maintain top form across various competitions and her youthfulness provide her with a strong edge. Her 2022 World Athletics U20 gold also marks her as a future star.\n\n2. **Laura Muir (GBR)** - 3:54.45\n   - Muir’s consistency and experience make her a formidable competitor. She has a recent personal best of 3:55.34 and has shown she can perform under pressure at major championships, including her Olympic silver medal performance. However, her slightly less dominant recent form compared to Haylom puts her in second.\n\n3. **Worknesh Mesele (ETH)** - 3:56.12\n   - Mesele has posted strong performances in both 800m and 1500m, with a recent 3:57.61 showing her potential. Her versatility and solid recent times suggest she will be in the mix for a podium finish.\n\n4. **Nozomi Tanaka (JPN)** - 3:57.38\n   - Tanaka has a strong season behind her, consistently posting fast times in the 1500m and 5000m. Her recent 4:07.49 in Kobe shows she’s in good form, and she has the capability to push under 4 minutes in a competitive race.\n\n5. **Linden Hall (AUS)** - 3:58.10\n   - Hall has shown she can compete with the best, including a 3:56.92. Her experience and recent performances, including a strong showing at the Hayward Field, indicate she’s capable of a sub-4-minute run.\n\n6. **Georgia Griffith (AUS)** - 3:59.20\n   - Griffith has shown consistency with several strong performances, including a recent 3:59.04. Her 800m speed will also be an asset in the final stages of the race, allowing her to secure a high finish.\n\n7. **Danielle Jones (USA)** - 4:00.99\n   - Jones has posted several strong performances, including a recent 4:02.37. However, she lacks the consistency of those predicted to finish ahead of her, which places her just outside the sub-4-minute group.\n\n8. **Sarah McDonald (GBR)** - 4:02.10\n   - McDonald has a solid track record with consistent sub-4:05 performances. Her experience and ability to peak at major championships ensure a competitive finish, but she might not have the speed to break into the top group.\n\n9. **Axumawit Embaye (ETH)** - 4:02.91\n   - Embaye has had some strong performances, including a 4:02.63 win in Chorzów. However, her inconsistency in recent races, including DNFs, suggests she might struggle to maintain a top pace throughout the race.\n\n10. **Cory Ann McGee (USA)** - 4:04.05\n    - McGee has shown she can compete at a high level, but her recent form has been inconsistent. Finishing in the top 10 would still be a strong result given her recent challenges.\n\n11. **Edinah Jebitok (KEN)** - 4:05.22\n    - Jebitok has shown potential with strong cross-country performances and a solid 4:02.00. However, her recent 1500m results suggest she might struggle to keep up with the very best.\n\n12. **Sarah Billings (AUS)** - 4:06.30\n    - Billings has had a mixed season with some strong performances, but her inconsistency and recent DNFs suggest she might not be in top form for this race.\n\n13. **Hanna Hermansson (SWE)** - 4:08.44\n    - Hermansson has had a challenging season with few standout performances. Her best recent time is 4:07.68, indicating she might struggle against the stronger field.\n\n14. **Julia Jaguścik (POL)** - 4:13.50\n    - Jaguścik is the least experienced in this field and her best times are significantly slower than the rest of the competitors. Her future potential is high, but for this race, she’s likely to finish at the back of the pack."
+      "blurb": "### Predicted Finish and Times\n1. Birke Haylom (ETH) - 3:53.89\n2. Laura Muir (GBR) - 3:54.45\n3. Worknesh Mesele (ETH) - 3:56.12\n4. Nozomi Tanaka (JPN) - 3:57.38\n5. Linden Hall (AUS) - 3:58.10\n6. Georgia Griffith (AUS) - 3:59.20\n7. Danielle Jones (USA) - 4:00.99\n8. Sarah McDonald (GBR) - 4:02.10\n9. Axumawit Embaye (ETH) - 4:02.91\n10. Cory Ann McGee (USA) - 4:04.05\n11. Edinah Jebitok (KEN) - 4:05.22\n12. Sarah Billings (AUS) - 4:06.30\n13. Hanna Hermansson (SWE) - 4:08.44\n14. Julia Jaguścik (POL) - 4:13.50\n\n### Reasoning\n\n1. **Birke Haylom (ETH)** - 3:53.89\n   - Haylom has been consistently performing well in the 1500 metres with several sub-4 minute times, including a recent 3:53.22. Her ability to maintain top form across various competitions and her youthfulness provide her with a strong edge. Her 2022 World Athletics U20 gold also marks her as a future star.\n\n2. **Laura Muir (GBR)** - 3:54.45\n   - Muir’s consistency and experience make her a formidable competitor. She has a recent personal best of 3:55.34 and has shown she can perform under pressure at major championships, including her Olympic silver medal performance. However, her slightly less dominant recent form compared to Haylom puts her in second.\n\n3. **Worknesh Mesele (ETH)** - 3:56.12\n   - Mesele has posted strong performances in both 800m and 1500m, with a recent 3:57.61 showing her potential. Her versatility and solid recent times suggest she will be in the mix for a podium finish.\n\n4. **Nozomi Tanaka (JPN)** - 3:57.38\n   - Tanaka has a strong season behind her, consistently posting fast times in the 1500m and 5000m. Her recent 4:07.49 in Kobe shows she’s in good form, and she has the capability to push under 4 minutes in a competitive race.\n\n5. **Linden Hall (AUS)** - 3:58.10\n   - Hall has shown she can compete with the best, including a 3:56.92. Her experience and recent performances, including a strong showing at the Hayward Field, indicate she’s capable of a sub-4-minute run.\n\n6. **Georgia Griffith (AUS)** - 3:59.20\n   - Griffith has shown consistency with several strong performances, including a recent 3:59.04. Her 800m speed will also be an asset in the final stages of the race, allowing her to secure a high finish.\n\n7. **Danielle Jones (USA)** - 4:00.99\n   - Jones has posted several strong performances, including a recent 4:02.37. However, she lacks the consistency of those predicted to finish ahead of her, which places her just outside the sub-4-minute group.\n\n8. **Sarah McDonald (GBR)** - 4:02.10\n   - McDonald has a solid track record with consistent sub-4:05 performances. Her experience and ability to peak at major championships ensure a competitive finish, but she might not have the speed to break into the top group.\n\n9. **Axumawit Embaye (ETH)** - 4:02.91\n   - Embaye has had some strong performances, including a 4:02.63 win in Chorzów. However, her inconsistency in recent races, including DNFs, suggests she might struggle to maintain a top pace throughout the race.\n\n10. **Cory Ann McGee (USA)** - 4:04.05\n    - McGee has shown she can compete at a high level, but her recent form has been inconsistent. Finishing in the top 10 would still be a strong result given her recent challenges.\n\n11. **Edinah Jebitok (KEN)** - 4:05.22\n    - Jebitok has shown potential with strong cross-country performances and a solid 4:02.00. However, her recent 1500m results suggest she might struggle to keep up with the very best.\n\n12. **Sarah Billings (AUS)** - 4:06.30\n    - Billings has had a mixed season with some strong performances, but her inconsistency and recent DNFs suggest she might not be in top form for this race.\n\n13. **Hanna Hermansson (SWE)** - 4:08.44\n    - Hermansson has had a challenging season with few standout performances. Her best recent time is 4:07.68, indicating she might struggle against the stronger field.\n\n14. **Julia Jaguścik (POL)** - 4:13.50\n    - Jaguścik is the least experienced in this field and her best times are significantly slower than the rest of the competitors. Her future potential is high, but for this race, she’s likely to finish at the back of the pack.",
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:57.99",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laura",
+            "lastName": "Muir",
+            "id": "14422111",
+            "pb": "3:54.50",
+            "sb": "3:56.35",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:58.88",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Edinah",
+            "lastName": "Jebitok",
+            "id": "14798230",
+            "pb": "4:02.00",
+            "sb": "4:07.22",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.17",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Georgia",
+            "lastName": "Griffith",
+            "id": "14549778",
+            "pb": "3:59.04",
+            "sb": "3:59.04",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.84",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Birke",
+            "lastName": "Haylom",
+            "id": "15009582",
+            "pb": "3:53.22",
+            "sb": "3:53.22",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:00.64",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Danielle",
+            "lastName": "Jones",
+            "id": "14479600",
+            "pb": "4:01.66",
+            "sb": "4:02.09",
+            "nat": "USA",
+            "hasAvy": false
+          }
+        },
+        {
+          "mark": "4:00.77",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "4:01.01",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Linden",
+            "lastName": "Hall",
+            "id": "14272002",
+            "pb": "3:56.92",
+            "sb": "4:00.71",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:02.64",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cory Ann",
+            "lastName": "McGee",
+            "id": "14316538",
+            "pb": "4:00.34",
+            "sb": "4:02.96",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:02.98",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nozomi",
+            "lastName": "Tanaka",
+            "id": "14632538",
+            "pb": "3:59.19",
+            "sb": "4:07.39",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:03.36",
+          "place": 10,
+          "notes": ""
+        },
+        {
+          "mark": "4:07.85",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hanna",
+            "lastName": "Hermansson",
+            "id": "14408520",
+            "pb": "4:05.76",
+            "sb": "4:07.68",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:10.21",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Billings",
+            "id": "14464575",
+            "pb": "3:59.59",
+            "sb": "3:59.59",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "McDonald",
+            "id": "14472518",
+            "pb": "4:00.46",
+            "sb": null,
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Julia",
+            "lastName": "Jaguścik",
+            "id": "14876743",
+            "pb": "4:13.36",
+            "sb": "4:13.36",
+            "nat": "POL",
+            "hasAvy": false
+          }
+        }
+      ]
     },
     "3000m Men": {
       "date": "2024-06-02T18:39",
@@ -16008,7 +16400,8 @@
           "hasAvy": true
         }
       ],
-      "blurb": "### Predicted Finish and Times\n\n1. **Telahun Haile Bekele (ETH)** - 7:24.50\n2. **Luis Grijalva (GUA)** - 7:27.80\n3. **Dominic Lokinyomo Lobalu (SUI)** - 7:28.50\n4. **Stewart McSweyn (AUS)** - 7:30.90\n5. **Birhanu Balew (BRN)** - 7:31.50\n6. **Adel Mechaal (ESP)** - 7:33.00\n7. **Mezgebu Sime (ETH)** - 7:35.20\n8. **Andreas Almgren (SWE)** - 7:36.90\n9. **Adriaan Wildschutt (RSA)** - 7:38.30\n10. **Sam Parsons (GER)** - 7:40.00\n11. **Jack Rowe (GBR)** - 7:41.50\n12. **Emil Danielsson (SWE)** - 7:43.00\n13. **Mohamed Ismail (DJI)** - 7:44.50\n14. **Jude Thomas (AUS)** - 7:46.00\n15. **Adam Czerwiński (POL)** - 7:51.00\n\n### Race Preview and Predictions\n\n#### **1. Telahun Haile Bekele (ETH)** - 7:24.50\nBekele's recent form is impressive, highlighted by his 7:25.48 finish in Eugene, OR. His consistent top-four finishes in highly competitive 5000m races (including a 12:42.70 in Monaco) indicate he's in peak condition. His specialty in the 5000m translates well to the 3000m, making him the favorite.\n\n#### **2. Luis Grijalva (GUA)** - 7:27.80\nGrijalva has shown strong performances in the 3000m and 5000m, with a 7:29.43 in Eugene and a 12:52.97 in Florence. His ability to perform in top-tier competitions, coupled with a recent 13:16.53 win in Los Angeles, makes him a solid second-place contender.\n\n#### **3. Dominic Lokinyomo Lobalu (SUI)** - 7:28.50\nLobalu's 7:33.95 in Zagreb and consistent sub-7:40 finishes show he's a formidable opponent. His versatility across distances and a recent 27:36.29 in the 10,000m demonstrate his strong endurance, ensuring a podium finish.\n\n#### **4. Stewart McSweyn (AUS)** - 7:30.90\nDespite recent inconsistencies, McSweyn's best of 7:31.14 in Eugene last year and multiple sub-3:32 1500m races suggest he's capable of a top finish if he can recapture his form. His recent 3:52.00 mile win indicates a return to form.\n\n#### **5. Birhanu Balew (BRN)** - 7:31.50\nBalew's strong 7:33.42 in Liévin and 13:00.47 in Xiamen highlight his capability in the 3000m. His recent string of first-place finishes in road races shows he's in good shape, positioning him well for a top-five finish.\n\n#### **6. Adel Mechaal (ESP)** - 7:33.00\nMechaal's 7:41.75 in Istanbul and consistent podium finishes in shorter indoor races, including a 7:43.60 in Valencia, indicate he's still competitive at 33. His extensive experience and recent wins in shorter distances will help him secure a respectable position.\n\n#### **7. Mezgebu Sime (ETH)** - 7:35.20\nSime's youth and recent 7:39.81 in Bergen show promise. His 13:03.19 in Carquefou marks him as a rising star. While less experienced than others, his trajectory suggests a strong showing.\n\n#### **8. Andreas Almgren (SWE)** - 7:36.90\nAlmgren's 7:37.05 in Doha and sub-13-minute 5000m in Stockholm reflect his capability. However, recent DNFs raise concerns about his consistency. If he avoids tactical errors, he can still place well.\n\n#### **9. Adriaan Wildschutt (RSA)** - 7:38.30\nWildschutt's 12:56.76 indoor 5000m and 27:23.10 10,000m show his endurance. His ability to break 13 minutes in the 5000m indicates he has the speed for a strong 3000m finish.\n\n#### **10. Sam Parsons (GER)** - 7:40.00\nParsons' recent 7:39.94 in New York and consistent 5000m performances suggest he can be competitive. While not traditionally a top finisher, his recent form indicates a solid middle-pack finish.\n\n#### **11. Jack Rowe (GBR)** - 7:41.50\nRowe's 7:38.35 indoor performance in Boston and recent 13:04.75 indoor 5000m suggest he has the speed. Inconsistent outdoor performances, however, limit his ceiling.\n\n#### **12. Emil Danielsson (SWE)** - 7:43.00\nDanielsson has shown promise with a 7:39.70 in Stockholm but has struggled with consistency. If he can channel his best performances, he can finish mid-pack.\n\n#### **13. Mohamed Ismail (DJI)** - 7:44.50\nIsmail's versatility and recent 12:56.43 in Stockholm show potential. However, his inconsistent results and recent form suggest a lower finish.\n\n#### **14. Jude Thomas (AUS)** - 7:46.00\nThomas has shown flashes of potential with a 7:48.25 in Sydney but has struggled with consistency. His recent performances suggest he will be towards the back of the pack.\n\n#### **15. Adam Czerwiński (POL)** - 7:51.00\nAt 35, Czerwiński has shifted focus to shorter distances, with numerous DNFs in recent longer races. His lack of recent competitive 3000m performances places him at the back."
+      "blurb": "### Predicted Finish and Times\n\n1. **Telahun Haile Bekele (ETH)** - 7:24.50\n2. **Luis Grijalva (GUA)** - 7:27.80\n3. **Dominic Lokinyomo Lobalu (SUI)** - 7:28.50\n4. **Stewart McSweyn (AUS)** - 7:30.90\n5. **Birhanu Balew (BRN)** - 7:31.50\n6. **Adel Mechaal (ESP)** - 7:33.00\n7. **Mezgebu Sime (ETH)** - 7:35.20\n8. **Andreas Almgren (SWE)** - 7:36.90\n9. **Adriaan Wildschutt (RSA)** - 7:38.30\n10. **Sam Parsons (GER)** - 7:40.00\n11. **Jack Rowe (GBR)** - 7:41.50\n12. **Emil Danielsson (SWE)** - 7:43.00\n13. **Mohamed Ismail (DJI)** - 7:44.50\n14. **Jude Thomas (AUS)** - 7:46.00\n15. **Adam Czerwiński (POL)** - 7:51.00\n\n### Race Preview and Predictions\n\n#### **1. Telahun Haile Bekele (ETH)** - 7:24.50\nBekele's recent form is impressive, highlighted by his 7:25.48 finish in Eugene, OR. His consistent top-four finishes in highly competitive 5000m races (including a 12:42.70 in Monaco) indicate he's in peak condition. His specialty in the 5000m translates well to the 3000m, making him the favorite.\n\n#### **2. Luis Grijalva (GUA)** - 7:27.80\nGrijalva has shown strong performances in the 3000m and 5000m, with a 7:29.43 in Eugene and a 12:52.97 in Florence. His ability to perform in top-tier competitions, coupled with a recent 13:16.53 win in Los Angeles, makes him a solid second-place contender.\n\n#### **3. Dominic Lokinyomo Lobalu (SUI)** - 7:28.50\nLobalu's 7:33.95 in Zagreb and consistent sub-7:40 finishes show he's a formidable opponent. His versatility across distances and a recent 27:36.29 in the 10,000m demonstrate his strong endurance, ensuring a podium finish.\n\n#### **4. Stewart McSweyn (AUS)** - 7:30.90\nDespite recent inconsistencies, McSweyn's best of 7:31.14 in Eugene last year and multiple sub-3:32 1500m races suggest he's capable of a top finish if he can recapture his form. His recent 3:52.00 mile win indicates a return to form.\n\n#### **5. Birhanu Balew (BRN)** - 7:31.50\nBalew's strong 7:33.42 in Liévin and 13:00.47 in Xiamen highlight his capability in the 3000m. His recent string of first-place finishes in road races shows he's in good shape, positioning him well for a top-five finish.\n\n#### **6. Adel Mechaal (ESP)** - 7:33.00\nMechaal's 7:41.75 in Istanbul and consistent podium finishes in shorter indoor races, including a 7:43.60 in Valencia, indicate he's still competitive at 33. His extensive experience and recent wins in shorter distances will help him secure a respectable position.\n\n#### **7. Mezgebu Sime (ETH)** - 7:35.20\nSime's youth and recent 7:39.81 in Bergen show promise. His 13:03.19 in Carquefou marks him as a rising star. While less experienced than others, his trajectory suggests a strong showing.\n\n#### **8. Andreas Almgren (SWE)** - 7:36.90\nAlmgren's 7:37.05 in Doha and sub-13-minute 5000m in Stockholm reflect his capability. However, recent DNFs raise concerns about his consistency. If he avoids tactical errors, he can still place well.\n\n#### **9. Adriaan Wildschutt (RSA)** - 7:38.30\nWildschutt's 12:56.76 indoor 5000m and 27:23.10 10,000m show his endurance. His ability to break 13 minutes in the 5000m indicates he has the speed for a strong 3000m finish.\n\n#### **10. Sam Parsons (GER)** - 7:40.00\nParsons' recent 7:39.94 in New York and consistent 5000m performances suggest he can be competitive. While not traditionally a top finisher, his recent form indicates a solid middle-pack finish.\n\n#### **11. Jack Rowe (GBR)** - 7:41.50\nRowe's 7:38.35 indoor performance in Boston and recent 13:04.75 indoor 5000m suggest he has the speed. Inconsistent outdoor performances, however, limit his ceiling.\n\n#### **12. Emil Danielsson (SWE)** - 7:43.00\nDanielsson has shown promise with a 7:39.70 in Stockholm but has struggled with consistency. If he can channel his best performances, he can finish mid-pack.\n\n#### **13. Mohamed Ismail (DJI)** - 7:44.50\nIsmail's versatility and recent 12:56.43 in Stockholm show potential. However, his inconsistent results and recent form suggest a lower finish.\n\n#### **14. Jude Thomas (AUS)** - 7:46.00\nThomas has shown flashes of potential with a 7:48.25 in Sydney but has struggled with consistency. His recent performances suggest he will be towards the back of the pack.\n\n#### **15. Adam Czerwiński (POL)** - 7:51.00\nAt 35, Czerwiński has shifted focus to shorter distances, with numerous DNFs in recent longer races. His lack of recent competitive 3000m performances places him at the back.",
+      "isClosed": true
     },
     "100m Men": {
       "date": "2024-06-02T19:00",
@@ -16079,7 +16472,8 @@
           "hasAvy": true
         }
       ],
-      "blurb": "### Predicted Final Results for the Men's 100 Metres\n\n1. **Ryiem Forde (JAM) - 9.98 seconds**\n2. **Abdul Hakim Sani Brown (JPN) - 10.02 seconds**\n3. **Emmanuel Eseme (CMR) - 10.04 seconds**\n4. **Kyree King (USA) - 10.08 seconds**\n5. **Yohan Blake (JAM) - 10.12 seconds**\n6. **Chituru Ali (ITA) - 10.15 seconds**\n7. **Henrik Larsson (SWE) - 10.18 seconds**\n\n### Reasoning\n\n1. **Ryiem Forde (JAM) - 9.98 seconds**\n   - **Standout Performances**: Ryiem Forde has shown a capacity to break the 10-second barrier with a time of 9.95 seconds in August 2023. Additionally, he has multiple sub-10-second performances in the past year, making him the most consistent sprinter in this lineup.\n   - **Consistency**: His recent form, including a 10.07-second run in May 2024, indicates that he is in good shape and can replicate or better his previous sub-10 performances.\n\n2. **Abdul Hakim Sani Brown (JPN) - 10.02 seconds**\n   - **Standout Performances**: Sani Brown has demonstrated his ability to perform well under pressure with a 9.97-second run in August 2023. His performances have been consistently just above the 10-second mark recently.\n   - **Recent Form**: His 10.07-second performance in May 2024 and consistent sub-10.10 times make him a strong contender for a top finish.\n\n3. **Emmanuel Eseme (CMR) - 10.04 seconds**\n   - **Standout Performances**: Eseme has also dipped under 10 seconds, with a 9.96-second run in July 2023. His strong results in multiple competitions, including a 10.10-second run in May 2024, underscore his competitive edge.\n   - **Versatility**: Eseme's ability to perform well in both 100m and 200m events indicates strong sprinting endurance and speed, making him a reliable candidate for a podium finish.\n\n4. **Kyree King (USA) - 10.08 seconds**\n   - **Standout Performances**: King has shown flashes of brilliance with wind-assisted sub-10-second performances and a 10.11-second run in May 2024.\n   - **Recent Form**: His recent performances suggest he is in good form, but his inconsistency in breaking the 10-second barrier under legal wind conditions places him just outside the top three.\n\n5. **Yohan Blake (JAM) - 10.12 seconds**\n   - **Standout Performances**: Blake has a storied career but recent performances have not been up to his historic standards. His best time in the last year is 10.01 seconds in July 2023, but his recent results have seen a decline.\n   - **Recent Form**: Given his age and recent form, including a 10.16-second run in May 2024, Blake is likely to finish outside the top three but still within a respectable time.\n\n6. **Chituru Ali (ITA) - 10.15 seconds**\n   - **Standout Performances**: Ali's recent best performance is 10.06 seconds in May 2024. He has shown potential but lacks the consistency of the top finishers.\n   - **Recent Form**: Ali's form is improving, but he has yet to consistently break the 10-second barrier, placing him slightly behind the more experienced and faster sprinters.\n\n7. **Henrik Larsson (SWE) - 10.18 seconds**\n   - **Standout Performances**: Larsson has a best time of 10.08 seconds in May 2024, but his performances are generally just below the 10.10-second mark.\n   - **Recent Form**: While he has shown promise, Larsson's performances have not been as strong or consistent as the other competitors, leading to a predicted finish towards the end of the pack.\n\n### Summary\nRyiem Forde's recent sub-10-second performances and consistency place him as the favorite to win. Abdul Hakim Sani Brown and Emmanuel Eseme are strong contenders, with Sani Brown's recent form giving him a slight edge over Eseme. Kyree King and Yohan Blake are expected to be competitive but fall short of the podium due to recent inconsistencies. Chituru Ali and Henrik Larsson round out the field, showing potential but lacking the standout performances needed to challenge the top sprinters."
+      "blurb": "### Predicted Final Results for the Men's 100 Metres\n\n1. **Ryiem Forde (JAM) - 9.98 seconds**\n2. **Abdul Hakim Sani Brown (JPN) - 10.02 seconds**\n3. **Emmanuel Eseme (CMR) - 10.04 seconds**\n4. **Kyree King (USA) - 10.08 seconds**\n5. **Yohan Blake (JAM) - 10.12 seconds**\n6. **Chituru Ali (ITA) - 10.15 seconds**\n7. **Henrik Larsson (SWE) - 10.18 seconds**\n\n### Reasoning\n\n1. **Ryiem Forde (JAM) - 9.98 seconds**\n   - **Standout Performances**: Ryiem Forde has shown a capacity to break the 10-second barrier with a time of 9.95 seconds in August 2023. Additionally, he has multiple sub-10-second performances in the past year, making him the most consistent sprinter in this lineup.\n   - **Consistency**: His recent form, including a 10.07-second run in May 2024, indicates that he is in good shape and can replicate or better his previous sub-10 performances.\n\n2. **Abdul Hakim Sani Brown (JPN) - 10.02 seconds**\n   - **Standout Performances**: Sani Brown has demonstrated his ability to perform well under pressure with a 9.97-second run in August 2023. His performances have been consistently just above the 10-second mark recently.\n   - **Recent Form**: His 10.07-second performance in May 2024 and consistent sub-10.10 times make him a strong contender for a top finish.\n\n3. **Emmanuel Eseme (CMR) - 10.04 seconds**\n   - **Standout Performances**: Eseme has also dipped under 10 seconds, with a 9.96-second run in July 2023. His strong results in multiple competitions, including a 10.10-second run in May 2024, underscore his competitive edge.\n   - **Versatility**: Eseme's ability to perform well in both 100m and 200m events indicates strong sprinting endurance and speed, making him a reliable candidate for a podium finish.\n\n4. **Kyree King (USA) - 10.08 seconds**\n   - **Standout Performances**: King has shown flashes of brilliance with wind-assisted sub-10-second performances and a 10.11-second run in May 2024.\n   - **Recent Form**: His recent performances suggest he is in good form, but his inconsistency in breaking the 10-second barrier under legal wind conditions places him just outside the top three.\n\n5. **Yohan Blake (JAM) - 10.12 seconds**\n   - **Standout Performances**: Blake has a storied career but recent performances have not been up to his historic standards. His best time in the last year is 10.01 seconds in July 2023, but his recent results have seen a decline.\n   - **Recent Form**: Given his age and recent form, including a 10.16-second run in May 2024, Blake is likely to finish outside the top three but still within a respectable time.\n\n6. **Chituru Ali (ITA) - 10.15 seconds**\n   - **Standout Performances**: Ali's recent best performance is 10.06 seconds in May 2024. He has shown potential but lacks the consistency of the top finishers.\n   - **Recent Form**: Ali's form is improving, but he has yet to consistently break the 10-second barrier, placing him slightly behind the more experienced and faster sprinters.\n\n7. **Henrik Larsson (SWE) - 10.18 seconds**\n   - **Standout Performances**: Larsson has a best time of 10.08 seconds in May 2024, but his performances are generally just below the 10.10-second mark.\n   - **Recent Form**: While he has shown promise, Larsson's performances have not been as strong or consistent as the other competitors, leading to a predicted finish towards the end of the pack.\n\n### Summary\nRyiem Forde's recent sub-10-second performances and consistency place him as the favorite to win. Abdul Hakim Sani Brown and Emmanuel Eseme are strong contenders, with Sani Brown's recent form giving him a slight edge over Eseme. Kyree King and Yohan Blake are expected to be competitive but fall short of the podium due to recent inconsistencies. Chituru Ali and Henrik Larsson round out the field, showing potential but lacking the standout performances needed to challenge the top sprinters.",
+      "isClosed": true
     },
     "3000m Steeplechase Men": {
       "date": "2024-06-02T19:11",
@@ -16222,7 +16616,8 @@
           "hasAvy": false
         }
       ],
-      "blurb": "### Predicted Finish and Times:\n1. **Lamecha Girma (ETH)** - 8:07.50\n2. **Samuel Firewu (ETH)** - 8:09.25\n3. **George Beamish (NZL)** - 8:10.50\n4. **Getnet Wale (ETH)** - 8:11.00\n5. **Jean-Simon Desgagnés (CAN)** - 8:13.50\n6. **Hillary Bor (USA)** - 8:14.75\n7. **Abrham Sime (ETH)** - 8:16.00\n8. **Mohamed Amin Jhinaoui (TUN)** - 8:17.50\n9. **Simon Sundström (SWE)** - 8:18.00\n10. **Vidar Johansson (SWE)** - 8:19.00\n11. **Lawrence Kemboi Kipsang (KEN)** - 8:22.00\n12. **Mohamed Tindouft (MAR)** - 8:23.00\n13. **Emil Blomberg (SWE)** - 8:24.00\n14. **Wilberforce Chemiat Kones (KEN)** - 8:28.00\n15. **Wesley Langat (KEN)** - 8:30.00\n\n### Race Preview and Reasoning:\n#### 1. **Lamecha Girma (ETH)** - 8:07.50\nGirma is the most accomplished and consistent athlete in the field. He holds the world record for the 3000m steeplechase and has multiple recent victories and top finishes in various distances, showcasing his versatility and form. His recent times in the steeplechase, including an 8:15.89 and 8:05.44, indicate he is in top shape and can handle the pressure of big events.\n\n#### 2. **Samuel Firewu (ETH)** - 8:09.25\nFirewu has shown impressive form, with several sub-8:11 times in recent competitions and a victory in Doha with an 8:07.25. His youth and recent performances suggest he is on an upward trajectory, making him a strong contender for a podium finish.\n\n#### 3. **George Beamish (NZL)** - 8:10.50\nBeamish has been consistent with his steeplechase performances, including a personal best of 8:13.26 and a 5th place finish in the 2023 World Championships. His versatility in distances and recent strong showings in shorter races make him a dark horse for a podium finish.\n\n#### 4. **Getnet Wale (ETH)** - 8:11.00\nWale has a solid track record in the steeplechase but has had a mix of results recently, including a 1st place in Budapest but also several DNFs. His potential is undeniable, but inconsistency may cost him a higher finish.\n\n#### 5. **Jean-Simon Desgagnés (CAN)** - 8:13.50\nDesgagnés has been in good form with recent sub-8:20 performances and a gold medal at the Pan Am Games. His recent times show he is competitive, and he could capitalize on any mistakes from the top runners.\n\n#### 6. **Hillary Bor (USA)** - 8:14.75\nBor's experience and recent 1st place finish in Manchester indicate he still has the capability to perform at a high level. While he hasn't been as fast as some of the younger athletes, his consistency makes him a safe bet for a strong finish.\n\n#### 7. **Abrham Sime (ETH)** - 8:16.00\nSime has had a mixed season with some sub-8:20 performances but also some slower races. His recent 8:10.56 in Monaco shows promise, but inconsistency might keep him from a top-five finish.\n\n#### 8. **Mohamed Amin Jhinaoui (TUN)** - 8:17.50\nJhinaoui has shown flashes of potential with several sub-8:20 performances. His recent 8:13.86 in Marrakech suggests he can compete with the top athletes, but he will need to be at his best to break into the top five.\n\n#### 9. **Simon Sundström (SWE)** - 8:18.00\nSundström has been consistent around the 8:20 mark, with a recent 8:18.09 in Zagreb. He has the potential to run faster, but his recent performances suggest he will be just outside the top eight.\n\n#### 10. **Vidar Johansson (SWE)** - 8:19.00\nJohansson has been solid but not spectacular, with times hovering around the 8:20 mark. His consistency will keep him in the top ten, but he lacks the standout performances to challenge the top athletes.\n\n#### 11. **Lawrence Kemboi Kipsang (KEN)** - 8:22.00\nKipsang has had a challenging season with several DNFs, but when he finishes, he usually performs well. His recent 1st place finishes in Germany and Spain show he has the ability, but his inconsistency is a concern.\n\n#### 12. **Mohamed Tindouft (MAR)** - 8:23.00\nTindouft has had a mixed season with some strong performances and several DNFs. His recent times suggest he can compete, but his inconsistency may limit his finish.\n\n#### 13. **Emil Blomberg (SWE)** - 8:24.00\nBlomberg has had some solid performances, including a recent 8:28.11 in California. However, he hasn't shown the ability to consistently break 8:20, which will keep him in the lower half of the field.\n\n#### 14. **Wilberforce Chemiat Kones (KEN)** - 8:28.00\nKones has struggled with consistency, as evidenced by multiple DNFs. His best recent time of 8:51.96 suggests he might not be in top form, but he could still finish respectably if he completes the race.\n\n#### 15. **Wesley Langat (KEN)** - 8:30.00\nLangat has had some decent performances, but his recent times and finishes suggest he is not in the same league as the top competitors. His best time this season of 8:26.04 indicates he will likely finish near the back of the pack.\n\nIn summary, Lamecha Girma is the clear favorite given his world record and consistent top performances. Samuel Firewu and George Beamish are strong contenders for the podium, while Getnet Wale and Jean-Simon Desgagnés could surprise if they manage to perform at their best. The rest of the field is filled with capable runners, but inconsistency and recent results suggest they will struggle to break into the top five."
+      "blurb": "### Predicted Finish and Times:\n1. **Lamecha Girma (ETH)** - 8:07.50\n2. **Samuel Firewu (ETH)** - 8:09.25\n3. **George Beamish (NZL)** - 8:10.50\n4. **Getnet Wale (ETH)** - 8:11.00\n5. **Jean-Simon Desgagnés (CAN)** - 8:13.50\n6. **Hillary Bor (USA)** - 8:14.75\n7. **Abrham Sime (ETH)** - 8:16.00\n8. **Mohamed Amin Jhinaoui (TUN)** - 8:17.50\n9. **Simon Sundström (SWE)** - 8:18.00\n10. **Vidar Johansson (SWE)** - 8:19.00\n11. **Lawrence Kemboi Kipsang (KEN)** - 8:22.00\n12. **Mohamed Tindouft (MAR)** - 8:23.00\n13. **Emil Blomberg (SWE)** - 8:24.00\n14. **Wilberforce Chemiat Kones (KEN)** - 8:28.00\n15. **Wesley Langat (KEN)** - 8:30.00\n\n### Race Preview and Reasoning:\n#### 1. **Lamecha Girma (ETH)** - 8:07.50\nGirma is the most accomplished and consistent athlete in the field. He holds the world record for the 3000m steeplechase and has multiple recent victories and top finishes in various distances, showcasing his versatility and form. His recent times in the steeplechase, including an 8:15.89 and 8:05.44, indicate he is in top shape and can handle the pressure of big events.\n\n#### 2. **Samuel Firewu (ETH)** - 8:09.25\nFirewu has shown impressive form, with several sub-8:11 times in recent competitions and a victory in Doha with an 8:07.25. His youth and recent performances suggest he is on an upward trajectory, making him a strong contender for a podium finish.\n\n#### 3. **George Beamish (NZL)** - 8:10.50\nBeamish has been consistent with his steeplechase performances, including a personal best of 8:13.26 and a 5th place finish in the 2023 World Championships. His versatility in distances and recent strong showings in shorter races make him a dark horse for a podium finish.\n\n#### 4. **Getnet Wale (ETH)** - 8:11.00\nWale has a solid track record in the steeplechase but has had a mix of results recently, including a 1st place in Budapest but also several DNFs. His potential is undeniable, but inconsistency may cost him a higher finish.\n\n#### 5. **Jean-Simon Desgagnés (CAN)** - 8:13.50\nDesgagnés has been in good form with recent sub-8:20 performances and a gold medal at the Pan Am Games. His recent times show he is competitive, and he could capitalize on any mistakes from the top runners.\n\n#### 6. **Hillary Bor (USA)** - 8:14.75\nBor's experience and recent 1st place finish in Manchester indicate he still has the capability to perform at a high level. While he hasn't been as fast as some of the younger athletes, his consistency makes him a safe bet for a strong finish.\n\n#### 7. **Abrham Sime (ETH)** - 8:16.00\nSime has had a mixed season with some sub-8:20 performances but also some slower races. His recent 8:10.56 in Monaco shows promise, but inconsistency might keep him from a top-five finish.\n\n#### 8. **Mohamed Amin Jhinaoui (TUN)** - 8:17.50\nJhinaoui has shown flashes of potential with several sub-8:20 performances. His recent 8:13.86 in Marrakech suggests he can compete with the top athletes, but he will need to be at his best to break into the top five.\n\n#### 9. **Simon Sundström (SWE)** - 8:18.00\nSundström has been consistent around the 8:20 mark, with a recent 8:18.09 in Zagreb. He has the potential to run faster, but his recent performances suggest he will be just outside the top eight.\n\n#### 10. **Vidar Johansson (SWE)** - 8:19.00\nJohansson has been solid but not spectacular, with times hovering around the 8:20 mark. His consistency will keep him in the top ten, but he lacks the standout performances to challenge the top athletes.\n\n#### 11. **Lawrence Kemboi Kipsang (KEN)** - 8:22.00\nKipsang has had a challenging season with several DNFs, but when he finishes, he usually performs well. His recent 1st place finishes in Germany and Spain show he has the ability, but his inconsistency is a concern.\n\n#### 12. **Mohamed Tindouft (MAR)** - 8:23.00\nTindouft has had a mixed season with some strong performances and several DNFs. His recent times suggest he can compete, but his inconsistency may limit his finish.\n\n#### 13. **Emil Blomberg (SWE)** - 8:24.00\nBlomberg has had some solid performances, including a recent 8:28.11 in California. However, he hasn't shown the ability to consistently break 8:20, which will keep him in the lower half of the field.\n\n#### 14. **Wilberforce Chemiat Kones (KEN)** - 8:28.00\nKones has struggled with consistency, as evidenced by multiple DNFs. His best recent time of 8:51.96 suggests he might not be in top form, but he could still finish respectably if he completes the race.\n\n#### 15. **Wesley Langat (KEN)** - 8:30.00\nLangat has had some decent performances, but his recent times and finishes suggest he is not in the same league as the top competitors. His best time this season of 8:26.04 indicates he will likely finish near the back of the pack.\n\nIn summary, Lamecha Girma is the clear favorite given his world record and consistent top performances. Samuel Firewu and George Beamish are strong contenders for the podium, while Getnet Wale and Jean-Simon Desgagnés could surprise if they manage to perform at their best. The rest of the field is filled with capable runners, but inconsistency and recent results suggest they will struggle to break into the top five.",
+      "isClosed": true
     },
     "400m Hurdles Women": {
       "date": "2024-06-02T19:32",
@@ -16302,7 +16697,8 @@
           "hasAvy": true
         }
       ],
-      "blurb": "### Predicted Finish and Marks for the Women's 400 Metres Hurdles\n\n1. **Femke Bol (NED)** - **51.75**\n2. **Rushell Clayton (JAM)** - **53.10**\n3. **Janieve Russell (JAM)** - **53.40**\n4. **Andrenette Knight (JAM)** - **53.75**\n5. **Ayomide Folorunso (ITA)** - **54.10**\n6. **Anna Ryzhykova (UKR)** - **54.30**\n7. **Louise Maraval (FRA)** - **54.80**\n8. **Moa Granat (SWE)** - **55.10**\n\n### Reasoning\n\n#### 1. Femke Bol (NED) - 51.75\nFemke Bol has been dominant in the 400 Metres Hurdles and is the clear favorite for the race. Her European record of 51.45 and consistent sub-52 second performances make her an unbeatable force in this event. Bol's versatility in both the 400m hurdles and flat 400m, combined with her recent world indoor record in the 400m short track, solidify her position as the front-runner. Her string of victories, including a 51.98 in Eugene in September 2023, underscores her elite status.\n\n#### 2. Rushell Clayton (JAM) - 53.10\nRushell Clayton, although not as dominant as Bol, has shown she can consistently perform at a high level. Her best time of 52.81 at the 2023 World Championships and a string of solid performances in 2023 and 2024 indicate she is in excellent form. Clayton's experience and ability to run sub-54 seconds make her the most likely candidate for second place.\n\n#### 3. Janieve Russell (JAM) - 53.40\nJanieve Russell has shown flashes of brilliance with a personal best of 53.08 and multiple sub-54 performances. Her recent results, including a 53.60 in Eugene and a 53.80 in Bruxelles, indicate she is in good form but not quite at her peak. Russell's ability to perform under pressure, as evidenced by her Olympic bronze in the 4x400m relay, makes her a strong contender for the podium.\n\n#### 4. Andrenette Knight (JAM) - 53.75\nAndrenette Knight has had a solid season with multiple sub-54 second performances, including a 53.26 in Székesfehérvár and a 53.72 in Budapest. However, her inconsistency, as shown by her 8th place finish in Budapest with a time of 55.20, puts her just outside the top three. Knight's potential to clock times around 53.7-53.9 makes her a strong fourth-place finisher.\n\n#### 5. Ayomide Folorunso (ITA) - 54.10\nAyomide Folorunso has been steadily improving, with her best recent performance being a 53.89 in Budapest. Although she has shown the ability to dip below 54 seconds, her inconsistency in the latter part of 2023 and into 2024, including multiple finishes in the 54-second range, positions her as a solid fifth-place finisher.\n\n#### 6. Anna Ryzhykova (UKR) - 54.30\nAnna Ryzhykova has had a mixed season with some below-par performances (like her 56.97 in Rabat) and some stronger showings (such as her 54.35 in Xiamen). Her experience and past achievements, including a fifth-place finish at the Tokyo Olympics, suggest she can still compete at a high level, but she may not have the speed to challenge for a top-five finish in this field.\n\n#### 7. Louise Maraval (FRA) - 54.80\nLouise Maraval has shown promise with several sub-56 performances in 2023, including a 54.44 in Marseille and a 55.91 in Bruxelles. While she has been successful on the national level, her performances suggest she is not yet at the level of the more experienced and faster competitors. Maraval's youth and potential will see her improve, but for today, a seventh-place finish seems likely.\n\n#### 8. Moa Granat (SWE) - 55.10\nMoa Granat is the youngest in the field and has shown impressive development, winning gold in the U20 European Championships. However, her best times are still in the 56-second range, and she will likely struggle to keep pace with the more experienced and faster athletes in this field. Granat's future is bright, but today, she is projected to finish eighth.\n\n### Conclusion\n\nFemke Bol is the clear favorite with her exceptional form and record-breaking performances, likely to finish well ahead of the rest. The battle for the next spots is tight, but Rushell Clayton and Janieve Russell have shown enough consistency and speed to secure podium finishes. Andrenette Knight and Ayomide Folorunso will push hard but are just a step behind. Anna Ryzhykova's experience helps her but not enough to break into the top five. Louise Maraval and Moa Granat, while promising, have not yet reached the level of their more established competitors."
+      "blurb": "### Predicted Finish and Marks for the Women's 400 Metres Hurdles\n\n1. **Femke Bol (NED)** - **51.75**\n2. **Rushell Clayton (JAM)** - **53.10**\n3. **Janieve Russell (JAM)** - **53.40**\n4. **Andrenette Knight (JAM)** - **53.75**\n5. **Ayomide Folorunso (ITA)** - **54.10**\n6. **Anna Ryzhykova (UKR)** - **54.30**\n7. **Louise Maraval (FRA)** - **54.80**\n8. **Moa Granat (SWE)** - **55.10**\n\n### Reasoning\n\n#### 1. Femke Bol (NED) - 51.75\nFemke Bol has been dominant in the 400 Metres Hurdles and is the clear favorite for the race. Her European record of 51.45 and consistent sub-52 second performances make her an unbeatable force in this event. Bol's versatility in both the 400m hurdles and flat 400m, combined with her recent world indoor record in the 400m short track, solidify her position as the front-runner. Her string of victories, including a 51.98 in Eugene in September 2023, underscores her elite status.\n\n#### 2. Rushell Clayton (JAM) - 53.10\nRushell Clayton, although not as dominant as Bol, has shown she can consistently perform at a high level. Her best time of 52.81 at the 2023 World Championships and a string of solid performances in 2023 and 2024 indicate she is in excellent form. Clayton's experience and ability to run sub-54 seconds make her the most likely candidate for second place.\n\n#### 3. Janieve Russell (JAM) - 53.40\nJanieve Russell has shown flashes of brilliance with a personal best of 53.08 and multiple sub-54 performances. Her recent results, including a 53.60 in Eugene and a 53.80 in Bruxelles, indicate she is in good form but not quite at her peak. Russell's ability to perform under pressure, as evidenced by her Olympic bronze in the 4x400m relay, makes her a strong contender for the podium.\n\n#### 4. Andrenette Knight (JAM) - 53.75\nAndrenette Knight has had a solid season with multiple sub-54 second performances, including a 53.26 in Székesfehérvár and a 53.72 in Budapest. However, her inconsistency, as shown by her 8th place finish in Budapest with a time of 55.20, puts her just outside the top three. Knight's potential to clock times around 53.7-53.9 makes her a strong fourth-place finisher.\n\n#### 5. Ayomide Folorunso (ITA) - 54.10\nAyomide Folorunso has been steadily improving, with her best recent performance being a 53.89 in Budapest. Although she has shown the ability to dip below 54 seconds, her inconsistency in the latter part of 2023 and into 2024, including multiple finishes in the 54-second range, positions her as a solid fifth-place finisher.\n\n#### 6. Anna Ryzhykova (UKR) - 54.30\nAnna Ryzhykova has had a mixed season with some below-par performances (like her 56.97 in Rabat) and some stronger showings (such as her 54.35 in Xiamen). Her experience and past achievements, including a fifth-place finish at the Tokyo Olympics, suggest she can still compete at a high level, but she may not have the speed to challenge for a top-five finish in this field.\n\n#### 7. Louise Maraval (FRA) - 54.80\nLouise Maraval has shown promise with several sub-56 performances in 2023, including a 54.44 in Marseille and a 55.91 in Bruxelles. While she has been successful on the national level, her performances suggest she is not yet at the level of the more experienced and faster competitors. Maraval's youth and potential will see her improve, but for today, a seventh-place finish seems likely.\n\n#### 8. Moa Granat (SWE) - 55.10\nMoa Granat is the youngest in the field and has shown impressive development, winning gold in the U20 European Championships. However, her best times are still in the 56-second range, and she will likely struggle to keep pace with the more experienced and faster athletes in this field. Granat's future is bright, but today, she is projected to finish eighth.\n\n### Conclusion\n\nFemke Bol is the clear favorite with her exceptional form and record-breaking performances, likely to finish well ahead of the rest. The battle for the next spots is tight, but Rushell Clayton and Janieve Russell have shown enough consistency and speed to secure podium finishes. Andrenette Knight and Ayomide Folorunso will push hard but are just a step behind. Anna Ryzhykova's experience helps her but not enough to break into the top five. Louise Maraval and Moa Granat, while promising, have not yet reached the level of their more established competitors.",
+      "isClosed": true
     },
     "200m Women": {
       "date": "2024-06-02T19:42",
@@ -16382,7 +16778,8 @@
           "hasAvy": true
         }
       ],
-      "blurb": "**Predicted Finish and Marks:**\n\n1. **Shericka Jackson (JAM)** - 21.65\n2. **Brittany Brown (USA)** - 22.10\n3. **Jenna Prandini (USA)** - 22.50\n4. **Anavia Battle (USA)** - 22.55\n5. **Maboundou Koné (CIV)** - 22.60\n6. **Tasa Jiya (NED)** - 22.80\n7. **Julia Henriksson (SWE)** - 22.95\n8. **Amy Hunt (GBR)** - 23.00\n\n**Reasoning:**\n\n1. **Shericka Jackson (JAM)** - 21.65\n   - Shericka Jackson's recent performances make her the clear favorite. She has consistently clocked times under 22 seconds, with a standout 21.41 in August 2023 and a 21.57 in September 2023. Her versatility across all sprint distances and her ability to peak at major events demonstrate her dominance. Her Wikipedia bio emphasizes her status as the second fastest woman in history in the 200m, reinforcing her capability to maintain top form.\n\n2. **Brittany Brown (USA)** - 22.10\n   - Brittany Brown has shown she can compete at a high level with her silver medal at the 2019 World Championships and a solid 22.05 in July 2023. Her consistent sub-11 performances in the 100m this year further highlight her speed and form, making her a strong contender for second place.\n\n3. **Jenna Prandini (USA)** - 22.50\n   - Jenna Prandini has a history of strong performances in the 200m, including a 22.34 in May 2023 and several sub-22.60 times. Although she has had some inconsistencies, her extensive experience and recent form in relay events indicate she can perform well individually.\n\n4. **Anavia Battle (USA)** - 22.55\n   - Anavia Battle has shown potential with several sub-23 second performances, including a 22.47 in June 2023. Her recent 22.56 in April 2024 shows she is maintaining good form, positioning her well for a strong finish.\n\n5. **Maboundou Koné (CIV)** - 22.60\n   - Maboundou Koné has had a strong season with multiple wins and a 22.53 in August 2023. Despite some inconsistencies, her ability to clock times close to 22.50 makes her a strong contender for a top-five finish.\n\n6. **Tasa Jiya (NED)** - 22.80\n   - Tasa Jiya's 22.67 in August 2023 and consistent sub-23 times throughout the season highlight her potential. However, her performances have fluctuated, and she may struggle to compete with the top-tier athletes today.\n\n7. **Julia Henriksson (SWE)** - 22.95\n   - Julia Henriksson has had a solid season with several wins and strong performances in national competitions. Her 23.03 in February 2024 indoors and 23.12 in May 2024 outdoors suggest she can perform well, though she might not match the fastest times in this competitive field.\n\n8. **Amy Hunt (GBR)** - 23.00\n   - Amy Hunt, while showing promise with her 22.42 U18 world record, has not matched those times recently. Her best in 2024 is a 22.99, indicating she may not be in peak form to challenge the frontrunners in this race."
+      "blurb": "**Predicted Finish and Marks:**\n\n1. **Shericka Jackson (JAM)** - 21.65\n2. **Brittany Brown (USA)** - 22.10\n3. **Jenna Prandini (USA)** - 22.50\n4. **Anavia Battle (USA)** - 22.55\n5. **Maboundou Koné (CIV)** - 22.60\n6. **Tasa Jiya (NED)** - 22.80\n7. **Julia Henriksson (SWE)** - 22.95\n8. **Amy Hunt (GBR)** - 23.00\n\n**Reasoning:**\n\n1. **Shericka Jackson (JAM)** - 21.65\n   - Shericka Jackson's recent performances make her the clear favorite. She has consistently clocked times under 22 seconds, with a standout 21.41 in August 2023 and a 21.57 in September 2023. Her versatility across all sprint distances and her ability to peak at major events demonstrate her dominance. Her Wikipedia bio emphasizes her status as the second fastest woman in history in the 200m, reinforcing her capability to maintain top form.\n\n2. **Brittany Brown (USA)** - 22.10\n   - Brittany Brown has shown she can compete at a high level with her silver medal at the 2019 World Championships and a solid 22.05 in July 2023. Her consistent sub-11 performances in the 100m this year further highlight her speed and form, making her a strong contender for second place.\n\n3. **Jenna Prandini (USA)** - 22.50\n   - Jenna Prandini has a history of strong performances in the 200m, including a 22.34 in May 2023 and several sub-22.60 times. Although she has had some inconsistencies, her extensive experience and recent form in relay events indicate she can perform well individually.\n\n4. **Anavia Battle (USA)** - 22.55\n   - Anavia Battle has shown potential with several sub-23 second performances, including a 22.47 in June 2023. Her recent 22.56 in April 2024 shows she is maintaining good form, positioning her well for a strong finish.\n\n5. **Maboundou Koné (CIV)** - 22.60\n   - Maboundou Koné has had a strong season with multiple wins and a 22.53 in August 2023. Despite some inconsistencies, her ability to clock times close to 22.50 makes her a strong contender for a top-five finish.\n\n6. **Tasa Jiya (NED)** - 22.80\n   - Tasa Jiya's 22.67 in August 2023 and consistent sub-23 times throughout the season highlight her potential. However, her performances have fluctuated, and she may struggle to compete with the top-tier athletes today.\n\n7. **Julia Henriksson (SWE)** - 22.95\n   - Julia Henriksson has had a solid season with several wins and strong performances in national competitions. Her 23.03 in February 2024 indoors and 23.12 in May 2024 outdoors suggest she can perform well, though she might not match the fastest times in this competitive field.\n\n8. **Amy Hunt (GBR)** - 23.00\n   - Amy Hunt, while showing promise with her 22.42 U18 world record, has not matched those times recently. Her best in 2024 is a 22.99, indicating she may not be in peak form to challenge the frontrunners in this race.",
+      "isClosed": true
     },
     "800m Men": {
       "date": "2024-06-02T19:52",
@@ -16480,7 +16877,8 @@
           "hasAvy": true
         }
       ],
-      "blurb": "### Predicted Finish and Times:\n1. **Djamel Sedjati (ALG) - 1:43.25**\n2. **Bryce Hoppel (USA) - 1:43.60**\n3. **Slimane Moula (ALG) - 1:43.75**\n4. **Yanis Meziane (FRA) - 1:44.00**\n5. **Tshepiso Masalela (BOT) - 1:44.15**\n6. **Benjamin Robert (FRA) - 1:44.45**\n7. **Ben Pattison (GBR) - 1:44.75**\n8. **Andreas Kramer (SWE) - 1:45.10**\n9. **Jake Wightman (GBR) - 1:45.50**\n10. **Patryk Sieradzki (POL) - 1:46.00**\n\n### Reasoning:\n\n1. **Djamel Sedjati (ALG) - 1:43.25**\n   - Sedjati has shown consistent top-tier performances in multiple high-profile meets. His recent 1:43.06 at Hayward Field and a 1:43.60 in Brussels highlight his ability to perform under pressure. Given his recent form and ability to peak at the right time, he is favored to take the win.\n\n2. **Bryce Hoppel (USA) - 1:43.60**\n   - Hoppel's recent 1:43.68 at Drake Stadium and his impressive indoor season, including a world indoor title, make him a strong contender. His consistency and experience at championship-level events will likely place him in the top two.\n\n3. **Slimane Moula (ALG) - 1:43.75**\n   - Moula has delivered some strong performances, including a 1:43.38 in Paris and a 1:43.93 in Budapest. His ability to regularly finish near the top in competitive fields suggests he will be in the mix for a podium finish.\n\n4. **Yanis Meziane (FRA) - 1:44.00**\n   - Meziane has demonstrated significant potential with a 1:43.94 in Brussels and another 1:43.94 in Eugene. His upward trajectory and recent performances position him well to challenge for a top-four finish.\n\n5. **Tshepiso Masalela (BOT) - 1:44.15**\n   - Masalela's recent form, including a 1:43.88 in Xiamen and consistent sub-1:45 performances, indicate he is peaking at the right time. His ability to compete against top-tier athletes bodes well for a strong finish.\n\n6. **Benjamin Robert (FRA) - 1:44.45**\n   - Robert has had a mix of solid and inconsistent performances. His 1:43.48 in Paris and 1:43.88 in Xiamen show his potential, but his inconsistency and recent lower finishes suggest he may find it challenging to break into the top five.\n\n7. **Ben Pattison (GBR) - 1:44.75**\n   - Pattison's 1:44.02 in London and other consistent performances make him a reliable contender. However, he has struggled to break into the very top tier in the most competitive races, placing him just outside the top six in this field.\n\n8. **Andreas Kramer (SWE) - 1:45.10**\n   - Kramer has shown some strong performances, including a 1:44.95 in Turku and a 1:45.16 in Malmö. However, his recent form has been less impressive, and his tendency to have off-days places him lower in this highly competitive field.\n\n9. **Jake Wightman (GBR) - 1:45.50**\n   - Wightman, primarily a 1500m runner, has shown good form in the 800m with a recent 1:44.10. However, his focus on the 1500m and mixed results in the 800m suggest he may not be as competitive against the specialists in this race.\n\n10. **Patryk Sieradzki (POL) - 1:46.00**\n   - Sieradzki has had a history of inconsistent performances, with multiple DNFs and lower finishes in competitive fields. While he has shown flashes of potential, his inconsistency and lack of top-tier results place him at the bottom of this prediction.\n\n### Conclusion:\nDjamel Sedjati is predicted to take the win based on his recent performances and ability to compete at the highest level consistently. Bryce Hoppel and Slimane Moula are expected to push him closely, with Hoppel's championship experience giving him the edge for second. Yanis Meziane and Tshepiso Masalela, both showing strong recent form, round out the top five. The remaining athletes, while talented, have shown either inconsistency or a slight dip in form, placing them lower in this highly competitive race."
+      "blurb": "### Predicted Finish and Times:\n1. **Djamel Sedjati (ALG) - 1:43.25**\n2. **Bryce Hoppel (USA) - 1:43.60**\n3. **Slimane Moula (ALG) - 1:43.75**\n4. **Yanis Meziane (FRA) - 1:44.00**\n5. **Tshepiso Masalela (BOT) - 1:44.15**\n6. **Benjamin Robert (FRA) - 1:44.45**\n7. **Ben Pattison (GBR) - 1:44.75**\n8. **Andreas Kramer (SWE) - 1:45.10**\n9. **Jake Wightman (GBR) - 1:45.50**\n10. **Patryk Sieradzki (POL) - 1:46.00**\n\n### Reasoning:\n\n1. **Djamel Sedjati (ALG) - 1:43.25**\n   - Sedjati has shown consistent top-tier performances in multiple high-profile meets. His recent 1:43.06 at Hayward Field and a 1:43.60 in Brussels highlight his ability to perform under pressure. Given his recent form and ability to peak at the right time, he is favored to take the win.\n\n2. **Bryce Hoppel (USA) - 1:43.60**\n   - Hoppel's recent 1:43.68 at Drake Stadium and his impressive indoor season, including a world indoor title, make him a strong contender. His consistency and experience at championship-level events will likely place him in the top two.\n\n3. **Slimane Moula (ALG) - 1:43.75**\n   - Moula has delivered some strong performances, including a 1:43.38 in Paris and a 1:43.93 in Budapest. His ability to regularly finish near the top in competitive fields suggests he will be in the mix for a podium finish.\n\n4. **Yanis Meziane (FRA) - 1:44.00**\n   - Meziane has demonstrated significant potential with a 1:43.94 in Brussels and another 1:43.94 in Eugene. His upward trajectory and recent performances position him well to challenge for a top-four finish.\n\n5. **Tshepiso Masalela (BOT) - 1:44.15**\n   - Masalela's recent form, including a 1:43.88 in Xiamen and consistent sub-1:45 performances, indicate he is peaking at the right time. His ability to compete against top-tier athletes bodes well for a strong finish.\n\n6. **Benjamin Robert (FRA) - 1:44.45**\n   - Robert has had a mix of solid and inconsistent performances. His 1:43.48 in Paris and 1:43.88 in Xiamen show his potential, but his inconsistency and recent lower finishes suggest he may find it challenging to break into the top five.\n\n7. **Ben Pattison (GBR) - 1:44.75**\n   - Pattison's 1:44.02 in London and other consistent performances make him a reliable contender. However, he has struggled to break into the very top tier in the most competitive races, placing him just outside the top six in this field.\n\n8. **Andreas Kramer (SWE) - 1:45.10**\n   - Kramer has shown some strong performances, including a 1:44.95 in Turku and a 1:45.16 in Malmö. However, his recent form has been less impressive, and his tendency to have off-days places him lower in this highly competitive field.\n\n9. **Jake Wightman (GBR) - 1:45.50**\n   - Wightman, primarily a 1500m runner, has shown good form in the 800m with a recent 1:44.10. However, his focus on the 1500m and mixed results in the 800m suggest he may not be as competitive against the specialists in this race.\n\n10. **Patryk Sieradzki (POL) - 1:46.00**\n   - Sieradzki has had a history of inconsistent performances, with multiple DNFs and lower finishes in competitive fields. While he has shown flashes of potential, his inconsistency and lack of top-tier results place him at the bottom of this prediction.\n\n### Conclusion:\nDjamel Sedjati is predicted to take the win based on his recent performances and ability to compete at the highest level consistently. Bryce Hoppel and Slimane Moula are expected to push him closely, with Hoppel's championship experience giving him the edge for second. Yanis Meziane and Tshepiso Masalela, both showing strong recent form, round out the top five. The remaining athletes, while talented, have shown either inconsistency or a slight dip in form, placing them lower in this highly competitive race.",
+      "isClosed": true
     }
   }
 }
