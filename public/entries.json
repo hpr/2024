@@ -17213,7 +17213,112 @@
         }
       ],
       "blurb": "### Predicted Finish and Marks for the Women's 400 Metres Hurdles\n\n1. **Femke Bol (NED)** - **51.75**\n2. **Rushell Clayton (JAM)** - **53.10**\n3. **Janieve Russell (JAM)** - **53.40**\n4. **Andrenette Knight (JAM)** - **53.75**\n5. **Ayomide Folorunso (ITA)** - **54.10**\n6. **Anna Ryzhykova (UKR)** - **54.30**\n7. **Louise Maraval (FRA)** - **54.80**\n8. **Moa Granat (SWE)** - **55.10**\n\n### Reasoning\n\n#### 1. Femke Bol (NED) - 51.75\nFemke Bol has been dominant in the 400 Metres Hurdles and is the clear favorite for the race. Her European record of 51.45 and consistent sub-52 second performances make her an unbeatable force in this event. Bol's versatility in both the 400m hurdles and flat 400m, combined with her recent world indoor record in the 400m short track, solidify her position as the front-runner. Her string of victories, including a 51.98 in Eugene in September 2023, underscores her elite status.\n\n#### 2. Rushell Clayton (JAM) - 53.10\nRushell Clayton, although not as dominant as Bol, has shown she can consistently perform at a high level. Her best time of 52.81 at the 2023 World Championships and a string of solid performances in 2023 and 2024 indicate she is in excellent form. Clayton's experience and ability to run sub-54 seconds make her the most likely candidate for second place.\n\n#### 3. Janieve Russell (JAM) - 53.40\nJanieve Russell has shown flashes of brilliance with a personal best of 53.08 and multiple sub-54 performances. Her recent results, including a 53.60 in Eugene and a 53.80 in Bruxelles, indicate she is in good form but not quite at her peak. Russell's ability to perform under pressure, as evidenced by her Olympic bronze in the 4x400m relay, makes her a strong contender for the podium.\n\n#### 4. Andrenette Knight (JAM) - 53.75\nAndrenette Knight has had a solid season with multiple sub-54 second performances, including a 53.26 in Székesfehérvár and a 53.72 in Budapest. However, her inconsistency, as shown by her 8th place finish in Budapest with a time of 55.20, puts her just outside the top three. Knight's potential to clock times around 53.7-53.9 makes her a strong fourth-place finisher.\n\n#### 5. Ayomide Folorunso (ITA) - 54.10\nAyomide Folorunso has been steadily improving, with her best recent performance being a 53.89 in Budapest. Although she has shown the ability to dip below 54 seconds, her inconsistency in the latter part of 2023 and into 2024, including multiple finishes in the 54-second range, positions her as a solid fifth-place finisher.\n\n#### 6. Anna Ryzhykova (UKR) - 54.30\nAnna Ryzhykova has had a mixed season with some below-par performances (like her 56.97 in Rabat) and some stronger showings (such as her 54.35 in Xiamen). Her experience and past achievements, including a fifth-place finish at the Tokyo Olympics, suggest she can still compete at a high level, but she may not have the speed to challenge for a top-five finish in this field.\n\n#### 7. Louise Maraval (FRA) - 54.80\nLouise Maraval has shown promise with several sub-56 performances in 2023, including a 54.44 in Marseille and a 55.91 in Bruxelles. While she has been successful on the national level, her performances suggest she is not yet at the level of the more experienced and faster competitors. Maraval's youth and potential will see her improve, but for today, a seventh-place finish seems likely.\n\n#### 8. Moa Granat (SWE) - 55.10\nMoa Granat is the youngest in the field and has shown impressive development, winning gold in the U20 European Championships. However, her best times are still in the 56-second range, and she will likely struggle to keep pace with the more experienced and faster athletes in this field. Granat's future is bright, but today, she is projected to finish eighth.\n\n### Conclusion\n\nFemke Bol is the clear favorite with her exceptional form and record-breaking performances, likely to finish well ahead of the rest. The battle for the next spots is tight, but Rushell Clayton and Janieve Russell have shown enough consistency and speed to secure podium finishes. Andrenette Knight and Ayomide Folorunso will push hard but are just a step behind. Anna Ryzhykova's experience helps her but not enough to break into the top five. Louise Maraval and Moa Granat, while promising, have not yet reached the level of their more established competitors.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "53.07",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Femke",
+            "lastName": "Bol",
+            "id": "14707010",
+            "pb": "51.45",
+            "sb": null,
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.78",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rushell",
+            "lastName": "Clayton",
+            "id": "14425208",
+            "pb": "52.81",
+            "sb": "53.72",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.62",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andrenette",
+            "lastName": "Knight",
+            "id": "14512625",
+            "pb": "53.26",
+            "sb": "54.69",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.99",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Janieve",
+            "lastName": "Russell",
+            "id": "14334022",
+            "pb": "53.08",
+            "sb": "55.74",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.64",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Ryzhykova",
+            "id": "14304336",
+            "pb": "52.96",
+            "sb": "55.09",
+            "nat": "UKR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "55.99",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ayomide",
+            "lastName": "Folorunso",
+            "id": "14484475",
+            "pb": "53.89",
+            "sb": null,
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "56.03",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "56.65",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Moa",
+            "lastName": "Granat",
+            "id": "14849869",
+            "pb": "56.30",
+            "sb": "56.30",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Women": {
       "date": "2024-06-02T19:42",
@@ -17294,7 +17399,120 @@
         }
       ],
       "blurb": "**Predicted Finish and Marks:**\n\n1. **Shericka Jackson (JAM)** - 21.65\n2. **Brittany Brown (USA)** - 22.10\n3. **Jenna Prandini (USA)** - 22.50\n4. **Anavia Battle (USA)** - 22.55\n5. **Maboundou Koné (CIV)** - 22.60\n6. **Tasa Jiya (NED)** - 22.80\n7. **Julia Henriksson (SWE)** - 22.95\n8. **Amy Hunt (GBR)** - 23.00\n\n**Reasoning:**\n\n1. **Shericka Jackson (JAM)** - 21.65\n   - Shericka Jackson's recent performances make her the clear favorite. She has consistently clocked times under 22 seconds, with a standout 21.41 in August 2023 and a 21.57 in September 2023. Her versatility across all sprint distances and her ability to peak at major events demonstrate her dominance. Her Wikipedia bio emphasizes her status as the second fastest woman in history in the 200m, reinforcing her capability to maintain top form.\n\n2. **Brittany Brown (USA)** - 22.10\n   - Brittany Brown has shown she can compete at a high level with her silver medal at the 2019 World Championships and a solid 22.05 in July 2023. Her consistent sub-11 performances in the 100m this year further highlight her speed and form, making her a strong contender for second place.\n\n3. **Jenna Prandini (USA)** - 22.50\n   - Jenna Prandini has a history of strong performances in the 200m, including a 22.34 in May 2023 and several sub-22.60 times. Although she has had some inconsistencies, her extensive experience and recent form in relay events indicate she can perform well individually.\n\n4. **Anavia Battle (USA)** - 22.55\n   - Anavia Battle has shown potential with several sub-23 second performances, including a 22.47 in June 2023. Her recent 22.56 in April 2024 shows she is maintaining good form, positioning her well for a strong finish.\n\n5. **Maboundou Koné (CIV)** - 22.60\n   - Maboundou Koné has had a strong season with multiple wins and a 22.53 in August 2023. Despite some inconsistencies, her ability to clock times close to 22.50 makes her a strong contender for a top-five finish.\n\n6. **Tasa Jiya (NED)** - 22.80\n   - Tasa Jiya's 22.67 in August 2023 and consistent sub-23 times throughout the season highlight her potential. However, her performances have fluctuated, and she may struggle to compete with the top-tier athletes today.\n\n7. **Julia Henriksson (SWE)** - 22.95\n   - Julia Henriksson has had a solid season with several wins and strong performances in national competitions. Her 23.03 in February 2024 indoors and 23.12 in May 2024 outdoors suggest she can perform well, though she might not match the fastest times in this competitive field.\n\n8. **Amy Hunt (GBR)** - 23.00\n   - Amy Hunt, while showing promise with her 22.42 U18 world record, has not matched those times recently. Her best in 2024 is a 22.99, indicating she may not be in peak form to challenge the frontrunners in this race.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "22.69",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shericka",
+            "lastName": "Jackson",
+            "id": "14325599",
+            "pb": "21.41",
+            "sb": "22.82",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.89",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Julia",
+            "lastName": "Henriksson",
+            "id": "14654845",
+            "pb": "23.12",
+            "sb": "23.12",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.92",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Amy",
+            "lastName": "Hunt",
+            "id": "14685108",
+            "pb": "22.42",
+            "sb": "22.85",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.98",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anavia",
+            "lastName": "Battle",
+            "id": "14715397",
+            "pb": "21.95",
+            "sb": "22.56",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.04",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Maboundou",
+            "lastName": "Koné",
+            "id": "14636900",
+            "pb": "22.53",
+            "sb": "22.88",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.25",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tasa",
+            "lastName": "Jiya",
+            "id": "14560472",
+            "pb": "22.67",
+            "sb": "23.20",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.31",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jenna",
+            "lastName": "Prandini",
+            "id": "14329068",
+            "pb": "21.89",
+            "sb": "22.61",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNS",
+          "entrant": {
+            "firstName": "Brittany",
+            "lastName": "Brown",
+            "id": "14437218",
+            "pb": "21.99",
+            "sb": "22.35",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Men": {
       "date": "2024-06-02T19:52",
@@ -17393,7 +17611,139 @@
         }
       ],
       "blurb": "### Predicted Finish and Times:\n1. **Djamel Sedjati (ALG) - 1:43.25**\n2. **Bryce Hoppel (USA) - 1:43.60**\n3. **Slimane Moula (ALG) - 1:43.75**\n4. **Yanis Meziane (FRA) - 1:44.00**\n5. **Tshepiso Masalela (BOT) - 1:44.15**\n6. **Benjamin Robert (FRA) - 1:44.45**\n7. **Ben Pattison (GBR) - 1:44.75**\n8. **Andreas Kramer (SWE) - 1:45.10**\n9. **Jake Wightman (GBR) - 1:45.50**\n10. **Patryk Sieradzki (POL) - 1:46.00**\n\n### Reasoning:\n\n1. **Djamel Sedjati (ALG) - 1:43.25**\n   - Sedjati has shown consistent top-tier performances in multiple high-profile meets. His recent 1:43.06 at Hayward Field and a 1:43.60 in Brussels highlight his ability to perform under pressure. Given his recent form and ability to peak at the right time, he is favored to take the win.\n\n2. **Bryce Hoppel (USA) - 1:43.60**\n   - Hoppel's recent 1:43.68 at Drake Stadium and his impressive indoor season, including a world indoor title, make him a strong contender. His consistency and experience at championship-level events will likely place him in the top two.\n\n3. **Slimane Moula (ALG) - 1:43.75**\n   - Moula has delivered some strong performances, including a 1:43.38 in Paris and a 1:43.93 in Budapest. His ability to regularly finish near the top in competitive fields suggests he will be in the mix for a podium finish.\n\n4. **Yanis Meziane (FRA) - 1:44.00**\n   - Meziane has demonstrated significant potential with a 1:43.94 in Brussels and another 1:43.94 in Eugene. His upward trajectory and recent performances position him well to challenge for a top-four finish.\n\n5. **Tshepiso Masalela (BOT) - 1:44.15**\n   - Masalela's recent form, including a 1:43.88 in Xiamen and consistent sub-1:45 performances, indicate he is peaking at the right time. His ability to compete against top-tier athletes bodes well for a strong finish.\n\n6. **Benjamin Robert (FRA) - 1:44.45**\n   - Robert has had a mix of solid and inconsistent performances. His 1:43.48 in Paris and 1:43.88 in Xiamen show his potential, but his inconsistency and recent lower finishes suggest he may find it challenging to break into the top five.\n\n7. **Ben Pattison (GBR) - 1:44.75**\n   - Pattison's 1:44.02 in London and other consistent performances make him a reliable contender. However, he has struggled to break into the very top tier in the most competitive races, placing him just outside the top six in this field.\n\n8. **Andreas Kramer (SWE) - 1:45.10**\n   - Kramer has shown some strong performances, including a 1:44.95 in Turku and a 1:45.16 in Malmö. However, his recent form has been less impressive, and his tendency to have off-days places him lower in this highly competitive field.\n\n9. **Jake Wightman (GBR) - 1:45.50**\n   - Wightman, primarily a 1500m runner, has shown good form in the 800m with a recent 1:44.10. However, his focus on the 1500m and mixed results in the 800m suggest he may not be as competitive against the specialists in this race.\n\n10. **Patryk Sieradzki (POL) - 1:46.00**\n   - Sieradzki has had a history of inconsistent performances, with multiple DNFs and lower finishes in competitive fields. While he has shown flashes of potential, his inconsistency and lack of top-tier results place him at the bottom of this prediction.\n\n### Conclusion:\nDjamel Sedjati is predicted to take the win based on his recent performances and ability to compete at the highest level consistently. Bryce Hoppel and Slimane Moula are expected to push him closely, with Hoppel's championship experience giving him the edge for second. Yanis Meziane and Tshepiso Masalela, both showing strong recent form, round out the top five. The remaining athletes, while talented, have shown either inconsistency or a slight dip in form, placing them lower in this highly competitive race.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:43.23",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Djamel",
+            "lastName": "Sedjati",
+            "id": "14976579",
+            "pb": "1:43.06",
+            "sb": null,
+            "nat": "ALG",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.29",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bryce",
+            "lastName": "Hoppel",
+            "id": "14656699",
+            "pb": "1:43.23",
+            "sb": "1:43.68",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.44",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tshepiso",
+            "lastName": "Masalela",
+            "id": "14754326",
+            "pb": "1:43.88",
+            "sb": "1:43.88",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.44",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ben",
+            "lastName": "Pattison",
+            "id": "14706169",
+            "pb": "1:44.02",
+            "sb": "1:44.75",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.73",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Benjamin",
+            "lastName": "Robert",
+            "id": "14683828",
+            "pb": "1:43.48",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.10",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "1:45.27",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Kramer",
+            "id": "14538207",
+            "pb": "1:44.47",
+            "sb": "1:44.81",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:45.35",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jake",
+            "lastName": "Wightman",
+            "id": "14522654",
+            "pb": "1:43.65",
+            "sb": "1:44.10",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:48.02",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Slimane",
+            "lastName": "Moula",
+            "id": "14747495",
+            "pb": "1:43.38",
+            "sb": "1:44.55",
+            "nat": "ALG",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Patryk",
+            "lastName": "Sieradzki",
+            "id": "14647295",
+            "pb": "1:45.13",
+            "sb": "1:46.83",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        }
+      ]
     }
   }
 }
