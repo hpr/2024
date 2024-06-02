@@ -16927,7 +16927,203 @@
         }
       ],
       "blurb": "### Predicted Finish and Times:\n1. **Lamecha Girma (ETH)** - 8:07.50\n2. **Samuel Firewu (ETH)** - 8:09.25\n3. **George Beamish (NZL)** - 8:10.50\n4. **Getnet Wale (ETH)** - 8:11.00\n5. **Jean-Simon Desgagnés (CAN)** - 8:13.50\n6. **Hillary Bor (USA)** - 8:14.75\n7. **Abrham Sime (ETH)** - 8:16.00\n8. **Mohamed Amin Jhinaoui (TUN)** - 8:17.50\n9. **Simon Sundström (SWE)** - 8:18.00\n10. **Vidar Johansson (SWE)** - 8:19.00\n11. **Lawrence Kemboi Kipsang (KEN)** - 8:22.00\n12. **Mohamed Tindouft (MAR)** - 8:23.00\n13. **Emil Blomberg (SWE)** - 8:24.00\n14. **Wilberforce Chemiat Kones (KEN)** - 8:28.00\n15. **Wesley Langat (KEN)** - 8:30.00\n\n### Race Preview and Reasoning:\n#### 1. **Lamecha Girma (ETH)** - 8:07.50\nGirma is the most accomplished and consistent athlete in the field. He holds the world record for the 3000m steeplechase and has multiple recent victories and top finishes in various distances, showcasing his versatility and form. His recent times in the steeplechase, including an 8:15.89 and 8:05.44, indicate he is in top shape and can handle the pressure of big events.\n\n#### 2. **Samuel Firewu (ETH)** - 8:09.25\nFirewu has shown impressive form, with several sub-8:11 times in recent competitions and a victory in Doha with an 8:07.25. His youth and recent performances suggest he is on an upward trajectory, making him a strong contender for a podium finish.\n\n#### 3. **George Beamish (NZL)** - 8:10.50\nBeamish has been consistent with his steeplechase performances, including a personal best of 8:13.26 and a 5th place finish in the 2023 World Championships. His versatility in distances and recent strong showings in shorter races make him a dark horse for a podium finish.\n\n#### 4. **Getnet Wale (ETH)** - 8:11.00\nWale has a solid track record in the steeplechase but has had a mix of results recently, including a 1st place in Budapest but also several DNFs. His potential is undeniable, but inconsistency may cost him a higher finish.\n\n#### 5. **Jean-Simon Desgagnés (CAN)** - 8:13.50\nDesgagnés has been in good form with recent sub-8:20 performances and a gold medal at the Pan Am Games. His recent times show he is competitive, and he could capitalize on any mistakes from the top runners.\n\n#### 6. **Hillary Bor (USA)** - 8:14.75\nBor's experience and recent 1st place finish in Manchester indicate he still has the capability to perform at a high level. While he hasn't been as fast as some of the younger athletes, his consistency makes him a safe bet for a strong finish.\n\n#### 7. **Abrham Sime (ETH)** - 8:16.00\nSime has had a mixed season with some sub-8:20 performances but also some slower races. His recent 8:10.56 in Monaco shows promise, but inconsistency might keep him from a top-five finish.\n\n#### 8. **Mohamed Amin Jhinaoui (TUN)** - 8:17.50\nJhinaoui has shown flashes of potential with several sub-8:20 performances. His recent 8:13.86 in Marrakech suggests he can compete with the top athletes, but he will need to be at his best to break into the top five.\n\n#### 9. **Simon Sundström (SWE)** - 8:18.00\nSundström has been consistent around the 8:20 mark, with a recent 8:18.09 in Zagreb. He has the potential to run faster, but his recent performances suggest he will be just outside the top eight.\n\n#### 10. **Vidar Johansson (SWE)** - 8:19.00\nJohansson has been solid but not spectacular, with times hovering around the 8:20 mark. His consistency will keep him in the top ten, but he lacks the standout performances to challenge the top athletes.\n\n#### 11. **Lawrence Kemboi Kipsang (KEN)** - 8:22.00\nKipsang has had a challenging season with several DNFs, but when he finishes, he usually performs well. His recent 1st place finishes in Germany and Spain show he has the ability, but his inconsistency is a concern.\n\n#### 12. **Mohamed Tindouft (MAR)** - 8:23.00\nTindouft has had a mixed season with some strong performances and several DNFs. His recent times suggest he can compete, but his inconsistency may limit his finish.\n\n#### 13. **Emil Blomberg (SWE)** - 8:24.00\nBlomberg has had some solid performances, including a recent 8:28.11 in California. However, he hasn't shown the ability to consistently break 8:20, which will keep him in the lower half of the field.\n\n#### 14. **Wilberforce Chemiat Kones (KEN)** - 8:28.00\nKones has struggled with consistency, as evidenced by multiple DNFs. His best recent time of 8:51.96 suggests he might not be in top form, but he could still finish respectably if he completes the race.\n\n#### 15. **Wesley Langat (KEN)** - 8:30.00\nLangat has had some decent performances, but his recent times and finishes suggest he is not in the same league as the top competitors. His best time this season of 8:26.04 indicates he will likely finish near the back of the pack.\n\nIn summary, Lamecha Girma is the clear favorite given his world record and consistent top performances. Samuel Firewu and George Beamish are strong contenders for the podium, while Getnet Wale and Jean-Simon Desgagnés could surprise if they manage to perform at their best. The rest of the field is filled with capable runners, but inconsistency and recent results suggest they will struggle to break into the top five.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "8:01.63",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lamecha",
+            "lastName": "Girma",
+            "id": "14848765",
+            "pb": "7:52.11",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:05.78",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Samuel",
+            "lastName": "Firewu",
+            "id": "14975231",
+            "pb": "8:07.25",
+            "sb": "8:07.25",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:10.41",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohamed Amin",
+            "lastName": "Jhinaoui",
+            "id": "14735778",
+            "pb": "8:12.19",
+            "sb": "8:13.86",
+            "nat": "TUN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:10.73",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Getnet",
+            "lastName": "Wale",
+            "id": "14760253",
+            "pb": "8:05.15",
+            "sb": "8:09.69",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mohamed",
+            "lastName": "Tindouft",
+            "id": "14773269",
+            "pb": "8:11.65",
+            "sb": "8:17.22",
+            "nat": "MAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Geordie",
+            "lastName": "Beamish",
+            "id": "14578186",
+            "pb": "8:13.26",
+            "sb": null,
+            "nat": "NZL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hillary",
+            "lastName": "Bor",
+            "id": "14232976",
+            "pb": "8:08.41",
+            "sb": "8:13.30",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jean-Simon",
+            "lastName": "Desgagnés",
+            "id": "14687513",
+            "pb": "8:15.58",
+            "sb": "8:16.49",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emil",
+            "lastName": "Blomberg",
+            "id": "14403204",
+            "pb": "8:20.01",
+            "sb": "8:28.11",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Simon",
+            "lastName": "Sundström",
+            "id": "14653682",
+            "pb": "8:18.09",
+            "sb": "8:19.45",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 11,
+          "notes": ""
+        },
+        {
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Vidar",
+            "lastName": "Johansson",
+            "id": "14535353",
+            "pb": "8:18.31",
+            "sb": "8:20.87",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 13,
+          "notes": ""
+        },
+        {
+          "place": null,
+          "notes": "DNS",
+          "entrant": {
+            "firstName": "Wesley",
+            "lastName": "Langat",
+            "id": "14746631",
+            "pb": "8:26.04",
+            "sb": "8:26.04",
+            "nat": "KEN",
+            "hasAvy": false
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Wilberforce Chemiat",
+            "lastName": "Kones",
+            "id": "14755096",
+            "pb": "8:21.42",
+            "sb": "8:55.39",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Lawrence Kemboi",
+            "lastName": "Kipsang",
+            "id": "14479203",
+            "pb": "8:11.26",
+            "sb": "8:29.62",
+            "nat": "KEN",
+            "hasAvy": false
+          }
+        }
+      ]
     },
     "400m Hurdles Women": {
       "date": "2024-06-02T19:32",
