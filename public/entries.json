@@ -16687,7 +16687,103 @@
         }
       ],
       "blurb": "### Predicted Final Results for the Men's 100 Metres\n\n1. **Ryiem Forde (JAM) - 9.98 seconds**\n2. **Abdul Hakim Sani Brown (JPN) - 10.02 seconds**\n3. **Emmanuel Eseme (CMR) - 10.04 seconds**\n4. **Kyree King (USA) - 10.08 seconds**\n5. **Yohan Blake (JAM) - 10.12 seconds**\n6. **Chituru Ali (ITA) - 10.15 seconds**\n7. **Henrik Larsson (SWE) - 10.18 seconds**\n\n### Reasoning\n\n1. **Ryiem Forde (JAM) - 9.98 seconds**\n   - **Standout Performances**: Ryiem Forde has shown a capacity to break the 10-second barrier with a time of 9.95 seconds in August 2023. Additionally, he has multiple sub-10-second performances in the past year, making him the most consistent sprinter in this lineup.\n   - **Consistency**: His recent form, including a 10.07-second run in May 2024, indicates that he is in good shape and can replicate or better his previous sub-10 performances.\n\n2. **Abdul Hakim Sani Brown (JPN) - 10.02 seconds**\n   - **Standout Performances**: Sani Brown has demonstrated his ability to perform well under pressure with a 9.97-second run in August 2023. His performances have been consistently just above the 10-second mark recently.\n   - **Recent Form**: His 10.07-second performance in May 2024 and consistent sub-10.10 times make him a strong contender for a top finish.\n\n3. **Emmanuel Eseme (CMR) - 10.04 seconds**\n   - **Standout Performances**: Eseme has also dipped under 10 seconds, with a 9.96-second run in July 2023. His strong results in multiple competitions, including a 10.10-second run in May 2024, underscore his competitive edge.\n   - **Versatility**: Eseme's ability to perform well in both 100m and 200m events indicates strong sprinting endurance and speed, making him a reliable candidate for a podium finish.\n\n4. **Kyree King (USA) - 10.08 seconds**\n   - **Standout Performances**: King has shown flashes of brilliance with wind-assisted sub-10-second performances and a 10.11-second run in May 2024.\n   - **Recent Form**: His recent performances suggest he is in good form, but his inconsistency in breaking the 10-second barrier under legal wind conditions places him just outside the top three.\n\n5. **Yohan Blake (JAM) - 10.12 seconds**\n   - **Standout Performances**: Blake has a storied career but recent performances have not been up to his historic standards. His best time in the last year is 10.01 seconds in July 2023, but his recent results have seen a decline.\n   - **Recent Form**: Given his age and recent form, including a 10.16-second run in May 2024, Blake is likely to finish outside the top three but still within a respectable time.\n\n6. **Chituru Ali (ITA) - 10.15 seconds**\n   - **Standout Performances**: Ali's recent best performance is 10.06 seconds in May 2024. He has shown potential but lacks the consistency of the top finishers.\n   - **Recent Form**: Ali's form is improving, but he has yet to consistently break the 10-second barrier, placing him slightly behind the more experienced and faster sprinters.\n\n7. **Henrik Larsson (SWE) - 10.18 seconds**\n   - **Standout Performances**: Larsson has a best time of 10.08 seconds in May 2024, but his performances are generally just below the 10.10-second mark.\n   - **Recent Form**: While he has shown promise, Larsson's performances have not been as strong or consistent as the other competitors, leading to a predicted finish towards the end of the pack.\n\n### Summary\nRyiem Forde's recent sub-10-second performances and consistency place him as the favorite to win. Abdul Hakim Sani Brown and Emmanuel Eseme are strong contenders, with Sani Brown's recent form giving him a slight edge over Eseme. Kyree King and Yohan Blake are expected to be competitive but fall short of the podium due to recent inconsistencies. Chituru Ali and Henrik Larsson round out the field, showing potential but lacking the standout performances needed to challenge the top sprinters.",
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.16",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Eseme",
+            "id": "14852717",
+            "pb": "9.96",
+            "sb": "10.10",
+            "nat": "CMR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.18",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kyree",
+            "lastName": "King",
+            "id": "14476000",
+            "pb": "9.96",
+            "sb": "10.02",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.19",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Chituru",
+            "lastName": "Ali",
+            "id": "14701305",
+            "pb": "10.06",
+            "sb": "10.06",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.22",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ryiem",
+            "lastName": "Forde",
+            "id": "14779152",
+            "pb": "9.95",
+            "sb": "10.12",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.28",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abdul Hakim",
+            "lastName": "Sani Brown",
+            "id": "14671546",
+            "pb": "9.97",
+            "sb": "10.02",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.30",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "10.47",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Henrik",
+            "lastName": "Larsson",
+            "id": "14678946",
+            "pb": "10.08",
+            "sb": "10.08",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.63",
+          "place": 8,
+          "notes": ""
+        }
+      ]
     },
     "3000m Steeplechase Men": {
       "date": "2024-06-02T19:11",
