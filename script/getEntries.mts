@@ -60,6 +60,12 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   stockholm24: {
     "400m Hurdles Men": "46.50",
   },
+  paris24: {
+    "400m Hurdles Men": "46.50",
+  },
+  monaco24: {
+    "1500m Men": "3:28.00",
+  },
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
