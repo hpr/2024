@@ -18316,7 +18316,175 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:41.56",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Djamel",
+            "lastName": "Sedjati",
+            "id": "14976579",
+            "pb": "1:43.06",
+            "sb": "1:43.23",
+            "nat": "ALG",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:41.58",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Wanyonyi",
+            "id": "14974928",
+            "pb": "1:41.70",
+            "sb": "1:41.70",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:41.61",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gabriel",
+            "lastName": "Tual",
+            "id": "14646018",
+            "pb": "1:43.99",
+            "sb": "1:43.99",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:42.08",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aaron Kemei",
+            "lastName": "Cheminingwa",
+            "id": "14984570",
+            "pb": "1:43.55",
+            "sb": "1:43.55",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:42.08",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wyclife",
+            "lastName": "Kinyamal",
+            "id": "14746603",
+            "pb": "1:42.50",
+            "sb": "1:42.50",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:42.43",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Eliott",
+            "lastName": "Crestan",
+            "id": "14634371",
+            "pb": "1:44.24",
+            "sb": "1:44.28",
+            "nat": "BEL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.66",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Kramer",
+            "id": "14538207",
+            "pb": "1:44.08",
+            "sb": "1:44.08",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.79",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Azeddine",
+            "lastName": "Habz",
+            "id": "14640588",
+            "pb": "1:43.90",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.30",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Benjamin",
+            "lastName": "Robert",
+            "id": "14683828",
+            "pb": "1:43.48",
+            "sb": "1:44.73",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:44.96",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tshepiso",
+            "lastName": "Masalela",
+            "id": "14754326",
+            "pb": "1:43.88",
+            "sb": "1:43.88",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Yanis",
+            "lastName": "Meziane",
+            "id": "14893694",
+            "pb": "1:43.94",
+            "sb": "1:44.13",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Patryk",
+            "lastName": "Sieradzki",
+            "id": "14647295",
+            "pb": "1:45.13",
+            "sb": "1:45.89",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Men": {
       "date": "2024-07-07T16:23",
