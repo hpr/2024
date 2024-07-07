@@ -19155,7 +19155,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "11.06",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Patrizia",
+            "lastName": "van der Weken",
+            "id": "14621598",
+            "pb": "11.00",
+            "sb": "11.00",
+            "nat": "LUX",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.09",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gina Mariam",
+            "lastName": "Bass Bittaye",
+            "id": "14479741",
+            "pb": "10.93",
+            "sb": "10.93",
+            "nat": "GAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.16",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ewa",
+            "lastName": "Swoboda",
+            "id": "14451085",
+            "pb": "10.94",
+            "sb": "11.02",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.22",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mujinga",
+            "lastName": "Kambundji",
+            "id": "14300897",
+            "pb": "10.89",
+            "sb": "11.01",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.32",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tamara",
+            "lastName": "Clark",
+            "id": "14596381",
+            "pb": "10.88",
+            "sb": "10.95",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.36",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zaynab",
+            "lastName": "Dosso",
+            "id": "14622202",
+            "pb": "11.01",
+            "sb": "11.01",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.43",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gémima",
+            "lastName": "Joseph",
+            "id": "14738969",
+            "pb": "11.01",
+            "sb": "11.01",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.51",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Chloé",
+            "lastName": "Galet",
+            "id": "14735943",
+            "pb": "11.11",
+            "sb": "11.11",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Men": {
       "date": "2024-07-07T17:21",
