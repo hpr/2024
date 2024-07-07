@@ -18960,7 +18960,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "49.20",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marileidy",
+            "lastName": "Paulino",
+            "id": "14749613",
+            "pb": "48.76",
+            "sb": "49.30",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.82",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natalia",
+            "lastName": "Kaczmarek",
+            "id": "14642563",
+            "pb": "48.98",
+            "sb": "48.98",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.82",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Salwa Eid",
+            "lastName": "Naser",
+            "id": "14643442",
+            "pb": "48.14",
+            "sb": "50.32",
+            "nat": "BRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.02",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexis",
+            "lastName": "Holmes",
+            "id": "14761424",
+            "pb": "49.78",
+            "sb": "49.78",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.67",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laviai",
+            "lastName": "Nielsen",
+            "id": "14599229",
+            "pb": "50.71",
+            "sb": "50.71",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.89",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "49.81",
+            "sb": "50.08",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.08",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andrea",
+            "lastName": "Miklós",
+            "id": "14573639",
+            "pb": "50.67",
+            "sb": "50.71",
+            "nat": "ROU",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.27",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Amandine",
+            "lastName": "Brossier",
+            "id": "14678934",
+            "pb": "51.21",
+            "sb": "51.30",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Women": {
       "date": "2024-07-07T17:00",
