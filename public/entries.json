@@ -19350,7 +19350,119 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "19.98",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Ogando",
+            "id": "14912251",
+            "pb": "19.91",
+            "sb": "20.14",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.18",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tarsis Gracious",
+            "lastName": "Orogot",
+            "id": "14836521",
+            "pb": "19.75",
+            "sb": "19.75",
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.46",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ryan",
+            "lastName": "Zeze",
+            "id": "14707040",
+            "pb": "20.18",
+            "sb": "20.18",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.53",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Filippo",
+            "lastName": "Tortu",
+            "id": "14629026",
+            "pb": "20.10",
+            "sb": "20.14",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.82",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jerome",
+            "lastName": "Blake",
+            "id": "14654737",
+            "pb": "20.04",
+            "sb": "20.56",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "20.89",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "William",
+            "lastName": "Reais",
+            "id": "14740317",
+            "pb": "20.24",
+            "sb": "20.27",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNS",
+          "entrant": {
+            "firstName": "Pablo",
+            "lastName": "Mateo",
+            "id": "14778499",
+            "pb": "20.03",
+            "sb": "20.03",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Cheickna",
+            "lastName": "Traore",
+            "id": "14924160",
+            "pb": "19.93",
+            "sb": "19.93",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Women": {
       "date": "2024-07-07T17:31",
