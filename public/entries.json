@@ -21859,7 +21859,181 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:26.73",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jakob",
+            "lastName": "Ingebrigtsen",
+            "id": "14653717",
+            "pb": "3:27.14",
+            "sb": "3:29.74",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:28.71",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Timothy",
+            "lastName": "Cheruiyot",
+            "id": "14643526",
+            "pb": "3:28.28",
+            "sb": "3:29.77",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:28.80",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brian",
+            "lastName": "Komen",
+            "id": "15092355",
+            "pb": "3:32.29",
+            "sb": "3:32.29",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:29.13",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yared",
+            "lastName": "Nuguse",
+            "id": "14798735",
+            "pb": "3:29.02",
+            "sb": "3:30.86",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:30.65",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Neil",
+            "lastName": "Gourley",
+            "id": "14513077",
+            "pb": "3:30.60",
+            "sb": "3:34.11",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:31.06",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Narve Gilje",
+            "lastName": "Nordås",
+            "id": "14705412",
+            "pb": "3:29.47",
+            "sb": "3:33.87",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:31.07",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "3:31.79",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Azeddine",
+            "lastName": "Habz",
+            "id": "14640588",
+            "pb": "3:29.26",
+            "sb": "3:30.80",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:32.04",
+          "place": 9,
+          "notes": ""
+        },
+        {
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Pietro",
+            "lastName": "Arese",
+            "id": "14701882",
+            "pb": "3:32.13",
+            "sb": "3:32.13",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": 11,
+          "notes": ""
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elliot",
+            "lastName": "Giles",
+            "id": "14457638",
+            "pb": "3:30.92",
+            "sb": "3:31.06",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Isaac",
+            "lastName": "Nader",
+            "id": "14756630",
+            "pb": "3:30.84",
+            "sb": "3:30.84",
+            "nat": "POR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Niels",
+            "lastName": "Laros",
+            "id": "14910035",
+            "pb": "3:31.25",
+            "sb": null,
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        }
+      ]
     },
     "100m Women": {
       "date": "2024-07-12T21:52",
