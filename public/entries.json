@@ -20385,7 +20385,80 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "49.17",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rhasidat",
+            "lastName": "Adeleke",
+            "id": "14745252",
+            "pb": "49.07",
+            "sb": "49.07",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.64",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "49.81",
+            "sb": "50.08",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.39",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kendall",
+            "lastName": "Ellis",
+            "id": "14443893",
+            "pb": "49.46",
+            "sb": "49.46",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.43",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "50.72",
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "mark": "51.76",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "52.02",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shana",
+            "lastName": "Grebo",
+            "id": "14737421",
+            "pb": "51.71",
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Men": {
       "date": "2024-07-12T20:23",
