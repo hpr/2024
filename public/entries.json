@@ -20548,7 +20548,135 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:41.46",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Djamel",
+            "lastName": "Sedjati",
+            "id": "14976579",
+            "pb": "1:43.06",
+            "sb": "1:43.23",
+            "nat": "ALG",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:42.04",
+          "place": 2,
+          "notes": ""
+        },
+        {
+          "mark": "1:42.10",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gabriel",
+            "lastName": "Tual",
+            "id": "14646018",
+            "pb": "1:43.99",
+            "sb": "1:43.99",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:42.13",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "1:42.27",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ben",
+            "lastName": "Pattison",
+            "id": "14706169",
+            "pb": "1:44.02",
+            "sb": "1:44.44",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:42.93",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marco",
+            "lastName": "Arop",
+            "id": "14755875",
+            "pb": "1:42.85",
+            "sb": "1:43.53",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.13",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andreas",
+            "lastName": "Kramer",
+            "id": "14538207",
+            "pb": "1:44.08",
+            "sb": "1:44.08",
+            "nat": "SWE",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.19",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "1:43.75",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Catalin",
+            "lastName": "Tecuceanu",
+            "id": "14739638",
+            "pb": "1:44.01",
+            "sb": "1:44.01",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:43.95",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Benjamin",
+            "lastName": "Robert",
+            "id": "14683828",
+            "pb": "1:43.48",
+            "sb": "1:44.73",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Ludovic",
+            "lastName": "le Meur",
+            "id": "14706271",
+            "pb": "1:46.40",
+            "sb": "1:46.41",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Men": {
       "date": "2024-07-12T20:33",
