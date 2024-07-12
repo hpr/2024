@@ -20979,7 +20979,184 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "5:19.70",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessica",
+            "lastName": "Hull",
+            "id": "14464506",
+            "pb": null,
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:26.08",
+          "place": 2,
+          "notes": ""
+        },
+        {
+          "mark": "5:26.09",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Edinah",
+            "lastName": "Jebitok",
+            "id": "14798230",
+            "pb": null,
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:28.78",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cory Ann",
+            "lastName": "McGee",
+            "id": "14316538",
+            "pb": null,
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:28.82",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Georgia",
+            "lastName": "Griffith",
+            "id": "14549778",
+            "pb": null,
+            "sb": null,
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:31.18",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lucia",
+            "lastName": "Stafford",
+            "id": "14464956",
+            "pb": null,
+            "sb": null,
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:32.63",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Agathe",
+            "lastName": "Guillemot",
+            "id": "14685757",
+            "pb": null,
+            "sb": null,
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:32.86",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marta",
+            "lastName": "García",
+            "id": "14635475",
+            "pb": null,
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:34.99",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Axumawit",
+            "lastName": "Embaye",
+            "id": "14534819",
+            "pb": null,
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:43.06",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ciara",
+            "lastName": "Mageean",
+            "id": "14275665",
+            "pb": null,
+            "sb": null,
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "5:50.21",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "María Pía",
+            "lastName": "Fernández",
+            "id": "14496688",
+            "pb": null,
+            "sb": null,
+            "nat": "URU",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Esther",
+            "lastName": "Guerrero",
+            "id": "14261358",
+            "pb": null,
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Lorena",
+            "lastName": "Martín",
+            "id": "14516195",
+            "pb": null,
+            "sb": null,
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "110m Hurdles Men": {
       "date": "2024-07-12T20:58",
@@ -21042,7 +21219,88 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "13.01",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grant",
+            "lastName": "Holloway",
+            "id": "14516985",
+            "pb": "12.81",
+            "sb": "12.86",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.08",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lorenzo Ndele",
+            "lastName": "Simonelli",
+            "id": "14840516",
+            "pb": "13.05",
+            "sb": "13.05",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.10",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cordell",
+            "lastName": "Tinch",
+            "id": "14719972",
+            "pb": "12.96",
+            "sb": "13.03",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.13",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "13.25",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sasha",
+            "lastName": "Zhoya",
+            "id": "14745474",
+            "pb": "13.15",
+            "sb": "13.32",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.54",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Shunsuke",
+            "lastName": "Izumiya",
+            "id": "14815041",
+            "pb": "13.04",
+            "sb": "13.17",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "5000m Women": {
       "date": "2024-07-12T21:05",
