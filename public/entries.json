@@ -21636,7 +21636,121 @@
           "id": "14740317"
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "19.87",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Letsile",
+            "lastName": "Tebogo",
+            "nat": "BOT",
+            "pb": "19.50",
+            "sb": "19.71",
+            "hasAvy": true,
+            "id": "14883897"
+          }
+        },
+        {
+          "mark": "20.02",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexander",
+            "lastName": "Ogando",
+            "nat": "DOM",
+            "pb": "19.91",
+            "sb": "19.98",
+            "hasAvy": true,
+            "id": "14912251"
+          }
+        },
+        {
+          "mark": "20.32",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tarsis Gracious",
+            "lastName": "Orogot",
+            "nat": "UGA",
+            "pb": "19.75",
+            "sb": "19.75",
+            "hasAvy": true,
+            "id": "14836521"
+          }
+        },
+        {
+          "mark": "20.43",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andrew",
+            "lastName": "Hudson",
+            "nat": "JAM",
+            "pb": "19.87",
+            "sb": "20.02",
+            "hasAvy": true,
+            "id": "14586216"
+          }
+        },
+        {
+          "mark": "20.43",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Filippo",
+            "lastName": "Tortu",
+            "nat": "ITA",
+            "pb": "20.10",
+            "sb": "20.14",
+            "hasAvy": true,
+            "id": "14629026"
+          }
+        },
+        {
+          "mark": "20.54",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joshua",
+            "lastName": "Hartmann",
+            "nat": "GER",
+            "pb": "20.02",
+            "sb": "20.36",
+            "hasAvy": true,
+            "id": "14705838"
+          }
+        },
+        {
+          "mark": "20.56",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ryan",
+            "lastName": "Zeze",
+            "nat": "FRA",
+            "pb": "20.18",
+            "sb": "20.18",
+            "hasAvy": true,
+            "id": "14707040"
+          }
+        },
+        {
+          "mark": "20.99",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "William",
+            "lastName": "Reais",
+            "nat": "SUI",
+            "pb": "20.24",
+            "sb": "20.27",
+            "hasAvy": true,
+            "id": "14740317"
+          }
+        }
+      ]
     },
     "1500m Men": {
       "tiebreaker": "3:28.00",
