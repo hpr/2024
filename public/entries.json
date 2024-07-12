@@ -20757,7 +20757,103 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "43.80",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Quincy",
+            "lastName": "Hall",
+            "id": "14597236",
+            "pb": "44.17",
+            "sb": "44.17",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.34",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Vernon",
+            "lastName": "Norwood",
+            "id": "14490237",
+            "pb": "44.26",
+            "sb": "44.47",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.58",
+          "place": 3,
+          "notes": ""
+        },
+        {
+          "mark": "44.67",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "44.71",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bayapo",
+            "lastName": "Ndori",
+            "id": "14847443",
+            "pb": "44.10",
+            "sb": "44.10",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.11",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Christopher",
+            "lastName": "Morales-Williams",
+            "id": "14876627",
+            "pb": "44.05",
+            "sb": "44.05",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.26",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Luca",
+            "lastName": "Sito",
+            "id": "14953777",
+            "pb": "44.75",
+            "sb": "44.75",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.89",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Téo",
+            "lastName": "Andant",
+            "id": "14709654",
+            "pb": "45.18",
+            "sb": "45.59",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "2000m Women": {
       "date": "2024-07-12T20:43",
