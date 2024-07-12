@@ -108,6 +108,7 @@ export const disciplineCodes: { [k: string]: WAEventCode } = {
   '1 Mile': 'MILE',
   Mile: 'MILE',
   '2000 Meters': '2000',
+  '2000m': '2000',
   '3000 Meters': '3000',
   '3000m': '3000',
   'Two Miles': '2MLS',
