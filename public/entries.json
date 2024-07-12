@@ -21399,7 +21399,163 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "14:39.49",
+          "place": 1,
+          "notes": ""
+        },
+        {
+          "mark": "14:40.44",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Likina",
+            "lastName": "Amebaw",
+            "id": "14877871",
+            "pb": "14:40.1",
+            "sb": "14:40.1",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:40.86",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nozomi",
+            "lastName": "Tanaka",
+            "id": "14966136",
+            "pb": "16:20.6",
+            "sb": null,
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:40.89",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "14:41.06",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nadia",
+            "lastName": "Battocletti",
+            "id": "14700830",
+            "pb": "14:35.2",
+            "sb": "14:35.2",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:43.48",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "14:43.84",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marta",
+            "lastName": "Alemayo",
+            "id": "15131346",
+            "pb": "14:39.6",
+            "sb": "14:39.6",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:44.20",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "14:44.91",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Weini",
+            "lastName": "Kelati Frezghi",
+            "id": "14877184",
+            "pb": "14:35.4",
+            "sb": "14:35.4",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "14:50.54",
+          "place": 10,
+          "notes": ""
+        },
+        {
+          "mark": "14:55.97",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lilian Kasait",
+            "lastName": "Rengeruk",
+            "id": "14590678",
+            "pb": "14:23.0",
+            "sb": null,
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "15:03.15",
+          "place": 12,
+          "notes": ""
+        },
+        {
+          "mark": "15:22.03",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lauren",
+            "lastName": "Ryan",
+            "id": "14667446",
+            "pb": "14:57.6",
+            "sb": "14:57.6",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "15:37.21",
+          "place": 14,
+          "notes": ""
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Maureen",
+            "lastName": "Koster",
+            "id": "14372338",
+            "pb": "14:44.4",
+            "sb": "14:44.4",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        }
+      ]
     },
     "200m Men": {
       "date": "2024-07-12T21:27",
