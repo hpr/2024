@@ -21970,7 +21970,27 @@
           "notes": ""
         },
         {
+          "mark": "3:33.29",
           "place": 10,
+          "notes": ""
+        },
+        {
+          "mark": "3:34.42",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Isaac",
+            "lastName": "Nader",
+            "id": "14756630",
+            "pb": "3:30.84",
+            "sb": "3:30.84",
+            "nat": "POR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:35.19",
+          "place": 12,
           "notes": "",
           "entrant": {
             "firstName": "Pietro",
@@ -21983,11 +22003,8 @@
           }
         },
         {
-          "place": 11,
-          "notes": ""
-        },
-        {
-          "place": null,
+          "mark": "3:40.72",
+          "place": 13,
           "notes": "",
           "entrant": {
             "firstName": "Elliot",
@@ -21996,19 +22013,6 @@
             "pb": "3:30.92",
             "sb": "3:31.06",
             "nat": "GBR",
-            "hasAvy": true
-          }
-        },
-        {
-          "place": null,
-          "notes": "",
-          "entrant": {
-            "firstName": "Isaac",
-            "lastName": "Nader",
-            "id": "14756630",
-            "pb": "3:30.84",
-            "sb": "3:30.84",
-            "nat": "POR",
             "hasAvy": true
           }
         },
