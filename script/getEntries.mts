@@ -66,6 +66,9 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   monaco24: {
     "1500m Men": "3:28.00",
   },
+  london24: {
+    "400m Hurdles Women": "51.00",
+  },
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
@@ -78,6 +81,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   stockholm24: '12pm noon ET',
   paris24: '9am ET',
   monaco24: '2pm ET',
+  london24: '9am ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -112,6 +116,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   stockholm24: ['https://stockholm.diamondleague.com/en/lists-results-stockholm/'],
   paris24: ['https://paris.diamondleague.com/en/programme-results/programme-2020-results/'],
   monaco24: ['https://monaco.diamondleague.com/en/programme-resultats-monaco-en/'],
+  london24: ['https://london.diamondleague.com/lists-results-london/'],
 };
 
 const idTeams = {

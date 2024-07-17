@@ -165,7 +165,7 @@ for (const entrant of entrants) {
     }
     if (fs.existsSync(`./public/img/avatars/${id}.png`)) {
       avatarBuffer = fs.readFileSync(`./public/img/avatars/${id}.png`);
-    } else if (team) {
+    } else if (!1 && team) { // comment out block until googlethis is fixed
       let imgUrl: string | undefined;
       const prevDomains: string[] = [];
       for (const { searchQuery, allowDupes } of [
@@ -243,10 +243,16 @@ for (const entrant of entrants) {
           const imageUrl = `https://res.cloudinary.com/european-athletics/d_default.png/athletes-profile-pictures/${europeanAthleticsId}`;
           avatarResp = await fetch(imageUrl);
         } else if (describedAtUrl) {
-          const { document } = new JSDOM(await (await fetch(describedAtUrl as string)).text()).window;
-          let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
-          if (imageUrl?.startsWith('/')) imageUrl = getDomain(describedAtUrl as string) + imageUrl;
-          avatarResp = await fetch(imageUrl!);
+          let imgUrl: string | undefined;
+          ({ imgUrl, avatarBuffer } = await getProfilePic(describedAtUrl as string, { firstName, lastName }));
+          avatarCache.urls[id] = imgUrl!;
+          fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
+          if (!avatarBuffer) continue;
+          // if (images.length) break;
+          // const { document } = new JSDOM(await (await fetch(describedAtUrl as string)).text()).window;
+          // let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
+          // if (imageUrl?.startsWith('/')) imageUrl = getDomain(describedAtUrl as string) + imageUrl;
+          // avatarResp = await fetch(imageUrl!);
         }
       }
     }
