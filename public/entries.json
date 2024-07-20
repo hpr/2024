@@ -22653,7 +22653,122 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "47.18",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alison",
+            "lastName": "dos Santos",
+            "id": "14755064",
+            "pb": "46.29",
+            "sb": "46.63",
+            "nat": "BRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.63",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Roshawn",
+            "lastName": "Clarke",
+            "id": "14931525",
+            "pb": "47.34",
+            "sb": "48.04",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.72",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ismail Doudai",
+            "lastName": "Abakar",
+            "id": "14973411",
+            "pb": "48.68",
+            "sb": "48.68",
+            "nat": "QAT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.81",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kyron",
+            "lastName": "McMaster",
+            "id": "14532760",
+            "pb": "47.08",
+            "sb": "48.05",
+            "nat": "IVB",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.26",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilfried",
+            "lastName": "Happio",
+            "id": "14650750",
+            "pb": "47.41",
+            "sb": "48.01",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.49",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.58",
+            "sb": "47.81",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "48.89",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gerald",
+            "lastName": "Drummond",
+            "id": "14414628",
+            "pb": "48.11",
+            "sb": "48.56",
+            "nat": "CRC",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.52",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alastair",
+            "lastName": "Chalmers",
+            "id": "14720465",
+            "pb": "48.54",
+            "sb": "48.54",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Men": {
       "date": "2024-07-20T14:52",
