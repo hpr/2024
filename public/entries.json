@@ -23785,7 +23785,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "21.82",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gabrielle",
+            "lastName": "Thomas",
+            "id": "14733520",
+            "pb": "21.60",
+            "sb": "21.78",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "21.86",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Julien",
+            "lastName": "Alfred",
+            "id": "14646562",
+            "pb": "21.91",
+            "sb": "22.16",
+            "nat": "LCA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.07",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dina",
+            "lastName": "Asher-Smith",
+            "id": "14378282",
+            "pb": "21.88",
+            "sb": "22.18",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.20",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "22.16",
+            "sb": "22.36",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.35",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rhasidat",
+            "lastName": "Adeleke",
+            "id": "14745252",
+            "pb": "22.34",
+            "sb": "22.45",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.59",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tamara",
+            "lastName": "Clark",
+            "id": "14596381",
+            "pb": "21.92",
+            "sb": "22.12",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.93",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jenna",
+            "lastName": "Prandini",
+            "id": "14329068",
+            "pb": "21.89",
+            "sb": "22.26",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.96",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Amy",
+            "lastName": "Hunt",
+            "id": "14685108",
+            "pb": "22.42",
+            "sb": "22.65",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Men": {
       "date": "2024-07-20T15:52",
