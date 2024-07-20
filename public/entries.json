@@ -23591,7 +23591,120 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "43.74",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Matthew",
+            "lastName": "Hudson-Smith",
+            "id": "14407278",
+            "pb": "44.07",
+            "sb": "44.07",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.10",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Vernon",
+            "lastName": "Norwood",
+            "id": "14490237",
+            "pb": "44.26",
+            "sb": "44.34",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.18",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jereem",
+            "lastName": "Richards",
+            "id": "14434521",
+            "pb": "44.54",
+            "sb": "44.72",
+            "nat": "TTO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.23",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Charles",
+            "lastName": "Dobson",
+            "id": "14762871",
+            "pb": "44.38",
+            "sb": "44.38",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.38",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kirani",
+            "lastName": "James",
+            "id": "14195659",
+            "pb": "43.74",
+            "sb": "44.55",
+            "nat": "GRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.90",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Christopher",
+            "lastName": "Morales-Williams",
+            "id": "14876627",
+            "pb": "44.05",
+            "sb": "44.05",
+            "nat": "CAN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.03",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bayapo",
+            "lastName": "Ndori",
+            "id": "14847443",
+            "pb": "44.10",
+            "sb": "44.10",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNS",
+          "entrant": {
+            "firstName": "Zandrion",
+            "lastName": "Barnes",
+            "id": "14875542",
+            "pb": "44.90",
+            "sb": "45.34",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Women": {
       "date": "2024-07-20T15:42",
