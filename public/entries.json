@@ -22262,7 +22262,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "51.30",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Femke",
+            "lastName": "Bol",
+            "id": "14707010",
+            "pb": "50.95",
+            "sb": "50.95",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "52.78",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shamier",
+            "lastName": "Little",
+            "id": "14443767",
+            "pb": "52.39",
+            "sb": "52.98",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.24",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rushell",
+            "lastName": "Clayton",
+            "id": "14425208",
+            "pb": "52.51",
+            "sb": "52.51",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.69",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andrenette",
+            "lastName": "Knight",
+            "id": "14512625",
+            "pb": "53.26",
+            "sb": "54.09",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.15",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jessie",
+            "lastName": "Knight",
+            "id": "14430428",
+            "pb": "54.09",
+            "sb": "54.59",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.50",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cathelijn",
+            "lastName": "Peeters",
+            "id": "14561471",
+            "pb": "54.31",
+            "sb": "54.31",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.50",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shiann",
+            "lastName": "Salmon",
+            "id": "14574022",
+            "pb": "53.71",
+            "sb": "53.71",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.65",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lina",
+            "lastName": "Nielsen",
+            "id": "14594317",
+            "pb": "54.43",
+            "sb": "54.43",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Women": {
       "date": "2024-07-20T14:33",
