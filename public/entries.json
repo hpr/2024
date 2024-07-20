@@ -23980,7 +23980,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "9.81",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Noah",
+            "lastName": "Lyles",
+            "id": "14536762",
+            "pb": "9.83",
+            "sb": "9.83",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.86",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Akani",
+            "lastName": "Simbine",
+            "id": "14417763",
+            "pb": "9.84",
+            "sb": "9.94",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.88",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Letsile",
+            "lastName": "Tebogo",
+            "id": "14883897",
+            "pb": "9.88",
+            "sb": "9.99",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.97",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Louie",
+            "lastName": "Hinchliffe",
+            "id": "14843498",
+            "pb": "9.95",
+            "sb": "9.95",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.97",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ackeem",
+            "lastName": "Blake",
+            "id": "14638971",
+            "pb": "9.89",
+            "sb": "9.92",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.00",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Zharnel",
+            "lastName": "Hughes",
+            "id": "14414524",
+            "pb": "9.83",
+            "sb": "10.09",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.08",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jeremiah",
+            "lastName": "Azu",
+            "id": "14771648",
+            "pb": "9.97",
+            "sb": "9.97",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.23",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Yohan",
+            "lastName": "Blake",
+            "id": "14201842",
+            "pb": "9.69",
+            "sb": "10.16",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        }
+      ]
     }
   }
 }
