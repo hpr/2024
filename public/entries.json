@@ -22457,7 +22457,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "48.57",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nickisha",
+            "lastName": "Pryce",
+            "id": "14685519",
+            "pb": "48.89",
+            "sb": "48.89",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.90",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natalia",
+            "lastName": "Kaczmarek",
+            "id": "14642563",
+            "pb": "48.98",
+            "sb": "48.98",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.58",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "49.64",
+            "sb": "49.64",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.63",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Amber",
+            "lastName": "Anning",
+            "id": "14632781",
+            "pb": "49.51",
+            "sb": "49.51",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.87",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laviai",
+            "lastName": "Nielsen",
+            "id": "14599229",
+            "pb": "50.67",
+            "sb": "50.67",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.71",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lynna",
+            "lastName": "Irby-Jackson",
+            "id": "14486888",
+            "pb": "49.80",
+            "sb": "50.17",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.76",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Victoria",
+            "lastName": "Ohuruogu",
+            "id": "14359991",
+            "pb": "50.48",
+            "sb": "51.03",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "52.47",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Talitha",
+            "lastName": "Diggs",
+            "id": "14773307",
+            "pb": "49.93",
+            "sb": "50.78",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Hurdles Men": {
       "date": "2024-07-20T14:43",
