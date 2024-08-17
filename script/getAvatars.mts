@@ -220,6 +220,7 @@ for (const entrant of entrants) {
             if (link.includes('athletic.net')) return false;
             if (link.includes('worldathletics.org')) return false;
             if (link.endsWith('/roster/') || link.endsWith('/roster')) return false;
+            if (link.endsWith('.pdf')) return false;
             return true;
           }) ?? {};
           if (!link) continue;
