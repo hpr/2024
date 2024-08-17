@@ -298,7 +298,7 @@ for (const entrant of entrants) {
   if (avatarResp.status === 403 && !avatarBuffer) continue;
   avatarBuffer ??= await avatarResp.arrayBuffer();
   const size: gm.Dimensions = await new Promise((res) => gm(Buffer.from(avatarBuffer!), 'image.jpg').size((_, size) => res(size)));
-  if (size.width > 1024)
+  if (size.width > 1024 || (size.height > 1024 && size.width > 800))
     avatarBuffer = await new Promise((res) =>
       gm(Buffer.from(avatarBuffer!), 'image.jpg')
         .resize(512)
