@@ -5,15 +5,20 @@ import { JSDOM } from 'jsdom';
 import gm from 'gm';
 import { getDomain } from './const.mjs';
 import WBK, { EntityId, SimplifiedItem } from 'wikibase-sdk';
+import dotenv from 'dotenv';
+dotenv.config();
 
 //    .-.
 //   (0.0)
 // '=.|m|.='
 // .='`"``=.
 
+const tfrrsMode = true;
+
 const PIXELME_API = 'https://pixel-me-api-gateway-cj34o73d6a-an.a.run.app/api/v1';
 const key = 'AIzaSyB1icoMXVbxjiAzwBTI_4FufkzTnX78U0s'; // intentionally public
 const AVATAR_CACHE = './script/avatarCache.json';
+const P_TFRRS_ATHLETE_ID = 'P5120';
 const P_WA_ATHLETE_ID = 'P1146';
 const P_USATF_ATHLETE_ID = 'P10634';
 const P_OLYMPEDIA_ID = 'P8286';
@@ -31,10 +36,19 @@ const wbk = WBK({
   sparqlEndpoint: 'https://query.wikidata.org/sparql',
 });
 
-const avatarCache: { urls: { [k: string]: string } } = JSON.parse(fs.readFileSync(AVATAR_CACHE, 'utf-8'));
+const avatarCache: { tfrrsUrls: { [k: string]: string }, urls: { [k: string]: string } } = JSON.parse(fs.readFileSync(AVATAR_CACHE, 'utf-8'));
+const avatarCacheKey = tfrrsMode ? 'tfrrsUrls' : 'urls';
 
 const entries: Entries = JSON.parse(fs.readFileSync('./public/entries.json', 'utf-8'));
-const entrants: Entrant[] = Object.values(entries).flatMap((meet) => Object.values(meet).flatMap(({ entrants }) => entrants));
+const entrants: Entrant[] = tfrrsMode ? JSON.parse(fs.readFileSync('./script/tfrrsAthletes.json', 'utf-8')).map((te: any) => ({
+  firstName: te.name.split(' ')[0],
+  lastName: te.name.split(' ').slice(1).join(' '),
+  team: te.team,
+  id: te.id,
+  pb: null,
+  sb: null,
+  nat: '',
+})) : Object.values(entries).flatMap((meet) => Object.values(meet).flatMap(({ entrants }) => entrants));
 
 type PixelMeImage = { image: string; label: string };
 
@@ -104,7 +118,8 @@ const getProfilePic = async (
   }
   if (imgUrl?.startsWith('/')) imgUrl = getDomain(url) + imgUrl;
   if ((imgUrl ?? '').toLowerCase().split('/').at(-1)?.includes('logo')) {
-    imgUrl = window.getComputedStyle(document.querySelector('.sidearm-roster-player-image-historical')!, null).backgroundImage.slice(4, -1).replace(/"/g, '');
+    const elt = document.querySelector('.sidearm-roster-player-image-historical');
+    if (elt) imgUrl = window.getComputedStyle(elt, null).backgroundImage.slice(4, -1).replace(/"/g, '');
   }
   console.log(imgUrl);
   if (!imgUrl) return {};
@@ -131,7 +146,7 @@ for (const entrant of entrants) {
   const { id, firstName, lastName, pb } = entrant;
   let team = entrant.team;
   console.log(id, firstName, lastName, team, i++, entrants.length);
-  const file128 = `./public/img/avatars/${id}_128x128.png`;
+  const file128 = `./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}_128x128.png`;
   if (fs.existsSync(file128)) {
     if (fs.lstatSync(file128).isSymbolicLink()) {
       console.log('REMOVING SYMLINK', file128);
@@ -143,13 +158,13 @@ for (const entrant of entrants) {
     }
   }
   let imageUrl = `https://media.aws.iaaf.org/athletes/${id}.jpg`;
-  let avatarResp = await fetch(imageUrl);
+  let avatarResp = tfrrsMode ? new Response(null, { status: 403 }) : await fetch(imageUrl);
   if (avatarResp.status !== 403) console.log(imageUrl);
   let avatarBuffer: ArrayBuffer | undefined;
   let images: PixelMeImage[] = [];
   if (avatarResp.status === 403) {
     const qid: EntityId = wbk.parse.pagesTitles(
-      await (await fetch(wbk.cirrusSearchPages({ haswbstatement: `${P_WA_ATHLETE_ID}=${id}` }))).json()
+      await (await fetch(wbk.cirrusSearchPages({ haswbstatement: `${tfrrsMode ? P_TFRRS_ATHLETE_ID : P_WA_ATHLETE_ID}=${id}` }))).json()
     )[0] as `Q${number}`;
     let athObj: SimplifiedItem | undefined = undefined;
     if (qid) {
@@ -160,12 +175,12 @@ for (const entrant of entrants) {
         if (sportsTeamObj.claims?.[P_INSTANCE_OF]?.some((claim) => claim === Q_UNIVERSITY_SPORTS_CLUB)) team = sportsTeamObj.labels?.en;
       }
     }
-    if (avatarCache.urls[id]) {
-      avatarResp = await fetch(avatarCache.urls[id]);
+    if (avatarCache[avatarCacheKey][id]) {
+      avatarResp = await fetch(avatarCache[avatarCacheKey][id]);
     }
-    if (fs.existsSync(`./public/img/avatars/${id}.png`)) {
-      avatarBuffer = fs.readFileSync(`./public/img/avatars/${id}.png`);
-    } else if (!1 && team) { // comment out block until googlethis is fixed
+    if (fs.existsSync(`./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}.png`)) {
+      avatarBuffer = fs.readFileSync(`./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}.png`);
+    } else if (team) { // comment out block until googlethis is fixed
       let imgUrl: string | undefined;
       const prevDomains: string[] = [];
       for (const { searchQuery, allowDupes } of [
@@ -178,21 +193,34 @@ for (const entrant of entrants) {
           allowDupes: true,
         },
       ]) {
-        const { results } = await google.search(searchQuery);
-        const { url } =
-          results.find(({ url, is_sponsored }) => {
-            if (is_sponsored) return false;
-            if (!allowDupes && prevDomains.includes(getDomain(url))) return false;
-            if (url.includes('tfrrs.org')) return false;
-            if (url.includes('athletic.net')) return false;
-            if (url.includes('worldathletics.org')) return false;
-            if (url.endsWith('/roster/')) return false;
-            return true;
-          })! ?? {};
-        if (!url) console.log(results);
-        prevDomains.push(getDomain(url));
-        console.log(searchQuery, url);
-        ({ imgUrl, avatarBuffer } = await getProfilePic(url, { firstName, lastName }));
+        // const { results } = await google.search(searchQuery);
+        // const { url } =
+        //   results.find(({ url, is_sponsored }) => {
+        //     if (is_sponsored) return false;
+        //     if (!allowDupes && prevDomains.includes(getDomain(url))) return false;
+        //     if (url.includes('tfrrs.org')) return false;
+        //     if (url.includes('athletic.net')) return false;
+        //     if (url.includes('worldathletics.org')) return false;
+        //     if (url.endsWith('/roster/')) return false;
+        //     return true;
+        //   })! ?? {};
+        const results = await (await fetch(`https://content-customsearch.googleapis.com/customsearch/v1?${new URLSearchParams({
+          q: searchQuery,
+          cx: process.env.GOOGLE_CX!,
+          key: process.env.GOOGLE_KEY!,
+        })}`)).json();
+        console.log(process.env.GOOGLE_CX, process.env.GOOGLE_KEY, results)
+        const { link } = results.items.find(({ link }) => {
+          if (!allowDupes && prevDomains.includes(getDomain(link))) return false;
+          if (link.includes('tfrrs.org')) return false;
+          if (link.includes('athletic.net')) return false;
+          if (link.includes('worldathletics.org')) return false;
+          if (link.endsWith('/roster/')) return false;
+          return true;
+        });
+        prevDomains.push(getDomain(link));
+        console.log(searchQuery, link);
+        ({ imgUrl, avatarBuffer } = await getProfilePic(link, { firstName, lastName }));
         if (!avatarBuffer) continue;
         images = await getIcons(avatarBuffer);
         if (images.length) break;
@@ -201,7 +229,7 @@ for (const entrant of entrants) {
         // fs.symlinkSync('./default_128x128.png', file128);
         continue;
       }
-      avatarCache.urls[id] = imgUrl!;
+      avatarCache[avatarCacheKey][id] = imgUrl!;
       fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
     } else {
       if (qid && athObj) {
@@ -245,7 +273,7 @@ for (const entrant of entrants) {
         } else if (describedAtUrl) {
           let imgUrl: string | undefined;
           ({ imgUrl, avatarBuffer } = await getProfilePic(describedAtUrl as string, { firstName, lastName }));
-          avatarCache.urls[id] = imgUrl!;
+          avatarCache[avatarCacheKey][id] = imgUrl!;
           fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
           if (!avatarBuffer) continue;
           // if (images.length) break;
@@ -272,12 +300,12 @@ for (const entrant of entrants) {
     // fs.symlinkSync('./default_128x128.png', file128);
   } else {
     for (const { label, image } of images) {
-      fs.writeFileSync(`./public/img/avatars/${id}_${label}.png`, Buffer.from(image, 'base64'));
+      fs.writeFileSync(`./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}_${label}.png`, Buffer.from(image, 'base64'));
     }
   }
-  avatarCache.urls[id] ??= imageUrl;
+  avatarCache[avatarCacheKey][id] ??= imageUrl;
   fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
 }
-if (changedEntrants) {
+if (changedEntrants && !tfrrsMode) {
   fs.writeFileSync('./public/entries.json', JSON.stringify(entries));
 }
