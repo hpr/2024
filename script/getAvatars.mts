@@ -94,6 +94,8 @@ const getProfilePic = async (
     imgUrl = ogImages[0].getAttribute('content')!;
   const nots = `:not([src*=dummy-data])`;
   imgUrl ??= (document.querySelector('.player__hero img' + nots)?.getAttribute('src') ??
+    document.querySelector('img.roster-bio-photo__image')?.getAttribute('url') ??
+    document.querySelector('.sidearm-roster-player-image img')?.getAttribute('src') ??
     document.querySelector(`img.block[alt="${firstName} ${lastName}"]` + nots)?.getAttribute('src') ??
     document.querySelector(`img.block[alt="${firstName} ${lastName} Headshot"]`)?.getAttribute('src') ??
     document.querySelector('.player__photo > img' + nots)?.getAttribute('src') ??
@@ -176,111 +178,118 @@ for (const entrant of entrants) {
       }
     }
     if (avatarCache[avatarCacheKey][id]) {
+      if (avatarCache[avatarCacheKey][id] === 'skip') continue;
       avatarResp = await fetch(avatarCache[avatarCacheKey][id]);
-    }
-    if (fs.existsSync(`./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}.png`)) {
-      avatarBuffer = fs.readFileSync(`./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}.png`);
-    } else if (team) { // comment out block until googlethis is fixed
-      let imgUrl: string | undefined;
-      const prevDomains: string[] = [];
-      for (const { searchQuery, allowDupes } of [
-        { searchQuery: `${firstName} ${lastName} ${team} track and field roster` },
-        {
-          searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} track and field roster`,
-        },
-        {
-          searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} cross country roster`,
-          allowDupes: true,
-        },
-      ]) {
-        // const { results } = await google.search(searchQuery);
-        // const { url } =
-        //   results.find(({ url, is_sponsored }) => {
-        //     if (is_sponsored) return false;
-        //     if (!allowDupes && prevDomains.includes(getDomain(url))) return false;
-        //     if (url.includes('tfrrs.org')) return false;
-        //     if (url.includes('athletic.net')) return false;
-        //     if (url.includes('worldathletics.org')) return false;
-        //     if (url.endsWith('/roster/')) return false;
-        //     return true;
-        //   })! ?? {};
-        const results = await (await fetch(`https://content-customsearch.googleapis.com/customsearch/v1?${new URLSearchParams({
-          q: searchQuery,
-          cx: process.env.GOOGLE_CX!,
-          key: process.env.GOOGLE_KEY!,
-        })}`)).json();
-        console.log(process.env.GOOGLE_CX, process.env.GOOGLE_KEY, results)
-        const { link } = results.items.find(({ link }) => {
-          if (!allowDupes && prevDomains.includes(getDomain(link))) return false;
-          if (link.includes('tfrrs.org')) return false;
-          if (link.includes('athletic.net')) return false;
-          if (link.includes('worldathletics.org')) return false;
-          if (link.endsWith('/roster/')) return false;
-          return true;
-        });
-        prevDomains.push(getDomain(link));
-        console.log(searchQuery, link);
-        ({ imgUrl, avatarBuffer } = await getProfilePic(link, { firstName, lastName }));
-        if (!avatarBuffer) continue;
-        images = await getIcons(avatarBuffer);
-        if (images.length) break;
-      }
-      if (!images.length) {
-        // fs.symlinkSync('./default_128x128.png', file128);
-        continue;
-      }
-      avatarCache[avatarCacheKey][id] = imgUrl!;
-      fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
     } else {
-      if (qid && athObj) {
-        const usatfId = athObj.claims?.[P_USATF_ATHLETE_ID]?.[0];
-        const olympediaId = athObj.claims?.[P_OLYMPEDIA_ID]?.[0];
-        const moroccanId = athObj.claims?.[P_MOROCCAN_OLYMPIC_ID]?.[0];
-        const pzlaId = athObj.claims?.[P_PZLA_ATHLETE_ID]?.[0];
-        const stravaId = athObj.claims?.[P_STRAVA_ID]?.[0];
-        const europeanAthleticsId = athObj.claims?.[P_EUROPEAN_ATHLETICS_ID]?.[0];
-        const describedAtUrl = athObj.claims?.[P_DESCRIBED_AT_URL]?.[0];
-        console.log(describedAtUrl)
-        if (usatfId) {
-          const url = `https://www.usatf.org/athlete-bios/${usatfId}`;
-          const { document } = new JSDOM(await (await fetch(url)).text()).window;
-          let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
-          if (imageUrl?.startsWith('/')) imageUrl = getDomain(url) + imageUrl;
-          avatarResp = await fetch(imageUrl!);
-        } else if (moroccanId) {
-          const url = `https://www.cnom.org.ma/fr/athlete/${moroccanId}`;
-          const { document } = new JSDOM(await (await fetch(url)).text()).window;
-          let imageUrl = document.querySelector('.profile-box img')?.getAttribute('src');
-          if (imageUrl?.startsWith('/')) imageUrl = getDomain(url) + imageUrl;
-          avatarResp = await fetch(imageUrl!);
-        } else if (pzlaId) {
-          const url = `https://statystyka.pzla.pl/personal.php?page=profile&nr_zaw=${pzlaId}`;
-          const { document } = new JSDOM(await (await fetch(url)).text()).window;
-          let imageUrl = document.querySelector('td[align=center] img')?.getAttribute('src');
-          if (!imageUrl?.startsWith('/')) imageUrl = 'https://statystyka.pzla.pl/' + imageUrl;
-          avatarResp = await fetch(imageUrl!);
-        } else if (stravaId) {
-          const url = `https://www.strava.com/pros/${stravaId}`;
-          const { document } = new JSDOM(await (await fetch(url)).text()).window;
-          const imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
-          avatarResp = await fetch(imageUrl!);
-        } else if (olympediaId) {
-          const imageUrl = `https://d2a3o6pzho379u.cloudfront.net/${olympediaId}.jpg`;
-          avatarResp = await fetch(imageUrl);
-        } else if (europeanAthleticsId) {
-          const imageUrl = `https://res.cloudinary.com/european-athletics/d_default.png/athletes-profile-pictures/${europeanAthleticsId}`;
-          avatarResp = await fetch(imageUrl);
-        } else if (describedAtUrl) {
-          let imgUrl: string | undefined;
-          ({ imgUrl, avatarBuffer } = await getProfilePic(describedAtUrl as string, { firstName, lastName }));
-          avatarCache[avatarCacheKey][id] = imgUrl!;
-          fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
+      if (fs.existsSync(`./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}.png`)) {
+        avatarBuffer = fs.readFileSync(`./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}.png`);
+      } else if (team) { // comment out block until googlethis is fixed
+        let imgUrl: string | undefined;
+        const prevDomains: string[] = [];
+        for (const { searchQuery, allowDupes } of [
+          { searchQuery: `intitle:"${lastName}" ${firstName} ${lastName} ${team} track and field roster` },
+          {
+            searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} track and field roster`,
+          },
+          {
+            searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} cross country roster`,
+            allowDupes: true,
+          },
+        ]) {
+          // const { results } = await google.search(searchQuery);
+          // const { url } =
+          //   results.find(({ url, is_sponsored }) => {
+          //     if (is_sponsored) return false;
+          //     if (!allowDupes && prevDomains.includes(getDomain(url))) return false;
+          //     if (url.includes('tfrrs.org')) return false;
+          //     if (url.includes('athletic.net')) return false;
+          //     if (url.includes('worldathletics.org')) return false;
+          //     if (url.endsWith('/roster/')) return false;
+          //     return true;
+          //   })! ?? {};
+          const results = await (await fetch(`https://content-customsearch.googleapis.com/customsearch/v1?${new URLSearchParams({
+            q: searchQuery,
+            cx: process.env.GOOGLE_CX!,
+            key: process.env.GOOGLE_KEY!,
+          })}`)).json();
+          results.items ??= [];
+          console.log(results.items[0]?.link);
+          const { link } = results.items.find(({ link }) => {
+            if (!allowDupes && prevDomains.includes(getDomain(link))) return false;
+            if (link.includes('tfrrs.org')) return false;
+            if (link.includes('athletic.net')) return false;
+            if (link.includes('worldathletics.org')) return false;
+            if (link.endsWith('/roster/') || link.endsWith('/roster')) return false;
+            return true;
+          }) ?? {};
+          if (!link) continue;
+          prevDomains.push(getDomain(link));
+          console.log(searchQuery, link);
+          ({ imgUrl, avatarBuffer } = await getProfilePic(link, { firstName, lastName }));
           if (!avatarBuffer) continue;
-          // if (images.length) break;
-          // const { document } = new JSDOM(await (await fetch(describedAtUrl as string)).text()).window;
-          // let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
-          // if (imageUrl?.startsWith('/')) imageUrl = getDomain(describedAtUrl as string) + imageUrl;
-          // avatarResp = await fetch(imageUrl!);
+          images = await getIcons(avatarBuffer);
+          if (images.length) break;
+        }
+        if (!images.length) {
+          console.log('Skipping');
+          avatarCache[avatarCacheKey][id] = 'skip';
+          fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
+          // fs.symlinkSync('./default_128x128.png', file128);
+          continue;
+        }
+        avatarCache[avatarCacheKey][id] = imgUrl!;
+        fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
+      } else {
+        if (qid && athObj) {
+          const usatfId = athObj.claims?.[P_USATF_ATHLETE_ID]?.[0];
+          const olympediaId = athObj.claims?.[P_OLYMPEDIA_ID]?.[0];
+          const moroccanId = athObj.claims?.[P_MOROCCAN_OLYMPIC_ID]?.[0];
+          const pzlaId = athObj.claims?.[P_PZLA_ATHLETE_ID]?.[0];
+          const stravaId = athObj.claims?.[P_STRAVA_ID]?.[0];
+          const europeanAthleticsId = athObj.claims?.[P_EUROPEAN_ATHLETICS_ID]?.[0];
+          const describedAtUrl = athObj.claims?.[P_DESCRIBED_AT_URL]?.[0];
+          console.log(describedAtUrl)
+          if (usatfId) {
+            const url = `https://www.usatf.org/athlete-bios/${usatfId}`;
+            const { document } = new JSDOM(await (await fetch(url)).text()).window;
+            let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
+            if (imageUrl?.startsWith('/')) imageUrl = getDomain(url) + imageUrl;
+            avatarResp = await fetch(imageUrl!);
+          } else if (moroccanId) {
+            const url = `https://www.cnom.org.ma/fr/athlete/${moroccanId}`;
+            const { document } = new JSDOM(await (await fetch(url)).text()).window;
+            let imageUrl = document.querySelector('.profile-box img')?.getAttribute('src');
+            if (imageUrl?.startsWith('/')) imageUrl = getDomain(url) + imageUrl;
+            avatarResp = await fetch(imageUrl!);
+          } else if (pzlaId) {
+            const url = `https://statystyka.pzla.pl/personal.php?page=profile&nr_zaw=${pzlaId}`;
+            const { document } = new JSDOM(await (await fetch(url)).text()).window;
+            let imageUrl = document.querySelector('td[align=center] img')?.getAttribute('src');
+            if (!imageUrl?.startsWith('/')) imageUrl = 'https://statystyka.pzla.pl/' + imageUrl;
+            avatarResp = await fetch(imageUrl!);
+          } else if (stravaId) {
+            const url = `https://www.strava.com/pros/${stravaId}`;
+            const { document } = new JSDOM(await (await fetch(url)).text()).window;
+            const imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
+            avatarResp = await fetch(imageUrl!);
+          } else if (olympediaId) {
+            const imageUrl = `https://d2a3o6pzho379u.cloudfront.net/${olympediaId}.jpg`;
+            avatarResp = await fetch(imageUrl);
+          } else if (europeanAthleticsId) {
+            const imageUrl = `https://res.cloudinary.com/european-athletics/d_default.png/athletes-profile-pictures/${europeanAthleticsId}`;
+            avatarResp = await fetch(imageUrl);
+          } else if (describedAtUrl) {
+            let imgUrl: string | undefined;
+            ({ imgUrl, avatarBuffer } = await getProfilePic(describedAtUrl as string, { firstName, lastName }));
+            avatarCache[avatarCacheKey][id] = imgUrl!;
+            fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
+            if (!avatarBuffer) continue;
+            // if (images.length) break;
+            // const { document } = new JSDOM(await (await fetch(describedAtUrl as string)).text()).window;
+            // let imageUrl = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
+            // if (imageUrl?.startsWith('/')) imageUrl = getDomain(describedAtUrl as string) + imageUrl;
+            // avatarResp = await fetch(imageUrl!);
+          }
         }
       }
     }
