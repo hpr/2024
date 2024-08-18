@@ -69,6 +69,12 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   london24: {
     "400m Hurdles Women": "51.00",
   },
+  lausanne24: {
+    "1500m Men": "3:26.00",
+  },
+  silesia24: {
+    "800m Men": "1:41.00",
+  },
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
@@ -82,6 +88,8 @@ const deadlines: { [k in DLMeet]?: string } = {
   paris24: '9am ET',
   monaco24: '2pm ET',
   london24: '9am ET',
+  lausanne24: '2pm ET',
+  silesia24: '8:59am ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -118,7 +126,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   monaco24: ['https://monaco.diamondleague.com/en/programme-resultats-monaco-en/'],
   london24: ['https://london.diamondleague.com/lists-results-london/'],
   lausanne24: ['https://lausanne.diamondleague.com/en/programme-results-lausanne/'],
-  //silesia24: [''],
+  silesia24: ['https://silesia.diamondleague.com/en/programme-results/translate-to-english-programme-results/'],
 };
 
 const idTeams = {

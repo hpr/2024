@@ -12,8 +12,9 @@ export const scoreTable = [
   [6, 5, 4, 3, 2, 1],
 ];
 
-export const GRAPHQL_ENDPOINT = 'https://kwmmqyw2jjhqvnb5mfm4inusju.appsync-api.eu-west-1.amazonaws.com/graphql';
-export const GRAPHQL_API_KEY = 'da2-c4f3kpjdtbgcdh73dlj474d77m'; // intentionally public
+export const GRAPHQL_ENDPOINT = 'https://graphql-prod-4646.prod.aws.worldathletics.org/graphql';
+export const GRAPHQL_API_KEY = 'da2-hmvn5poyr5ch5guhvq2nl4v6v4'; // intentionally public
+
 export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
   competitor: getSingleCompetitor(id: $id, urlSlug: $urlSlug) {
