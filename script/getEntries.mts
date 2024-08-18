@@ -117,6 +117,8 @@ const schedules: { [k in DLMeet]?: string[] } = {
   paris24: ['https://paris.diamondleague.com/en/programme-results/programme-2020-results/'],
   monaco24: ['https://monaco.diamondleague.com/en/programme-resultats-monaco-en/'],
   london24: ['https://london.diamondleague.com/lists-results-london/'],
+  lausanne24: ['https://lausanne.diamondleague.com/en/programme-results-lausanne/'],
+  //silesia24: [''],
 };
 
 const idTeams = {
