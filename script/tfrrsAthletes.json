@@ -35,6 +35,11 @@
     "team": "Oklahoma State"
   },
   {
+    "name": "Ryan Schoppe",
+    "id": "7692587",
+    "team": "Oklahoma State"
+  },
+  {
     "name": "Parker Wolfe",
     "id": "7908131",
     "team": "North Carolina"
@@ -68,6 +73,11 @@
     "name": "Kirami Yego",
     "id": "7557031",
     "team": "Arkansas"
+  },
+  {
+    "name": "Liam Murphy",
+    "id": "7731743",
+    "team": "Villanova"
   },
   {
     "name": "Sanele Masondo",
@@ -110,6 +120,11 @@
     "team": "Arkansas"
   },
   {
+    "name": "Rodgers Kiplimo",
+    "id": "8245423",
+    "team": "Iowa State"
+  },
+  {
     "name": "Victor Kibiego",
     "id": "8005749",
     "team": "Texas A&M"
@@ -120,11 +135,6 @@
     "team": "Alabama"
   },
   {
-    "name": "Rodgers Kiplimo",
-    "id": "8245423",
-    "team": "Iowa State"
-  },
-  {
     "name": "David Mullarkey",
     "id": "8368612",
     "team": "Florida State"
@@ -133,6 +143,11 @@
     "name": "Gable Sieperda",
     "id": "6872531",
     "team": "Iowa State"
+  },
+  {
+    "name": "Aidan Troutner",
+    "id": "7712182",
+    "team": "BYU"
   },
   {
     "name": "Ethan Strand",
@@ -230,6 +245,11 @@
     "team": "Virginia"
   },
   {
+    "name": "Lex Young",
+    "id": "8592990",
+    "team": "Stanford"
+  },
+  {
     "name": "Anass Essayi",
     "id": "8074967",
     "team": "South Carolina"
@@ -238,11 +258,6 @@
     "name": "Tyrone Gorze",
     "id": "8625385",
     "team": "Washington"
-  },
-  {
-    "name": "Lex Young",
-    "id": "8592990",
-    "team": "Stanford"
   },
   {
     "name": "Josh Truchon",
@@ -255,14 +270,19 @@
     "team": "Portland"
   },
   {
+    "name": "Matthew Forrester",
+    "id": "8257716",
+    "team": "Butler"
+  },
+  {
     "name": "Elliott Cook",
     "id": "7722809",
     "team": "Oregon"
   },
   {
-    "name": "Matthew Forrester",
-    "id": "8257716",
-    "team": "Butler"
+    "name": "Joseph O'Brien",
+    "id": "8232312",
+    "team": "Wake Forest"
   },
   {
     "name": "Parvej Khan",
@@ -275,14 +295,14 @@
     "team": "Weber State"
   },
   {
-    "name": "Joseph O'Brien",
-    "id": "8232312",
-    "team": "Wake Forest"
-  },
-  {
     "name": "Bob Liking",
     "id": "7724877",
     "team": "Wisconsin"
+  },
+  {
+    "name": "Will Muirhead",
+    "id": "7692585",
+    "team": "Oklahoma State"
   },
   {
     "name": "Nicholas Plant",
@@ -293,11 +313,6 @@
     "name": "Jack Jennings",
     "id": "7731750",
     "team": "Tulane"
-  },
-  {
-    "name": "Will Muirhead",
-    "id": "7692585",
-    "team": "Oklahoma State"
   },
   {
     "name": "Valentin Soca",
@@ -335,6 +350,11 @@
     "team": "Stanford"
   },
   {
+    "name": "Kristian Imroth",
+    "id": "8586626",
+    "team": "Eastern Kentucky"
+  },
+  {
     "name": "Thobias Cheruiyot",
     "id": "8739214",
     "team": "Oklahoma"
@@ -350,24 +370,19 @@
     "team": "Tulsa"
   },
   {
-    "name": "Kristian Imroth",
-    "id": "8586626",
-    "team": "Eastern Kentucky"
-  },
-  {
     "name": "Kang Nyoak",
     "id": "7739881",
     "team": "Northern Arizona"
   },
   {
-    "name": "Murphy Smith",
-    "id": "7920953",
-    "team": "Navy"
-  },
-  {
     "name": "Brian Masai",
     "id": "8368105",
     "team": "Arkansas"
+  },
+  {
+    "name": "Murphy Smith",
+    "id": "7920953",
+    "team": "Navy"
   },
   {
     "name": "James Donahue",
@@ -380,14 +395,14 @@
     "team": "Butler"
   },
   {
-    "name": "Max Wehrli",
-    "id": "7526855",
-    "team": "Utah State"
-  },
-  {
     "name": "Patrick Anderson",
     "id": "7704888",
     "team": "North Carolina"
+  },
+  {
+    "name": "Max Wehrli",
+    "id": "7526855",
+    "team": "Utah State"
   },
   {
     "name": "Tyler Berg",
@@ -400,6 +415,16 @@
     "team": "Texas"
   },
   {
+    "name": "Cole Sprout",
+    "id": "7697360",
+    "team": "Stanford"
+  },
+  {
+    "name": "Aiden Neal",
+    "id": "8230762",
+    "team": "North Carolina"
+  },
+  {
     "name": "Joe Waskom",
     "id": "7480799",
     "team": "Washington"
@@ -410,14 +435,14 @@
     "team": "Tulsa"
   },
   {
-    "name": "Cole Sprout",
-    "id": "7697360",
-    "team": "Stanford"
-  },
-  {
     "name": "Toby Gualter",
     "id": "7571391",
     "team": "NC State"
+  },
+  {
+    "name": "Lachlan Wellington",
+    "id": "7742074",
+    "team": "Iona"
   },
   {
     "name": "Rogerio Amaral",
@@ -425,9 +450,14 @@
     "team": "South Carolina"
   },
   {
-    "name": "Lachlan Wellington",
-    "id": "7742074",
-    "team": "Iona"
+    "name": "Emmanuel Sgouros",
+    "id": "8259175",
+    "team": "Texas"
+  },
+  {
+    "name": "Logan Measner",
+    "id": "8274011",
+    "team": "Wisconsin"
   },
   {
     "name": "Patrick Thygesen",
@@ -445,14 +475,14 @@
     "team": "Loyola (Ill.)"
   },
   {
-    "name": "Emmanuel Sgouros",
-    "id": "8259175",
-    "team": "Texas"
-  },
-  {
     "name": "Alex Comerford",
     "id": "7367301",
     "team": "Syracuse"
+  },
+  {
+    "name": "Ferenc Kovacs",
+    "id": "8623171",
+    "team": "Harvard"
   },
   {
     "name": "Benjamin Godish",
@@ -463,11 +493,6 @@
     "name": "Dylan Schubert",
     "id": "7717276",
     "team": "Furman"
-  },
-  {
-    "name": "Ferenc Kovacs",
-    "id": "8623171",
-    "team": "Harvard"
   },
   {
     "name": "Wil Smith",
@@ -485,6 +510,11 @@
     "team": "Texas"
   },
   {
+    "name": "Sean Donoghue",
+    "id": "7891936",
+    "team": "Villanova"
+  },
+  {
     "name": "Matt Rankin",
     "id": "7742085",
     "team": "Iona"
@@ -493,6 +523,11 @@
     "name": "Taha Er Raouy",
     "id": "8588314",
     "team": "Eastern Kentucky"
+  },
+  {
+    "name": "Owen MacKenzie",
+    "id": "7377483",
+    "team": "Michigan"
   },
   {
     "name": "Nathan Kapel",
@@ -515,9 +550,14 @@
     "team": "Utah State"
   },
   {
-    "name": "Owen MacKenzie",
-    "id": "7377483",
-    "team": "Michigan"
+    "name": "Daniel Abdala",
+    "id": "8281093",
+    "team": "Portland"
+  },
+  {
+    "name": "Nolan Topper",
+    "id": "7896261",
+    "team": "Stanford"
   },
   {
     "name": "Owen Karas",
@@ -525,9 +565,9 @@
     "team": "Yale"
   },
   {
-    "name": "Daniel Abdala",
-    "id": "8281093",
-    "team": "Portland"
+    "name": "Ahmed Kadri",
+    "id": "7727422",
+    "team": "Eastern Kentucky"
   },
   {
     "name": "Jack Crull",
@@ -540,9 +580,14 @@
     "team": "Alabama"
   },
   {
-    "name": "Ahmed Kadri",
-    "id": "7727422",
-    "team": "Eastern Kentucky"
+    "name": "Wes Porter",
+    "id": "7700480",
+    "team": "Virginia"
+  },
+  {
+    "name": "Trent McFarland",
+    "id": "8592511",
+    "team": "Michigan"
   },
   {
     "name": "William Merrick",
@@ -550,9 +595,9 @@
     "team": "Illinois"
   },
   {
-    "name": "Wes Porter",
-    "id": "7700480",
-    "team": "Virginia"
+    "name": "Robert Cozean",
+    "id": "7688019",
+    "team": "Notre Dame"
   },
   {
     "name": "Collin Gilstrap",
@@ -578,11 +623,6 @@
     "name": "Peter Visser",
     "id": "7897757",
     "team": "Weber State"
-  },
-  {
-    "name": "Robert Cozean",
-    "id": "7688019",
-    "team": "Notre Dame"
   },
   {
     "name": "Bryce Cerkowniak",
@@ -613,6 +653,11 @@
     "name": "Charlie Sprott",
     "id": "8232332",
     "team": "Wake Forest"
+  },
+  {
+    "name": "Devan Kipyego",
+    "id": "8603466",
+    "team": "Iowa State"
   },
   {
     "name": "Birhanu Harriman",
@@ -690,6 +735,21 @@
     "team": "CBU"
   },
   {
+    "name": "Pierce Seigne",
+    "id": "8274010",
+    "team": "Wisconsin"
+  },
+  {
+    "name": "Riley Flemington",
+    "id": "8236692",
+    "team": "Michigan"
+  },
+  {
+    "name": "Marco Langon",
+    "id": "8232893",
+    "team": "Villanova"
+  },
+  {
     "name": "Gitch Hayes",
     "id": "8230760",
     "team": "North Carolina"
@@ -745,11 +805,6 @@
     "team": "Air Force"
   },
   {
-    "name": "Carter Cutting",
-    "id": "8609285",
-    "team": "BYU"
-  },
-  {
     "name": "Zach Leachman",
     "id": "7699374",
     "team": "Florida State"
@@ -788,6 +843,11 @@
     "name": "Sean Kay",
     "id": "7805440",
     "team": "Notre Dame"
+  },
+  {
+    "name": "Myles Hogan",
+    "id": "8278826",
+    "team": "Princeton"
   },
   {
     "name": "Tristan Coles",
@@ -870,6 +930,11 @@
     "team": "Wisconsin"
   },
   {
+    "name": "Ethan Wechsler",
+    "id": "7698074",
+    "team": "Syracuse"
+  },
+  {
     "name": "Zach Ayers",
     "id": "8273666",
     "team": "Air Force"
@@ -888,6 +953,11 @@
     "name": "Connor Ackley",
     "id": "8582411",
     "team": "Syracuse"
+  },
+  {
+    "name": "Will Kelly",
+    "id": "7786602",
+    "team": "Montana State"
   },
   {
     "name": "Logan Law",
@@ -975,6 +1045,11 @@
     "team": "Air Force"
   },
   {
+    "name": "Drew Kolodge",
+    "id": "8582711",
+    "team": "Gonzaga"
+  },
+  {
     "name": "Joe Farley",
     "id": "8618887",
     "team": "Florida State"
@@ -995,14 +1070,14 @@
     "team": "Georgetown"
   },
   {
+    "name": "Theo Woods",
+    "id": "7373060",
+    "team": "Georgetown"
+  },
+  {
     "name": "Rynard Swanepoel",
     "id": "7895667",
     "team": "Wake Forest"
-  },
-  {
-    "name": "Ryan Mulrooney",
-    "id": "8585638",
-    "team": "Georgetown"
   },
   {
     "name": "Abraham Avila-Martinez",
@@ -1018,16 +1093,6 @@
     "name": "Drew Costelow",
     "id": "8605981",
     "team": "Colorado"
-  },
-  {
-    "name": "Christian de Vaal",
-    "id": "8587813",
-    "team": "Wisconsin"
-  },
-  {
-    "name": "Jacob Alfonso",
-    "id": "8230637",
-    "team": "Gonzaga"
   },
   {
     "name": "Nick Soldevere",
@@ -1050,11 +1115,6 @@
     "team": "Air Force"
   },
   {
-    "name": "Peter Baracco",
-    "id": "8236682",
-    "team": "Michigan"
-  },
-  {
     "name": "Joe Ewing",
     "id": "7919017",
     "team": "Harvard"
@@ -1065,21 +1125,6 @@
     "team": "CBU"
   },
   {
-    "name": "Gabriel Planty",
-    "id": "7698071",
-    "team": "Syracuse"
-  },
-  {
-    "name": "Ben Calusinski",
-    "id": "7906909",
-    "team": "Oklahoma State"
-  },
-  {
-    "name": "Xander Black",
-    "id": "7891376",
-    "team": "Michigan"
-  },
-  {
     "name": "Luke Schagelin",
     "id": "8909338",
     "team": "Tennessee"
@@ -1088,6 +1133,11 @@
     "name": "Cooper Laird",
     "id": "7723842",
     "team": "Gonzaga"
+  },
+  {
+    "name": "Marcelo Parra",
+    "id": "8907402",
+    "team": "Princeton"
   },
   {
     "name": "Paul Talens",
@@ -1105,9 +1155,29 @@
     "team": "Tennessee"
   },
   {
+    "name": "Steven Hergenrother",
+    "id": "8907399",
+    "team": "Princeton"
+  },
+  {
+    "name": "Franco Parra",
+    "id": "8907401",
+    "team": "Princeton"
+  },
+  {
     "name": "Jarryn Lowe",
     "id": "8909337",
     "team": "Tennessee"
+  },
+  {
+    "name": "Sebastian Martinez",
+    "id": "8907425",
+    "team": "Princeton"
+  },
+  {
+    "name": "Nick Sullivan",
+    "id": "8608974",
+    "team": "Villanova"
   },
   {
     "name": "Ahmed Ibrahim",
@@ -1123,6 +1193,11 @@
     "name": "Gary Martin",
     "id": "8256252",
     "team": "Virginia"
+  },
+  {
+    "name": "Devon Comber",
+    "id": "7891937",
+    "team": "Villanova"
   },
   {
     "name": "Luke Ondracek",
