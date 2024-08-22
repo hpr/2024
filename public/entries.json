@@ -25416,7 +25416,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "13.10",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rasheed",
+            "lastName": "Broadbell",
+            "id": "14744395",
+            "pb": "12.94",
+            "sb": "13.09",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.14",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grant",
+            "lastName": "Holloway",
+            "id": "14516985",
+            "pb": "12.81",
+            "sb": "12.86",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.23",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Hansle",
+            "lastName": "Parchment",
+            "id": "14325570",
+            "pb": "12.93",
+            "sb": "13.19",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.26",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daniel",
+            "lastName": "Roberts",
+            "id": "14577558",
+            "pb": "12.96",
+            "sb": "12.96",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.26",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lorenzo Ndele",
+            "lastName": "Simonelli",
+            "id": "14840516",
+            "pb": "13.05",
+            "sb": "13.05",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.34",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cordell",
+            "lastName": "Tinch",
+            "id": "14719972",
+            "pb": "12.96",
+            "sb": "13.03",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.37",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sasha",
+            "lastName": "Zhoya",
+            "id": "14745474",
+            "pb": "13.15",
+            "sb": "13.15",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "13.78",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jason",
+            "lastName": "Joseph",
+            "id": "14680682",
+            "pb": "13.08",
+            "sb": "13.25",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Women": {
       "date": "2024-08-22T21:19",
