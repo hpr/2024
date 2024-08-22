@@ -25180,7 +25180,162 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "8:21.50",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Diribe",
+            "lastName": "Welteji",
+            "id": "14848719",
+            "pb": null,
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:23.48",
+          "place": 2,
+          "notes": ""
+        },
+        {
+          "mark": "8:24.40",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tsigie",
+            "lastName": "Gebreselama",
+            "id": "14848732",
+            "pb": "8:59.20",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:25.10",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Elise",
+            "lastName": "Cranny",
+            "id": "14531083",
+            "pb": "8:29.95",
+            "sb": null,
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:31.91",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Georgia",
+            "lastName": "Griffith",
+            "id": "14549778",
+            "pb": "8:24.20",
+            "sb": "8:24.20",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:32.33",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nathalie",
+            "lastName": "Blomqvist",
+            "id": "14719529",
+            "pb": "8:32.23",
+            "sb": "8:32.23",
+            "nat": "FIN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:34.96",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "8:42.92",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "8:43.81",
+          "place": 9,
+          "notes": ""
+        },
+        {
+          "mark": "8:43.99",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Joselyn Daniely",
+            "lastName": "Brea",
+            "id": "14748599",
+            "pb": "8:43.26",
+            "sb": null,
+            "nat": "VEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "8:44.26",
+          "place": 11,
+          "notes": ""
+        },
+        {
+          "mark": "8:52.98",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Aynadis",
+            "lastName": "Mebratu",
+            "id": "14923883",
+            "pb": "8:30.99",
+            "sb": null,
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Marta",
+            "lastName": "García",
+            "id": "14635475",
+            "pb": "8:29.32",
+            "sb": "8:29.32",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Billings",
+            "id": "14464575",
+            "pb": "8:47.11",
+            "sb": "8:47.11",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "110m Hurdles Men": {
       "date": "2024-08-22T21:10",
