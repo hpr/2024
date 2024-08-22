@@ -24354,7 +24354,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.35",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jasmine",
+            "lastName": "Camacho-Quinn",
+            "id": "14494234",
+            "pb": "12.26",
+            "sb": "12.35",
+            "nat": "PUR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.38",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grace",
+            "lastName": "Stark",
+            "id": "14716925",
+            "pb": "12.31",
+            "sb": "12.31",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.38",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ackera",
+            "lastName": "Nugent",
+            "id": "14685249",
+            "pb": "12.28",
+            "sb": "12.28",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.49",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nadine",
+            "lastName": "Visser",
+            "id": "14451249",
+            "pb": "12.36",
+            "sb": "12.36",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.53",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Danielle",
+            "lastName": "Williams",
+            "id": "14450995",
+            "pb": "12.32",
+            "sb": "12.46",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.59",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alaysha",
+            "lastName": "Johnson",
+            "id": "14486620",
+            "pb": "12.31",
+            "sb": "12.31",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.69",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cyréna",
+            "lastName": "Samba-Mayela",
+            "id": "14735030",
+            "pb": "12.31",
+            "sb": "12.31",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.75",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ditaji",
+            "lastName": "Kambundji",
+            "id": "14739461",
+            "pb": "12.40",
+            "sb": "12.40",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "1500m Men": {
       "tiebreaker": "3:26.00",
