@@ -13,7 +13,7 @@ dotenv.config();
 // '=.|m|.='
 // .='`"``=.
 
-const tfrrsMode = false;
+const tfrrsMode = true;
 
 const PIXELME_API = 'https://pixel-me-api-gateway-cj34o73d6a-an.a.run.app/api/v1';
 const key = 'AIzaSyB1icoMXVbxjiAzwBTI_4FufkzTnX78U0s'; // intentionally public
@@ -187,7 +187,7 @@ for (const entrant of entrants) {
         let imgUrl: string | undefined;
         const prevDomains: string[] = [];
         for (const { searchQuery, allowDupes } of [
-          { searchQuery: `intitle:"${lastName}" ${firstName} ${lastName} ${team} track and field roster` },
+          { searchQuery: `${firstName} ${lastName} ${team} track and field roster` },
           {
             searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} track and field roster`,
           },
