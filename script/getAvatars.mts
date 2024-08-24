@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { Entrant, Entries } from './types.mjs';
 import google from 'googlethis';
-import { JSDOM } from 'jsdom';
+import { DOMWindow, JSDOM } from 'jsdom';
 import gm from 'gm';
 import { getDomain } from './const.mjs';
 import WBK, { EntityId, SimplifiedItem } from 'wikibase-sdk';
@@ -88,7 +88,12 @@ const getProfilePic = async (
   { firstName, lastName }: { firstName: string; lastName: string }
 ): Promise<{ imgUrl?: string; avatarBuffer?: ArrayBuffer }> => {
   let imgUrl: string | undefined;
-  const { document, window } = new JSDOM(await (await fetch(url)).text()).window;
+  let document: Document, window: DOMWindow;
+  try {
+    ({ document, window } = new JSDOM(await (await fetch(url)).text()).window);
+  } catch (e) {
+    return { imgUrl: undefined, avatarBuffer: undefined };
+  }
   const ogImages = document.querySelectorAll('meta[name="og:image"]');
   if (ogImages.length === 1 && !ogImages[0].getAttribute('content')?.includes('/amt-media/') && !ogImages[0].getAttribute('content')?.endsWith('site.png'))
     imgUrl = ogImages[0].getAttribute('content')!;
@@ -125,7 +130,12 @@ const getProfilePic = async (
   }
   console.log(imgUrl);
   if (!imgUrl) return {};
-  const imgArrBuf = await (await fetch(imgUrl!)).arrayBuffer();
+  let imgArrBuf: ArrayBuffer;
+  try {
+    imgArrBuf = await (await fetch(imgUrl!)).arrayBuffer();
+  } catch (e) {
+    return { imgUrl: undefined, avatarBuffer: undefined };
+  }
   const size: gm.Dimensions = await new Promise((res) => gm(Buffer.from(imgArrBuf), 'image.jpg').size((_, size) => res(size)));
   if (!size) return {};
   if (size.width > size.height * 1.5) return {};
@@ -219,6 +229,8 @@ for (const entrant of entrants) {
             if (link.includes('tfrrs.org')) return false;
             if (link.includes('athletic.net')) return false;
             if (link.includes('worldathletics.org')) return false;
+            if (link.includes('baseball')) return false;
+            if (link.includes('swimming')) return false;
             if (link.endsWith('/roster/') || link.endsWith('/roster')) return false;
             if (link.endsWith('.pdf')) return false;
             return true;
