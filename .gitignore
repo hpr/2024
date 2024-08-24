@@ -1,5 +1,6 @@
 .env
 build
+script/tfrrsMontage.png
 #script/blurbCache.json
 
 # Logs
