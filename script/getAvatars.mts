@@ -197,12 +197,12 @@ for (const entrant of entrants) {
         let imgUrl: string | undefined;
         const prevDomains: string[] = [];
         for (const { searchQuery, allowDupes } of [
-          { searchQuery: `${firstName} ${lastName} ${team} track and field roster` },
+          { searchQuery: `"${firstName} ${lastName}" ${team} track and field roster` },
           {
-            searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} track and field roster`,
+            searchQuery: `"${firstName} ${lastName}" ${new Date().getFullYear() - 1} track and field roster`,
           },
           {
-            searchQuery: `${firstName} ${lastName} ${new Date().getFullYear() - 1} cross country roster`,
+            searchQuery: `"${firstName} ${lastName}" ${new Date().getFullYear() - 1} cross country roster`,
             allowDupes: true,
           },
         ]) {
