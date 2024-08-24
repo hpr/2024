@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--
       montage -background "#141517" -tile 6x $(jq -r '(.lausanne24 | values)[].entrants[0,1].id' < public/entries.json | sed -e 's|^|./public/img/avatars/|' | sed -e 's/$/_128x128.png/' | tr '\n' ' ') public/montage.png && feh public/montage.png
-      montage -background "#141517" -tile 17x  $(jq -r '.[0:170][].id' < script/tfrrsAthletes.json | sed -e 's|^|./public/img/tfrrsAvatars/|' | sed -e 's/$/_128x128.png/' | tr '\n' ' ') tempImg/tfrrsMontage.png && feh tempImg/tfrrsMontage.png
+      montage -background "#141517" -tile 17x  $(jq -r 'map(select(.skipped | not)) | .[:170][].id' < script/tfrrsAthletes.json | sed -e 's|^|./public/img/tfrrsAvatars/|' | sed -e 's/$/_128x128.png/' | tr '\n' ' ') tempImg/tfrrsMontage.png && feh tempImg/tfrrsMontage.png
     -->
     <meta property="og:image" content="https://hpr.github.io/2024/montage.png" />
     <title>Fantasy Athletics: Diamond League '24</title>

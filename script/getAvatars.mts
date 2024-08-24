@@ -188,7 +188,7 @@ for (const entrant of entrants) {
       }
     }
     if (avatarCache[avatarCacheKey][id]) {
-      if (avatarCache[avatarCacheKey][id] === 'skip') continue;
+      if (avatarCache[avatarCacheKey][id] === 'skip') {  (entrant as any).skipped = true; continue; }
       avatarResp = await fetch(avatarCache[avatarCacheKey][id]);
     } else {
       if (fs.existsSync(`./public/img/${tfrrsMode ? 'tfrrsAvatars' : 'avatars'}/${id}.png`)) {
@@ -246,6 +246,7 @@ for (const entrant of entrants) {
         if (!images.length) {
           console.log('Skipping');
           avatarCache[avatarCacheKey][id] = 'skip';
+          (entrant as any).skipped = true;
           fs.writeFileSync(AVATAR_CACHE, JSON.stringify(avatarCache, null, 2));
           // fs.symlinkSync('./default_128x128.png', file128);
           continue;
@@ -330,4 +331,7 @@ for (const entrant of entrants) {
 }
 if (changedEntrants && !tfrrsMode) {
   fs.writeFileSync('./public/entries.json', JSON.stringify(entries));
+}
+if (tfrrsMode) {
+  fs.writeFileSync('./script/tfrrsAthletes.json', JSON.stringify(entrants, null, 2));
 }
