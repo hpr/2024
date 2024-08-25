@@ -27225,7 +27225,135 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "48.66",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marileidy",
+            "lastName": "Paulino",
+            "id": "14749613",
+            "pb": "48.17",
+            "sb": "48.17",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.23",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Salwa Eid",
+            "lastName": "Naser",
+            "id": "14643442",
+            "pb": "48.14",
+            "sb": "48.53",
+            "nat": "BRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.95",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natalia",
+            "lastName": "Kaczmarek",
+            "id": "14642563",
+            "pb": "48.90",
+            "sb": "48.90",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.00",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rhasidat",
+            "lastName": "Adeleke",
+            "id": "14745252",
+            "pb": "49.07",
+            "sb": "49.07",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.01",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexis",
+            "lastName": "Holmes",
+            "id": "14761424",
+            "pb": "49.77",
+            "sb": "49.77",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.33",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Henriette",
+            "lastName": "Jæger",
+            "id": "14780807",
+            "pb": "49.85",
+            "sb": "49.85",
+            "nat": "NOR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.46",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "49.58",
+            "sb": "49.58",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.82",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sada",
+            "lastName": "Williams",
+            "id": "14592846",
+            "pb": "49.58",
+            "sb": "49.80",
+            "nat": "BAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.02",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Laviai",
+            "lastName": "Nielsen",
+            "id": "14599229",
+            "pb": "49.87",
+            "sb": "49.87",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Men": {
       "date": "2024-08-25T16:57",
