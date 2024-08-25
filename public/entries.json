@@ -28761,7 +28761,108 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "10.83",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tia",
+            "lastName": "Clayton",
+            "id": "14787678",
+            "pb": "10.86",
+            "sb": "10.86",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.83",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou-Smith",
+            "id": "14415994",
+            "pb": "10.72",
+            "sb": "10.87",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.84",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tamari",
+            "lastName": "Davis",
+            "id": "14716794",
+            "pb": "10.83",
+            "sb": "10.91",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.01",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "10.90",
+            "sb": "10.92",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.03",
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "mark": "11.03",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ewa",
+            "lastName": "Swoboda",
+            "id": "14451085",
+            "pb": "10.94",
+            "sb": "10.99",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "11.05",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "11.07",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "11.07",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natasha",
+            "lastName": "Morrison",
+            "id": "14285826",
+            "pb": "10.85",
+            "sb": "11.12",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        }
+      ]
     }
   }
 }
