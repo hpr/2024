@@ -26353,7 +26353,136 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "12.29",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ackera",
+            "lastName": "Nugent",
+            "id": "14685249",
+            "pb": "12.28",
+            "sb": "12.28",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.37",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Grace",
+            "lastName": "Stark",
+            "id": "14716925",
+            "pb": "12.31",
+            "sb": "12.31",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.38",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Danielle",
+            "lastName": "Williams",
+            "id": "14450995",
+            "pb": "12.32",
+            "sb": "12.46",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.40",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Masai",
+            "lastName": "Russell",
+            "id": "14659011",
+            "pb": "12.25",
+            "sb": "12.25",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.42",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alaysha",
+            "lastName": "Johnson",
+            "id": "14486620",
+            "pb": "12.31",
+            "sb": "12.31",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.47",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cyréna",
+            "lastName": "Samba-Mayela",
+            "id": "14735030",
+            "pb": "12.31",
+            "sb": "12.31",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.49",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nadine",
+            "lastName": "Visser",
+            "id": "14451249",
+            "pb": "12.36",
+            "sb": "12.36",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.52",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kendra",
+            "lastName": "Harrison",
+            "id": "14425415",
+            "pb": "12.20",
+            "sb": "12.39",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "12.76",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tonea",
+            "lastName": "Marshall",
+            "id": "14564128",
+            "pb": "12.36",
+            "sb": "12.36",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "LSU"
+          }
+        }
+      ]
     },
     "400m Hurdles Women": {
       "date": "2024-08-25T16:04",
