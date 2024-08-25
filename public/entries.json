@@ -28493,7 +28493,203 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "3:57.08",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Diribe",
+            "lastName": "Welteji",
+            "id": "14848719",
+            "pb": "3:52.75",
+            "sb": "3:52.75",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:57.88",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Freweyni",
+            "lastName": "Hailu",
+            "id": "14836656",
+            "pb": "3:55.48",
+            "sb": "3:55.48",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:58.11",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Georgia",
+            "lastName": "Bell",
+            "id": "14329797",
+            "pb": "3:52.61",
+            "sb": "3:52.61",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.55",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Melissa",
+            "lastName": "Courtney-Bryant",
+            "id": "14274781",
+            "pb": "3:58.01",
+            "sb": "4:03.50",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.65",
+          "place": 5,
+          "notes": ""
+        },
+        {
+          "mark": "3:59.95",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Klaudia",
+            "lastName": "Kazimierska",
+            "id": "14704467",
+            "pb": "4:00.12",
+            "sb": "4:00.12",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "3:59.97",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Susan Lokayo",
+            "lastName": "Ejore",
+            "id": "14700633",
+            "pb": "3:56.07",
+            "sb": "3:56.07",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:00.34",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Nozomi",
+            "lastName": "Tanaka",
+            "id": "14632538",
+            "pb": "3:59.19",
+            "sb": "3:59.70",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:00.41",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sarah",
+            "lastName": "Billings",
+            "id": "14464575",
+            "pb": "3:59.59",
+            "sb": "3:59.59",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:00.41",
+          "place": 10,
+          "notes": "",
+          "entrant": {
+            "firstName": "Revee",
+            "lastName": "Walcott-Nolan",
+            "id": "14471539",
+            "pb": "3:58.08",
+            "sb": "3:58.08",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:01.48",
+          "place": 11,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marta",
+            "lastName": "Pérez",
+            "id": "14452646",
+            "pb": "3:57.75",
+            "sb": "3:57.75",
+            "nat": "ESP",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:02.35",
+          "place": 12,
+          "notes": "",
+          "entrant": {
+            "firstName": "Linden",
+            "lastName": "Hall",
+            "id": "14272002",
+            "pb": "3:56.40",
+            "sb": "3:56.40",
+            "nat": "AUS",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "4:02.79",
+          "place": 13,
+          "notes": "",
+          "entrant": {
+            "firstName": "Cory Ann",
+            "lastName": "McGee",
+            "id": "14316538",
+            "pb": "3:57.44",
+            "sb": "3:57.44",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Aleksandra",
+            "lastName": "Płocińska",
+            "id": "14757652",
+            "pb": "4:03.55",
+            "sb": "4:03.55",
+            "nat": "POL",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        },
+        {
+          "place": null,
+          "notes": "DNF"
+        }
+      ]
     },
     "100m Women": {
       "date": "2024-08-25T17:53",
