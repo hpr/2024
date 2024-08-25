@@ -75,6 +75,9 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   silesia24: {
     "800m Men": "1:41.00",
   },
+  rome24: {
+    "100m Men": "9.80",
+  },
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
@@ -90,6 +93,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   london24: '9am ET',
   lausanne24: '2pm ET',
   silesia24: '8:59am ET',
+  rome24: '3pm ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -127,6 +131,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   london24: ['https://london.diamondleague.com/lists-results-london/'],
   lausanne24: ['https://lausanne.diamondleague.com/en/programme-results-lausanne/'],
   silesia24: ['https://silesia.diamondleague.com/en/programme-results/translate-to-english-programme-results/'],
+  rome24: ['https://rome.diamondleague.com/en/programme-results/programme-results-rome/'],
 };
 
 const idTeams = {

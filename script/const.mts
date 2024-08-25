@@ -1,6 +1,6 @@
 import { AthleticsEvent, DLMeet, WAEventCode } from './types.mjs';
 
-export const MEET: DLMeet = 'silesia24';
+export const MEET: DLMeet = 'rome24';
 
 export const NUM_SCORING: number = 2;
 
@@ -257,8 +257,8 @@ export const getDomainAndPath = (url: string) => url.split('/').slice(0, -1).joi
 
 export const backupNotes = ['DNS', 'DQ', 'DNF'];
 
-export const GRAPHQL_ENDPOINT = 'https://kwmmqyw2jjhqvnb5mfm4inusju.appsync-api.eu-west-1.amazonaws.com/graphql';
-export const GRAPHQL_API_KEY = 'da2-c4f3kpjdtbgcdh73dlj474d77m'; // intentionally public
+export const GRAPHQL_ENDPOINT = 'https://graphql-prod-4646.prod.aws.worldathletics.org/graphql';
+export const GRAPHQL_API_KEY = 'da2-hmvn5poyr5ch5guhvq2nl4v6v4'; // intentionally public
 export const GRAPHQL_QUERY = `
 query GetCompetitorBasicInfo($id: Int, $urlSlug: String) {
   competitor: getSingleCompetitor(id: $id, urlSlug: $urlSlug) {

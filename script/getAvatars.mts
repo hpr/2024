@@ -13,7 +13,7 @@ dotenv.config();
 // '=.|m|.='
 // .='`"``=.
 
-const tfrrsMode = true;
+const tfrrsMode = false;
 
 const PIXELME_API = 'https://pixel-me-api-gateway-cj34o73d6a-an.a.run.app/api/v1';
 const key = 'AIzaSyB1icoMXVbxjiAzwBTI_4FufkzTnX78U0s'; // intentionally public
