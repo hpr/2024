@@ -151,6 +151,7 @@ const entrantSortFunc = (a: Entrant, b: Entrant) => {
   return a.pb.localeCompare(b.pb);
 };
 const sanitizeEvtName = (name?: string, sex?: 'men' | 'women'): string | undefined => {
+  name = name?.replace('  ', ' ');
   name = name?.replace('Bowerman ', '').replace('Emsley Carr ', '');
   if (name?.startsWith('Men ')) name = name.replace('Men ', '') + ' Men';
   if (name?.startsWith('Women ')) name = name.replace('Women ', '') + ' Women';
