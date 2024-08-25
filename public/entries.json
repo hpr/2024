@@ -26443,7 +26443,117 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "52.13",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Femke",
+            "lastName": "Bol",
+            "id": "14707010",
+            "pb": "50.95",
+            "sb": "50.95",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "52.88",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anna",
+            "lastName": "Cockrell",
+            "id": "14486939",
+            "pb": "51.87",
+            "sb": "51.87",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.11",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rushell",
+            "lastName": "Clayton",
+            "id": "14425208",
+            "pb": "52.51",
+            "sb": "52.51",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.15",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Shiann",
+            "lastName": "Salmon",
+            "id": "14574022",
+            "pb": "53.13",
+            "sb": "53.13",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.59",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Janieve",
+            "lastName": "Russell",
+            "id": "14334022",
+            "pb": "53.08",
+            "sb": "53.33",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "53.68",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Andrenette",
+            "lastName": "Knight",
+            "id": "14512625",
+            "pb": "53.26",
+            "sb": "53.69",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "54.92",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "55.44",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "55.99",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Dalilah",
+            "lastName": "Muhammad",
+            "id": "14317560",
+            "pb": "51.58",
+            "sb": "54.16",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Men": {
       "date": "2024-08-25T16:15",
