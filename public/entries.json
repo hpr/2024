@@ -26352,7 +26352,8 @@
           "nat": "POL",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "400m Hurdles Women": {
       "date": "2024-08-25T16:04",
@@ -26441,7 +26442,8 @@
           "nat": "FRA",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "3000m Men": {
       "date": "2024-08-25T16:15",
@@ -26629,7 +26631,8 @@
           "nat": "POL",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "400m Women": {
       "date": "2024-08-25T16:46",
@@ -26718,7 +26721,8 @@
           "nat": "GBR",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "3000m Steeplechase Men": {
       "date": "2024-08-25T16:57",
@@ -26906,7 +26910,8 @@
           "nat": "MAR",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "800m Men": {
       "tiebreaker": "1:41.00",
@@ -27032,7 +27037,8 @@
           "nat": "POL",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "200m Men": {
       "date": "2024-08-25T17:28",
@@ -27121,7 +27127,8 @@
           "nat": "POL",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "1500m Women": {
       "date": "2024-08-25T17:39",
@@ -27282,7 +27289,8 @@
           "nat": "ESP",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     },
     "100m Women": {
       "date": "2024-08-25T17:53",
@@ -27353,7 +27361,8 @@
           "nat": "POL",
           "hasAvy": true
         }
-      ]
+      ],
+      "isClosed": true
     }
   }
 }
