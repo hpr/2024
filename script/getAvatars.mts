@@ -41,8 +41,8 @@ const avatarCacheKey = tfrrsMode ? 'tfrrsUrls' : 'urls';
 
 const entries: Entries = JSON.parse(fs.readFileSync('./public/entries.json', 'utf-8'));
 const entrants: Entrant[] = tfrrsMode ? JSON.parse(fs.readFileSync('./script/tfrrsAthletes.json', 'utf-8')).map((te: any) => ({
-  firstName: te.name.split(' ')[0],
-  lastName: te.name.split(' ').slice(1).join(' '),
+  firstName: te.firstName ?? te.name.split(' ')[0],
+  lastName: te.lastName ?? te.name.split(' ').slice(1).join(' '),
   team: te.team,
   id: te.id,
   pb: null,
