@@ -37,6 +37,7 @@ const resultsLinks: { [k in DLMeet]?: string } = {
   london24: 'https://ps-cache.web.swisstiming.com/node/db/ATH_PROD/LONDON_2024_SCHEDULE_JSON.json',
   lausanne24: 'https://ps-cache.web.swisstiming.com/node/db/ATH_PROD/LAUSANNE_2024_SCHEDULE_JSON.json',
   silesia24: 'https://ps-cache.web.swisstiming.com/node/db/ATH_PROD/SILESIA_2024_SCHEDULE_JSON.json',
+  rome24: 'https://ps-cache.web.swisstiming.com/node/db/ATH_PROD/ROME_2024_SCHEDULE_JSON.json',
 };
 
 const cache: MeetCache = JSON.parse(fs.readFileSync(CACHE_PATH, 'utf-8'));
