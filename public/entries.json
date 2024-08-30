@@ -30694,6 +30694,7 @@
           }
         },
         {
+          "mark": "3:58.68",
           "place": 9,
           "notes": "",
           "entrant": {
@@ -30707,6 +30708,7 @@
           }
         },
         {
+          "mark": "3:58.84",
           "place": 10,
           "notes": "",
           "entrant": {
@@ -30720,6 +30722,7 @@
           }
         },
         {
+          "mark": "3:59.19",
           "place": 11,
           "notes": "",
           "entrant": {
@@ -30733,6 +30736,7 @@
           }
         },
         {
+          "mark": "3:59.69",
           "place": 12,
           "notes": "",
           "entrant": {
@@ -30746,6 +30750,7 @@
           }
         },
         {
+          "mark": "4:01.69",
           "place": 13,
           "notes": "",
           "entrant": {
@@ -30759,6 +30764,7 @@
           }
         },
         {
+          "mark": "4:02.60",
           "place": 14,
           "notes": "",
           "entrant": {
@@ -30772,6 +30778,7 @@
           }
         },
         {
+          "mark": "4:02.80",
           "place": 15,
           "notes": "",
           "entrant": {
@@ -30888,7 +30895,117 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "9.87",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Letsile",
+            "lastName": "Tebogo",
+            "id": "14883897",
+            "pb": "9.86",
+            "sb": "9.86",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.92",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Christian",
+            "lastName": "Coleman",
+            "id": "14541956",
+            "pb": "9.76",
+            "sb": "9.86",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "9.95",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Fred",
+            "lastName": "Kerley",
+            "id": "14504382",
+            "pb": "9.76",
+            "sb": "9.81",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.03",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ackeem",
+            "lastName": "Blake",
+            "id": "14638971",
+            "pb": "9.89",
+            "sb": "9.89",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.05",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abdul Hakim",
+            "lastName": "Sani Brown",
+            "id": "14671546",
+            "pb": "9.96",
+            "sb": "9.96",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.07",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "10.08",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ferdinand",
+            "lastName": "Omanyala",
+            "id": "14747153",
+            "pb": "9.77",
+            "sb": "9.79",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.17",
+          "place": 8,
+          "notes": ""
+        },
+        {
+          "mark": "10.20",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lamont Marcell",
+            "lastName": "Jacobs",
+            "id": "14453864",
+            "pb": "9.80",
+            "sb": "9.85",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        }
+      ]
     }
   }
 }
