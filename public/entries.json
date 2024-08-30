@@ -28954,7 +28954,126 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "43.99",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Muzala",
+            "lastName": "Samukonga",
+            "id": "14930603",
+            "pb": "43.74",
+            "sb": "43.74",
+            "nat": "ZAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.30",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Kirani",
+            "lastName": "James",
+            "id": "14195659",
+            "pb": "43.74",
+            "sb": "43.78",
+            "nat": "GRN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.55",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jereem",
+            "lastName": "Richards",
+            "id": "14434521",
+            "pb": "43.78",
+            "sb": "43.78",
+            "nat": "TTO",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.56",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Bayapo",
+            "lastName": "Ndori",
+            "id": "14847443",
+            "pb": "44.10",
+            "sb": "44.10",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.71",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Vernon",
+            "lastName": "Norwood",
+            "id": "14490237",
+            "pb": "44.10",
+            "sb": "44.10",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.75",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Charles",
+            "lastName": "Dobson",
+            "id": "14762871",
+            "pb": "44.23",
+            "sb": "44.23",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "44.77",
+          "place": 7,
+          "notes": ""
+        },
+        {
+          "mark": "45.14",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Busang Collen",
+            "lastName": "Kebinatshipi",
+            "id": "14935809",
+            "pb": "44.22",
+            "sb": "44.22",
+            "nat": "BOT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "45.25",
+          "place": 9,
+          "notes": "",
+          "entrant": {
+            "firstName": "Luca",
+            "lastName": "Sito",
+            "id": "14953777",
+            "pb": "44.75",
+            "sb": "44.75",
+            "nat": "ITA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Hurdles Women": {
       "date": "2024-08-30T21:15",
