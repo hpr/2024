@@ -78,6 +78,9 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   rome24: {
     "100m Men": "9.80",
   },
+  zurich24: {
+    "1500m Men": "3:26.50",
+  }
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
@@ -94,6 +97,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   lausanne24: '2pm ET',
   silesia24: '8:59am ET',
   rome24: '3pm ET',
+  zurich24: '2pm ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -132,6 +136,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   lausanne24: ['https://lausanne.diamondleague.com/en/programme-results-lausanne/'],
   silesia24: ['https://silesia.diamondleague.com/en/programme-results/translate-to-english-programme-results/'],
   rome24: ['https://rome.diamondleague.com/en/programme-results/programme-results-rome/'],
+  zurich24: ['https://zurich.diamondleague.com/en/programme-results/programme-results/'],
 };
 
 const idTeams = {
