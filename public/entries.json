@@ -31089,7 +31089,112 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "47.49",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Roshawn",
+            "lastName": "Clarke",
+            "id": "14931525",
+            "pb": "47.34",
+            "sb": "47.63",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "47.58",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abderrahman",
+            "lastName": "Samba",
+            "id": "14752208",
+            "pb": "46.98",
+            "sb": "47.69",
+            "nat": "QAT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.02",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rasmus",
+            "lastName": "Mägi",
+            "id": "14373195",
+            "pb": "47.82",
+            "sb": "47.95",
+            "nat": "EST",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.02",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Clement",
+            "lastName": "Ducos",
+            "id": "14775577",
+            "pb": "47.42",
+            "sb": "47.42",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.20",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.58",
+            "sb": "47.81",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "49.59",
+          "place": 6,
+          "notes": ""
+        },
+        {
+          "mark": "50.04",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Julien",
+            "lastName": "Bonvin",
+            "id": "14683945",
+            "pb": "48.59",
+            "sb": "48.59",
+            "nat": "SUI",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Alison",
+            "lastName": "dos Santos",
+            "id": "14755064",
+            "pb": "46.29",
+            "sb": "46.63",
+            "nat": "BRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "800m Women": {
       "date": "2024-09-05T20:16",
