@@ -80,7 +80,10 @@ const tieBreakers: { [k in DLMeet]?: { [k in AthleticsEvent]?: string } } = {
   },
   zurich24: {
     "1500m Men": "3:26.50",
-  }
+  },
+  brussels24: {
+    "800m Men": "1:41.00",
+  },
 };
 
 const deadlines: { [k in DLMeet]?: string } = {
@@ -98,6 +101,7 @@ const deadlines: { [k in DLMeet]?: string } = {
   silesia24: '8:59am ET',
   rome24: '3pm ET',
   zurich24: '2pm ET',
+  brussels24: '2pm ET',
 };
 
 const schedules: { [k in DLMeet]?: string[] } = {
@@ -137,6 +141,7 @@ const schedules: { [k in DLMeet]?: string[] } = {
   silesia24: ['https://silesia.diamondleague.com/en/programme-results/translate-to-english-programme-results/'],
   rome24: ['https://rome.diamondleague.com/en/programme-results/programme-results-rome/'],
   zurich24: ['https://zurich.diamondleague.com/en/programme-results/programme-results/'],
+  brussels24: ['https://brussels.diamondleague.com/en/program-results/program-2024/program-2024/'],
 };
 
 const idTeams = {
