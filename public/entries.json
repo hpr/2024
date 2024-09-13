@@ -35040,7 +35040,134 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "1:56.56",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Mary",
+            "lastName": "Moraa",
+            "id": "14798209",
+            "pb": "1:56.03",
+            "sb": "1:56.71",
+            "nat": "KEN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:57.50",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Georgia",
+            "lastName": "Bell",
+            "id": "14329797",
+            "pb": "1:56.28",
+            "sb": "1:56.28",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.94",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Natoya",
+            "lastName": "Goule-Toppin",
+            "id": "14285696",
+            "pb": "1:55.96",
+            "sb": "1:56.83",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:58.94",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rénelle",
+            "lastName": "Lamote",
+            "id": "14424718",
+            "pb": "1:57.06",
+            "sb": "1:57.06",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.13",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Jemma",
+            "lastName": "Reekie",
+            "id": "14533469",
+            "pb": "1:55.61",
+            "sb": "1:55.61",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.81",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Habitam",
+            "lastName": "Alemu",
+            "id": "14730994",
+            "pb": "1:56.71",
+            "sb": "1:57.70",
+            "nat": "ETH",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "1:59.87",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Halimah",
+            "lastName": "Nakaayi",
+            "id": "14431159",
+            "pb": "1:57.26",
+            "sb": "1:57.26",
+            "nat": "UGA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "2:03.16",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Prudence",
+            "lastName": "Sekgodiso",
+            "id": "14745817",
+            "pb": "1:57.26",
+            "sb": "1:57.26",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "DNF",
+          "entrant": {
+            "firstName": "Noélie",
+            "lastName": "Yarigo",
+            "id": "14270067",
+            "pb": "1:58.65",
+            "sb": "1:58.70",
+            "nat": "BEN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "400m Men": {
       "date": "2024-09-13T21:52",
