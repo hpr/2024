@@ -33545,7 +33545,121 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "9.93",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Ackeem",
+            "lastName": "Blake",
+            "id": "14638971",
+            "pb": "9.89",
+            "sb": "9.89",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.00",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Christian",
+            "lastName": "Coleman",
+            "id": "14541956",
+            "pb": "9.76",
+            "sb": "9.86",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.01",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Fred",
+            "lastName": "Kerley",
+            "id": "14504382",
+            "pb": "9.76",
+            "sb": "9.81",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.09",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Emmanuel",
+            "lastName": "Eseme",
+            "id": "14852717",
+            "pb": "9.96",
+            "sb": "9.98",
+            "nat": "CMR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.10",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Akani",
+            "lastName": "Simbine",
+            "id": "14417763",
+            "pb": "9.82",
+            "sb": "9.82",
+            "nat": "RSA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.10",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abdul Hakim",
+            "lastName": "Sani Brown",
+            "id": "14671546",
+            "pb": "9.96",
+            "sb": "9.96",
+            "nat": "JPN",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.13",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brandon",
+            "lastName": "Hicklin",
+            "id": "14802271",
+            "pb": "9.94",
+            "sb": "9.94",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "10.25",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rohan",
+            "lastName": "Watson",
+            "id": "14779154",
+            "pb": "9.91",
+            "sb": "10.07",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "110m Hurdles Men": {
       "date": "2024-09-13T20:28",
