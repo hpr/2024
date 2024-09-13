@@ -33351,7 +33351,120 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "49.45",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marileidy",
+            "lastName": "Paulino",
+            "id": "14749613",
+            "pb": "48.17",
+            "sb": "48.17",
+            "nat": "DOM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.32",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alexis",
+            "lastName": "Holmes",
+            "id": "14761424",
+            "pb": "49.77",
+            "sb": "49.77",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.96",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rhasidat",
+            "lastName": "Adeleke",
+            "id": "14745252",
+            "pb": "49.07",
+            "sb": "49.07",
+            "nat": "IRL",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.50",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lynna",
+            "lastName": "Irby-Jackson",
+            "id": "14486888",
+            "pb": "49.80",
+            "sb": "50.17",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.69",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Lieke",
+            "lastName": "Klaver",
+            "id": "14560483",
+            "pb": "49.58",
+            "sb": "49.58",
+            "nat": "NED",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "51.94",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Amandine",
+            "lastName": "Brossier",
+            "id": "14678934",
+            "pb": "50.43",
+            "sb": "50.43",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "52.68",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Sada",
+            "lastName": "Williams",
+            "id": "14592846",
+            "pb": "49.58",
+            "sb": "49.80",
+            "nat": "BAR",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Salwa Eid",
+            "lastName": "Naser",
+            "id": "14643442",
+            "pb": "48.14",
+            "sb": "48.53",
+            "nat": "BRN",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "100m Men": {
       "date": "2024-09-13T20:17",
