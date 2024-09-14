@@ -35640,7 +35640,111 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "22.20",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Brittany",
+            "lastName": "Brown",
+            "id": "14437218",
+            "pb": "21.90",
+            "sb": "21.90",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.45",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Daryll",
+            "lastName": "Neita",
+            "id": "14476603",
+            "pb": "22.16",
+            "sb": "22.20",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.61",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Anavia",
+            "lastName": "Battle",
+            "id": "14715397",
+            "pb": "21.95",
+            "sb": "22.27",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "22.95",
+          "place": 4,
+          "notes": ""
+        },
+        {
+          "mark": "23.01",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Tamara",
+            "lastName": "Clark",
+            "id": "14596381",
+            "pb": "21.92",
+            "sb": "22.12",
+            "nat": "USA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.09",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Amy",
+            "lastName": "Hunt",
+            "id": "14685108",
+            "pb": "22.42",
+            "sb": "22.65",
+            "nat": "GBR",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "23.33",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Maboundou",
+            "lastName": "Koné",
+            "id": "14636900",
+            "pb": "22.53",
+            "sb": "22.65",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        },
+        {
+          "place": null,
+          "notes": "",
+          "entrant": {
+            "firstName": "Marie-Josée",
+            "lastName": "Ta Lou-Smith",
+            "id": "14415994",
+            "pb": "22.08",
+            "sb": "22.36",
+            "nat": "CIV",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "3000m Steeplechase Women": {
       "date": "2024-09-14T20:27",
