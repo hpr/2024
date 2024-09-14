@@ -35444,7 +35444,122 @@
           "hasAvy": true
         }
       ],
-      "isClosed": true
+      "isClosed": true,
+      "results": [
+        {
+          "mark": "47.93",
+          "place": 1,
+          "notes": "",
+          "entrant": {
+            "firstName": "Alison",
+            "lastName": "dos Santos",
+            "id": "14755064",
+            "pb": "46.29",
+            "sb": "46.63",
+            "nat": "BRA",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.20",
+          "place": 2,
+          "notes": "",
+          "entrant": {
+            "firstName": "Abderrahman",
+            "lastName": "Samba",
+            "id": "14752208",
+            "pb": "46.98",
+            "sb": "47.58",
+            "nat": "QAT",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.26",
+          "place": 3,
+          "notes": "",
+          "entrant": {
+            "firstName": "Rasmus",
+            "lastName": "Mägi",
+            "id": "14373195",
+            "pb": "47.82",
+            "sb": "47.95",
+            "nat": "EST",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "48.68",
+          "place": 4,
+          "notes": "",
+          "entrant": {
+            "firstName": "CJ",
+            "lastName": "Allen",
+            "id": "14627624",
+            "pb": "47.58",
+            "sb": "47.81",
+            "nat": "USA",
+            "hasAvy": true,
+            "team": "WSU Cougars"
+          }
+        },
+        {
+          "mark": "49.08",
+          "place": 5,
+          "notes": "",
+          "entrant": {
+            "firstName": "Roshawn",
+            "lastName": "Clarke",
+            "id": "14931525",
+            "pb": "47.34",
+            "sb": "47.49",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.37",
+          "place": 6,
+          "notes": "",
+          "entrant": {
+            "firstName": "Malik",
+            "lastName": "James-King",
+            "id": "14744387",
+            "pb": "47.42",
+            "sb": "47.42",
+            "nat": "JAM",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "49.63",
+          "place": 7,
+          "notes": "",
+          "entrant": {
+            "firstName": "Gerald",
+            "lastName": "Drummond",
+            "id": "14414628",
+            "pb": "48.11",
+            "sb": "48.56",
+            "nat": "CRC",
+            "hasAvy": true
+          }
+        },
+        {
+          "mark": "50.19",
+          "place": 8,
+          "notes": "",
+          "entrant": {
+            "firstName": "Wilfried",
+            "lastName": "Happio",
+            "id": "14650750",
+            "pb": "47.41",
+            "sb": "48.01",
+            "nat": "FRA",
+            "hasAvy": true
+          }
+        }
+      ]
     },
     "200m Women": {
       "date": "2024-09-14T20:17",
