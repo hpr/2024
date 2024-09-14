@@ -34620,12 +34620,12 @@
           "place": null,
           "notes": "DNF",
           "entrant": {
-            "firstName": "Wilberforce Chemiat",
-            "lastName": "Kones",
-            "id": "14755096",
-            "pb": "8:21.42",
-            "sb": "8:45.1h",
-            "nat": "KEN",
+            "firstName": "Abderrafia",
+            "lastName": "Bouassel",
+            "id": "14843153",
+            "pb": "8:27.00",
+            "sb": "8:48.12",
+            "nat": "MAR",
             "hasAvy": true
           }
         },
@@ -34633,12 +34633,12 @@
           "place": null,
           "notes": "DNF",
           "entrant": {
-            "firstName": "Abderrafia",
-            "lastName": "Bouassel",
-            "id": "14843153",
-            "pb": "8:27.00",
-            "sb": "8:48.12",
-            "nat": "MAR",
+            "firstName": "Wilberforce Chemiat",
+            "lastName": "Kones",
+            "id": "14755096",
+            "pb": "8:21.42",
+            "sb": "8:45.1h",
+            "nat": "KEN",
             "hasAvy": true
           }
         }
@@ -34928,12 +34928,12 @@
           "place": null,
           "notes": "DNF",
           "entrant": {
-            "firstName": "Boaz",
-            "lastName": "Kiprugut",
-            "id": "14695615",
-            "pb": "3:35.26",
-            "sb": "3:37.25",
-            "nat": "KEN",
+            "firstName": "Mounir",
+            "lastName": "Akbache",
+            "id": "14182819",
+            "pb": "3:39.81",
+            "sb": null,
+            "nat": "FRA",
             "hasAvy": true
           }
         },
@@ -34941,12 +34941,12 @@
           "place": null,
           "notes": "DNF",
           "entrant": {
-            "firstName": "Mounir",
-            "lastName": "Akbache",
-            "id": "14182819",
-            "pb": "3:39.81",
-            "sb": null,
-            "nat": "FRA",
+            "firstName": "Boaz",
+            "lastName": "Kiprugut",
+            "id": "14695615",
+            "pb": "3:35.26",
+            "sb": "3:37.25",
+            "nat": "KEN",
             "hasAvy": true
           }
         }
